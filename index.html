@@ -1,655 +1,200 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>副業月収シミュレーター</title>
-    <script>
-      const GA_MEASUREMENT_ID = "";
-
-      if (GA_MEASUREMENT_ID) {
-        const analyticsScript = document.createElement("script");
-        analyticsScript.async = true;
-        analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-        document.head.appendChild(analyticsScript);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", GA_MEASUREMENT_ID);
-      }
-    </script>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f6f3ee;
-        --panel: #ffffff;
-        --ink: #18212f;
-        --muted: #637083;
-        --line: #d9dee7;
-        --green: #12735d;
-        --blue: #2457c5;
-        --amber: #b86b00;
-        --red: #b42318;
-        --red-bg: #fff1ef;
-        --shadow: 0 18px 48px rgba(24, 33, 47, 0.13);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family:
-          system-ui,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top left, rgba(36, 87, 197, 0.16), transparent 32rem),
-          linear-gradient(145deg, #f6f3ee 0%, #eef4f2 54%, #f7f8fb 100%);
-      }
-
-      main {
-        width: min(100%, 960px);
-        margin: 0 auto;
-        padding: 22px 16px 32px;
-      }
-
-      .app-shell {
-        display: grid;
-        gap: 16px;
-      }
-
-      .header {
-        display: grid;
-        gap: 8px;
-        padding: 8px 2px 0;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(1.55rem, 8vw, 3.05rem);
-        line-height: 1.08;
-        letter-spacing: 0;
-      }
-
-      .lead {
-        max-width: 42rem;
-        margin: 0;
-        color: var(--muted);
-        font-size: 0.98rem;
-        line-height: 1.75;
-      }
-
-      .workspace {
-        display: grid;
-        gap: 16px;
-      }
-
-      .input-panel,
-      .result-panel {
-        background: rgba(255, 255, 255, 0.92);
-        border: 1px solid rgba(217, 222, 231, 0.92);
-        border-radius: 8px;
-        box-shadow: var(--shadow);
-      }
-
-      .input-panel {
-        display: grid;
-        gap: 14px;
-        padding: 16px;
-      }
-
-      .field {
-        display: grid;
-        gap: 8px;
-      }
-
-      label {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 10px;
-        font-weight: 700;
-        font-size: 0.95rem;
-      }
-
-      .unit {
-        color: var(--muted);
-        font-size: 0.78rem;
-        font-weight: 600;
-        white-space: nowrap;
-      }
-
-      input {
-        width: 100%;
-        min-height: 48px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 12px 13px;
-        color: var(--ink);
-        background: #fbfcfe;
-        font: inherit;
-        font-size: 1.05rem;
-        outline: none;
-      }
-
-      input:focus {
-        border-color: var(--blue);
-        box-shadow: 0 0 0 4px rgba(36, 87, 197, 0.14);
-      }
-
-      input[aria-invalid="true"] {
-        border-color: var(--red);
-        background: var(--red-bg);
-      }
-
-      input[aria-invalid="true"]:focus {
-        box-shadow: 0 0 0 4px rgba(180, 35, 24, 0.13);
-      }
-
-      .error {
-        min-height: 1.15rem;
-        margin: -2px 0 0;
-        color: var(--red);
-        font-size: 0.78rem;
-        font-weight: 700;
-        line-height: 1.35;
-      }
-
-      .actions {
-        display: flex;
-        gap: 10px;
-        margin-top: 2px;
-      }
-
-      button {
-        min-height: 44px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 0 14px;
-        color: var(--ink);
-        background: #fff;
-        font: inherit;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      button:active {
-        transform: translateY(1px);
-      }
-
-      .result-panel {
-        overflow: hidden;
-      }
-
-      .hero-result {
-        display: grid;
-        gap: 10px;
-        padding: 18px 16px;
-        color: #fff;
-        background: linear-gradient(135deg, #12735d 0%, #2457c5 100%);
-      }
-
-      .eyebrow {
-        margin: 0;
-        font-size: 0.78rem;
-        font-weight: 800;
-      }
-
-      .amount {
-        margin: 0;
-        font-size: clamp(2rem, 11vw, 4rem);
-        font-weight: 850;
-        line-height: 1;
-        overflow-wrap: anywhere;
-      }
-
-      .result-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .metric {
-        display: grid;
-        gap: 5px;
-        min-height: 94px;
-        padding: 16px;
-        border-top: 1px solid var(--line);
-      }
-
-      .metric strong {
-        color: var(--muted);
-        font-size: 0.82rem;
-      }
-
-      .metric span {
-        font-size: clamp(1.35rem, 7vw, 2.2rem);
-        font-weight: 820;
-        line-height: 1.1;
-        overflow-wrap: anywhere;
-      }
-
-      .metric small {
-        color: var(--muted);
-        font-size: 0.78rem;
-        line-height: 1.45;
-      }
-
-      .notice {
-        display: none;
-        margin: 0;
-        padding: 11px 16px;
-        color: var(--red);
-        background: var(--red-bg);
-        border-top: 1px solid rgba(180, 35, 24, 0.24);
-        font-size: 0.86rem;
-        font-weight: 800;
-        line-height: 1.45;
-      }
-
-      .notice.is-visible {
-        display: block;
-      }
-
-      .accent-green {
-        color: var(--green);
-      }
-
-      .accent-blue {
-        color: var(--blue);
-      }
-
-      .accent-amber {
-        color: var(--amber);
-      }
-
-      .content-sections {
-        display: grid;
-        gap: 18px;
-        margin-top: 10px;
-      }
-
-      .info-section {
-        display: grid;
-        gap: 10px;
-        padding: 18px 2px 0;
-        border-top: 1px solid rgba(99, 112, 131, 0.24);
-      }
-
-      .info-section h2 {
-        margin: 0;
-        font-size: clamp(1.18rem, 5vw, 1.65rem);
-        line-height: 1.25;
-        letter-spacing: 0;
-      }
-
-      .info-section p,
-      .info-section li {
-        color: var(--muted);
-        font-size: 0.94rem;
-        line-height: 1.8;
-      }
-
-      .info-section p {
-        margin: 0;
-      }
-
-      .info-section ul {
-        display: grid;
-        gap: 8px;
-        margin: 0;
-        padding-left: 1.15rem;
-      }
-
-      .formula {
-        margin: 2px 0 0;
-        padding: 13px 14px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        color: var(--ink);
-        background: rgba(255, 255, 255, 0.76);
-        font-weight: 800;
-        line-height: 1.6;
-        overflow-wrap: anywhere;
-      }
-
-      .target-grid {
-        display: grid;
-        gap: 10px;
-      }
-
-      .target-item {
-        padding: 13px 14px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.76);
-      }
-
-      .target-item strong {
-        display: block;
-        margin-bottom: 4px;
-        color: var(--ink);
-        font-size: 0.95rem;
-      }
-
-      .target-item span {
-        color: var(--muted);
-        font-size: 0.9rem;
-        line-height: 1.7;
-      }
-
-      .source-link {
-        color: var(--blue);
-        font-weight: 800;
-        text-decoration-thickness: 0.08em;
-        text-underline-offset: 0.18em;
-      }
-
-      details {
-        border-top: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.52);
-      }
-
-      details:first-of-type {
-        border-top: 0;
-      }
-
-      summary {
-        min-height: 48px;
-        padding: 14px 2px;
-        color: var(--ink);
-        font-weight: 800;
-        line-height: 1.45;
-        cursor: pointer;
-      }
-
-      details p {
-        padding: 0 2px 14px;
-      }
-
-      @media (min-width: 720px) {
-        main {
-          padding: 46px 24px;
-        }
-
-        .app-shell {
-          gap: 22px;
-        }
-
-        .workspace {
-          grid-template-columns: minmax(280px, 0.9fr) minmax(360px, 1.1fr);
-          align-items: start;
-        }
-
-        .input-panel {
-          padding: 20px;
-        }
-
-        .result-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .metric {
-          border-top: 1px solid var(--line);
-          border-left: 1px solid var(--line);
-        }
-
-        .metric:first-child {
-          border-left: 0;
-        }
-
-        .content-sections {
-          gap: 22px;
-          margin-top: 16px;
-        }
-
-        .target-grid {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-    </style>
-  </head>
+    <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
   <body>
-    <main>
-      <div class="app-shell">
-        <header class="header">
-          <h1>副業月収シミュレーター</h1>
-          <p class="lead">時給、月の作業時間、案件数、税率を入れると、月収・年収・税引後の目安がすぐに更新されます。</p>
-        </header>
-
-        <section class="workspace" aria-label="副業収入の計算">
-          <form class="input-panel" id="simulator">
-            <div class="field">
-              <label for="hourly">時給 <span class="unit">円</span></label>
-              <input id="hourly" name="hourly" type="number" inputmode="numeric" min="0" max="100000" step="100" value="2000" required aria-describedby="hourlyError">
-              <p class="error" id="hourlyError"></p>
-            </div>
-
-            <div class="field">
-              <label for="hours">作業時間 <span class="unit">時間 / 月・1案件</span></label>
-              <input id="hours" name="hours" type="number" inputmode="decimal" min="0" max="744" step="0.5" value="20" required aria-describedby="hoursError">
-              <p class="error" id="hoursError"></p>
-            </div>
-
-            <div class="field">
-              <label for="projects">案件数 <span class="unit">件 / 月</span></label>
-              <input id="projects" name="projects" type="number" inputmode="numeric" min="0" max="100" step="1" value="3" required aria-describedby="projectsError">
-              <p class="error" id="projectsError"></p>
-            </div>
-
-            <div class="field">
-              <label for="tax">税率 <span class="unit">%</span></label>
-              <input id="tax" name="tax" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="20" required aria-describedby="taxError">
-              <p class="error" id="taxError"></p>
-            </div>
-
-            <div class="actions">
-              <button type="reset">リセット</button>
-            </div>
-          </form>
-
-          <section class="result-panel" aria-live="polite">
-            <div class="hero-result">
-              <p class="eyebrow">月収</p>
-              <p class="amount" id="monthly">0円</p>
-            </div>
-
-            <p class="notice" id="notice">入力を確認してください。エラーがある項目は赤く表示されます。</p>
-
-            <div class="result-grid">
-              <div class="metric">
-                <strong>年収</strong>
-                <span class="accent-blue" id="yearly">0円</span>
-                <small>月収 × 12</small>
-              </div>
-
-              <div class="metric">
-                <strong>税引後 / 月</strong>
-                <span class="accent-green" id="netMonthly">0円</span>
-                <small>月収から税率分を差し引き</small>
-              </div>
-
-              <div class="metric">
-                <strong>税引後 / 年</strong>
-                <span class="accent-amber" id="netYearly">0円</span>
-                <small>税引後月収 × 12</small>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <section class="content-sections" aria-label="副業収入の基礎知識">
-          <section class="info-section">
-            <h2>副業月収とは</h2>
-            <p>副業月収とは、本業とは別に行う仕事から1か月で得られる収入の目安です。業務委託、クラウドソーシング、アルバイト、制作案件など、継続して受ける案件の金額を月単位で見える化すると、目標や作業量を調整しやすくなります。</p>
-          </section>
-
-          <section class="info-section">
-            <h2>月収計算方法</h2>
-            <p>このシミュレーターでは、時給型の副業を想定して次の式で計算しています。</p>
-            <p class="formula">月収 = 時給 × 作業時間 × 案件数</p>
-            <p>年収は月収に12を掛けた金額、税引後は入力した税率分を差し引いた概算です。固定報酬の案件では、時給に換算して入力すると比較しやすくなります。</p>
-          </section>
-
-          <section class="info-section">
-            <h2>税金の注意点</h2>
-            <ul>
-              <li>税金は「収入」ではなく、必要経費を差し引いた「所得」をもとに考える場面があります。</li>
-              <li>年末調整済みの給与所得者でも、給与以外の所得が年間20万円を超える場合は、原則として確定申告が必要です。</li>
-              <li>副業の内容によって、雑所得・事業所得・給与所得など扱いが変わることがあります。</li>
-              <li>住民税や会社の就業規則も確認しておくと安心です。判断に迷う場合は税務署や税理士に相談してください。</li>
-            </ul>
-            <p>参考: <a class="source-link" href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1906.htm" target="_blank" rel="noopener">国税庁「給与所得者が副収入を得た場合」</a>、<a class="source-link" href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1500.htm" target="_blank" rel="noopener">国税庁「雑所得」</a></p>
-          </section>
-
-          <section class="info-section">
-            <h2>副業月10万円を目指す目安</h2>
-            <div class="target-grid">
-              <div class="target-item">
-                <strong>時給2,000円</strong>
-                <span>月50時間が目安。平日1.5時間ほどを積み上げるイメージです。</span>
-              </div>
-              <div class="target-item">
-                <strong>時給3,000円</strong>
-                <span>月約34時間が目安。週8時間前後で届きやすくなります。</span>
-              </div>
-              <div class="target-item">
-                <strong>時給5,000円</strong>
-                <span>月20時間が目安。単価を上げるほど、時間の負担を抑えられます。</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="info-section">
-            <h2>よくある質問FAQ</h2>
-            <details>
-              <summary>副業月収は手取りですか？</summary>
-              <p>入力した時給・時間・案件数から出した金額は税引前の概算です。手取りに近い目安は「税引後 / 月」を確認してください。</p>
-            </details>
-            <details>
-              <summary>税率は何%で入力すればいいですか？</summary>
-              <p>まずは概算として10%から30%の範囲で試すと、手残りの感覚をつかみやすくなります。実際の税率は所得や控除、住民税などで変わります。</p>
-            </details>
-            <details>
-              <summary>案件数は月ごとの件数ですか？</summary>
-              <p>はい。1か月で受ける案件数として入力します。1案件あたりの作業時間を入れると、月全体の収入を計算できます。</p>
-            </details>
-            <details>
-              <summary>固定報酬の案件でも使えますか？</summary>
-              <p>使えます。固定報酬を想定作業時間で割って時給に換算し、その時給を入力してください。</p>
-            </details>
-          </section>
-        </section>
-      </div>
-    </main>
-
-    <script>
-      const form = document.querySelector("#simulator");
-      const fields = {
-        hourly: document.querySelector("#hourly"),
-        hours: document.querySelector("#hours"),
-        projects: document.querySelector("#projects"),
-        tax: document.querySelector("#tax"),
-      };
-      const outputs = {
-        monthly: document.querySelector("#monthly"),
-        yearly: document.querySelector("#yearly"),
-        netMonthly: document.querySelector("#netMonthly"),
-        netYearly: document.querySelector("#netYearly"),
-        notice: document.querySelector("#notice"),
-      };
-      const rules = {
-        hourly: { label: "時給", min: 0, max: 100000, unit: "円", integer: false },
-        hours: { label: "作業時間", min: 0, max: 744, unit: "時間", integer: false },
-        projects: { label: "案件数", min: 0, max: 100, unit: "件", integer: true },
-        tax: { label: "税率", min: 0, max: 100, unit: "%", integer: false },
-      };
-      const yen = new Intl.NumberFormat("ja-JP", {
-        style: "currency",
-        currency: "JPY",
-        maximumFractionDigits: 0,
-      });
-
-      function formatLimit(value, unit) {
-        return `${value.toLocaleString("ja-JP")}${unit}`;
-      }
-
-      function validateField(name) {
-        const input = fields[name];
-        const rule = rules[name];
-        const rawValue = input.value.trim();
-        const error = document.querySelector(`#${name}Error`);
-        let message = "";
-        let value = 0;
-
-        if (rawValue === "") {
-          message = `${rule.label}を入力してください。`;
-        } else if (!/^-?\d+(\.\d+)?$/.test(rawValue)) {
-          message = `${rule.label}は半角数字で入力してください。`;
-        } else {
-          value = Number(rawValue);
-          if (!Number.isFinite(value)) {
-            message = `${rule.label}は数値で入力してください。`;
-          } else if (value < rule.min) {
-            message = `${rule.label}はマイナスにできません。`;
-          } else if (value > rule.max) {
-            message = `${rule.label}は${formatLimit(rule.max, rule.unit)}以下で入力してください。`;
-          } else if (rule.integer && !Number.isInteger(value)) {
-            message = `${rule.label}は整数で入力してください。`;
-          }
-        }
-
-        input.setAttribute("aria-invalid", message ? "true" : "false");
-        error.textContent = message;
-        return { valid: message === "", value };
-      }
-
-      function render() {
-        const values = {
-          hourly: validateField("hourly"),
-          hours: validateField("hours"),
-          projects: validateField("projects"),
-          tax: validateField("tax"),
-        };
-        const hasError = Object.values(values).some((item) => !item.valid);
-
-        outputs.notice.classList.toggle("is-visible", hasError);
-        if (hasError) {
-          outputs.monthly.textContent = "入力エラー";
-          outputs.yearly.textContent = yen.format(0);
-          outputs.netMonthly.textContent = yen.format(0);
-          outputs.netYearly.textContent = yen.format(0);
-          return;
-        }
-
-        const hourly = values.hourly.value;
-        const hours = values.hours.value;
-        const projects = values.projects.value;
-        const taxRate = values.tax.value / 100;
-        const monthly = hourly * hours * projects;
-        const yearly = monthly * 12;
-        const netMonthly = monthly * (1 - taxRate);
-        const netYearly = netMonthly * 12;
-
-        outputs.monthly.textContent = yen.format(monthly);
-        outputs.yearly.textContent = yen.format(yearly);
-        outputs.netMonthly.textContent = yen.format(netMonthly);
-        outputs.netYearly.textContent = yen.format(netYearly);
-      }
-
-      form.addEventListener("input", render);
-      form.addEventListener("reset", () => {
-        window.requestAnimationFrame(render);
-      });
-      render();
-    </script>
+        <main>
+                <div class="app-shell">
+                          <header class="header">
+                                      <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
+                                    <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;FIRE&#x9054;&#x6210;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>p>
+                                    <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
+                                                <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>a>
+                                                <a href="#side-income" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>a>
+                                                <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>a>
+                                    </nav>nav>
+                          </header>header>
+                
+                        <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
+                                  <div class="tool-grid">
+                                              <a class="tool-card" href="#side-income">
+                                                            <p class="eyebrow">Income</p>p>
+                                                            <h2>&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+                                                            <p>&#x6642;&#x7d66;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6848;&#x4ef6;&#x6570;&#x3001;&#x7a0e;&#x7387;&#x304b;&#x3089;&#x3001;&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x30fb;&#x7a0e;&#x5f15;&#x5f8c;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a08;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+                                                            <div class="tool-meta">
+                                                                            <span>&#x6708;&#x53ce;</span>
+                                                                            <span>&#x5e74;&#x53ce;</span>
+                                                                            <span>&#x7a0e;&#x5f15;&#x5f8c;</span>
+                                                            </div>div>
+                                                            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+                                              </a>a>
+                                  
+                                              <a class="tool-card" href="#fire">
+                                                            <p class="eyebrow">FIRE</p>
+                                                            <h2>FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+                                                            <p>&#x73fe;&#x5728;&#x8cc7;&#x7523;&#x3001;&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d;&#x3001;&#x60f3;&#x5b9a;&#x5e74;&#x5229;&#x3001;&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x3001;&#x5e74;&#x6570;&#x304b;&#x3089;&#x3001;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x8a08;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+                                                            <div class="tool-meta">
+                                                                            <span>&#x9054;&#x6210;&#x5e74;&#x6570;</span>
+                                                                            <span>&#x5c06;&#x6765;&#x8cc7;&#x7523;</span>
+                                                                            <span>&#x7a4d;&#x7acb;&#x8a08;&#x753b;</span>
+                                                            </div>div>
+                                                            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+                                              </a>a>
+                                  </div>div>
+                        </section>section>
+                
+                        <section class="view" data-view="side-income" aria-label="&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+                                  <section class="tool-heading">
+                                              <h2>&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+                                              <p>&#x6642;&#x7d66;&#x3001;&#x6708;&#x306e;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6848;&#x4ef6;&#x6570;&#x3001;&#x7a0e;&#x7387;&#x3092;&#x5165;&#x308c;&#x308b;&#x3068;&#x3001;&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x30fb;&#x7a0e;&#x5f15;&#x5f8c;&#x306e;&#x76ee;&#x5b89;&#x304c;&#x3059;&#x3050;&#x306b;&#x66f4;&#x65b0;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+                                  </section>section>
+                        
+                                  <section class="workspace" aria-label="&#x526f;&#x696d;&#x53ce;&#x5165;&#x306e;&#x8a08;&#x7b97;">
+                                              <form class="input-panel" id="sideIncomeForm">
+                                                            <div class="field">
+                                                                            <label for="hourly">&#x6642;&#x7d66; <span class="unit">&#x5186;</span></label>label>
+                                                                            <input id="hourly" name="hourly" type="number" inputmode="numeric" min="0" max="100000" step="100" value="2000" required aria-describedby="hourlyError">
+                                                                            <p class="error" id="hourlyError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="hours">&#x4f5c;&#x696d;&#x6642;&#x9593; <span class="unit">&#x6642;&#x9593; / &#x6708;&#x30fb;1&#x6848;&#x4ef6;</span></label>label>
+                                                                            <input id="hours" name="hours" type="number" inputmode="decimal" min="0" max="744" step="0.5" value="20" required aria-describedby="hoursError">
+                                                                            <p class="error" id="hoursError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="projects">&#x6848;&#x4ef6;&#x6570; <span class="unit">&#x4ef6; / &#x6708;</span></label>label>
+                                                                            <input id="projects" name="projects" type="number" inputmode="numeric" min="0" max="100" step="1" value="3" required aria-describedby="projectsError">
+                                                                            <p class="error" id="projectsError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="tax">&#x7a0e;&#x7387; <span class="unit">%</span></label>label>
+                                                                            <input id="tax" name="tax" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="20" required aria-describedby="taxError">
+                                                                            <p class="error" id="taxError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="actions">
+                                                                            <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>button>
+                                                            </div>div>
+                                              </form>form>
+                                  
+                                              <section class="result-panel" aria-live="polite">
+                                                            <div class="hero-result">
+                                                                            <p class="eyebrow">&#x6708;&#x53ce;</p>
+                                                                            <p class="amount" id="monthly">0&#x5186;</p>
+                                                            </div>div>
+                                              
+                                                            <p class="notice" id="incomeNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x30a8;&#x30e9;&#x30fc;&#x304c;&#x3042;&#x308b;&#x9805;&#x76ee;&#x306f;&#x8d64;&#x304f;&#x8868;&#x793a;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+                                              
+                                                            <div class="result-grid">
+                                                                            <div class="metric">
+                                                                                              <strong>&#x5e74;&#x53ce;</strong>
+                                                                                              <span class="accent-blue" id="yearly">0&#x5186;</span>
+                                                                                              <small>&#x6708;&#x53ce; &#xd7; 12</small>
+                                                                            </div>div>
+                                                            
+                                                                            <div class="metric">
+                                                                                              <strong>&#x7a0e;&#x5f15;&#x5f8c; / &#x6708;</strong>
+                                                                                              <span class="accent-green" id="netMonthly">0&#x5186;</span>
+                                                                                              <small>&#x6708;&#x53ce;&#x304b;&#x3089;&#x7a0e;&#x7387;&#x5206;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x304d;</small>
+                                                                            </div>div>
+                                                            
+                                                                            <div class="metric">
+                                                                                              <strong>&#x7a0e;&#x5f15;&#x5f8c; / &#x5e74;</strong>
+                                                                                              <span class="accent-amber" id="netYearly">0&#x5186;</span>
+                                                                                              <small>&#x7a0e;&#x5f15;&#x5f8c;&#x6708;&#x53ce; &#xd7; 12</small>
+                                                                            </div>div>
+                                                            </div>div>
+                                              </section>section>
+                                  </section>section>
+                        </section>section>
+                
+                        <section class="view" data-view="fire" aria-label="FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+                                  <section class="tool-heading">
+                                              <h2>FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+                                              <p>&#x73fe;&#x5728;&#x8cc7;&#x7523;&#x3001;&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d;&#x3001;&#x60f3;&#x5b9a;&#x5e74;&#x5229;&#x3001;&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x3001;&#x5e74;&#x6570;&#x3092;&#x5165;&#x308c;&#x308b;&#x3068;&#x3001;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x306e;&#x76ee;&#x5b89;&#x304c;&#x3059;&#x3050;&#x306b;&#x66f4;&#x65b0;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+                                  </section>section>
+                        
+                                  <section class="workspace" aria-label="FIRE&#x9054;&#x6210;&#x306e;&#x8a08;&#x7b97;">
+                                              <form class="input-panel" id="fireForm">
+                                                            <div class="field">
+                                                                            <label for="currentAssets">&#x73fe;&#x5728;&#x8cc7;&#x7523; <span class="unit">&#x5186;</span></label>label>
+                                                                            <input id="currentAssets" name="currentAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="3000000" required aria-describedby="currentAssetsError">
+                                                                            <p class="error" id="currentAssetsError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="monthlyInvestment">&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d; <span class="unit">&#x5186; / &#x6708;</span></label>label>
+                                                                            <input id="monthlyInvestment" name="monthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="monthlyInvestmentError">
+                                                                            <p class="error" id="monthlyInvestmentError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="annualReturn">&#x60f3;&#x5b9a;&#x5e74;&#x5229; <span class="unit">%</span></label>label>
+                                                                            <input id="annualReturn" name="annualReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="annualReturnError">
+                                                                            <p class="error" id="annualReturnError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="targetAssets">&#x76ee;&#x6a19;&#x8cc7;&#x7523; <span class="unit">&#x5186;</span></label>label>
+                                                                            <input id="targetAssets" name="targetAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="50000000" required aria-describedby="targetAssetsError">
+                                                                            <p class="error" id="targetAssetsError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="field">
+                                                                            <label for="years">&#x5e74;&#x6570; <span class="unit">&#x5e74;</span></label>label>
+                                                                            <input id="years" name="years" type="number" inputmode="decimal" min="0" max="100" step="0.5" value="20" required aria-describedby="yearsError">
+                                                                            <p class="error" id="yearsError"></p>
+                                                            </div>div>
+                                              
+                                                            <div class="actions">
+                                                                            <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>button>
+                                                            </div>div>
+                                              </form>form>
+                                  
+                                              <section class="result-panel" aria-live="polite">
+                                                            <div class="hero-result">
+                                                                            <p class="eyebrow">&#x9054;&#x6210;&#x5e74;&#x6570;</p>
+                                                                            <p class="amount" id="achievementYears">0&#x5e74;</p>
+                                                            </div>div>
+                                              
+                                                            <p class="notice" id="fireNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x30a8;&#x30e9;&#x30fc;&#x304c;&#x3042;&#x308b;&#x9805;&#x76ee;&#x306f;&#x8d64;&#x304f;&#x8868;&#x793a;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+                                              
+                                                            <div class="result-grid">
+                                                                            <div class="metric">
+                                                                                              <strong>&#x5c06;&#x6765;&#x8cc7;&#x7523;</strong>
+                                                                                              <span class="accent-blue" id="futureAssets">0&#x5186;</span>
+                                                                                              <small>&#x5165;&#x529b;&#x3057;&#x305f;&#x5e74;&#x6570;&#x5f8c;&#x306e;&#x898b;&#x8fbc;&#x307f;</small>
+                                                                            </div>div>
+                                                            
+                                                                            <div class="metric">
+                                                                                              <strong>&#x76ee;&#x6a19;&#x3068;&#x306e;&#x5dee;&#x984d;</strong>
+                                                                                              <span class="accent-green" id="gapAmount">0&#x5186;</span>
+                                                                                              <small>&#x5c06;&#x6765;&#x8cc7;&#x7523; - &#x76ee;&#x6a19;&#x8cc7;&#x7523;</small>
+                                                                            </div>div>
+                                                            
+                                                                            <div class="metric">
+                                                                                              <strong>&#x7a4d;&#x7acb;&#x7dcf;&#x984d;</strong>
+                                                                                              <span class="accent-amber" id="totalInvestment">0&#x5186;</span>
+                                                                                              <small>&#x73fe;&#x5728;&#x8cc7;&#x7523; + &#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d; &#xd7; &#x6708;&#x6570;</small>
+                                                                            </div>div>
+                                                            </div>div>
+                                              </section>section>
+                                  </section>section>
+                        </section>section>
+                </div>div>
+        </main>
+  
+      <script src="script.js"></script>
   </body>
-</html>
+</html>html>
+</p></small></small></strong></p></p></span></span></p></h2></h1>
+        </main>
+  </body></title>
+    </head>
