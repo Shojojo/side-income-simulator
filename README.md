@@ -1,2 +1,29 @@
+# 副業月収シミュレーター
+
+スマホ対応の静的HTMLサイトです。Vercelではビルドなしで公開できます。
+
+## ファイル構成
+
+- `index.html`: サイト本体
+- `vercel.json`: Vercel公開用設定
+- `.gitignore`: VercelやOSのローカル生成ファイルを除外
+
+## Vercelで公開する
+
+1. このフォルダをGitHubなどのGitリポジトリにpushします。
+2. Vercelで「Add New...」からリポジトリをImportします。
+3. Framework Presetは「Other」のままで公開できます。
+4. Build Commandは不要です。
+5. Output Directoryは未指定、またはルートのままで公開できます。
+
+## Google Analyticsを有効化する
+
+`index.html` の `<head>` 内にある `GA_MEASUREMENT_ID` に、GA4の測定IDを設定してください。
+
+```html
+const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+```
+
+空文字のままならGoogle Analyticsは読み込まれません。
 # side-income-simulator
 副業計算シュミレーター
