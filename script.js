@@ -479,18 +479,18 @@ document.body.innerHTML = `
       </section>
 
       <footer class="site-footer">
-        <nav class="footer-links" aria-label="サイト情報">
-          <a href="#top">トップ</a>
-          <a href="#side-income">副業月収</a>
-          <a href="#ai-hourly">AI副業時給</a>
-          <a href="#tax">税金・青色申告</a>
-          <a href="#fire">FIRE達成</a>
-          <a href="privacy.html">プライバシーポリシー</a>
-          <a href="disclaimer.html">免責事項</a>
-          <a href="contact.html">お問い合わせ</a>
-          <a href="operator.html">運営者情報</a>
+        <nav class="footer-links" aria-label="&#x30b5;&#x30a4;&#x30c8;&#x60c5;&#x5831;">
+          <a href="#top">&#x30c8;&#x30c3;&#x30d7;</a>
+          <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
+          <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
+          <a href="#fire">FIRE&#x9054;&#x6210;</a>
+          <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
+          <a href="disclaimer.html">&#x514d;&#x8cac;&#x4e8b;&#x9805;</a>
+          <a href="contact.html">&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;</a>
+          <a href="operator.html">&#x904b;&#x55b6;&#x8005;&#x60c5;&#x5831;</a>
         </nav>
-        <p>&copy; 資産シミュレーター</p>
+        <p>&copy; &#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</p>
       </footer>
     </div>
   </main>`;
