@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001FIRE\u9054\u6210\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001FIRE\u9054\u6210\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -106,6 +106,7 @@ document.body.innerHTML = `
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
         </nav>
@@ -144,6 +145,18 @@ document.body.innerHTML = `
             <div class="tool-meta">
               <span>&#x8ab2;&#x7a0e;&#x6240;&#x5f97;</span>
               <span>&#x6240;&#x5f97;&#x7a0e;</span>
+              <span>&#x624b;&#x53d6;&#x308a;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#take-home">
+            <p class="eyebrow">Take Home</p>
+            <h2>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x3001;&#x7d4c;&#x8cbb;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x7387;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x7387;&#x3001;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306e;&#x6709;&#x7121;&#x3001;&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x984d;&#x304b;&#x3089;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x6240;&#x5f97;</span>
+              <span>&#x7a0e;&#x984d;</span>
               <span>&#x624b;&#x53d6;&#x308a;</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
@@ -413,6 +426,120 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="take-home" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+        <section class="tool-heading">
+          <h2>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <p>&#x526f;&#x696d;&#x53ce;&#x5165;&#x304b;&#x3089;&#x7d4c;&#x8cbb;&#x30fb;&#x7a0e;&#x91d1;&#x30fb;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x304d;&#x3001;&#x5e74;&#x9593;&#x3068;&#x6708;&#x5e73;&#x5747;&#x306e;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+        </section>
+
+        <section class="workspace" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x306e;&#x8a08;&#x7b97;">
+          <form class="input-panel" id="takeHomeForm">
+            <div class="field">
+              <label for="takeHomeSales">&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a; <span class="unit">&#x5186;</span></label>
+              <input id="takeHomeSales" name="takeHomeSales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="3000000" required aria-describedby="takeHomeSalesError">
+              <p class="error" id="takeHomeSalesError"></p>
+            </div>
+            <div class="field">
+              <label for="takeHomeExpenses">&#x5e74;&#x9593;&#x7d4c;&#x8cbb; <span class="unit">&#x5186;</span></label>
+              <input id="takeHomeExpenses" name="takeHomeExpenses" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="600000" required aria-describedby="takeHomeExpensesError">
+              <p class="error" id="takeHomeExpensesError"></p>
+            </div>
+            <div class="field">
+              <label for="takeHomeIncomeTaxRate">&#x6240;&#x5f97;&#x7a0e;&#x7387; <span class="unit">%</span></label>
+              <input id="takeHomeIncomeTaxRate" name="takeHomeIncomeTaxRate" type="number" inputmode="decimal" min="0" max="45" step="0.1" value="10" required aria-describedby="takeHomeIncomeTaxRateError">
+              <p class="error" id="takeHomeIncomeTaxRateError"></p>
+            </div>
+            <div class="field">
+              <label for="takeHomeResidentTaxRate">&#x4f4f;&#x6c11;&#x7a0e;&#x7387; <span class="unit">%</span></label>
+              <input id="takeHomeResidentTaxRate" name="takeHomeResidentTaxRate" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="10" required aria-describedby="takeHomeResidentTaxRateError">
+              <p class="error" id="takeHomeResidentTaxRateError"></p>
+            </div>
+            <label class="check-field" for="hasSocialInsurance">
+              <input id="hasSocialInsurance" name="hasSocialInsurance" type="checkbox">
+              <span>&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x3042;&#x308a;&#x3067;&#x8a66;&#x7b97;&#x3059;&#x308b;</span>
+            </label>
+            <div class="field">
+              <label for="takeHomeBlueDeduction">&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x984d; <span class="unit">&#x5186;</span></label>
+              <input id="takeHomeBlueDeduction" name="takeHomeBlueDeduction" type="number" inputmode="numeric" min="0" max="650000" step="10000" value="650000" required aria-describedby="takeHomeBlueDeductionError">
+              <p class="error" id="takeHomeBlueDeductionError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">&#x5e74;&#x9593;&#x624b;&#x53d6;&#x308a;&#x984d;</p>
+              <p class="amount" id="finalTakeHome">0&#x5186;</p>
+            </div>
+            <p class="notice" id="takeHomeNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x30a8;&#x30e9;&#x30fc;&#x304c;&#x3042;&#x308b;&#x9805;&#x76ee;&#x306f;&#x8d64;&#x304f;&#x8868;&#x793a;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>&#x6240;&#x5f97;&#x91d1;&#x984d;</strong>
+                <span class="accent-blue" id="takeHomeIncomeAmount">0&#x5186;</span>
+                <small>&#x58f2;&#x4e0a; - &#x7d4c;&#x8cbb;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x8ab2;&#x7a0e;&#x6240;&#x5f97;</strong>
+                <span class="accent-blue" id="takeHomeTaxableIncome">0&#x5186;</span>
+                <small>&#x6240;&#x5f97;&#x91d1;&#x984d; - &#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x6240;&#x5f97;&#x7a0e;</strong>
+                <span class="accent-amber" id="takeHomeIncomeTax">0&#x5186;</span>
+                <small>&#x8ab2;&#x7a0e;&#x6240;&#x5f97; &#xd7; &#x6240;&#x5f97;&#x7a0e;&#x7387;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x4f4f;&#x6c11;&#x7a0e;</strong>
+                <span class="accent-amber" id="takeHomeResidentTax">0&#x5186;</span>
+                <small>&#x8ab2;&#x7a0e;&#x6240;&#x5f97; &#xd7; &#x4f4f;&#x6c11;&#x7a0e;&#x7387;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x6982;&#x7b97;&#x7a0e;&#x984d;&#x5408;&#x8a08;</strong>
+                <span class="accent-amber" id="takeHomeTotalTax">0&#x5186;</span>
+                <small>&#x6240;&#x5f97;&#x7a0e; + &#x4f4f;&#x6c11;&#x7a0e;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x6708;&#x5e73;&#x5747;&#x624b;&#x53d6;&#x308a;&#x984d;</strong>
+                <span class="accent-green" id="monthlyFinalTakeHome">0&#x5186;</span>
+                <small id="socialInsuranceDetail">&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306f;&#x672a;&#x53cd;&#x6620;</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>&#x624b;&#x53d6;&#x308a;&#x984d;&#x306f;&#x3069;&#x3046;&#x8a08;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x304b;&#xFF1F;</summary>
+              <p>&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x304b;&#x3089;&#x5e74;&#x9593;&#x7d4c;&#x8cbb;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x3042;&#x308a;&#x306e;&#x5834;&#x5408;&#x306f;&#x305d;&#x306e;&#x6982;&#x7b97;&#x984d;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x3044;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306f;&#x3044;&#x304f;&#x3089;&#x3067;&#x8a66;&#x7b97;&#x3055;&#x308c;&#x307e;&#x3059;&#x304b;&#xFF1F;</summary>
+              <p>&#x7c21;&#x6613;&#x8a66;&#x7b97;&#x3068;&#x3057;&#x3066;&#x6240;&#x5f97;&#x91d1;&#x984d;&#x306e;15%&#x3092;&#x624b;&#x53d6;&#x308a;&#x304b;&#x3089;&#x63a7;&#x9664;&#x3057;&#x307e;&#x3059;&#x3002;&#x5b9f;&#x969b;&#x306e;&#x91d1;&#x984d;&#x306f;&#x52a0;&#x5165;&#x72b6;&#x6cc1;&#x3084;&#x81ea;&#x6cbb;&#x4f53;&#x306b;&#x3088;&#x3063;&#x3066;&#x5909;&#x308f;&#x308a;&#x307e;&#x3059;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x3068;&#x306e;&#x9055;&#x3044;&#x306f;&#x4f55;&#x3067;&#x3059;&#x304b;&#xFF1F;</summary>
+              <p>&#x3053;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x306f;&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x898b;&#x308b;&#x305f;&#x3081;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;&#x7a0e;&#x984d;&#x306e;&#x5185;&#x8a33;&#x3092;&#x91cd;&#x8996;&#x3059;&#x308b;&#x5834;&#x5408;&#x306f;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30c4;&#x30fc;&#x30eb;&#x3082;&#x4f75;&#x7528;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
+          <section class="tool-heading">
+            <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
+            <p>&#x526f;&#x696d;&#x306e;&#x58f2;&#x4e0a;&#x3001;&#x7a0e;&#x91d1;&#x3001;&#x6642;&#x7d66;&#x3092;&#x5225;&#x89d2;&#x5ea6;&#x304b;&#x3089;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
+          </section>
+          <div class="related-links">
+            <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#tax">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="fire" aria-label="FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -483,6 +610,7 @@ document.body.innerHTML = `
           <a href="#top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
@@ -514,6 +642,11 @@ const fieldRules = {
   incomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
   residentTaxRate: { label: "\u4f4f\u6c11\u7a0e\u7387", min: 0, max: 20, unit: "%", integer: false },
   blueDeduction: { label: "\u9752\u8272\u7533\u544a\u63a7\u9664\u984d", min: 0, max: 650000, unit: "\u5186", integer: false },
+  takeHomeSales: { label: "\u5e74\u9593\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  takeHomeExpenses: { label: "\u5e74\u9593\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  takeHomeIncomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
+  takeHomeResidentTaxRate: { label: "\u4f4f\u6c11\u7a0e\u7387", min: 0, max: 20, unit: "%", integer: false },
+  takeHomeBlueDeduction: { label: "\u9752\u8272\u7533\u544a\u63a7\u9664\u984d", min: 0, max: 650000, unit: "\u5186", integer: false },
   currentAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   monthlyInvestment: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   annualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
@@ -660,6 +793,53 @@ function renderTax() {
   setText("takeHomeDetail", yen.format(takeHome));
 }
 
+function renderTakeHome() {
+  const values = {
+    takeHomeSales: getFieldValue("takeHomeSales"),
+    takeHomeExpenses: getFieldValue("takeHomeExpenses"),
+    takeHomeIncomeTaxRate: getFieldValue("takeHomeIncomeTaxRate"),
+    takeHomeResidentTaxRate: getFieldValue("takeHomeResidentTaxRate"),
+    takeHomeBlueDeduction: getFieldValue("takeHomeBlueDeduction"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#takeHomeNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("finalTakeHome", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("takeHomeIncomeAmount", yen.format(0));
+    setText("takeHomeTaxableIncome", yen.format(0));
+    setText("takeHomeIncomeTax", yen.format(0));
+    setText("takeHomeResidentTax", yen.format(0));
+    setText("takeHomeTotalTax", yen.format(0));
+    setText("monthlyFinalTakeHome", yen.format(0));
+    document.querySelector("#socialInsuranceDetail").textContent = "\u793e\u4f1a\u4fdd\u967a\u6599\u306f\u672a\u53cd\u6620";
+    return;
+  }
+
+  const sales = values.takeHomeSales.value;
+  const expenses = values.takeHomeExpenses.value;
+  const incomeAmount = Math.max(sales - expenses, 0);
+  const taxableIncome = Math.max(incomeAmount - values.takeHomeBlueDeduction.value, 0);
+  const incomeTax = taxableIncome * (values.takeHomeIncomeTaxRate.value / 100);
+  const residentTax = taxableIncome * (values.takeHomeResidentTaxRate.value / 100);
+  const totalTax = incomeTax + residentTax;
+  const hasSocialInsurance = document.querySelector("#hasSocialInsurance").checked;
+  const socialInsurance = hasSocialInsurance ? incomeAmount * 0.15 : 0;
+  const finalTakeHome = sales - expenses - totalTax - socialInsurance;
+  const monthlyFinalTakeHome = finalTakeHome / 12;
+
+  setText("finalTakeHome", yen.format(finalTakeHome));
+  setText("takeHomeIncomeAmount", yen.format(incomeAmount));
+  setText("takeHomeTaxableIncome", yen.format(taxableIncome));
+  setText("takeHomeIncomeTax", yen.format(incomeTax));
+  setText("takeHomeResidentTax", yen.format(residentTax));
+  setText("takeHomeTotalTax", yen.format(totalTax));
+  setText("monthlyFinalTakeHome", yen.format(monthlyFinalTakeHome));
+  document.querySelector("#socialInsuranceDetail").textContent = hasSocialInsurance
+    ? `\u793e\u4f1a\u4fdd\u967a\u6599\u306e\u6982\u7b97 ${yen.format(socialInsurance)} \u3092\u63a7\u9664`
+    : "\u793e\u4f1a\u4fdd\u967a\u6599\u306f\u672a\u53cd\u6620";
+}
+
 function calculateFutureAssets(currentAssets, monthlyInvestment, annualReturn, months) {
   const monthlyReturn = annualReturn / 100 / 12;
   if (monthlyReturn === 0) {
@@ -744,7 +924,7 @@ function renderFire() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "tax" || route === "fire") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "fire") {
     return route;
   }
   return "top";
@@ -772,6 +952,10 @@ document.querySelector("#taxForm").addEventListener("input", renderTax);
 document.querySelector("#taxForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderTax);
 });
+document.querySelector("#takeHomeForm").addEventListener("input", renderTakeHome);
+document.querySelector("#takeHomeForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderTakeHome);
+});
 document.querySelector("#fireForm").addEventListener("input", renderFire);
 document.querySelector("#fireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFire);
@@ -781,5 +965,6 @@ window.addEventListener("hashchange", renderRoute);
 renderSideIncome();
 renderAiHourly();
 renderTax();
+renderTakeHome();
 renderFire();
 renderRoute();
