@@ -491,6 +491,30 @@ button:active {
   outline-offset: 2px;
 }
 
+.related-links {
+  display: grid;
+  gap: 10px;
+}
+
+.related-links a {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fbfcfe;
+  font-weight: 800;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.related-links a:focus-visible {
+  outline: 4px solid rgba(36, 87, 197, 0.16);
+  outline-offset: 2px;
+}
+
 .legal-section,
 .article-section {
   display: grid;
@@ -568,6 +592,10 @@ button:active {
 
   .article-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .related-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .legal-panel,
