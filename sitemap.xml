@@ -2,98 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://side-income-simulator.vercel.app/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/side-income</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/side-income.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/ai-hourly</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/ai-hourly.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/ai-sidejob</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://side-income-simulator.vercel.app/take-home.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/take-home</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/tax.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/tax</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/nisa.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/nisa</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/ideco.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/fire</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://side-income-simulator.vercel.app/fire.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/article-side-income</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://side-income-simulator.vercel.app/retirement.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/article-fire-strategy</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://side-income-simulator.vercel.app/article-side-income.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/article-side-tax</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://side-income-simulator.vercel.app/article-fire-strategy.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/article-ai-side-business</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://side-income-simulator.vercel.app/article-side-tax.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/privacy</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://side-income-simulator.vercel.app/article-ai-side-business.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/disclaimer</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://side-income-simulator.vercel.app/privacy.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/contact</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://side-income-simulator.vercel.app/disclaimer.html</loc>
   </url>
   <url>
-    <loc>https://side-income-simulator.vercel.app/operator</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://side-income-simulator.vercel.app/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://side-income-simulator.vercel.app/operator.html</loc>
   </url>
 </urlset>
