@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -94,6 +94,10 @@ const routeSeo = {
   education: {
     title: "\u6559\u80b2\u8cbb\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u5b50\u3069\u3082\u306e\u4eba\u6570\u3001\u9032\u5b66\u30b3\u30fc\u30b9\u3001\u5927\u5b66\u9032\u5b66\u6709\u7121\u3001\u73fe\u5728\u306e\u8caf\u84c4\u984d\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u304b\u3089\u5c06\u6765\u5fc5\u8981\u306a\u6559\u80b2\u8cbb\u3068\u4e0d\u8db3\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "education-insurance": {
+    title: "\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u7a4d\u7acb\u5e74\u6570\u3001\u60f3\u5b9a\u5229\u56de\u308a\u3001\u5b66\u8cc7\u4fdd\u967a\u8fd4\u623b\u7387\u3001\u5b50\u3069\u3082\u306e\u5e74\u9f62\u3001\u5927\u5b66\u9032\u5b66\u4e88\u5b9a\u5e74\u9f62\u304b\u3089\u5b66\u8cc7\u4fdd\u967a\u3068\u901a\u5e38\u7a4d\u7acb\u6295\u8cc7\u3092\u6bd4\u8f03\u3067\u304d\u307e\u3059\u3002",
   },
   mortgage: {
     title: "\u4f4f\u5b85\u30ed\u30fc\u30f3\u8fd4\u6e08\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -185,6 +189,7 @@ document.body.innerHTML = `
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
+          <a href="#education-insurance" data-route="education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
           <a href="#mortgage" data-route="mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
         </nav>
       </header>
@@ -379,6 +384,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#education-insurance">
+            <p class="eyebrow">Education Insurance</p>
+            <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x60f3;&#x5b9a;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x6559;&#x80b2;&#x8cbb;&#x4e0d;&#x8db3;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x8fd4;&#x623b;&#x7387;</span>
+              <span>&#x6295;&#x8cc7;&#x6bd4;&#x8f03;</span>
+              <span>&#x6559;&#x80b2;&#x8cbb;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#mortgage">
             <p class="eyebrow">Mortgage</p>
             <h2>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -409,6 +426,7 @@ document.body.innerHTML = `
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#education-insurance"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
             <li><a href="#mortgage"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
           </ol>
         </section>
@@ -1659,6 +1677,116 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="education-insurance" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+        <section class="tool-heading">
+          <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <p>&#x7a4d;&#x7acb;&#x578b;&#x306e;&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x5927;&#x5b66;&#x9032;&#x5b66;&#x6642;&#x306b;&#x53d7;&#x3051;&#x53d6;&#x308c;&#x308b;&#x91d1;&#x984d;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+        </section>
+
+        <section class="workspace" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x6bd4;&#x8f03;">
+          <form class="input-panel" id="educationInsuranceForm">
+            <div class="field">
+              <label for="educationInsuranceMonthly">&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d; <span class="unit">&#x5186; / &#x6708;</span></label>
+              <input id="educationInsuranceMonthly" name="educationInsuranceMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="30000" required aria-describedby="educationInsuranceMonthlyError">
+              <p class="error" id="educationInsuranceMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="educationInsuranceYears">&#x7a4d;&#x7acb;&#x5e74;&#x6570; <span class="unit">&#x5e74;</span></label>
+              <input id="educationInsuranceYears" name="educationInsuranceYears" type="number" inputmode="numeric" min="1" max="30" step="1" value="15" required aria-describedby="educationInsuranceYearsError">
+              <p class="error" id="educationInsuranceYearsError"></p>
+            </div>
+            <div class="field">
+              <label for="educationInsuranceReturn">&#x60f3;&#x5b9a;&#x5229;&#x56de;&#x308a; <span class="unit">%</span></label>
+              <input id="educationInsuranceReturn" name="educationInsuranceReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="3" required aria-describedby="educationInsuranceReturnError">
+              <p class="error" id="educationInsuranceReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="educationInsuranceRefundRate">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x8fd4;&#x623b;&#x7387; <span class="unit">%</span></label>
+              <input id="educationInsuranceRefundRate" name="educationInsuranceRefundRate" type="number" inputmode="decimal" min="0" max="200" step="0.1" value="105" required aria-describedby="educationInsuranceRefundRateError">
+              <p class="error" id="educationInsuranceRefundRateError"></p>
+            </div>
+            <div class="field">
+              <label for="childAge">&#x5b50;&#x3069;&#x3082;&#x306e;&#x5e74;&#x9f62; <span class="unit">&#x6b73;</span></label>
+              <input id="childAge" name="childAge" type="number" inputmode="numeric" min="0" max="30" step="1" value="3" required aria-describedby="childAgeError">
+              <p class="error" id="childAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="universityStartAge">&#x5927;&#x5b66;&#x9032;&#x5b66;&#x4e88;&#x5b9a;&#x5e74;&#x9f62; <span class="unit">&#x6b73;</span></label>
+              <input id="universityStartAge" name="universityStartAge" type="number" inputmode="numeric" min="1" max="40" step="1" value="18" required aria-describedby="universityStartAgeError">
+              <p class="error" id="universityStartAgeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">&#x901a;&#x5e38;&#x6295;&#x8cc7;&#x306e;&#x60f3;&#x5b9a;&#x8cc7;&#x7523;&#x984d;</p>
+              <p class="amount" id="educationInvestmentAssets">0&#x5186;</p>
+            </div>
+            <p class="notice" id="educationInsuranceNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x5927;&#x5b66;&#x9032;&#x5b66;&#x4e88;&#x5b9a;&#x5e74;&#x9f62;&#x306f\u5b50\u3069\u3082\u306e\u5e74\u9f62\u3088\u308a\u5927\u304d\u304f\u3057\u3066\u304f\u3060\u3055\u3044\u3002;</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>&#x7a4d;&#x7acb;&#x7dcf;&#x984d;</strong>
+                <span class="accent-blue" id="educationInsuranceTotalPaid">0&#x5186;</span>
+                <small>&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d; x &#x7a4d;&#x7acb;&#x5e74;&#x6570;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x53d7;&#x53d6;&#x984d;</strong>
+                <span class="accent-green" id="educationInsurancePayout">0&#x5186;</span>
+                <small>&#x7a4d;&#x7acb;&#x7dcf;&#x984d; x &#x8fd4;&#x623b;&#x7387;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x5dee;&#x984d;&#x6bd4;&#x8f03;</strong>
+                <span class="accent-amber" id="educationInsuranceDifference">0&#x5186;</span>
+                <small>&#x901a;&#x5e38;&#x6295;&#x8cc7; - &#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x53d7;&#x53d6;&#x984d;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x6559;&#x80b2;&#x8cbb;&#x4e0d;&#x8db3;&#x984d;</strong>
+                <span class="accent-amber" id="educationInsuranceShortage">0&#x5186;</span>
+                <small>&#x5927;&#x5b66;&#x8cbb;&#x7528;500&#x4e07;&#x5186;&#x3068;&#x306e;&#x5dee;&#x984d;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x3078;&#x306e;&#x5f71;&#x97ff;</strong>
+                <span class="accent-green text-metric" id="educationInsuranceRetirementImpact">0&#x5186;</span>
+                <small>&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x8001;&#x5f8c;&#x6e96;&#x5099;&#x304b;&#x3089;&#x88dc;&#x3046\u5834\u5408\u306e\u76ee\u5b89;</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x8fd4;&#x623b;&#x7387;&#x3068;&#x306f\u4f55\u3067\u3059\u304b&#xff1f;</summary>
+              <p>&#x652f;&#x6255;&#x3063;&#x305f;&#x4fdd;&#x967a;&#x6599;&#x7dcf;&#x984d;&#x306b\u5bfe\u3057\u3066\u3001\u5c06\u6765\u53d7\u3051\u53d6\u308c\u308b\u91d1\u984d\u304c\u4f55%&#x304b\u3092\u8868\u3059\u76ee\u5b89\u3067\u3059\u3002;100%&#x3092\u8d85\u3048\u308b\u3068\u652f\u6255\u984d\u3088\u308a\u53d7\u53d6\u984d\u304c\u591a\u3044\u3053\u3068\u3092\u610f\u5473\u3057\u307e\u3059\u3002;</p>
+            </details>
+            <details>
+              <summary>&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306f\u5143\u672c\u4fdd\u8a3c\u3067\u3059\u304b&#xff1f;</summary>
+              <p>&#x3044\u3044\u3048\u3002;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306f\u5229\u56de\u308a\u304c\u671f\u5f85\u3067\u304d\u308b\u4e00\u65b9\u3067\u3001\u5143\u672c\u5272\u308c\u306e\u30ea\u30b9\u30af\u3082\u3042\u308a\u307e\u3059\u3002;&#x5b66\u8cc7\u4fdd\u967a\u3068\u6295\u8cc7\u306f\u3001\u5b89\u5b9a\u6027\u3068\u5897\u3084\u3059\u529b\u306e\u30d0\u30e9\u30f3\u30b9\u3067\u6bd4\u8f03\u3059\u308b\u3068\u5224\u65ad\u3057\u3084\u3059\u304f\u306a\u308a\u307e\u3059\u3002;</p>
+            </details>
+            <details>
+              <summary>&#x6559;&#x80b2;&#x8cbb;&#x4e0d;&#x8db3;&#x984d;&#x306f\u4f55\u3092\u57fa\u6e96\u306b\u3057\u3066\u3044\u307e\u3059\u304b&#xff1f;</summary>
+              <p>&#x5927;&#x5b66\u8cbb\u7528\u306e\u76ee\u5b89\u3068\u3057\u3066500&#x4e07;&#x5186\u3092\u57fa\u6e96\u306b\u3057\u3001\u5b66\u8cc7\u4fdd\u967a\u3068\u901a\u5e38\u6295\u8cc7\u306e\u3046\u3061\u91d1\u984d\u304c\u5927\u304d\u3044\u65b9\u3067\u3069\u308c\u304f\u3089\u8db3\u308a\u306a\u3044\u304b\u3092\u8868\u793a\u3057\u3066\u3044\u307e\u3059\u3002;</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
+          <section class="tool-heading">
+            <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
+            <p>&#x5b66;&#x8cc7;&#x4fdd;&#x967a\u3068\u7a4d\u7acb\u6295\u8cc7\u306e\u6bd4\u8f03\u306f\u3001\u6559\u80b2\u8cbb\u5168\u4f53\u3068\u8001\u5f8c\u8cc7\u91d1\u306e\u8a08\u753b\u3068\u5408\u308f\u305b\u3066\u898b\u308b\u3068\u30d0\u30e9\u30f3\u30b9\u3092\u53d6\u308a\u3084\u3059\u304f\u306a\u308a\u307e\u3059\u3002;</p>
+          </section>
+          <div class="related-links">
+            <a href="#education">&#x6559;&#x80b2;&#x8cbb;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="dividend" aria-label="&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -2023,6 +2151,7 @@ document.body.innerHTML = `
           <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
+          <a href="#education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
           <a href="#mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
           <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
           <a href="disclaimer.html">&#x514d;&#x8cac;&#x4e8b;&#x9805;</a>
@@ -2100,6 +2229,12 @@ const fieldRules = {
   educationSavings: { label: "\u73fe\u5728\u306e\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   educationMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   educationReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  educationInsuranceMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  educationInsuranceYears: { label: "\u7a4d\u7acb\u5e74\u6570", min: 1, max: 30, unit: "\u5e74", integer: true },
+  educationInsuranceReturn: { label: "\u60f3\u5b9a\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
+  educationInsuranceRefundRate: { label: "\u5b66\u8cc7\u4fdd\u967a\u8fd4\u623b\u7387", min: 0, max: 200, unit: "%", integer: false },
+  childAge: { label: "\u5b50\u3069\u3082\u306e\u5e74\u9f62", min: 0, max: 30, unit: "\u6b73", integer: true },
+  universityStartAge: { label: "\u5927\u5b66\u9032\u5b66\u4e88\u5b9a\u5e74\u9f62", min: 1, max: 40, unit: "\u6b73", integer: true },
   dividendInitial: { label: "\u521d\u671f\u6295\u8cc7\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
@@ -2729,6 +2864,62 @@ function renderEducation() {
   setText("retirementImpact", retirementImpact);
 }
 
+function renderEducationInsurance() {
+  const values = {
+    educationInsuranceMonthly: getFieldValue("educationInsuranceMonthly"),
+    educationInsuranceYears: getFieldValue("educationInsuranceYears"),
+    educationInsuranceReturn: getFieldValue("educationInsuranceReturn"),
+    educationInsuranceRefundRate: getFieldValue("educationInsuranceRefundRate"),
+    childAge: getFieldValue("childAge"),
+    universityStartAge: getFieldValue("universityStartAge"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.universityStartAge.valid && values.childAge.valid && values.universityStartAge.value <= values.childAge.value) {
+    const input = document.querySelector("#universityStartAge");
+    const error = document.querySelector("#universityStartAgeError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "\u5927\u5b66\u9032\u5b66\u4e88\u5b9a\u5e74\u9f62\u306f\u5b50\u3069\u3082\u306e\u5e74\u9f62\u3088\u308a\u5927\u304d\u304f\u3057\u3066\u304f\u3060\u3055\u3044\u3002";
+    hasError = true;
+  }
+
+  document.querySelector("#educationInsuranceNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("educationInvestmentAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("educationInsuranceTotalPaid", yen.format(0));
+    setText("educationInsurancePayout", yen.format(0));
+    setText("educationInsuranceDifference", yen.format(0));
+    setText("educationInsuranceShortage", yen.format(0));
+    setText("educationInsuranceRetirementImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthsToUniversity = (values.universityStartAge.value - values.childAge.value) * 12;
+  const savingMonths = Math.min(values.educationInsuranceYears.value * 12, monthsToUniversity);
+  const totalPaid = values.educationInsuranceMonthly.value * savingMonths;
+  const insurancePayout = totalPaid * (values.educationInsuranceRefundRate.value / 100);
+  const investmentAssets = calculateFutureAssets(
+    0,
+    values.educationInsuranceMonthly.value,
+    values.educationInsuranceReturn.value,
+    savingMonths,
+  );
+  const difference = investmentAssets - insurancePayout;
+  const universityCost = 5000000;
+  const preparedAssets = Math.max(insurancePayout, investmentAssets);
+  const shortage = Math.max(universityCost - preparedAssets, 0);
+  const retirementImpact = shortage > 0
+    ? `${yen.format(shortage)}\u3092\u8001\u5f8c\u8cc7\u91d1\u304b\u3089\u88dc\u3046\u53ef\u80fd\u6027`
+    : "\u6559\u80b2\u8cbb\u4e0d\u8db3\u306f0\u5186\u76ee\u5b89";
+
+  setText("educationInvestmentAssets", yen.format(investmentAssets));
+  setText("educationInsuranceTotalPaid", yen.format(totalPaid));
+  setText("educationInsurancePayout", yen.format(insurancePayout));
+  setText("educationInsuranceDifference", yen.format(difference));
+  setText("educationInsuranceShortage", yen.format(shortage));
+  setText("educationInsuranceRetirementImpact", retirementImpact);
+}
+
 function renderDividend() {
   const values = {
     dividendInitial: getFieldValue("dividendInitial"),
@@ -2968,7 +3159,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -3031,6 +3222,10 @@ document.querySelector("#educationForm").addEventListener("input", renderEducati
 document.querySelector("#educationForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEducation);
 });
+document.querySelector("#educationInsuranceForm").addEventListener("input", renderEducationInsurance);
+document.querySelector("#educationInsuranceForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderEducationInsurance);
+});
 document.querySelector("#dividendForm").addEventListener("input", renderDividend);
 document.querySelector("#dividendForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividend);
@@ -3056,6 +3251,7 @@ renderIdeco();
 renderFire();
 renderRetirement();
 renderEducation();
+renderEducationInsurance();
 renderDividend();
 renderSideFire();
 renderMortgage();
