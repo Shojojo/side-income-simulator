@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -82,6 +82,10 @@ const routeSeo = {
   dividend: {
     title: "\u914d\u5f53\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d\u3001\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a\u3001\u904b\u7528\u5e74\u6570\u3001\u914d\u5f53\u518d\u6295\u8cc7\u6709\u7121\u304b\u3089\u5e74\u9593\u914d\u5f53\u91d1\u3001\u7d2f\u8a08\u914d\u5f53\u91d1\u3001\u6700\u7d42\u8cc7\u7523\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "side-fire": {
+    title: "\u30b5\u30a4\u30c9FIRE\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u73fe\u5728\u306e\u5e74\u9f62\u3001FIRE\u76ee\u6a19\u5e74\u9f62\u3001\u73fe\u5728\u8cc7\u7523\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u6bce\u6708\u751f\u6d3b\u8cbb\u3001\u526f\u696d\u6708\u53ce\u3001\u914d\u5f53\u53ce\u5165\u304b\u3089\u30b5\u30a4\u30c9FIRE\u9054\u6210\u53ef\u80fd\u6027\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
   retirement: {
     title: "\u8001\u5f8c\u8cc7\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -178,6 +182,7 @@ document.body.innerHTML = `
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
+          <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#mortgage" data-route="mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
@@ -329,6 +334,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#side-fire">
+            <p class="eyebrow">Side FIRE</p>
+            <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x751f;&#x6d3b;&#x8cbb;&#x3001;&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x8003;&#x616e;&#x3057;&#x3066;&#x3001;&#x5fc5;&#x8981;&#x8cc7;&#x7523;&#x984d;&#x3068;&#x30b5;&#x30a4;&#x30c9;FIRE&#x9054;&#x6210;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x5fc5;&#x8981;&#x8cc7;&#x7523;</span>
+              <span>&#x9054;&#x6210;&#x4e88;&#x60f3;</span>
+              <span>&#x526f;&#x696d;&#x52b9;&#x679c;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           </div>
         </section>
 
@@ -390,6 +407,7 @@ document.body.innerHTML = `
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#mortgage"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
           </ol>
@@ -1745,6 +1763,131 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="side-fire" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+        <section class="tool-heading">
+          <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <p>&#x751f;&#x6d3b;&#x8cbb;&#x3001;&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3001;&#x6295;&#x8cc7;&#x53ce;&#x76ca;&#x304b;&#x3089;&#x3001;&#x30b5;&#x30a4;&#x30c9;FIRE&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3068;&#x5fc5;&#x8981;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+        </section>
+
+        <section class="workspace" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x306e;&#x8a08;&#x7b97;">
+          <form class="input-panel" id="sideFireForm">
+            <div class="field">
+              <label for="sideFireCurrentAge">&#x73fe;&#x5728;&#x306e;&#x5e74;&#x9f62; <span class="unit">&#x6b73;</span></label>
+              <input id="sideFireCurrentAge" name="sideFireCurrentAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="35" required aria-describedby="sideFireCurrentAgeError">
+              <p class="error" id="sideFireCurrentAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireTargetAge">FIRE&#x76ee;&#x6a19;&#x5e74;&#x9f62; <span class="unit">&#x6b73;</span></label>
+              <input id="sideFireTargetAge" name="sideFireTargetAge" type="number" inputmode="numeric" min="1" max="100" step="1" value="50" required aria-describedby="sideFireTargetAgeError">
+              <p class="error" id="sideFireTargetAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireAssets">&#x73fe;&#x5728;&#x8cc7;&#x7523; <span class="unit">&#x5186;</span></label>
+              <input id="sideFireAssets" name="sideFireAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="5000000" required aria-describedby="sideFireAssetsError">
+              <p class="error" id="sideFireAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireMonthly">&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d; <span class="unit">&#x5186; / &#x6708;</span></label>
+              <input id="sideFireMonthly" name="sideFireMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="80000" required aria-describedby="sideFireMonthlyError">
+              <p class="error" id="sideFireMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireReturn">&#x60f3;&#x5b9a;&#x5e74;&#x5229; <span class="unit">%</span></label>
+              <input id="sideFireReturn" name="sideFireReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="sideFireReturnError">
+              <p class="error" id="sideFireReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireLivingCost">&#x6bce;&#x6708;&#x751f;&#x6d3b;&#x8cbb; <span class="unit">&#x5186; / &#x6708;</span></label>
+              <input id="sideFireLivingCost" name="sideFireLivingCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="250000" required aria-describedby="sideFireLivingCostError">
+              <p class="error" id="sideFireLivingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireSideIncome">&#x526f;&#x696d;&#x6708;&#x53ce; <span class="unit">&#x5186; / &#x6708;</span></label>
+              <input id="sideFireSideIncome" name="sideFireSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="80000" required aria-describedby="sideFireSideIncomeError">
+              <p class="error" id="sideFireSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="sideFireDividendIncome">&#x914d;&#x5f53;&#x53ce;&#x5165; <span class="unit">&#x5186; / &#x6708;</span></label>
+              <input id="sideFireDividendIncome" name="sideFireDividendIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="30000" required aria-describedby="sideFireDividendIncomeError">
+              <p class="error" id="sideFireDividendIncomeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">FIRE&#x9054;&#x6210;&#x4e88;&#x60f3;&#x5e74;</p>
+              <p class="amount" id="sideFireAchieveYear">0&#x5e74;</p>
+            </div>
+            <p class="notice" id="sideFireNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;FIRE&#x76ee;&#x6a19;&#x5e74;&#x9f62;&#x306f;&#x73fe;&#x5728;&#x306e;&#x5e74;&#x9f62;&#x3088;&#x308a;&#x5927;&#x304d;&#x304f;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>&#x5fc5;&#x8981;&#x8cc7;&#x7523;&#x984d;</strong>
+                <span class="accent-blue" id="sideFireRequiredAssets">0&#x5186;</span>
+                <small>&#x526f;&#x696d;&#x30fb;&#x914d;&#x5f53;&#x5f8c;&#x306e;&#x4e0d;&#x8db3;&#x751f;&#x6d3b;&#x8cbb; x 25&#x5e74;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x4e0d;&#x8db3;&#x984d;</strong>
+                <span class="accent-amber" id="sideFireShortage">0&#x5186;</span>
+                <small>&#x76ee;&#x6a19;&#x5e74;&#x9f62;&#x6642;&#x70b9;&#x306e;&#x4e88;&#x60f3;&#x8cc7;&#x7523;&#x3068;&#x306e;&#x5dee;&#x984d;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x6bce;&#x6708;&#x5fc5;&#x8981;&#x7a4d;&#x7acb;&#x984d;</strong>
+                <span class="accent-green" id="sideFireRequiredMonthly">0&#x5186;</span>
+                <small>&#x76ee;&#x6a19;&#x5e74;&#x9f62;&#x307e;&#x3067;&#x306b;&#x5fc5;&#x8981;&#x306a;&#x6708;&#x984d;&#x76ee;&#x5b89;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x526f;&#x696d;&#x53ce;&#x5165;&#x306b;&#x3088;&#x308b;&#x77ed;&#x7e2e;&#x5e74;&#x6570;</strong>
+                <span class="accent-blue" id="sideFireSideIncomeEffect">0&#x5e74;</span>
+                <small>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3092;&#x53cd;&#x6620;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x9054;&#x6210;&#x5e74;&#x6570;&#x6539;&#x5584;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x914d;&#x5f53;&#x53ce;&#x5165;&#x306b;&#x3088;&#x308b;&#x6539;&#x5584;&#x52b9;&#x679c;</strong>
+                <span class="accent-green text-metric" id="sideFireDividendEffect">0&#x5186;</span>
+                <small>&#x5fc5;&#x8981;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x3069;&#x308c;&#x304f;&#x3089;&#x4e0b;&#x3052;&#x308b;&#x304b;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x3068;&#x306e;&#x6bd4;&#x8f03;</strong>
+                <span class="accent-amber text-metric" id="sideFireRetirementComparison">0&#x5186;</span>
+                <small>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;3,000&#x4e07;&#x5186;&#x3068;&#x306e;&#x6bd4;&#x8f03;</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>&#x30b5;&#x30a4;&#x30c9;FIRE&#x3068;&#x901a;&#x5e38;&#x306e;FIRE&#x306e;&#x9055;&#x3044;&#x306f;&#x4f55;&#x3067;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x901a;&#x5e38;&#x306e;FIRE&#x306f;&#x751f;&#x6d3b;&#x8cbb;&#x306e;&#x5927;&#x90e8;&#x5206;&#x3092;&#x8cc7;&#x7523;&#x53ce;&#x5165;&#x3067;&#x8cc4;&#x3046;&#x8003;&#x3048;&#x65b9;&#x3067;&#x3059;&#x3002;&#x30b5;&#x30a4;&#x30c9;FIRE&#x306f;&#x526f;&#x696d;&#x3084;&#x5c0f;&#x3055;&#x306a;&#x52b4;&#x50cd;&#x53ce;&#x5165;&#x3092;&#x6b8b;&#x3059;&#x305f;&#x3081;&#x3001;&#x5fc5;&#x8981;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x6291;&#x3048;&#x3084;&#x3059;&#x3044;&#x306e;&#x304c;&#x7279;&#x5fb4;&#x3067;&#x3059;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x526f;&#x696d;&#x6708;&#x53ce;&#x306f;&#x5168;&#x90e8;&#x751f;&#x6d3b;&#x8cbb;&#x306b;&#x4f7f;&#x3046;&#x524d;&#x63d0;&#x3067;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x3053;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x306f;&#x3001;&#x526f;&#x696d;&#x6708;&#x53ce;&#x3092;&#x751f;&#x6d3b;&#x8cbb;&#x306e;&#x88dc;&#x586b;&#x3068;&#x3057;&#x3066;&#x8a08;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;&#x5b9f;&#x969b;&#x306b;&#x306f;&#x7a0e;&#x91d1;&#x3001;&#x7d4c;&#x8cbb;&#x3001;&#x53ce;&#x5165;&#x5909;&#x52d5;&#x304c;&#x3042;&#x308b;&#x305f;&#x3081;&#x3001;&#x4fdd;&#x5b88;&#x7684;&#x306b;&#x5c11;&#x3057;&#x4f4e;&#x3081;&#x306e;&#x91d1;&#x984d;&#x3067;&#x8a66;&#x7b97;&#x3059;&#x308b;&#x3068;&#x73fe;&#x5b9f;&#x7684;&#x3067;&#x3059;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x914d;&#x5f53;&#x53ce;&#x5165;&#x306f;&#x6708;&#x984d;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x3044;&#x3044;&#x3067;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x306f;&#x3044;&#x3002;&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3092;12&#x3067;&#x5272;&#x3063;&#x305f;&#x6708;&#x5e73;&#x5747;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x5b9f;&#x969b;&#x306e;&#x914d;&#x5f53;&#x652f;&#x6255;&#x3044;&#x306f;&#x6bce;&#x6708;&#x3067\u306f\u306a\u3044\u5834\u5408\u304c\u3042\u308a\u307e\u3059\u3002;</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
+          <section class="tool-heading">
+            <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
+            <p>&#x30b5;&#x30a4;&#x30c9;FIRE&#x306f;&#x3001;FIRE&#x76ee;&#x6a19;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x30d0;&#x30e9;&#x30f3;&#x30b9;&#x3092;&#x5408;&#x308f;&#x305b;&#x3066;&#x898b;&#x308b;&#x3068;&#x8a08;&#x753b;&#x3057;&#x3084;&#x3059;&#x304f;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire">FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#dividend">&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="mortgage" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1877,6 +2020,7 @@ document.body.innerHTML = `
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
+          <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
@@ -1960,6 +2104,14 @@ const fieldRules = {
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  sideFireCurrentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
+  sideFireTargetAge: { label: "FIRE\u76ee\u6a19\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
+  sideFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  sideFireMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  sideFireReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  sideFireLivingCost: { label: "\u6bce\u6708\u751f\u6d3b\u8cbb", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  sideFireSideIncome: { label: "\u526f\u696d\u6708\u53ce", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  sideFireDividendIncome: { label: "\u914d\u5f53\u53ce\u5165", min: 0, max: 100000000, unit: "\u5186", integer: false },
   mortgageBorrowing: { label: "\u501f\u5165\u91d1\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   downPayment: { label: "\u982d\u91d1", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   mortgageRate: { label: "\u91d1\u5229", min: 0, max: 20, unit: "%", integer: false },
@@ -2630,6 +2782,98 @@ function renderDividend() {
   setText("dividendNisaComparison", nisaGuide);
 }
 
+function renderSideFire() {
+  const values = {
+    sideFireCurrentAge: getFieldValue("sideFireCurrentAge"),
+    sideFireTargetAge: getFieldValue("sideFireTargetAge"),
+    sideFireAssets: getFieldValue("sideFireAssets"),
+    sideFireMonthly: getFieldValue("sideFireMonthly"),
+    sideFireReturn: getFieldValue("sideFireReturn"),
+    sideFireLivingCost: getFieldValue("sideFireLivingCost"),
+    sideFireSideIncome: getFieldValue("sideFireSideIncome"),
+    sideFireDividendIncome: getFieldValue("sideFireDividendIncome"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.sideFireTargetAge.valid && values.sideFireCurrentAge.valid && values.sideFireTargetAge.value <= values.sideFireCurrentAge.value) {
+    const input = document.querySelector("#sideFireTargetAge");
+    const error = document.querySelector("#sideFireTargetAgeError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "FIRE\u76ee\u6a19\u5e74\u9f62\u306f\u73fe\u5728\u306e\u5e74\u9f62\u3088\u308a\u5927\u304d\u304f\u3057\u3066\u304f\u3060\u3055\u3044\u3002";
+    hasError = true;
+  }
+
+  document.querySelector("#sideFireNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("sideFireAchieveYear", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("sideFireRequiredAssets", yen.format(0));
+    setText("sideFireShortage", yen.format(0));
+    setText("sideFireRequiredMonthly", yen.format(0));
+    setText("sideFireSideIncomeEffect", "0\u5e74");
+    setText("sideFireDividendEffect", yen.format(0));
+    setText("sideFireRetirementComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthlyLivingCost = values.sideFireLivingCost.value;
+  const sideIncome = values.sideFireSideIncome.value;
+  const dividendIncome = values.sideFireDividendIncome.value;
+  const uncoveredMonthlyCost = Math.max(monthlyLivingCost - sideIncome - dividendIncome, 0);
+  const noSideMonthlyCost = Math.max(monthlyLivingCost - dividendIncome, 0);
+  const noDividendMonthlyCost = Math.max(monthlyLivingCost - sideIncome, 0);
+  const requiredAssets = uncoveredMonthlyCost * 12 * 25;
+  const noSideRequiredAssets = noSideMonthlyCost * 12 * 25;
+  const noDividendRequiredAssets = noDividendMonthlyCost * 12 * 25;
+  const monthsToTargetAge = (values.sideFireTargetAge.value - values.sideFireCurrentAge.value) * 12;
+  const projectedAssets = calculateFutureAssets(
+    values.sideFireAssets.value,
+    values.sideFireMonthly.value,
+    values.sideFireReturn.value,
+    monthsToTargetAge,
+  );
+  const shortage = Math.max(requiredAssets - projectedAssets, 0);
+  const requiredAdditionalMonthly = calculateRequiredMonthly(
+    values.sideFireAssets.value,
+    values.sideFireMonthly.value,
+    values.sideFireReturn.value,
+    monthsToTargetAge,
+    requiredAssets,
+  );
+  const requiredMonthly = shortage > 0 ? values.sideFireMonthly.value + requiredAdditionalMonthly : values.sideFireMonthly.value;
+  const achievementMonths = findAchievementMonths(
+    values.sideFireAssets.value,
+    values.sideFireMonthly.value,
+    values.sideFireReturn.value,
+    requiredAssets,
+  );
+  const noSideAchievementMonths = findAchievementMonths(
+    values.sideFireAssets.value,
+    values.sideFireMonthly.value,
+    values.sideFireReturn.value,
+    noSideRequiredAssets,
+  );
+  const currentYear = new Date().getFullYear();
+  const achievementYear = achievementMonths === null
+    ? "\u672a\u9054\u6210"
+    : `${currentYear + Math.ceil(achievementMonths / 12)}\u5e74 / ${values.sideFireCurrentAge.value + Math.ceil(achievementMonths / 12)}\u6b73`;
+  const sideIncomeShortening = achievementMonths !== null && noSideAchievementMonths !== null
+    ? Math.max((noSideAchievementMonths - achievementMonths) / 12, 0)
+    : 0;
+  const dividendEffect = Math.max(noDividendRequiredAssets - requiredAssets, 0);
+  const retirementBase = 30000000;
+  const retirementComparison = requiredAssets > retirementBase
+    ? `\u8001\u5f8c\u8cc7\u91d13,000\u4e07\u5186\u3088\u308a${yen.format(requiredAssets - retirementBase)}\u9ad8\u3044\u76ee\u5b89`
+    : `\u8001\u5f8c\u8cc7\u91d13,000\u4e07\u5186\u3088\u308a${yen.format(retirementBase - requiredAssets)}\u4f4e\u3044\u76ee\u5b89`;
+
+  setText("sideFireAchieveYear", achievementYear);
+  setText("sideFireRequiredAssets", yen.format(requiredAssets));
+  setText("sideFireShortage", yen.format(shortage));
+  setText("sideFireRequiredMonthly", yen.format(requiredMonthly));
+  setText("sideFireSideIncomeEffect", `${sideIncomeShortening.toFixed(1)}\u5e74`);
+  setText("sideFireDividendEffect", `${yen.format(dividendEffect)}\u5206\u306e\u5fc5\u8981\u8cc7\u7523\u3092\u5727\u7e2e`);
+  setText("sideFireRetirementComparison", retirementComparison);
+}
+
 function calculateMortgagePayment(principal, annualRate, years) {
   const months = years * 12;
   if (principal <= 0 || months <= 0) {
@@ -2724,7 +2968,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "fire" || route === "retirement" || route === "education" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -2791,6 +3035,10 @@ document.querySelector("#dividendForm").addEventListener("input", renderDividend
 document.querySelector("#dividendForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividend);
 });
+document.querySelector("#sideFireForm").addEventListener("input", renderSideFire);
+document.querySelector("#sideFireForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideFire);
+});
 document.querySelector("#mortgageForm").addEventListener("input", renderMortgage);
 document.querySelector("#mortgageForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderMortgage);
@@ -2809,5 +3057,6 @@ renderFire();
 renderRetirement();
 renderEducation();
 renderDividend();
+renderSideFire();
 renderMortgage();
 renderRoute();
