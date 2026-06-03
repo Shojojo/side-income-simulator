@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -86,6 +86,10 @@ const routeSeo = {
   education: {
     title: "\u6559\u80b2\u8cbb\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u5b50\u3069\u3082\u306e\u4eba\u6570\u3001\u9032\u5b66\u30b3\u30fc\u30b9\u3001\u5927\u5b66\u9032\u5b66\u6709\u7121\u3001\u73fe\u5728\u306e\u8caf\u84c4\u984d\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u304b\u3089\u5c06\u6765\u5fc5\u8981\u306a\u6559\u80b2\u8cbb\u3068\u4e0d\u8db3\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  mortgage: {
+    title: "\u4f4f\u5b85\u30ed\u30fc\u30f3\u8fd4\u6e08\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u501f\u5165\u91d1\u984d\u3001\u982d\u91d1\u3001\u91d1\u5229\u3001\u8fd4\u6e08\u5e74\u6570\u3001\u30dc\u30fc\u30ca\u30b9\u8fd4\u6e08\u3001\u7e70\u4e0a\u8fd4\u6e08\u984d\u304b\u3089\u6bce\u6708\u8fd4\u6e08\u984d\u3001\u7dcf\u8fd4\u6e08\u984d\u3001\u5229\u606f\u7dcf\u984d\u3001\u5e74\u53ce\u306b\u5bfe\u3059\u308b\u8fd4\u6e08\u6bd4\u7387\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
 };
 
@@ -171,6 +175,7 @@ document.body.innerHTML = `
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
+          <a href="#mortgage" data-route="mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
         </nav>
       </header>
 
@@ -339,6 +344,18 @@ document.body.innerHTML = `
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
+
+          <a class="tool-card" href="#mortgage">
+            <p class="eyebrow">Mortgage</p>
+            <h2>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x501f;&#x5165;&#x91d1;&#x984d;&#x3001;&#x982d;&#x91d1;&#x3001;&#x91d1;&#x5229;&#x3001;&#x8fd4;&#x6e08;&#x5e74;&#x6570;&#x304b;&#x3089;&#x3001;&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x7dcf;&#x8fd4;&#x6e08;&#x984d;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x3078;&#x306e;&#x5f71;&#x97ff;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;</span>
+              <span>&#x5229;&#x606f;</span>
+              <span>&#x8fd4;&#x6e08;&#x6bd4;&#x7387;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
           </div>
         </section>
 
@@ -356,6 +373,7 @@ document.body.innerHTML = `
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#mortgage"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
           </ol>
         </section>
 
@@ -1605,6 +1623,125 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="mortgage" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+        <section class="tool-heading">
+          <h2>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <p>&#x501f;&#x5165;&#x91d1;&#x984d;&#x3001;&#x982d;&#x91d1;&#x3001;&#x91d1;&#x5229;&#x3001;&#x8fd4;&#x6e08;&#x5e74;&#x6570;&#x3001;&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x3001;&#x7e70;&#x4e0a;&#x8fd4;&#x6e08;&#x984d;&#x304b;&#x3089;&#x3001;&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x7dcf;&#x8fd4;&#x6e08;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+        </section>
+
+        <section class="workspace" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x306e;&#x8a08;&#x7b97;">
+          <form class="input-panel" id="mortgageForm">
+            <div class="field">
+              <label for="mortgageBorrowing">&#x501f;&#x5165;&#x91d1;&#x984d; <span class="unit">&#x5186;</span></label>
+              <input id="mortgageBorrowing" name="mortgageBorrowing" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="35000000" required aria-describedby="mortgageBorrowingError">
+              <p class="error" id="mortgageBorrowingError"></p>
+            </div>
+            <div class="field">
+              <label for="downPayment">&#x982d;&#x91d1; <span class="unit">&#x5186;</span></label>
+              <input id="downPayment" name="downPayment" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="3000000" required aria-describedby="downPaymentError">
+              <p class="error" id="downPaymentError"></p>
+            </div>
+            <div class="field">
+              <label for="mortgageRate">&#x91d1;&#x5229; <span class="unit">%</span></label>
+              <input id="mortgageRate" name="mortgageRate" type="number" inputmode="decimal" min="0" max="20" step="0.01" value="1.2" required aria-describedby="mortgageRateError">
+              <p class="error" id="mortgageRateError"></p>
+            </div>
+            <div class="field">
+              <label for="mortgageYears">&#x8fd4;&#x6e08;&#x5e74;&#x6570; <span class="unit">&#x5e74;</span></label>
+              <input id="mortgageYears" name="mortgageYears" type="number" inputmode="numeric" min="1" max="50" step="1" value="35" required aria-describedby="mortgageYearsError">
+              <p class="error" id="mortgageYearsError"></p>
+            </div>
+            <label class="check-field" for="bonusRepayment">
+              <input id="bonusRepayment" name="bonusRepayment" type="checkbox">
+              <span>&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x3042;&#x308a;&#x3067;&#x8a66;&#x7b97;&#x3059;&#x308b;</span>
+            </label>
+            <div class="field">
+              <label for="prepaymentAmount">&#x7e70;&#x4e0a;&#x8fd4;&#x6e08;&#x984d; <span class="unit">&#x5186;</span></label>
+              <input id="prepaymentAmount" name="prepaymentAmount" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="1000000" required aria-describedby="prepaymentAmountError">
+              <p class="error" id="prepaymentAmountError"></p>
+            </div>
+            <div class="field">
+              <label for="mortgageAnnualIncome">&#x5e74;&#x53ce;&#xff08;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x8a08;&#x7b97;&#x7528;&#xff09; <span class="unit">&#x5186;</span></label>
+              <input id="mortgageAnnualIncome" name="mortgageAnnualIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="6000000" required aria-describedby="mortgageAnnualIncomeError">
+              <p class="error" id="mortgageAnnualIncomeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;</p>
+              <p class="amount" id="mortgageMonthlyPayment">0&#x5186;</p>
+            </div>
+            <p class="notice" id="mortgageNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x982d;&#x91d1;&#x30fb;&#x7e70;&#x4e0a;&#x8fd4;&#x6e08;&#x984d;&#x306f;&#x501f;&#x5165;&#x91d1;&#x984d;&#x4ee5;&#x4e0b;&#x3067;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>&#x7dcf;&#x8fd4;&#x6e08;&#x984d;</strong>
+                <span class="accent-blue" id="mortgageTotalPayment">0&#x5186;</span>
+                <small>&#x5143;&#x91d1; + &#x5229;&#x606f;&#x306e;&#x6982;&#x7b97;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x5229;&#x606f;&#x7dcf;&#x984d;</strong>
+                <span class="accent-amber" id="mortgageInterestTotal">0&#x5186;</span>
+                <small>&#x7dcf;&#x8fd4;&#x6e08;&#x984d; - &#x5b9f;&#x969b;&#x306e;&#x501f;&#x5165;&#x5143;&#x91d1;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x7e70;&#x4e0a;&#x8fd4;&#x6e08;&#x52b9;&#x679c;</strong>
+                <span class="accent-green" id="prepaymentEffect">0&#x5186;</span>
+                <small>&#x5229;&#x606f;&#x8efd;&#x6e1b;&#x306e;&#x6982;&#x7b97;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x3078;&#x306e;&#x5f71;&#x97ff;</strong>
+                <span class="accent-amber text-metric" id="mortgageRetirementImpact">0&#x5186;</span>
+                <small>&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x304b;&#x3089;&#x898b;&#x305f;&#x5bb6;&#x8a08;&#x4f59;&#x529b;&#x306e;&#x76ee;&#x5b89;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;</strong>
+                <span class="accent-blue" id="repaymentRatio">0%</span>
+                <small>&#x5e74;&#x9593;&#x8fd4;&#x6e08;&#x984d; / &#x5e74;&#x53ce;</small>
+              </div>
+              <div class="metric">
+                <strong>&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x76ee;&#x5b89;</strong>
+                <span class="accent-green" id="bonusPaymentGuide">0&#x5186;</span>
+                <small>&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x3042;&#x308a;&#x306e;&#x5834;&#x5408;&#x306e;1&#x56de;&#x3042;&#x305f;&#x308a;&#x76ee;&#x5b89;</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x8fd4;&#x6e08;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x306f;&#x3069;&#x3046;&#x8a08;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x5143;&#x5229;&#x5747;&#x7b49;&#x8fd4;&#x6e08;&#x3092;&#x524d;&#x63d0;&#x306b;&#x3001;&#x5b9f;&#x969b;&#x306e;&#x501f;&#x5165;&#x5143;&#x91d1;&#x3001;&#x91d1;&#x5229;&#x3001;&#x8fd4;&#x6e08;&#x671f;&#x9593;&#x304b;&#x3089;&#x6982;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;&#x91d1;&#x878d;&#x6a5f;&#x95a2;&#x306e;&#x4fdd;&#x8a3c;&#x6599;&#x3001;&#x56e3;&#x4fe1;&#x3001;&#x624b;&#x6570;&#x6599;&#x306f;&#x542b;&#x307f;&#x307e;&#x305b;&#x3093;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x306f;&#x3069;&#x306e;&#x3088;&#x3046;&#x306b;&#x6271;&#x3063;&#x3066;&#x3044;&#x307e;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x3042;&#x308a;&#x306e;&#x5834;&#x5408;&#x3001;&#x501f;&#x5165;&#x5143;&#x91d1;&#x306e;20%&#x3092;&#x5e74;2&#x56de;&#x306e;&#x30dc;&#x30fc;&#x30ca;&#x30b9;&#x8fd4;&#x6e08;&#x5206;&#x3068;&#x3057;&#x3066;&#x6982;&#x7b97;&#x3057;&#x3001;&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x306f;&#x6b8b;&#x308a;&#x306e;&#x5143;&#x91d1;&#x3092;&#x3082;&#x3068;&#x306b;&#x8868;&#x793a;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;</p>
+            </details>
+            <details>
+              <summary>&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x306f;&#x4f55;%&#x304c;&#x76ee;&#x5b89;&#x3067;&#x3059;&#x304b;&#xff1f;</summary>
+              <p>&#x4e00;&#x822c;&#x7684;&#x306b;&#x306f;20%&#x304b;&#x3089;25%&#x524d;&#x5f8c;&#x307e;&#x3067;&#x306b;&#x6291;&#x3048;&#x308b;&#x3068;&#x3001;&#x6559;&#x80b2;&#x8cbb;&#x3084;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x6e96;&#x5099;&#x3068;&#x4e21;&#x7acb;&#x3057;&#x3084;&#x3059;&#x304f;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;&#x3053;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x306f;&#x5bb6;&#x8a08;&#x306e;&#x8ca0;&#x62c5;&#x611f;&#x3092;&#x898b;&#x308b;&#x76ee;&#x5b89;&#x3068;&#x3057;&#x3066;&#x8868;&#x793a;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
+          <section class="tool-heading">
+            <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
+            <p>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x306f;&#x6559;&#x80b2;&#x8cbb;&#x3068;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x6e96;&#x5099;&#x306b;&#x5927;&#x304d;&#x304f;&#x5f71;&#x97ff;&#x3057;&#x307e;&#x3059;&#x3002;&#x30e9;&#x30a4;&#x30d5;&#x30d7;&#x30e9;&#x30f3;&#x8cc7;&#x91d1;&#x3068;&#x5408;&#x308f;&#x305b;&#x3066;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
+          </section>
+          <div class="related-links">
+            <a href="#education">&#x6559;&#x80b2;&#x8cbb;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#fire">FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
       <footer class="site-footer">
         <nav class="footer-links" aria-label="&#x30b5;&#x30a4;&#x30c8;&#x60c5;&#x5831;">
           <a href="#top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -1619,6 +1756,7 @@ document.body.innerHTML = `
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
+          <a href="#mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
           <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
           <a href="disclaimer.html">&#x514d;&#x8cac;&#x4e8b;&#x9805;</a>
           <a href="contact.html">&#x304a;&#x554f;&#x3044;&#x5408;&#x308f;&#x305b;</a>
@@ -1695,6 +1833,12 @@ const fieldRules = {
   educationSavings: { label: "\u73fe\u5728\u306e\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   educationMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   educationReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  mortgageBorrowing: { label: "\u501f\u5165\u91d1\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  downPayment: { label: "\u982d\u91d1", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  mortgageRate: { label: "\u91d1\u5229", min: 0, max: 20, unit: "%", integer: false },
+  mortgageYears: { label: "\u8fd4\u6e08\u5e74\u6570", min: 1, max: 50, unit: "\u5e74", integer: true },
+  prepaymentAmount: { label: "\u7e70\u4e0a\u8fd4\u6e08\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  mortgageAnnualIncome: { label: "\u5e74\u53ce", min: 0, max: 1000000000, unit: "\u5186", integer: false },
 };
 
 function formatLimit(value, unit) {
@@ -2306,9 +2450,101 @@ function renderEducation() {
   setText("retirementImpact", retirementImpact);
 }
 
+function calculateMortgagePayment(principal, annualRate, years) {
+  const months = years * 12;
+  if (principal <= 0 || months <= 0) {
+    return { monthly: 0, total: 0, interest: 0 };
+  }
+
+  const monthlyRate = annualRate / 100 / 12;
+  const monthly = monthlyRate === 0
+    ? principal / months
+    : principal * monthlyRate / (1 - (1 + monthlyRate) ** -months);
+  const total = monthly * months;
+
+  return {
+    monthly,
+    total,
+    interest: Math.max(total - principal, 0),
+  };
+}
+
+function renderMortgage() {
+  const values = {
+    mortgageBorrowing: getFieldValue("mortgageBorrowing"),
+    downPayment: getFieldValue("downPayment"),
+    mortgageRate: getFieldValue("mortgageRate"),
+    mortgageYears: getFieldValue("mortgageYears"),
+    prepaymentAmount: getFieldValue("prepaymentAmount"),
+    mortgageAnnualIncome: getFieldValue("mortgageAnnualIncome"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.downPayment.valid && values.mortgageBorrowing.valid && values.downPayment.value > values.mortgageBorrowing.value) {
+    const input = document.querySelector("#downPayment");
+    const error = document.querySelector("#downPaymentError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "\u982d\u91d1\u306f\u501f\u5165\u91d1\u984d\u4ee5\u4e0b\u3067\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002";
+    hasError = true;
+  }
+
+  if (values.prepaymentAmount.valid && values.mortgageBorrowing.valid && values.downPayment.valid) {
+    const principal = Math.max(values.mortgageBorrowing.value - values.downPayment.value, 0);
+    if (values.prepaymentAmount.value > principal) {
+      const input = document.querySelector("#prepaymentAmount");
+      const error = document.querySelector("#prepaymentAmountError");
+      input.setAttribute("aria-invalid", "true");
+      error.textContent = "\u7e70\u4e0a\u8fd4\u6e08\u984d\u306f\u5b9f\u969b\u306e\u501f\u5165\u5143\u91d1\u4ee5\u4e0b\u3067\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002";
+      hasError = true;
+    }
+  }
+
+  document.querySelector("#mortgageNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("mortgageMonthlyPayment", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("mortgageTotalPayment", yen.format(0));
+    setText("mortgageInterestTotal", yen.format(0));
+    setText("prepaymentEffect", yen.format(0));
+    setText("mortgageRetirementImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("repaymentRatio", "0%");
+    setText("bonusPaymentGuide", yen.format(0));
+    return;
+  }
+
+  const principal = Math.max(values.mortgageBorrowing.value - values.downPayment.value, 0);
+  const hasBonus = document.querySelector("#bonusRepayment").checked;
+  const bonusPrincipal = hasBonus ? principal * 0.2 : 0;
+  const monthlyPrincipal = principal - bonusPrincipal;
+  const monthlyPlan = calculateMortgagePayment(monthlyPrincipal, values.mortgageRate.value, values.mortgageYears.value);
+  const bonusPlan = calculateMortgagePayment(bonusPrincipal, values.mortgageRate.value, values.mortgageYears.value);
+  const totalPayment = monthlyPlan.total + bonusPlan.total;
+  const interestTotal = monthlyPlan.interest + bonusPlan.interest;
+  const afterPrepaymentPrincipal = Math.max(principal - values.prepaymentAmount.value, 0);
+  const afterPrepaymentPlan = calculateMortgagePayment(afterPrepaymentPrincipal, values.mortgageRate.value, values.mortgageYears.value);
+  const prepaymentEffect = Math.max(interestTotal - afterPrepaymentPlan.interest, 0);
+  const annualPayment = totalPayment / values.mortgageYears.value;
+  const repaymentRatio = values.mortgageAnnualIncome.value > 0
+    ? (annualPayment / values.mortgageAnnualIncome.value) * 100
+    : 0;
+  const bonusPayment = hasBonus ? bonusPlan.monthly * 6 : 0;
+  const retirementImpact = repaymentRatio >= 30
+    ? "\u8fd4\u6e08\u6bd4\u7387\u304c\u9ad8\u3081\u3067\u3001\u8001\u5f8c\u8cc7\u91d1\u306e\u7a4d\u7acb\u4f59\u529b\u304c\u5727\u8feb\u3055\u308c\u3084\u3059\u3044\u76ee\u5b89\u3067\u3059"
+    : repaymentRatio >= 25
+      ? "\u8fd4\u6e08\u6bd4\u7387\u306f\u3084\u3084\u9ad8\u3081\u3067\u3001\u6559\u80b2\u8cbb\u3068\u8001\u5f8c\u8cc7\u91d1\u306e\u540c\u6642\u6e96\u5099\u306b\u6ce8\u610f\u304c\u5fc5\u8981\u3067\u3059"
+      : "\u8001\u5f8c\u8cc7\u91d1\u306e\u7a4d\u7acb\u3068\u4e26\u884c\u3057\u3084\u3059\u3044\u8fd4\u6e08\u6bd4\u7387\u306e\u76ee\u5b89\u3067\u3059";
+
+  setText("mortgageMonthlyPayment", yen.format(monthlyPlan.monthly));
+  setText("mortgageTotalPayment", yen.format(totalPayment));
+  setText("mortgageInterestTotal", yen.format(interestTotal));
+  setText("prepaymentEffect", yen.format(prepaymentEffect));
+  setText("mortgageRetirementImpact", retirementImpact);
+  setText("repaymentRatio", `${repaymentRatio.toFixed(1)}%`);
+  setText("bonusPaymentGuide", yen.format(bonusPayment));
+}
+
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "fire" || route === "retirement" || route === "education") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "fire" || route === "retirement" || route === "education" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -2371,6 +2607,10 @@ document.querySelector("#educationForm").addEventListener("input", renderEducati
 document.querySelector("#educationForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEducation);
 });
+document.querySelector("#mortgageForm").addEventListener("input", renderMortgage);
+document.querySelector("#mortgageForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderMortgage);
+});
 window.addEventListener("hashchange", renderRoute);
 
 renderSideIncome();
@@ -2384,4 +2624,5 @@ renderIdeco();
 renderFire();
 renderRetirement();
 renderEducation();
+renderMortgage();
 renderRoute();
