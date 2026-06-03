@@ -295,7 +295,8 @@ h1 {
 .tool-card:focus-visible,
 .tool-nav a:focus-visible,
 button:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   outline: 4px solid rgba(36, 87, 197, 0.16);
   outline-offset: 2px;
 }
@@ -368,7 +369,8 @@ label {
   white-space: nowrap;
 }
 
-input {
+input,
+select {
   width: 100%;
   min-height: 48px;
   border: 1px solid var(--line);
@@ -380,7 +382,8 @@ input {
   font-size: 1.05rem;
 }
 
-input:focus {
+input:focus,
+select:focus {
   border-color: var(--blue);
   box-shadow: 0 0 0 4px rgba(36, 87, 197, 0.14);
 }
