@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -94,6 +94,10 @@ const routeSeo = {
   "side-fire": {
     title: "\u30b5\u30a4\u30c9FIRE\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u73fe\u5728\u306e\u5e74\u9f62\u3001FIRE\u76ee\u6a19\u5e74\u9f62\u3001\u73fe\u5728\u8cc7\u7523\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u6bce\u6708\u751f\u6d3b\u8cbb\u3001\u526f\u696d\u6708\u53ce\u3001\u914d\u5f53\u53ce\u5165\u304b\u3089\u30b5\u30a4\u30c9FIRE\u9054\u6210\u53ef\u80fd\u6027\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "emergency-fund": {
+    title: "\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u6bce\u6708\u751f\u6d3b\u8cbb\u3001\u5bb6\u65cf\u4eba\u6570\u3001\u96c7\u7528\u5f62\u614b\u3001\u73fe\u5728\u8caf\u84c4\u984d\u3001\u5931\u696d\u6642\u60f3\u5b9a\u671f\u9593\u3001\u526f\u696d\u53ce\u5165\u6709\u7121\u304b\u3089\u5fc5\u8981\u306a\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3068\u4e0d\u8db3\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
   retirement: {
     title: "\u8001\u5f8c\u8cc7\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -197,6 +201,7 @@ document.body.innerHTML = `
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
+          <a href="#emergency-fund" data-route="emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#education-insurance" data-route="education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
@@ -431,6 +436,18 @@ document.body.innerHTML = `
             <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x7cfb;</h2>
           </div>
           <div class="tool-grid">
+          <a class="tool-card" href="#emergency-fund">
+            <p class="eyebrow">Safety Fund</p>
+            <h2>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x6bce;&#x6708;&#x751f;&#x6d3b;&#x8cbb;&#x3001;&#x5bb6;&#x65cf;&#x4eba;&#x6570;&#x3001;&#x96c7;&#x7528;&#x5f62;&#x614b;&#x304b;&#x3089;&#x3001;FIRE&#x3084;&#x6295;&#x8cc7;&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x5fc5;&#x8981;&#x8cc7;&#x91d1;</span>
+              <span>&#x4e0d;&#x8db3;&#x984d;</span>
+              <span>FIRE&#x524d;&#x5b89;&#x5168;&#x8cc7;&#x91d1;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#retirement">
             <p class="eyebrow">Retirement</p>
             <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -498,6 +515,7 @@ document.body.innerHTML = `
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#emergency-fund"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#education-insurance"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
             <li><a href="#mortgage"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -1654,6 +1672,119 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="emergency-fund" aria-label="生活防衛資金シミュレーター">
+        <section class="tool-heading">
+          <h2>生活防衛資金シミュレーター</h2>
+          <p>毎月生活費、家族人数、雇用形態、現在貯蓄額、失業時想定期間、副業収入の有無から、投資やFIREの前に確保したい生活防衛資金を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="生活防衛資金の計算">
+          <form class="input-panel" id="emergencyFundForm">
+            <div class="field">
+              <label for="emergencyMonthlyCost">毎月生活費 <span class="unit">円 / 月</span></label>
+              <input id="emergencyMonthlyCost" name="emergencyMonthlyCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="250000" required aria-describedby="emergencyMonthlyCostError">
+              <p class="error" id="emergencyMonthlyCostError"></p>
+            </div>
+            <div class="field">
+              <label for="familyCount">家族人数 <span class="unit">人</span></label>
+              <input id="familyCount" name="familyCount" type="number" inputmode="numeric" min="1" max="20" step="1" value="2" required aria-describedby="familyCountError">
+              <p class="error" id="familyCountError"></p>
+            </div>
+            <div class="field">
+              <label for="employmentType">雇用形態</label>
+              <select id="employmentType" name="employmentType" required aria-describedby="employmentTypeError">
+                <option value="employee">会社員・公務員</option>
+                <option value="contract">契約社員・派遣社員</option>
+                <option value="self">自営業・フリーランス</option>
+              </select>
+              <p class="error" id="employmentTypeError"></p>
+            </div>
+            <div class="field">
+              <label for="emergencySavings">現在貯蓄額 <span class="unit">円</span></label>
+              <input id="emergencySavings" name="emergencySavings" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="1000000" required aria-describedby="emergencySavingsError">
+              <p class="error" id="emergencySavingsError"></p>
+            </div>
+            <div class="field">
+              <label for="unemploymentMonths">失業時想定期間 <span class="unit">か月</span></label>
+              <input id="unemploymentMonths" name="unemploymentMonths" type="number" inputmode="numeric" min="1" max="60" step="1" value="6" required aria-describedby="unemploymentMonthsError">
+              <p class="error" id="unemploymentMonthsError"></p>
+            </div>
+            <div class="field">
+              <label for="sideIncomeStatus">副業収入有無</label>
+              <select id="sideIncomeStatus" name="sideIncomeStatus" required aria-describedby="sideIncomeStatusError">
+                <option value="none">副業収入なし</option>
+                <option value="small">月5万円程度あり</option>
+                <option value="stable">月10万円以上あり</option>
+              </select>
+              <p class="error" id="sideIncomeStatusError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">必要生活防衛資金</p>
+              <p class="amount" id="requiredEmergencyFund">0円</p>
+            </div>
+            <p class="notice" id="emergencyFundNotice">入力を確認してください。生活防衛資金は投資判断の前提となる安全資金の目安です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>現在との差額</strong>
+                <span class="accent-amber" id="emergencyFundGap">0円</span>
+                <small>必要生活防衛資金 - 現在貯蓄額</small>
+              </div>
+              <div class="metric">
+                <strong>必要積立額</strong>
+                <span class="accent-green" id="emergencyFundMonthlySaving">0円</span>
+                <small>1年で不足額を準備する場合の月額目安</small>
+              </div>
+              <div class="metric">
+                <strong>副業収入による改善効果</strong>
+                <span class="accent-blue text-metric" id="emergencyFundSideIncomeEffect">0円</span>
+                <small>失業時に副業収入がある場合の必要額圧縮目安</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE前に必要な安全資金</strong>
+                <span class="accent-green text-metric" id="emergencyFundFireSafety">0円</span>
+                <small>FIRE前に現金で確保したい最低ライン</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="生活防衛資金シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>生活防衛資金は何か月分が目安ですか？</summary>
+              <p>会社員なら6か月前後、自営業やフリーランスなら12か月以上を一つの目安にします。このツールでは雇用形態と失業時想定期間をもとに、やや保守的な必要額を出しています。</p>
+            </details>
+            <details>
+              <summary>副業収入がある場合は少なくしてもいいですか？</summary>
+              <p>副業収入が安定している場合、失業時の不足額を一部補える可能性があります。ただし副業も止まるリスクがあるため、過度に少なく見積もらないことが大切です。</p>
+            </details>
+            <details>
+              <summary>FIRE前に生活防衛資金は必要ですか？</summary>
+              <p>必要です。FIREや投資を急ぐ前に、相場下落や失業、病気に備える現金を確保しておくと、資産を安値で取り崩すリスクを下げられます。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="生活防衛資金関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>生活防衛資金を確保したうえで、FIREや老後資金の計画へ進むと、無理のない資産形成を考えやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire">FIREシミュレーター</a>
+            <a href="#retirement">老後資金シミュレーター</a>
+            <a href="#employee-fire">会社員FIRE年数計算シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="retirement" aria-label="&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -2468,8 +2599,9 @@ document.body.innerHTML = `
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
-          <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
-          <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
+            <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
+            <a href="#emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
+            <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
           <a href="#mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
@@ -2572,6 +2704,10 @@ const fieldRules = {
   employeeFireReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   employeeFireDividendIncome: { label: "\u914d\u5f53\u53ce\u5165", min: 0, max: 100000000, unit: "\u5186", integer: false },
   employeeFireTarget: { label: "\u76ee\u6a19FIRE\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  emergencyMonthlyCost: { label: "\u6bce\u6708\u751f\u6d3b\u8cbb", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  familyCount: { label: "\u5bb6\u65cf\u4eba\u6570", min: 1, max: 20, unit: "\u4eba", integer: true },
+  emergencySavings: { label: "\u73fe\u5728\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  unemploymentMonths: { label: "\u5931\u696d\u6642\u60f3\u5b9a\u671f\u9593", min: 1, max: 60, unit: "\u304b\u6708", integer: true },
   sideFireCurrentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
   sideFireTargetAge: { label: "FIRE\u76ee\u6a19\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
   sideFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -3452,6 +3588,57 @@ function renderEmployeeFire() {
   setText("employeeFireSideFireComparison", sideFireComparison);
 }
 
+function renderEmergencyFund() {
+  const values = {
+    emergencyMonthlyCost: getFieldValue("emergencyMonthlyCost"),
+    familyCount: getFieldValue("familyCount"),
+    emergencySavings: getFieldValue("emergencySavings"),
+    unemploymentMonths: getFieldValue("unemploymentMonths"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#emergencyFundNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("requiredEmergencyFund", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("emergencyFundGap", yen.format(0));
+    setText("emergencyFundMonthlySaving", yen.format(0));
+    setText("emergencyFundSideIncomeEffect", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("emergencyFundFireSafety", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const employmentType = document.querySelector("#employmentType").value;
+  const sideIncomeStatus = document.querySelector("#sideIncomeStatus").value;
+  const employmentBuffer = {
+    employee: 1,
+    contract: 1.25,
+    self: 1.6,
+  }[employmentType] || 1;
+  const sideIncomeMonthly = {
+    none: 0,
+    small: 50000,
+    stable: 100000,
+  }[sideIncomeStatus] || 0;
+  const familyBuffer = 1 + Math.max(values.familyCount.value - 1, 0) * 0.08;
+  const baseMonths = Math.max(values.unemploymentMonths.value, employmentType === "self" ? 12 : employmentType === "contract" ? 9 : 6);
+  const grossRequired = values.emergencyMonthlyCost.value * baseMonths * employmentBuffer * familyBuffer;
+  const sideIncomeEffect = Math.min(sideIncomeMonthly * baseMonths, grossRequired * 0.4);
+  const requiredFund = Math.max(grossRequired - sideIncomeEffect, values.emergencyMonthlyCost.value * 3);
+  const gap = Math.max(requiredFund - values.emergencySavings.value, 0);
+  const monthlySaving = gap / 12;
+  const fireSafetyMonths = Math.max(baseMonths, 12);
+  const fireSafetyFund = values.emergencyMonthlyCost.value * fireSafetyMonths * familyBuffer;
+  const sideIncomeText = sideIncomeEffect > 0
+    ? `${yen.format(sideIncomeEffect)}\u5206\u3001\u5fc5\u8981\u8cc7\u91d1\u3092\u5727\u7e2e\u3059\u308b\u76ee\u5b89`
+    : "\u526f\u696d\u53ce\u5165\u306b\u3088\u308b\u5727\u7e2e\u52b9\u679c\u306f0\u5186";
+
+  setText("requiredEmergencyFund", yen.format(requiredFund));
+  setText("emergencyFundGap", yen.format(gap));
+  setText("emergencyFundMonthlySaving", yen.format(monthlySaving));
+  setText("emergencyFundSideIncomeEffect", sideIncomeText);
+  setText("emergencyFundFireSafety", `${yen.format(fireSafetyFund)}\u3092FIRE\u524d\u306e\u73fe\u91d1\u76ee\u5b89\u3068\u3057\u3066\u78ba\u4fdd`);
+}
+
 function renderSideFire() {
   const values = {
     sideFireCurrentAge: getFieldValue("sideFireCurrentAge"),
@@ -3638,7 +3825,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -3721,6 +3908,10 @@ document.querySelector("#sideFireForm").addEventListener("input", renderSideFire
 document.querySelector("#sideFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFire);
 });
+document.querySelector("#emergencyFundForm").addEventListener("input", renderEmergencyFund);
+document.querySelector("#emergencyFundForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderEmergencyFund);
+});
 document.querySelector("#mortgageForm").addEventListener("input", renderMortgage);
 document.querySelector("#mortgageForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderMortgage);
@@ -3743,5 +3934,6 @@ renderDividend();
 renderDividendReinvestment();
 renderEmployeeFire();
 renderSideFire();
+renderEmergencyFund();
 renderMortgage();
 renderRoute();
