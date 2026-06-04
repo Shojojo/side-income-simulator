@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -78,6 +78,10 @@ const routeSeo = {
   fire: {
     title: "FIRE\u9054\u6210\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u73fe\u5728\u8cc7\u7523\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u76ee\u6a19\u8cc7\u7523\u304b\u3089FIRE\u9054\u6210\u307e\u3067\u306e\u5e74\u6570\u3068\u5c06\u6765\u8cc7\u7523\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "employee-fire": {
+    title: "\u4f1a\u793e\u54e1FIRE\u5e74\u6570\u8a08\u7b97\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u73fe\u5728\u5e74\u9f62\u3001\u73fe\u5728\u8cc7\u7523\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u526f\u696d\u6708\u53ce\u3001\u5e74\u9593\u751f\u6d3b\u8cbb\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u914d\u5f53\u53ce\u5165\u3001\u76ee\u6a19FIRE\u8cc7\u7523\u304b\u3089\u4f1a\u793e\u54e1\u306eFIRE\u9054\u6210\u5e74\u6570\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
   dividend: {
     title: "\u914d\u5f53\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -191,6 +195,7 @@ document.body.innerHTML = `
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
+          <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
@@ -332,6 +337,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#employee-fire">
+            <p class="eyebrow">Employee FIRE</p>
+            <h2>&#x4f1a;&#x793e;&#x54e1;FIRE&#x5e74;&#x6570;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x73fe;&#x5728;&#x8cc7;&#x7523;&#x3001;&#x7a4d;&#x7acb;&#x984d;&#x3001;&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x304b;&#x3089;&#x3001;&#x4f1a;&#x793e;&#x54e1;&#x306e;FIRE&#x9054;&#x6210;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x9054;&#x6210;&#x5e74;&#x6570;</span>
+              <span>&#x526f;&#x696d;&#x52b9;&#x679c;</span>
+              <span>&#x30b5;&#x30a4;&#x30c9;FIRE&#x6bd4;&#x8f03;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#dividend">
             <p class="eyebrow">Dividend</p>
             <h2>&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -442,6 +459,7 @@ document.body.innerHTML = `
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#education-insurance"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
@@ -1479,6 +1497,126 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="employee-fire" aria-label="会社員FIRE年数計算シミュレーター">
+        <section class="tool-heading">
+          <h2>会社員FIRE年数計算シミュレーター</h2>
+          <p>現在資産、毎月積立額、副業月収、年間生活費、想定年利、配当収入、目標FIRE資産から、会社員がFIREに到達するまでの年数と副業・配当の効果を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="会社員FIRE年数の計算">
+          <form class="input-panel" id="employeeFireForm">
+            <div class="field">
+              <label for="employeeFireAge">現在年齢 <span class="unit">歳</span></label>
+              <input id="employeeFireAge" name="employeeFireAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="35" required aria-describedby="employeeFireAgeError">
+              <p class="error" id="employeeFireAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireAssets">現在資産 <span class="unit">円</span></label>
+              <input id="employeeFireAssets" name="employeeFireAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="5000000" required aria-describedby="employeeFireAssetsError">
+              <p class="error" id="employeeFireAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireMonthly">毎月積立額 <span class="unit">円 / 月</span></label>
+              <input id="employeeFireMonthly" name="employeeFireMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="employeeFireMonthlyError">
+              <p class="error" id="employeeFireMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireSideIncome">副業月収 <span class="unit">円 / 月</span></label>
+              <input id="employeeFireSideIncome" name="employeeFireSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="employeeFireSideIncomeError">
+              <p class="error" id="employeeFireSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireLivingCost">年間生活費 <span class="unit">円 / 年</span></label>
+              <input id="employeeFireLivingCost" name="employeeFireLivingCost" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="3600000" required aria-describedby="employeeFireLivingCostError">
+              <p class="error" id="employeeFireLivingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireReturn">想定年利 <span class="unit">%</span></label>
+              <input id="employeeFireReturn" name="employeeFireReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="employeeFireReturnError">
+              <p class="error" id="employeeFireReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireDividendIncome">配当収入 <span class="unit">円 / 月</span></label>
+              <input id="employeeFireDividendIncome" name="employeeFireDividendIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="20000" required aria-describedby="employeeFireDividendIncomeError">
+              <p class="error" id="employeeFireDividendIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeFireTarget">目標FIRE資産 <span class="unit">円</span></label>
+              <input id="employeeFireTarget" name="employeeFireTarget" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="90000000" required aria-describedby="employeeFireTargetError">
+              <p class="error" id="employeeFireTargetError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">FIRE達成年数</p>
+              <p class="amount" id="employeeFireYears">0年</p>
+            </div>
+            <p class="notice" id="employeeFireNotice">入力を確認してください。投資利回りや配当収入は将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>達成予想年齢</strong>
+                <span class="accent-green" id="employeeFireAchieveAge">0歳</span>
+                <small>現在年齢 + FIRE達成年数</small>
+              </div>
+              <div class="metric">
+                <strong>必要追加積立額</strong>
+                <span class="accent-amber" id="employeeFireAdditionalMonthly">0円</span>
+                <small>20年以内の達成を目指す場合の追加月額目安</small>
+              </div>
+              <div class="metric">
+                <strong>副業による短縮年数</strong>
+                <span class="accent-blue" id="employeeFireSideIncomeEffect">0年</span>
+                <small>副業月収を積立に回す場合の短縮目安</small>
+              </div>
+              <div class="metric">
+                <strong>配当再投資効果</strong>
+                <span class="accent-green text-metric" id="employeeFireDividendEffect">0円</span>
+                <small>配当収入を再投資に回す場合の積立上乗せ効果</small>
+              </div>
+              <div class="metric">
+                <strong>サイドFIREとの比較</strong>
+                <span class="accent-amber text-metric" id="employeeFireSideFireComparison">0円</span>
+                <small>副業・配当で生活費を補う場合の必要資産目安</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="会社員FIRE年数計算シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>会社員FIRE年数はどう計算していますか？</summary>
+              <p>現在資産に毎月積立額、副業月収、配当収入を加え、入力した想定年利で運用した場合に、目標FIRE資産へ到達するまでの年数を概算しています。</p>
+            </details>
+            <details>
+              <summary>副業月収はすべて積立に回す前提ですか？</summary>
+              <p>このツールでは、入力した副業月収をFIRE用の追加積立に回す前提で試算しています。実際には税金や経費を差し引いた手取りで調整してください。</p>
+            </details>
+            <details>
+              <summary>サイドFIREとの比較は何を見ればよいですか？</summary>
+              <p>副業収入や配当収入で生活費の一部を補える場合、完全FIREより必要資産が少なくなる可能性があります。比較結果は、サイドFIREで必要になりそうな資産額との差を示す目安です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="会社員FIRE関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>会社員FIREは、通常FIRE、サイドFIRE、配当再投資を合わせて見ると、現実的な到達ルートを考えやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire">FIREシミュレーター</a>
+            <a href="#side-fire">サイドFIREシミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="retirement" aria-label="&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -2292,6 +2430,7 @@ document.body.innerHTML = `
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
+          <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
@@ -2388,6 +2527,14 @@ const fieldRules = {
   dividendReinvestmentYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendReinvestmentGrowth: { label: "\u60f3\u5b9a\u682a\u4fa1\u6210\u9577\u7387", min: -30, max: 30, unit: "%", integer: false },
   dividendReinvestmentYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  employeeFireAge: { label: "\u73fe\u5728\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
+  employeeFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  employeeFireMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  employeeFireSideIncome: { label: "\u526f\u696d\u6708\u53ce", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  employeeFireLivingCost: { label: "\u5e74\u9593\u751f\u6d3b\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  employeeFireReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  employeeFireDividendIncome: { label: "\u914d\u5f53\u53ce\u5165", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  employeeFireTarget: { label: "\u76ee\u6a19FIRE\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   sideFireCurrentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
   sideFireTargetAge: { label: "FIRE\u76ee\u6a19\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
   sideFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -3190,6 +3337,84 @@ function renderDividendReinvestment() {
   setText("dividendReinvestmentNisaComparison", nisaGuide);
 }
 
+function renderEmployeeFire() {
+  const values = {
+    employeeFireAge: getFieldValue("employeeFireAge"),
+    employeeFireAssets: getFieldValue("employeeFireAssets"),
+    employeeFireMonthly: getFieldValue("employeeFireMonthly"),
+    employeeFireSideIncome: getFieldValue("employeeFireSideIncome"),
+    employeeFireLivingCost: getFieldValue("employeeFireLivingCost"),
+    employeeFireReturn: getFieldValue("employeeFireReturn"),
+    employeeFireDividendIncome: getFieldValue("employeeFireDividendIncome"),
+    employeeFireTarget: getFieldValue("employeeFireTarget"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#employeeFireNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("employeeFireYears", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("employeeFireAchieveAge", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("employeeFireAdditionalMonthly", yen.format(0));
+    setText("employeeFireSideIncomeEffect", "0\u5e74");
+    setText("employeeFireDividendEffect", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("employeeFireSideFireComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthlyContribution = values.employeeFireMonthly.value + values.employeeFireSideIncome.value + values.employeeFireDividendIncome.value;
+  const noSideMonthlyContribution = values.employeeFireMonthly.value + values.employeeFireDividendIncome.value;
+  const noDividendMonthlyContribution = values.employeeFireMonthly.value + values.employeeFireSideIncome.value;
+  const achievementMonths = findAchievementMonths(
+    values.employeeFireAssets.value,
+    monthlyContribution,
+    values.employeeFireReturn.value,
+    values.employeeFireTarget.value,
+  );
+  const noSideAchievementMonths = findAchievementMonths(
+    values.employeeFireAssets.value,
+    noSideMonthlyContribution,
+    values.employeeFireReturn.value,
+    values.employeeFireTarget.value,
+  );
+  const noDividendAchievementMonths = findAchievementMonths(
+    values.employeeFireAssets.value,
+    noDividendMonthlyContribution,
+    values.employeeFireReturn.value,
+    values.employeeFireTarget.value,
+  );
+  const targetMonths = 20 * 12;
+  const requiredAdditionalMonthly = calculateRequiredMonthly(
+    values.employeeFireAssets.value,
+    monthlyContribution,
+    values.employeeFireReturn.value,
+    targetMonths,
+    values.employeeFireTarget.value,
+  );
+  const yearsText = formatYears(achievementMonths);
+  const achieveAge = achievementMonths === null
+    ? "\u672a\u9054\u6210"
+    : `${(values.employeeFireAge.value + achievementMonths / 12).toFixed(1)}\u6b73`;
+  const sideIncomeEffect = achievementMonths !== null && noSideAchievementMonths !== null
+    ? Math.max((noSideAchievementMonths - achievementMonths) / 12, 0)
+    : 0;
+  const dividendEffectYears = achievementMonths !== null && noDividendAchievementMonths !== null
+    ? Math.max((noDividendAchievementMonths - achievementMonths) / 12, 0)
+    : 0;
+  const sideFireRequiredAssets = Math.max(values.employeeFireLivingCost.value - (values.employeeFireSideIncome.value + values.employeeFireDividendIncome.value) * 12, 0) * 25;
+  const sideFireDifference = Math.max(values.employeeFireTarget.value - sideFireRequiredAssets, 0);
+  const dividendEffectText = `${yen.format(values.employeeFireDividendIncome.value)} / \u6708\u306e\u518d\u6295\u8cc7\u3067\u7d04${dividendEffectYears.toFixed(1)}\u5e74\u77ed\u7e2e\u306e\u76ee\u5b89`;
+  const sideFireComparison = sideFireRequiredAssets <= 0
+    ? "\u526f\u696d\u30fb\u914d\u5f53\u3067\u751f\u6d3b\u8cbb\u3092\u8986\u3048\u308b\u76ee\u5b89"
+    : `\u30b5\u30a4\u30c9FIRE\u5fc5\u8981\u8cc7\u7523\u306f${yen.format(sideFireRequiredAssets)}\u3001\u5b8c\u5168FIRE\u3088\u308a${yen.format(sideFireDifference)}\u4f4e\u3044\u76ee\u5b89`;
+
+  setText("employeeFireYears", yearsText);
+  setText("employeeFireAchieveAge", achieveAge);
+  setText("employeeFireAdditionalMonthly", yen.format(requiredAdditionalMonthly));
+  setText("employeeFireSideIncomeEffect", `${sideIncomeEffect.toFixed(1)}\u5e74`);
+  setText("employeeFireDividendEffect", dividendEffectText);
+  setText("employeeFireSideFireComparison", sideFireComparison);
+}
+
 function renderSideFire() {
   const values = {
     sideFireCurrentAge: getFieldValue("sideFireCurrentAge"),
@@ -3376,7 +3601,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -3451,6 +3676,10 @@ document.querySelector("#dividendReinvestmentForm").addEventListener("input", re
 document.querySelector("#dividendReinvestmentForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendReinvestment);
 });
+document.querySelector("#employeeFireForm").addEventListener("input", renderEmployeeFire);
+document.querySelector("#employeeFireForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderEmployeeFire);
+});
 document.querySelector("#sideFireForm").addEventListener("input", renderSideFire);
 document.querySelector("#sideFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFire);
@@ -3475,6 +3704,7 @@ renderEducation();
 renderEducationInsurance();
 renderDividend();
 renderDividendReinvestment();
+renderEmployeeFire();
 renderSideFire();
 renderMortgage();
 renderRoute();
