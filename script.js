@@ -205,6 +205,43 @@ document.body.innerHTML = `
       </header>
 
       <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
+        <section class="article-panel" aria-label="カテゴリ別ページ">
+          <section class="tool-heading">
+            <h2>カテゴリ別ページ</h2>
+            <p>目的に近いカテゴリから、関連ツールと関連記事をまとめて確認できます。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="category-side-business.html">
+              <strong>副業カテゴリ</strong>
+              <span>副業収入、AI副業、手取り、会計、カード、効率化の記事へ移動</span>
+            </a>
+            <a class="article-link" href="category-tax.html">
+              <strong>税金カテゴリ</strong>
+              <span>所得税、住民税、青色申告、副業税金対策をまとめて確認</span>
+            </a>
+            <a class="article-link" href="category-investment.html">
+              <strong>投資カテゴリ</strong>
+              <span>新NISA、iDeCo、配当金、証券口座比較へ移動</span>
+            </a>
+            <a class="article-link" href="category-fire.html">
+              <strong>FIREカテゴリ</strong>
+              <span>FIRE、会社員FIRE、サイドFIRE、配当再投資を整理</span>
+            </a>
+            <a class="article-link" href="category-housing.html">
+              <strong>住宅カテゴリ</strong>
+              <span>住宅ローンと老後資金への影響を確認</span>
+            </a>
+            <a class="article-link" href="category-education.html">
+              <strong>教育カテゴリ</strong>
+              <span>教育費、学資保険比較、老後資金への影響を確認</span>
+            </a>
+            <a class="article-link" href="category-retirement.html">
+              <strong>老後カテゴリ</strong>
+              <span>老後資金、FIRE、iDeCo、新NISAをまとめて確認</span>
+            </a>
+          </div>
+        </section>
+
         <section class="category-section" aria-label="&#x526f;&#x696d;&#x53ce;&#x76ca;&#x7cfb;">
           <div class="category-heading">
             <p class="eyebrow">Category 1</p>
