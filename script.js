@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -70,6 +70,10 @@ const routeSeo = {
   nisa: {
     title: "\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u904b\u7528\u5e74\u6570\u304b\u3089\u65b0NISA\u306e\u5c06\u6765\u8cc7\u7523\u984d\u3068\u904b\u7528\u76ca\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "credit-card-investment": {
+    title: "\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u7a4d\u7acb\u5e74\u6570\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u30af\u30ec\u30ab\u9084\u5143\u7387\u3001\u30dd\u30a4\u30f3\u30c8\u518d\u6295\u8cc7\u6709\u7121\u3001NISA\u5229\u7528\u6709\u7121\u304b\u3089\u30af\u30ec\u30ab\u7a4d\u7acb\u3068\u901a\u5e38\u7a4d\u7acb\u306e\u5dee\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
   ideco: {
     title: "iDeCo\u7bc0\u7a0e\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -195,6 +199,7 @@ document.body.innerHTML = `
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#credit-card-investment" data-route="credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
@@ -355,6 +360,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#credit-card-investment">
+            <p class="eyebrow">Card Invest</p>
+            <h2>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x6bce;&#x6708;&#x7a4d;&#x7acb;&#x984d;&#x3001;&#x7a4d;&#x7acb;&#x5e74;&#x6570;&#x3001;&#x60f3;&#x5b9a;&#x5e74;&#x5229;&#x3001;&#x30af;&#x30ec;&#x30ab;&#x9084;&#x5143;&#x7387;&#x304b;&#x3089;&#x3001;&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9084;&#x5143;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x306e;&#x5dee;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x30dd;&#x30a4;&#x30f3;&#x30c8;</span>
+              <span>&#x5dee;&#x984d;</span>
+              <span>FIRE&#x76ee;&#x5b89;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#ideco">
             <p class="eyebrow">iDeCo</p>
             <h2>iDeCo&#x7bc0;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -509,6 +526,7 @@ document.body.innerHTML = `
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#credit-card-investment"><strong>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;</strong><span>&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9084;&#x5143;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x306e;&#x5dee;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -2231,6 +2249,114 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="credit-card-investment" aria-label="クレカ積立比較シミュレーター">
+        <section class="tool-heading">
+          <h2>クレカ積立比較シミュレーター</h2>
+          <p>毎月積立額、積立年数、想定年利、クレカ還元率から、通常積立とクレジットカード積立の最終資産額、累計ポイント、FIRE達成への影響を比較します。</p>
+        </section>
+
+        <section class="workspace" aria-label="クレカ積立比較の計算">
+          <form class="input-panel" id="creditCardInvestmentForm">
+            <div class="field">
+              <label for="cardMonthly">毎月積立額 <span class="unit">円 / 月</span></label>
+              <input id="cardMonthly" name="cardMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="50000" required aria-describedby="cardMonthlyError">
+              <p class="error" id="cardMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="cardYears">積立年数 <span class="unit">年</span></label>
+              <input id="cardYears" name="cardYears" type="number" inputmode="numeric" min="1" max="100" step="1" value="20" required aria-describedby="cardYearsError">
+              <p class="error" id="cardYearsError"></p>
+            </div>
+            <div class="field">
+              <label for="cardAnnualReturn">想定年利 <span class="unit">%</span></label>
+              <input id="cardAnnualReturn" name="cardAnnualReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="cardAnnualReturnError">
+              <p class="error" id="cardAnnualReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="cardRewardRate">クレカ還元率 <span class="unit">%</span></label>
+              <input id="cardRewardRate" name="cardRewardRate" type="number" inputmode="decimal" min="0" max="10" step="0.1" value="1" required aria-describedby="cardRewardRateError">
+              <p class="error" id="cardRewardRateError"></p>
+            </div>
+            <label class="check-field" for="cardPointReinvest">
+              <input id="cardPointReinvest" name="cardPointReinvest" type="checkbox" checked>
+              <span>ポイントを再投資する</span>
+            </label>
+            <label class="check-field" for="cardNisaUse">
+              <input id="cardNisaUse" name="cardNisaUse" type="checkbox" checked>
+              <span>NISAを利用する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">クレカ積立の最終資産額</p>
+              <p class="amount" id="cardFinalAssets">0円</p>
+            </div>
+            <p class="notice" id="cardInvestmentNotice">入力を確認してください。ポイント還元率や運用利回りは将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>通常積立の最終資産額</strong>
+                <span class="accent-blue" id="normalInvestmentFinalAssets">0円</span>
+                <small>ポイントを考慮しない積立投資の目安</small>
+              </div>
+              <div class="metric">
+                <strong>累計ポイント還元</strong>
+                <span class="accent-green" id="cardTotalPoints">0円</span>
+                <small>積立額に還元率をかけたポイント相当額</small>
+              </div>
+              <div class="metric">
+                <strong>ポイント再投資効果</strong>
+                <span class="accent-amber" id="cardPointReinvestmentEffect">0円</span>
+                <small>ポイントを再投資した場合の上乗せ目安</small>
+              </div>
+              <div class="metric">
+                <strong>差額比較</strong>
+                <span class="accent-green" id="cardDifference">0円</span>
+                <small>クレカ積立 - 通常積立</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-amber text-metric" id="cardFireImpact">0円</span>
+                <small>目標FIRE資産3000万円に対する上乗せ効果</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="クレカ積立比較シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>クレカ積立は通常積立より有利ですか？</summary>
+              <p>同じ投資商品へ積み立てるなら、ポイント還元分だけ有利になりやすいです。ただし、還元率、上限額、対象カード、証券会社の条件は変わることがあります。</p>
+            </details>
+            <details>
+              <summary>ポイントは再投資したほうがいいですか？</summary>
+              <p>長期で資産形成するなら、ポイントも投資に回すことで複利効果を得やすくなります。生活費に使う場合は、再投資効果は出ませんが実質的な支出削減になります。</p>
+            </details>
+            <details>
+              <summary>NISA利用有無は何に影響しますか？</summary>
+              <p>このツールでは、NISA利用時は運用益を非課税で見やすくし、年間投資枠の目安も表示します。実際の対象商品や枠の使い方は証券会社の条件を確認してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="クレカ積立比較関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>クレカ積立は、新NISAや配当再投資と合わせて確認すると、ポイント還元を含めた資産形成の全体像を整理しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#nisa">新NISA・積立投資シミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="dividend-reinvestment" aria-label="配当再投資シミュレーター">
         <section class="tool-heading">
           <h2>配当再投資シミュレーター</h2>
@@ -2594,6 +2720,7 @@ document.body.innerHTML = `
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
@@ -2657,6 +2784,10 @@ const fieldRules = {
   nisaAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   nisaYears: { label: "\u904b\u7528\u5e74\u6570", min: 0, max: 100, unit: "\u5e74", integer: false },
   nisaTarget: { label: "\u76ee\u6a19\u91d1\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  cardMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cardYears: { label: "\u7a4d\u7acb\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  cardAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  cardRewardRate: { label: "\u30af\u30ec\u30ab\u9084\u5143\u7387", min: 0, max: 10, unit: "%", integer: false },
   idecoAnnualIncome: { label: "\u5e74\u53ce", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   idecoTaxableIncome: { label: "\u8ab2\u7a0e\u6240\u5f97", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   idecoIncomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
@@ -3126,6 +3257,70 @@ function calculateFutureAssets(currentAssets, monthlyInvestment, annualReturn, m
 
   const growth = (1 + monthlyReturn) ** months;
   return currentAssets * growth + monthlyInvestment * ((growth - 1) / monthlyReturn);
+}
+
+function applyInvestmentTax(grossAssets, principal, nisaUse) {
+  if (nisaUse) {
+    return grossAssets;
+  }
+
+  const taxRate = 0.20315;
+  const profit = Math.max(grossAssets - principal, 0);
+  return principal + profit * (1 - taxRate);
+}
+
+function renderCreditCardInvestment() {
+  const values = {
+    cardMonthly: getFieldValue("cardMonthly"),
+    cardYears: getFieldValue("cardYears"),
+    cardAnnualReturn: getFieldValue("cardAnnualReturn"),
+    cardRewardRate: getFieldValue("cardRewardRate"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#cardInvestmentNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("normalInvestmentFinalAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("cardFinalAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("cardTotalPoints", yen.format(0));
+    setText("cardPointReinvestmentEffect", yen.format(0));
+    setText("cardDifference", yen.format(0));
+    setText("cardFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthly = values.cardMonthly.value;
+  const months = values.cardYears.value * 12;
+  const annualReturn = values.cardAnnualReturn.value;
+  const rewardRate = values.cardRewardRate.value / 100;
+  const pointReinvest = document.querySelector("#cardPointReinvest").checked;
+  const nisaUse = document.querySelector("#cardNisaUse").checked;
+  const monthlyPoints = monthly * rewardRate;
+  const totalPoints = monthlyPoints * months;
+  const principal = monthly * months;
+  const normalGross = calculateFutureAssets(0, monthly, annualReturn, months);
+  const normalAssets = applyInvestmentTax(normalGross, principal, nisaUse);
+  const reinvestPrincipal = principal + totalPoints;
+  const reinvestGross = calculateFutureAssets(0, monthly + monthlyPoints, annualReturn, months);
+  const reinvestAssets = applyInvestmentTax(reinvestGross, reinvestPrincipal, nisaUse);
+  const cardAssets = pointReinvest ? reinvestAssets : normalAssets + totalPoints;
+  const pointReinvestmentEffect = Math.max(reinvestAssets - normalAssets - totalPoints, 0);
+  const difference = Math.max(cardAssets - normalAssets, 0);
+  const fireTarget = 30000000;
+  const fireImpact = fireTarget > 0 ? Math.min((difference / fireTarget) * 100, 999) : 0;
+  const annualInvestment = monthly * 12;
+  const nisaText = nisaUse
+    ? annualInvestment <= 3600000
+      ? "NISA\u5e74\u9593\u6295\u8cc7\u67a0\u306e\u7bc4\u56f2\u5185\u3067\u6d3b\u7528\u3057\u3084\u3059\u3044\u76ee\u5b89"
+      : "NISA\u5e74\u9593\u6295\u8cc7\u67a0\u3092\u8d85\u3048\u308b\u305f\u3081\u3001\u8a3c\u5238\u4f1a\u793e\u306e\u6761\u4ef6\u78ba\u8a8d\u304c\u5fc5\u8981"
+    : "\u8ab2\u7a0e\u53e3\u5ea7\u3067\u306f\u904b\u7528\u76ca\u306b\u7a0e\u91d1\u304c\u304b\u304b\u308b\u524d\u63d0\u306e\u7c21\u6613\u8a66\u7b97";
+
+  setText("normalInvestmentFinalAssets", yen.format(normalAssets));
+  setText("cardFinalAssets", yen.format(cardAssets));
+  setText("cardTotalPoints", yen.format(totalPoints));
+  setText("cardPointReinvestmentEffect", pointReinvest ? yen.format(pointReinvestmentEffect) : "\u518d\u6295\u8cc7\u306a\u3057");
+  setText("cardDifference", yen.format(difference));
+  setText("cardFireImpact", `FIRE\u76ee\u6a193,000\u4e07\u5186\u306b\u5bfe\u3057\u3066\u7d04${fireImpact.toFixed(2)}%\u306e\u4e0a\u4e57\u305b\u3002${nisaText}`);
 }
 
 function findAchievementMonths(currentAssets, monthlyInvestment, annualReturn, targetAssets) {
@@ -3825,7 +4020,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -3871,6 +4066,10 @@ document.querySelector("#takeHomeForm").addEventListener("reset", () => {
 document.querySelector("#nisaForm").addEventListener("input", renderNisa);
 document.querySelector("#nisaForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderNisa);
+});
+document.querySelector("#creditCardInvestmentForm").addEventListener("input", renderCreditCardInvestment);
+document.querySelector("#creditCardInvestmentForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderCreditCardInvestment);
 });
 document.querySelector("#idecoForm").addEventListener("input", renderIdeco);
 document.querySelector("#idecoForm").addEventListener("reset", () => {
@@ -3925,6 +4124,7 @@ renderResidentTax();
 renderIncomeTax();
 renderTakeHome();
 renderNisa();
+renderCreditCardInvestment();
 renderIdeco();
 renderFire();
 renderRetirement();
