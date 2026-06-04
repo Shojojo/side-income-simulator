@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u30b5\u30a4\u30c9FIRE\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -82,6 +82,10 @@ const routeSeo = {
   dividend: {
     title: "\u914d\u5f53\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d\u3001\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a\u3001\u904b\u7528\u5e74\u6570\u3001\u914d\u5f53\u518d\u6295\u8cc7\u6709\u7121\u304b\u3089\u5e74\u9593\u914d\u5f53\u91d1\u3001\u7d2f\u8a08\u914d\u5f53\u91d1\u3001\u6700\u7d42\u8cc7\u7523\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "dividend-reinvestment": {
+    title: "\u914d\u5f53\u518d\u6295\u8cc7\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d\u3001\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a\u3001\u60f3\u5b9a\u682a\u4fa1\u6210\u9577\u7387\u3001\u904b\u7528\u5e74\u6570\u3001\u914d\u5f53\u518d\u6295\u8cc7\u6709\u7121\u304b\u3089\u6700\u7d42\u8cc7\u7523\u984d\u3001\u7d2f\u8a08\u914d\u5f53\u91d1\u3001\u518d\u6295\u8cc7\u306b\u3088\u308b\u5897\u52a0\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
   },
   "side-fire": {
     title: "\u30b5\u30a4\u30c9FIRE\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -185,6 +189,7 @@ document.body.innerHTML = `
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
+          <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
@@ -339,6 +344,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#dividend-reinvestment">
+            <p class="eyebrow">Reinvest</p>
+            <h2>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x914d;&#x5f53;&#x91d1;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x6700;&#x7d42;&#x8cc7;&#x7523;&#x984d;&#x3001;&#x7d2f;&#x8a08;&#x914d;&#x5f53;&#x91d1;&#x3001;&#x518d;&#x6295;&#x8cc7;&#x306b;&#x3088;&#x308b;&#x5897;&#x52a0;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x6700;&#x7d42;&#x8cc7;&#x7523;</span>
+              <span>&#x518d;&#x6295;&#x8cc7;&#x52b9;&#x679c;</span>
+              <span>&#x65b0;NISA&#x6bd4;&#x8f03;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#side-fire">
             <p class="eyebrow">Side FIRE</p>
             <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -423,6 +440,7 @@ document.body.innerHTML = `
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -1574,9 +1592,9 @@ document.body.innerHTML = `
             <p>FIRE&#x9054;&#x6210;&#x3084;&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x3068;&#x5408;&#x308f;&#x305b;&#x3066;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x8a08;&#x753b;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
+            <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#fire">FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
-            <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
         </section>
       </section>
@@ -1907,6 +1925,115 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="dividend-reinvestment" aria-label="配当再投資シミュレーター">
+        <section class="tool-heading">
+          <h2>配当再投資シミュレーター</h2>
+          <p>初期投資額、毎月追加投資額、想定配当利回り、想定株価成長率、運用年数から、配当金を再投資した場合の資産成長と再投資による増加額を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="配当再投資の計算">
+          <form class="input-panel" id="dividendReinvestmentForm">
+            <div class="field">
+              <label for="dividendReinvestmentInitial">初期投資額 <span class="unit">円</span></label>
+              <input id="dividendReinvestmentInitial" name="dividendReinvestmentInitial" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="1000000" required aria-describedby="dividendReinvestmentInitialError">
+              <p class="error" id="dividendReinvestmentInitialError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendReinvestmentMonthly">毎月追加投資額 <span class="unit">円 / 月</span></label>
+              <input id="dividendReinvestmentMonthly" name="dividendReinvestmentMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="dividendReinvestmentMonthlyError">
+              <p class="error" id="dividendReinvestmentMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendReinvestmentYield">想定配当利回り <span class="unit">%</span></label>
+              <input id="dividendReinvestmentYield" name="dividendReinvestmentYield" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="dividendReinvestmentYieldError">
+              <p class="error" id="dividendReinvestmentYieldError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendReinvestmentGrowth">想定株価成長率 <span class="unit">%</span></label>
+              <input id="dividendReinvestmentGrowth" name="dividendReinvestmentGrowth" type="number" inputmode="decimal" min="-30" max="30" step="0.1" value="3" required aria-describedby="dividendReinvestmentGrowthError">
+              <p class="error" id="dividendReinvestmentGrowthError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendReinvestmentYears">運用年数 <span class="unit">年</span></label>
+              <input id="dividendReinvestmentYears" name="dividendReinvestmentYears" type="number" inputmode="numeric" min="1" max="100" step="1" value="20" required aria-describedby="dividendReinvestmentYearsError">
+              <p class="error" id="dividendReinvestmentYearsError"></p>
+            </div>
+            <label class="check-field" for="dividendReinvestmentEnabled">
+              <input id="dividendReinvestmentEnabled" name="dividendReinvestmentEnabled" type="checkbox" checked>
+              <span>配当金を再投資する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">最終資産額</p>
+              <p class="amount" id="dividendReinvestmentFinalAssets">0円</p>
+            </div>
+            <p class="notice" id="dividendReinvestmentNotice">入力を確認してください。配当利回りや株価成長率は将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>累計配当金</strong>
+                <span class="accent-blue" id="dividendReinvestmentTotalDividend">0円</span>
+                <small>運用期間中に発生する配当金の概算</small>
+              </div>
+              <div class="metric">
+                <strong>年間配当金</strong>
+                <span class="accent-green" id="dividendReinvestmentAnnualDividend">0円</span>
+                <small>最終年時点の資産額から見た年間配当の目安</small>
+              </div>
+              <div class="metric">
+                <strong>再投資による増加額</strong>
+                <span class="accent-amber" id="dividendReinvestmentIncrease">0円</span>
+                <small>配当を受け取った場合との最終資産額の差</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-amber text-metric" id="dividendReinvestmentFireImpact">0円</span>
+                <small>年間生活費360万円を配当でどれくらい補えるか</small>
+              </div>
+              <div class="metric">
+                <strong>新NISA利用時の比較</strong>
+                <span class="accent-green text-metric" id="dividendReinvestmentNisaComparison">0円</span>
+                <small>年間投資枠と非課税保有限度額に対する目安</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="配当再投資シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>配当再投資とは何ですか？</summary>
+              <p>受け取った配当金を生活費として使わず、同じ投資商品や別の商品へ追加投資する考え方です。元本が増えやすくなるため、長期では資産成長に差が出る場合があります。</p>
+            </details>
+            <details>
+              <summary>想定株価成長率は何%で入れればいいですか？</summary>
+              <p>投資対象によって変わります。高く入れすぎると楽観的な結果になりやすいため、まずは0%から数%程度で保守的に試算し、複数パターンで比較するのがおすすめです。</p>
+            </details>
+            <details>
+              <summary>新NISAで配当再投資するメリットはありますか？</summary>
+              <p>新NISAの非課税枠を使うと、条件を満たす配当金や売却益を非課税で受け取れる場合があります。再投資を続ける場合は、年間投資枠と非課税保有限度額の範囲も合わせて確認しましょう。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="配当再投資関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>配当再投資は、配当金、FIRE、新NISAの考え方とセットで確認すると、資産形成の全体像をつかみやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#dividend">配当金シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
+            <a href="#nisa">新NISA・積立投資シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="side-fire" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -2163,6 +2290,7 @@ document.body.innerHTML = `
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
+          <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
@@ -2255,6 +2383,11 @@ const fieldRules = {
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  dividendReinvestmentInitial: { label: "\u521d\u671f\u6295\u8cc7\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  dividendReinvestmentMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendReinvestmentYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
+  dividendReinvestmentGrowth: { label: "\u60f3\u5b9a\u682a\u4fa1\u6210\u9577\u7387", min: -30, max: 30, unit: "%", integer: false },
+  dividendReinvestmentYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
   sideFireCurrentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
   sideFireTargetAge: { label: "FIRE\u76ee\u6a19\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
   sideFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -2989,6 +3122,74 @@ function renderDividend() {
   setText("dividendNisaComparison", nisaGuide);
 }
 
+function calculateDividendReinvestmentPlan(values, reinvest) {
+  const yieldRate = values.dividendReinvestmentYield.value / 100;
+  const growthRate = values.dividendReinvestmentGrowth.value / 100;
+  const years = values.dividendReinvestmentYears.value;
+  let assets = values.dividendReinvestmentInitial.value;
+  let totalDividend = 0;
+  let annualDividend = assets * yieldRate;
+
+  for (let year = 1; year <= years; year += 1) {
+    assets += values.dividendReinvestmentMonthly.value * 12;
+    assets *= 1 + growthRate;
+    annualDividend = Math.max(assets * yieldRate, 0);
+    totalDividend += annualDividend;
+    if (reinvest) {
+      assets += annualDividend;
+    }
+  }
+
+  return {
+    finalAssets: Math.max(assets, 0),
+    totalDividend,
+    annualDividend,
+  };
+}
+
+function renderDividendReinvestment() {
+  const values = {
+    dividendReinvestmentInitial: getFieldValue("dividendReinvestmentInitial"),
+    dividendReinvestmentMonthly: getFieldValue("dividendReinvestmentMonthly"),
+    dividendReinvestmentYield: getFieldValue("dividendReinvestmentYield"),
+    dividendReinvestmentGrowth: getFieldValue("dividendReinvestmentGrowth"),
+    dividendReinvestmentYears: getFieldValue("dividendReinvestmentYears"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#dividendReinvestmentNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dividendReinvestmentFinalAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendReinvestmentTotalDividend", yen.format(0));
+    setText("dividendReinvestmentAnnualDividend", yen.format(0));
+    setText("dividendReinvestmentIncrease", yen.format(0));
+    setText("dividendReinvestmentFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendReinvestmentNisaComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const reinvest = document.querySelector("#dividendReinvestmentEnabled").checked;
+  const selectedPlan = calculateDividendReinvestmentPlan(values, reinvest);
+  const reinvestPlan = calculateDividendReinvestmentPlan(values, true);
+  const cashPlan = calculateDividendReinvestmentPlan(values, false);
+  const reinvestIncrease = Math.max(reinvestPlan.finalAssets - cashPlan.finalAssets, 0);
+  const fireExpense = 3600000;
+  const fireCoverage = fireExpense > 0 ? Math.min((selectedPlan.annualDividend / fireExpense) * 100, 999) : 0;
+  const annualInvestment = values.dividendReinvestmentMonthly.value * 12;
+  const nisaGuide = annualInvestment <= 3600000 && selectedPlan.finalAssets <= 18000000
+    ? "\u5e74\u9593\u6295\u8cc7\u67a0\u3068\u975e\u8ab2\u7a0e\u4fdd\u6709\u9650\u5ea6\u984d\u306e\u7bc4\u56f2\u5185\u306b\u53ce\u307e\u308b\u76ee\u5b89"
+    : annualInvestment <= 3600000
+      ? "\u5e74\u9593\u6295\u8cc7\u67a0\u5185\u3067\u3082\u975e\u8ab2\u7a0e\u4fdd\u6709\u9650\u5ea6\u984d\u306e\u7ba1\u7406\u304c\u5fc5\u8981\u306a\u76ee\u5b89"
+      : "\u6bce\u5e74\u306e\u8ffd\u52a0\u6295\u8cc7\u304c\u65b0NISA\u5e74\u9593\u67a0\u3092\u8d85\u3048\u308b\u76ee\u5b89";
+
+  setText("dividendReinvestmentFinalAssets", yen.format(selectedPlan.finalAssets));
+  setText("dividendReinvestmentTotalDividend", yen.format(selectedPlan.totalDividend));
+  setText("dividendReinvestmentAnnualDividend", yen.format(selectedPlan.annualDividend));
+  setText("dividendReinvestmentIncrease", yen.format(reinvestIncrease));
+  setText("dividendReinvestmentFireImpact", `\u5e74\u9593\u751f\u6d3b\u8cbb360\u4e07\u5186\u306e\u7d04${fireCoverage.toFixed(1)}%\u3092\u914d\u5f53\u3067\u88dc\u3046\u76ee\u5b89`);
+  setText("dividendReinvestmentNisaComparison", nisaGuide);
+}
+
 function renderSideFire() {
   const values = {
     sideFireCurrentAge: getFieldValue("sideFireCurrentAge"),
@@ -3175,7 +3376,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "side-fire" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -3246,6 +3447,10 @@ document.querySelector("#dividendForm").addEventListener("input", renderDividend
 document.querySelector("#dividendForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividend);
 });
+document.querySelector("#dividendReinvestmentForm").addEventListener("input", renderDividendReinvestment);
+document.querySelector("#dividendReinvestmentForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderDividendReinvestment);
+});
 document.querySelector("#sideFireForm").addEventListener("input", renderSideFire);
 document.querySelector("#sideFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFire);
@@ -3269,6 +3474,7 @@ renderRetirement();
 renderEducation();
 renderEducationInsurance();
 renderDividend();
+renderDividendReinvestment();
 renderSideFire();
 renderMortgage();
 renderRoute();
