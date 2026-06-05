@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -50,6 +50,10 @@ const routeSeo = {
   "ai-hourly": {
     title: "AI\u526f\u696d\u6642\u7d66\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
     description: "\u6848\u4ef6\u5358\u4fa1\u3001\u4f5c\u696d\u6642\u9593\u3001\u6708\u6848\u4ef6\u6570\u304b\u3089AI\u526f\u696d\u306e\u6642\u7d66\u3001\u6708\u53ce\u3001AI\u6d3b\u7528\u6642\u306e\u52b9\u7387\u6539\u5584\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "side-profit-margin": {
+    title: "\u526f\u696d\u5229\u76ca\u7387\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
+    description: "\u526f\u696d\u58f2\u4e0a\u3001\u7d4c\u8cbb\u3001\u4f5c\u696d\u6642\u9593\u3001\u5e83\u544a\u8cbb\u3001\u5916\u6ce8\u8cbb\u3001AI\u30c4\u30fc\u30eb\u5229\u7528\u6709\u7121\u304b\u3089\u5229\u76ca\u984d\u3001\u5229\u76ca\u7387\u3001\u6642\u7d66\u63db\u7b97\u3001\u6539\u5584\u30dd\u30a4\u30f3\u30c8\u3092\u5206\u6790\u3067\u304d\u307e\u3059\u3002",
   },
   "take-home": {
     title: "\u526f\u696d\u624b\u53d6\u308a\u8a08\u7b97\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc",
@@ -194,6 +198,7 @@ document.body.innerHTML = `
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
@@ -278,6 +283,18 @@ document.body.innerHTML = `
               <span>&#x6642;&#x7d66;</span>
               <span>&#x6708;&#x53ce;</span>
               <span>AI&#x52b9;&#x7387;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#side-profit-margin">
+            <p class="eyebrow">Profit</p>
+            <h2>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <p>&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x3001;&#x7d4c;&#x8cbb;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x5e83;&#x544a;&#x8cbb;&#x3001;&#x5916;&#x6ce8;&#x8cbb;&#x304b;&#x3089;&#x3001;&#x5229;&#x76ca;&#x7387;&#x3068;&#x6642;&#x7d66;&#x52b9;&#x7387;&#x3092;&#x5206;&#x6790;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+            <div class="tool-meta">
+              <span>&#x5229;&#x76ca;&#x984d;</span>
+              <span>&#x5229;&#x76ca;&#x7387;</span>
+              <span>&#x6642;&#x7d66;&#x52b9;&#x7387;</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -522,6 +539,7 @@ document.body.innerHTML = `
           </section>
           <ol class="ranking-list">
             <li><a href="#side-income"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -797,6 +815,115 @@ document.body.innerHTML = `
             <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#tax">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="side-profit-margin" aria-label="副業利益率シミュレーター">
+        <section class="tool-heading">
+          <h2>副業利益率シミュレーター</h2>
+          <p>副業売上、経費、作業時間、広告費、外注費、AIツール利用有無から、利益額、利益率、時給換算、改善ポイントを分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="副業利益率の計算">
+          <form class="input-panel" id="sideProfitMarginForm">
+            <div class="field">
+              <label for="profitSales">副業売上 <span class="unit">円</span></label>
+              <input id="profitSales" name="profitSales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="300000" required aria-describedby="profitSalesError">
+              <p class="error" id="profitSalesError"></p>
+            </div>
+            <div class="field">
+              <label for="profitExpenses">経費 <span class="unit">円</span></label>
+              <input id="profitExpenses" name="profitExpenses" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="50000" required aria-describedby="profitExpensesError">
+              <p class="error" id="profitExpensesError"></p>
+            </div>
+            <div class="field">
+              <label for="profitHours">作業時間 <span class="unit">時間</span></label>
+              <input id="profitHours" name="profitHours" type="number" inputmode="decimal" min="0.1" max="10000" step="0.5" value="80" required aria-describedby="profitHoursError">
+              <p class="error" id="profitHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="profitAdCost">広告費 <span class="unit">円</span></label>
+              <input id="profitAdCost" name="profitAdCost" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="30000" required aria-describedby="profitAdCostError">
+              <p class="error" id="profitAdCostError"></p>
+            </div>
+            <div class="field">
+              <label for="profitOutsourcingCost">外注費 <span class="unit">円</span></label>
+              <input id="profitOutsourcingCost" name="profitOutsourcingCost" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="20000" required aria-describedby="profitOutsourcingCostError">
+              <p class="error" id="profitOutsourcingCostError"></p>
+            </div>
+            <label class="check-field" for="profitAiUse">
+              <input id="profitAiUse" name="profitAiUse" type="checkbox" checked>
+              <span>AIツールを利用する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">利益額</p>
+              <p class="amount" id="profitAmount">0円</p>
+            </div>
+            <p class="notice" id="profitMarginNotice">入力を確認してください。利益率や時給換算は、税金を差し引く前の簡易分析です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>利益率</strong>
+                <span class="accent-blue" id="profitMarginRate">0%</span>
+                <small>利益額 ÷ 副業売上</small>
+              </div>
+              <div class="metric">
+                <strong>時給換算</strong>
+                <span class="accent-green" id="profitHourlyRate">0円</span>
+                <small>利益額 ÷ 作業時間</small>
+              </div>
+              <div class="metric">
+                <strong>AI活用による改善効果</strong>
+                <span class="accent-amber text-metric" id="profitAiEffect">0円</span>
+                <small>作業時間を25%短縮した場合の時給改善目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-green text-metric" id="profitImprovementPoint">未計算</span>
+                <small>利益率、広告費、外注費、時給効率から判定</small>
+              </div>
+              <div class="metric">
+                <strong>税金シミュレーターへの導線</strong>
+                <span class="accent-blue text-metric" id="profitTaxGuide">利益が出たら税金も確認</span>
+                <small>利益額をもとに税金・手取りへ進む</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="副業利益率シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>副業の利益率は何%を目安にすればいいですか？</summary>
+              <p>業種によって変わりますが、まずは30%以上を一つの目安にすると見直しやすくなります。広告費や外注費が大きい副業では、利益率だけでなく時給換算も合わせて確認しましょう。</p>
+            </details>
+            <details>
+              <summary>作業時間は月間で入力しますか？</summary>
+              <p>このツールでは、入力した売上や経費と同じ期間の作業時間を入れてください。月間売上なら月間作業時間、年間売上なら年間作業時間でそろえると時給換算が見やすくなります。</p>
+            </details>
+            <details>
+              <summary>税金は反映されていますか？</summary>
+              <p>このツールは税引前の利益分析です。税金後の手取りを確認したい場合は、副業手取り計算シミュレーターや副業税金・青色申告シミュレーターも合わせて使ってください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業利益率関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>利益率を確認したら、月収、手取り、税金の順に見ると、実際に残る金額まで整理できます。</p>
+          </section>
+          <div class="related-links">
+            <a href="#side-income">副業月収シミュレーター</a>
+            <a href="#take-home">副業手取り計算シミュレーター</a>
+            <a href="#tax">副業税金・青色申告シミュレーター</a>
           </div>
         </section>
       </section>
@@ -2715,6 +2842,7 @@ document.body.innerHTML = `
           <a href="#top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
@@ -2756,6 +2884,11 @@ const fieldRules = {
   projectPrice: { label: "\u6848\u4ef6\u5358\u4fa1", min: 0, max: 100000000, unit: "\u5186", integer: false },
   projectHours: { label: "\u4f5c\u696d\u6642\u9593", min: 0.1, max: 1000, unit: "\u6642\u9593", integer: false },
   monthlyAiProjects: { label: "\u6708\u6848\u4ef6\u6570", min: 0, max: 100, unit: "\u4ef6", integer: true },
+  profitSales: { label: "\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  profitExpenses: { label: "\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  profitHours: { label: "\u4f5c\u696d\u6642\u9593", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
+  profitAdCost: { label: "\u5e83\u544a\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  profitOutsourcingCost: { label: "\u5916\u6ce8\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   annualSideIncome: { label: "\u5e74\u9593\u526f\u696d\u53ce\u5165", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   expenses: { label: "\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   incomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
@@ -2958,6 +3091,71 @@ function renderAiHourly() {
   document.querySelector("#aiEfficiencyDetail").textContent = aiEnabled
     ? `\u6708\u9593\u3067\u7d04${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593\u3092\u77ed\u7e2e`
     : "AI\u3092\u4f7f\u308f\u306a\u3044\u901a\u5e38\u4f5c\u696d\u306e\u8a66\u7b97";
+}
+
+function renderSideProfitMargin() {
+  const values = {
+    profitSales: getFieldValue("profitSales"),
+    profitExpenses: getFieldValue("profitExpenses"),
+    profitHours: getFieldValue("profitHours"),
+    profitAdCost: getFieldValue("profitAdCost"),
+    profitOutsourcingCost: getFieldValue("profitOutsourcingCost"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#profitMarginNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("profitAmount", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("profitMarginRate", "0%");
+    setText("profitHourlyRate", yen.format(0));
+    setText("profitAiEffect", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("profitImprovementPoint", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("profitTaxGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const sales = values.profitSales.value;
+  const expenses = values.profitExpenses.value;
+  const hours = values.profitHours.value;
+  const adCost = values.profitAdCost.value;
+  const outsourcingCost = values.profitOutsourcingCost.value;
+  const aiUse = document.querySelector("#profitAiUse").checked;
+  const totalCost = expenses + adCost + outsourcingCost;
+  const profit = sales - totalCost;
+  const profitMargin = sales > 0 ? (profit / sales) * 100 : 0;
+  const hourlyRate = hours > 0 ? profit / hours : 0;
+  const aiReducedHours = aiUse ? hours * 0.75 : hours;
+  const aiHourlyRate = aiReducedHours > 0 ? profit / aiReducedHours : 0;
+  const aiImprovement = Math.max(aiHourlyRate - hourlyRate, 0);
+  const adRatio = sales > 0 ? (adCost / sales) * 100 : 0;
+  const outsourcingRatio = sales > 0 ? (outsourcingCost / sales) * 100 : 0;
+  let improvement = "\u5229\u76ca\u7387\u3068\u6642\u7d66\u52b9\u7387\u306f\u826f\u597d\u3067\u3059\u3002\u5358\u4fa1\u30a2\u30c3\u30d7\u3068\u7d99\u7d9a\u6848\u4ef6\u5316\u3092\u691c\u8a0e\u3057\u307e\u3057\u3087\u3046";
+
+  if (profit < 0) {
+    improvement = "\u8d64\u5b57\u3067\u3059\u3002\u5e83\u544a\u8cbb\u30fb\u5916\u6ce8\u8cbb\u30fb\u56fa\u5b9a\u8cbb\u3092\u5148\u306b\u898b\u76f4\u3057\u307e\u3057\u3087\u3046";
+  } else if (profitMargin < 20) {
+    improvement = "\u5229\u76ca\u7387\u304c\u4f4e\u3081\u3067\u3059\u3002\u5024\u4e0a\u3052\u3001\u7d4c\u8cbb\u524a\u6e1b\u3001\u5de5\u6570\u524a\u6e1b\u306e\u512a\u5148\u9806\u3092\u6c7a\u3081\u307e\u3057\u3087\u3046";
+  } else if (adRatio > 25) {
+    improvement = "\u5e83\u544a\u8cbb\u306e\u6bd4\u7387\u304c\u9ad8\u3081\u3067\u3059\u3002\u8cbb\u7528\u5bfe\u52b9\u679c\u3068\u81ea\u7136\u6d41\u5165\u306e\u5f37\u5316\u3092\u78ba\u8a8d\u3057\u307e\u3057\u3087\u3046";
+  } else if (outsourcingRatio > 25) {
+    improvement = "\u5916\u6ce8\u8cbb\u306e\u6bd4\u7387\u304c\u9ad8\u3081\u3067\u3059\u3002\u5916\u6ce8\u7bc4\u56f2\u3068\u5185\u88fd\u5316\u306e\u30d0\u30e9\u30f3\u30b9\u3092\u898b\u76f4\u3057\u307e\u3057\u3087\u3046";
+  } else if (hourlyRate < 2000) {
+    improvement = "\u6642\u7d66\u52b9\u7387\u304c\u4f4e\u3081\u3067\u3059\u3002AI\u6d3b\u7528\u3001\u30c6\u30f3\u30d7\u30ec\u5316\u3001\u9ad8\u5358\u4fa1\u30e1\u30cb\u30e5\u30fc\u5316\u304c\u6539\u5584\u5019\u88dc\u3067\u3059";
+  }
+
+  const aiText = aiUse
+    ? `${yen.format(aiImprovement)} / \u6642\u9593\u306e\u6539\u5584\u76ee\u5b89`
+    : "\u672a\u5229\u7528\u3002AI\u5c0e\u5165\u3067\u4f5c\u696d\u6642\u9593\u77ed\u7e2e\u3092\u691c\u8a0e";
+  const taxGuide = profit > 0
+    ? `${yen.format(profit)}\u306e\u5229\u76ca\u3092\u7a0e\u91d1\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u78ba\u8a8d`
+    : "\u5229\u76ca\u304c\u51fa\u305f\u3089\u7a0e\u91d1\u3068\u624b\u53d6\u308a\u3092\u78ba\u8a8d";
+
+  setText("profitAmount", yen.format(profit));
+  setText("profitMarginRate", `${profitMargin.toFixed(1)}%`);
+  setText("profitHourlyRate", yen.format(hourlyRate));
+  setText("profitAiEffect", aiText);
+  setText("profitImprovementPoint", improvement);
+  setText("profitTaxGuide", taxGuide);
 }
 
 function renderTax() {
@@ -4020,7 +4218,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -4046,6 +4244,10 @@ document.querySelector("#sideIncomeForm").addEventListener("reset", () => {
 document.querySelector("#aiHourlyForm").addEventListener("input", renderAiHourly);
 document.querySelector("#aiHourlyForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderAiHourly);
+});
+document.querySelector("#sideProfitMarginForm").addEventListener("input", renderSideProfitMargin);
+document.querySelector("#sideProfitMarginForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideProfitMargin);
 });
 document.querySelector("#taxForm").addEventListener("input", renderTax);
 document.querySelector("#taxForm").addEventListener("reset", () => {
@@ -4119,6 +4321,7 @@ window.addEventListener("hashchange", renderRoute);
 
 renderSideIncome();
 renderAiHourly();
+renderSideProfitMargin();
 renderTax();
 renderResidentTax();
 renderIncomeTax();
