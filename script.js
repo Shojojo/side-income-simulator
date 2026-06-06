@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,7 +40,7 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター20選｜副業・税金・FIRE計算",
+    title: "【2026年対応】初心者向け資産シミュレーター21選｜副業・税金・FIRE計算",
     description: seoDescription,
   },
   "side-income": {
@@ -98,6 +98,10 @@ const routeSeo = {
   "dividend-reinvestment": {
     title: "【2026年対応】初心者向け配当再投資シミュレーター｜3分で複利計算",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d\u3001\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a\u3001\u60f3\u5b9a\u682a\u4fa1\u6210\u9577\u7387\u3001\u904b\u7528\u5e74\u6570\u3001\u914d\u5f53\u518d\u6295\u8cc7\u6709\u7121\u304b\u3089\u6700\u7d42\u8cc7\u7523\u984d\u3001\u7d2f\u8a08\u914d\u5f53\u91d1\u3001\u518d\u6295\u8cc7\u306b\u3088\u308b\u5897\u52a0\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "dividend-life": {
+    title: "【2026年対応】初心者向け配当生活達成シミュレーター｜3分で必要資産計算",
+    description: "毎月生活費、現在資産、毎月積立額、想定配当利回り、想定年利、運用年数、配当再投資有無から、配当生活に必要な資産額と達成予想年を試算できます。",
   },
   "side-fire": {
     title: "【2026年対応】初心者向けサイドFIREシミュレーター｜3分で必要資産計算",
@@ -208,6 +212,7 @@ document.body.innerHTML = `
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
+          <a href="#dividend-life" data-route="dividend-life">配当生活達成</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
@@ -236,11 +241,11 @@ document.body.innerHTML = `
             </a>
             <a class="article-link" href="category-investment.html">
               <strong>投資カテゴリ</strong>
-              <span>新NISA、iDeCo、配当金、証券口座比較へ移動</span>
+              <span>新NISA、iDeCo、配当金、配当生活、証券口座比較へ移動</span>
             </a>
             <a class="article-link" href="category-fire.html">
               <strong>FIREカテゴリ</strong>
-              <span>FIRE、会社員FIRE、サイドFIRE、配当再投資を整理</span>
+              <span>FIRE、会社員FIRE、サイドFIRE、配当生活を整理</span>
             </a>
             <a class="article-link" href="category-housing.html">
               <strong>住宅カテゴリ</strong>
@@ -449,6 +454,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#dividend-life">
+            <p class="eyebrow">Dividend Life</p>
+            <h2>配当生活達成シミュレーター</h2>
+            <p>毎月生活費と配当利回りから、配当収入だけで生活費をまかなうための必要資産額と達成予想年を試算します。</p>
+            <div class="tool-meta">
+              <span>必要資産</span>
+              <span>達成予想</span>
+              <span>新NISA目安</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#side-fire">
             <p class="eyebrow">Side FIRE</p>
             <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -548,6 +565,7 @@ document.body.innerHTML = `
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#dividend-life"><strong>配当生活達成</strong><span>生活費を配当収入だけでまかなう必要資産を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -2376,6 +2394,125 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="dividend-life" aria-label="配当生活達成シミュレーター">
+        <section class="tool-heading">
+          <h2>配当生活達成シミュレーター</h2>
+          <p>毎月生活費、現在資産、毎月積立額、想定配当利回り、想定年利、運用年数、配当再投資有無から、生活費を配当収入だけでまかなうための必要資産額を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="配当生活達成の計算">
+          <form class="input-panel" id="dividendLifeForm">
+            <div class="field">
+              <label for="dividendLifeMonthlyCost">毎月生活費 <span class="unit">円 / 月</span></label>
+              <input id="dividendLifeMonthlyCost" name="dividendLifeMonthlyCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="250000" required aria-describedby="dividendLifeMonthlyCostError">
+              <p class="error" id="dividendLifeMonthlyCostError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeAssets">現在資産 <span class="unit">円</span></label>
+              <input id="dividendLifeAssets" name="dividendLifeAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="5000000" required aria-describedby="dividendLifeAssetsError">
+              <p class="error" id="dividendLifeAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeMonthly">毎月積立額 <span class="unit">円 / 月</span></label>
+              <input id="dividendLifeMonthly" name="dividendLifeMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="dividendLifeMonthlyError">
+              <p class="error" id="dividendLifeMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYield">想定配当利回り <span class="unit">%</span></label>
+              <input id="dividendLifeYield" name="dividendLifeYield" type="number" inputmode="decimal" min="0.1" max="30" step="0.1" value="4" required aria-describedby="dividendLifeYieldError">
+              <p class="error" id="dividendLifeYieldError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeReturn">想定年利 <span class="unit">%</span></label>
+              <input id="dividendLifeReturn" name="dividendLifeReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="dividendLifeReturnError">
+              <p class="error" id="dividendLifeReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYears">運用年数 <span class="unit">年</span></label>
+              <input id="dividendLifeYears" name="dividendLifeYears" type="number" inputmode="numeric" min="1" max="100" step="1" value="20" required aria-describedby="dividendLifeYearsError">
+              <p class="error" id="dividendLifeYearsError"></p>
+            </div>
+            <label class="check-field" for="dividendLifeReinvest">
+              <input id="dividendLifeReinvest" name="dividendLifeReinvest" type="checkbox" checked>
+              <span>配当金を再投資する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">必要資産額</p>
+              <p class="amount" id="dividendLifeRequiredAssets">0円</p>
+            </div>
+            <p class="notice" id="dividendLifeNotice">入力を確認してください。配当利回りや運用利回りは将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>年間必要配当金</strong>
+                <span class="accent-green" id="dividendLifeAnnualDividend">0円</span>
+                <small>毎月生活費 × 12か月</small>
+              </div>
+              <div class="metric">
+                <strong>配当生活達成予想年</strong>
+                <span class="accent-blue" id="dividendLifeAchieveYear">未計算</span>
+                <small>運用年数内で必要資産に届く時期</small>
+              </div>
+              <div class="metric">
+                <strong>現在との差額</strong>
+                <span class="accent-amber" id="dividendLifeGap">0円</span>
+                <small>必要資産額 - 現在資産</small>
+              </div>
+              <div class="metric">
+                <strong>毎月必要積立額</strong>
+                <span class="accent-green" id="dividendLifeRequiredMonthly">0円</span>
+                <small>設定した運用年数で達成するための目安</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成との比較</strong>
+                <span class="accent-amber text-metric" id="dividendLifeFireComparison">未計算</span>
+                <small>4%ルールのFIRE必要資産との比較</small>
+              </div>
+              <div class="metric">
+                <strong>新NISA利用時の効果</strong>
+                <span class="accent-blue text-metric" id="dividendLifeNisaEffect">未計算</span>
+                <small>年間投資枠と非課税保有限度額の目安</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="配当生活達成シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>配当生活に必要な資産額はどう計算していますか？</summary>
+              <p>年間生活費を想定配当利回りで割って計算しています。例えば年間生活費300万円、配当利回り4%なら必要資産は約7,500万円です。</p>
+            </details>
+            <details>
+              <summary>配当利回りは何%で入力すればよいですか？</summary>
+              <p>保有したい株式やETFの想定利回りを入力します。高い利回りほど必要資産は少なく見えますが、減配や価格下落リスクもあるため保守的な数字で確認すると現実的です。</p>
+            </details>
+            <details>
+              <summary>新NISAだけで配当生活は達成できますか？</summary>
+              <p>新NISAの非課税保有限度額は目安として1,800万円のため、生活費と配当利回りによっては課税口座との併用が必要になります。このツールでは必要資産と新NISA枠の関係を簡易表示しています。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="配当生活達成関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>配当生活は、年間配当金、再投資効果、FIRE必要資産を合わせて確認すると現実的な目標額を決めやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#dividend">配当金シミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="credit-card-investment" aria-label="クレカ積立比較シミュレーター">
         <section class="tool-heading">
           <h2>クレカ積立比較シミュレーター</h2>
@@ -2852,6 +2989,7 @@ document.body.innerHTML = `
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
+          <a href="#dividend-life">配当生活達成</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
             <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
@@ -2955,6 +3093,12 @@ const fieldRules = {
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  dividendLifeMonthlyCost: { label: "毎月生活費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendLifeAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  dividendLifeMonthly: { label: "毎月積立額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendLifeYield: { label: "想定配当利回り", min: 0.1, max: 30, unit: "%", integer: false },
+  dividendLifeReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
+  dividendLifeYears: { label: "運用年数", min: 1, max: 100, unit: "\u5e74", integer: true },
   dividendReinvestmentInitial: { label: "\u521d\u671f\u6295\u8cc7\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendReinvestmentMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendReinvestmentYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
@@ -3835,6 +3979,133 @@ function renderDividend() {
   setText("dividendNisaComparison", nisaGuide);
 }
 
+function projectDividendLifeAssets(currentAssets, monthlyInvestment, annualReturn, dividendYield, months, reinvest) {
+  const monthlyReturn = annualReturn / 100 / 12;
+  const monthlyDividendYield = dividendYield / 100 / 12;
+  let assets = currentAssets;
+
+  for (let month = 1; month <= months; month += 1) {
+    assets = Math.max(assets * (1 + monthlyReturn), 0);
+    assets += monthlyInvestment;
+    if (reinvest) {
+      assets += Math.max(assets * monthlyDividendYield, 0);
+    }
+  }
+
+  return assets;
+}
+
+function findDividendLifeAchievementMonth(currentAssets, monthlyInvestment, annualReturn, dividendYield, targetAssets, maxMonths, reinvest) {
+  if (currentAssets >= targetAssets) {
+    return 0;
+  }
+
+  for (let month = 1; month <= maxMonths; month += 1) {
+    const assets = projectDividendLifeAssets(currentAssets, monthlyInvestment, annualReturn, dividendYield, month, reinvest);
+    if (assets >= targetAssets) {
+      return month;
+    }
+  }
+
+  return null;
+}
+
+function calculateDividendLifeRequiredMonthly(currentAssets, annualReturn, dividendYield, months, targetAssets, reinvest) {
+  if (months <= 0 || currentAssets >= targetAssets) {
+    return 0;
+  }
+
+  const currentProjection = projectDividendLifeAssets(currentAssets, 0, annualReturn, dividendYield, months, reinvest);
+  if (currentProjection >= targetAssets) {
+    return 0;
+  }
+
+  let low = 0;
+  let high = 100000000;
+  for (let count = 0; count < 60; count += 1) {
+    const mid = (low + high) / 2;
+    const projected = projectDividendLifeAssets(currentAssets, mid, annualReturn, dividendYield, months, reinvest);
+    if (projected >= targetAssets) {
+      high = mid;
+    } else {
+      low = mid;
+    }
+  }
+
+  return high;
+}
+
+function renderDividendLife() {
+  const values = {
+    dividendLifeMonthlyCost: getFieldValue("dividendLifeMonthlyCost"),
+    dividendLifeAssets: getFieldValue("dividendLifeAssets"),
+    dividendLifeMonthly: getFieldValue("dividendLifeMonthly"),
+    dividendLifeYield: getFieldValue("dividendLifeYield"),
+    dividendLifeReturn: getFieldValue("dividendLifeReturn"),
+    dividendLifeYears: getFieldValue("dividendLifeYears"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#dividendLifeNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dividendLifeRequiredAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeAnnualDividend", yen.format(0));
+    setText("dividendLifeAchieveYear", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeGap", yen.format(0));
+    setText("dividendLifeRequiredMonthly", yen.format(0));
+    setText("dividendLifeFireComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeNisaEffect", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthlyCost = values.dividendLifeMonthlyCost.value;
+  const currentAssets = values.dividendLifeAssets.value;
+  const monthlyInvestment = values.dividendLifeMonthly.value;
+  const dividendYield = values.dividendLifeYield.value;
+  const annualReturn = values.dividendLifeReturn.value;
+  const months = values.dividendLifeYears.value * 12;
+  const reinvest = document.querySelector("#dividendLifeReinvest").checked;
+  const annualNeededDividend = monthlyCost * 12;
+  const requiredAssets = annualNeededDividend / (dividendYield / 100);
+  const achievementMonth = findDividendLifeAchievementMonth(
+    currentAssets,
+    monthlyInvestment,
+    annualReturn,
+    dividendYield,
+    requiredAssets,
+    months,
+    reinvest,
+  );
+  const gap = Math.max(requiredAssets - currentAssets, 0);
+  const requiredMonthly = calculateDividendLifeRequiredMonthly(
+    currentAssets,
+    annualReturn,
+    dividendYield,
+    months,
+    requiredAssets,
+    reinvest,
+  );
+  const fireTarget = annualNeededDividend * 25;
+  const fireDifference = requiredAssets - fireTarget;
+  const fireComparison = fireDifference <= 0
+    ? `4%ルールのFIRE必要資産より${yen.format(Math.abs(fireDifference))}少ない目安`
+    : `4%ルールのFIRE必要資産より${yen.format(fireDifference)}多い目安`;
+  const annualInvestment = monthlyInvestment * 12;
+  const nisaEffect = requiredAssets <= 18000000
+    ? "必要資産が新NISA非課税保有限度額1,800万円内に収まる目安"
+    : annualInvestment <= 3600000
+      ? "年間投資額は新NISA枠内でも、必要資産は1,800万円を超えるため課税口座との併用が必要な目安"
+      : "毎年の積立額が新NISA年間投資枠を超えるため、入金計画と課税口座の併用確認が必要";
+
+  setText("dividendLifeRequiredAssets", yen.format(requiredAssets));
+  setText("dividendLifeAnnualDividend", yen.format(annualNeededDividend));
+  setText("dividendLifeAchieveYear", achievementMonth === null ? "運用期間内は未達成" : formatYears(achievementMonth));
+  setText("dividendLifeGap", yen.format(gap));
+  setText("dividendLifeRequiredMonthly", yen.format(requiredMonthly));
+  setText("dividendLifeFireComparison", fireComparison);
+  setText("dividendLifeNisaEffect", nisaEffect);
+}
+
 function calculateDividendReinvestmentPlan(values, reinvest) {
   const yieldRate = values.dividendReinvestmentYield.value / 100;
   const growthRate = values.dividendReinvestmentGrowth.value / 100;
@@ -4218,7 +4489,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -4301,6 +4572,10 @@ document.querySelector("#dividendReinvestmentForm").addEventListener("input", re
 document.querySelector("#dividendReinvestmentForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendReinvestment);
 });
+document.querySelector("#dividendLifeForm").addEventListener("input", renderDividendLife);
+document.querySelector("#dividendLifeForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderDividendLife);
+});
 document.querySelector("#employeeFireForm").addEventListener("input", renderEmployeeFire);
 document.querySelector("#employeeFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEmployeeFire);
@@ -4335,6 +4610,7 @@ renderEducation();
 renderEducationInsurance();
 renderDividend();
 renderDividendReinvestment();
+renderDividendLife();
 renderEmployeeFire();
 renderSideFire();
 renderEmergencyFund();
