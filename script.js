@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,7 +40,7 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター23選｜副業・税金・FIRE計算",
+    title: "【2026年対応】初心者向け資産シミュレーター24選｜副業・税金・FIRE計算",
     description: seoDescription,
   },
   "side-income": {
@@ -118,6 +118,10 @@ const routeSeo = {
   "emergency-fund": {
     title: "【2026年対応】初心者向け生活防衛資金シミュレーター｜3分で必要額計算",
     description: "\u6bce\u6708\u751f\u6d3b\u8cbb\u3001\u5bb6\u65cf\u4eba\u6570\u3001\u96c7\u7528\u5f62\u614b\u3001\u73fe\u5728\u8caf\u84c4\u984d\u3001\u5931\u696d\u6642\u60f3\u5b9a\u671f\u9593\u3001\u526f\u696d\u53ce\u5165\u6709\u7121\u304b\u3089\u5fc5\u8981\u306a\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3068\u4e0d\u8db3\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "fixed-cost-reduction": {
+    title: "【2026年対応】初心者向け固定費削減シミュレーター｜3分で年間節約額計算",
+    description: "家賃、通信費、保険料、サブスク費用、食費、クレカ年会費、その他固定費から、毎月固定費合計、削減可能額、年間節約額、投資に回した場合の将来資産額を試算できます。",
   },
   retirement: {
     title: "【2026年対応】初心者向け老後資金シミュレーター｜3分で不足額計算",
@@ -227,6 +231,7 @@ document.body.innerHTML = `
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#emergency-fund" data-route="emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
+          <a href="#fixed-cost-reduction" data-route="fixed-cost-reduction">固定費削減</a>
           <a href="#retirement" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#education-insurance" data-route="education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
@@ -533,6 +538,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#fixed-cost-reduction">
+            <p class="eyebrow">Cost Cut</p>
+            <h2>固定費削減シミュレーター</h2>
+            <p>家賃、通信費、保険料、サブスク費用、食費、クレカ年会費から、削減可能額と年間節約額を試算します。</p>
+            <div class="tool-meta">
+              <span>固定費合計</span>
+              <span>年間節約</span>
+              <span>FIRE効果</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#retirement">
             <p class="eyebrow">Retirement</p>
             <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -606,6 +623,7 @@ document.body.innerHTML = `
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#emergency-fund"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#fixed-cost-reduction"><strong>固定費削減</strong><span>毎月の固定費から年間節約額と投資効果を確認</span></a></li>
             <li><a href="#retirement"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#education-insurance"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
             <li><a href="#mortgage"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -2098,6 +2116,121 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="fixed-cost-reduction" aria-label="固定費削減シミュレーター">
+        <section class="tool-heading">
+          <h2>固定費削減シミュレーター</h2>
+          <p>家賃、通信費、保険料、サブスク費用、食費、クレカ年会費、その他固定費から、毎月固定費合計と削減可能額、年間節約額を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="固定費削減の計算">
+          <form class="input-panel" id="fixedCostForm">
+            <div class="field">
+              <label for="rentCost">家賃 <span class="unit">円 / 月</span></label>
+              <input id="rentCost" name="rentCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="90000" required aria-describedby="rentCostError">
+              <p class="error" id="rentCostError"></p>
+            </div>
+            <div class="field">
+              <label for="communicationCost">通信費 <span class="unit">円 / 月</span></label>
+              <input id="communicationCost" name="communicationCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="12000" required aria-describedby="communicationCostError">
+              <p class="error" id="communicationCostError"></p>
+            </div>
+            <div class="field">
+              <label for="insuranceCost">保険料 <span class="unit">円 / 月</span></label>
+              <input id="insuranceCost" name="insuranceCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="18000" required aria-describedby="insuranceCostError">
+              <p class="error" id="insuranceCostError"></p>
+            </div>
+            <div class="field">
+              <label for="subscriptionCost">サブスク費用 <span class="unit">円 / 月</span></label>
+              <input id="subscriptionCost" name="subscriptionCost" type="number" inputmode="numeric" min="0" max="100000000" step="500" value="5000" required aria-describedby="subscriptionCostError">
+              <p class="error" id="subscriptionCostError"></p>
+            </div>
+            <div class="field">
+              <label for="foodCost">食費 <span class="unit">円 / 月</span></label>
+              <input id="foodCost" name="foodCost" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="70000" required aria-describedby="foodCostError">
+              <p class="error" id="foodCostError"></p>
+            </div>
+            <div class="field">
+              <label for="creditCardAnnualFee">クレカ年会費 <span class="unit">円 / 年</span></label>
+              <input id="creditCardAnnualFee" name="creditCardAnnualFee" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="11000" required aria-describedby="creditCardAnnualFeeError">
+              <p class="error" id="creditCardAnnualFeeError"></p>
+            </div>
+            <div class="field">
+              <label for="otherFixedCost">その他固定費 <span class="unit">円 / 月</span></label>
+              <input id="otherFixedCost" name="otherFixedCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="15000" required aria-describedby="otherFixedCostError">
+              <p class="error" id="otherFixedCostError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">毎月固定費合計</p>
+              <p class="amount" id="fixedCostMonthlyTotal">0円</p>
+            </div>
+            <p class="notice" id="fixedCostNotice">入力を確認してください。削減可能額は一般的な見直し余地から計算した概算です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>削減可能額</strong>
+                <span class="accent-green" id="fixedCostReducible">0円</span>
+                <small>毎月見直せる可能性がある金額</small>
+              </div>
+              <div class="metric">
+                <strong>年間節約額</strong>
+                <span class="accent-amber" id="fixedCostAnnualSaving">0円</span>
+                <small>削減可能額を12か月続けた場合</small>
+              </div>
+              <div class="metric">
+                <strong>投資へ回した場合の将来資産額</strong>
+                <span class="accent-blue" id="fixedCostFutureAssets">0円</span>
+                <small>20年・年4%で積み立てた場合の目安</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-green text-metric" id="fixedCostFireImpact">0円</span>
+                <small>目標資産3,000万円に対する改善目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="fixedCostImprovementPoint">入力を確認してください</span>
+                <small>金額の大きい項目から見直すと効果が出やすいです</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="固定費削減シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>削減可能額はどう計算していますか？</summary>
+              <p>通信費、保険料、サブスク、食費など、見直しやすさが違うため項目ごとに削減率の目安を変えて概算しています。実際の削減額は契約内容や生活スタイルで変わります。</p>
+            </details>
+            <details>
+              <summary>クレカ年会費はどのように扱いますか？</summary>
+              <p>入力した年会費を12か月で割り、月額固定費として合計に含めています。ポイント還元や特典より年会費の負担が大きい場合は、カードの見直し候補になります。</p>
+            </details>
+            <details>
+              <summary>節約額を投資に回すとどれくらい変わりますか？</summary>
+              <p>このツールでは、毎月の削減可能額を20年間、年4%で積み立てた場合の将来資産額を表示します。固定費削減は一度見直すと効果が続きやすく、FIREや老後資金にも影響します。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="固定費削減関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>固定費を下げた分は、生活防衛資金やFIRE準備、クレジットカードの見直しと合わせて考えると効果を確認しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire">FIREシミュレーター</a>
+            <a href="#emergency-fund">生活防衛資金シミュレーター</a>
+            <a href="article-credit-card-comparison.html">クレカ比較記事</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="retirement" aria-label="&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -3260,6 +3393,7 @@ document.body.innerHTML = `
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
             <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
             <a href="#emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
+            <a href="#fixed-cost-reduction">固定費削減</a>
             <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="#education">&#x6559;&#x80b2;&#x8cbb;</a>
           <a href="#education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
@@ -3394,6 +3528,13 @@ const fieldRules = {
   familyCount: { label: "\u5bb6\u65cf\u4eba\u6570", min: 1, max: 20, unit: "\u4eba", integer: true },
   emergencySavings: { label: "\u73fe\u5728\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   unemploymentMonths: { label: "\u5931\u696d\u6642\u60f3\u5b9a\u671f\u9593", min: 1, max: 60, unit: "\u304b\u6708", integer: true },
+  rentCost: { label: "家賃", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  communicationCost: { label: "通信費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  insuranceCost: { label: "保険料", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  subscriptionCost: { label: "サブスク費用", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  foodCost: { label: "食費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  creditCardAnnualFee: { label: "クレカ年会費", min: 0, max: 10000000, unit: "\u5186", integer: false },
+  otherFixedCost: { label: "その他固定費", min: 0, max: 100000000, unit: "\u5186", integer: false },
   sideFireCurrentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
   sideFireTargetAge: { label: "FIRE\u76ee\u6a19\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
   sideFireAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -4742,6 +4883,76 @@ function renderEmergencyFund() {
   setText("emergencyFundFireSafety", `${yen.format(fireSafetyFund)}\u3092FIRE\u524d\u306e\u73fe\u91d1\u76ee\u5b89\u3068\u3057\u3066\u78ba\u4fdd`);
 }
 
+function renderFixedCostReduction() {
+  const values = {
+    rentCost: getFieldValue("rentCost"),
+    communicationCost: getFieldValue("communicationCost"),
+    insuranceCost: getFieldValue("insuranceCost"),
+    subscriptionCost: getFieldValue("subscriptionCost"),
+    foodCost: getFieldValue("foodCost"),
+    creditCardAnnualFee: getFieldValue("creditCardAnnualFee"),
+    otherFixedCost: getFieldValue("otherFixedCost"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#fixedCostNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("fixedCostMonthlyTotal", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("fixedCostReducible", yen.format(0));
+    setText("fixedCostAnnualSaving", yen.format(0));
+    setText("fixedCostFutureAssets", yen.format(0));
+    setText("fixedCostFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("fixedCostImprovementPoint", "\u5165\u529b\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044");
+    return;
+  }
+
+  const cardMonthlyCost = values.creditCardAnnualFee.value / 12;
+  const monthlyTotal = values.rentCost.value
+    + values.communicationCost.value
+    + values.insuranceCost.value
+    + values.subscriptionCost.value
+    + values.foodCost.value
+    + cardMonthlyCost
+    + values.otherFixedCost.value;
+  const reducibleItems = {
+    "\u5bb6\u8cc3": values.rentCost.value * 0.05,
+    "\u901a\u4fe1\u8cbb": values.communicationCost.value * 0.35,
+    "\u4fdd\u967a\u6599": values.insuranceCost.value * 0.25,
+    "\u30b5\u30d6\u30b9\u30af": values.subscriptionCost.value * 0.4,
+    "\u98df\u8cbb": values.foodCost.value * 0.08,
+    "\u30af\u30ec\u30ab\u5e74\u4f1a\u8cbb": cardMonthlyCost * 0.5,
+    "\u305d\u306e\u4ed6\u56fa\u5b9a\u8cbb": values.otherFixedCost.value * 0.15,
+  };
+  const reducible = Object.values(reducibleItems).reduce((sum, item) => sum + item, 0);
+  const annualSaving = reducible * 12;
+  const futureAssets = calculateFutureAssets(0, reducible, 4, 20 * 12);
+  const fireTarget = 30000000;
+  const fireImpactRate = fireTarget > 0 ? (futureAssets / fireTarget) * 100 : 0;
+  const fireImpact = reducible > 0
+    ? `20\u5e74\u9593\u6295\u8cc7\u3059\u308b\u3068FIRE\u76ee\u6a193,000\u4e07\u5186\u306e\u7d04${fireImpactRate.toFixed(1)}%\u306b\u76f8\u5f53`
+    : "\u524a\u6e1b\u53ef\u80fd\u984d\u304c0\u5186\u306e\u305f\u3081\u3001FIRE\u3078\u306e\u8ffd\u52a0\u52b9\u679c\u306f0\u5186\u3067\u3059";
+  const topItem = Object.entries(reducibleItems).sort((a, b) => b[1] - a[1])[0];
+  const improvementMessages = {
+    "\u5bb6\u8cc3": "\u5bb6\u8cc3\u306f\u66f4\u65b0\u6642\u306e\u4ea4\u6e09\u3084\u4f4f\u307f\u66ff\u3048\u3067\u52b9\u679c\u304c\u5927\u304d\u304f\u306a\u308a\u3084\u3059\u3044\u9805\u76ee\u3067\u3059\u3002",
+    "\u901a\u4fe1\u8cbb": "\u901a\u4fe1\u8cbb\u306f\u683c\u5b89\u30d7\u30e9\u30f3\u3084\u56de\u7dda\u306e\u898b\u76f4\u3057\u3067\u6bce\u6708\u306e\u524a\u6e1b\u306b\u3064\u306a\u304c\u308a\u3084\u3059\u3044\u3067\u3059\u3002",
+    "\u4fdd\u967a\u6599": "\u4fdd\u967a\u6599\u306f\u91cd\u8907\u4fdd\u969c\u3084\u5fc5\u8981\u4fdd\u969c\u984d\u3092\u78ba\u8a8d\u3059\u308b\u3068\u898b\u76f4\u3057\u3084\u3059\u3044\u3067\u3059\u3002",
+    "\u30b5\u30d6\u30b9\u30af": "\u30b5\u30d6\u30b9\u30af\u306f\u4f7f\u3063\u3066\u3044\u306a\u3044\u5951\u7d04\u3092\u89e3\u7d04\u3059\u308b\u3060\u3051\u3067\u52b9\u679c\u304c\u51fa\u3084\u3059\u3044\u9805\u76ee\u3067\u3059\u3002",
+    "\u98df\u8cbb": "\u98df\u8cbb\u306f\u5916\u98df\u983b\u5ea6\u3084\u307e\u3068\u3081\u8cb7\u3044\u306e\u8a2d\u8a08\u3067\u7121\u7406\u306a\u304f\u8abf\u6574\u3057\u3084\u3059\u3044\u3067\u3059\u3002",
+    "\u30af\u30ec\u30ab\u5e74\u4f1a\u8cbb": "\u30af\u30ec\u30ab\u5e74\u4f1a\u8cbb\u306f\u7279\u5178\u3068\u9084\u5143\u984d\u3092\u6bd4\u3079\u3001\u5e74\u4f1a\u8cbb\u7121\u6599\u30ab\u30fc\u30c9\u3078\u306e\u5207\u308a\u66ff\u3048\u3082\u691c\u8a0e\u3067\u304d\u307e\u3059\u3002",
+    "\u305d\u306e\u4ed6\u56fa\u5b9a\u8cbb": "\u305d\u306e\u4ed6\u56fa\u5b9a\u8cbb\u306f\u5c11\u984d\u5951\u7d04\u3092\u68da\u5378\u3057\u3059\u308b\u3068\u3001\u6bce\u6708\u306e\u652f\u51fa\u3092\u4e0b\u3052\u3084\u3059\u3044\u3067\u3059\u3002",
+  };
+  const improvementPoint = topItem && topItem[1] > 0
+    ? improvementMessages[topItem[0]]
+    : "\u56fa\u5b9a\u8cbb\u304c\u5c11\u306a\u3044\u72b6\u614b\u3067\u3059\u3002\u3053\u306e\u307e\u307e\u6295\u8cc7\u3084\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u306b\u4f59\u529b\u3092\u56de\u3057\u3084\u3059\u3044\u3067\u3059\u3002";
+
+  setText("fixedCostMonthlyTotal", yen.format(monthlyTotal));
+  setText("fixedCostReducible", `${yen.format(reducible)} / \u6708`);
+  setText("fixedCostAnnualSaving", yen.format(annualSaving));
+  setText("fixedCostFutureAssets", yen.format(futureAssets));
+  setText("fixedCostFireImpact", fireImpact);
+  setText("fixedCostImprovementPoint", improvementPoint);
+}
+
 function renderSideFire() {
   const values = {
     sideFireCurrentAge: getFieldValue("sideFireCurrentAge"),
@@ -4928,7 +5139,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -5035,6 +5246,10 @@ document.querySelector("#emergencyFundForm").addEventListener("input", renderEme
 document.querySelector("#emergencyFundForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEmergencyFund);
 });
+document.querySelector("#fixedCostForm").addEventListener("input", renderFixedCostReduction);
+document.querySelector("#fixedCostForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderFixedCostReduction);
+});
 document.querySelector("#mortgageForm").addEventListener("input", renderMortgage);
 document.querySelector("#mortgageForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderMortgage);
@@ -5063,5 +5278,6 @@ renderDividendLife();
 renderEmployeeFire();
 renderSideFire();
 renderEmergencyFund();
+renderFixedCostReduction();
 renderMortgage();
 renderRoute();
