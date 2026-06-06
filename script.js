@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,7 +40,7 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター24選｜副業・税金・FIRE計算",
+    title: "【2026年対応】初心者向け資産シミュレーター25選｜副業・税金・FIRE計算",
     description: seoDescription,
   },
   "side-income": {
@@ -50,6 +50,10 @@ const routeSeo = {
   "ai-hourly": {
     title: "【2026年対応】初心者向けAI副業時給シミュレーター｜3分で効率計算",
     description: "\u6848\u4ef6\u5358\u4fa1\u3001\u4f5c\u696d\u6642\u9593\u3001\u6708\u6848\u4ef6\u6570\u304b\u3089AI\u526f\u696d\u306e\u6642\u7d66\u3001\u6708\u53ce\u3001AI\u6d3b\u7528\u6642\u306e\u52b9\u7387\u6539\u5584\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "ai-efficiency": {
+    title: "【2026年対応】初心者向けAI副業効率化シミュレーター｜3分で時給改善計算",
+    description: "現在の副業作業時間、売上、AI導入有無、時間削減率、AIツール月額費用、外注費削減額、目標時給から、AI導入後の予想時給、削減時間、利益率改善、年間追加利益を試算できます。",
   },
   "hourly-improvement": {
     title: "【2026年対応】初心者向け副業時給改善シミュレーター｜3分でAI効率分析",
@@ -214,6 +218,7 @@ document.body.innerHTML = `
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#ai-efficiency" data-route="ai-efficiency">AI副業効率化</a>
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
@@ -303,6 +308,18 @@ document.body.innerHTML = `
               <span>&#x6642;&#x7d66;</span>
               <span>&#x6708;&#x53ce;</span>
               <span>AI&#x52b9;&#x7387;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#ai-efficiency">
+            <p class="eyebrow">AI Efficiency</p>
+            <h2>AI副業効率化シミュレーター</h2>
+            <p>AIツール活用による作業時間削減、利益率改善、時給向上、年間追加利益の目安を試算します。</p>
+            <div class="tool-meta">
+              <span>予想時給</span>
+              <span>削減時間</span>
+              <span>追加利益</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -607,6 +624,7 @@ document.body.innerHTML = `
           </section>
           <ol class="ranking-list">
             <li><a href="#side-income"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#ai-efficiency"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
@@ -887,6 +905,120 @@ document.body.innerHTML = `
             <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#tax">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="ai-efficiency" aria-label="AI副業効率化シミュレーター">
+        <section class="tool-heading">
+          <h2>AI副業効率化シミュレーター</h2>
+          <p>現在の副業作業時間、売上、AIによる時間削減率、AIツール月額費用、外注費削減額から、AI導入後の時給改善と年間追加利益を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="AI副業効率化の計算">
+          <form class="input-panel" id="aiEfficiencyForm">
+            <div class="field">
+              <label for="aiEfficiencyHours">現在の副業作業時間 <span class="unit">時間 / 月</span></label>
+              <input id="aiEfficiencyHours" name="aiEfficiencyHours" type="number" inputmode="decimal" min="0.1" max="10000" step="0.5" value="80" required aria-describedby="aiEfficiencyHoursError">
+              <p class="error" id="aiEfficiencyHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencySales">現在の副業売上 <span class="unit">円 / 月</span></label>
+              <input id="aiEfficiencySales" name="aiEfficiencySales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="300000" required aria-describedby="aiEfficiencySalesError">
+              <p class="error" id="aiEfficiencySalesError"></p>
+            </div>
+            <label class="check-field" for="aiEfficiencyUse">
+              <input id="aiEfficiencyUse" name="aiEfficiencyUse" type="checkbox" checked>
+              <span>AIツールを導入する</span>
+            </label>
+            <div class="field">
+              <label for="aiEfficiencyReduction">AIによる時間削減率 <span class="unit">%</span></label>
+              <input id="aiEfficiencyReduction" name="aiEfficiencyReduction" type="number" inputmode="decimal" min="0" max="90" step="1" value="30" required aria-describedby="aiEfficiencyReductionError">
+              <p class="error" id="aiEfficiencyReductionError"></p>
+            </div>
+            <div class="field">
+              <label for="aiToolMonthlyCost">AIツール月額費用 <span class="unit">円 / 月</span></label>
+              <input id="aiToolMonthlyCost" name="aiToolMonthlyCost" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="5000" required aria-describedby="aiToolMonthlyCostError">
+              <p class="error" id="aiToolMonthlyCostError"></p>
+            </div>
+            <div class="field">
+              <label for="outsourcingReduction">外注費削減額 <span class="unit">円 / 月</span></label>
+              <input id="outsourcingReduction" name="outsourcingReduction" type="number" inputmode="numeric" min="0" max="1000000000" step="5000" value="20000" required aria-describedby="outsourcingReductionError">
+              <p class="error" id="outsourcingReductionError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyTargetHourly">目標時給 <span class="unit">円</span></label>
+              <input id="aiEfficiencyTargetHourly" name="aiEfficiencyTargetHourly" type="number" inputmode="numeric" min="0" max="1000000" step="500" value="5000" required aria-describedby="aiEfficiencyTargetHourlyError">
+              <p class="error" id="aiEfficiencyTargetHourlyError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">AI導入後の予想時給</p>
+              <p class="amount" id="aiEfficiencyHourly">0円</p>
+            </div>
+            <p class="notice" id="aiEfficiencyNotice">入力を確認してください。AI導入効果は税引前の簡易シミュレーションです。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>削減時間</strong>
+                <span class="accent-amber" id="aiEfficiencySavedHours">0時間</span>
+                <small>AI活用で減らせる月間作業時間</small>
+              </div>
+              <div class="metric">
+                <strong>利益率改善</strong>
+                <span class="accent-blue" id="aiEfficiencyProfitImprovement">0%</span>
+                <small>AI導入前後の利益率差</small>
+              </div>
+              <div class="metric">
+                <strong>年間追加利益</strong>
+                <span class="accent-green" id="aiEfficiencyAnnualProfit">0円</span>
+                <small>外注費削減額 - AIツール費用の年額目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめAI活用方法</strong>
+                <span class="accent-green text-metric" id="aiEfficiencyRecommendation">未計算</span>
+                <small>時間削減率と目標時給との差から判定</small>
+              </div>
+              <div class="metric">
+                <strong>副業時給改善シミュレーターへの導線</strong>
+                <span class="accent-blue text-metric" id="aiEfficiencyGuide">時給改善も確認</span>
+                <small>経費や外注費を含めた時給分析へ進む</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="AI副業効率化シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>AIによる時間削減率は何%で入力すればいいですか？</summary>
+              <p>文章作成、調査、資料作成、画像生成、コード補助などで短縮できる割合を入力します。最初は20%から30%で試算し、実績に合わせて調整すると現実的です。</p>
+            </details>
+            <details>
+              <summary>AIツール月額費用は利益から差し引きますか？</summary>
+              <p>はい。AI導入後の利益と時給は、AIツール月額費用を差し引き、外注費削減額を加味して計算しています。</p>
+            </details>
+            <details>
+              <summary>AI導入有無をオフにするとどうなりますか？</summary>
+              <p>AIによる時間削減とAIツール費用を0として計算します。AIを使わない場合の現状時給に近い目安として確認できます。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="AI副業効率化関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>AI効率化は、時給改善、利益率改善、使うAIツールの選び方を合わせて見ると実行に移しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#hourly-improvement">副業時給改善シミュレーター</a>
+            <a href="#side-profit-margin">副業利益率シミュレーター</a>
+            <a href="article-ai-tools-comparison.html">AIツール比較記事</a>
           </div>
         </section>
       </section>
@@ -3376,6 +3508,7 @@ document.body.innerHTML = `
           <a href="#top">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="#ai-efficiency">AI副業効率化</a>
           <a href="#hourly-improvement">副業時給改善</a>
           <a href="#side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
@@ -3422,6 +3555,12 @@ const fieldRules = {
   projectPrice: { label: "\u6848\u4ef6\u5358\u4fa1", min: 0, max: 100000000, unit: "\u5186", integer: false },
   projectHours: { label: "\u4f5c\u696d\u6642\u9593", min: 0.1, max: 1000, unit: "\u6642\u9593", integer: false },
   monthlyAiProjects: { label: "\u6708\u6848\u4ef6\u6570", min: 0, max: 100, unit: "\u4ef6", integer: true },
+  aiEfficiencyHours: { label: "現在の副業作業時間", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
+  aiEfficiencySales: { label: "現在の副業売上", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiEfficiencyReduction: { label: "AIによる時間削減率", min: 0, max: 90, unit: "%", integer: false },
+  aiToolMonthlyCost: { label: "AIツール月額費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
+  outsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiEfficiencyTargetHourly: { label: "目標時給", min: 0, max: 1000000, unit: "\u5186", integer: false },
   improvementSales: { label: "副業売上", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   improvementHours: { label: "作業時間", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
   improvementExpenses: { label: "経費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
@@ -3713,6 +3852,68 @@ function renderHourlyImprovement() {
   setText("improvableHours", `${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
   setText("hourlyImprovementPoint", improvementPoint);
   setText("profitMarginGuide", profitGuide);
+}
+
+function renderAiEfficiency() {
+  const values = {
+    aiEfficiencyHours: getFieldValue("aiEfficiencyHours"),
+    aiEfficiencySales: getFieldValue("aiEfficiencySales"),
+    aiEfficiencyReduction: getFieldValue("aiEfficiencyReduction"),
+    aiToolMonthlyCost: getFieldValue("aiToolMonthlyCost"),
+    outsourcingReduction: getFieldValue("outsourcingReduction"),
+    aiEfficiencyTargetHourly: getFieldValue("aiEfficiencyTargetHourly"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#aiEfficiencyNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("aiEfficiencyHourly", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiEfficiencySavedHours", "0\u6642\u9593");
+    setText("aiEfficiencyProfitImprovement", "0%");
+    setText("aiEfficiencyAnnualProfit", yen.format(0));
+    setText("aiEfficiencyRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiEfficiencyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const hours = values.aiEfficiencyHours.value;
+  const sales = values.aiEfficiencySales.value;
+  const aiUse = document.querySelector("#aiEfficiencyUse").checked;
+  const reductionRate = aiUse ? values.aiEfficiencyReduction.value / 100 : 0;
+  const aiCost = aiUse ? values.aiToolMonthlyCost.value : 0;
+  const outsourcingReduction = aiUse ? values.outsourcingReduction.value : 0;
+  const targetHourly = values.aiEfficiencyTargetHourly.value;
+  const savedHours = hours * reductionRate;
+  const afterHours = Math.max(hours - savedHours, 0.1);
+  const currentProfit = sales;
+  const afterProfit = sales + outsourcingReduction - aiCost;
+  const currentHourly = hours > 0 ? currentProfit / hours : 0;
+  const afterHourly = afterHours > 0 ? afterProfit / afterHours : 0;
+  const currentMargin = sales > 0 ? (currentProfit / sales) * 100 : 0;
+  const afterMargin = sales > 0 ? (afterProfit / sales) * 100 : 0;
+  const marginImprovement = afterMargin - currentMargin;
+  const annualAdditionalProfit = (afterProfit - currentProfit) * 12;
+  const targetGap = Math.max(targetHourly - afterHourly, 0);
+  const recommendation = !aiUse
+    ? "AI未導入の場合の現状目安です。定型作業から小さく試すと効果を測りやすいです"
+    : afterProfit <= 0
+      ? "AI費用が重くなっています。まず月額費用の低いツールか無料枠で検証しましょう"
+      : targetGap <= 0
+        ? "目標時給を達成しています。文章作成、調査、テンプレ化を標準化して効果を維持しましょう"
+        : savedHours >= hours * 0.3
+          ? "時間削減は進んでいます。次は単価アップや外注費削減の対象を広げると時給改善しやすいです"
+          : "調査、下書き、要約、画像作成など定型作業をAIに寄せると削減時間を増やしやすいです";
+  const guide = afterHourly >= targetHourly
+    ? "副業時給改善シミュレーターで経費と外注費を含めた維持ラインを確認しましょう"
+    : "副業時給改善シミュレーターで目標時給に必要な単価アップや追加短縮時間を確認しましょう";
+
+  setText("aiEfficiencyHourly", yen.format(afterHourly));
+  setText("aiEfficiencySavedHours", `${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593 / \u6708`);
+  setText("aiEfficiencyProfitImprovement", `${marginImprovement.toFixed(1)}pt`);
+  setText("aiEfficiencyAnnualProfit", yen.format(annualAdditionalProfit));
+  setText("aiEfficiencyRecommendation", recommendation);
+  setText("aiEfficiencyGuide", guide);
+  document.querySelector("#aiEfficiencyHourly").setAttribute("data-current-hourly", yen.format(currentHourly));
 }
 
 function renderSideProfitMargin() {
@@ -5139,7 +5340,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -5165,6 +5366,10 @@ document.querySelector("#sideIncomeForm").addEventListener("reset", () => {
 document.querySelector("#aiHourlyForm").addEventListener("input", renderAiHourly);
 document.querySelector("#aiHourlyForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderAiHourly);
+});
+document.querySelector("#aiEfficiencyForm").addEventListener("input", renderAiEfficiency);
+document.querySelector("#aiEfficiencyForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderAiEfficiency);
 });
 document.querySelector("#hourlyImprovementForm").addEventListener("input", renderHourlyImprovement);
 document.querySelector("#hourlyImprovementForm").addEventListener("reset", () => {
@@ -5258,6 +5463,7 @@ window.addEventListener("hashchange", renderRoute);
 
 renderSideIncome();
 renderAiHourly();
+renderAiEfficiency();
 renderHourlyImprovement();
 renderSideProfitMargin();
 renderTax();
