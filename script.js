@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター25選｜副業・税金・FIRE計算",
-    description: seoDescription,
+    title: "【2026年対応】初心者向け資産シミュレーター25選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化まで、25種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -205,6 +205,85 @@ extraStyle.textContent = `
     font-size: 1rem;
     line-height: 1.45;
   }
+
+  .top-search-panel {
+    display: grid;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid rgba(217, 222, 231, 0.92);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: var(--shadow);
+  }
+
+  .search-control {
+    display: grid;
+    gap: 10px;
+  }
+
+  .search-control input {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 1rem;
+    background: #fff;
+  }
+
+  .search-actions,
+  .quick-start-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+
+  .search-actions a,
+  .quick-start-grid a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    background: #fbfcfe;
+  }
+
+  .search-actions a:hover,
+  .quick-start-grid a:hover,
+  .search-actions a:focus-visible,
+  .quick-start-grid a:focus-visible {
+    border-color: rgba(55, 111, 208, 0.4);
+    background: rgba(232, 240, 254, 0.85);
+  }
+
+  .tool-card.is-hidden-by-search,
+  .category-section.is-hidden-by-search {
+    display: none;
+  }
+
+  .search-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 `;
 document.head.appendChild(extraStyle);
 
@@ -245,6 +324,39 @@ document.body.innerHTML = `
       </header>
 
       <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
+        <section class="top-search-panel" aria-label="ツール検索">
+          <section class="tool-heading">
+            <h2>目的からツールを探す</h2>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で25個のシミュレーターを絞り込めます。</p>
+          </section>
+          <div class="search-control">
+            <label class="visually-hidden" for="topToolSearch">ツール検索</label>
+            <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
+            <p class="search-status" id="topToolSearchStatus">25個のツールから検索できます。</p>
+          </div>
+          <div class="search-actions" aria-label="よく使う検索">
+            <a href="#side-income">副業収入を計算</a>
+            <a href="#take-home">手取りを確認</a>
+            <a href="#nisa">NISAを試算</a>
+            <a href="#fire">FIREを目指す</a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="初心者おすすめ導線">
+          <section class="tool-heading">
+            <h2>初心者おすすめ導線</h2>
+            <p>最初に見るツールを迷う場合は、目的別にこの順番で確認すると全体像をつかみやすくなります。</p>
+          </section>
+          <div class="quick-start-grid">
+            <a href="#side-income">副業を始める</a>
+            <a href="#ai-efficiency">AIで効率化する</a>
+            <a href="#take-home">手取りを知る</a>
+            <a href="#nisa">投資を始める</a>
+            <a href="#fire">FIREを考える</a>
+            <a href="#retirement">老後資金を確認</a>
+          </div>
+        </section>
+
         <section class="article-panel" aria-label="カテゴリ別ページ">
           <section class="tool-heading">
             <h2>カテゴリ別ページ</h2>
@@ -648,10 +760,10 @@ document.body.innerHTML = `
           </ol>
         </section>
 
-        <section class="article-panel" aria-label="&#x304a;&#x3059;&#x3059;&#x3081;&#x8a18;&#x4e8b;">
+        <section class="article-panel" aria-label="最新記事">
           <section class="tool-heading">
-            <h2>&#x304a;&#x3059;&#x3059;&#x3081;&#x8a18;&#x4e8b;</h2>
-            <p>&#x30c4;&#x30fc;&#x30eb;&#x306e;&#x7d50;&#x679c;&#x3092;&#x3001;&#x526f;&#x696d;&#x30fb;&#x7a0e;&#x91d1;&#x30fb;FIRE&#x30fb;AI&#x6d3b;&#x7528;&#x306e;&#x5b9f;&#x884c;&#x306b;&#x3064;&#x306a;&#x3052;&#x308b;&#x305f;&#x3081;&#x306e;&#x30ac;&#x30a4;&#x30c9;&#x3067;&#x3059;&#x3002;</p>
+            <h2>最新記事</h2>
+            <p>副業、税金、FIRE、NISA、iDeCo、老後資金の基礎を、ツールの結果と合わせて確認できます。</p>
           </section>
           <div class="article-list">
             <a class="article-link" href="article-side-income.html">
@@ -710,6 +822,15 @@ document.body.innerHTML = `
               <strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;2000&#x4e07;&#x5186;&#x554f;&#x984c;&#x3068;&#x306f;</strong>
               <span>&#x5e74;&#x91d1;&#x3001;&#x751f;&#x6d3b;&#x8cbb;&#x3001;&#x5fc5;&#x8981;&#x984d;&#x306e;&#x8a66;&#x7b97;&#x65b9;&#x6cd5;</span>
             </a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="おすすめ比較記事">
+          <section class="tool-heading">
+            <h2>おすすめ比較記事</h2>
+            <p>副業や投資を始める前に、口座、会計ソフト、カード、AIツールを比較して準備できます。</p>
+          </section>
+          <div class="article-list">
             <a class="article-link" href="article-securities-account-comparison.html">
               <strong>&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x304a;&#x3059;&#x3059;&#x3081;&#x8a3c;&#x5238;&#x53e3;&#x5ea7;&#x6bd4;&#x8f03;</strong>
               <span>NISA&#x5bfe;&#x5fdc;&#x3001;&#x624b;&#x6570;&#x6599;&#x3001;&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9023;&#x643a;&#x3092;&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x306b;&#x6574;&#x7406;</span>
@@ -5359,6 +5480,38 @@ function renderRoute() {
   });
 }
 
+function renderTopToolSearch() {
+  const searchInput = document.querySelector("#topToolSearch");
+  const status = document.querySelector("#topToolSearchStatus");
+  if (!searchInput || !status) {
+    return;
+  }
+
+  const query = searchInput.value.trim().toLowerCase();
+  const topView = document.querySelector('[data-view="top"]');
+  const cards = Array.from(topView.querySelectorAll(".category-section .tool-card"));
+  let visibleCount = 0;
+
+  cards.forEach((card) => {
+    const text = card.textContent.toLowerCase();
+    const href = card.getAttribute("href") || "";
+    const visible = !query || text.includes(query) || href.toLowerCase().includes(query);
+    card.classList.toggle("is-hidden-by-search", !visible);
+    if (visible) {
+      visibleCount += 1;
+    }
+  });
+
+  topView.querySelectorAll(".category-section").forEach((section) => {
+    const visibleCards = section.querySelectorAll(".tool-card:not(.is-hidden-by-search)").length;
+    section.classList.toggle("is-hidden-by-search", query && visibleCards === 0);
+  });
+
+  status.textContent = query
+    ? `${visibleCount}個のツールが見つかりました。`
+    : `${cards.length}個のツールから検索できます。`;
+}
+
 document.querySelector("#sideIncomeForm").addEventListener("input", renderSideIncome);
 document.querySelector("#sideIncomeForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideIncome);
@@ -5459,6 +5612,7 @@ document.querySelector("#mortgageForm").addEventListener("input", renderMortgage
 document.querySelector("#mortgageForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderMortgage);
 });
+document.querySelector("#topToolSearch").addEventListener("input", renderTopToolSearch);
 window.addEventListener("hashchange", renderRoute);
 
 renderSideIncome();
@@ -5486,4 +5640,5 @@ renderSideFire();
 renderEmergencyFund();
 renderFixedCostReduction();
 renderMortgage();
+renderTopToolSearch();
 renderRoute();
