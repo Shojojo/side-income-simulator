@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,7 +40,7 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター22選｜副業・税金・FIRE計算",
+    title: "【2026年対応】初心者向け資産シミュレーター23選｜副業・税金・FIRE計算",
     description: seoDescription,
   },
   "side-income": {
@@ -78,6 +78,10 @@ const routeSeo = {
   nisa: {
     title: "【2026年対応】初心者向け新NISAシミュレーター｜3分で積立投資計算",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u904b\u7528\u5e74\u6570\u304b\u3089\u65b0NISA\u306e\u5c06\u6765\u8cc7\u7523\u984d\u3068\u904b\u7528\u76ca\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "nisa-withdrawal": {
+    title: "【2026年対応】初心者向けNISA取り崩しシミュレーター｜3分で老後資金計算",
+    description: "現在のNISA資産額、毎月追加投資額、想定年利、取り崩し開始年齢、毎月取り崩し額、運用継続有無、目標維持年数から、何年取り崩せるかと毎月使える額を試算できます。",
   },
   "credit-card-investment": {
     title: "【2026年対応】初心者向けクレカ積立比較シミュレーター｜3分でポイント計算",
@@ -213,6 +217,7 @@ document.body.innerHTML = `
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#nisa-withdrawal" data-route="nisa-withdrawal">NISA取り崩し</a>
           <a href="#credit-card-investment" data-route="credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
@@ -399,6 +404,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#nisa-withdrawal">
+            <p class="eyebrow">NISA Withdrawal</p>
+            <h2>NISA取り崩しシミュレーター</h2>
+            <p>新NISAで運用した資産を、何年取り崩せるか、毎月いくら使えるか、老後資金やFIREとの関係まで試算します。</p>
+            <div class="tool-meta">
+              <span>取り崩し年数</span>
+              <span>毎月可能額</span>
+              <span>老後資金</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#credit-card-investment">
             <p class="eyebrow">Card Invest</p>
             <h2>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -579,6 +596,7 @@ document.body.innerHTML = `
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#nisa-withdrawal"><strong>NISA取り崩し</strong><span>老後に何年取り崩せるかと毎月使える額を確認</span></a></li>
             <li><a href="#credit-card-investment"><strong>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;</strong><span>&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9084;&#x5143;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x306e;&#x5dee;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -2645,6 +2663,120 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="nisa-withdrawal" aria-label="NISA取り崩しシミュレーター">
+        <section class="tool-heading">
+          <h2>NISA取り崩しシミュレーター</h2>
+          <p>現在のNISA資産額、毎月追加投資額、想定年利、取り崩し開始年齢、毎月取り崩し額、運用継続有無から、老後に何年取り崩せるかを試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="NISA取り崩しの計算">
+          <form class="input-panel" id="nisaWithdrawalForm">
+            <div class="field">
+              <label for="nisaWithdrawalAssets">現在のNISA資産額 <span class="unit">円</span></label>
+              <input id="nisaWithdrawalAssets" name="nisaWithdrawalAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="10000000" required aria-describedby="nisaWithdrawalAssetsError">
+              <p class="error" id="nisaWithdrawalAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaWithdrawalMonthlyInvestment">毎月追加投資額 <span class="unit">円 / 月</span></label>
+              <input id="nisaWithdrawalMonthlyInvestment" name="nisaWithdrawalMonthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="nisaWithdrawalMonthlyInvestmentError">
+              <p class="error" id="nisaWithdrawalMonthlyInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaWithdrawalReturn">想定年利 <span class="unit">%</span></label>
+              <input id="nisaWithdrawalReturn" name="nisaWithdrawalReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="nisaWithdrawalReturnError">
+              <p class="error" id="nisaWithdrawalReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="withdrawalStartAge">取り崩し開始年齢 <span class="unit">歳</span></label>
+              <input id="withdrawalStartAge" name="withdrawalStartAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="65" required aria-describedby="withdrawalStartAgeError">
+              <p class="error" id="withdrawalStartAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="monthlyWithdrawal">毎月取り崩し額 <span class="unit">円 / 月</span></label>
+              <input id="monthlyWithdrawal" name="monthlyWithdrawal" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="150000" required aria-describedby="monthlyWithdrawalError">
+              <p class="error" id="monthlyWithdrawalError"></p>
+            </div>
+            <label class="check-field" for="continueInvestment">
+              <input id="continueInvestment" name="continueInvestment" type="checkbox" checked>
+              <span>取り崩し中も運用を継続する</span>
+            </label>
+            <div class="field">
+              <label for="targetMaintainYears">目標維持年数 <span class="unit">年</span></label>
+              <input id="targetMaintainYears" name="targetMaintainYears" type="number" inputmode="numeric" min="1" max="80" step="1" value="30" required aria-describedby="targetMaintainYearsError">
+              <p class="error" id="targetMaintainYearsError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">取り崩し可能年数</p>
+              <p class="amount" id="withdrawalAvailableYears">未計算</p>
+            </div>
+            <p class="notice" id="nisaWithdrawalNotice">入力を確認してください。運用利回りや取り崩し年数は将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>毎月取り崩し可能額</strong>
+                <span class="accent-green" id="possibleMonthlyWithdrawal">0円</span>
+                <small>目標維持年数に合わせた月額目安</small>
+              </div>
+              <div class="metric">
+                <strong>資産が尽きる年齢</strong>
+                <span class="accent-amber" id="depletionAge">未計算</span>
+                <small>現在の取り崩し額で資産が尽きる年齢</small>
+              </div>
+              <div class="metric">
+                <strong>運用継続時の残高推移</strong>
+                <span class="accent-blue text-metric" id="withdrawalBalanceTrend">未計算</span>
+                <small>目標維持年数後の残高目安</small>
+              </div>
+              <div class="metric">
+                <strong>老後資金への影響</strong>
+                <span class="accent-green text-metric" id="withdrawalRetirementImpact">未計算</span>
+                <small>老後生活費に対する取り崩しの支え</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成との比較</strong>
+                <span class="accent-amber text-metric" id="withdrawalFireComparison">未計算</span>
+                <small>4%ルールの目安と比較</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="NISA取り崩しシミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>NISA取り崩しはどう計算していますか？</summary>
+              <p>毎月の取り崩し額を差し引きながら、運用継続を選んだ場合は残高に月次換算の利回りを反映して、資産が何年持つかを試算しています。</p>
+            </details>
+            <details>
+              <summary>毎月取り崩し可能額は何を基準にしていますか？</summary>
+              <p>目標維持年数の間、資産が尽きにくい月額を逆算しています。運用継続ありの場合は利回りを反映し、なしの場合は単純に資産を月数で割った目安です。</p>
+            </details>
+            <details>
+              <summary>FIREや老後資金の計画にも使えますか？</summary>
+              <p>使えます。新NISAの取り崩しだけで生活費をどれくらい補えるかを見たうえで、FIRE達成シミュレーターや老後資金シミュレーターと合わせて確認すると全体像が見えやすくなります。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="NISA取り崩し関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>NISAの取り崩しは、積立時の資産形成、老後資金の不足額、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#nisa">新NISA・積立投資シミュレーター</a>
+            <a href="#retirement">老後資金シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="credit-card-investment" aria-label="クレカ積立比較シミュレーター">
         <section class="tool-heading">
           <h2>クレカ積立比較シミュレーター</h2>
@@ -3118,6 +3250,7 @@ document.body.innerHTML = `
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#nisa-withdrawal">NISA取り崩し</a>
           <a href="#credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
@@ -3194,6 +3327,12 @@ const fieldRules = {
   nisaAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   nisaYears: { label: "\u904b\u7528\u5e74\u6570", min: 0, max: 100, unit: "\u5e74", integer: false },
   nisaTarget: { label: "\u76ee\u6a19\u91d1\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  nisaWithdrawalAssets: { label: "現在のNISA資産額", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  nisaWithdrawalMonthlyInvestment: { label: "毎月追加投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  nisaWithdrawalReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
+  withdrawalStartAge: { label: "取り崩し開始年齢", min: 0, max: 100, unit: "\u6b73", integer: true },
+  monthlyWithdrawal: { label: "毎月取り崩し額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  targetMaintainYears: { label: "目標維持年数", min: 1, max: 80, unit: "\u5e74", integer: true },
   cardMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   cardYears: { label: "\u7a4d\u7acb\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
   cardAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
@@ -3720,6 +3859,108 @@ function renderNisa() {
   document.querySelector("#nisaFireDetail").textContent = futureAssets >= target
     ? "\u5165\u529b\u3057\u305f\u904b\u7528\u5e74\u6570\u5185\u306b\u76ee\u6a19\u5230\u9054\u306e\u76ee\u5b89"
     : `\u76ee\u6a19\u307e\u3067\u3042\u3068${yen.format(Math.max(target - futureAssets, 0))}`;
+}
+
+function simulateWithdrawalMonths(assets, monthlyInvestment, monthlyWithdrawal, annualReturn, continueInvestment, maxMonths = 1200) {
+  if (monthlyWithdrawal <= 0) {
+    return { months: null, finalAssets: assets };
+  }
+
+  const monthlyReturn = continueInvestment ? annualReturn / 100 / 12 : 0;
+  let balance = assets;
+
+  for (let month = 1; month <= maxMonths; month += 1) {
+    if (monthlyReturn > 0) {
+      balance *= 1 + monthlyReturn;
+    }
+    balance += monthlyInvestment;
+    balance -= monthlyWithdrawal;
+    if (balance <= 0) {
+      return { months: month, finalAssets: 0 };
+    }
+  }
+
+  return { months: null, finalAssets: balance };
+}
+
+function calculatePossibleWithdrawal(assets, monthlyInvestment, annualReturn, years, continueInvestment) {
+  const months = years * 12;
+  if (months <= 0) {
+    return 0;
+  }
+
+  const monthlyReturn = continueInvestment ? annualReturn / 100 / 12 : 0;
+  if (monthlyReturn === 0) {
+    return assets / months + monthlyInvestment;
+  }
+
+  return assets * monthlyReturn / (1 - (1 + monthlyReturn) ** -months) + monthlyInvestment;
+}
+
+function renderNisaWithdrawal() {
+  const values = {
+    nisaWithdrawalAssets: getFieldValue("nisaWithdrawalAssets"),
+    nisaWithdrawalMonthlyInvestment: getFieldValue("nisaWithdrawalMonthlyInvestment"),
+    nisaWithdrawalReturn: getFieldValue("nisaWithdrawalReturn"),
+    withdrawalStartAge: getFieldValue("withdrawalStartAge"),
+    monthlyWithdrawal: getFieldValue("monthlyWithdrawal"),
+    targetMaintainYears: getFieldValue("targetMaintainYears"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#nisaWithdrawalNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("withdrawalAvailableYears", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("possibleMonthlyWithdrawal", yen.format(0));
+    setText("depletionAge", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("withdrawalBalanceTrend", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("withdrawalRetirementImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("withdrawalFireComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const assets = values.nisaWithdrawalAssets.value;
+  const monthlyInvestment = values.nisaWithdrawalMonthlyInvestment.value;
+  const annualReturn = values.nisaWithdrawalReturn.value;
+  const startAge = values.withdrawalStartAge.value;
+  const monthlyWithdrawal = values.monthlyWithdrawal.value;
+  const targetYears = values.targetMaintainYears.value;
+  const continueInvestment = document.querySelector("#continueInvestment").checked;
+  const preparedAssets = assets;
+  const simulation = simulateWithdrawalMonths(preparedAssets, monthlyInvestment, monthlyWithdrawal, annualReturn, continueInvestment);
+  const possibleMonthly = calculatePossibleWithdrawal(preparedAssets, monthlyInvestment, annualReturn, targetYears, continueInvestment);
+  const targetSimulation = simulateWithdrawalMonths(
+    preparedAssets,
+    monthlyInvestment,
+    monthlyWithdrawal,
+    annualReturn,
+    continueInvestment,
+    targetYears * 12,
+  );
+  const availableYears = simulation.months === null ? "100年以上" : formatYears(simulation.months);
+  const depletionAge = simulation.months === null
+    ? "100歳以降も残る目安"
+    : `${startAge + Math.ceil(simulation.months / 12)}歳`;
+  const trend = targetSimulation.finalAssets > 0
+    ? `${targetYears}年後も${yen.format(targetSimulation.finalAssets)}残る目安`
+    : `${targetYears}年以内に資産が尽きる可能性`;
+  const retirementCoverage = monthlyWithdrawal > 0
+    ? `毎月${yen.format(monthlyWithdrawal)}を老後生活費の一部として使える目安`
+    : "取り崩し額を入力すると老後資金への影響を確認できます";
+  const annualWithdrawal = monthlyWithdrawal * 12;
+  const fireTarget = annualWithdrawal * 25;
+  const fireComparison = fireTarget <= 0
+    ? "取り崩し額を入力するとFIRE目安と比較できます"
+    : preparedAssets >= fireTarget
+      ? `4%ルールのFIRE目安${yen.format(fireTarget)}を上回る資産額`
+      : `4%ルールのFIRE目安まで${yen.format(fireTarget - preparedAssets)}不足`;
+
+  setText("withdrawalAvailableYears", availableYears);
+  setText("possibleMonthlyWithdrawal", yen.format(possibleMonthly));
+  setText("depletionAge", depletionAge);
+  setText("withdrawalBalanceTrend", trend);
+  setText("withdrawalRetirementImpact", retirementCoverage);
+  setText("withdrawalFireComparison", fireComparison);
 }
 
 function renderIdeco() {
@@ -4687,7 +4928,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -4741,6 +4982,10 @@ document.querySelector("#takeHomeForm").addEventListener("reset", () => {
 document.querySelector("#nisaForm").addEventListener("input", renderNisa);
 document.querySelector("#nisaForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderNisa);
+});
+document.querySelector("#nisaWithdrawalForm").addEventListener("input", renderNisaWithdrawal);
+document.querySelector("#nisaWithdrawalForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderNisaWithdrawal);
 });
 document.querySelector("#creditCardInvestmentForm").addEventListener("input", renderCreditCardInvestment);
 document.querySelector("#creditCardInvestmentForm").addEventListener("reset", () => {
@@ -4805,6 +5050,7 @@ renderResidentTax();
 renderIncomeTax();
 renderTakeHome();
 renderNisa();
+renderNisaWithdrawal();
 renderCreditCardInvestment();
 renderIdeco();
 renderFire();
