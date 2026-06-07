@@ -220,27 +220,56 @@ extraStyle.textContent = `
 
   .top-search-panel {
     display: grid;
-    gap: 14px;
-    padding: 16px;
-    border: 1px solid rgba(217, 222, 231, 0.92);
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid rgba(18, 115, 93, 0.2);
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: var(--shadow);
+    background: #ffffff;
+    box-shadow: 0 14px 34px rgba(24, 33, 47, 0.08);
   }
 
   .search-control {
+    position: relative;
     display: grid;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .search-control::before {
+    content: "検索";
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    z-index: 1;
+    pointer-events: none;
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0;
   }
 
   .search-control input {
     width: 100%;
-    min-height: 48px;
-    border: 1px solid var(--line);
+    min-height: 54px;
+    border: 1px solid rgba(18, 115, 93, 0.28);
     border-radius: 8px;
-    padding: 0 12px;
+    padding: 0 14px 0 54px;
     font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
     background: #fff;
+    box-shadow: 0 8px 22px rgba(24, 33, 47, 0.06);
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .search-control input::placeholder {
+    color: #7a8796;
+    font-weight: 600;
+  }
+
+  .search-control input:focus {
+    border-color: rgba(18, 115, 93, 0.62);
+    box-shadow: 0 0 0 4px rgba(18, 115, 93, 0.12), 0 10px 24px rgba(24, 33, 47, 0.08);
+    outline: none;
   }
 
   .search-actions,
@@ -252,26 +281,29 @@ extraStyle.textContent = `
 
   .search-actions a,
   .quick-start-grid a {
-    min-height: 44px;
+    min-height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--line);
+    border: 1px solid rgba(217, 222, 231, 0.95);
     border-radius: 8px;
-    padding: 10px 12px;
-    color: var(--text);
+    padding: 9px 12px;
+    color: var(--ink);
     text-align: center;
     text-decoration: none;
     font-weight: 800;
-    background: #fbfcfe;
+    background: #ffffff;
+    box-shadow: 0 1px 0 rgba(24, 33, 47, 0.04);
+    transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
   }
 
   .search-actions a:hover,
   .quick-start-grid a:hover,
   .search-actions a:focus-visible,
   .quick-start-grid a:focus-visible {
-    border-color: rgba(55, 111, 208, 0.4);
-    background: rgba(232, 240, 254, 0.85);
+    border-color: rgba(18, 115, 93, 0.42);
+    background: rgba(240, 248, 244, 0.92);
+    transform: translateY(-1px);
   }
 
   .tool-card.is-hidden-by-search,
@@ -280,9 +312,39 @@ extraStyle.textContent = `
   }
 
   .search-status {
-    color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.5;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #2f6d56;
+    background: #edf7f2;
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 520px) {
+    .top-search-panel {
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .search-control input {
+      min-height: 52px;
+      font-size: 0.95rem;
+    }
+
+    .search-actions {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .search-actions a {
+      min-height: 40px;
+      padding: 8px 10px;
+      font-size: 0.86rem;
+    }
   }
 
   .visually-hidden {
