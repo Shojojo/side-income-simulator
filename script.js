@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター28選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフロー、配当ETF比較まで、28種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター29選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフロー、副業法人化判断まで、29種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -66,6 +66,10 @@ const routeSeo = {
   "side-profit-margin": {
     title: "【2026年対応】初心者向け副業利益率シミュレーター｜3分で利益分析",
     description: "\u526f\u696d\u58f2\u4e0a\u3001\u7d4c\u8cbb\u3001\u4f5c\u696d\u6642\u9593\u3001\u5e83\u544a\u8cbb\u3001\u5916\u6ce8\u8cbb\u3001AI\u30c4\u30fc\u30eb\u5229\u7528\u6709\u7121\u304b\u3089\u5229\u76ca\u984d\u3001\u5229\u76ca\u7387\u3001\u6642\u7d66\u63db\u7b97\u3001\u6539\u5584\u30dd\u30a4\u30f3\u30c8\u3092\u5206\u6790\u3067\u304d\u307e\u3059\u3002",
+  },
+  "incorporation": {
+    title: "【2026年対応】初心者向け副業法人化判断シミュレーター｜3分で個人事業と法人化を比較",
+    description: "年間副業売上、経費、給与年収、法人維持費、所得税率、法人税率、社会保険増加額、役員報酬額から、個人事業と法人化の手取り差額や法人化おすすめ目安を比較できます。",
   },
   "take-home": {
     title: "【2026年対応】初心者向け副業手取り計算シミュレーター｜3分で税引後計算",
@@ -375,6 +379,7 @@ document.body.innerHTML = `
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
           <a href="#side-time-management" data-route="side-time-management">副業時間管理</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
+          <a href="#incorporation" data-route="incorporation">副業法人化判断</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
@@ -404,12 +409,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で28個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で29個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">28個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">29個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -590,6 +595,18 @@ document.body.innerHTML = `
               <span>&#x4f4f;&#x6c11;&#x7a0e;</span>
               <span>&#x666e;&#x901a;&#x5fb4;&#x53ce;</span>
               <span>&#x6708;&#x5e73;&#x5747;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#incorporation">
+            <p class="eyebrow">Company or Sole</p>
+            <h2>副業法人化判断シミュレーター</h2>
+            <p>個人事業の税負担と法人化後の維持費・法人税・社会保険増加額を比較し、法人化の目安を確認します。</p>
+            <div class="tool-meta">
+              <span>法人化判断</span>
+              <span>維持費</span>
+              <span>会計導線</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -853,6 +870,7 @@ document.body.innerHTML = `
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="#side-time-management"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
+            <li><a href="#incorporation"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -1607,6 +1625,135 @@ document.body.innerHTML = `
             <a href="#side-income">副業月収シミュレーター</a>
             <a href="#take-home">副業手取り計算シミュレーター</a>
             <a href="#tax">副業税金・青色申告シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="incorporation" aria-label="副業法人化判断シミュレーター">
+        <section class="tool-heading">
+          <h2>副業法人化判断シミュレーター</h2>
+          <p>副業利益、税率、法人維持費、社会保険増加額、役員報酬額から、個人事業と法人化のどちらが有利かを比較します。</p>
+        </section>
+
+        <section class="workspace" aria-label="副業法人化判断の計算">
+          <form class="input-panel" id="incorporationForm">
+            <div class="field">
+              <label for="incorporationSales">年間副業売上 <span class="unit">円</span></label>
+              <input id="incorporationSales" name="incorporationSales" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="8000000" required aria-describedby="incorporationSalesError">
+              <p class="error" id="incorporationSalesError"></p>
+            </div>
+            <div class="field">
+              <label for="incorporationExpenses">年間経費 <span class="unit">円</span></label>
+              <input id="incorporationExpenses" name="incorporationExpenses" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="2000000" required aria-describedby="incorporationExpensesError">
+              <p class="error" id="incorporationExpensesError"></p>
+            </div>
+            <div class="field">
+              <label for="incorporationSalary">現在の給与年収 <span class="unit">円</span></label>
+              <input id="incorporationSalary" name="incorporationSalary" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="5000000" required aria-describedby="incorporationSalaryError">
+              <p class="error" id="incorporationSalaryError"></p>
+            </div>
+            <div class="field">
+              <label for="corporateMaintenanceCost">想定法人維持費 <span class="unit">円/年</span></label>
+              <input id="corporateMaintenanceCost" name="corporateMaintenanceCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="700000" required aria-describedby="corporateMaintenanceCostError">
+              <p class="error" id="corporateMaintenanceCostError"></p>
+            </div>
+            <div class="field">
+              <label for="incorporationIncomeTaxRate">所得税率 <span class="unit">%</span></label>
+              <input id="incorporationIncomeTaxRate" name="incorporationIncomeTaxRate" type="number" inputmode="decimal" min="0" max="60" step="0.1" value="20" required aria-describedby="incorporationIncomeTaxRateError">
+              <p class="error" id="incorporationIncomeTaxRateError"></p>
+            </div>
+            <div class="field">
+              <label for="corporateTaxRate">法人税率 <span class="unit">%</span></label>
+              <input id="corporateTaxRate" name="corporateTaxRate" type="number" inputmode="decimal" min="0" max="60" step="0.1" value="23.2" required aria-describedby="corporateTaxRateError">
+              <p class="error" id="corporateTaxRateError"></p>
+            </div>
+            <div class="field">
+              <label for="socialInsuranceIncrease">社会保険増加額 <span class="unit">円/年</span></label>
+              <input id="socialInsuranceIncrease" name="socialInsuranceIncrease" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="600000" required aria-describedby="socialInsuranceIncreaseError">
+              <p class="error" id="socialInsuranceIncreaseError"></p>
+            </div>
+            <div class="field">
+              <label for="executiveSalary">役員報酬額 <span class="unit">円/年</span></label>
+              <input id="executiveSalary" name="executiveSalary" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="3000000" required aria-describedby="executiveSalaryError">
+              <p class="error" id="executiveSalaryError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">節税差額</p>
+              <p class="amount" id="incorporationTaxSaving">0円</p>
+            </div>
+            <p class="notice" id="incorporationNotice">入力を確認してください。法人化判断は税理士・社労士への相談前の概算です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>個人事業時の手取り</strong>
+                <span class="accent-blue" id="soleProprietorTakeHome">0円</span>
+                <small>副業利益から所得税・住民税目安を差し引いた金額</small>
+              </div>
+              <div class="metric">
+                <strong>法人化時の手取り</strong>
+                <span class="accent-green" id="corporateTakeHome">0円</span>
+                <small>役員報酬手取りと法人残利益の合計目安</small>
+              </div>
+              <div class="metric">
+                <strong>法人化おすすめ目安</strong>
+                <span class="accent-amber text-metric" id="incorporationRecommendation">未計算</span>
+                <small>差額、利益規模、維持費から判定</small>
+              </div>
+              <div class="metric">
+                <strong>法人維持コスト</strong>
+                <span class="accent-blue" id="corporateCostResult">0円</span>
+                <small>法人維持費と社会保険増加額の合計</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-green text-metric" id="incorporationImprovementPoint">未計算</span>
+                <small>経費、役員報酬、会計管理の見直しポイント</small>
+              </div>
+              <div class="metric">
+                <strong>会計ソフト比較記事への導線</strong>
+                <span class="accent-blue text-metric" id="incorporationAccountingGuide">法人化前に会計管理を確認</span>
+                <small>freee、マネーフォワード、弥生の比較記事へ</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="副業法人化判断シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>副業はいくらから法人化を検討すべきですか？</summary>
+              <p>明確な一律基準はありませんが、利益が継続して大きくなり、税率、社会保険、会計費用、法人住民税などを含めても手取りが増える段階で検討しやすくなります。このツールでは維持費を入れた差額を先に確認できます。</p>
+            </details>
+            <details>
+              <summary>法人化すれば必ず節税になりますか？</summary>
+              <p>必ず節税になるわけではありません。法人維持費、税理士費用、社会保険、役員報酬設計によっては個人事業のままの方が手取りが残ることもあります。</p>
+            </details>
+            <details>
+              <summary>役員報酬はどう入力すればいいですか？</summary>
+              <p>法人から自分に支払う年間報酬の目安を入力してください。役員報酬は税金や社会保険に影響するため、実際に決める場合は税理士や社労士に相談するのが安全です。</p>
+            </details>
+            <details>
+              <summary>この結果だけで法人化を決めてもいいですか？</summary>
+              <p>いいえ。このツールは概算比較です。消費税、インボイス、社会保険、法人住民税、会計処理、信用面なども関係するため、判断材料の入口として使ってください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業法人化判断関連リンク">
+          <section class="tool-heading">
+            <h2>関連ツール・関連記事</h2>
+            <p>法人化を考える前に、利益率、所得税、会計管理を合わせて確認すると判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#income-tax">副業所得税シミュレーター</a>
+            <a href="#side-profit-margin">副業利益率シミュレーター</a>
+            <a href="article-accounting-software-comparison.html">副業向け会計ソフト比較</a>
           </div>
         </section>
       </section>
@@ -4130,6 +4277,7 @@ document.body.innerHTML = `
           <a href="#ai-efficiency">AI副業効率化</a>
           <a href="#hourly-improvement">副業時給改善</a>
           <a href="#side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
+          <a href="#incorporation">副業法人化判断</a>
           <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
@@ -4177,6 +4325,7 @@ const routeExperienceProfiles = {
   "side-time-management": { title: "副業時間管理シミュレーター", kind: "ai", reason: "副業は収入目標より先に、続けられる時間を確認する必要があります。本業、通勤、睡眠、家事を引いた残り時間を見ないまま予定を詰めると、数週間で苦しくなります。", use: "副業可能時間が少ない場合は、毎日やる前提ではなく、週末にまとめる、AIで下準備を短縮する、単価の高い作業へ絞るなどの改善に使ってください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   "hourly-improvement": { title: "副業時給改善シミュレーター", kind: "ai", reason: "副業は売上だけを見ると順調に見えても、作業時間と経費を入れると時給が低いことがあります。限られた時間で副業を続ける会社員ほど、時給換算での改善が大切です。", use: "目標時給に届かない場合は、AIで時間を減らす、外注を使う、広告費を整理する、低単価案件を減らすなど、改善ポイントを一つずつ試してください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"]] },
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
+  incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
@@ -4799,6 +4948,82 @@ function renderSideProfitMargin() {
   setText("profitAiEffect", aiText);
   setText("profitImprovementPoint", improvement);
   setText("profitTaxGuide", taxGuide);
+}
+
+function renderIncorporation() {
+  const values = {
+    incorporationSales: getFieldValue("incorporationSales"),
+    incorporationExpenses: getFieldValue("incorporationExpenses"),
+    incorporationSalary: getFieldValue("incorporationSalary"),
+    corporateMaintenanceCost: getFieldValue("corporateMaintenanceCost"),
+    incorporationIncomeTaxRate: getFieldValue("incorporationIncomeTaxRate"),
+    corporateTaxRate: getFieldValue("corporateTaxRate"),
+    socialInsuranceIncrease: getFieldValue("socialInsuranceIncrease"),
+    executiveSalary: getFieldValue("executiveSalary"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#incorporationNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("incorporationTaxSaving", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("soleProprietorTakeHome", yen.format(0));
+    setText("corporateTakeHome", yen.format(0));
+    setText("incorporationRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("corporateCostResult", yen.format(0));
+    setText("incorporationImprovementPoint", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("incorporationAccountingGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const sideProfit = Math.max(values.incorporationSales.value - values.incorporationExpenses.value, 0);
+  const personalTaxRate = (values.incorporationIncomeTaxRate.value + 10) / 100;
+  const soleTax = sideProfit * personalTaxRate;
+  const soleTakeHome = Math.max(sideProfit - soleTax, 0);
+  const executiveSalary = Math.min(values.executiveSalary.value, sideProfit);
+  const salaryTax = executiveSalary * personalTaxRate;
+  const corporateProfitBeforeTax = Math.max(
+    sideProfit - executiveSalary - values.corporateMaintenanceCost.value - values.socialInsuranceIncrease.value,
+    0,
+  );
+  const corporateTax = corporateProfitBeforeTax * (values.corporateTaxRate.value / 100);
+  const corporateRemaining = Math.max(corporateProfitBeforeTax - corporateTax, 0);
+  const executiveTakeHome = Math.max(executiveSalary - salaryTax, 0);
+  const corporateTakeHome = Math.max(executiveTakeHome + corporateRemaining, 0);
+  const taxSaving = corporateTakeHome - soleTakeHome;
+  const corporateCost = values.corporateMaintenanceCost.value + values.socialInsuranceIncrease.value;
+  const profitRate = values.incorporationSales.value > 0 ? (sideProfit / values.incorporationSales.value) * 100 : 0;
+  const costRate = sideProfit > 0 ? (corporateCost / sideProfit) * 100 : 0;
+  let recommendation = "個人事業のまま比較検討";
+  let improvement = "まずは経費、会計管理、納税資金を整え、利益が継続するか確認しましょう。";
+
+  if (sideProfit < 3000000) {
+    recommendation = "法人化は慎重に検討";
+    improvement = "利益規模に対して法人維持費が重くなりやすいため、まず利益率改善と会計管理を優先しましょう。";
+  } else if (taxSaving > 500000 && costRate < 25) {
+    recommendation = "法人化を専門家に相談する目安";
+    improvement = "手取り差額が出ています。役員報酬、社会保険、消費税、法人住民税を含めて税理士・社労士へ確認しましょう。";
+  } else if (taxSaving > 0) {
+    recommendation = "条件次第で法人化を検討";
+    improvement = "法人化でやや有利な目安です。維持費を抑えつつ、役員報酬額を複数パターンで比較してください。";
+  } else if (profitRate < 30) {
+    recommendation = "利益率改善を優先";
+    improvement = "法人化より先に、広告費、外注費、AI活用、単価改善で利益率を上げる方が効果的な可能性があります。";
+  } else {
+    recommendation = "個人事業のまま管理強化";
+    improvement = "現時点では法人維持コストが重い目安です。会計ソフトで売上・経費・税金を見える化しましょう。";
+  }
+
+  const accountingGuide = values.incorporationSales.value >= 10000000
+    ? "売上1,000万円超のため、消費税やインボイスも含めて会計ソフトと専門家相談を検討"
+    : "法人化前に会計ソフトで売上、経費、納税資金を分けて管理";
+
+  setText("incorporationTaxSaving", yen.format(taxSaving));
+  setText("soleProprietorTakeHome", yen.format(soleTakeHome));
+  setText("corporateTakeHome", yen.format(corporateTakeHome));
+  setText("incorporationRecommendation", recommendation);
+  setText("corporateCostResult", yen.format(corporateCost));
+  setText("incorporationImprovementPoint", improvement);
+  setText("incorporationAccountingGuide", accountingGuide);
 }
 
 function renderTax() {
@@ -6320,7 +6545,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -6394,6 +6619,10 @@ document.querySelector("#sideTimeManagementForm").addEventListener("reset", () =
 document.querySelector("#sideProfitMarginForm").addEventListener("input", renderSideProfitMargin);
 document.querySelector("#sideProfitMarginForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideProfitMargin);
+});
+document.querySelector("#incorporationForm").addEventListener("input", renderIncorporation);
+document.querySelector("#incorporationForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderIncorporation);
 });
 document.querySelector("#taxForm").addEventListener("input", renderTax);
 document.querySelector("#taxForm").addEventListener("reset", () => {
@@ -6492,6 +6721,7 @@ renderAiEfficiency();
 renderHourlyImprovement();
 renderSideTimeManagement();
 renderSideProfitMargin();
+renderIncorporation();
 renderTax();
 renderResidentTax();
 renderIncomeTax();
