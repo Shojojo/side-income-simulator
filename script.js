@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター25選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化まで、25種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター26選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理まで、26種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -58,6 +58,10 @@ const routeSeo = {
   "hourly-improvement": {
     title: "【2026年対応】初心者向け副業時給改善シミュレーター｜3分でAI効率分析",
     description: "副業売上、作業時間、経費、外注費、AIツール利用有無、AI活用時間削減率、目標時給から、現在の実質時給とAI導入後の予想時給、改善余地を分析できます。",
+  },
+  "side-time-management": {
+    title: "【2026年対応】初心者向け副業時間管理シミュレーター｜3分で継続時間を分析",
+    description: "本業勤務時間、通勤時間、睡眠時間、家事時間、休日時間、副業作業時間、AI活用有無、AI時短率から、1日の自由時間、副業可能時間、継続可能性、FIRE達成への影響を分析できます。",
   },
   "side-profit-margin": {
     title: "【2026年対応】初心者向け副業利益率シミュレーター｜3分で利益分析",
@@ -299,6 +303,7 @@ document.body.innerHTML = `
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="#ai-efficiency" data-route="ai-efficiency">AI副業効率化</a>
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
+          <a href="#side-time-management" data-route="side-time-management">副業時間管理</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
@@ -444,6 +449,18 @@ document.body.innerHTML = `
               <span>実質時給</span>
               <span>AI改善</span>
               <span>目標時給</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#side-time-management">
+            <p class="eyebrow">Time</p>
+            <h2>副業時間管理シミュレーター</h2>
+            <p>本業、通勤、睡眠、家事、休日、副業時間から、副業を続けられる時間とAI時短による改善余地を分析します。</p>
+            <div class="tool-meta">
+              <span>自由時間</span>
+              <span>継続可能性</span>
+              <span>FIRE影響</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -738,6 +755,7 @@ document.body.innerHTML = `
             <li><a href="#side-income"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ai-efficiency"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
+            <li><a href="#side-time-management"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -1144,6 +1162,130 @@ document.body.innerHTML = `
             <a href="#hourly-improvement">副業時給改善シミュレーター</a>
             <a href="#side-profit-margin">副業利益率シミュレーター</a>
             <a href="article-ai-tools-comparison.html">AIツール比較記事</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="side-time-management" aria-label="副業時間管理シミュレーター">
+        <section class="tool-heading">
+          <h2>副業時間管理シミュレーター</h2>
+          <p>本業、通勤、睡眠、家事、休日、副業作業時間から、副業を無理なく続けられる時間とAI活用による改善余地を分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="副業時間管理の計算">
+          <form class="input-panel" id="sideTimeManagementForm">
+            <div class="field">
+              <label for="mainJobHours">本業勤務時間 <span class="unit">時間 / 平日</span></label>
+              <input id="mainJobHours" name="mainJobHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="8" required aria-describedby="mainJobHoursError">
+              <p class="error" id="mainJobHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="commuteHours">通勤時間 <span class="unit">時間 / 平日</span></label>
+              <input id="commuteHours" name="commuteHours" type="number" inputmode="decimal" min="0" max="8" step="0.25" value="1.5" required aria-describedby="commuteHoursError">
+              <p class="error" id="commuteHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="sleepHours">睡眠時間 <span class="unit">時間 / 日</span></label>
+              <input id="sleepHours" name="sleepHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="7" required aria-describedby="sleepHoursError">
+              <p class="error" id="sleepHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="houseworkHours">家事時間 <span class="unit">時間 / 日</span></label>
+              <input id="houseworkHours" name="houseworkHours" type="number" inputmode="decimal" min="0" max="12" step="0.25" value="2" required aria-describedby="houseworkHoursError">
+              <p class="error" id="houseworkHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="holidayFreeHours">休日時間 <span class="unit">自由に使える時間 / 休日1日</span></label>
+              <input id="holidayFreeHours" name="holidayFreeHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="8" required aria-describedby="holidayFreeHoursError">
+              <p class="error" id="holidayFreeHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="sideWorkHours">副業作業時間 <span class="unit">時間 / 週</span></label>
+              <input id="sideWorkHours" name="sideWorkHours" type="number" inputmode="decimal" min="0" max="168" step="0.5" value="12" required aria-describedby="sideWorkHoursError">
+              <p class="error" id="sideWorkHoursError"></p>
+            </div>
+            <label class="check-field" for="timeManagementAiUse">
+              <input id="timeManagementAiUse" name="timeManagementAiUse" type="checkbox" checked>
+              <span>AIを活用する</span>
+            </label>
+            <div class="field">
+              <label for="timeManagementAiReduction">AIによる時短率 <span class="unit">%</span></label>
+              <input id="timeManagementAiReduction" name="timeManagementAiReduction" type="number" inputmode="decimal" min="0" max="90" step="1" value="25" required aria-describedby="timeManagementAiReductionError">
+              <p class="error" id="timeManagementAiReductionError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">1日の自由時間</p>
+              <p class="amount" id="dailyFreeTime">0時間</p>
+            </div>
+            <p class="notice" id="sideTimeManagementNotice">入力を確認してください。時間配分は平日5日・休日2日の簡易シミュレーションです。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>副業可能時間</strong>
+                <span class="accent-blue" id="availableSideWorkTime">0時間 / 週</span>
+                <small>平日の自由時間と休日時間から計算</small>
+              </div>
+              <div class="metric">
+                <strong>副業継続可能性</strong>
+                <span class="accent-green text-metric" id="sideWorkSustainability">未計算</span>
+                <small>副業作業時間と余力のバランス</small>
+              </div>
+              <div class="metric">
+                <strong>AI導入による改善時間</strong>
+                <span class="accent-amber" id="aiTimeImprovement">0時間 / 週</span>
+                <small>AI時短率を反映した削減時間</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-green text-metric" id="timeManagementImprovementPoint">未計算</span>
+                <small>不足時間と生活リズムから判定</small>
+              </div>
+              <div class="metric">
+                <strong>副業時給改善シミュレーターへの導線</strong>
+                <span class="accent-blue text-metric" id="timeManagementHourlyGuide">時給改善も確認</span>
+                <small>限られた時間で収益性を上げる分析へ進む</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-amber text-metric" id="timeManagementFireImpact">未計算</span>
+                <small>副業時間の余力が積立力に与える影響</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="副業時間管理シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>休日時間は何を入力すればいいですか？</summary>
+              <p>睡眠や家事を除いた、休日1日に自由に使える時間の目安を入力してください。副業に全て使う前提ではなく、休息や家族時間も残す前提で見ると現実的です。</p>
+            </details>
+            <details>
+              <summary>副業作業時間は週単位ですか？</summary>
+              <p>はい。副業作業時間は1週間あたりの実作業時間として入力します。平日夜と休日の合計を入れると、継続可能性を確認しやすくなります。</p>
+            </details>
+            <details>
+              <summary>AIによる時短率は何%で入力すればいいですか？</summary>
+              <p>調査、文章作成、資料作成、動画編集、画像作成などで短縮できる割合を入力します。最初は10%から30%で試算し、実績に合わせて調整してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業時間管理関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>副業時間を確認したら、限られた時間で時給と利益率をどう上げるかも合わせて確認できます。</p>
+          </section>
+          <div class="related-links">
+            <a href="#hourly-improvement">副業時給改善シミュレーター</a>
+            <a href="#ai-efficiency">AI副業効率化シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
           </div>
         </section>
       </section>
@@ -3692,6 +3834,13 @@ const fieldRules = {
   improvementOutsourcing: { label: "外注費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   improvementAiReduction: { label: "AI活用時間削減率", min: 0, max: 90, unit: "%", integer: false },
   targetHourlyRate: { label: "目標時給", min: 0, max: 1000000, unit: "\u5186", integer: false },
+  mainJobHours: { label: "本業勤務時間", min: 0, max: 24, unit: "\u6642\u9593", integer: false },
+  commuteHours: { label: "通勤時間", min: 0, max: 8, unit: "\u6642\u9593", integer: false },
+  sleepHours: { label: "睡眠時間", min: 0, max: 24, unit: "\u6642\u9593", integer: false },
+  houseworkHours: { label: "家事時間", min: 0, max: 12, unit: "\u6642\u9593", integer: false },
+  holidayFreeHours: { label: "休日時間", min: 0, max: 24, unit: "\u6642\u9593", integer: false },
+  sideWorkHours: { label: "副業作業時間", min: 0, max: 168, unit: "\u6642\u9593", integer: false },
+  timeManagementAiReduction: { label: "AIによる時短率", min: 0, max: 90, unit: "%", integer: false },
   profitSales: { label: "\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   profitExpenses: { label: "\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   profitHours: { label: "\u4f5c\u696d\u6642\u9593", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
@@ -3977,6 +4126,88 @@ function renderHourlyImprovement() {
   setText("improvableHours", `${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
   setText("hourlyImprovementPoint", improvementPoint);
   setText("profitMarginGuide", profitGuide);
+}
+
+function renderSideTimeManagement() {
+  const values = {
+    mainJobHours: getFieldValue("mainJobHours"),
+    commuteHours: getFieldValue("commuteHours"),
+    sleepHours: getFieldValue("sleepHours"),
+    houseworkHours: getFieldValue("houseworkHours"),
+    holidayFreeHours: getFieldValue("holidayFreeHours"),
+    sideWorkHours: getFieldValue("sideWorkHours"),
+    timeManagementAiReduction: getFieldValue("timeManagementAiReduction"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  const fixedDailyHours = values.mainJobHours.valid && values.commuteHours.valid && values.sleepHours.valid && values.houseworkHours.valid
+    ? values.mainJobHours.value + values.commuteHours.value + values.sleepHours.value + values.houseworkHours.value
+    : 0;
+  if (!hasError && fixedDailyHours > 24) {
+    const error = document.querySelector("#mainJobHoursError");
+    error.textContent = "本業・通勤・睡眠・家事の合計が24時間を超えています。";
+    document.querySelector("#mainJobHours").setAttribute("aria-invalid", "true");
+    hasError = true;
+  }
+
+  document.querySelector("#sideTimeManagementNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dailyFreeTime", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("availableSideWorkTime", "0\u6642\u9593 / \u9031");
+    setText("sideWorkSustainability", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiTimeImprovement", "0\u6642\u9593 / \u9031");
+    setText("timeManagementImprovementPoint", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("timeManagementHourlyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("timeManagementFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const dailyFree = Math.max(24 - fixedDailyHours, 0);
+  const weekdayAvailable = dailyFree * 5;
+  const holidayAvailable = values.holidayFreeHours.value * 2;
+  const weeklyAvailable = weekdayAvailable + holidayAvailable;
+  const sideHours = values.sideWorkHours.value;
+  const aiUse = document.querySelector("#timeManagementAiUse").checked;
+  const aiReductionRate = aiUse ? values.timeManagementAiReduction.value / 100 : 0;
+  const aiSavedHours = sideHours * aiReductionRate;
+  const sideHoursAfterAi = Math.max(sideHours - aiSavedHours, 0);
+  const remainingBeforeAi = weeklyAvailable - sideHours;
+  const remainingAfterAi = weeklyAvailable - sideHoursAfterAi;
+  const utilization = weeklyAvailable > 0 ? (sideHours / weeklyAvailable) * 100 : 0;
+  const effectiveUtilization = weeklyAvailable > 0 ? (sideHoursAfterAi / weeklyAvailable) * 100 : 0;
+
+  const sustainability = weeklyAvailable <= 0
+    ? "副業に使える時間がほぼありません"
+    : remainingBeforeAi < 0
+      ? `週${Math.abs(remainingBeforeAi).toLocaleString("ja-JP", { maximumFractionDigits: 1 })}時間不足しています`
+      : utilization >= 85
+        ? "継続負荷が高めです。休息時間を削りすぎない調整が必要です"
+        : utilization >= 65
+          ? "継続は可能ですが、繁忙期に備えてAI時短や作業日を固定しましょう"
+          : "継続しやすい時間配分です。余力を単価アップや学習に回せます";
+  const improvementPoint = remainingBeforeAi < 0
+    ? "副業時間を減らす、休日作業を分散する、AIで下書きや調査を短縮するのが優先です"
+    : dailyFree < 2
+      ? "平日の自由時間が少なめです。短時間タスク化し、休日に重い作業を寄せましょう"
+      : effectiveUtilization >= 75
+        ? "AI時短後も負荷が高めです。案件単価アップと作業範囲の見直しが有効です"
+        : "時間の余力があります。副業時給改善シミュレーターで収益性も確認しましょう";
+  const hourlyGuide = remainingAfterAi >= 3
+    ? "AI導入後に週3時間以上の余力があります。副業時給改善シミュレーターで高単価化を確認しましょう"
+    : "時間余力が少ないため、まず時給改善で同じ時間あたりの収益を上げましょう";
+  const fireImpact = sideHoursAfterAi >= 10 && remainingAfterAi >= 2
+    ? "週10時間以上を継続できるため、副業収入を投資へ回すFIRE加速に使いやすい状態です"
+    : sideHoursAfterAi >= 5
+      ? "週5時間以上は確保できています。小さく継続して積立原資を増やす設計が現実的です"
+      : "副業時間が少なめです。FIREを急ぐより、生活リズムと本業の安定を優先しましょう";
+
+  setText("dailyFreeTime", `${dailyFree.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
+  setText("availableSideWorkTime", `${weeklyAvailable.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593 / \u9031`);
+  setText("sideWorkSustainability", sustainability);
+  setText("aiTimeImprovement", `${aiSavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593 / \u9031`);
+  setText("timeManagementImprovementPoint", improvementPoint);
+  setText("timeManagementHourlyGuide", hourlyGuide);
+  setText("timeManagementFireImpact", fireImpact);
 }
 
 function renderAiEfficiency() {
@@ -5465,7 +5696,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -5531,6 +5762,10 @@ document.querySelector("#aiEfficiencyForm").addEventListener("reset", () => {
 document.querySelector("#hourlyImprovementForm").addEventListener("input", renderHourlyImprovement);
 document.querySelector("#hourlyImprovementForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderHourlyImprovement);
+});
+document.querySelector("#sideTimeManagementForm").addEventListener("input", renderSideTimeManagement);
+document.querySelector("#sideTimeManagementForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideTimeManagement);
 });
 document.querySelector("#sideProfitMarginForm").addEventListener("input", renderSideProfitMargin);
 document.querySelector("#sideProfitMarginForm").addEventListener("reset", () => {
@@ -5623,6 +5858,7 @@ renderSideIncome();
 renderAiHourly();
 renderAiEfficiency();
 renderHourlyImprovement();
+renderSideTimeManagement();
 renderSideProfitMargin();
 renderTax();
 renderResidentTax();
