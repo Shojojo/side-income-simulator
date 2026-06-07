@@ -4498,9 +4498,69 @@ const routeExperienceProfiles = {
   mortgage: { title: "住宅ローン返済シミュレーター", kind: "life", reason: "住宅ローンは毎月の固定費に直結し、FIREや老後資金にも影響します。借入額、金利、返済年数を分けて、無理のない返済比率を見たい人向けに作りました。", use: "返済比率が高い場合は、借入額、頭金、固定費、教育費を合わせて見直してください。繰上返済だけでなく、投資や生活防衛資金とのバランスも大切です。", articles: [["固定費削減シミュレーター", "index.html#fixed-cost-reduction"], ["老後資金2000万円問題とは", "article-retirement-2000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
 };
 
+const relatedToolGroups = {
+  side: [
+    ["副業月収シミュレーター", "index.html#side-income"],
+    ["副業手取り計算シミュレーター", "index.html#take-home"],
+    ["副業利益率シミュレーター", "index.html#side-profit-margin"],
+    ["副業時間管理シミュレーター", "index.html#side-time-management"],
+  ],
+  ai: [
+    ["AI副業効率化シミュレーター", "index.html#ai-efficiency"],
+    ["AI導入ROIシミュレーター", "index.html#ai-roi"],
+    ["副業時給改善シミュレーター", "index.html#hourly-improvement"],
+    ["副業時間管理シミュレーター", "index.html#side-time-management"],
+  ],
+  tax: [
+    ["副業税金シミュレーター", "index.html#tax"],
+    ["副業所得税シミュレーター", "index.html#income-tax"],
+    ["副業住民税シミュレーター", "index.html#resident-tax"],
+    ["副業手取り計算シミュレーター", "index.html#take-home"],
+  ],
+  investment: [
+    ["新NISAシミュレーター", "index.html#nisa"],
+    ["iDeCo節税シミュレーター", "index.html#ideco"],
+    ["配当金シミュレーター", "index.html#dividend"],
+    ["クレカ積立比較シミュレーター", "index.html#credit-card-investment"],
+  ],
+  fire: [
+    ["FIRE達成シミュレーター", "index.html#fire"],
+    ["会社員FIRE年数計算シミュレーター", "index.html#employee-fire"],
+    ["サイドFIREシミュレーター", "index.html#side-fire"],
+    ["配当生活達成シミュレーター", "index.html#dividend-life"],
+  ],
+  household: [
+    ["会社員キャッシュフローシミュレーター", "index.html#cash-flow"],
+    ["固定費削減シミュレーター", "index.html#fixed-cost-reduction"],
+    ["生活防衛資金シミュレーター", "index.html#emergency-fund"],
+    ["住宅ローン返済シミュレーター", "index.html#mortgage"],
+  ],
+  life: [
+    ["老後資金シミュレーター", "index.html#retirement"],
+    ["教育費シミュレーター", "index.html#education"],
+    ["住宅ローン返済シミュレーター", "index.html#mortgage"],
+    ["学資保険比較シミュレーター", "index.html#education-insurance"],
+  ],
+};
+
+function buildRelatedToolLinks(kind, currentRoute) {
+  const currentHref = `index.html#${currentRoute}`;
+  const fallback = [
+    ["新NISAシミュレーター", "index.html#nisa"],
+    ["FIRE達成シミュレーター", "index.html#fire"],
+    ["副業月収シミュレーター", "index.html#side-income"],
+  ];
+  const links = [...(relatedToolGroups[kind] || relatedToolGroups.side), ...fallback]
+    .filter(([, href], index, array) => href !== currentHref && array.findIndex(([, otherHref]) => otherHref === href) === index)
+    .slice(0, 3);
+
+  return links.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+}
+
 function buildExperienceSection(profile) {
   const experience = operatorExperience[profile.kind] || operatorExperience.side;
-  const links = profile.articles.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+  const links = profile.articles.slice(0, 3).map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+  const relatedTools = buildRelatedToolLinks(profile.kind, Object.keys(routeExperienceProfiles).find((route) => routeExperienceProfiles[route] === profile));
   return `
         <section class="article-section" aria-label="${profile.title}の実体験ベース解説">
           <section class="tool-heading">
@@ -4523,9 +4583,14 @@ function buildExperienceSection(profile) {
             <p>一度の計算で結論を出すより、収入が少ない場合、支出を下げた場合、積立額を増やした場合など、複数パターンを試すのがおすすめです。特に副業収入を投資へ回す場合は、税金と生活防衛資金を先に見てから無理のない金額を決めてください。</p>
           </div>
           <div class="experience-block">
-            <h3>関連記事</h3>
+            <h3>おすすめ関連記事</h3>
             <p>このページと合わせて読むと、計算結果を行動に移しやすくなります。</p>
             <div class="related-links">${links}</div>
+          </div>
+          <div class="experience-block">
+            <h3>関連ツール</h3>
+            <p>近いテーマのシミュレーターも3件だけ絞って表示しています。</p>
+            <div class="related-links">${relatedTools}</div>
           </div>
         </section>`;
 }
@@ -4544,7 +4609,7 @@ function insertExperienceSections() {
     const articleSection = section.firstElementChild;
 
     if (faq) {
-      faq.insertAdjacentElement("beforebegin", articleSection);
+      faq.insertAdjacentElement("afterend", articleSection);
     } else if (workspace) {
       workspace.insertAdjacentElement("afterend", articleSection);
     } else {
