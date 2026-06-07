@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター27選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフローまで、27種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター28選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフロー、配当ETF比較まで、28種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -114,6 +114,10 @@ const routeSeo = {
   dividend: {
     title: "【2026年対応】初心者向け配当金シミュレーター｜3分で年間配当計算",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d\u3001\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a\u3001\u904b\u7528\u5e74\u6570\u3001\u914d\u5f53\u518d\u6295\u8cc7\u6709\u7121\u304b\u3089\u5e74\u9593\u914d\u5f53\u91d1\u3001\u7d2f\u8a08\u914d\u5f53\u91d1\u3001\u6700\u7d42\u8cc7\u7523\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "dividend-etf": {
+    title: "【2026年対応】初心者向け配当ETF比較シミュレーター｜3分で高配当ETF比較",
+    description: "初期投資額、毎月積立額、ETF選択、想定配当利回り、想定株価成長率、運用年数、配当再投資有無、新NISA利用有無から、年間配当金、累計配当金、最終資産額、ETF別比較を試算できます。",
   },
   "dividend-reinvestment": {
     title: "【2026年対応】初心者向け配当再投資シミュレーター｜3分で複利計算",
@@ -318,6 +322,7 @@ document.body.innerHTML = `
           <a href="#credit-card-investment" data-route="credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
+          <a href="#dividend-etf" data-route="dividend-etf">配当ETF比較</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#dividend-life" data-route="dividend-life">配当生活達成</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
@@ -337,12 +342,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で27個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で28個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">27個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">28個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -644,6 +649,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#dividend-etf">
+            <p class="eyebrow">Dividend ETF</p>
+            <h2>配当ETF比較シミュレーター</h2>
+            <p>VYM、HDV、SPYD、VIGなどの高配当ETFを選び、配当収入、累計配当、最終資産額、FIREへの影響を比較します。</p>
+            <div class="tool-meta">
+              <span>ETF別比較</span>
+              <span>年間配当</span>
+              <span>新NISA目安</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#dividend-reinvestment">
             <p class="eyebrow">Reinvest</p>
             <h2>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -782,6 +799,7 @@ document.body.innerHTML = `
             <li><a href="#credit-card-investment"><strong>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;</strong><span>&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9084;&#x5143;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x306e;&#x5dee;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#dividend-etf"><strong>配当ETF比較</strong><span>複数ETFの配当収入と資産成長を比較</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-life"><strong>配当生活達成</strong><span>生活費を配当収入だけでまかなう必要資産を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -3219,6 +3237,135 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="dividend-etf" aria-label="配当ETF比較シミュレーター">
+        <section class="tool-heading">
+          <h2>配当ETF比較シミュレーター</h2>
+          <p>初期投資額、毎月積立額、ETF選択、想定配当利回り、想定株価成長率、運用年数、配当再投資有無、新NISA利用有無から、複数の高配当ETFの配当収入と資産成長を比較します。</p>
+        </section>
+
+        <section class="workspace" aria-label="配当ETF比較の計算">
+          <form class="input-panel" id="dividendEtfForm">
+            <div class="field">
+              <label for="dividendEtfInitial">初期投資額 <span class="unit">円</span></label>
+              <input id="dividendEtfInitial" name="dividendEtfInitial" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="1000000" required aria-describedby="dividendEtfInitialError">
+              <p class="error" id="dividendEtfInitialError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendEtfMonthly">毎月積立額 <span class="unit">円 / 月</span></label>
+              <input id="dividendEtfMonthly" name="dividendEtfMonthly" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="dividendEtfMonthlyError">
+              <p class="error" id="dividendEtfMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendEtfChoice">ETF選択</label>
+              <select id="dividendEtfChoice" name="dividendEtfChoice" required>
+                <option value="VYM">VYM</option>
+                <option value="HDV">HDV</option>
+                <option value="SPYD">SPYD</option>
+                <option value="VIG">VIG</option>
+                <option value="CUSTOM">カスタム</option>
+              </select>
+              <p class="error" id="dividendEtfChoiceError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendEtfYield">想定配当利回り <span class="unit">%</span></label>
+              <input id="dividendEtfYield" name="dividendEtfYield" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="3.2" required aria-describedby="dividendEtfYieldError">
+              <p class="error" id="dividendEtfYieldError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendEtfGrowth">想定株価成長率 <span class="unit">%</span></label>
+              <input id="dividendEtfGrowth" name="dividendEtfGrowth" type="number" inputmode="decimal" min="-30" max="30" step="0.1" value="3" required aria-describedby="dividendEtfGrowthError">
+              <p class="error" id="dividendEtfGrowthError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendEtfYears">運用年数 <span class="unit">年</span></label>
+              <input id="dividendEtfYears" name="dividendEtfYears" type="number" inputmode="numeric" min="1" max="100" step="1" value="20" required aria-describedby="dividendEtfYearsError">
+              <p class="error" id="dividendEtfYearsError"></p>
+            </div>
+            <label class="check-field" for="dividendEtfReinvest">
+              <input id="dividendEtfReinvest" name="dividendEtfReinvest" type="checkbox" checked>
+              <span>配当金を再投資する</span>
+            </label>
+            <label class="check-field" for="dividendEtfNisa">
+              <input id="dividendEtfNisa" name="dividendEtfNisa" type="checkbox" checked>
+              <span>新NISAを利用する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">年間配当金</p>
+              <p class="amount" id="dividendEtfAnnualDividend">0円</p>
+            </div>
+            <p class="notice" id="dividendEtfNotice">入力を確認してください。ETFの利回りや株価成長率は将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>月平均配当金</strong>
+                <span class="accent-green" id="dividendEtfMonthlyDividend">0円</span>
+                <small>年間配当金 / 12か月</small>
+              </div>
+              <div class="metric">
+                <strong>累計配当金</strong>
+                <span class="accent-blue" id="dividendEtfTotalDividend">0円</span>
+                <small>運用期間中に発生する配当金の概算</small>
+              </div>
+              <div class="metric">
+                <strong>最終資産額</strong>
+                <span class="accent-blue" id="dividendEtfFinalAssets">0円</span>
+                <small>株価成長と配当再投資を反映した目安</small>
+              </div>
+              <div class="metric">
+                <strong>ETF別比較</strong>
+                <span class="accent-amber text-metric" id="dividendEtfComparison">未計算</span>
+                <small>配当重視と資産成長重視の比較</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-green text-metric" id="dividendEtfFireImpact">未計算</span>
+                <small>年間生活費360万円に対する配当カバー率</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめETF特徴</strong>
+                <span class="accent-amber text-metric" id="dividendEtfFeature">未計算</span>
+                <small>選択ETFの特徴と新NISA利用時の目安</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="配当ETF比較シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>配当ETFはどれを選べばよいですか？</summary>
+              <p>安定感を重視するならVYM、財務健全性を意識するならHDV、配当利回りを重視するならSPYD、増配傾向を重視するならVIGが比較候補になります。実際の投資では経費率、構成銘柄、為替リスクも確認してください。</p>
+            </details>
+            <details>
+              <summary>配当再投資ありとなしでは何が変わりますか？</summary>
+              <p>再投資ありでは配当金を追加投資に回すため、最終資産額が増えやすくなります。なしの場合は配当金を現金収入として受け取る前提なので、生活費の補助として見やすくなります。</p>
+            </details>
+            <details>
+              <summary>新NISAで高配当ETFを買うメリットはありますか？</summary>
+              <p>新NISAを使うと、条件を満たす範囲で配当や売却益を非課税で受け取れる可能性があります。ただし海外ETFでは外国税額や分配金の扱いに注意が必要です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="配当ETF比較関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>配当ETFは、配当金、再投資、新NISAの非課税枠を合わせて見ると、収入重視か資産成長重視かを判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#dividend">配当金シミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#nisa">新NISAシミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="dividend-life" aria-label="配当生活達成シミュレーター">
         <section class="tool-heading">
           <h2>配当生活達成シミュレーター</h2>
@@ -4061,6 +4208,11 @@ const fieldRules = {
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  dividendEtfInitial: { label: "初期投資額", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  dividendEtfMonthly: { label: "毎月積立額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendEtfYield: { label: "想定配当利回り", min: 0, max: 30, unit: "%", integer: false },
+  dividendEtfGrowth: { label: "想定株価成長率", min: -30, max: 30, unit: "%", integer: false },
+  dividendEtfYears: { label: "運用年数", min: 1, max: 100, unit: "\u5e74", integer: true },
   dividendLifeMonthlyCost: { label: "毎月生活費", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendLifeAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendLifeMonthly: { label: "毎月積立額", min: 0, max: 100000000, unit: "\u5186", integer: false },
@@ -5268,6 +5420,104 @@ function renderDividend() {
   setText("dividendNisaComparison", nisaGuide);
 }
 
+const dividendEtfPresets = {
+  VYM: { yield: 3.2, growth: 3.0, feature: "分散性が高く、配当と値上がりのバランスを取りやすい高配当ETF候補です。" },
+  HDV: { yield: 3.8, growth: 2.2, feature: "財務健全性やディフェンシブ性を意識しやすく、比較的安定配当を重視したい人向けです。" },
+  SPYD: { yield: 4.5, growth: 1.5, feature: "配当利回りを重視しやすい一方、景気敏感セクターの影響を受けやすい点に注意が必要です。" },
+  VIG: { yield: 2.0, growth: 4.5, feature: "高配当よりも増配と資産成長を重視したい人向けの比較候補です。" },
+  CUSTOM: { yield: 3.2, growth: 3.0, feature: "入力した利回りと成長率で、任意のETFや組み合わせを試算できます。" },
+};
+
+function projectDividendEtf(initialAssets, monthlyInvestment, dividendYield, growthRate, years, reinvest) {
+  let assets = initialAssets;
+  let totalDividend = 0;
+  let annualDividend = 0;
+
+  for (let year = 1; year <= years; year += 1) {
+    assets += monthlyInvestment * 12;
+    assets = Math.max(assets * (1 + growthRate / 100), 0);
+    annualDividend = Math.max(assets * (dividendYield / 100), 0);
+    totalDividend += annualDividend;
+    if (reinvest) {
+      assets += annualDividend;
+    }
+  }
+
+  return { assets, totalDividend, annualDividend };
+}
+
+function renderDividendEtf() {
+  const values = {
+    dividendEtfInitial: getFieldValue("dividendEtfInitial"),
+    dividendEtfMonthly: getFieldValue("dividendEtfMonthly"),
+    dividendEtfYield: getFieldValue("dividendEtfYield"),
+    dividendEtfGrowth: getFieldValue("dividendEtfGrowth"),
+    dividendEtfYears: getFieldValue("dividendEtfYears"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#dividendEtfNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dividendEtfAnnualDividend", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendEtfMonthlyDividend", yen.format(0));
+    setText("dividendEtfTotalDividend", yen.format(0));
+    setText("dividendEtfFinalAssets", yen.format(0));
+    setText("dividendEtfComparison", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendEtfFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendEtfFeature", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const selected = document.querySelector("#dividendEtfChoice").value;
+  const reinvest = document.querySelector("#dividendEtfReinvest").checked;
+  const nisa = document.querySelector("#dividendEtfNisa").checked;
+  const selectedPreset = dividendEtfPresets[selected] || dividendEtfPresets.CUSTOM;
+  const selectedYield = values.dividendEtfYield.value;
+  const selectedGrowth = values.dividendEtfGrowth.value;
+  const selectedPlan = projectDividendEtf(
+    values.dividendEtfInitial.value,
+    values.dividendEtfMonthly.value,
+    selectedYield,
+    selectedGrowth,
+    values.dividendEtfYears.value,
+    reinvest,
+  );
+  const comparisonPlans = Object.entries(dividendEtfPresets)
+    .filter(([key]) => key !== "CUSTOM")
+    .map(([key, preset]) => ({
+      key,
+      ...preset,
+      plan: projectDividendEtf(
+        values.dividendEtfInitial.value,
+        values.dividendEtfMonthly.value,
+        preset.yield,
+        preset.growth,
+        values.dividendEtfYears.value,
+        reinvest,
+      ),
+    }));
+  const bestDividend = comparisonPlans.reduce((best, item) => item.plan.annualDividend > best.plan.annualDividend ? item : best, comparisonPlans[0]);
+  const bestAssets = comparisonPlans.reduce((best, item) => item.plan.assets > best.plan.assets ? item : best, comparisonPlans[0]);
+  const monthlyDividend = selectedPlan.annualDividend / 12;
+  const fireCoverage = Math.min((selectedPlan.annualDividend / 3600000) * 100, 999);
+  const annualInvestment = values.dividendEtfMonthly.value * 12;
+  const nisaGuide = nisa
+    ? annualInvestment <= 3600000
+      ? `新NISA利用時は年間投資額${yen.format(annualInvestment)}が年360万円枠内の目安です。`
+      : `新NISA利用時でも年間投資額${yen.format(annualInvestment)}は年360万円枠を超える目安です。`
+    : "課税口座前提のため、配当や売却益への課税も考慮してください。";
+  const comparisonText = `配当重視は${bestDividend.key}（年${yen.format(bestDividend.plan.annualDividend)}）、資産成長重視は${bestAssets.key}（最終${yen.format(bestAssets.plan.assets)}）の目安`;
+  const featureText = `${selected}：${selectedPreset.feature} ${nisaGuide}`;
+
+  setText("dividendEtfAnnualDividend", yen.format(selectedPlan.annualDividend));
+  setText("dividendEtfMonthlyDividend", yen.format(monthlyDividend));
+  setText("dividendEtfTotalDividend", yen.format(selectedPlan.totalDividend));
+  setText("dividendEtfFinalAssets", yen.format(selectedPlan.assets));
+  setText("dividendEtfComparison", comparisonText);
+  setText("dividendEtfFireImpact", `年間生活費360万円の約${fireCoverage.toFixed(1)}%を配当で補う目安`);
+  setText("dividendEtfFeature", featureText);
+}
+
 function projectDividendLifeAssets(currentAssets, monthlyInvestment, annualReturn, dividendYield, months, reinvest) {
   const monthlyReturn = annualReturn / 100 / 12;
   const monthlyDividendYield = dividendYield / 100 / 12;
@@ -5910,7 +6160,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -6037,6 +6287,10 @@ document.querySelector("#dividendForm").addEventListener("input", renderDividend
 document.querySelector("#dividendForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividend);
 });
+document.querySelector("#dividendEtfForm").addEventListener("input", renderDividendEtf);
+document.querySelector("#dividendEtfForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderDividendEtf);
+});
 document.querySelector("#dividendReinvestmentForm").addEventListener("input", renderDividendReinvestment);
 document.querySelector("#dividendReinvestmentForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendReinvestment);
@@ -6091,6 +6345,7 @@ renderRetirement();
 renderEducation();
 renderEducationInsurance();
 renderDividend();
+renderDividendEtf();
 renderDividendReinvestment();
 renderDividendLife();
 renderEmployeeFire();
