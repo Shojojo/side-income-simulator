@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5c0e\u5165ROI\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター29選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフロー、副業法人化判断まで、29種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター30選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、副業時間管理、会社員キャッシュフロー、副業法人化判断まで、30種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -54,6 +54,10 @@ const routeSeo = {
   "ai-efficiency": {
     title: "【2026年対応】初心者向けAI副業効率化シミュレーター｜3分で時給改善計算",
     description: "現在の副業作業時間、売上、AI導入有無、時間削減率、AIツール月額費用、外注費削減額、目標時給から、AI導入後の予想時給、削減時間、利益率改善、年間追加利益を試算できます。",
+  },
+  "ai-roi": {
+    title: "【2026年対応】初心者向けAI導入ROIシミュレーター｜3分で投資対効果を分析",
+    description: "現在の作業時間、副業売上、AIツール月額費用、AIによる時短率、時給単価、外注費削減額、AI導入後の予想売上増加率から、削減時間、年間追加利益、ROI、回収期間を分析できます。",
   },
   "hourly-improvement": {
     title: "【2026年対応】初心者向け副業時給改善シミュレーター｜3分でAI効率分析",
@@ -376,6 +380,7 @@ document.body.innerHTML = `
           <a href="#side-income" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="#ai-efficiency" data-route="ai-efficiency">AI副業効率化</a>
+          <a href="#ai-roi" data-route="ai-roi">AI導入ROI</a>
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
           <a href="#side-time-management" data-route="side-time-management">副業時間管理</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
@@ -409,12 +414,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で29個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で30個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">29個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">30個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -514,6 +519,18 @@ document.body.innerHTML = `
               <span>予想時給</span>
               <span>削減時間</span>
               <span>追加利益</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#ai-roi">
+            <p class="eyebrow">AI ROI</p>
+            <h2>AI導入ROIシミュレーター</h2>
+            <p>AIツール導入による時間削減、利益改善、ROI、回収期間を分析し、費用対効果を確認します。</p>
+            <div class="tool-meta">
+              <span>削減時間</span>
+              <span>ROI</span>
+              <span>回収期間</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -867,6 +884,7 @@ document.body.innerHTML = `
           <ol class="ranking-list">
             <li><a href="#side-income"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ai-efficiency"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
+            <li><a href="#ai-roi"><strong>AI導入ROI</strong><span>AIツール費用に対する投資対効果と回収期間を確認</span></a></li>
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="#side-time-management"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
@@ -1278,6 +1296,130 @@ document.body.innerHTML = `
             <a href="#hourly-improvement">副業時給改善シミュレーター</a>
             <a href="#side-profit-margin">副業利益率シミュレーター</a>
             <a href="article-ai-tools-comparison.html">AIツール比較記事</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="ai-roi" aria-label="AI導入ROIシミュレーター">
+        <section class="tool-heading">
+          <h2>AI導入ROIシミュレーター</h2>
+          <p>AIツール導入による時間削減、利益改善、ROI、回収期間を分析します。月額費用を払う価値があるかを数字で確認できます。</p>
+        </section>
+
+        <section class="workspace" aria-label="AI導入ROIの計算">
+          <form class="input-panel" id="aiRoiForm">
+            <div class="field">
+              <label for="aiRoiHours">現在の作業時間 <span class="unit">時間 / 月</span></label>
+              <input id="aiRoiHours" name="aiRoiHours" type="number" inputmode="decimal" min="0.1" max="10000" step="0.5" value="80" required aria-describedby="aiRoiHoursError">
+              <p class="error" id="aiRoiHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiSales">現在の副業売上 <span class="unit">円 / 月</span></label>
+              <input id="aiRoiSales" name="aiRoiSales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="300000" required aria-describedby="aiRoiSalesError">
+              <p class="error" id="aiRoiSalesError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiToolCost">AIツール月額費用 <span class="unit">円 / 月</span></label>
+              <input id="aiRoiToolCost" name="aiRoiToolCost" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="5000" required aria-describedby="aiRoiToolCostError">
+              <p class="error" id="aiRoiToolCostError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiReduction">AIによる時短率 <span class="unit">%</span></label>
+              <input id="aiRoiReduction" name="aiRoiReduction" type="number" inputmode="decimal" min="0" max="95" step="1" value="30" required aria-describedby="aiRoiReductionError">
+              <p class="error" id="aiRoiReductionError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiHourlyRate">時給単価 <span class="unit">円</span></label>
+              <input id="aiRoiHourlyRate" name="aiRoiHourlyRate" type="number" inputmode="numeric" min="0" max="1000000" step="500" value="3000" required aria-describedby="aiRoiHourlyRateError">
+              <p class="error" id="aiRoiHourlyRateError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiOutsourcingReduction">外注費削減額 <span class="unit">円 / 月</span></label>
+              <input id="aiRoiOutsourcingReduction" name="aiRoiOutsourcingReduction" type="number" inputmode="numeric" min="0" max="1000000000" step="5000" value="20000" required aria-describedby="aiRoiOutsourcingReductionError">
+              <p class="error" id="aiRoiOutsourcingReductionError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiSalesIncrease">AI導入後の予想売上増加率 <span class="unit">%</span></label>
+              <input id="aiRoiSalesIncrease" name="aiRoiSalesIncrease" type="number" inputmode="decimal" min="0" max="300" step="1" value="10" required aria-describedby="aiRoiSalesIncreaseError">
+              <p class="error" id="aiRoiSalesIncreaseError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">ROI（投資対効果）</p>
+              <p class="amount" id="aiRoiRate">0%</p>
+            </div>
+            <p class="notice" id="aiRoiNotice">入力を確認してください。ROIは税引前の簡易シミュレーションです。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>AI導入後の削減時間</strong>
+                <span class="accent-amber" id="aiRoiSavedHours">0時間</span>
+                <small>月間で削減できる作業時間</small>
+              </div>
+              <div class="metric">
+                <strong>年間削減時間</strong>
+                <span class="accent-blue" id="aiRoiAnnualSavedHours">0時間</span>
+                <small>月間削減時間 x 12か月</small>
+              </div>
+              <div class="metric">
+                <strong>年間追加利益</strong>
+                <span class="accent-green" id="aiRoiAnnualProfit">0円</span>
+                <small>時間価値、売上増、外注費削減、AI費用から計算</small>
+              </div>
+              <div class="metric">
+                <strong>回収期間</strong>
+                <span class="accent-blue" id="aiRoiPaybackPeriod">未計算</span>
+                <small>AIツール費用を何か月で回収できるか</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめAI活用方法</strong>
+                <span class="accent-green text-metric" id="aiRoiRecommendation">未計算</span>
+                <small>ROIと削減時間から活用方針を判定</small>
+              </div>
+              <div class="metric">
+                <strong>副業時給改善シミュレーターへの導線</strong>
+                <span class="accent-blue text-metric" id="aiRoiHourlyGuide">時給改善も確認</span>
+                <small>実質時給、利益率、改善余地へ進む</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="AI導入ROIシミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>ROIはどう計算していますか？</summary>
+              <p>年間追加利益を年間AIツール費用で割って計算しています。年間追加利益には、削減時間の価値、売上増加、外注費削減、AIツール費用を反映しています。</p>
+            </details>
+            <details>
+              <summary>時給単価には何を入れればいいですか？</summary>
+              <p>自分の副業作業1時間あたりの価値を入力してください。案件単価がある場合は実質時給、まだ分からない場合は目標時給を入れると目安になります。</p>
+            </details>
+            <details>
+              <summary>AIツール費用が高い場合も使うべきですか？</summary>
+              <p>削減時間や売上増加が費用を上回るなら検討余地があります。ROIが低い場合は、有料プランの前に無料枠や用途を絞った導入から始めるのが現実的です。</p>
+            </details>
+            <details>
+              <summary>どんな副業でAI導入効果が出やすいですか？</summary>
+              <p>文章作成、調査、資料作成、動画編集の下準備、画像作成、コード補助など、毎回似た作業が発生する副業では時間削減効果を確認しやすいです。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="AI導入ROI関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール・関連記事</h2>
+            <p>AI導入の費用対効果を見たら、実質時給、利益率、AIツール選びも合わせて確認できます。</p>
+          </section>
+          <div class="related-links">
+            <a href="#ai-efficiency">AI副業効率化シミュレーター</a>
+            <a href="#side-profit-margin">副業利益率シミュレーター</a>
+            <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
           </div>
         </section>
       </section>
@@ -4275,6 +4417,7 @@ document.body.innerHTML = `
           <a href="#side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="#ai-efficiency">AI副業効率化</a>
+          <a href="#ai-roi">AI導入ROI</a>
           <a href="#hourly-improvement">副業時給改善</a>
           <a href="#side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#incorporation">副業法人化判断</a>
@@ -4322,6 +4465,7 @@ const routeExperienceProfiles = {
   "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "ai-hourly": { title: "AI副業時給シミュレーター", kind: "ai", reason: "AI副業は、作業時間が短くなる一方で、単価設定を間違えると時給が伸びません。このツールは、案件単価と作業時間を並べて、AIを使った後の実質時給を冷静に見るために作りました。", use: "AIで時間が半分になっても、修正や確認に時間がかかるなら時給は思ったほど伸びません。結果を見ながら、単価を上げるのか、作業手順を減らすのか、案件を絞るのかを決める材料にしてください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "ai-efficiency": { title: "AI副業効率化シミュレーター", kind: "ai", reason: "AIツールは便利ですが、月額費用を払っても利益が増えなければ意味がありません。時間削減、外注費削減、ツール費用を一緒に見て、AI導入が本当に副業の利益率を上げるか確認するために作りました。", use: "AI導入後の時給だけでなく、年間追加利益を見てください。月額費用が高くても、削減時間を売上につなげられるなら投資価値があります。逆に時間が浮くだけなら、まず作業手順の見直しが先です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
+  "ai-roi": { title: "AI導入ROIシミュレーター", kind: "ai", reason: "AIツールは便利でも、月額費用に見合う効果があるかを見ないと固定費だけが増えます。本業後の限られた副業時間を使う立場では、削減時間、売上増、外注費削減、回収期間をまとめて確認することが大切です。", use: "ROIが高い場合は、下書き、調査、要約、資料作成など繰り返し作業へAIを広げてください。ROIが低い場合は、有料プランを増やす前に無料枠や低額プランで用途を絞る方が安全です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業時給改善シミュレーター", "index.html#hourly-improvement"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "side-time-management": { title: "副業時間管理シミュレーター", kind: "ai", reason: "副業は収入目標より先に、続けられる時間を確認する必要があります。本業、通勤、睡眠、家事を引いた残り時間を見ないまま予定を詰めると、数週間で苦しくなります。", use: "副業可能時間が少ない場合は、毎日やる前提ではなく、週末にまとめる、AIで下準備を短縮する、単価の高い作業へ絞るなどの改善に使ってください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   "hourly-improvement": { title: "副業時給改善シミュレーター", kind: "ai", reason: "副業は売上だけを見ると順調に見えても、作業時間と経費を入れると時給が低いことがあります。限られた時間で副業を続ける会社員ほど、時給換算での改善が大切です。", use: "目標時給に届かない場合は、AIで時間を減らす、外注を使う、広告費を整理する、低単価案件を減らすなど、改善ポイントを一つずつ試してください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"]] },
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
@@ -4883,6 +5027,68 @@ function renderAiEfficiency() {
   setText("aiEfficiencyRecommendation", recommendation);
   setText("aiEfficiencyGuide", guide);
   document.querySelector("#aiEfficiencyHourly").setAttribute("data-current-hourly", yen.format(currentHourly));
+}
+
+function renderAiRoi() {
+  const values = {
+    aiRoiHours: getFieldValue("aiRoiHours"),
+    aiRoiSales: getFieldValue("aiRoiSales"),
+    aiRoiToolCost: getFieldValue("aiRoiToolCost"),
+    aiRoiReduction: getFieldValue("aiRoiReduction"),
+    aiRoiHourlyRate: getFieldValue("aiRoiHourlyRate"),
+    aiRoiOutsourcingReduction: getFieldValue("aiRoiOutsourcingReduction"),
+    aiRoiSalesIncrease: getFieldValue("aiRoiSalesIncrease"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#aiRoiNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("aiRoiRate", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiSavedHours", "0\u6642\u9593");
+    setText("aiRoiAnnualSavedHours", "0\u6642\u9593");
+    setText("aiRoiAnnualProfit", yen.format(0));
+    setText("aiRoiPaybackPeriod", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiHourlyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthlySavedHours = values.aiRoiHours.value * (values.aiRoiReduction.value / 100);
+  const annualSavedHours = monthlySavedHours * 12;
+  const monthlyTimeValue = monthlySavedHours * values.aiRoiHourlyRate.value;
+  const monthlySalesIncrease = values.aiRoiSales.value * (values.aiRoiSalesIncrease.value / 100);
+  const monthlyGrossBenefit = monthlyTimeValue + monthlySalesIncrease + values.aiRoiOutsourcingReduction.value;
+  const monthlyAdditionalProfit = monthlyGrossBenefit - values.aiRoiToolCost.value;
+  const annualAdditionalProfit = monthlyAdditionalProfit * 12;
+  const annualAiCost = values.aiRoiToolCost.value * 12;
+  const roi = annualAiCost > 0 ? (annualAdditionalProfit / annualAiCost) * 100 : annualAdditionalProfit > 0 ? 999 : 0;
+  const paybackMonths = monthlyGrossBenefit > 0 ? values.aiRoiToolCost.value / monthlyGrossBenefit : null;
+  const paybackText = values.aiRoiToolCost.value === 0
+    ? "\u8cbb\u75280\u5186"
+    : paybackMonths === null
+      ? "\u56de\u53ce\u56f0\u96e3"
+      : `${paybackMonths.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u304b\u6708`;
+  let recommendation = "用途を絞って小さく導入しましょう。";
+
+  if (annualAdditionalProfit <= 0) {
+    recommendation = "費用が効果を上回る目安です。無料枠、低額プラン、作業手順の見直しを優先しましょう。";
+  } else if (roi >= 300) {
+    recommendation = "ROIは高めです。下書き、調査、定型作業、外注前の準備にAIを広げる価値があります。";
+  } else if (roi >= 100) {
+    recommendation = "費用回収できる目安です。売上増につながる作業へ優先的にAIを使いましょう。";
+  } else if (monthlySavedHours >= 10) {
+    recommendation = "時間削減効果はあります。浮いた時間を高単価作業や営業に回せるか確認しましょう。";
+  }
+
+  const hourlyGuide = `削減時間${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593/\u6708\u3092\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3067\u5b9f\u8cea\u6642\u7d66\u3078\u53cd\u6620`;
+
+  setText("aiRoiRate", `${roi.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`);
+  setText("aiRoiSavedHours", `${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
+  setText("aiRoiAnnualSavedHours", `${annualSavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
+  setText("aiRoiAnnualProfit", yen.format(annualAdditionalProfit));
+  setText("aiRoiPaybackPeriod", paybackText);
+  setText("aiRoiRecommendation", recommendation);
+  setText("aiRoiHourlyGuide", hourlyGuide);
 }
 
 function renderSideProfitMargin() {
@@ -6545,7 +6751,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -6607,6 +6813,10 @@ document.querySelector("#aiHourlyForm").addEventListener("reset", () => {
 document.querySelector("#aiEfficiencyForm").addEventListener("input", renderAiEfficiency);
 document.querySelector("#aiEfficiencyForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderAiEfficiency);
+});
+document.querySelector("#aiRoiForm").addEventListener("input", renderAiRoi);
+document.querySelector("#aiRoiForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderAiRoi);
 });
 document.querySelector("#hourlyImprovementForm").addEventListener("input", renderHourlyImprovement);
 document.querySelector("#hourlyImprovementForm").addEventListener("reset", () => {
@@ -6718,6 +6928,7 @@ window.addEventListener("hashchange", renderRoute);
 renderSideIncome();
 renderAiHourly();
 renderAiEfficiency();
+renderAiRoi();
 renderHourlyImprovement();
 renderSideTimeManagement();
 renderSideProfitMargin();
