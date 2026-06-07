@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター26選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理まで、26種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター27選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、副業時間管理、会社員キャッシュフローまで、27種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -106,6 +106,10 @@ const routeSeo = {
   "employee-fire": {
     title: "【2026年対応】初心者向け会社員FIRE年数シミュレーター｜3分で達成年数計算",
     description: "\u73fe\u5728\u5e74\u9f62\u3001\u73fe\u5728\u8cc7\u7523\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u526f\u696d\u6708\u53ce\u3001\u5e74\u9593\u751f\u6d3b\u8cbb\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u914d\u5f53\u53ce\u5165\u3001\u76ee\u6a19FIRE\u8cc7\u7523\u304b\u3089\u4f1a\u793e\u54e1\u306eFIRE\u9054\u6210\u5e74\u6570\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "cash-flow": {
+    title: "【2026年対応】初心者向け会社員キャッシュフローシミュレーター｜3分で家計改善",
+    description: "給与収入、副業収入、家賃、食費、通信費、保険料、投資額、ローン返済額、その他支出から、毎月収支、年間貯蓄額、投資可能額、固定費改善余地、FIRE達成への影響を分析できます。",
   },
   dividend: {
     title: "【2026年対応】初心者向け配当金シミュレーター｜3分で年間配当計算",
@@ -318,6 +322,7 @@ document.body.innerHTML = `
           <a href="#dividend-life" data-route="dividend-life">配当生活達成</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
+          <a href="#cash-flow" data-route="cash-flow">会社員キャッシュフロー</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#emergency-fund" data-route="emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
           <a href="#fixed-cost-reduction" data-route="fixed-cost-reduction">固定費削減</a>
@@ -332,12 +337,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で25個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で27個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">25個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">27個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -615,6 +620,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#cash-flow">
+            <p class="eyebrow">Cash Flow</p>
+            <h2>会社員キャッシュフローシミュレーター</h2>
+            <p>給与収入、副業収入、家賃、食費、通信費、保険料、投資額、ローン返済額から、毎月収支とFIREへ向けた改善余地を分析します。</p>
+            <div class="tool-meta">
+              <span>毎月収支</span>
+              <span>投資可能額</span>
+              <span>固定費改善</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#dividend">
             <p class="eyebrow">Dividend</p>
             <h2>&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -769,6 +786,7 @@ document.body.innerHTML = `
             <li><a href="#dividend-life"><strong>配当生活達成</strong><span>生活費を配当収入だけでまかなう必要資産を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#cash-flow"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#emergency-fund"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fixed-cost-reduction"><strong>固定費削減</strong><span>毎月の固定費から年間節約額と投資効果を確認</span></a></li>
@@ -2402,6 +2420,131 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="cash-flow" aria-label="会社員キャッシュフローシミュレーター">
+        <section class="tool-heading">
+          <h2>会社員キャッシュフローシミュレーター</h2>
+          <p>給与収入、副業収入、家賃、食費、通信費、保険料、投資額、ローン返済額、その他支出から、毎月収支、年間貯蓄額、投資可能額、固定費改善余地を分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="会社員キャッシュフローの計算">
+          <form class="input-panel" id="cashFlowForm">
+            <div class="field">
+              <label for="cashFlowSalary">給与収入 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowSalary" name="cashFlowSalary" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="350000" required aria-describedby="cashFlowSalaryError">
+              <p class="error" id="cashFlowSalaryError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowSideIncome">副業収入 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowSideIncome" name="cashFlowSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="cashFlowSideIncomeError">
+              <p class="error" id="cashFlowSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowRent">家賃 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowRent" name="cashFlowRent" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="90000" required aria-describedby="cashFlowRentError">
+              <p class="error" id="cashFlowRentError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowFood">食費 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowFood" name="cashFlowFood" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="60000" required aria-describedby="cashFlowFoodError">
+              <p class="error" id="cashFlowFoodError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowCommunication">通信費 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowCommunication" name="cashFlowCommunication" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="12000" required aria-describedby="cashFlowCommunicationError">
+              <p class="error" id="cashFlowCommunicationError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowInsurance">保険料 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowInsurance" name="cashFlowInsurance" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="15000" required aria-describedby="cashFlowInsuranceError">
+              <p class="error" id="cashFlowInsuranceError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowInvestment">投資額 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowInvestment" name="cashFlowInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="80000" required aria-describedby="cashFlowInvestmentError">
+              <p class="error" id="cashFlowInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowLoan">ローン返済額 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowLoan" name="cashFlowLoan" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="30000" required aria-describedby="cashFlowLoanError">
+              <p class="error" id="cashFlowLoanError"></p>
+            </div>
+            <div class="field">
+              <label for="cashFlowOther">その他支出 <span class="unit">円 / 月</span></label>
+              <input id="cashFlowOther" name="cashFlowOther" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="70000" required aria-describedby="cashFlowOtherError">
+              <p class="error" id="cashFlowOtherError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">毎月収支</p>
+              <p class="amount" id="cashFlowMonthlyBalance">0円</p>
+            </div>
+            <p class="notice" id="cashFlowNotice">入力を確認してください。固定費や投資額の見直しは、生活防衛資金を確保したうえで判断してください。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>年間貯蓄額</strong>
+                <span class="accent-green" id="cashFlowAnnualSavings">0円</span>
+                <small>投資後に残る現金余力の年間目安</small>
+              </div>
+              <div class="metric">
+                <strong>投資可能額</strong>
+                <span class="accent-blue" id="cashFlowInvestableAmount">0円</span>
+                <small>生活費・固定費を差し引いた月額余力</small>
+              </div>
+              <div class="metric">
+                <strong>固定費改善余地</strong>
+                <span class="accent-amber" id="cashFlowFixedCostGap">0円</span>
+                <small>収入の35%を目安にした固定費見直し余地</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-green text-metric" id="cashFlowFireImpact">0年</span>
+                <small>投資額と黒字を資産形成に回す場合の目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="cashFlowImprovementPoint">入力を確認してください</span>
+                <small>収支、固定費、投資率から優先度を表示</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="会社員キャッシュフローシミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>毎月収支は何を表していますか？</summary>
+              <p>給与収入と副業収入から、家賃、食費、通信費、保険料、投資額、ローン返済額、その他支出を差し引いた残りです。投資後にも黒字が残るほど家計の余裕があります。</p>
+            </details>
+            <details>
+              <summary>投資可能額と投資額の違いは何ですか？</summary>
+              <p>投資額は現在すでに投資へ回している金額です。投資可能額は、投資を除いた生活費や固定費を支払った後に理論上投資へ回せる余力を示します。</p>
+            </details>
+            <details>
+              <summary>固定費改善余地はどう見ればよいですか？</summary>
+              <p>家賃、通信費、保険料、ローン返済額を固定費として、月収の35%を超える部分を見直し余地の目安にしています。まずは通信費や保険料など変更しやすい支出から確認してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="会社員キャッシュフロー関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>キャッシュフローを整えたら、固定費、FIRE、生活防衛資金を合わせて確認すると、資産形成の優先順位を決めやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
+            <a href="#fire">FIREシミュレーター</a>
+            <a href="#emergency-fund">生活防衛資金シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="emergency-fund" aria-label="生活防衛資金シミュレーター">
         <section class="tool-heading">
           <h2>生活防衛資金シミュレーター</h2>
@@ -3937,6 +4080,15 @@ const fieldRules = {
   employeeFireReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   employeeFireDividendIncome: { label: "\u914d\u5f53\u53ce\u5165", min: 0, max: 100000000, unit: "\u5186", integer: false },
   employeeFireTarget: { label: "\u76ee\u6a19FIRE\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  cashFlowSalary: { label: "給与収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowSideIncome: { label: "副業収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowRent: { label: "家賃", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowFood: { label: "食費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowCommunication: { label: "通信費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowInsurance: { label: "保険料", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowInvestment: { label: "投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowLoan: { label: "ローン返済額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  cashFlowOther: { label: "その他支出", min: 0, max: 100000000, unit: "\u5186", integer: false },
   emergencyMonthlyCost: { label: "\u6bce\u6708\u751f\u6d3b\u8cbb", min: 0, max: 100000000, unit: "\u5186", integer: false },
   familyCount: { label: "\u5bb6\u65cf\u4eba\u6570", min: 1, max: 20, unit: "\u4eba", integer: true },
   emergencySavings: { label: "\u73fe\u5728\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -5389,6 +5541,68 @@ function renderEmployeeFire() {
   setText("employeeFireSideFireComparison", sideFireComparison);
 }
 
+function renderCashFlow() {
+  const values = {
+    cashFlowSalary: getFieldValue("cashFlowSalary"),
+    cashFlowSideIncome: getFieldValue("cashFlowSideIncome"),
+    cashFlowRent: getFieldValue("cashFlowRent"),
+    cashFlowFood: getFieldValue("cashFlowFood"),
+    cashFlowCommunication: getFieldValue("cashFlowCommunication"),
+    cashFlowInsurance: getFieldValue("cashFlowInsurance"),
+    cashFlowInvestment: getFieldValue("cashFlowInvestment"),
+    cashFlowLoan: getFieldValue("cashFlowLoan"),
+    cashFlowOther: getFieldValue("cashFlowOther"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#cashFlowNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("cashFlowMonthlyBalance", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("cashFlowAnnualSavings", yen.format(0));
+    setText("cashFlowInvestableAmount", yen.format(0));
+    setText("cashFlowFixedCostGap", yen.format(0));
+    setText("cashFlowFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("cashFlowImprovementPoint", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const monthlyIncome = values.cashFlowSalary.value + values.cashFlowSideIncome.value;
+  const fixedCosts = values.cashFlowRent.value + values.cashFlowCommunication.value + values.cashFlowInsurance.value + values.cashFlowLoan.value;
+  const livingCosts = values.cashFlowFood.value + values.cashFlowOther.value;
+  const totalOutflow = fixedCosts + livingCosts + values.cashFlowInvestment.value;
+  const monthlyBalance = monthlyIncome - totalOutflow;
+  const annualSavings = Math.max(monthlyBalance, 0) * 12;
+  const investableAmount = Math.max(monthlyIncome - fixedCosts - livingCosts, 0);
+  const fixedCostTarget = monthlyIncome * 0.35;
+  const fixedCostGap = Math.max(fixedCosts - fixedCostTarget, 0);
+  const annualAssetGrowth = (values.cashFlowInvestment.value + Math.max(monthlyBalance, 0)) * 12;
+  const fireTarget = 30000000;
+  const fireYears = annualAssetGrowth > 0 ? fireTarget / annualAssetGrowth : null;
+  const investmentRate = monthlyIncome > 0 ? (values.cashFlowInvestment.value + Math.max(monthlyBalance, 0)) / monthlyIncome : 0;
+  const fixedCostRate = monthlyIncome > 0 ? fixedCosts / monthlyIncome : 0;
+  const fireImpact = fireYears === null
+    ? "投資・黒字がないため、まず収支改善が必要です"
+    : `FIRE資産3,000万円まで単純計算で約${fireYears.toFixed(1)}年`;
+  let improvementPoint = "黒字を維持しつつ、投資額と生活防衛資金のバランスを確認しましょう。";
+
+  if (monthlyBalance < 0) {
+    improvementPoint = "毎月赤字です。固定費削減とローン返済額の見直しを優先しましょう。";
+  } else if (fixedCostGap > 0) {
+    improvementPoint = `固定費が収入の35%を超えています。まず月${yen.format(fixedCostGap)}程度の見直し余地があります。`;
+  } else if (investmentRate < 0.15) {
+    improvementPoint = "投資率が15%未満です。生活防衛資金を確保したうえで、黒字の一部を投資へ回せるか確認しましょう。";
+  } else if (fixedCostRate < 0.3 && investmentRate >= 0.2) {
+    improvementPoint = "固定費と投資率のバランスは良好です。副業収入や昇給分を追加投資に回すとFIREが近づきます。";
+  }
+
+  setText("cashFlowMonthlyBalance", yen.format(monthlyBalance));
+  setText("cashFlowAnnualSavings", yen.format(annualSavings));
+  setText("cashFlowInvestableAmount", yen.format(investableAmount));
+  setText("cashFlowFixedCostGap", yen.format(fixedCostGap));
+  setText("cashFlowFireImpact", fireImpact);
+  setText("cashFlowImprovementPoint", improvementPoint);
+}
+
 function renderEmergencyFund() {
   const values = {
     emergencyMonthlyCost: getFieldValue("emergencyMonthlyCost"),
@@ -5696,7 +5910,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "hourly-improvement" || route === "side-time-management" || route === "side-profit-margin" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -5835,6 +6049,10 @@ document.querySelector("#employeeFireForm").addEventListener("input", renderEmpl
 document.querySelector("#employeeFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEmployeeFire);
 });
+document.querySelector("#cashFlowForm").addEventListener("input", renderCashFlow);
+document.querySelector("#cashFlowForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderCashFlow);
+});
 document.querySelector("#sideFireForm").addEventListener("input", renderSideFire);
 document.querySelector("#sideFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFire);
@@ -5876,6 +6094,7 @@ renderDividend();
 renderDividendReinvestment();
 renderDividendLife();
 renderEmployeeFire();
+renderCashFlow();
 renderSideFire();
 renderEmergencyFund();
 renderFixedCostReduction();
