@@ -466,6 +466,10 @@ document.body.innerHTML = `
               <strong>FIREカテゴリ</strong>
               <span>FIRE、会社員FIRE、サイドFIRE、配当生活を整理</span>
             </a>
+            <a class="article-link" href="category-ai.html">
+              <strong>AIカテゴリ</strong>
+              <span>AI副業効率化、AI導入ROI、時給改善、AIツール比較へ移動</span>
+            </a>
             <a class="article-link" href="category-housing.html">
               <strong>住宅カテゴリ</strong>
               <span>住宅ローンと老後資金への影響を確認</span>
