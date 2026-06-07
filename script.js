@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター31選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、副業時間管理、副業疲労度、会社員キャッシュフロー、副業法人化判断まで、31種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター32選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、副業時間管理、副業疲労度、配当生活年数、会社員キャッシュフロー、副業法人化判断まで、32種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -138,6 +138,10 @@ const routeSeo = {
   "dividend-life": {
     title: "【2026年対応】初心者向け配当生活達成シミュレーター｜3分で必要資産計算",
     description: "毎月生活費、現在資産、毎月積立額、想定配当利回り、想定年利、運用年数、配当再投資有無から、配当生活に必要な資産額と達成予想年を試算できます。",
+  },
+  "dividend-life-years": {
+    title: "【2026年対応】初心者向け配当生活年数シミュレーター｜3分で継続年数を分析",
+    description: "現在資産、毎月生活費、想定配当利回り、毎月追加投資額、想定年利、運用継続有無、配当再投資有無、インフレ率から、配当生活を何年間継続できるかを分析できます。",
   },
   "side-fire": {
     title: "【2026年対応】初心者向けサイドFIREシミュレーター｜3分で必要資産計算",
@@ -402,6 +406,7 @@ document.body.innerHTML = `
           <a href="#dividend-etf" data-route="dividend-etf">配当ETF比較</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#dividend-life" data-route="dividend-life">配当生活達成</a>
+          <a href="#dividend-life-years" data-route="dividend-life-years">配当生活年数</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#cash-flow" data-route="cash-flow">会社員キャッシュフロー</a>
@@ -419,12 +424,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で31個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で32個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">31個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">32個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -802,6 +807,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#dividend-life-years">
+            <p class="eyebrow">Dividend Years</p>
+            <h2>配当生活年数シミュレーター</h2>
+            <p>現在資産、毎月生活費、配当利回り、インフレ率から、配当生活を何年間続けられるかを試算します。</p>
+            <div class="tool-meta">
+              <span>継続年数</span>
+              <span>残高推移</span>
+              <span>FIRE継続</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#side-fire">
             <p class="eyebrow">Side FIRE</p>
             <h2>&#x30b5;&#x30a4;&#x30c9;FIRE&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -922,6 +939,7 @@ document.body.innerHTML = `
             <li><a href="#dividend-etf"><strong>配当ETF比較</strong><span>複数ETFの配当収入と資産成長を比較</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-life"><strong>配当生活達成</strong><span>生活費を配当収入だけでまかなう必要資産を確認</span></a></li>
+            <li><a href="#dividend-life-years"><strong>配当生活年数</strong><span>現在資産と生活費から配当生活の継続年数を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#cash-flow"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
@@ -3982,6 +4000,129 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="dividend-life-years" aria-label="配当生活年数シミュレーター">
+        <section class="tool-heading">
+          <h2>配当生活年数シミュレーター</h2>
+          <p>現在資産、毎月生活費、想定配当利回り、毎月追加投資額、想定年利、運用継続有無、配当再投資有無、インフレ率から、配当生活を何年間続けられるかを試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="配当生活年数の計算">
+          <form class="input-panel" id="dividendLifeYearsForm">
+            <div class="field">
+              <label for="dividendLifeYearsAssets">現在資産 <span class="unit">円</span></label>
+              <input id="dividendLifeYearsAssets" name="dividendLifeYearsAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="30000000" required aria-describedby="dividendLifeYearsAssetsError">
+              <p class="error" id="dividendLifeYearsAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYearsLivingCost">毎月生活費 <span class="unit">円 / 月</span></label>
+              <input id="dividendLifeYearsLivingCost" name="dividendLifeYearsLivingCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="220000" required aria-describedby="dividendLifeYearsLivingCostError">
+              <p class="error" id="dividendLifeYearsLivingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYearsYield">想定配当利回り <span class="unit">%</span></label>
+              <input id="dividendLifeYearsYield" name="dividendLifeYearsYield" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="dividendLifeYearsYieldError">
+              <p class="error" id="dividendLifeYearsYieldError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYearsMonthlyInvestment">毎月追加投資額 <span class="unit">円 / 月</span></label>
+              <input id="dividendLifeYearsMonthlyInvestment" name="dividendLifeYearsMonthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="dividendLifeYearsMonthlyInvestmentError">
+              <p class="error" id="dividendLifeYearsMonthlyInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="dividendLifeYearsReturn">想定年利 <span class="unit">%</span></label>
+              <input id="dividendLifeYearsReturn" name="dividendLifeYearsReturn" type="number" inputmode="decimal" min="-30" max="30" step="0.1" value="3" required aria-describedby="dividendLifeYearsReturnError">
+              <p class="error" id="dividendLifeYearsReturnError"></p>
+            </div>
+            <label class="check-field" for="dividendLifeYearsContinue">
+              <input id="dividendLifeYearsContinue" name="dividendLifeYearsContinue" type="checkbox" checked>
+              <span>配当生活中も追加投資を続ける</span>
+            </label>
+            <label class="check-field" for="dividendLifeYearsReinvest">
+              <input id="dividendLifeYearsReinvest" name="dividendLifeYearsReinvest" type="checkbox">
+              <span>配当金を再投資する</span>
+            </label>
+            <div class="field">
+              <label for="dividendLifeYearsInflation">インフレ率 <span class="unit">%</span></label>
+              <input id="dividendLifeYearsInflation" name="dividendLifeYearsInflation" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="2" required aria-describedby="dividendLifeYearsInflationError">
+              <p class="error" id="dividendLifeYearsInflationError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">配当生活可能年数</p>
+              <p class="amount" id="dividendLifeYearsPossibleYears">未計算</p>
+            </div>
+            <p class="notice" id="dividendLifeYearsNotice">入力を確認してください。配当利回りや運用利回りは将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>年間配当金</strong>
+                <span class="accent-green" id="dividendLifeYearsAnnualDividend">0円</span>
+                <small>現在資産 × 想定配当利回り</small>
+              </div>
+              <div class="metric">
+                <strong>月平均配当金</strong>
+                <span class="accent-blue" id="dividendLifeYearsMonthlyDividend">0円</span>
+                <small>年間配当金 ÷ 12か月</small>
+              </div>
+              <div class="metric">
+                <strong>資産残高推移</strong>
+                <span class="accent-amber text-metric" id="dividendLifeYearsBalanceTrend">未計算</span>
+                <small>生活費、配当、運用、インフレを反映</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE継続可能性</strong>
+                <span class="accent-green text-metric" id="dividendLifeYearsFireSustainability">未計算</span>
+                <small>年間生活費に対する配当カバー率</small>
+              </div>
+              <div class="metric">
+                <strong>新NISA活用時の改善効果</strong>
+                <span class="accent-blue text-metric" id="dividendLifeYearsNisaEffect">未計算</span>
+                <small>追加投資と非課税枠の使い方</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="dividendLifeYearsImprovement">未計算</span>
+                <small>生活費、積立、利回りの見直し案</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="配当生活年数シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>配当生活可能年数はどう計算していますか？</summary>
+              <p>年間生活費から配当収入を差し引き、不足分を資産から取り崩す前提で試算しています。運用継続、追加投資、配当再投資、インフレ率も年ごとに反映しています。</p>
+            </details>
+            <details>
+              <summary>配当再投資を選ぶと結果はどう変わりますか？</summary>
+              <p>配当を生活費に使わず資産へ戻すため、資産残高は伸びやすくなります。一方で生活費は資産取り崩しでまかなうため、FIRE後に配当を使う想定とは結果が変わります。</p>
+            </details>
+            <details>
+              <summary>インフレ率は入れたほうがいいですか？</summary>
+              <p>長期の配当生活では生活費が上がる可能性があるため、1〜2%程度でも入れて確認すると保守的に見られます。インフレを無視すると継続年数が長く見えやすい点に注意してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="配当生活年数関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>配当生活の継続年数は、必要資産、再投資効果、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#dividend-life">配当生活達成シミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="nisa-withdrawal" aria-label="NISA取り崩しシミュレーター">
         <section class="tool-heading">
           <h2>NISA取り崩しシミュレーター</h2>
@@ -4580,6 +4721,7 @@ document.body.innerHTML = `
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#dividend-life">配当生活達成</a>
+          <a href="#dividend-life-years">配当生活年数</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
             <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
@@ -4631,6 +4773,7 @@ const routeExperienceProfiles = {
   "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "dividend-reinvestment": { title: "配当再投資シミュレーター", kind: "investment", reason: "配当は受け取るだけでなく、再投資することで資産成長に回せます。短期の満足感と長期の複利効果を比べるために作りました。", use: "再投資による増加額を見て、今は配当を使う時期なのか、資産を増やす時期なのか判断してください。FIRE前は再投資、FIRE後は受け取りという使い分けも考えられます。", articles: [["配当生活達成シミュレーター", "index.html#dividend-life"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIREとは何か", "article-fire-basic.html"]] },
   "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "index.html#dividend-life"]] },
@@ -4667,6 +4810,7 @@ const relatedToolGroups = {
     ["新NISAシミュレーター", "index.html#nisa"],
     ["iDeCo節税シミュレーター", "index.html#ideco"],
     ["配当金シミュレーター", "index.html#dividend"],
+    ["配当生活年数シミュレーター", "index.html#dividend-life-years"],
     ["クレカ積立比較シミュレーター", "index.html#credit-card-investment"],
   ],
   fire: [
@@ -4674,6 +4818,7 @@ const relatedToolGroups = {
     ["会社員FIRE年数計算シミュレーター", "index.html#employee-fire"],
     ["サイドFIREシミュレーター", "index.html#side-fire"],
     ["配当生活達成シミュレーター", "index.html#dividend-life"],
+    ["配当生活年数シミュレーター", "index.html#dividend-life-years"],
   ],
   household: [
     ["会社員キャッシュフローシミュレーター", "index.html#cash-flow"],
@@ -4898,6 +5043,12 @@ const fieldRules = {
   dividendLifeYield: { label: "想定配当利回り", min: 0.1, max: 30, unit: "%", integer: false },
   dividendLifeReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
   dividendLifeYears: { label: "運用年数", min: 1, max: 100, unit: "\u5e74", integer: true },
+  dividendLifeYearsAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  dividendLifeYearsLivingCost: { label: "毎月生活費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendLifeYearsYield: { label: "想定配当利回り", min: 0, max: 30, unit: "%", integer: false },
+  dividendLifeYearsMonthlyInvestment: { label: "毎月追加投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendLifeYearsReturn: { label: "想定年利", min: -30, max: 30, unit: "%", integer: false },
+  dividendLifeYearsInflation: { label: "インフレ率", min: 0, max: 20, unit: "%", integer: false },
   dividendReinvestmentInitial: { label: "\u521d\u671f\u6295\u8cc7\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendReinvestmentMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendReinvestmentYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
@@ -6555,6 +6706,117 @@ function renderDividendLife() {
   setText("dividendLifeNisaEffect", nisaEffect);
 }
 
+function calculateDividendLifeYearsPlan(values, continueInvesting, reinvest) {
+  const yieldRate = values.dividendLifeYearsYield.value / 100;
+  const returnRate = values.dividendLifeYearsReturn.value / 100;
+  const inflationRate = values.dividendLifeYearsInflation.value / 100;
+  const initialAnnualCost = values.dividendLifeYearsLivingCost.value * 12;
+  const maxYears = 80;
+  let assets = values.dividendLifeYearsAssets.value;
+  let annualCost = initialAnnualCost;
+  let possibleYears = 0;
+  let firstYearDividend = Math.max(assets * yieldRate, 0);
+  let finalAnnualDividend = firstYearDividend;
+
+  for (let year = 1; year <= maxYears; year += 1) {
+    const annualDividend = Math.max(assets * yieldRate, 0);
+    if (year === 1) {
+      firstYearDividend = annualDividend;
+    }
+    finalAnnualDividend = annualDividend;
+    const annualAdditionalInvestment = continueInvesting ? values.dividendLifeYearsMonthlyInvestment.value * 12 : 0;
+    const dividendForLivingCost = reinvest ? 0 : annualDividend;
+    const withdrawal = Math.max(annualCost - dividendForLivingCost, 0);
+
+    assets += annualAdditionalInvestment;
+    if (reinvest) {
+      assets += annualDividend;
+    }
+    assets *= 1 + returnRate;
+    assets -= withdrawal;
+
+    if (assets <= 0) {
+      return {
+        possibleYears,
+        finalAssets: 0,
+        firstYearDividend,
+        finalAnnualDividend,
+        initialAnnualCost,
+      };
+    }
+
+    possibleYears = year;
+    annualCost *= 1 + inflationRate;
+  }
+
+  return {
+    possibleYears: maxYears,
+    finalAssets: assets,
+    firstYearDividend,
+    finalAnnualDividend,
+    initialAnnualCost,
+  };
+}
+
+function renderDividendLifeYears() {
+  const values = {
+    dividendLifeYearsAssets: getFieldValue("dividendLifeYearsAssets"),
+    dividendLifeYearsLivingCost: getFieldValue("dividendLifeYearsLivingCost"),
+    dividendLifeYearsYield: getFieldValue("dividendLifeYearsYield"),
+    dividendLifeYearsMonthlyInvestment: getFieldValue("dividendLifeYearsMonthlyInvestment"),
+    dividendLifeYearsReturn: getFieldValue("dividendLifeYearsReturn"),
+    dividendLifeYearsInflation: getFieldValue("dividendLifeYearsInflation"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#dividendLifeYearsNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dividendLifeYearsPossibleYears", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeYearsAnnualDividend", yen.format(0));
+    setText("dividendLifeYearsMonthlyDividend", yen.format(0));
+    setText("dividendLifeYearsBalanceTrend", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeYearsFireSustainability", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeYearsNisaEffect", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("dividendLifeYearsImprovement", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const continueInvesting = document.querySelector("#dividendLifeYearsContinue").checked;
+  const reinvest = document.querySelector("#dividendLifeYearsReinvest").checked;
+  const plan = calculateDividendLifeYearsPlan(values, continueInvesting, reinvest);
+  const annualCost = values.dividendLifeYearsLivingCost.value * 12;
+  const monthlyDividend = plan.firstYearDividend / 12;
+  const coverage = annualCost > 0 ? (plan.firstYearDividend / annualCost) * 100 : 0;
+  const possibleYearsLabel = plan.possibleYears >= 80 ? "80年以上" : `${plan.possibleYears}年`;
+  const balanceTrend = plan.possibleYears >= 80
+    ? `80年後も残高${yen.format(plan.finalAssets)}の目安`
+    : `${plan.possibleYears}年後に資産が尽きる目安`;
+  const sustainability = coverage >= 100
+    ? `初年度生活費の${coverage.toFixed(1)}%を配当でカバー。配当だけで生活費を上回る目安です。`
+    : coverage >= 50
+      ? `初年度生活費の${coverage.toFixed(1)}%を配当でカバー。不足分は取り崩しや副業収入で補う目安です。`
+      : `初年度生活費の${coverage.toFixed(1)}%を配当でカバー。生活費削減や追加投資の優先度が高い目安です。`;
+  const annualInvestment = continueInvesting ? values.dividendLifeYearsMonthlyInvestment.value * 12 : 0;
+  const nisaEffect = annualInvestment === 0
+    ? "追加投資なしのため、新NISAは既存資産の非課税運用枠として活用を検討する目安"
+    : annualInvestment <= 3600000
+      ? "毎年の追加投資は新NISA年間投資枠360万円内に収まる目安"
+      : "毎年の追加投資が新NISA年間投資枠360万円を超えるため、課税口座との併用が必要な目安";
+  const improvement = plan.possibleYears >= 80
+    ? "継続年数は長めです。利回りを追いすぎず、分散と生活防衛資金を優先してください。"
+    : coverage < 50
+      ? "固定費削減、毎月追加投資の増額、配当再投資を組み合わせると継続年数を伸ばしやすくなります。"
+      : "生活費の一部を配当で補えています。インフレ率を高めにしても続くか確認すると安心です。";
+
+  setText("dividendLifeYearsPossibleYears", possibleYearsLabel);
+  setText("dividendLifeYearsAnnualDividend", yen.format(plan.firstYearDividend));
+  setText("dividendLifeYearsMonthlyDividend", yen.format(monthlyDividend));
+  setText("dividendLifeYearsBalanceTrend", balanceTrend);
+  setText("dividendLifeYearsFireSustainability", sustainability);
+  setText("dividendLifeYearsNisaEffect", nisaEffect);
+  setText("dividendLifeYearsImprovement", improvement);
+}
+
 function calculateDividendReinvestmentPlan(values, reinvest) {
   const yieldRate = values.dividendReinvestmentYield.value / 100;
   const growthRate = values.dividendReinvestmentGrowth.value / 100;
@@ -7070,7 +7332,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -7221,6 +7483,10 @@ document.querySelector("#dividendLifeForm").addEventListener("input", renderDivi
 document.querySelector("#dividendLifeForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendLife);
 });
+document.querySelector("#dividendLifeYearsForm").addEventListener("input", renderDividendLifeYears);
+document.querySelector("#dividendLifeYearsForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderDividendLifeYears);
+});
 document.querySelector("#employeeFireForm").addEventListener("input", renderEmployeeFire);
 document.querySelector("#employeeFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderEmployeeFire);
@@ -7248,40 +7514,45 @@ document.querySelector("#mortgageForm").addEventListener("reset", () => {
 document.querySelector("#topToolSearch").addEventListener("input", renderTopToolSearch);
 window.addEventListener("hashchange", renderRoute);
 
-renderRoute();
-try {
-  renderSideFatigue();
-} catch (error) {
-  console.warn("副業疲労度シミュレーターの初期計算をスキップしました。", error);
+function safeRender(name, renderFn) {
+  try {
+    renderFn();
+  } catch (error) {
+    console.warn(`${name}の初期計算をスキップしました。`, error);
+  }
 }
-renderSideIncome();
-renderAiHourly();
-renderAiEfficiency();
-renderAiRoi();
-renderHourlyImprovement();
-renderSideTimeManagement();
-renderSideProfitMargin();
-renderIncorporation();
-renderTax();
-renderResidentTax();
-renderIncomeTax();
-renderTakeHome();
-renderNisa();
-renderNisaWithdrawal();
-renderCreditCardInvestment();
-renderIdeco();
-renderFire();
-renderRetirement();
-renderEducation();
-renderEducationInsurance();
-renderDividend();
-renderDividendEtf();
-renderDividendReinvestment();
-renderDividendLife();
-renderEmployeeFire();
-renderCashFlow();
-renderSideFire();
-renderEmergencyFund();
-renderFixedCostReduction();
-renderMortgage();
-renderTopToolSearch();
+
+renderRoute();
+safeRender("副業疲労度シミュレーター", renderSideFatigue);
+safeRender("副業月収シミュレーター", renderSideIncome);
+safeRender("AI副業時給シミュレーター", renderAiHourly);
+safeRender("AI副業効率化シミュレーター", renderAiEfficiency);
+safeRender("AI導入ROIシミュレーター", renderAiRoi);
+safeRender("副業時給改善シミュレーター", renderHourlyImprovement);
+safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
+safeRender("副業利益率シミュレーター", renderSideProfitMargin);
+safeRender("副業法人化判断シミュレーター", renderIncorporation);
+safeRender("副業税金シミュレーター", renderTax);
+safeRender("副業住民税シミュレーター", renderResidentTax);
+safeRender("副業所得税シミュレーター", renderIncomeTax);
+safeRender("副業手取り計算シミュレーター", renderTakeHome);
+safeRender("新NISAシミュレーター", renderNisa);
+safeRender("NISA取り崩しシミュレーター", renderNisaWithdrawal);
+safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestment);
+safeRender("iDeCo節税シミュレーター", renderIdeco);
+safeRender("FIRE達成シミュレーター", renderFire);
+safeRender("老後資金シミュレーター", renderRetirement);
+safeRender("教育費シミュレーター", renderEducation);
+safeRender("学資保険比較シミュレーター", renderEducationInsurance);
+safeRender("配当金シミュレーター", renderDividend);
+safeRender("配当ETF比較シミュレーター", renderDividendEtf);
+safeRender("配当再投資シミュレーター", renderDividendReinvestment);
+safeRender("配当生活達成シミュレーター", renderDividendLife);
+safeRender("配当生活年数シミュレーター", renderDividendLifeYears);
+safeRender("会社員FIRE年数計算シミュレーター", renderEmployeeFire);
+safeRender("会社員キャッシュフローシミュレーター", renderCashFlow);
+safeRender("サイドFIREシミュレーター", renderSideFire);
+safeRender("生活防衛資金シミュレーター", renderEmergencyFund);
+safeRender("固定費削減シミュレーター", renderFixedCostReduction);
+safeRender("住宅ローン返済シミュレーター", renderMortgage);
+safeRender("トップ検索", renderTopToolSearch);
