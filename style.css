@@ -129,7 +129,9 @@ h1 {
 }
 
 .category-section,
-.article-panel {
+.article-panel,
+.article-section,
+.faq-section {
   display: grid;
   gap: 14px;
   margin-top: 16px;
@@ -153,7 +155,9 @@ h1 {
   letter-spacing: 0;
 }
 
-.article-panel {
+.article-panel,
+.article-section,
+.faq-section {
   padding: 16px;
   border: 1px solid rgba(217, 222, 231, 0.92);
   border-radius: 8px;
@@ -161,9 +165,46 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.article-panel .tool-heading {
+.article-panel .tool-heading,
+.article-section .tool-heading,
+.faq-section .tool-heading {
   margin-bottom: 0;
   padding: 0;
+}
+
+.article-section {
+  gap: 18px;
+  line-height: 1.85;
+}
+
+.article-section h3,
+.faq-section h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.article-section p,
+.faq-section p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+.experience-block {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.experience-block strong {
+  color: var(--ink);
 }
 
 .article-list,
