@@ -831,6 +831,10 @@ document.body.innerHTML = `
             <p>副業や投資を始める前に、口座、会計ソフト、カード、AIツールを比較して準備できます。</p>
           </section>
           <div class="article-list">
+            <a class="article-link" href="article-rakuten-sbi-securities-comparison.html">
+              <strong>&#x697d;&#x5929;&#x8a3c;&#x5238; vs SBI&#x8a3c;&#x5238; &#x5b8c;&#x5168;&#x6bd4;&#x8f03;</strong>
+              <span>&#x65b0;NISA&#x3001;&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x3001;&#x9ad8;&#x914d;&#x5f53;&#x6295;&#x8cc7;&#x3092;&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x306b;&#x6574;&#x7406;</span>
+            </a>
             <a class="article-link" href="article-securities-account-comparison.html">
               <strong>&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x304a;&#x3059;&#x3059;&#x3081;&#x8a3c;&#x5238;&#x53e3;&#x5ea7;&#x6bd4;&#x8f03;</strong>
               <span>NISA&#x5bfe;&#x5fdc;&#x3001;&#x624b;&#x6570;&#x6599;&#x3001;&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9023;&#x643a;&#x3092;&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x306b;&#x6574;&#x7406;</span>
