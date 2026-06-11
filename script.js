@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5c0e\u5165ROI\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5c0e\u5165ROI\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u65b0NISA\u6700\u901f\u7a4d\u7acb\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター32選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、副業時間管理、副業疲労度、配当生活年数、会社員キャッシュフロー、副業法人化判断まで、32種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター33選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、投資、FIRE、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、副業時間管理、副業疲労度、新NISA最速積立、配当生活年数、会社員キャッシュフロー、副業法人化判断まで、33種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -98,6 +98,10 @@ const routeSeo = {
   nisa: {
     title: "【2026年対応】初心者向け新NISAシミュレーター｜3分で積立投資計算",
     description: "\u521d\u671f\u6295\u8cc7\u984d\u3001\u6bce\u6708\u7a4d\u7acb\u984d\u3001\u60f3\u5b9a\u5e74\u5229\u3001\u904b\u7528\u5e74\u6570\u304b\u3089\u65b0NISA\u306e\u5c06\u6765\u8cc7\u7523\u984d\u3068\u904b\u7528\u76ca\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "nisa-fast": {
+    title: "【2026年対応】初心者向け新NISA最速積立シミュレーター｜3分で成長速度を分析",
+    description: "現在年齢、毎月積立額、ボーナス積立額、想定年利、運用年数、配当再投資有無、新NISA成長投資枠利用有無から、新NISAで最速資産形成した場合の最終資産額、複利効果、FIRE達成への影響を試算できます。",
   },
   "nisa-withdrawal": {
     title: "【2026年対応】初心者向けNISA取り崩しシミュレーター｜3分で老後資金計算",
@@ -399,6 +403,7 @@ document.body.innerHTML = `
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#nisa-fast" data-route="nisa-fast">新NISA最速積立</a>
           <a href="#nisa-withdrawal" data-route="nisa-withdrawal">NISA取り崩し</a>
           <a href="#credit-card-investment" data-route="credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
@@ -424,12 +429,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で32個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で33個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">32個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">33個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -687,6 +692,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#nisa-fast">
+            <p class="eyebrow">NISA Fast</p>
+            <h2>新NISA最速積立シミュレーター</h2>
+            <p>毎月積立額、ボーナス積立額、想定年利、運用年数から、新NISAで最速資産形成した場合の成長速度を試算します。</p>
+            <div class="tool-meta">
+              <span>最終資産</span>
+              <span>複利効果</span>
+              <span>FIRE影響</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#nisa-withdrawal">
             <p class="eyebrow">NISA Withdrawal</p>
             <h2>NISA取り崩しシミュレーター</h2>
@@ -932,6 +949,7 @@ document.body.innerHTML = `
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#nisa-fast"><strong>新NISA最速積立</strong><span>毎月積立とボーナス積立で資産形成速度を確認</span></a></li>
             <li><a href="#nisa-withdrawal"><strong>NISA取り崩し</strong><span>老後に何年取り崩せるかと毎月使える額を確認</span></a></li>
             <li><a href="#credit-card-investment"><strong>&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x6bd4;&#x8f03;</strong><span>&#x30dd;&#x30a4;&#x30f3;&#x30c8;&#x9084;&#x5143;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x306e;&#x5dee;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ideco"><strong>iDeCo&#x7bc0;&#x7a0e;</strong><span>&#x6bce;&#x6708;&#x306e;&#x639b;&#x91d1;&#x304b;&#x3089;&#x7bc0;&#x7a0e;&#x984d;&#x3068;&#x5c06;&#x6765;&#x8cc7;&#x7523;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -2614,6 +2632,124 @@ document.body.innerHTML = `
             <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#fire">FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="nisa-fast" aria-label="新NISA最速積立シミュレーター">
+        <section class="tool-heading">
+          <h2>新NISA最速積立シミュレーター</h2>
+          <p>現在年齢、毎月積立額、ボーナス積立額、想定年利、運用年数、配当再投資有無、新NISA成長投資枠利用有無から、新NISAで最速資産形成した場合の成長速度を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="新NISA最速積立の計算">
+          <form class="input-panel" id="nisaFastForm">
+            <div class="field">
+              <label for="nisaFastAge">現在年齢 <span class="unit">歳</span></label>
+              <input id="nisaFastAge" name="nisaFastAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="31" required aria-describedby="nisaFastAgeError">
+              <p class="error" id="nisaFastAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaFastMonthly">毎月積立額 <span class="unit">円 / 月</span></label>
+              <input id="nisaFastMonthly" name="nisaFastMonthly" type="number" inputmode="numeric" min="0" max="300000" step="10000" value="100000" required aria-describedby="nisaFastMonthlyError">
+              <p class="error" id="nisaFastMonthlyError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaFastBonus">ボーナス積立額 <span class="unit">円 / 年</span></label>
+              <input id="nisaFastBonus" name="nisaFastBonus" type="number" inputmode="numeric" min="0" max="2400000" step="10000" value="1200000" required aria-describedby="nisaFastBonusError">
+              <p class="error" id="nisaFastBonusError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaFastReturn">想定年利 <span class="unit">%</span></label>
+              <input id="nisaFastReturn" name="nisaFastReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="5" required aria-describedby="nisaFastReturnError">
+              <p class="error" id="nisaFastReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="nisaFastYears">運用年数 <span class="unit">年</span></label>
+              <input id="nisaFastYears" name="nisaFastYears" type="number" inputmode="numeric" min="1" max="100" step="1" value="15" required aria-describedby="nisaFastYearsError">
+              <p class="error" id="nisaFastYearsError"></p>
+            </div>
+            <label class="check-field" for="nisaFastDividendReinvest">
+              <input id="nisaFastDividendReinvest" name="nisaFastDividendReinvest" type="checkbox" checked>
+              <span>配当を再投資する</span>
+            </label>
+            <label class="check-field" for="nisaFastGrowthFrame">
+              <input id="nisaFastGrowthFrame" name="nisaFastGrowthFrame" type="checkbox" checked>
+              <span>新NISA成長投資枠も利用する</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">最終資産額</p>
+              <p class="amount" id="nisaFastFinalAssets">0円</p>
+            </div>
+            <p class="notice" id="nisaFastNotice">入力を確認してください。新NISAの制度上限、利回り、配当は将来の成果を保証するものではありません。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>年間資産増加額</strong>
+                <span class="accent-blue" id="nisaFastAnnualIncrease">0円</span>
+                <small>最終資産額を運用年数で割った平均</small>
+              </div>
+              <div class="metric">
+                <strong>複利効果</strong>
+                <span class="accent-green" id="nisaFastCompoundEffect">0円</span>
+                <small>最終資産額 - 投資元本</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-amber text-metric" id="nisaFastFireImpact">未計算</span>
+                <small>FIRE目標3,000万円に対する到達度</small>
+              </div>
+              <div class="metric">
+                <strong>配当収入予測</strong>
+                <span class="accent-green" id="nisaFastDividendIncome">0円</span>
+                <small>最終資産額 × 3.5%の簡易目安</small>
+              </div>
+              <div class="metric">
+                <strong>目標資産達成年齢</strong>
+                <span class="accent-blue" id="nisaFastTargetAge">未計算</span>
+                <small>3,000万円到達時の年齢目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="nisaFastImprovement">未計算</span>
+                <small>積立額、枠利用、配当再投資の見直し</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="新NISA最速積立シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>新NISAで最速積立するとはどういう意味ですか？</summary>
+              <p>毎月積立に加えてボーナス積立や成長投資枠も使い、年間投資枠をできるだけ早く使う前提で資産形成ペースを確認する考え方です。家計に無理がない範囲で試算してください。</p>
+            </details>
+            <details>
+              <summary>毎月積立額はいくらまで入力できますか？</summary>
+              <p>このツールではつみたて投資枠の月10万円を基準にしつつ、成長投資枠を使う場合のボーナス積立も合わせて年間360万円までを目安に見ます。</p>
+            </details>
+            <details>
+              <summary>配当再投資を選ぶと何が変わりますか？</summary>
+              <p>配当を使わず再投資する前提で、複利効果を少し強めに見ます。FIRE前の資産形成では、配当を受け取るより再投資した方が資産成長を優先しやすくなります。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="新NISA最速積立関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>新NISAの最速積立は、通常の新NISA試算、配当再投資、FIRE必要資産と合わせて見ると判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#nisa">新NISAシミュレーター</a>
+            <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#fire">FIRE達成シミュレーター</a>
           </div>
         </section>
       </section>
@@ -4715,6 +4851,7 @@ document.body.innerHTML = `
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
+          <a href="#nisa-fast">新NISA最速積立</a>
           <a href="#nisa-withdrawal">NISA取り崩し</a>
           <a href="#credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
@@ -4766,6 +4903,7 @@ const routeExperienceProfiles = {
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   nisa: { title: "新NISAシミュレーター", kind: "investment", reason: "FIREを目指すうえで、新NISAは長期投資の中心にしやすい制度です。ただし、毎月いくら積み立てるかは収入や固定費によって変わります。", use: "将来資産額だけでなく、毎月積立額が家計に無理なく続くかを見てください。副業収入や固定費削減で増えた余力をNISAへ回すと、行動と資産形成がつながります。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIREとは何か", "article-fire-basic.html"]] },
+  "nisa-fast": { title: "新NISA最速積立シミュレーター", kind: "investment", reason: "新NISAは枠をどう使うかで資産形成の速度が変わります。毎月積立とボーナス積立を分けて、無理なく早く埋めるペースを確認するために作りました。", use: "最終資産額だけでなく、生活防衛資金を残して続けられる金額かを見てください。FIREを急ぐ場合も、成長投資枠、配当再投資、固定費削減を組み合わせる方が現実的です。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "nisa-withdrawal": { title: "NISA取り崩しシミュレーター", kind: "investment", reason: "資産形成は積み立てるだけでなく、将来どう使うかまで考える必要があります。老後やFIRE後に何年取り崩せるかを見える化するために作りました。", use: "取り崩し可能年数が短い場合は、毎月取り崩し額を下げる、運用継続を考える、老後資金や配当収入を組み合わせるなどの調整に使ってください。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "credit-card-investment": { title: "クレカ積立比較シミュレーター", kind: "investment", reason: "クレカ積立はポイント還元が魅力ですが、還元率だけで判断すると本質を見失います。通常積立との差を数字で確認するために作りました。", use: "差額が小さくても、長期ではポイント再投資が効いてきます。新NISAや配当再投資と合わせて、無理なく続く証券口座とカードを選ぶ材料にしてください。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   ideco: { title: "iDeCo節税シミュレーター", kind: "investment", reason: "iDeCoは節税効果がある一方で、原則60歳まで引き出せない制度です。新NISAとは性格が違うため、節税額と将来資産を分けて見る必要があります。", use: "節税額だけでなく、資金拘束も考えてください。老後資金目的ならiDeCo、柔軟性を重視するなら新NISAというように、目的別に使い分ける判断材料になります。", articles: [["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
@@ -4808,6 +4946,7 @@ const relatedToolGroups = {
   ],
   investment: [
     ["新NISAシミュレーター", "index.html#nisa"],
+    ["新NISA最速積立シミュレーター", "index.html#nisa-fast"],
     ["iDeCo節税シミュレーター", "index.html#ideco"],
     ["配当金シミュレーター", "index.html#dividend"],
     ["配当生活年数シミュレーター", "index.html#dividend-life-years"],
@@ -4988,6 +5127,11 @@ const fieldRules = {
   nisaAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   nisaYears: { label: "\u904b\u7528\u5e74\u6570", min: 0, max: 100, unit: "\u5e74", integer: false },
   nisaTarget: { label: "\u76ee\u6a19\u91d1\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  nisaFastAge: { label: "現在年齢", min: 0, max: 100, unit: "\u6b73", integer: true },
+  nisaFastMonthly: { label: "毎月積立額", min: 0, max: 300000, unit: "\u5186", integer: false },
+  nisaFastBonus: { label: "ボーナス積立額", min: 0, max: 2400000, unit: "\u5186", integer: false },
+  nisaFastReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
+  nisaFastYears: { label: "運用年数", min: 1, max: 100, unit: "\u5e74", integer: true },
   nisaWithdrawalAssets: { label: "現在のNISA資産額", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   nisaWithdrawalMonthlyInvestment: { label: "毎月追加投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
   nisaWithdrawalReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
@@ -5922,6 +6066,99 @@ function renderNisa() {
   document.querySelector("#nisaFireDetail").textContent = futureAssets >= target
     ? "\u5165\u529b\u3057\u305f\u904b\u7528\u5e74\u6570\u5185\u306b\u76ee\u6a19\u5230\u9054\u306e\u76ee\u5b89"
     : `\u76ee\u6a19\u307e\u3067\u3042\u3068${yen.format(Math.max(target - futureAssets, 0))}`;
+}
+
+function calculateNisaFastPlan(values, dividendReinvest, growthFrameUse) {
+  const monthlyRate = values.nisaFastReturn.value / 100 / 12;
+  const months = values.nisaFastYears.value * 12;
+  const annualLimit = growthFrameUse ? 3600000 : 1200000;
+  const lifetimeLimit = 18000000;
+  const fireTarget = 30000000;
+  let assets = 0;
+  let principal = 0;
+  let targetMonth = null;
+
+  for (let month = 1; month <= months; month += 1) {
+    const yearIndex = Math.floor((month - 1) / 12);
+    const yearStartPrincipal = Math.min(yearIndex * annualLimit, lifetimeLimit);
+    const yearInvested = Math.max(principal - yearStartPrincipal, 0);
+    const remainingAnnualLimit = Math.max(annualLimit - yearInvested, 0);
+    const remainingLifetimeLimit = Math.max(lifetimeLimit - principal, 0);
+    const monthlyInvestment = Math.min(values.nisaFastMonthly.value, remainingAnnualLimit, remainingLifetimeLimit);
+    assets += monthlyInvestment;
+    principal += monthlyInvestment;
+
+    if (month % 12 === 0) {
+      const investedThisYear = Math.max(principal - yearStartPrincipal, 0);
+      const bonusLimit = Math.max(annualLimit - investedThisYear, 0);
+      const bonusInvestment = Math.min(values.nisaFastBonus.value, bonusLimit, Math.max(lifetimeLimit - principal, 0));
+      assets += bonusInvestment;
+      principal += bonusInvestment;
+    }
+
+    const dividendBoost = dividendReinvest ? 0.003 / 12 : 0;
+    assets *= 1 + monthlyRate + dividendBoost;
+
+    if (targetMonth === null && assets >= fireTarget) {
+      targetMonth = month;
+    }
+  }
+
+  return {
+    assets,
+    principal,
+    compoundEffect: Math.max(assets - principal, 0),
+    annualIncrease: values.nisaFastYears.value > 0 ? assets / values.nisaFastYears.value : 0,
+    targetMonth,
+    annualLimit,
+  };
+}
+
+function renderNisaFast() {
+  const values = {
+    nisaFastAge: getFieldValue("nisaFastAge"),
+    nisaFastMonthly: getFieldValue("nisaFastMonthly"),
+    nisaFastBonus: getFieldValue("nisaFastBonus"),
+    nisaFastReturn: getFieldValue("nisaFastReturn"),
+    nisaFastYears: getFieldValue("nisaFastYears"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#nisaFastNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("nisaFastFinalAssets", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("nisaFastAnnualIncrease", yen.format(0));
+    setText("nisaFastCompoundEffect", yen.format(0));
+    setText("nisaFastFireImpact", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("nisaFastDividendIncome", yen.format(0));
+    setText("nisaFastTargetAge", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("nisaFastImprovement", "入力を確認してください");
+    return;
+  }
+
+  const dividendReinvest = document.querySelector("#nisaFastDividendReinvest").checked;
+  const growthFrameUse = document.querySelector("#nisaFastGrowthFrame").checked;
+  const plan = calculateNisaFastPlan(values, dividendReinvest, growthFrameUse);
+  const fireTarget = 30000000;
+  const fireRate = fireTarget > 0 ? Math.min((plan.assets / fireTarget) * 100, 999) : 0;
+  const dividendIncome = plan.assets * 0.035;
+  const targetAge = plan.targetMonth === null
+    ? "\u904b\u7528\u671f\u9593\u5185\u306f\u672a\u9054\u6210"
+    : `${(values.nisaFastAge.value + Math.ceil(plan.targetMonth / 12)).toLocaleString("ja-JP")}\u6b73`;
+  const annualInvestment = values.nisaFastMonthly.value * 12 + values.nisaFastBonus.value;
+  const improvement = annualInvestment >= plan.annualLimit
+    ? "年間投資枠の上限に近いペースです。生活防衛資金と継続性を優先しましょう。"
+    : growthFrameUse
+      ? "\u30dc\u30fc\u30ca\u30b9\u7a4d\u7acb\u3084\u56fa\u5b9a\u8cbb\u524a\u6e1b\u5206\u3092\u6210\u9577\u6295\u8cc7\u67a0\u3078\u56de\u3059\u3068\u3001\u76ee\u6a19\u9054\u6210\u304c\u65e9\u307e\u308a\u3084\u3059\u3044\u3067\u3059\u3002"
+      : "最速ペースを見たい場合は、成長投資枠も使うパターンで比較してください。";
+
+  setText("nisaFastFinalAssets", yen.format(plan.assets));
+  setText("nisaFastAnnualIncrease", yen.format(plan.annualIncrease));
+  setText("nisaFastCompoundEffect", yen.format(plan.compoundEffect));
+  setText("nisaFastFireImpact", `FIRE\u76ee\u6a193,000\u4e07\u5186\u306e\u7d04${fireRate.toFixed(1)}%\u306b\u76f8\u5f53`);
+  setText("nisaFastDividendIncome", `${yen.format(dividendIncome)} / \u5e74`);
+  setText("nisaFastTargetAge", targetAge);
+  setText("nisaFastImprovement", improvement);
 }
 
 function simulateWithdrawalMonths(assets, monthlyInvestment, monthlyWithdrawal, annualReturn, continueInvestment, maxMonths = 1200) {
@@ -7332,7 +7569,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -7439,6 +7676,10 @@ document.querySelector("#nisaForm").addEventListener("input", renderNisa);
 document.querySelector("#nisaForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderNisa);
 });
+document.querySelector("#nisaFastForm").addEventListener("input", renderNisaFast);
+document.querySelector("#nisaFastForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderNisaFast);
+});
 document.querySelector("#nisaWithdrawalForm").addEventListener("input", renderNisaWithdrawal);
 document.querySelector("#nisaWithdrawalForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderNisaWithdrawal);
@@ -7537,6 +7778,7 @@ safeRender("副業住民税シミュレーター", renderResidentTax);
 safeRender("副業所得税シミュレーター", renderIncomeTax);
 safeRender("副業手取り計算シミュレーター", renderTakeHome);
 safeRender("新NISAシミュレーター", renderNisa);
+safeRender("新NISA最速積立シミュレーター", renderNisaFast);
 safeRender("NISA取り崩しシミュレーター", renderNisaWithdrawal);
 safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestment);
 safeRender("iDeCo節税シミュレーター", renderIdeco);
