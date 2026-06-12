@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5c0e\u5165ROI\u3001AI\u526f\u696d\u5229\u76ca\u6700\u5927\u5316\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u65b0NISA\u6700\u901f\u7a4d\u7acb\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001FIRE\u9054\u6210\u7387\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5c0e\u5165ROI\u3001AI\u526f\u696d\u5229\u76ca\u6700\u5927\u5316\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3001\u526f\u696d\u6642\u9593\u7ba1\u7406\u3001\u526f\u696d\u5229\u76ca\u7387\u3001\u526f\u696d\u6cd5\u4eba\u5316\u5224\u65ad\u3001\u526f\u696d\u624b\u53d6\u308a\u3001\u526f\u696d\u6240\u5f97\u7a0e\u3001\u526f\u696d\u4f4f\u6c11\u7a0e\u3001\u65b0NISA\u30fb\u7a4d\u7acb\u6295\u8cc7\u3001\u65b0NISA\u6700\u901f\u7a4d\u7acb\u3001NISA\u53d6\u308a\u5d29\u3057\u3001\u30af\u30ec\u30ab\u7a4d\u7acb\u6bd4\u8f03\u3001iDeCo\u7bc0\u7a0e\u3001\u914d\u5f53\u91d1\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001\u914d\u5f53\u751f\u6d3b\u9054\u6210\u3001FIRE\u9054\u6210\u3001FIRE\u9054\u6210\u7387\u3001\u4f1a\u793e\u54e1FIRE\u3001\u4f1a\u793e\u54e1\u30ad\u30e3\u30c3\u30b7\u30e5\u30d5\u30ed\u30fc\u3001\u30b5\u30a4\u30c9FIRE\u3001\u751f\u6d3b\u9632\u885b\u8cc7\u91d1\u3001\u56fa\u5b9a\u8cbb\u524a\u6e1b\u3001\u8001\u5f8c\u8cc7\u91d1\u3001\u6559\u80b2\u8cbb\u3001\u5b66\u8cc7\u4fdd\u967a\u6bd4\u8f03\u3001\u4f4f\u5b85\u30ed\u30fc\u30f3\u3001\u526f\u696d\u7a0e\u91d1\u30fb\u9752\u8272\u7533\u544a\u3092\u307e\u3068\u3081\u3066\u8a66\u7b97\u3067\u304d\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u306e\u8cc7\u7523\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター35選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、投資、FIRE、FIRE達成率、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、AI副業利益最大化、副業時間管理、副業疲労度、新NISA最速積立、配当生活年数、会社員キャッシュフロー、副業法人化判断まで、35種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター36選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、会社員節税、投資、FIRE、FIRE達成率、老後資金、教育費、住宅ローン、固定費削減、AI副業効率化、AI導入ROI、AI副業利益最大化、副業時間管理、副業疲労度、新NISA最速積立、配当生活年数、会社員キャッシュフロー、副業法人化判断まで、36種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -90,6 +90,10 @@ const routeSeo = {
   tax: {
     title: "【2026年対応】初心者向け副業税金シミュレーター｜3分で青色申告も確認",
     description: "\u5e74\u9593\u526f\u696d\u53ce\u5165\u3001\u7d4c\u8cbb\u3001\u6240\u5f97\u7a0e\u7387\u3001\u4f4f\u6c11\u7a0e\u7387\u3001\u9752\u8272\u7533\u544a\u63a7\u9664\u984d\u304b\u3089\u8ab2\u7a0e\u6240\u5f97\u3068\u624b\u53d6\u308a\u984d\u3092\u8a66\u7b97\u3067\u304d\u307e\u3059\u3002",
+  },
+  "employee-tax-saving": {
+    title: "【2026年対応】初心者向け会社員節税シミュレーター｜3分で控除と節税額を計算",
+    description: "会社員節税シミュレーターでは、年収、扶養有無、iDeCo掛金、新NISA積立額、副業所得、ふるさと納税額、保険控除額、住宅ローン控除有無から、所得税と住民税の軽減額を試算できます。",
   },
   "resident-tax": {
     title: "【2026年対応】初心者向け副業住民税シミュレーター｜3分で普通徴収も確認",
@@ -409,6 +413,7 @@ document.body.innerHTML = `
           <a href="#incorporation" data-route="incorporation">副業法人化判断</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
+          <a href="#employee-tax-saving" data-route="employee-tax-saving">会社員節税</a>
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
@@ -439,12 +444,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で35個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で36個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">35個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">36個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -653,6 +658,18 @@ document.body.innerHTML = `
               <span>&#x6240;&#x5f97;&#x7a0e;</span>
               <span>&#x5fa9;&#x8208;&#x7a0e;</span>
               <span>&#x6708;&#x5e73;&#x5747;</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#employee-tax-saving">
+            <p class="eyebrow">Employee Tax</p>
+            <h2>会社員節税シミュレーター</h2>
+            <p>年収、扶養、iDeCo、ふるさと納税、保険控除、住宅ローン控除から会社員の節税可能額を試算します。</p>
+            <div class="tool-meta">
+              <span>節税可能額</span>
+              <span>控除効果</span>
+              <span>FIRE影響</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -982,6 +999,7 @@ document.body.innerHTML = `
             <li><a href="#incorporation"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#employee-tax-saving"><strong>会社員節税</strong><span>控除、iDeCo、ふるさと納税で節税可能額を確認</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa-fast"><strong>新NISA最速積立</strong><span>毎月積立とボーナス積立で資産形成速度を確認</span></a></li>
@@ -2343,6 +2361,137 @@ document.body.innerHTML = `
             <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="employee-tax-saving" aria-label="会社員節税シミュレーター">
+        <section class="tool-heading">
+          <h2>会社員節税シミュレーター</h2>
+          <p>年収、扶養有無、iDeCo掛金、新NISA積立額、副業所得、ふるさと納税額、保険控除額、住宅ローン控除有無から、会社員が使いやすい節税額と資産形成への影響を試算します。</p>
+        </section>
+
+        <section class="workspace" aria-label="会社員節税の計算">
+          <form class="input-panel" id="employeeTaxSavingForm">
+            <div class="field">
+              <label for="employeeTaxIncome">年収 <span class="unit">円</span></label>
+              <input id="employeeTaxIncome" name="employeeTaxIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="5000000" required aria-describedby="employeeTaxIncomeError">
+              <p class="error" id="employeeTaxIncomeError"></p>
+            </div>
+            <div class="field checkbox-field">
+              <label for="employeeTaxDependent">
+                <input id="employeeTaxDependent" name="employeeTaxDependent" type="checkbox">
+                扶養家族がいる
+              </label>
+            </div>
+            <div class="field">
+              <label for="employeeTaxIdeco">iDeCo掛金 <span class="unit">円/月</span></label>
+              <input id="employeeTaxIdeco" name="employeeTaxIdeco" type="number" inputmode="numeric" min="0" max="68000" step="1000" value="23000" required aria-describedby="employeeTaxIdecoError">
+              <p class="error" id="employeeTaxIdecoError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeTaxNisa">新NISA積立額 <span class="unit">円/月</span></label>
+              <input id="employeeTaxNisa" name="employeeTaxNisa" type="number" inputmode="numeric" min="0" max="300000" step="1000" value="50000" required aria-describedby="employeeTaxNisaError">
+              <p class="error" id="employeeTaxNisaError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeTaxSideIncome">副業所得 <span class="unit">円/年</span></label>
+              <input id="employeeTaxSideIncome" name="employeeTaxSideIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="600000" required aria-describedby="employeeTaxSideIncomeError">
+              <p class="error" id="employeeTaxSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeTaxFurusato">ふるさと納税額 <span class="unit">円/年</span></label>
+              <input id="employeeTaxFurusato" name="employeeTaxFurusato" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="50000" required aria-describedby="employeeTaxFurusatoError">
+              <p class="error" id="employeeTaxFurusatoError"></p>
+            </div>
+            <div class="field">
+              <label for="employeeTaxInsurance">保険控除額 <span class="unit">円/年</span></label>
+              <input id="employeeTaxInsurance" name="employeeTaxInsurance" type="number" inputmode="numeric" min="0" max="1000000" step="1000" value="40000" required aria-describedby="employeeTaxInsuranceError">
+              <p class="error" id="employeeTaxInsuranceError"></p>
+            </div>
+            <div class="field checkbox-field">
+              <label for="employeeTaxMortgage">
+                <input id="employeeTaxMortgage" name="employeeTaxMortgage" type="checkbox">
+                住宅ローン控除を利用している
+              </label>
+            </div>
+            <div class="actions">
+              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">節税可能額</p>
+              <p class="amount" id="employeeTaxSavingTotal">0円</p>
+            </div>
+            <p class="notice" id="employeeTaxSavingNotice">入力を確認してください。エラーがある項目は赤く表示されます。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>所得税軽減額</strong>
+                <span class="accent-amber" id="employeeTaxIncomeReduction">0円</span>
+                <small>iDeCo、保険控除、住宅ローン控除の概算効果</small>
+              </div>
+              <div class="metric">
+                <strong>住民税軽減額</strong>
+                <span class="accent-amber" id="employeeTaxResidentReduction">0円</span>
+                <small>控除、ふるさと納税、住宅ローン控除の概算効果</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ節税方法</strong>
+                <span class="accent-green text-metric" id="employeeTaxRecommendation">未計算</span>
+                <small>入力条件から優先度の高い見直しを表示</small>
+              </div>
+              <div class="metric">
+                <strong>iDeCo活用効果</strong>
+                <span class="accent-blue" id="employeeTaxIdecoEffect">0円</span>
+                <small>年間掛金による所得税・住民税の軽減目安</small>
+              </div>
+              <div class="metric">
+                <strong>ふるさと納税目安</strong>
+                <span class="accent-blue text-metric" id="employeeTaxFurusatoGuide">未計算</span>
+                <small>年収と副業所得から見た簡易上限の目安</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成への影響</strong>
+                <span class="accent-green text-metric" id="employeeTaxFireImpact">未計算</span>
+                <small>節税分と新NISA積立を資産形成に回す効果</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="会社員節税シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>会社員でも節税できる方法はありますか？</summary>
+              <p>iDeCo、ふるさと納税、生命保険料控除、住宅ローン控除などは会社員でも使いやすい制度です。ただし、使える金額や効果は年収、家族構成、他の控除によって変わります。</p>
+            </details>
+            <details>
+              <summary>新NISAは節税になりますか？</summary>
+              <p>新NISAの積立額は所得控除にはなりません。ただし、運用益が非課税になるため、長期投資やFIREを目指す場合の資産形成効果として考えるのが自然です。</p>
+            </details>
+            <details>
+              <summary>副業所得がある場合はどう見ればいいですか？</summary>
+              <p>副業所得が増えると所得税や住民税も増えやすくなります。節税額だけでなく、副業所得税シミュレーターで納税額も確認しておくと、手元に残る金額を把握しやすくなります。</p>
+            </details>
+            <details>
+              <summary>ふるさと納税は上限まで使うべきですか？</summary>
+              <p>上限の目安はありますが、住宅ローン控除や医療費控除など他の控除があると変わることがあります。まずは控えめに見積もり、正確な上限は自治体や公式シミュレーターでも確認してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="会社員節税関連リンク">
+          <section class="tool-heading">
+            <h2>関連ツール・関連記事</h2>
+            <p>会社員の節税は、控除、納税額、固定費の見直しをセットで見ると行動に移しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#ideco">iDeCo節税シミュレーター</a>
+            <a href="#income-tax">副業所得税シミュレーター</a>
+            <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
           </div>
         </section>
       </section>
@@ -5147,6 +5296,7 @@ document.body.innerHTML = `
           <a href="#incorporation">副業法人化判断</a>
           <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="#tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
+          <a href="#employee-tax-saving">会社員節税</a>
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
@@ -5200,6 +5350,7 @@ const routeExperienceProfiles = {
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
+  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-nisa-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
@@ -5243,6 +5394,7 @@ const relatedToolGroups = {
   ],
   tax: [
     ["副業税金シミュレーター", "index.html#tax"],
+    ["会社員節税シミュレーター", "index.html#employee-tax-saving"],
     ["副業所得税シミュレーター", "index.html#income-tax"],
     ["副業住民税シミュレーター", "index.html#resident-tax"],
     ["副業手取り計算シミュレーター", "index.html#take-home"],
@@ -5416,6 +5568,12 @@ const fieldRules = {
   incomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
   residentTaxRate: { label: "\u4f4f\u6c11\u7a0e\u7387", min: 0, max: 20, unit: "%", integer: false },
   blueDeduction: { label: "\u9752\u8272\u7533\u544a\u63a7\u9664\u984d", min: 0, max: 650000, unit: "\u5186", integer: false },
+  employeeTaxIncome: { label: "年収", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  employeeTaxIdeco: { label: "iDeCo掛金", min: 0, max: 68000, unit: "\u5186", integer: false },
+  employeeTaxNisa: { label: "新NISA積立額", min: 0, max: 300000, unit: "\u5186", integer: false },
+  employeeTaxSideIncome: { label: "副業所得", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  employeeTaxFurusato: { label: "ふるさと納税額", min: 0, max: 10000000, unit: "\u5186", integer: false },
+  employeeTaxInsurance: { label: "保険控除額", min: 0, max: 1000000, unit: "\u5186", integer: false },
   residentTaxSales: { label: "\u5e74\u9593\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   residentTaxExpenses: { label: "\u5e74\u9593\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   residentTaxBlueDeduction: { label: "\u9752\u8272\u7533\u544a\u63a7\u9664\u984d", min: 0, max: 650000, unit: "\u5186", integer: false },
@@ -6240,6 +6398,88 @@ function renderIncorporation() {
   setText("corporateCostResult", yen.format(corporateCost));
   setText("incorporationImprovementPoint", improvement);
   setText("incorporationAccountingGuide", accountingGuide);
+}
+
+function getSimplifiedIncomeTaxRate(taxableBase) {
+  if (taxableBase <= 1950000) return 0.05;
+  if (taxableBase <= 3300000) return 0.1;
+  if (taxableBase <= 6950000) return 0.2;
+  if (taxableBase <= 9000000) return 0.23;
+  if (taxableBase <= 18000000) return 0.33;
+  return 0.4;
+}
+
+function renderEmployeeTaxSaving() {
+  const values = {
+    employeeTaxIncome: getFieldValue("employeeTaxIncome"),
+    employeeTaxIdeco: getFieldValue("employeeTaxIdeco"),
+    employeeTaxNisa: getFieldValue("employeeTaxNisa"),
+    employeeTaxSideIncome: getFieldValue("employeeTaxSideIncome"),
+    employeeTaxFurusato: getFieldValue("employeeTaxFurusato"),
+    employeeTaxInsurance: getFieldValue("employeeTaxInsurance"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#employeeTaxSavingNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("employeeTaxSavingTotal", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("employeeTaxIncomeReduction", yen.format(0));
+    setText("employeeTaxResidentReduction", yen.format(0));
+    setText("employeeTaxRecommendation", "\u672a\u8a08\u7b97");
+    setText("employeeTaxIdecoEffect", yen.format(0));
+    setText("employeeTaxFurusatoGuide", "\u672a\u8a08\u7b97");
+    setText("employeeTaxFireImpact", "\u672a\u8a08\u7b97");
+    return;
+  }
+
+  const income = values.employeeTaxIncome.value;
+  const idecoAnnual = values.employeeTaxIdeco.value * 12;
+  const nisaAnnual = values.employeeTaxNisa.value * 12;
+  const sideIncome = values.employeeTaxSideIncome.value;
+  const furusato = values.employeeTaxFurusato.value;
+  const insuranceDeduction = Math.min(values.employeeTaxInsurance.value, 120000);
+  const hasDependent = document.querySelector("#employeeTaxDependent").checked;
+  const hasMortgage = document.querySelector("#employeeTaxMortgage").checked;
+  const salaryDeduction = Math.min(Math.max(income * 0.3, 550000), 1950000);
+  const basicDeduction = 480000;
+  const dependentDeduction = hasDependent ? 380000 : 0;
+  const taxableBase = Math.max(income + sideIncome - salaryDeduction - basicDeduction - dependentDeduction, 0);
+  const incomeTaxRate = getSimplifiedIncomeTaxRate(taxableBase);
+  const taxableDeduction = Math.min(idecoAnnual + insuranceDeduction, taxableBase);
+  const furusatoEligible = Math.max(Math.floor((income * 0.02 + sideIncome * 0.03) / 1000) * 1000, 0);
+  const furusatoEffective = Math.min(furusato, furusatoEligible);
+  const furusatoReduction = Math.max(furusatoEffective - 2000, 0);
+  const mortgageCredit = hasMortgage ? Math.min(income * 0.004, 200000) : 0;
+  const incomeTaxReduction = taxableDeduction * incomeTaxRate + mortgageCredit * 0.6;
+  const residentTaxReduction = taxableDeduction * 0.1 + furusatoReduction + mortgageCredit * 0.4;
+  const totalSaving = incomeTaxReduction + residentTaxReduction;
+  const idecoEffect = idecoAnnual * (incomeTaxRate + 0.1);
+  const fireBoostMonthly = (totalSaving + nisaAnnual) / 12;
+  const fireProgress = ((totalSaving + nisaAnnual) / 30000000) * 100;
+
+  let recommendation = "iDeCoとふるさと納税を使い、浮いた税額を投資や生活防衛資金へ回す設計がおすすめ";
+  if (idecoAnnual === 0) {
+    recommendation = "まずはiDeCo掛金を少額から試すと、所得税と住民税の軽減効果を確認しやすい";
+  } else if (furusato < furusatoEligible * 0.5) {
+    recommendation = "ふるさと納税の利用額が目安より控えめ。上限を確認しながら活用余地をチェック";
+  } else if (nisaAnnual === 0) {
+    recommendation = "新NISAは所得控除ではないものの、節税分の受け皿として長期投資に回しやすい";
+  } else if (hasMortgage) {
+    recommendation = "住宅ローン控除と他の控除が重なるため、ふるさと納税上限は控えめに確認";
+  }
+
+  const furusatoGuide = furusatoEligible > 0
+    ? `簡易上限は約${yen.format(furusatoEligible)}。入力額との差は${yen.format(Math.max(furusatoEligible - furusato, 0))}`
+    : "副業所得や年収が少ない場合は上限が小さくなります";
+  const fireImpact = `節税分と新NISA積立を合わせると月${yen.format(fireBoostMonthly)}、FIRE資産3,000万円の約${fireProgress.toFixed(1)}%/年に相当`;
+
+  setText("employeeTaxSavingTotal", yen.format(totalSaving));
+  setText("employeeTaxIncomeReduction", yen.format(incomeTaxReduction));
+  setText("employeeTaxResidentReduction", yen.format(residentTaxReduction));
+  setText("employeeTaxRecommendation", recommendation);
+  setText("employeeTaxIdecoEffect", yen.format(idecoEffect));
+  setText("employeeTaxFurusatoGuide", furusatoGuide);
+  setText("employeeTaxFireImpact", fireImpact);
 }
 
 function renderTax() {
@@ -8050,7 +8290,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -8144,6 +8384,10 @@ document.querySelector("#incorporationForm").addEventListener("reset", () => {
 document.querySelector("#taxForm").addEventListener("input", renderTax);
 document.querySelector("#taxForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderTax);
+});
+document.querySelector("#employeeTaxSavingForm").addEventListener("input", renderEmployeeTaxSaving);
+document.querySelector("#employeeTaxSavingForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderEmployeeTaxSaving);
 });
 document.querySelector("#residentTaxForm").addEventListener("input", renderResidentTax);
 document.querySelector("#residentTaxForm").addEventListener("reset", () => {
@@ -8264,6 +8508,7 @@ safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
 safeRender("副業利益率シミュレーター", renderSideProfitMargin);
 safeRender("副業法人化判断シミュレーター", renderIncorporation);
 safeRender("副業税金シミュレーター", renderTax);
+safeRender("会社員節税シミュレーター", renderEmployeeTaxSaving);
 safeRender("副業住民税シミュレーター", renderResidentTax);
 safeRender("副業所得税シミュレーター", renderIncomeTax);
 safeRender("副業手取り計算シミュレーター", renderTakeHome);
