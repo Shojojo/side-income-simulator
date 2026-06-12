@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001\u526f\u696d\u30ea\u30b9\u30af\u8a3a\u65ad\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u65b0NISA\u3001iDeCo\u3001\u914d\u5f53\u91d1\u3001\u9ad8\u914d\u5f53\u682a\u6bd4\u8f03\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u307e\u3067\u300138\u7a2e\u985e\u306e\u521d\u5fc3\u8005\u5411\u3051\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3092\u691c\u7d22\u30fb\u30ab\u30c6\u30b4\u30ea\u5225\u3067\u63a2\u305b\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u30b5\u30a4\u30c8\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5916\u6ce8\u8cbb\u524a\u6e1b\u3001\u526f\u696d\u30ea\u30b9\u30af\u8a3a\u65ad\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u65b0NISA\u3001iDeCo\u3001\u914d\u5f53\u91d1\u3001\u9ad8\u914d\u5f53\u682a\u6bd4\u8f03\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u307e\u3067\u300139\u7a2e\u985e\u306e\u521d\u5fc3\u8005\u5411\u3051\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3092\u691c\u7d22\u30fb\u30ab\u30c6\u30b4\u30ea\u5225\u3067\u63a2\u305b\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u30b5\u30a4\u30c8\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター38選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、会社員節税、投資、FIRE、老後資金、固定費削減、副業リスク診断、高配当株比較、配当ETF比較、新NISA、iDeCoまで、38種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター39選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、会社員節税、投資、FIRE、老後資金、固定費削減、AI外注費削減、副業リスク診断、高配当株比較、配当ETF比較、新NISA、iDeCoまで、39種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -58,6 +58,10 @@ const routeSeo = {
   "ai-roi": {
     title: "【2026年対応】初心者向けAI導入ROIシミュレーター｜3分で投資対効果を分析",
     description: "現在の作業時間、副業売上、AIツール月額費用、AIによる時短率、時給単価、外注費削減額、AI導入後の予想売上増加率から、削減時間、年間追加利益、ROI、回収期間を分析できます。",
+  },
+  "ai-outsourcing": {
+    title: "【2026年対応】初心者向けAI外注費削減シミュレーター｜3分で削減額とROIを分析",
+    description: "現在の外注費、外注業務内容、AI導入費用、AIによる削減率、副業売上、利益率、作業時間、時給単価から、削減可能外注費、年間削減額、利益率改善、AI導入ROI、回収期間を分析できます。",
   },
   "ai-profit-max": {
     title: "【2026年対応】初心者向けAI副業利益最大化シミュレーター｜3分で収益改善を分析",
@@ -413,6 +417,7 @@ document.body.innerHTML = `
           <a href="#ai-hourly" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="#ai-efficiency" data-route="ai-efficiency">AI副業効率化</a>
           <a href="#ai-roi" data-route="ai-roi">AI導入ROI</a>
+          <a href="#ai-outsourcing" data-route="ai-outsourcing">AI外注費削減</a>
           <a href="#ai-profit-max" data-route="ai-profit-max">AI利益最大化</a>
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
           <a href="#side-time-management" data-route="side-time-management">副業時間管理</a>
@@ -454,12 +459,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で38個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で39個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">38個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">39個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -573,6 +578,18 @@ document.body.innerHTML = `
             <p>AIツール導入による時間削減、利益改善、ROI、回収期間を分析し、費用対効果を確認します。</p>
             <div class="tool-meta">
               <span>削減時間</span>
+              <span>ROI</span>
+              <span>回収期間</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#ai-outsourcing">
+            <p class="eyebrow">AI Outsourcing</p>
+            <h2>AI外注費削減シミュレーター</h2>
+            <p>AI導入によって削減できる外注費、利益率改善、ROI、回収期間を分析します。</p>
+            <div class="tool-meta">
+              <span>外注費削減</span>
               <span>ROI</span>
               <span>回収期間</span>
             </div>
@@ -1025,6 +1042,7 @@ document.body.innerHTML = `
             <li><a href="#side-income"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#ai-efficiency"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
             <li><a href="#ai-roi"><strong>AI導入ROI</strong><span>AIツール費用に対する投資対効果と回収期間を確認</span></a></li>
+            <li><a href="#ai-outsourcing"><strong>AI外注費削減</strong><span>AI導入で外注費削減、利益率改善、ROIを確認</span></a></li>
             <li><a href="#ai-profit-max"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="#side-time-management"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
@@ -1568,6 +1586,141 @@ document.body.innerHTML = `
             <a href="#ai-efficiency">AI副業効率化シミュレーター</a>
             <a href="#side-profit-margin">副業利益率シミュレーター</a>
             <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="ai-outsourcing" aria-label="AI外注費削減シミュレーター">
+        <section class="tool-heading">
+          <h2>AI外注費削減シミュレーター</h2>
+          <p>外注している作業の一部をAIで内製化した場合に、削減できる外注費、利益率改善、AI導入ROI、回収期間を分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="AI外注費削減の計算">
+          <form class="input-panel" id="aiOutsourcingForm">
+            <div class="field">
+              <label for="aiOutsourcingCost">現在の外注費 <span class="unit">円 / 月</span></label>
+              <input id="aiOutsourcingCost" name="aiOutsourcingCost" type="number" inputmode="numeric" min="0" max="1000000000" step="5000" value="80000" required aria-describedby="aiOutsourcingCostError">
+              <p class="error" id="aiOutsourcingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingTask">外注業務内容</label>
+              <select id="aiOutsourcingTask" name="aiOutsourcingTask" required>
+                <option value="writing">記事・文章作成</option>
+                <option value="design">画像・デザイン作成</option>
+                <option value="video">動画編集補助</option>
+                <option value="research">リサーチ・資料作成</option>
+                <option value="admin">事務・入力作業</option>
+              </select>
+              <p class="error" id="aiOutsourcingTaskError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingAiCost">AI導入費用 <span class="unit">円 / 月</span></label>
+              <input id="aiOutsourcingAiCost" name="aiOutsourcingAiCost" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="8000" required aria-describedby="aiOutsourcingAiCostError">
+              <p class="error" id="aiOutsourcingAiCostError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingReduction">AIによる削減率 <span class="unit">%</span></label>
+              <input id="aiOutsourcingReduction" name="aiOutsourcingReduction" type="number" inputmode="decimal" min="0" max="95" step="1" value="35" required aria-describedby="aiOutsourcingReductionError">
+              <p class="error" id="aiOutsourcingReductionError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingSales">現在の副業売上 <span class="unit">円 / 月</span></label>
+              <input id="aiOutsourcingSales" name="aiOutsourcingSales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="300000" required aria-describedby="aiOutsourcingSalesError">
+              <p class="error" id="aiOutsourcingSalesError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingMargin">現在の利益率 <span class="unit">%</span></label>
+              <input id="aiOutsourcingMargin" name="aiOutsourcingMargin" type="number" inputmode="decimal" min="0" max="100" step="1" value="35" required aria-describedby="aiOutsourcingMarginError">
+              <p class="error" id="aiOutsourcingMarginError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingHours">作業時間 <span class="unit">時間 / 月</span></label>
+              <input id="aiOutsourcingHours" name="aiOutsourcingHours" type="number" inputmode="decimal" min="0.1" max="10000" step="0.5" value="70" required aria-describedby="aiOutsourcingHoursError">
+              <p class="error" id="aiOutsourcingHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="aiOutsourcingHourlyRate">時給単価 <span class="unit">円</span></label>
+              <input id="aiOutsourcingHourlyRate" name="aiOutsourcingHourlyRate" type="number" inputmode="numeric" min="0" max="1000000" step="500" value="3000" required aria-describedby="aiOutsourcingHourlyRateError">
+              <p class="error" id="aiOutsourcingHourlyRateError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">削減可能外注費</p>
+              <p class="amount" id="aiOutsourcingMonthlySaving">0円</p>
+            </div>
+            <p class="notice" id="aiOutsourcingNotice">入力を確認してください。AI導入効果は税引前の簡易シミュレーションです。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>年間削減額</strong>
+                <span class="accent-green" id="aiOutsourcingAnnualSaving">0円</span>
+                <small>外注費削減からAI費用を差し引いた年額</small>
+              </div>
+              <div class="metric">
+                <strong>利益率改善</strong>
+                <span class="accent-blue" id="aiOutsourcingMarginImprovement">0pt</span>
+                <small>AI導入後の利益率改善幅</small>
+              </div>
+              <div class="metric">
+                <strong>AI導入ROI</strong>
+                <span class="accent-amber" id="aiOutsourcingRoi">0%</span>
+                <small>年間純削減額 ÷ 年間AI導入費用</small>
+              </div>
+              <div class="metric">
+                <strong>回収期間</strong>
+                <span class="accent-blue" id="aiOutsourcingPayback">未計算</span>
+                <small>AI費用を削減効果で回収する目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめAI活用方法</strong>
+                <span class="accent-green text-metric" id="aiOutsourcingRecommendation">未計算</span>
+                <small>外注業務内容に合わせた活用方針</small>
+              </div>
+              <div class="metric">
+                <strong>副業利益率シミュレーターへの導線</strong>
+                <span class="accent-blue text-metric" id="aiOutsourcingProfitGuide">利益率も確認</span>
+                <small>外注費、経費、作業時間を含めて確認</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="AI外注費削減シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>外注費はすべてAIで削減できますか？</summary>
+              <p>すべてを置き換える前提ではなく、下書き、構成、リサーチ、素材作成など一部をAIで内製化する目安として見てください。最終確認や専門判断は人の確認が必要です。</p>
+            </details>
+            <details>
+              <summary>AI導入費用には何を入れればいいですか？</summary>
+              <p>ChatGPT、Claude、Canva、CapCut、Notion AIなど、外注費削減に使うAIツールの月額合計を入力してください。</p>
+            </details>
+            <details>
+              <summary>利益率改善はどう計算していますか？</summary>
+              <p>現在利益に、外注費削減額からAI導入費用を差し引いた純削減額を加えて、売上に対する利益率の変化を表示しています。</p>
+            </details>
+            <details>
+              <summary>外注を完全にやめるべきですか？</summary>
+              <p>品質や納期に関わる作業は外注を残し、AIで下準備や修正回数を減らす使い方が現実的です。重要な作業ほどAIと外注を組み合わせて判断してください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="AI外注費削減関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール・関連記事</h2>
+            <p>外注費削減の結果を、AI導入ROI、AI副業利益最大化、副業利益率と合わせて確認できます。</p>
+          </section>
+          <div class="related-links">
+            <a href="#ai-roi">AI導入ROIシミュレーター</a>
+            <a href="#ai-profit-max">AI副業利益最大化シミュレーター</a>
+            <a href="#side-profit-margin">副業利益率シミュレーター</a>
           </div>
         </section>
       </section>
@@ -5600,6 +5753,7 @@ document.body.innerHTML = `
           <a href="#ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="#ai-efficiency">AI副業効率化</a>
           <a href="#ai-roi">AI導入ROI</a>
+          <a href="#ai-outsourcing">AI外注費削減</a>
           <a href="#ai-profit-max">AI利益最大化</a>
           <a href="#hourly-improvement">副業時給改善</a>
           <a href="#side-time-management">副業時間管理</a>
@@ -5657,6 +5811,7 @@ const routeExperienceProfiles = {
   "ai-hourly": { title: "AI副業時給シミュレーター", kind: "ai", reason: "AI副業は、作業時間が短くなる一方で、単価設定を間違えると時給が伸びません。このツールは、案件単価と作業時間を並べて、AIを使った後の実質時給を冷静に見るために作りました。", use: "AIで時間が半分になっても、修正や確認に時間がかかるなら時給は思ったほど伸びません。結果を見ながら、単価を上げるのか、作業手順を減らすのか、案件を絞るのかを決める材料にしてください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "ai-efficiency": { title: "AI副業効率化シミュレーター", kind: "ai", reason: "AIツールは便利ですが、月額費用を払っても利益が増えなければ意味がありません。時間削減、外注費削減、ツール費用を一緒に見て、AI導入が本当に副業の利益率を上げるか確認するために作りました。", use: "AI導入後の時給だけでなく、年間追加利益を見てください。月額費用が高くても、削減時間を売上につなげられるなら投資価値があります。逆に時間が浮くだけなら、まず作業手順の見直しが先です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "ai-roi": { title: "AI導入ROIシミュレーター", kind: "ai", reason: "AIツールは便利でも、月額費用に見合う効果があるかを見ないと固定費だけが増えます。本業後の限られた副業時間を使う立場では、削減時間、売上増、外注費削減、回収期間をまとめて確認することが大切です。", use: "ROIが高い場合は、下書き、調査、要約、資料作成など繰り返し作業へAIを広げてください。ROIが低い場合は、有料プランを増やす前に無料枠や低額プランで用途を絞る方が安全です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業時給改善シミュレーター", "index.html#hourly-improvement"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
+  "ai-outsourcing": { title: "AI外注費削減シミュレーター", kind: "ai", reason: "副業が少し伸びてくると、記事作成、画像、動画、リサーチなどを外注したくなります。ただ、外注費が増えすぎると利益率が下がるため、AIで下準備や定型作業をどこまで内製化できるか確認するために作りました。", use: "削減できる外注費だけでなく、AI導入費用を差し引いた純削減額と回収期間を見てください。品質が必要な作業は外注を残し、AIで指示書、構成、初稿、チェック作業を短縮するのが現実的です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["AI導入ROIシミュレーター", "index.html#ai-roi"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "ai-profit-max": { title: "AI副業利益最大化シミュレーター", kind: "ai", reason: "AIを副業に入れるなら、時短だけで終わらせず、利益率、時給、目標月収までの距離まで見たいと感じて作りました。本業後の限られた時間では、浮いた時間をどの作業に回すかで収益の伸び方が変わります。", use: "AI導入後の利益額とROIを見て、ツール費用を増やす価値があるか判断してください。利益改善が小さい場合は、調査、下書き、テンプレ化など低リスクな作業から試し、浮いた時間を営業や高単価作業へ回す設計にしましょう。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "side-time-management": { title: "副業時間管理シミュレーター", kind: "ai", reason: "副業は収入目標より先に、続けられる時間を確認する必要があります。本業、通勤、睡眠、家事を引いた残り時間を見ないまま予定を詰めると、数週間で苦しくなります。", use: "副業可能時間が少ない場合は、毎日やる前提ではなく、週末にまとめる、AIで下準備を短縮する、単価の高い作業へ絞るなどの改善に使ってください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   "side-fatigue": { title: "副業疲労度シミュレーター", kind: "ai", reason: "副業は収入を増やす手段ですが、睡眠や休日を削り続けると長く続きません。管理職として急な欠勤対応や夜間対応を経験していると、本業後の疲労を無視した副業計画は崩れやすいと感じます。", use: "疲労度が高い場合は、副業時間を増やすより、AI活用、作業日の固定、睡眠時間の確保を優先してください。FIREを目指す場合も、短期の作業量より長期で続けられる設計が大切です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
@@ -5704,6 +5859,7 @@ const relatedToolGroups = {
   ai: [
     ["AI副業効率化シミュレーター", "index.html#ai-efficiency"],
     ["AI導入ROIシミュレーター", "index.html#ai-roi"],
+    ["AI外注費削減シミュレーター", "index.html#ai-outsourcing"],
     ["AI副業利益最大化シミュレーター", "index.html#ai-profit-max"],
     ["副業時給改善シミュレーター", "index.html#hourly-improvement"],
     ["副業時間管理シミュレーター", "index.html#side-time-management"],
@@ -5856,6 +6012,13 @@ const fieldRules = {
   aiProfitOutsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiProfitSalesIncrease: { label: "AI導入後の売上増加率", min: 0, max: 300, unit: "%", integer: false },
   aiProfitTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiOutsourcingCost: { label: "現在の外注費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiOutsourcingAiCost: { label: "AI導入費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
+  aiOutsourcingReduction: { label: "AIによる削減率", min: 0, max: 95, unit: "%", integer: false },
+  aiOutsourcingSales: { label: "現在の副業売上", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiOutsourcingMargin: { label: "現在の利益率", min: 0, max: 100, unit: "%", integer: false },
+  aiOutsourcingHours: { label: "作業時間", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
+  aiOutsourcingHourlyRate: { label: "時給単価", min: 0, max: 1000000, unit: "\u5186", integer: false },
   improvementSales: { label: "副業売上", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   improvementHours: { label: "作業時間", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
   improvementExpenses: { label: "経費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
@@ -6604,6 +6767,76 @@ function renderAiRoi() {
   setText("aiRoiPaybackPeriod", paybackText);
   setText("aiRoiRecommendation", recommendation);
   setText("aiRoiHourlyGuide", hourlyGuide);
+}
+
+function renderAiOutsourcing() {
+  const values = {
+    aiOutsourcingCost: getFieldValue("aiOutsourcingCost"),
+    aiOutsourcingAiCost: getFieldValue("aiOutsourcingAiCost"),
+    aiOutsourcingReduction: getFieldValue("aiOutsourcingReduction"),
+    aiOutsourcingSales: getFieldValue("aiOutsourcingSales"),
+    aiOutsourcingMargin: getFieldValue("aiOutsourcingMargin"),
+    aiOutsourcingHours: getFieldValue("aiOutsourcingHours"),
+    aiOutsourcingHourlyRate: getFieldValue("aiOutsourcingHourlyRate"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#aiOutsourcingNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("aiOutsourcingMonthlySaving", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiOutsourcingAnnualSaving", yen.format(0));
+    setText("aiOutsourcingMarginImprovement", "0pt");
+    setText("aiOutsourcingRoi", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiOutsourcingPayback", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiOutsourcingRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiOutsourcingProfitGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    return;
+  }
+
+  const task = document.querySelector("#aiOutsourcingTask").value;
+  const monthlyGrossSaving = values.aiOutsourcingCost.value * (values.aiOutsourcingReduction.value / 100);
+  const monthlyNetSaving = monthlyGrossSaving - values.aiOutsourcingAiCost.value;
+  const annualNetSaving = monthlyNetSaving * 12;
+  const currentProfit = values.aiOutsourcingSales.value * (values.aiOutsourcingMargin.value / 100);
+  const afterProfit = currentProfit + monthlyNetSaving;
+  const currentMargin = values.aiOutsourcingSales.value > 0 ? (currentProfit / values.aiOutsourcingSales.value) * 100 : 0;
+  const afterMargin = values.aiOutsourcingSales.value > 0 ? (afterProfit / values.aiOutsourcingSales.value) * 100 : 0;
+  const marginImprovement = afterMargin - currentMargin;
+  const annualAiCost = values.aiOutsourcingAiCost.value * 12;
+  const roi = annualAiCost > 0 ? (annualNetSaving / annualAiCost) * 100 : annualNetSaving > 0 ? 999 : 0;
+  const paybackMonths = monthlyGrossSaving > 0 ? values.aiOutsourcingAiCost.value / monthlyGrossSaving : null;
+  const paybackText = values.aiOutsourcingAiCost.value === 0
+    ? "\u8cbb\u75280\u5186"
+    : paybackMonths === null
+      ? "\u56de\u53ce\u56f0\u96e3"
+      : `${paybackMonths.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u304b\u6708`;
+  const taskRecommendations = {
+    writing: "記事や文章作成は、構成案、見出し、初稿、リライト案をAIで作り、最終編集だけ人が行うと外注費を下げやすいです。",
+    design: "画像やデザインは、Canvaや生成AIでラフ案と素材作成を内製化し、最終デザインだけ外注すると品質を保ちやすいです。",
+    video: "動画編集は、台本、字幕案、カット構成、サムネ案をAIで作り、編集の重い部分だけ外注すると削減しやすいです。",
+    research: "リサーチや資料作成は、情報整理、比較表、要約、たたき台作成をAIに任せると外注前の準備時間を減らせます。",
+    admin: "事務や入力作業は、テンプレ化、文章生成、表の整理、定型返信をAIに寄せると毎月の固定的な外注費を下げやすいです。",
+  };
+  let recommendation = taskRecommendations[task] || taskRecommendations.writing;
+
+  if (monthlyNetSaving <= 0) {
+    recommendation = "AI導入費用が削減効果を上回る目安です。まず無料枠や低額プランで、外注前の下準備だけAI化しましょう。";
+  } else if (roi >= 300) {
+    recommendation = `${recommendation} ROIが高めなので、指示書作成やチェック作業にも広げる価値があります。`;
+  } else if (marginImprovement < 2) {
+    recommendation = `${recommendation} 利益率改善は小さめなので、削減率を上げるより外注範囲の整理を優先しましょう。`;
+  }
+
+  const savedTimeValue = values.aiOutsourcingHours.value * (values.aiOutsourcingReduction.value / 100) * values.aiOutsourcingHourlyRate.value;
+  const profitGuide = `副業利益率シミュレーターで、外注費${yen.format(values.aiOutsourcingCost.value)}と時間価値${yen.format(savedTimeValue)}を含めて確認`;
+
+  setText("aiOutsourcingMonthlySaving", yen.format(monthlyGrossSaving));
+  setText("aiOutsourcingAnnualSaving", yen.format(annualNetSaving));
+  setText("aiOutsourcingMarginImprovement", `${marginImprovement.toFixed(1)}pt`);
+  setText("aiOutsourcingRoi", `${roi.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`);
+  setText("aiOutsourcingPayback", paybackText);
+  setText("aiOutsourcingRecommendation", recommendation);
+  setText("aiOutsourcingProfitGuide", profitGuide);
 }
 
 function renderAiProfitMax() {
@@ -8797,7 +9030,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -8863,6 +9096,10 @@ document.querySelector("#aiEfficiencyForm").addEventListener("reset", () => {
 document.querySelector("#aiRoiForm").addEventListener("input", renderAiRoi);
 document.querySelector("#aiRoiForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderAiRoi);
+});
+document.querySelector("#aiOutsourcingForm").addEventListener("input", renderAiOutsourcing);
+document.querySelector("#aiOutsourcingForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderAiOutsourcing);
 });
 document.querySelector("#aiProfitMaxForm").addEventListener("input", renderAiProfitMax);
 document.querySelector("#aiProfitMaxForm").addEventListener("reset", () => {
@@ -9017,6 +9254,7 @@ safeRender("副業月収シミュレーター", renderSideIncome);
 safeRender("AI副業時給シミュレーター", renderAiHourly);
 safeRender("AI副業効率化シミュレーター", renderAiEfficiency);
 safeRender("AI導入ROIシミュレーター", renderAiRoi);
+safeRender("AI外注費削減シミュレーター", renderAiOutsourcing);
 safeRender("AI副業利益最大化シミュレーター", renderAiProfitMax);
 safeRender("副業時給改善シミュレーター", renderHourlyImprovement);
 safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
