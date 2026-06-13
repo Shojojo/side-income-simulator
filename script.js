@@ -5978,7 +5978,7 @@ const routeExperienceProfiles = {
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
-  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-nisa-start.html"]] },
+  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
@@ -6063,24 +6063,82 @@ const relatedToolGroups = {
   ],
 };
 
+const relatedArticleGroups = {
+  side: [
+    ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
+    ["副業で月10万円を目指す方法", "article-side-income-100000.html"],
+    ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"],
+    ["会社員の副業税金対策", "article-company-side-tax-saving.html"],
+    ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"],
+  ],
+  ai: [
+    ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"],
+    ["AI副業で収益を上げる方法", "article-ai-side-business.html"],
+    ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
+    ["副業で月10万円を目指す方法", "article-side-income-100000.html"],
+    ["副業効率化おすすめAIツール比較", "article-ai-tools-comparison.html"],
+  ],
+  tax: [
+    ["副業の税金完全ガイド", "article-side-tax.html"],
+    ["副業の所得税完全ガイド", "article-income-tax-guide.html"],
+    ["副業の住民税完全ガイド", "article-resident-tax-guide.html"],
+    ["会社員の副業税金対策", "article-company-side-tax-saving.html"],
+    ["青色申告の始め方", "article-blue-return-start.html"],
+  ],
+  investment: [
+    ["新NISAの始め方", "article-new-nisa-start.html"],
+    ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"],
+    ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"],
+    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["FIREとは何か", "article-fire-basic.html"],
+  ],
+  fire: [
+    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIREとは何か", "article-fire-basic.html"],
+    ["新NISAの始め方", "article-new-nisa-start.html"],
+    ["老後資金2000万円問題とは", "article-retirement-2000.html"],
+    ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
+  ],
+  household: [
+    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"],
+    ["新NISAの始め方", "article-new-nisa-start.html"],
+    ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
+    ["会社員の副業税金対策", "article-company-side-tax-saving.html"],
+  ],
+  life: [
+    ["老後資金2000万円問題とは", "article-retirement-2000.html"],
+    ["新NISAの始め方", "article-new-nisa-start.html"],
+    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["FIREとは何か", "article-fire-basic.html"],
+    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+  ],
+};
+
 function buildRelatedToolLinks(kind, currentRoute) {
   const currentHref = `index.html#${currentRoute}`;
   const fallback = [
     ["新NISAシミュレーター", "index.html#nisa"],
     ["FIRE達成シミュレーター", "index.html#fire"],
     ["副業月収シミュレーター", "index.html#side-income"],
+    ["生活コスト最適化シミュレーター", "index.html#life-cost"],
+    ["固定費削減シミュレーター", "index.html#fixed-cost-reduction"],
   ];
   const links = [...(relatedToolGroups[kind] || relatedToolGroups.side), ...fallback]
     .filter(([, href], index, array) => href !== currentHref && array.findIndex(([, otherHref]) => otherHref === href) === index)
-    .slice(0, 3);
+    .slice(0, 5);
 
   return links.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
 }
 
 function buildExperienceSection(profile) {
   const experience = operatorExperience[profile.kind] || operatorExperience.side;
-  const links = profile.articles.slice(0, 3).map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
-  const relatedTools = buildRelatedToolLinks(profile.kind, Object.keys(routeExperienceProfiles).find((route) => routeExperienceProfiles[route] === profile));
+  const route = Object.keys(routeExperienceProfiles).find((key) => routeExperienceProfiles[key] === profile);
+  const articleLinks = [...profile.articles, ...(relatedArticleGroups[profile.kind] || relatedArticleGroups.side)]
+    .filter(([, href], index, array) => array.findIndex(([, otherHref]) => otherHref === href) === index)
+    .slice(0, 5);
+  const links = articleLinks.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+  const relatedTools = buildRelatedToolLinks(profile.kind, route);
   return `
         <section class="article-section" aria-label="${profile.title}の実体験ベース解説">
           <section class="tool-heading">
@@ -6109,7 +6167,7 @@ function buildExperienceSection(profile) {
           </div>
           <div class="experience-block">
             <h3>関連ツール</h3>
-            <p>近いテーマのシミュレーターも3件だけ絞って表示しています。</p>
+            <p>近いテーマのシミュレーターをカテゴリ連動・人気順優先で5件表示しています。</p>
             <div class="related-links">${relatedTools}</div>
           </div>
         </section>`;
