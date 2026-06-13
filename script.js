@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5916\u6ce8\u8cbb\u524a\u6e1b\u3001\u526f\u696d\u30ea\u30b9\u30af\u8a3a\u65ad\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u65b0NISA\u3001iDeCo\u3001\u914d\u5f53\u91d1\u3001\u9ad8\u914d\u5f53\u682a\u6bd4\u8f03\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u307e\u3067\u300139\u7a2e\u985e\u306e\u521d\u5fc3\u8005\u5411\u3051\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3092\u691c\u7d22\u30fb\u30ab\u30c6\u30b4\u30ea\u5225\u3067\u63a2\u305b\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u30b5\u30a4\u30c8\u3067\u3059\u3002";
+const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5916\u6ce8\u8cbb\u524a\u6e1b\u3001\u751f\u6d3b\u30b3\u30b9\u30c8\u6700\u9069\u5316\u3001\u526f\u696d\u30ea\u30b9\u30af\u8a3a\u65ad\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u65b0NISA\u3001iDeCo\u3001\u914d\u5f53\u91d1\u3001\u9ad8\u914d\u5f53\u682a\u6bd4\u8f03\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u307e\u3067\u300140\u7a2e\u985e\u306e\u521d\u5fc3\u8005\u5411\u3051\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3092\u691c\u7d22\u30fb\u30ab\u30c6\u30b4\u30ea\u5225\u3067\u63a2\u305b\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u30b5\u30a4\u30c8\u3067\u3059\u3002";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター39選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、会社員節税、投資、FIRE、老後資金、固定費削減、AI外注費削減、副業リスク診断、高配当株比較、配当ETF比較、新NISA、iDeCoまで、39種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】初心者向け資産シミュレーター40選｜検索・カテゴリ別で探せる",
+    description: "副業、税金、会社員節税、投資、FIRE、老後資金、固定費削減、生活コスト最適化、AI外注費削減、副業リスク診断、高配当株比較、配当ETF比較、新NISA、iDeCoまで、40種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -146,6 +146,10 @@ const routeSeo = {
   "cash-flow": {
     title: "【2026年対応】初心者向け会社員キャッシュフローシミュレーター｜3分で家計改善",
     description: "給与収入、副業収入、家賃、食費、通信費、保険料、投資額、ローン返済額、その他支出から、毎月収支、年間貯蓄額、投資可能額、固定費改善余地、FIRE達成への影響を分析できます。",
+  },
+  "life-cost": {
+    title: "【2026年対応】初心者向け生活コスト最適化シミュレーター｜3分で固定費・変動費を分析",
+    description: "家賃、通信費、保険料、食費、光熱費、交通費、サブスク費用、娯楽費、投資額、副業収入から、毎月生活コスト合計、削減可能額、年間節約額、投資効果、FIRE達成短縮年数を分析できます。",
   },
   dividend: {
     title: "【2026年対応】初心者向け配当金シミュレーター｜3分で年間配当計算",
@@ -445,6 +449,7 @@ document.body.innerHTML = `
           <a href="#fire-rate" data-route="fire-rate">FIRE達成率</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#cash-flow" data-route="cash-flow">会社員キャッシュフロー</a>
+          <a href="#life-cost" data-route="life-cost">生活コスト最適化</a>
           <a href="#side-fire" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
           <a href="#emergency-fund" data-route="emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
           <a href="#fixed-cost-reduction" data-route="fixed-cost-reduction">固定費削減</a>
@@ -459,12 +464,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からツールを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で39個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で40個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">39個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">40個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -866,6 +871,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#life-cost">
+            <p class="eyebrow">Life Cost</p>
+            <h2>生活コスト最適化シミュレーター</h2>
+            <p>家賃、通信費、保険料、食費、光熱費、交通費、サブスク費用、娯楽費から、生活コストの改善余地と投資・FIREへの影響を分析します。</p>
+            <div class="tool-meta">
+              <span>生活費合計</span>
+              <span>年間節約</span>
+              <span>FIRE短縮</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#dividend">
             <p class="eyebrow">Dividend</p>
             <h2>&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1069,6 +1086,7 @@ document.body.innerHTML = `
             <li><a href="#fire-rate"><strong>FIRE達成率</strong><span>現在資産、収支、投資状況からFIRE可能性をスコア化</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#cash-flow"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
+            <li><a href="#life-cost"><strong>生活コスト最適化</strong><span>固定費・変動費の改善余地と投資効果を確認</span></a></li>
             <li><a href="#side-fire"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#emergency-fund"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fixed-cost-reduction"><strong>固定費削減</strong><span>毎月の固定費から年間節約額と投資効果を確認</span></a></li>
@@ -3987,6 +4005,145 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="life-cost" aria-label="生活コスト最適化シミュレーター">
+        <section class="tool-heading">
+          <h2>生活コスト最適化シミュレーター</h2>
+          <p>家賃、通信費、保険料、食費、光熱費、交通費、サブスク費用、娯楽費、投資額、副業収入から、毎月の生活コスト合計、削減可能額、投資効果、FIRE達成短縮年数を分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="生活コスト最適化の計算">
+          <form class="input-panel" id="lifeCostForm">
+            <div class="field">
+              <label for="lifeCostRent">家賃 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostRent" name="lifeCostRent" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="90000" required aria-describedby="lifeCostRentError">
+              <p class="error" id="lifeCostRentError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostCommunication">通信費 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostCommunication" name="lifeCostCommunication" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="12000" required aria-describedby="lifeCostCommunicationError">
+              <p class="error" id="lifeCostCommunicationError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostInsurance">保険料 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostInsurance" name="lifeCostInsurance" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="15000" required aria-describedby="lifeCostInsuranceError">
+              <p class="error" id="lifeCostInsuranceError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostFood">食費 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostFood" name="lifeCostFood" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="70000" required aria-describedby="lifeCostFoodError">
+              <p class="error" id="lifeCostFoodError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostUtilities">光熱費 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostUtilities" name="lifeCostUtilities" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="22000" required aria-describedby="lifeCostUtilitiesError">
+              <p class="error" id="lifeCostUtilitiesError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostTransport">交通費 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostTransport" name="lifeCostTransport" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="15000" required aria-describedby="lifeCostTransportError">
+              <p class="error" id="lifeCostTransportError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostSubscription">サブスク費用 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostSubscription" name="lifeCostSubscription" type="number" inputmode="numeric" min="0" max="100000000" step="500" value="6000" required aria-describedby="lifeCostSubscriptionError">
+              <p class="error" id="lifeCostSubscriptionError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostEntertainment">娯楽費 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostEntertainment" name="lifeCostEntertainment" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="30000" required aria-describedby="lifeCostEntertainmentError">
+              <p class="error" id="lifeCostEntertainmentError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostInvestment">投資額 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostInvestment" name="lifeCostInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="80000" required aria-describedby="lifeCostInvestmentError">
+              <p class="error" id="lifeCostInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="lifeCostSideIncome">副業収入 <span class="unit">円 / 月</span></label>
+              <input id="lifeCostSideIncome" name="lifeCostSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="lifeCostSideIncomeError">
+              <p class="error" id="lifeCostSideIncomeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">毎月生活コスト合計</p>
+              <p class="amount" id="lifeCostMonthlyTotal">0円</p>
+            </div>
+            <p class="notice" id="lifeCostNotice">入力を確認してください。削減可能額は固定費と変動費の一般的な見直し余地から計算した概算です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>削減可能額</strong>
+                <span class="accent-amber" id="lifeCostReducible">0円</span>
+                <small>通信費、保険料、サブスク、食費などの月額見直し目安</small>
+              </div>
+              <div class="metric">
+                <strong>年間節約額</strong>
+                <span class="accent-green" id="lifeCostAnnualSaving">0円</span>
+                <small>削減可能額を12か月続けた場合</small>
+              </div>
+              <div class="metric">
+                <strong>投資へ回した場合の将来資産額</strong>
+                <span class="accent-blue" id="lifeCostFutureAssets">0円</span>
+                <small>削減額を年利4%、20年で積み立てた概算</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成短縮年数</strong>
+                <span class="accent-green text-metric" id="lifeCostFireShortening">0年</span>
+                <small>削減額を追加投資へ回す場合の単純目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="lifeCostImprovementPoint">入力を確認してください</span>
+                <small>固定費・変動費・投資額のバランスから表示</small>
+              </div>
+              <div class="metric">
+                <strong>固定費削減への導線</strong>
+                <span class="accent-blue text-metric" id="lifeCostFixedCostGuide">固定費削減シミュレーターで詳細確認</span>
+                <small><a href="#fixed-cost-reduction">固定費削減シミュレーターへ進む</a></small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="生活コスト最適化シミュレーターFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>固定費と変動費は分けて見た方がいいですか？</summary>
+              <p>分けて見るのがおすすめです。通信費、保険料、サブスクのような固定費は一度見直すと効果が続き、食費や娯楽費は無理なく続けられる範囲を探すことが大切です。</p>
+            </details>
+            <details>
+              <summary>削減可能額はそのまま投資に回していいですか？</summary>
+              <p>生活防衛資金が不足している場合は、まず現金の安全資金を優先してください。余裕がある場合は、新NISAや長期投資へ回すと資産形成の速度を上げやすくなります。</p>
+            </details>
+            <details>
+              <summary>FIRE達成短縮年数はどう見ればいいですか？</summary>
+              <p>削減額を追加投資へ回した場合に、3,000万円の資産形成までの年数がどれくらい縮むかを単純計算した目安です。実際は利回りや収入変動もあるため、方向性の確認に使ってください。</p>
+            </details>
+            <details>
+              <summary>副業収入も生活コスト改善に関係しますか？</summary>
+              <p>関係します。副業収入があると赤字補填や追加投資に回せる余力が増えますが、生活費が膨らむと効果が薄くなるため、支出と収入をセットで見ることが重要です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="生活コスト最適化関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>生活コストの全体像を見たら、固定費、毎月収支、FIRE達成までの距離を合わせて確認すると改善順が決めやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
+            <a href="#cash-flow">会社員キャッシュフローシミュレーター</a>
+            <a href="#fire">FIREシミュレーター</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="emergency-fund" aria-label="生活防衛資金シミュレーター">
         <section class="tool-heading">
           <h2>生活防衛資金シミュレーター</h2>
@@ -5779,6 +5936,7 @@ document.body.innerHTML = `
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate">FIRE達成率</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
+          <a href="#life-cost">生活コスト最適化</a>
             <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
             <a href="#emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
             <a href="#fixed-cost-reduction">固定費削減</a>
@@ -5840,6 +5998,7 @@ const routeExperienceProfiles = {
   "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "index.html#dividend-life"]] },
   "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "life-cost": { title: "生活コスト最適化シミュレーター", kind: "household", reason: "FIREを目指すと、収入を増やす前に毎月の生活コストをどこまで整えられるかが大きいです。管理職として本業が忙しい中で、副業時間を増やすだけでは限界があるため、固定費と変動費を分けて改善余地を見るために作りました。", use: "削減可能額は、無理な節約ではなく投資へ回しても生活が崩れない範囲を探すために使ってください。固定費削減、キャッシュフロー、FIREシミュレーターと合わせると、毎月の行動が資産形成にどうつながるか見えやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "emergency-fund": { title: "生活防衛資金シミュレーター", kind: "household", reason: "副業や投資を始める前に、生活防衛資金がないとトラブル時に資産を崩すことになります。現場仕事で急な変化を経験しているからこそ、先に安全資金を見える化したいと考えました。", use: "不足額がある場合は、投資を急ぐより先に数か月分の生活費を確保してください。副業収入がある人も、止まる可能性を考えて保守的に見積もるのがおすすめです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["固定費削減シミュレーター", "index.html#fixed-cost-reduction"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   "fixed-cost-reduction": { title: "固定費削減シミュレーター", kind: "household", reason: "忙しい会社員にとって、固定費削減は副業より先に効くことがあります。一度見直すと毎月効果が続くため、時間が限られる人ほど優先度が高い改善です。", use: "年間節約額を見たら、その金額を投資へ回した場合の将来資産も確認してください。通信費、保険料、サブスクなど、変えやすい支出から始めると負担が少ないです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   retirement: { title: "老後資金シミュレーター", kind: "life", reason: "FIREを目指していても、老後資金の不足を無視することはできません。退職時点の資産、年金見込み、生活費を分けて見ることで、必要な積立額が現実的になります。", use: "不足額が大きい場合は、NISA、iDeCo、固定費削減、副業収入を組み合わせてください。退職後の生活費を少し下げるだけでも必要資産は大きく変わります。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
@@ -5891,6 +6050,7 @@ const relatedToolGroups = {
   ],
   household: [
     ["会社員キャッシュフローシミュレーター", "index.html#cash-flow"],
+    ["生活コスト最適化シミュレーター", "index.html#life-cost"],
     ["固定費削減シミュレーター", "index.html#fixed-cost-reduction"],
     ["生活防衛資金シミュレーター", "index.html#emergency-fund"],
     ["住宅ローン返済シミュレーター", "index.html#mortgage"],
@@ -6184,6 +6344,16 @@ const fieldRules = {
   cashFlowInvestment: { label: "投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
   cashFlowLoan: { label: "ローン返済額", min: 0, max: 100000000, unit: "\u5186", integer: false },
   cashFlowOther: { label: "その他支出", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostRent: { label: "家賃", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostCommunication: { label: "通信費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostInsurance: { label: "保険料", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostFood: { label: "食費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostUtilities: { label: "光熱費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostTransport: { label: "交通費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostSubscription: { label: "サブスク費用", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostEntertainment: { label: "娯楽費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostInvestment: { label: "投資額", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  lifeCostSideIncome: { label: "副業収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
   emergencyMonthlyCost: { label: "\u6bce\u6708\u751f\u6d3b\u8cbb", min: 0, max: 100000000, unit: "\u5186", integer: false },
   familyCount: { label: "\u5bb6\u65cf\u4eba\u6570", min: 1, max: 20, unit: "\u4eba", integer: true },
   emergencySavings: { label: "\u73fe\u5728\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -8723,6 +8893,93 @@ function renderCashFlow() {
   setText("cashFlowImprovementPoint", improvementPoint);
 }
 
+function renderLifeCost() {
+  const values = {
+    lifeCostRent: getFieldValue("lifeCostRent"),
+    lifeCostCommunication: getFieldValue("lifeCostCommunication"),
+    lifeCostInsurance: getFieldValue("lifeCostInsurance"),
+    lifeCostFood: getFieldValue("lifeCostFood"),
+    lifeCostUtilities: getFieldValue("lifeCostUtilities"),
+    lifeCostTransport: getFieldValue("lifeCostTransport"),
+    lifeCostSubscription: getFieldValue("lifeCostSubscription"),
+    lifeCostEntertainment: getFieldValue("lifeCostEntertainment"),
+    lifeCostInvestment: getFieldValue("lifeCostInvestment"),
+    lifeCostSideIncome: getFieldValue("lifeCostSideIncome"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#lifeCostNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("lifeCostMonthlyTotal", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("lifeCostReducible", yen.format(0));
+    setText("lifeCostAnnualSaving", yen.format(0));
+    setText("lifeCostFutureAssets", yen.format(0));
+    setText("lifeCostFireShortening", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("lifeCostImprovementPoint", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("lifeCostFixedCostGuide", "\u5165\u529b\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044");
+    return;
+  }
+
+  const rent = values.lifeCostRent.value;
+  const communication = values.lifeCostCommunication.value;
+  const insurance = values.lifeCostInsurance.value;
+  const food = values.lifeCostFood.value;
+  const utilities = values.lifeCostUtilities.value;
+  const transport = values.lifeCostTransport.value;
+  const subscription = values.lifeCostSubscription.value;
+  const entertainment = values.lifeCostEntertainment.value;
+  const investment = values.lifeCostInvestment.value;
+  const sideIncome = values.lifeCostSideIncome.value;
+  const fixedCosts = rent + communication + insurance + utilities + transport + subscription;
+  const variableCosts = food + entertainment;
+  const monthlyTotal = fixedCosts + variableCosts;
+  const fixedReducible =
+    Math.max(communication - 6000, 0) * 0.7 +
+    Math.max(insurance - 8000, 0) * 0.55 +
+    Math.max(subscription - 2000, 0) * 0.7 +
+    Math.max(utilities - 15000, 0) * 0.35 +
+    Math.max(transport - 10000, 0) * 0.3 +
+    Math.max(rent - 85000, 0) * 0.12;
+  const variableReducible =
+    Math.max(food - 50000, 0) * 0.25 +
+    Math.max(entertainment - 20000, 0) * 0.35;
+  const reducible = Math.max(fixedReducible + variableReducible, 0);
+  const annualSaving = reducible * 12;
+  const futureAssets = calculateFutureAssets(0, reducible, 4, 20 * 12);
+  const currentMonthlyAssetGrowth = investment + sideIncome;
+  const improvedMonthlyAssetGrowth = currentMonthlyAssetGrowth + reducible;
+  const fireTarget = 30000000;
+  const currentYears = currentMonthlyAssetGrowth > 0 ? fireTarget / (currentMonthlyAssetGrowth * 12) : null;
+  const improvedYears = improvedMonthlyAssetGrowth > 0 ? fireTarget / (improvedMonthlyAssetGrowth * 12) : null;
+  const shortening = currentYears !== null && improvedYears !== null ? Math.max(currentYears - improvedYears, 0) : 0;
+  const fixedRate = monthlyTotal > 0 ? fixedCosts / monthlyTotal : 0;
+  let improvementPoint = "削減した金額を無理なく投資へ回すと、生活を崩さず資産形成を進めやすくなります。";
+
+  if (reducible <= 1000) {
+    improvementPoint = "大きな削減余地は少なめです。副業収入や投資額の継続性を確認し、生活防衛資金も整えておきましょう。";
+  } else if (fixedRate >= 0.65) {
+    improvementPoint = "固定費比率が高めです。家賃、通信費、保険料、サブスクの順に、一度見直すと効果が続く支出から確認しましょう。";
+  } else if (communication + subscription >= 15000) {
+    improvementPoint = "通信費とサブスクに見直し余地があります。プラン変更や使っていない契約の解約は、忙しい会社員でも始めやすい改善です。";
+  } else if (food + entertainment >= 100000) {
+    improvementPoint = "食費と娯楽費がやや大きめです。削りすぎるより、平日だけ予算を決めるなど継続できる範囲で整えるのがおすすめです。";
+  } else if (investment < reducible) {
+    improvementPoint = "削減可能額が現在の投資額に近い水準です。生活防衛資金を確保したうえで、削減分を新NISAなどに回せるか確認しましょう。";
+  }
+
+  const guide = reducible > 0
+    ? `月${yen.format(reducible)}前後の改善余地があります。固定費削減シミュレーターで通信費・保険料・サブスクを細かく確認しましょう。`
+    : "固定費削減シミュレーターで、見落としているサブスクや保険料がないか確認しましょう。";
+
+  setText("lifeCostMonthlyTotal", yen.format(monthlyTotal));
+  setText("lifeCostReducible", yen.format(reducible));
+  setText("lifeCostAnnualSaving", yen.format(annualSaving));
+  setText("lifeCostFutureAssets", yen.format(futureAssets));
+  setText("lifeCostFireShortening", `${shortening.toFixed(1)}\u5e74`);
+  setText("lifeCostImprovementPoint", improvementPoint);
+  setText("lifeCostFixedCostGuide", guide);
+}
+
 function renderEmergencyFund() {
   const values = {
     emergencyMonthlyCost: getFieldValue("emergencyMonthlyCost"),
@@ -9030,7 +9287,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -9221,6 +9478,10 @@ document.querySelector("#cashFlowForm").addEventListener("input", renderCashFlow
 document.querySelector("#cashFlowForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderCashFlow);
 });
+document.querySelector("#lifeCostForm").addEventListener("input", renderLifeCost);
+document.querySelector("#lifeCostForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderLifeCost);
+});
 document.querySelector("#sideFireForm").addEventListener("input", renderSideFire);
 document.querySelector("#sideFireForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFire);
@@ -9284,6 +9545,7 @@ safeRender("配当生活達成シミュレーター", renderDividendLife);
 safeRender("配当生活年数シミュレーター", renderDividendLifeYears);
 safeRender("会社員FIRE年数計算シミュレーター", renderEmployeeFire);
 safeRender("会社員キャッシュフローシミュレーター", renderCashFlow);
+safeRender("生活コスト最適化シミュレーター", renderLifeCost);
 safeRender("サイドFIREシミュレーター", renderSideFire);
 safeRender("生活防衛資金シミュレーター", renderEmergencyFund);
 safeRender("固定費削減シミュレーター", renderFixedCostReduction);
