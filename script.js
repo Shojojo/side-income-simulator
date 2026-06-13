@@ -414,6 +414,7 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
+        <p class="article-meta">最終更新日：2026年6月13日</p>
         <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
         <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -6198,6 +6199,20 @@ document.body.innerHTML = `
       </footer>
     </div>
   </main>`;
+
+function insertLastUpdatedDates() {
+  document.querySelectorAll(".view > .tool-heading").forEach((heading) => {
+    if (heading.querySelector(".article-meta")) {
+      return;
+    }
+    const title = heading.querySelector(":scope > h2");
+    if (title) {
+      title.insertAdjacentHTML("afterend", '<p class="article-meta">最終更新日：2026年6月13日</p>');
+    }
+  });
+}
+
+insertLastUpdatedDates();
 
 const operatorExperience = {
   side: "運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。仕事が終わってから副業をしようと思っていても、当日の欠勤連絡や現場の調整で帰宅が遅くなり、予定していた1時間が消える日は普通にあります。だからこそ、休日にまとめて頑張るだけでなく、平日1時間でも進む作業量、手取り、税金、時給を見ながら続ける形を重視しています。",
