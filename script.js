@@ -606,11 +606,11 @@ document.body.innerHTML = `
             <p>副業を始める人、税金が気になる人、FIREやNISAを考える人が最初に読みやすい記事です。</p>
           </section>
           <ol class="ranking-list">
+            <li><a href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>運送業管理職として働きながら副業時間を作る実体験</span></a></li>
+            <li><a href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しないための資産形成</span></a></li>
+            <li><a href="article-ai-sidejob-manager-reality.html"><strong>管理職をしながらAI副業を続ける現実</strong><span>本業後の疲労とAI活用のリアル</span></a></li>
             <li><a href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>本業後の限られた時間で収入を作る考え方</span></a></li>
             <li><a href="article-ai-tools-comparison.html"><strong>副業向けおすすめAIツール比較</strong><span>ChatGPT、Claude、Geminiなどを副業用途で比較</span></a></li>
-            <li><a href="article-side-tax.html"><strong>副業税金の基礎知識</strong><span>副業収入、経費、所得税、住民税の入口を整理</span></a></li>
-            <li><a href="article-fire-strategy.html"><strong>FIRE達成の基本戦略</strong><span>収入、支出、投資を組み合わせてFIREを考える</span></a></li>
-            <li><a href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>資産形成の土台になる非課税投資の基本</span></a></li>
           </ol>
         </section>
 
@@ -1280,6 +1280,18 @@ document.body.innerHTML = `
             <p>副業、税金、FIRE、NISA、iDeCo、老後資金の基礎を、ツールの結果と合わせて確認できます。</p>
           </section>
           <div class="article-list">
+            <a class="article-link" href="article-after-work-sidejob-1hour.html">
+              <strong>本業後1時間副業を続けるためにやめたこと</strong>
+              <span>運送業管理職として働きながら副業時間を作る実体験</span>
+            </a>
+            <a class="article-link" href="article-fire-31-company-worker.html">
+              <strong>31歳会社員が40歳FIREを目指す理由</strong>
+              <span>会社員収入への依存不安と、固定費改善・副業・NISAの考え方</span>
+            </a>
+            <a class="article-link" href="article-ai-sidejob-manager-reality.html">
+              <strong>管理職をしながらAI副業を続ける現実</strong>
+              <span>本業後の疲労、ChatGPT活用、作業時間短縮のリアル</span>
+            </a>
             <a class="article-link" href="article-side-income.html">
               <strong>&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x306e;&#x4f7f;&#x3044;&#x65b9;</strong>
               <span>&#x6642;&#x7d66;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6848;&#x4ef6;&#x6570;&#x3092;&#x4f7f;&#x3063;&#x305f;&#x6708;&#x53ce;&#x306e;&#x898b;&#x65b9;</span>
@@ -6243,18 +6255,18 @@ const relatedToolGroups = {
 
 const relatedArticleGroups = {
   side: [
+    ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"],
     ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
-    ["副業で月10万円を目指す方法", "article-side-income-100000.html"],
+    ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"],
     ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"],
     ["会社員の副業税金対策", "article-company-side-tax-saving.html"],
-    ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"],
   ],
   ai: [
+    ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"],
+    ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"],
     ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"],
     ["AI副業で収益を上げる方法", "article-ai-side-business.html"],
     ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
-    ["副業で月10万円を目指す方法", "article-side-income-100000.html"],
-    ["副業効率化おすすめAIツール比較", "article-ai-tools-comparison.html"],
   ],
   tax: [
     ["副業の税金完全ガイド", "article-side-tax.html"],
@@ -6271,11 +6283,11 @@ const relatedArticleGroups = {
     ["FIREとは何か", "article-fire-basic.html"],
   ],
   fire: [
+    ["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"],
     ["FIRE達成の基本戦略", "article-fire-strategy.html"],
     ["FIREとは何か", "article-fire-basic.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
-    ["老後資金2000万円問題とは", "article-retirement-2000.html"],
-    ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
+    ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"],
   ],
   household: [
     ["FIRE達成の基本戦略", "article-fire-strategy.html"],

@@ -224,6 +224,13 @@ h1 {
   line-height: 1.85;
 }
 
+.article-meta {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
 .experience-block {
   display: grid;
   gap: 8px;
