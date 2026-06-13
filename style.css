@@ -177,6 +177,36 @@ h1 {
   line-height: 1.85;
 }
 
+.media-intro-panel {
+  gap: 18px;
+  padding: clamp(18px, 4vw, 28px);
+  border-color: rgba(18, 115, 93, 0.22);
+  background: #ffffff;
+}
+
+.media-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.media-grid .experience-block {
+  min-height: 100%;
+}
+
+.proof-grid {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 760px) {
+  .media-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .proof-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
 .article-section h3,
 .faq-section h3 {
   margin: 0;

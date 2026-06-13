@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "\u526f\u696d\u6708\u53ce\u3001AI\u526f\u696d\u6642\u7d66\u3001AI\u526f\u696d\u52b9\u7387\u5316\u3001AI\u5916\u6ce8\u8cbb\u524a\u6e1b\u3001\u751f\u6d3b\u30b3\u30b9\u30c8\u6700\u9069\u5316\u3001\u526f\u696d\u30ea\u30b9\u30af\u8a3a\u65ad\u3001\u4f1a\u793e\u54e1\u7bc0\u7a0e\u3001\u65b0NISA\u3001iDeCo\u3001\u914d\u5f53\u91d1\u3001\u9ad8\u914d\u5f53\u682a\u6bd4\u8f03\u3001\u914d\u5f53ETF\u6bd4\u8f03\u3001\u914d\u5f53\u518d\u6295\u8cc7\u3001FIRE\u9054\u6210\u3001\u8001\u5f8c\u8cc7\u91d1\u307e\u3067\u300140\u7a2e\u985e\u306e\u521d\u5fc3\u8005\u5411\u3051\u30b7\u30df\u30e5\u30ec\u30fc\u30bf\u30fc\u3092\u691c\u7d22\u30fb\u30ab\u30c6\u30b4\u30ea\u5225\u3067\u63a2\u305b\u308b\u30b9\u30de\u30db\u5bfe\u5fdc\u30b5\u30a4\u30c8\u3067\u3059\u3002";
+const seoDescription = "31歳の運送業管理職が、本業後の限られた時間で副業、AI活用、固定費改善、新NISA、FIRE、老後資金を実際に検証する資産形成メディアです。40種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -40,8 +40,8 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "【2026年対応】初心者向け資産シミュレーター40選｜検索・カテゴリ別で探せる",
-    description: "副業、税金、会社員節税、投資、FIRE、老後資金、固定費削減、生活コスト最適化、AI外注費削減、副業リスク診断、高配当株比較、配当ETF比較、新NISA、iDeCoまで、40種類の初心者向けシミュレーターを検索・カテゴリ別・人気順で探せるスマホ対応サイトです。",
+    title: "【2026年対応】会社員の副業・FIRE実体験メディア｜資産形成シミュレーター40選",
+    description: "31歳の運送業管理職が、本業後の限られた時間で副業、AI活用、固定費改善、新NISA、FIRE、老後資金を実際に検証する資産形成メディアです。",
   },
   "side-income": {
     title: "【2026年対応】初心者向け副業月収シミュレーター｜3分で収入計算",
@@ -461,9 +461,101 @@ document.body.innerHTML = `
       </header>
 
       <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
+        <section class="article-panel media-intro-panel" aria-label="サイト導入">
+          <p class="eyebrow">Real Experience</p>
+          <section class="tool-heading">
+            <h2>働きながら副業・FIREを目指す会社員の資産形成メディア</h2>
+            <p>このサイトは、単にシミュレーターを並べた一覧ではありません。運送業の管理職として働きながら、副業収入、AI活用、固定費改善、新NISA、長期投資、FIRE戦略を実際に試し、その数字を整理するために作っています。</p>
+          </section>
+          <div class="experience-block">
+            <h3>サイト導入</h3>
+            <p>運営者は31歳の会社員です。運送業の管理職として、約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応などを経験してきました。予定通りに終わらない日や、急な欠勤で段取りを組み直す日も多く、本業だけに収入を依存する働き方に少しずつ不安を感じるようになりました。</p>
+            <p>だからこそ、平日に何時間も副業する前提ではなく、本業後の1時間でも積み上がる方法を重視しています。副業、AI、固定費削減、NISA、FIREをバラバラに考えるのではなく、毎月の収支と時間の使い方に落とし込めるように、各シミュレーターと記事をつなげています。</p>
+          </div>
+        </section>
+
+        <section class="article-panel media-story-panel" aria-label="なぜこのサイトを作ったか">
+          <section class="tool-heading">
+            <h2>なぜこのサイトを作ったか</h2>
+            <p>長時間労働や急なトラブル対応を経験すると、収入源が本業だけという状態の怖さを現実として感じます。</p>
+          </section>
+          <div class="media-grid">
+            <div class="experience-block">
+              <h3>本業だけに依存しないため</h3>
+              <p>管理職として働いていると、責任は増えても自由な時間は増えにくいと感じます。副業収入を少しずつ作り、固定費を整え、投資へ回す流れを作ることで、会社員収入だけに頼らない状態を目指しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>40歳までにFIREを目指すため</h3>
+              <p>FIREは夢物語ではなく、収入、支出、投資額、利回り、時間の使い方を数字に分けて考えるテーマです。40歳までにどこまで近づけるかを、自分の家計と働き方に合わせて検証しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>忙しい会社員でも使える形にするため</h3>
+              <p>仕事後に難しい表計算を作る余力がない日でも、数分でざっくり確認できることを大切にしています。まず概算で方向性をつかみ、必要なら公式情報や専門家確認へ進むための入口として使える構成にしています。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="このサイトでわかること">
+          <section class="tool-heading">
+            <h2>このサイトでわかること</h2>
+            <p>副業や投資を始める前に、収入、支出、税金、将来資産をまとめて見える化できます。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="#side-income"><strong>副業収入</strong><span>時給、作業時間、案件数から月収と年収の目安を確認</span></a>
+            <a class="article-link" href="#fire"><strong>FIRE</strong><span>必要資産、達成年数、生活費改善による短縮効果を確認</span></a>
+            <a class="article-link" href="#nisa"><strong>NISA</strong><span>毎月積立、年利、運用年数から将来資産を確認</span></a>
+            <a class="article-link" href="#life-cost"><strong>固定費改善</strong><span>家賃、通信費、保険料、食費などの改善余地を確認</span></a>
+            <a class="article-link" href="#ai-efficiency"><strong>AI副業</strong><span>AI活用による時間削減、時給改善、利益率改善を確認</span></a>
+            <a class="article-link" href="#retirement"><strong>老後資金</strong><span>退職時資産、年金見込み、老後生活費から不足額を確認</span></a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="実際に検証している内容">
+          <section class="tool-heading">
+            <h2>実際に検証している内容</h2>
+            <p>机上の一般論だけではなく、限られた平日時間の中で試している内容をもとに、数字で確認できる形にしています。</p>
+          </section>
+          <div class="media-grid proof-grid">
+            <div class="experience-block">
+              <h3>AIツール活用</h3>
+              <p>記事構成、調査、下書き、作業整理にAIを使い、本業後の短い時間でどこまで時短できるかを検証しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>本業後1時間副業</h3>
+              <p>毎日長時間は難しいため、平日1時間でも進む作業設計、案件選び、AIでの下準備を重視しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>固定費改善</h3>
+              <p>副業時間を増やすだけでなく、通信費、保険、サブスク、生活コストを見直して投資余力を作る考え方を試しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>長期投資</h3>
+              <p>新NISAや配当、再投資を使い、短期の利益ではなく長く続く資産形成のペースを確認しています。</p>
+            </div>
+            <div class="experience-block">
+              <h3>FIRE戦略</h3>
+              <p>完全FIREだけでなく、会社員FIRE、サイドFIRE、配当生活、老後資金を組み合わせて現実的な選択肢を探しています。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="まず最初に使うべきシミュレーター">
+          <section class="tool-heading">
+            <h2>まず最初に使うべきシミュレーター</h2>
+            <p>初めて来た人は、細かいツールを全部見るより、この順番で確認すると家計と資産形成の全体像をつかみやすいです。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="#side-income"><strong>1. 副業月収シミュレーター</strong><span>本業以外でどれくらい収入を作れるか、最初に確認します</span></a>
+            <a class="article-link" href="#take-home"><strong>2. 副業手取り計算シミュレーター</strong><span>売上ではなく、税金後に残る金額を見ます</span></a>
+            <a class="article-link" href="#life-cost"><strong>3. 生活コスト最適化シミュレーター</strong><span>副業で増やす前に、毎月の支出改善余地を確認します</span></a>
+            <a class="article-link" href="#nisa"><strong>4. 新NISAシミュレーター</strong><span>余力を投資へ回した場合の将来資産を見ます</span></a>
+            <a class="article-link" href="#fire"><strong>5. FIRE達成シミュレーター</strong><span>副業、固定費改善、投資をFIREまでの距離に変換します</span></a>
+          </div>
+        </section>
+
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
-            <h2>目的からツールを探す</h2>
+            <h2>目的からシミュレーターを探す</h2>
             <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で40個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
@@ -482,7 +574,7 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="初心者おすすめ導線">
           <section class="tool-heading">
             <h2>初心者おすすめ導線</h2>
-            <p>最初に見るツールを迷う場合は、目的別にこの順番で確認すると全体像をつかみやすくなります。</p>
+            <p>目的が決まっている場合は、近いテーマから直接確認できます。</p>
           </section>
           <div class="quick-start-grid">
             <a href="#side-income">副業を始める</a>
