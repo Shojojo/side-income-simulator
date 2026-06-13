@@ -6214,6 +6214,148 @@ function insertLastUpdatedDates() {
 
 insertLastUpdatedDates();
 
+const comparisonSections = {
+  "side-income": `
+        <section class="article-panel comparison-section" aria-label="副業比較表">
+          <section class="tool-heading">
+            <h2>副業比較表</h2>
+            <p>会社員が本業後に取り組む前提で、必要時間やAIとの相性を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="副業比較表" tabindex="0">
+            <table>
+              <thead><tr><th>副業タイプ</th><th>必要時間</th><th>初期費用</th><th>収益化速度</th><th>継続難易度</th><th>AI活用相性</th><th>会社員向きか</th></tr></thead>
+              <tbody>
+                <tr><td>Webライティング</td><td>平日1時間から可</td><td>低い</td><td>早め</td><td>中</td><td>構成・下書きで高い</td><td>本業後でも分割しやすい</td></tr>
+                <tr><td>資料作成・事務代行</td><td>まとまった夜時間が必要</td><td>低い</td><td>早め</td><td>中</td><td>要約・整形で高い</td><td>管理職経験を活かしやすい</td></tr>
+                <tr><td>動画編集</td><td>長め</td><td>中</td><td>中</td><td>高</td><td>台本・字幕で中</td><td>休日作業向き</td></tr>
+                <tr><td>ブログ・メディア運営</td><td>短時間を継続</td><td>低〜中</td><td>遅め</td><td>高</td><td>調査・構成で高い</td><td>長期で積み上げたい人向き</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>運送業の管理職として当日欠勤対応や夜間対応があるため、毎日3時間前提ではなく、平日1時間でも進む副業を中心に比較しています。AIで短縮できる作業と、自分の経験を入れる作業を分けて見ています。</p>
+        </section>`,
+  "ai-efficiency": `
+        <section class="article-panel comparison-section" aria-label="AI副業比較表">
+          <section class="tool-heading">
+            <h2>副業比較表</h2>
+            <p>AIを使う前提で、会社員が本業後に続けやすい副業を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="AI副業比較表" tabindex="0">
+            <table>
+              <thead><tr><th>副業タイプ</th><th>必要時間</th><th>初期費用</th><th>収益化速度</th><th>継続難易度</th><th>AI活用相性</th><th>会社員向きか</th></tr></thead>
+              <tbody>
+                <tr><td>記事作成補助</td><td>平日1時間から可</td><td>低い</td><td>早め</td><td>中</td><td>ChatGPT/Claudeと相性が高い</td><td>疲れた夜でも分割しやすい</td></tr>
+                <tr><td>SNS投稿作成</td><td>短時間</td><td>低い</td><td>中</td><td>中</td><td>アイデア出しで高い</td><td>スキマ時間向き</td></tr>
+                <tr><td>動画ショート編集</td><td>中〜長</td><td>中</td><td>中</td><td>高</td><td>CapCutで一部短縮</td><td>休日にまとめる人向き</td></tr>
+                <tr><td>資料・リサーチ代行</td><td>中</td><td>低い</td><td>早め</td><td>中</td><td>要約・整理で高い</td><td>本業スキルを活かしやすい</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>本業後は集中力が残りにくいため、AIは楽に稼ぐ道具ではなく、調査・構成・下書きの時間を減らして副業を止めないための道具として見ています。</p>
+        </section>
+        <section class="article-panel comparison-section" aria-label="AIツール比較表">
+          <section class="tool-heading">
+            <h2>AIツール比較</h2>
+            <p>副業作業を短縮する目的で、主要AIツールの得意分野を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="AIツール比較表" tabindex="0">
+            <table>
+              <thead><tr><th>AIツール</th><th>得意分野</th><th>時間短縮</th><th>初心者向き</th><th>副業相性</th></tr></thead>
+              <tbody>
+                <tr><td>ChatGPT</td><td>構成、下書き、FAQ、説明文</td><td>高い</td><td>高い</td><td>文章・企画系で使いやすい</td></tr>
+                <tr><td>Claude</td><td>長文整理、自然な文章調整</td><td>高い</td><td>中〜高</td><td>記事改善や読みやすさ調整向き</td></tr>
+                <tr><td>Gemini</td><td>調査補助、Google系連携</td><td>中</td><td>中</td><td>情報整理や比較検討向き</td></tr>
+                <tr><td>CapCut</td><td>動画編集、字幕、ショート動画</td><td>中〜高</td><td>高い</td><td>動画副業やSNS運用向き</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>文章作成はChatGPTやClaude、動画まわりはCapCutのように、作業ごとに使い分ける方が本業後の限られた時間では現実的だと感じています。</p>
+        </section>`,
+  fire: `
+        <section class="article-panel comparison-section" aria-label="FIRE戦略比較表">
+          <section class="tool-heading">
+            <h2>FIRE戦略比較表</h2>
+            <p>40歳FIREを目指す会社員目線で、投資・副業・固定費・高配当の戦略を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="FIRE戦略比較表" tabindex="0">
+            <table>
+              <thead><tr><th>戦略</th><th>必要年数</th><th>難易度</th><th>再現性</th><th>向いている人</th></tr></thead>
+              <tbody>
+                <tr><td>投資中心</td><td>長め</td><td>中</td><td>高い</td><td>毎月積立を長く続けられる会社員</td></tr>
+                <tr><td>副業併用</td><td>短縮しやすい</td><td>高</td><td>中</td><td>本業後1時間でも収入づくりを続けたい人</td></tr>
+                <tr><td>固定費削減型</td><td>中</td><td>低〜中</td><td>高い</td><td>忙しくて副業時間を増やしにくい人</td></tr>
+                <tr><td>高配当型</td><td>中〜長</td><td>中</td><td>中</td><td>配当収入で心理的な余裕を作りたい人</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>運送業管理職として働く中では、副業時間を増やすだけに頼るのは難しいため、固定費削減とNISA積立を土台にし、副業収入でFIRE年数を短縮する形を現実的に見ています。</p>
+        </section>`,
+  "fixed-cost-reduction": `
+        <section class="article-panel comparison-section" aria-label="固定費比較表">
+          <section class="tool-heading">
+            <h2>固定費比較表</h2>
+            <p>会社員が忙しい時期でも一度見直すと効果が続きやすい固定費を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="固定費比較表" tabindex="0">
+            <table>
+              <thead><tr><th>項目</th><th>見直しやすさ</th><th>節約インパクト</th><th>会社員視点の注意点</th><th>副業・投資へのつなげ方</th></tr></thead>
+              <tbody>
+                <tr><td>通信費</td><td>高い</td><td>中</td><td>手続きだけで効果が続きやすい</td><td>浮いた分をNISA積立へ回しやすい</td></tr>
+                <tr><td>保険</td><td>中</td><td>高</td><td>保障不足にならない範囲で確認</td><td>固定費を下げるとFIRE必要資産も下がる</td></tr>
+                <tr><td>サブスク</td><td>高い</td><td>小〜中</td><td>使っていないサービスを月1回確認</td><td>AIツール費用と入れ替えて効率化も可</td></tr>
+                <tr><td>家賃</td><td>低〜中</td><td>大</td><td>通勤時間や生活満足度も考える</td><td>大きく下がれば投資余力が増える</td></tr>
+                <tr><td>食費</td><td>中</td><td>中</td><td>無理な節約は疲労につながる</td><td>削りすぎず継続できる範囲で調整</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>本業が忙しい時期ほど副業時間を増やすより、通信費や保険、サブスクのように一度見直すと毎月効く項目から整える方が続けやすいと感じています。</p>
+        </section>`,
+  "life-cost": `
+        <section class="article-panel comparison-section" aria-label="固定費比較表">
+          <section class="tool-heading">
+            <h2>固定費比較表</h2>
+            <p>固定費と変動費を分け、FIREや投資に効きやすい改善先を比較しています。</p>
+          </section>
+          <div class="comparison-table" role="region" aria-label="生活コスト固定費比較表" tabindex="0">
+            <table>
+              <thead><tr><th>項目</th><th>見直しやすさ</th><th>節約インパクト</th><th>会社員視点の注意点</th><th>副業・投資へのつなげ方</th></tr></thead>
+              <tbody>
+                <tr><td>通信費</td><td>高い</td><td>中</td><td>仕事連絡に支障が出ない範囲で見直す</td><td>削減分を毎月積立に回しやすい</td></tr>
+                <tr><td>保険</td><td>中</td><td>高</td><td>不安だけで入りすぎない</td><td>必要保障を残して投資余力を作る</td></tr>
+                <tr><td>サブスク</td><td>高い</td><td>小〜中</td><td>副業に使うAIツールとは分けて考える</td><td>使わない娯楽費を作業効率化へ回す</td></tr>
+                <tr><td>家賃</td><td>低</td><td>大</td><td>通勤時間が増えると疲労も増える</td><td>住居費を下げるとFIRE必要資産も下がる</td></tr>
+                <tr><td>食費</td><td>中</td><td>中</td><td>忙しい日の外食を責めすぎない</td><td>無理なく整えて長期継続を優先</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>長時間労働の日は食費を削りすぎると続かないため、通信費・保険・サブスクのように生活の疲労を増やしにくい固定費から優先して見ています。</p>
+        </section>`
+};
+
+function insertComparisonSections() {
+  Object.entries(comparisonSections).forEach(([route, html]) => {
+    const view = document.querySelector(`[data-view="${route}"]`);
+    if (!view || view.querySelector(".comparison-section")) {
+      return;
+    }
+    const workspace = view.querySelector(".workspace");
+    const heading = view.querySelector(":scope > .tool-heading");
+    const container = document.createElement("div");
+    container.innerHTML = html.trim();
+    const sections = Array.from(container.children);
+    const anchor = workspace || heading;
+    sections.reverse().forEach((section) => {
+      if (anchor) {
+        anchor.insertAdjacentElement("afterend", section);
+      } else {
+        view.appendChild(section);
+      }
+    });
+  });
+}
+
+insertComparisonSections();
+
 const operatorExperience = {
   side: "運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。仕事が終わってから副業をしようと思っていても、当日の欠勤連絡や現場の調整で帰宅が遅くなり、予定していた1時間が消える日は普通にあります。だからこそ、休日にまとめて頑張るだけでなく、平日1時間でも進む作業量、手取り、税金、時給を見ながら続ける形を重視しています。",
   ai: "運営者は運送業の管理職として、日々の現場判断、調整、夜間対応をしながら副業と資産形成を試しています。本業後は集中力も時間も残りにくく、ゼロから文章を書いたり調べ物をしたりすると、それだけで副業時間が終わってしまうことがあります。AIツールは楽をするためというより、下書き、リサーチ、構成作り、画像や動画の準備を短縮して、限られた平日1時間を前に進めるために使っています。",

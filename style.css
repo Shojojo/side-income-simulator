@@ -394,6 +394,23 @@ h1 {
   border-bottom: 0;
 }
 
+.verification-note {
+  display: grid;
+  gap: 8px;
+  margin: -6px 0 20px;
+  padding: 13px 14px;
+  border: 1px solid rgba(18, 115, 93, 0.2);
+  border-radius: 8px;
+  background: #f7fbf8;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.verification-note strong {
+  color: var(--brand-dark);
+}
+
 .related-links a {
   color: var(--green);
   font-weight: 800;
