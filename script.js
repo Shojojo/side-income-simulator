@@ -494,6 +494,92 @@ document.body.innerHTML = `
           </div>
         </section>
 
+        <section class="article-panel ranking-panel" aria-label="人気ツールランキング">
+          <section class="tool-heading">
+            <h2>人気ツールランキング</h2>
+            <p>副業、AI、FIRE、生活費改善で使われやすい主要シミュレーターを上位にまとめました。</p>
+          </section>
+          <ol class="ranking-list">
+            <li><a href="#side-income"><strong>副業月収シミュレーター</strong><span>時給、作業時間、案件数から副業収入の入口を確認</span></a></li>
+            <li><a href="#ai-efficiency"><strong>AI副業効率化シミュレーター</strong><span>AI活用後の削減時間、時給、年間追加利益を確認</span></a></li>
+            <li><a href="#fire"><strong>FIRE達成シミュレーター</strong><span>目標資産までの年数と毎月積立の距離感を確認</span></a></li>
+            <li><a href="#life-cost"><strong>生活コスト最適化シミュレーター</strong><span>固定費・変動費の改善余地と投資効果を確認</span></a></li>
+            <li><a href="#nisa"><strong>新NISAシミュレーター</strong><span>毎月積立と年利から将来資産を試算</span></a></li>
+          </ol>
+        </section>
+
+        <section class="article-panel ranking-panel" aria-label="人気記事ランキング">
+          <section class="tool-heading">
+            <h2>人気記事ランキング</h2>
+            <p>副業を始める人、税金が気になる人、FIREやNISAを考える人が最初に読みやすい記事です。</p>
+          </section>
+          <ol class="ranking-list">
+            <li><a href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>本業後の限られた時間で収入を作る考え方</span></a></li>
+            <li><a href="article-ai-tools-comparison.html"><strong>副業向けおすすめAIツール比較</strong><span>ChatGPT、Claude、Geminiなどを副業用途で比較</span></a></li>
+            <li><a href="article-side-tax.html"><strong>副業税金の基礎知識</strong><span>副業収入、経費、所得税、住民税の入口を整理</span></a></li>
+            <li><a href="article-fire-strategy.html"><strong>FIRE達成の基本戦略</strong><span>収入、支出、投資を組み合わせてFIREを考える</span></a></li>
+            <li><a href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>資産形成の土台になる非課税投資の基本</span></a></li>
+          </ol>
+        </section>
+
+        <section class="article-panel" aria-label="FIRE人気カテゴリ">
+          <section class="tool-heading">
+            <h2>FIRE人気カテゴリ</h2>
+            <p>FIREを目指す人は、必要資産だけでなく生活費、積立、配当、取り崩しをセットで確認すると現実的です。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="category-fire.html">
+              <strong>FIREカテゴリを見る</strong>
+              <span>FIRE、会社員FIRE、サイドFIRE、配当生活をまとめて確認</span>
+            </a>
+            <a class="article-link" href="#fire">
+              <strong>FIRE達成シミュレーター</strong>
+              <span>目標資産までの年数と不足額を確認</span>
+            </a>
+            <a class="article-link" href="#fire-rate">
+              <strong>FIRE達成率シミュレーター</strong>
+              <span>現在資産、収支、投資状況から達成可能性をスコア化</span>
+            </a>
+            <a class="article-link" href="#employee-fire">
+              <strong>会社員FIRE年数計算シミュレーター</strong>
+              <span>給与、副業、配当を含めたFIRE年数を確認</span>
+            </a>
+            <a class="article-link" href="#life-cost">
+              <strong>生活コスト最適化シミュレーター</strong>
+              <span>生活費改善がFIREに与える影響を確認</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業人気カテゴリ">
+          <section class="tool-heading">
+            <h2>副業人気カテゴリ</h2>
+            <p>副業を始める人は、収入、手取り、時間管理、AI活用、税金をまとめて見ると失敗しにくくなります。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="category-side-business.html">
+              <strong>副業カテゴリを見る</strong>
+              <span>副業収入、AI副業、手取り、利益率、時間管理をまとめて確認</span>
+            </a>
+            <a class="article-link" href="#side-income">
+              <strong>副業月収シミュレーター</strong>
+              <span>時給、作業時間、案件数から副業収入を確認</span>
+            </a>
+            <a class="article-link" href="#ai-efficiency">
+              <strong>AI副業効率化シミュレーター</strong>
+              <span>AI活用で時給と作業時間がどう変わるか確認</span>
+            </a>
+            <a class="article-link" href="#take-home">
+              <strong>副業手取り計算シミュレーター</strong>
+              <span>税金後に手元へ残る金額を確認</span>
+            </a>
+            <a class="article-link" href="#side-time-management">
+              <strong>副業時間管理シミュレーター</strong>
+              <span>本業後でも続けられる作業時間を確認</span>
+            </a>
+          </div>
+        </section>
+
         <section class="article-panel" aria-label="カテゴリ別ページ">
           <section class="tool-heading">
             <h2>カテゴリ別ページ</h2>
