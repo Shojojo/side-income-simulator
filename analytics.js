@@ -1,5 +1,14 @@
 (function () {
   const measurementId = window.GA_MEASUREMENT_ID;
+  const adsenseClient = window.ADSENSE_CLIENT;
+
+  if (adsenseClient && adsenseClient !== "ca-pub-XXXXXXXXXXXXXXXX") {
+    const adScript = document.createElement("script");
+    adScript.async = true;
+    adScript.crossOrigin = "anonymous";
+    adScript.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(adsenseClient)}`;
+    document.head.appendChild(adScript);
+  }
 
   if (!measurementId || measurementId === "G-XXXXXXXXXX") {
     return;

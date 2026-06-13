@@ -474,6 +474,35 @@ document.body.innerHTML = `
           </div>
         </section>
 
+        <section class="article-panel" aria-label="実録記事">
+          <section class="tool-heading">
+            <h2>まず読んでほしい実録記事</h2>
+            <p>このサイトを「ツール一覧」ではなく、働きながら資産形成を進める記録として読むなら、まずこの3本から確認してください。</p>
+          </section>
+          <div class="next-read-grid">
+            <a class="next-read-card" href="article-after-work-sidejob-1hour.html">
+              <strong>本業後1時間副業を続けるためにやめたこと</strong>
+              <span>運送業管理職として働きながら、毎日3時間ではなく短時間で積み上げる設計に変えた話です。</span>
+              <span class="next-read-reason">関連理由：副業を始める前に、まず現実的な時間設計を確認できます。</span>
+            </a>
+            <a class="next-read-card" href="article-fire-31-company-worker.html">
+              <strong>31歳会社員が40歳FIREを目指す理由</strong>
+              <span>会社員収入だけに依存する不安から、固定費改善・副業・NISA・長期投資を組み合わせる理由をまとめています。</span>
+              <span class="next-read-reason">関連理由：このサイト全体のFIRE目標と資産形成の背景がわかります。</span>
+            </a>
+            <a class="next-read-card" href="article-ai-sidejob-manager-reality.html">
+              <strong>管理職をしながらAI副業を続ける現実</strong>
+              <span>本業後の疲労がある中で、ChatGPTなどのAIをどう使って副業時間を短縮しているかを整理しています。</span>
+              <span class="next-read-reason">関連理由：AI副業を「楽に稼ぐ話」ではなく、継続するための道具として見られます。</span>
+            </a>
+            <a class="next-read-card" href="article-side-tax.html">
+              <strong>副業税金の基礎知識</strong>
+              <span>副業収入が出たあとに必要になる所得、経費、住民税、青色申告の入口を確認できます。</span>
+              <span class="next-read-reason">関連理由：副業から税金へ進む悩み導線を押さえられます。</span>
+            </a>
+          </div>
+        </section>
+
         <section class="article-panel media-story-panel" aria-label="なぜこのサイトを作ったか">
           <section class="tool-heading">
             <h2>なぜこのサイトを作ったか</h2>
@@ -583,6 +612,32 @@ document.body.innerHTML = `
             <a href="#nisa">投資を始める</a>
             <a href="#fire">FIREを考える</a>
             <a href="#retirement">老後資金を確認</a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="初心者向け記事">
+          <section class="tool-heading">
+            <h2>初心者向け</h2>
+            <p>何から見ればいいか迷ったら、副業の時間設計、税金、固定費、投資の順で読むと全体像をつかみやすいです。</p>
+          </section>
+          <div class="next-read-grid">
+            <a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>忙しい会社員が副業を始める前に、時間の使い方を整える記事です。</span><span class="next-read-reason">関連理由：最初に無理な副業計画を避けられます。</span></a>
+            <a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>月5万円を目標に、作業時間と単価を現実的に考えます。</span><span class="next-read-reason">関連理由：時間設計の次に収益目標を決められます。</span></a>
+            <a class="next-read-card" href="article-side-tax.html"><strong>副業税金の基礎知識</strong><span>副業収入が出たあとに必要な税金の入口を整理します。</span><span class="next-read-reason">関連理由：副業収入を手取りで考える準備になります。</span></a>
+            <a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>副業や固定費改善で作った余力を長期投資へ回す考え方です。</span><span class="next-read-reason">関連理由：税金の次に投資へつなげられます。</span></a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="FIREを目指す人向け">
+          <section class="tool-heading">
+            <h2>FIREを目指す人向け</h2>
+            <p>FIREは必要資産だけでなく、副業、固定費、NISA、老後資金をつなげて見る方が現実的です。</p>
+          </section>
+          <div class="next-read-grid">
+            <a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しないためにFIREを考え始めた背景です。</span><span class="next-read-reason">関連理由：FIREを目指す動機と現実感を確認できます。</span></a>
+            <a class="next-read-card" href="article-fire-basic.html"><strong>FIREとは何か</strong><span>FIREの意味、必要資産、生活費の基本を整理します。</span><span class="next-read-reason">関連理由：目標資産を考える土台になります。</span></a>
+            <a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>FIREに向けた長期投資の入口としてNISAを確認します。</span><span class="next-read-reason">関連理由：副業・固定費改善で作った余力の受け皿になります。</span></a>
+            <a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>FIRE後も老後資金を無視せず、長期の生活費を考えます。</span><span class="next-read-reason">関連理由：FIREと老後資金のつながりを確認できます。</span></a>
           </div>
         </section>
 
@@ -6305,6 +6360,248 @@ const relatedArticleGroups = {
   ],
 };
 
+const nextReadFlows = {
+  side: [
+    {
+      title: "本業後1時間副業を続けるためにやめたこと",
+      href: "article-after-work-sidejob-1hour.html",
+      desc: "副業を始める前に、忙しい会社員でも続く時間設計を確認できます。",
+      reason: "副業の入口として、まず無理な作業計画を避けるため"
+    },
+    {
+      title: "副業税金の基礎知識",
+      href: "article-side-tax.html",
+      desc: "副業収入が出たあとに必要な所得、経費、住民税の考え方を整理します。",
+      reason: "収入が増えた次に、税金と手取りを確認するため"
+    },
+    {
+      title: "固定費削減シミュレーター",
+      href: "index.html#fixed-cost-reduction",
+      desc: "副業で増やすだけでなく、毎月の支出を下げて投資余力を作ります。",
+      reason: "副業収入を使い切らず、家計改善へつなげるため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "副業と固定費改善で作った余力を長期投資へ回す入口です。",
+      reason: "副業から投資へ進む流れを作るため"
+    },
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "副業、固定費改善、NISAをFIRE目標につなげる実体験記事です。",
+      reason: "最後にFIREまでの全体像へ接続するため"
+    }
+  ],
+  ai: [
+    {
+      title: "管理職をしながらAI副業を続ける現実",
+      href: "article-ai-sidejob-manager-reality.html",
+      desc: "本業後の疲労がある中で、AIをどう使って副業を続けるかを整理します。",
+      reason: "AI副業を現実的な時短手段として見るため"
+    },
+    {
+      title: "本業後1時間副業を続けるためにやめたこと",
+      href: "article-after-work-sidejob-1hour.html",
+      desc: "AI活用の前に、平日1時間でも進む作業設計を確認できます。",
+      reason: "AIで短縮する前に、作業時間の枠を決めるため"
+    },
+    {
+      title: "副業税金の基礎知識",
+      href: "article-side-tax.html",
+      desc: "AI副業で収益が出たあとに必要な税金の入口です。",
+      reason: "AIで収益化した後の手取りを守るため"
+    },
+    {
+      title: "副業向けおすすめAIツール比較",
+      href: "article-ai-tools-comparison.html",
+      desc: "ChatGPT、Claude、Gemini、Canvaなどを副業用途で比較します。",
+      reason: "自分の副業に合うAIツールを選ぶため"
+    }
+  ],
+  tax: [
+    {
+      title: "副業税金の基礎知識",
+      href: "article-side-tax.html",
+      desc: "副業収入、経費、所得税、住民税の基本をまとめています。",
+      reason: "税金ページの前提を押さえるため"
+    },
+    {
+      title: "会社員の副業税金対策",
+      href: "article-company-side-tax-saving.html",
+      desc: "会社員が副業収入を得たときに見ておきたい税金対策です。",
+      reason: "税金を払うだけでなく、事前準備へつなげるため"
+    },
+    {
+      title: "固定費削減シミュレーター",
+      href: "index.html#fixed-cost-reduction",
+      desc: "納税後に残るお金を増やすため、毎月の支出も見直します。",
+      reason: "税金確認の次に、家計改善へ進むため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "手取りや固定費を整えたあと、長期投資の入口を確認します。",
+      reason: "残ったお金を資産形成へ回すため"
+    }
+  ],
+  household: [
+    {
+      title: "本業後1時間副業を続けるためにやめたこと",
+      href: "article-after-work-sidejob-1hour.html",
+      desc: "家計改善と副業時間を両立するための実体験記事です。",
+      reason: "支出を整える前に、収入づくりの現実も見るため"
+    },
+    {
+      title: "固定費削減シミュレーター",
+      href: "index.html#fixed-cost-reduction",
+      desc: "通信費、保険料、サブスクなどの削減余地を確認できます。",
+      reason: "家計改善の中心になる固定費を具体化するため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "削減できたお金を長期投資へ回す考え方です。",
+      reason: "節約を投資余力へ変えるため"
+    },
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "固定費改善をFIRE目標へつなげる背景を確認できます。",
+      reason: "家計改善を将来の自由度へつなげるため"
+    }
+  ],
+  investment: [
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "長期投資を始める前に、制度と積立の基本を確認します。",
+      reason: "投資カテゴリの入口として制度を押さえるため"
+    },
+    {
+      title: "楽天証券 vs SBI証券 完全比較",
+      href: "article-rakuten-sbi-securities-comparison.html",
+      desc: "新NISA、クレカ積立、高配当投資の使いやすさを比較します。",
+      reason: "投資を始める口座選びへ進むため"
+    },
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "投資をFIRE目標にどうつなげるかを実体験で確認できます。",
+      reason: "投資を目的化せず、FIRE戦略へ接続するため"
+    },
+    {
+      title: "老後資金2000万円問題とは",
+      href: "article-retirement-2000.html",
+      desc: "投資と老後資金を同時に考えるための記事です。",
+      reason: "FIRE後や老後まで視野を広げるため"
+    }
+  ],
+  fire: [
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "会社員収入だけに依存しないためにFIREを考えた背景です。",
+      reason: "FIREを目指す動機と現実感を確認するため"
+    },
+    {
+      title: "本業後1時間副業を続けるためにやめたこと",
+      href: "article-after-work-sidejob-1hour.html",
+      desc: "FIREへ向けて副業収入を作るための時間設計です。",
+      reason: "FIREの前段階として副業収入を考えるため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "FIRE資産を作るための長期投資の入口です。",
+      reason: "副業と固定費改善で作った余力を投資へ回すため"
+    },
+    {
+      title: "老後資金2000万円問題とは",
+      href: "article-retirement-2000.html",
+      desc: "FIRE後も続く老後資金の不安を整理します。",
+      reason: "FIREと老後資金を切り離さず考えるため"
+    }
+  ],
+  life: [
+    {
+      title: "老後資金2000万円問題とは",
+      href: "article-retirement-2000.html",
+      desc: "将来の生活費と必要資金を考える入口です。",
+      reason: "ライフプラン全体の前提を確認するため"
+    },
+    {
+      title: "固定費削減シミュレーター",
+      href: "index.html#fixed-cost-reduction",
+      desc: "教育費、住宅、老後資金に備えるため毎月支出を整えます。",
+      reason: "大きな支出に備える前に家計を軽くするため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "将来資金を長期で準備するための基本です。",
+      reason: "老後・教育・住宅の準備を投資へつなげるため"
+    },
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "将来不安からFIREを目指す背景を確認できます。",
+      reason: "老後や教育費とFIRE目標の関係を見るため"
+    }
+  ],
+  default: [
+    {
+      title: "本業後1時間副業を続けるためにやめたこと",
+      href: "article-after-work-sidejob-1hour.html",
+      desc: "忙しい会社員が副業時間を作る実体験記事です。",
+      reason: "このサイトの実体験軸を知るため"
+    },
+    {
+      title: "副業税金の基礎知識",
+      href: "article-side-tax.html",
+      desc: "副業収入が出た後に必要な税金の入口です。",
+      reason: "収入から手取りへつなげるため"
+    },
+    {
+      title: "新NISAの始め方",
+      href: "article-new-nisa-start.html",
+      desc: "副業や固定費改善で作った余力を投資へ回します。",
+      reason: "家計改善を資産形成へつなげるため"
+    },
+    {
+      title: "31歳会社員が40歳FIREを目指す理由",
+      href: "article-fire-31-company-worker.html",
+      desc: "副業、固定費、投資をFIRE目標へつなげる記事です。",
+      reason: "最終的な資産形成の方向性を確認するため"
+    }
+  ]
+};
+
+function buildNextReadCards(kind = "default", currentHref = "") {
+  const items = [...(nextReadFlows[kind] || nextReadFlows.default), ...nextReadFlows.default]
+    .filter((item, index, array) => item.href !== currentHref && array.findIndex((other) => other.href === item.href) === index)
+    .slice(0, 4);
+
+  return items.map((item) => `
+            <a class="next-read-card" href="${item.href}">
+              <strong>${item.title}</strong>
+              <span>${item.desc}</span>
+              <span class="next-read-reason">関連理由：${item.reason}</span>
+            </a>`).join("");
+}
+
+function buildNextReadSection(kind = "default", currentHref = "") {
+  return `
+        <section class="next-read-section" aria-label="次に読むべき記事">
+          <section class="tool-heading">
+            <h2>次に読むべき記事</h2>
+            <p>副業から税金、固定費改善、投資、FIREへ進めるように、悩みの流れでつながる記事を選んでいます。</p>
+          </section>
+          <div class="next-read-grid">${buildNextReadCards(kind, currentHref)}
+          </div>
+        </section>`;
+}
+
 function buildRelatedToolLinks(kind, currentRoute) {
   const currentHref = `index.html#${currentRoute}`;
   const fallback = [
@@ -6350,6 +6647,7 @@ function buildExperienceSection(profile) {
             <p>${profile.use}</p>
             <p>一度の計算で結論を出すより、収入が少ない場合、支出を下げた場合、積立額を増やした場合など、複数パターンを試すのがおすすめです。特に副業収入を投資へ回す場合は、税金と生活防衛資金を先に見てから無理のない金額を決めてください。</p>
           </div>
+          ${buildNextReadSection(profile.kind)}
           <div class="experience-block">
             <h3>おすすめ関連記事</h3>
             <p>このページと合わせて読むと、計算結果を行動に移しやすくなります。</p>
