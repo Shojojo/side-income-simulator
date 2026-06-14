@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 41種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 42種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -142,6 +142,10 @@ const routeSeo = {
   "fire-rate": {
     title: "FIRE達成率シミュレーター｜会社員の資産形成スコア診断【2026年版】",
     description: "現在資産、副業収入、生活費、配当収入からFIRE達成可能性をスコア化し、改善すべき行動を見つけられます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+  },
+  "fire-stress": {
+    title: "FIREストレス診断｜会社員のFIRE後不安と働き方リスクを確認【2026年版】",
+    description: "現在資産、生活費、副業収入、配当収入、仕事ストレス度、孤独耐性からFIRE後のストレスリスクを診断します。完全退職だけでなくサイドFIREも含めて、無理のない自由度を考えられます。",
   },
   "employee-fire": {
     title: "会社員FIRE年数計算シミュレーター｜副業と投資で達成年齢を確認【2026年版】",
@@ -418,7 +422,7 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
-        <p class="article-meta">最終更新日：2026年6月13日</p>
+        <p class="article-meta">最終更新日：2026年6月14日</p>
         <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
         <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -453,6 +457,7 @@ document.body.innerHTML = `
           <a href="#dividend-life-years" data-route="dividend-life-years">配当生活年数</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate" data-route="fire-rate">FIRE達成率</a>
+          <a href="#fire-stress" data-route="fire-stress">FIREストレス診断</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#cash-flow" data-route="cash-flow">会社員キャッシュフロー</a>
           <a href="#life-cost" data-route="life-cost">生活コスト最適化</a>
@@ -591,12 +596,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からシミュレーターを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で41個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で42個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">41個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">42個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -1098,6 +1103,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#fire-stress">
+            <p class="eyebrow">FIRE Stress</p>
+            <h2>FIREストレス診断</h2>
+            <p>FIRE準備状況、生活費、収入不安、仕事ストレス、孤独耐性から、FIRE後のストレスリスクを診断します。</p>
+            <div class="tool-meta">
+              <span>ストレススコア</span>
+              <span>収入不安</span>
+              <span>サイドFIRE比較</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#employee-fire">
             <p class="eyebrow">Employee FIRE</p>
             <h2>&#x4f1a;&#x793e;&#x54e1;FIRE&#x5e74;&#x6570;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1336,6 +1353,7 @@ document.body.innerHTML = `
             <li><a href="#dividend-life-years"><strong>配当生活年数</strong><span>現在資産と生活費から配当生活の継続年数を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire-rate"><strong>FIRE達成率</strong><span>現在資産、収支、投資状況からFIRE可能性をスコア化</span></a></li>
+            <li><a href="#fire-stress"><strong>FIREストレス診断</strong><span>FIRE後の収入不安、孤独、満足度を事前に確認</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#cash-flow"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
             <li><a href="#life-cost"><strong>生活コスト最適化</strong><span>固定費・変動費の改善余地と投資効果を確認</span></a></li>
@@ -4053,12 +4071,146 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="FIRE達成率関連ツール">
           <section class="tool-heading">
             <h2>関連ツール</h2>
-            <p>スコアだけで判断せず、FIRE達成年数、サイドFIRE、配当生活の必要資産も合わせて確認できます。</p>
+            <p>スコアだけで判断せず、FIRE達成年数、FIRE後のストレス、サイドFIRE、配当生活の必要資産も合わせて確認できます。</p>
           </section>
           <div class="related-links">
             <a href="#fire">FIRE達成シミュレーター</a>
+            <a href="#fire-stress">FIREストレス診断</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
             <a href="#dividend-life">配当生活達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="fire-stress" aria-label="FIREストレス診断">
+        <section class="tool-heading">
+          <h2>FIREストレス診断</h2>
+          <p>現在年齢、現在資産、生活費、副業収入、配当収入、仕事ストレス度、孤独耐性、FIRE希望年齢、趣味の有無から、FIRE後のストレスリスクを診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="FIREストレスの診断">
+          <form class="input-panel" id="fireStressForm">
+            <div class="field">
+              <label for="fireStressAge">現在年齢 <span class="unit">歳</span></label>
+              <input id="fireStressAge" name="fireStressAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="31" required aria-describedby="fireStressAgeError">
+              <p class="error" id="fireStressAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressAssets">現在資産 <span class="unit">円</span></label>
+              <input id="fireStressAssets" name="fireStressAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="5000000" required aria-describedby="fireStressAssetsError">
+              <p class="error" id="fireStressAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressMonthlyCost">毎月生活費 <span class="unit">円 / 月</span></label>
+              <input id="fireStressMonthlyCost" name="fireStressMonthlyCost" type="number" inputmode="numeric" min="1" max="100000000" step="10000" value="250000" required aria-describedby="fireStressMonthlyCostError">
+              <p class="error" id="fireStressMonthlyCostError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressSideIncome">副業収入 <span class="unit">円 / 月</span></label>
+              <input id="fireStressSideIncome" name="fireStressSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="fireStressSideIncomeError">
+              <p class="error" id="fireStressSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressDividendIncome">配当収入 <span class="unit">円 / 月</span></label>
+              <input id="fireStressDividendIncome" name="fireStressDividendIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="30000" required aria-describedby="fireStressDividendIncomeError">
+              <p class="error" id="fireStressDividendIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressWorkStress">仕事ストレス度 <span class="unit">1〜10</span></label>
+              <input id="fireStressWorkStress" name="fireStressWorkStress" type="number" inputmode="numeric" min="1" max="10" step="1" value="8" required aria-describedby="fireStressWorkStressError">
+              <p class="error" id="fireStressWorkStressError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressSolitudeTolerance">孤独耐性 <span class="unit">1〜10</span></label>
+              <input id="fireStressSolitudeTolerance" name="fireStressSolitudeTolerance" type="number" inputmode="numeric" min="1" max="10" step="1" value="6" required aria-describedby="fireStressSolitudeToleranceError">
+              <p class="error" id="fireStressSolitudeToleranceError"></p>
+            </div>
+            <div class="field">
+              <label for="fireStressTargetAge">FIRE希望年齢 <span class="unit">歳</span></label>
+              <input id="fireStressTargetAge" name="fireStressTargetAge" type="number" inputmode="numeric" min="1" max="100" step="1" value="40" required aria-describedby="fireStressTargetAgeError">
+              <p class="error" id="fireStressTargetAgeError"></p>
+            </div>
+            <label class="checkbox-field" for="fireStressHasHobby">
+              <input id="fireStressHasHobby" name="fireStressHasHobby" type="checkbox" checked>
+              <span>FIRE後も続けたい趣味や活動がある</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">FIREストレススコア</p>
+              <p class="amount" id="fireStressScore">0点</p>
+            </div>
+            <p class="notice" id="fireStressNotice">入力を確認してください。FIRE後の安心感は資産額だけでなく、収入源、生活費、人とのつながりにも左右されます。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>収入不安リスク</strong>
+                <span class="accent-amber text-metric" id="fireStressIncomeRisk">入力待ち</span>
+                <small>生活費を副業・配当・資産でどれだけ支えられるか</small>
+              </div>
+              <div class="metric">
+                <strong>孤独リスク</strong>
+                <span class="accent-blue text-metric" id="fireStressSolitudeRisk">入力待ち</span>
+                <small>退職後の時間と人との接点に関する目安</small>
+              </div>
+              <div class="metric">
+                <strong>生活満足度予測</strong>
+                <span class="accent-green text-metric" id="fireStressSatisfaction">入力待ち</span>
+                <small>自由時間、収入安定、趣味の有無を含めた予測</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-blue text-metric" id="fireStressImprovement">入力待ち</span>
+                <small>FIRE前に整えたい行動</small>
+              </div>
+              <div class="metric">
+                <strong>サイドFIREとの比較</strong>
+                <span class="accent-green text-metric" id="fireStressSideFireCompare">入力待ち</span>
+                <small>完全FIREとサイドFIREの相性</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ関連ツール</strong>
+                <span class="accent-amber text-metric" id="fireStressRelatedTools">FIRE達成率、サイドFIRE、配当生活年数</span>
+                <small>次に確認したいシミュレーター</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="FIREストレス診断FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>FIREストレススコアは何を表していますか？</summary>
+              <p>資産額、生活費、副業収入、配当収入、仕事ストレス、孤独耐性、趣味の有無から、FIRE後に感じやすい不安を100点満点で示した目安です。低いほどストレスリスクが高いと考えてください。</p>
+            </details>
+            <details>
+              <summary>資産が十分ならストレスは少なくなりますか？</summary>
+              <p>資産は大きな安心材料ですが、生活費の高さ、収入源の少なさ、人との接点の減少でも不安は残ります。完全FIREだけでなく、サイドFIREや配当収入、副業収入を残す選択肢も確認してください。</p>
+            </details>
+            <details>
+              <summary>仕事ストレスが高い場合は早くFIREした方がよいですか？</summary>
+              <p>仕事ストレスが高いほどFIREへの動機は強くなりますが、準備不足で退職すると別の不安が増えます。生活防衛資金、固定費、サイドFIREの収入源を整えながら、段階的に自由度を上げる方が現実的です。</p>
+            </details>
+            <details>
+              <summary>孤独リスクはどう下げられますか？</summary>
+              <p>FIRE後に続けたい趣味、学び、地域活動、副業、発信などを先に持っておくと下げやすいです。働く時間をゼロにするより、少しだけ社会との接点を残すサイドFIREも選択肢になります。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="FIREストレス関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>FIRE後の不安を見たら、達成率、サイドFIRE、配当生活の継続年数も合わせて確認すると現実的な計画に近づきます。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire-rate">FIRE達成率シミュレーター</a>
+            <a href="#side-fire">サイドFIREシミュレーター</a>
+            <a href="#dividend-life-years">配当生活年数シミュレーター</a>
           </div>
         </section>
       </section>
@@ -5621,11 +5773,12 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="配当生活年数関連ツール">
           <section class="tool-heading">
             <h2>関連ツール</h2>
-            <p>配当生活の継続年数は、必要資産、再投資効果、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
+            <p>配当生活の継続年数は、必要資産、再投資効果、FIRE後のストレス、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
             <a href="#dividend-life">配当生活達成シミュレーター</a>
             <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#fire-stress">FIREストレス診断</a>
             <a href="#fire">FIRE達成シミュレーター</a>
           </div>
         </section>
@@ -6077,10 +6230,11 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
             <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
-            <p>&#x30b5;&#x30a4;&#x30c9;FIRE&#x306f;&#x3001;FIRE&#x76ee;&#x6a19;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x30d0;&#x30e9;&#x30f3;&#x30b9;&#x3092;&#x5408;&#x308f;&#x305b;&#x3066;&#x898b;&#x308b;&#x3068;&#x8a08;&#x753b;&#x3057;&#x3084;&#x3059;&#x304f;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;</p>
+            <p>&#x30b5;&#x30a4;&#x30c9;FIRE&#x306f;&#x3001;FIRE&#x76ee;&#x6a19;&#x3001;FIRE&#x5f8c;&#x306e;&#x30b9;&#x30c8;&#x30ec;&#x30b9;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x306e;&#x30d0;&#x30e9;&#x30f3;&#x30b9;&#x3092;&#x5408;&#x308f;&#x305b;&#x3066;&#x898b;&#x308b;&#x3068;&#x8a08;&#x753b;&#x3057;&#x3084;&#x3059;&#x304f;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
             <a href="#fire">FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="#fire-stress">FIREストレス診断</a>
             <a href="#dividend">&#x914d;&#x5f53;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
@@ -6264,7 +6418,7 @@ function insertLastUpdatedDates() {
     }
     const title = heading.querySelector(":scope > h2");
     if (title) {
-      title.insertAdjacentHTML("afterend", '<p class="article-meta">最終更新日：2026年6月13日</p>');
+      title.insertAdjacentHTML("afterend", '<p class="article-meta">最終更新日：2026年6月14日</p>');
     }
   });
 }
@@ -6455,6 +6609,7 @@ const routeExperienceProfiles = {
   "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "index.html#dividend-life"]] },
   "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
@@ -6505,6 +6660,7 @@ const relatedToolGroups = {
   fire: [
     ["FIRE達成シミュレーター", "index.html#fire"],
     ["FIRE達成率シミュレーター", "index.html#fire-rate"],
+    ["FIREストレス診断", "index.html#fire-stress"],
     ["会社員FIRE年数計算シミュレーター", "index.html#employee-fire"],
     ["サイドFIREシミュレーター", "index.html#side-fire"],
     ["配当生活達成シミュレーター", "index.html#dividend-life"],
@@ -7047,6 +7203,14 @@ const fieldRules = {
   fireRateAnnualLivingCost: { label: "年間生活費", min: 1, max: 1000000000, unit: "\u5186", integer: false },
   fireRateReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
   fireRateDividendIncome: { label: "配当収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  fireStressAge: { label: "現在年齢", min: 0, max: 100, unit: "歳", integer: true },
+  fireStressAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "円", integer: false },
+  fireStressMonthlyCost: { label: "毎月生活費", min: 1, max: 100000000, unit: "円", integer: false },
+  fireStressSideIncome: { label: "副業収入", min: 0, max: 100000000, unit: "円", integer: false },
+  fireStressDividendIncome: { label: "配当収入", min: 0, max: 100000000, unit: "円", integer: false },
+  fireStressWorkStress: { label: "仕事ストレス度", min: 1, max: 10, unit: "", integer: true },
+  fireStressSolitudeTolerance: { label: "孤独耐性", min: 1, max: 10, unit: "", integer: true },
+  fireStressTargetAge: { label: "FIRE希望年齢", min: 1, max: 100, unit: "歳", integer: true },
   currentAge: { label: "\u73fe\u5728\u306e\u5e74\u9f62", min: 0, max: 100, unit: "\u6b73", integer: true },
   retirementAge: { label: "\u9000\u8077\u4e88\u5b9a\u5e74\u9f62", min: 1, max: 100, unit: "\u6b73", integer: true },
   retirementSavings: { label: "\u73fe\u5728\u306e\u8caf\u84c4\u984d", min: 0, max: 10000000000, unit: "\u5186", integer: false },
@@ -8852,6 +9016,102 @@ function renderFireRate() {
   setText("fireRateRelatedTools", relatedGuide);
 }
 
+function renderFireStress() {
+  const values = {
+    fireStressAge: getFieldValue("fireStressAge"),
+    fireStressAssets: getFieldValue("fireStressAssets"),
+    fireStressMonthlyCost: getFieldValue("fireStressMonthlyCost"),
+    fireStressSideIncome: getFieldValue("fireStressSideIncome"),
+    fireStressDividendIncome: getFieldValue("fireStressDividendIncome"),
+    fireStressWorkStress: getFieldValue("fireStressWorkStress"),
+    fireStressSolitudeTolerance: getFieldValue("fireStressSolitudeTolerance"),
+    fireStressTargetAge: getFieldValue("fireStressTargetAge"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.fireStressAge.valid && values.fireStressTargetAge.valid && values.fireStressTargetAge.value <= values.fireStressAge.value) {
+    const input = document.querySelector("#fireStressTargetAge");
+    const error = document.querySelector("#fireStressTargetAgeError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "FIRE希望年齢は現在年齢より大きくしてください。";
+    hasError = true;
+  }
+
+  document.querySelector("#fireStressNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("fireStressScore", "入力エラー");
+    setText("fireStressIncomeRisk", "入力内容を確認してください");
+    setText("fireStressSolitudeRisk", "入力内容を確認してください");
+    setText("fireStressSatisfaction", "入力内容を確認してください");
+    setText("fireStressImprovement", "入力内容を確認してください");
+    setText("fireStressSideFireCompare", "入力内容を確認してください");
+    setText("fireStressRelatedTools", "FIRE達成率、サイドFIRE、配当生活年数");
+    return;
+  }
+
+  const age = values.fireStressAge.value;
+  const targetAge = values.fireStressTargetAge.value;
+  const currentAssets = values.fireStressAssets.value;
+  const monthlyCost = values.fireStressMonthlyCost.value;
+  const sideIncome = values.fireStressSideIncome.value;
+  const dividendIncome = values.fireStressDividendIncome.value;
+  const workStress = values.fireStressWorkStress.value;
+  const solitudeTolerance = values.fireStressSolitudeTolerance.value;
+  const hasHobby = document.querySelector("#fireStressHasHobby").checked;
+  const annualCost = monthlyCost * 12;
+  const annualPassiveIncome = (sideIncome + dividendIncome) * 12;
+  const incomeCoverRate = Math.min(annualPassiveIncome / Math.max(annualCost, 1), 1.5);
+  const assetCoverYears = currentAssets / Math.max(annualCost - annualPassiveIncome, annualCost * 0.1);
+  const yearsUntilFire = Math.max(targetAge - age, 0);
+  const preparationScore = Math.min(assetCoverYears / 25, 1) * 35;
+  const incomeScore = Math.min(incomeCoverRate, 1) * 25;
+  const stressReliefScore = Math.min(workStress / 10, 1) * 12;
+  const solitudeScore = Math.min(solitudeTolerance / 10, 1) * 16;
+  const hobbyScore = hasHobby ? 8 : 0;
+  const rushPenalty = yearsUntilFire <= 3 && assetCoverYears < 15 ? 12 : yearsUntilFire <= 5 && assetCoverYears < 10 ? 8 : 0;
+  const score = Math.max(0, Math.min(100, Math.round(preparationScore + incomeScore + stressReliefScore + solitudeScore + hobbyScore - rushPenalty)));
+  const incomeRisk = incomeCoverRate >= 1
+    ? "低め。副業収入と配当収入で生活費をかなり支えられる状態です"
+    : incomeCoverRate >= 0.5 || assetCoverYears >= 20
+      ? "中程度。資産はありますが、収入源をもう少し分散すると安心です"
+      : "高め。生活費に対して継続収入が少なく、退職後の不安が残りやすいです";
+  const solitudeRisk = solitudeTolerance >= 8 && hasHobby
+    ? "低め。趣味や活動があり、退職後の時間を使いやすい状態です"
+    : solitudeTolerance >= 5
+      ? "中程度。働く時間が減った後の人との接点を先に作ると安心です"
+      : "高め。完全FIREより、少し仕事や発信を残す形も検討したい状態です";
+  const satisfaction = score >= 75
+    ? "高め。お金、働き方、退職後の過ごし方をバランスよく準備できています"
+    : score >= 50
+      ? "普通。完全FIREの前に収入源か生活リズムをもう一段整えたい状態です"
+      : "低め。資産額だけで退職を決めると、収入不安や孤独感が出やすい状態です";
+  const improvement = score >= 75
+    ? "FIRE後の税金、取り崩し、社会との接点を具体化しましょう。"
+    : incomeCoverRate < 0.5
+      ? "副業収入、配当収入、固定費削減で生活費を支える収入源を増やしましょう。"
+      : solitudeTolerance < 5 || !hasHobby
+        ? "退職後も続けたい趣味、学び、発信、ゆるい仕事を先に作ると安心です。"
+        : "完全FIREだけでなく、サイドFIREで収入と自由時間のバランスを試しましょう。";
+  const sideFireCompare = incomeCoverRate >= 0.6 || workStress >= 8
+    ? "サイドFIRE向き。完全退職より、収入源と社会との接点を残す方が安定しやすいです"
+    : assetCoverYears >= 25 && solitudeTolerance >= 7
+      ? "完全FIREも検討圏内。生活費と孤独対策を最後に確認しましょう"
+      : "まずはサイドFIRE準備。生活費を下げ、配当や副業で収入の土台を作りましょう";
+  const relatedGuide = score >= 75
+    ? "配当生活年数とNISA取り崩しでFIRE後の継続性を確認"
+    : incomeCoverRate < 0.5
+      ? "サイドFIRE、配当生活年数、固定費削減で不安を下げる"
+      : "FIRE達成率、サイドFIRE、生活防衛資金で安全度を確認";
+
+  setText("fireStressScore", `${score}点`);
+  setText("fireStressIncomeRisk", incomeRisk);
+  setText("fireStressSolitudeRisk", solitudeRisk);
+  setText("fireStressSatisfaction", satisfaction);
+  setText("fireStressImprovement", improvement);
+  setText("fireStressSideFireCompare", sideFireCompare);
+  setText("fireStressRelatedTools", relatedGuide);
+}
+
 function calculateRequiredMonthly(currentAssets, currentMonthly, annualReturn, months, targetAssets) {
   const projected = calculateFutureAssets(currentAssets, currentMonthly, annualReturn, months);
   if (projected >= targetAssets || months <= 0) {
@@ -10116,7 +10376,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -10271,6 +10531,10 @@ document.querySelector("#fireRateForm").addEventListener("input", renderFireRate
 document.querySelector("#fireRateForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFireRate);
 });
+document.querySelector("#fireStressForm").addEventListener("input", renderFireStress);
+document.querySelector("#fireStressForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderFireStress);
+});
 document.querySelector("#retirementForm").addEventListener("input", renderRetirement);
 document.querySelector("#retirementForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderRetirement);
@@ -10372,6 +10636,7 @@ safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestm
 safeRender("iDeCo節税シミュレーター", renderIdeco);
 safeRender("FIRE達成シミュレーター", renderFire);
 safeRender("FIRE達成率シミュレーター", renderFireRate);
+safeRender("FIREストレス診断", renderFireStress);
 safeRender("老後資金シミュレーター", renderRetirement);
 safeRender("教育費シミュレーター", renderEducation);
 safeRender("学資保険比較シミュレーター", renderEducationInsurance);
