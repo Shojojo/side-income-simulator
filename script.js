@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 40種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 41種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -78,6 +78,10 @@ const routeSeo = {
   "side-fatigue": {
     title: "副業疲労度シミュレーター｜会社員のburnoutリスク診断【2026年版】",
     description: "長時間労働や急な対応がある会社員向けに、副業時間、睡眠、休日、AI活用から疲労度と継続リスクを診断します。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+  },
+  "side-continuity": {
+    title: "副業継続率診断｜会社員が本業後に続けられる可能性を確認【2026年版】",
+    description: "副業時間、本業勤務、睡眠、副業月収、疲労度、目標月収、AI活用から継続率を診断します。本業後の疲れや長時間労働も考慮し、無理なく続く副業設計に役立ちます。",
   },
   "side-risk": {
     title: "副業リスク診断｜会社員の税務・疲労・収益依存を確認【2026年版】",
@@ -427,6 +431,7 @@ document.body.innerHTML = `
           <a href="#hourly-improvement" data-route="hourly-improvement">副業時給改善</a>
           <a href="#side-time-management" data-route="side-time-management">副業時間管理</a>
           <a href="#side-fatigue" data-route="side-fatigue">副業疲労度</a>
+          <a href="#side-continuity" data-route="side-continuity">副業継続率診断</a>
           <a href="#side-risk" data-route="side-risk">副業リスク診断</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#incorporation" data-route="incorporation">副業法人化判断</a>
@@ -586,12 +591,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からシミュレーターを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で40個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で41個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">40個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">41個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="#side-income">副業収入を計算</a>
@@ -878,6 +883,18 @@ document.body.innerHTML = `
             <div class="tool-meta">
               <span>疲労度</span>
               <span>burnout</span>
+              <span>改善提案</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
+          <a class="tool-card" href="#side-continuity">
+            <p class="eyebrow">Continuity</p>
+            <h2>副業継続率診断</h2>
+            <p>副業時間、疲労度、収益、目標月収、AI活用から、本業後でも副業を続けられる可能性を診断します。</p>
+            <div class="tool-meta">
+              <span>継続率</span>
+              <span>挫折リスク</span>
               <span>改善提案</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
@@ -1298,6 +1315,7 @@ document.body.innerHTML = `
             <li><a href="#hourly-improvement"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="#side-time-management"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
             <li><a href="#side-fatigue"><strong>副業疲労度</strong><span>本業、副業、睡眠、休日からburnoutリスクを確認</span></a></li>
+            <li><a href="#side-continuity"><strong>副業継続率診断</strong><span>副業時間、疲労度、収益、AI活用から続けやすさを確認</span></a></li>
             <li><a href="#side-risk"><strong>副業リスク診断</strong><span>税務、burnout、収益依存のリスクをまとめて確認</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="#incorporation"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
@@ -2364,6 +2382,45 @@ document.body.innerHTML = `
             <a href="#fire">FIRE達成シミュレーター</a>
           </div>
         </section>
+      </section>
+
+
+      <section class="view" data-view="side-continuity" aria-label="副業継続率診断">
+        <section class="tool-heading">
+          <h2>副業継続率診断</h2>
+          <p>副業時間、本業勤務時間、睡眠、収益、疲労度、AI活用から、本業後でも副業を続けられる可能性を診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="副業継続率の診断">
+          <form class="input-panel" id="sideContinuityForm">
+            <div class="field"><label for="continuitySideHours">副業時間 <span class="unit">時間 / 週</span></label><input id="continuitySideHours" name="continuitySideHours" type="number" inputmode="decimal" min="0" max="168" step="0.5" value="10" required aria-describedby="continuitySideHoursError"><p class="error" id="continuitySideHoursError"></p></div>
+            <div class="field"><label for="continuityMainJobHours">本業勤務時間 <span class="unit">時間 / 平日</span></label><input id="continuityMainJobHours" name="continuityMainJobHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="9" required aria-describedby="continuityMainJobHoursError"><p class="error" id="continuityMainJobHoursError"></p></div>
+            <div class="field"><label for="continuitySleepHours">睡眠時間 <span class="unit">時間 / 日</span></label><input id="continuitySleepHours" name="continuitySleepHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="6.5" required aria-describedby="continuitySleepHoursError"><p class="error" id="continuitySleepHoursError"></p></div>
+            <div class="field"><label for="continuityIncome">副業月収 <span class="unit">円</span></label><input id="continuityIncome" name="continuityIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="1000" value="50000" required aria-describedby="continuityIncomeError"><p class="error" id="continuityIncomeError"></p></div>
+            <div class="field"><label for="continuityFatigueLevel">疲労度 <span class="unit">1〜10</span></label><input id="continuityFatigueLevel" name="continuityFatigueLevel" type="number" inputmode="numeric" min="1" max="10" step="1" value="6" required aria-describedby="continuityFatigueLevelError"><p class="error" id="continuityFatigueLevelError"></p></div>
+            <div class="field"><label for="continuityTargetIncome">目標月収 <span class="unit">円</span></label><input id="continuityTargetIncome" name="continuityTargetIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="1000" value="100000" required aria-describedby="continuityTargetIncomeError"><p class="error" id="continuityTargetIncomeError"></p></div>
+            <label class="check-field" for="continuityAiUse"><input id="continuityAiUse" name="continuityAiUse" type="checkbox" checked><span>AIを活用している</span></label>
+            <div class="actions"><button type="reset">リセット</button></div>
+          </form>
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result"><p class="eyebrow">副業継続率スコア</p><p class="amount" id="continuityScore">0%</p></div>
+            <p class="notice" id="sideContinuityNotice">入力を確認してください。この診断は医療的な判断ではなく、副業を続けるための生活設計の目安です。</p>
+            <div class="result-grid">
+              <div class="metric"><strong>挫折リスク</strong><span class="accent-amber text-metric" id="continuityDropoutRisk">未計算</span><small>時間、睡眠、疲労、収益ギャップから判定</small></div>
+              <div class="metric"><strong>改善ポイント</strong><span class="accent-green text-metric" id="continuityImprovement">未計算</span><small>最初に見直したい項目</small></div>
+              <div class="metric"><strong>AI活用による改善効果</strong><span class="accent-blue text-metric" id="continuityAiEffect">未計算</span><small>作業時間削減による継続率改善</small></div>
+              <div class="metric"><strong>収益と目標の距離</strong><span class="accent-green text-metric" id="continuityIncomeGap">未計算</span><small>目標月収とのギャップ</small></div>
+              <div class="metric"><strong>おすすめ関連ツール</strong><span class="accent-blue text-metric" id="continuityRelatedTools">未計算</span><small>次に確認したいシミュレーター</small></div>
+            </div>
+          </section>
+        </section>
+        <section class="faq-panel" aria-label="副業継続率診断FAQ"><h3>FAQ</h3><div class="faq-list">
+          <details><summary>副業継続率スコアは何を表していますか？</summary><p>副業時間、本業勤務時間、睡眠時間、疲労度、収益と目標の差を合わせた簡易スコアです。高いほど続けやすい目安ですが、体調や家庭事情も含めて判断してください。</p></details>
+          <details><summary>疲労度はどう入力すればいいですか？</summary><p>1がかなり余裕、10が限界に近い状態として入力してください。長時間労働や急な欠勤対応が多い時期は、少し高めに入れると現実に近づきます。</p></details>
+          <details><summary>AI活用を入れると何が変わりますか？</summary><p>調査、下書き、要約、資料作成などで作業時間が約20%軽くなる前提で、継続率を少し改善して表示します。</p></details>
+          <details><summary>スコアが低い場合は副業をやめるべきですか？</summary><p>すぐにやめる判断ではなく、副業時間、睡眠、目標月収、AI活用のどこを見直すべきかを確認するためのサインです。</p></details>
+        </div></section>
+        <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>継続率を確認したら、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="#side-fatigue">副業疲労度シミュレーター</a><a href="#side-time-management">副業時間管理シミュレーター</a><a href="#ai-efficiency">AI副業効率化シミュレーター</a><a href="#hourly-improvement">副業時給改善シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-risk" aria-label="副業リスク診断">
@@ -6375,6 +6432,7 @@ const routeExperienceProfiles = {
   "ai-profit-max": { title: "AI副業利益最大化シミュレーター", kind: "ai", reason: "AIを副業に入れるなら、時短だけで終わらせず、利益率、時給、目標月収までの距離まで見たいと感じて作りました。本業後の限られた時間では、浮いた時間をどの作業に回すかで収益の伸び方が変わります。", use: "AI導入後の利益額とROIを見て、ツール費用を増やす価値があるか判断してください。利益改善が小さい場合は、調査、下書き、テンプレ化など低リスクな作業から試し、浮いた時間を営業や高単価作業へ回す設計にしましょう。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "side-time-management": { title: "副業時間管理シミュレーター", kind: "ai", reason: "副業は収入目標より先に、続けられる時間を確認する必要があります。本業、通勤、睡眠、家事を引いた残り時間を見ないまま予定を詰めると、数週間で苦しくなります。", use: "副業可能時間が少ない場合は、毎日やる前提ではなく、週末にまとめる、AIで下準備を短縮する、単価の高い作業へ絞るなどの改善に使ってください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   "side-fatigue": { title: "副業疲労度シミュレーター", kind: "ai", reason: "副業は収入を増やす手段ですが、睡眠や休日を削り続けると長く続きません。管理職として急な欠勤対応や夜間対応を経験していると、本業後の疲労を無視した副業計画は崩れやすいと感じます。", use: "疲労度が高い場合は、副業時間を増やすより、AI活用、作業日の固定、睡眠時間の確保を優先してください。FIREを目指す場合も、短期の作業量より長期で続けられる設計が大切です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "side-continuity": { title: "副業継続率診断", kind: "ai", reason: "副業は始めるより続ける方が難しいです。本業後の疲労、睡眠、収益と目標の差をまとめて見て、無理な計画になっていないか確認するために作りました。", use: "スコアが低い場合は、作業時間を増やすより、睡眠、AI活用、目標月収の分割を優先してください。継続できる形に戻すことが、結果的に収益とFIREへの近道になります。", articles: [["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"]] },
   "side-risk": { title: "副業リスク診断", kind: "side", reason: "副業は収入が増えるほど、税務、疲労、収益依存のリスクも見えにくくなります。本業後に限られた時間で進める会社員ほど、稼ぐ前に崩れやすいポイントを早めに確認しておきたいと考えて作りました。", use: "スコアが高い項目から順番に見直してください。税務リスクが高ければ帳簿と申告準備、burnoutリスクが高ければ睡眠と作業時間、収益依存が高ければ生活防衛資金と利益率改善を優先すると現実的です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   "hourly-improvement": { title: "副業時給改善シミュレーター", kind: "ai", reason: "副業は売上だけを見ると順調に見えても、作業時間と経費を入れると時給が低いことがあります。限られた時間で副業を続ける会社員ほど、時給換算での改善が大切です。", use: "目標時給に届かない場合は、AIで時間を減らす、外注を使う、広告費を整理する、低単価案件を減らすなど、改善ポイントを一つずつ試してください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"]] },
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
@@ -6415,6 +6473,7 @@ const relatedToolGroups = {
     ["副業手取り計算シミュレーター", "index.html#take-home"],
     ["副業利益率シミュレーター", "index.html#side-profit-margin"],
     ["副業時間管理シミュレーター", "index.html#side-time-management"],
+    ["副業継続率診断", "index.html#side-continuity"],
     ["副業リスク診断", "index.html#side-risk"],
   ],
   ai: [
@@ -6424,6 +6483,7 @@ const relatedToolGroups = {
     ["AI副業利益最大化シミュレーター", "index.html#ai-profit-max"],
     ["副業時給改善シミュレーター", "index.html#hourly-improvement"],
     ["副業時間管理シミュレーター", "index.html#side-time-management"],
+    ["副業継続率診断", "index.html#side-continuity"],
     ["副業疲労度シミュレーター", "index.html#side-fatigue"],
   ],
   tax: [
@@ -6902,6 +6962,12 @@ const fieldRules = {
   fatigueHolidayDays: { label: "休日数", min: 0, max: 7, unit: "\u65e5", integer: false },
   fatigueExerciseHours: { label: "運動時間", min: 0, max: 40, unit: "\u6642\u9593", integer: false },
   fatigueStressLevel: { label: "ストレス度", min: 1, max: 10, unit: "", integer: true },
+  continuitySideHours: { label: "副業時間", min: 0, max: 168, unit: "時間", integer: false },
+  continuityMainJobHours: { label: "本業勤務時間", min: 0, max: 24, unit: "時間", integer: false },
+  continuitySleepHours: { label: "睡眠時間", min: 0, max: 24, unit: "時間", integer: false },
+  continuityIncome: { label: "副業月収", min: 0, max: 1000000000, unit: "円", integer: false },
+  continuityFatigueLevel: { label: "疲労度", min: 1, max: 10, unit: "", integer: true },
+  continuityTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "円", integer: false },
   sideRiskHours: { label: "副業時間", min: 0, max: 168, unit: "\u6642\u9593", integer: false },
   sideRiskMainJobHours: { label: "本業勤務時間", min: 0, max: 24, unit: "\u6642\u9593", integer: false },
   sideRiskIncome: { label: "副業収入", min: 0, max: 1000000000, unit: "\u5186", integer: false },
@@ -7280,6 +7346,66 @@ function renderSideFatigue() {
   setText("fatigueAiEffect", aiEffect);
   setText("fatigueTimeManagementGuide", timeGuide);
   setText("fatigueFireImpact", fireImpact);
+}
+
+
+function renderSideContinuity() {
+  const values = {
+    continuitySideHours: getFieldValue("continuitySideHours"),
+    continuityMainJobHours: getFieldValue("continuityMainJobHours"),
+    continuitySleepHours: getFieldValue("continuitySleepHours"),
+    continuityIncome: getFieldValue("continuityIncome"),
+    continuityFatigueLevel: getFieldValue("continuityFatigueLevel"),
+    continuityTargetIncome: getFieldValue("continuityTargetIncome"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+  const fixedDaily = values.continuityMainJobHours.valid && values.continuitySleepHours.valid ? values.continuityMainJobHours.value + values.continuitySleepHours.value : 0;
+  if (!hasError && fixedDaily > 24) {
+    document.querySelector("#continuityMainJobHoursError").textContent = "本業勤務時間と睡眠時間の合計が24時間を超えています。";
+    document.querySelector("#continuityMainJobHours").setAttribute("aria-invalid", "true");
+    hasError = true;
+  }
+  document.querySelector("#sideContinuityNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("continuityScore", "入力エラー");
+    setText("continuityDropoutRisk", "入力エラー");
+    setText("continuityImprovement", "入力エラー");
+    setText("continuityAiEffect", "入力エラー");
+    setText("continuityIncomeGap", "入力エラー");
+    setText("continuityRelatedTools", "入力エラー");
+    return;
+  }
+  const sideHours = values.continuitySideHours.value;
+  const mainJobHours = values.continuityMainJobHours.value;
+  const sleepHours = values.continuitySleepHours.value;
+  const monthlyIncome = values.continuityIncome.value;
+  const fatigueLevel = values.continuityFatigueLevel.value;
+  const targetIncome = values.continuityTargetIncome.value;
+  const aiUse = document.querySelector("#continuityAiUse").checked;
+  const incomeRate = targetIncome > 0 ? Math.min(monthlyIncome / targetIncome, 1.4) : 1;
+  const aiSavedHours = aiUse ? sideHours * 0.2 : 0;
+  const effectiveSideHours = Math.max(sideHours - aiSavedHours, 0);
+  let score = 72;
+  score += Math.min(incomeRate, 1) * 18;
+  score += aiUse ? 6 : 0;
+  score -= Math.max(effectiveSideHours - 10, 0) * 1.6;
+  score -= Math.max(mainJobHours - 9, 0) * 4;
+  score -= Math.max(7 - sleepHours, 0) * 9;
+  score -= Math.max(fatigueLevel - 5, 0) * 6;
+  score -= incomeRate < 0.5 ? 8 : 0;
+  score = Math.max(0, Math.min(100, Math.round(score)));
+  const incomeGap = Math.max(targetIncome - monthlyIncome, 0);
+  const dropoutRisk = score >= 80 ? "低め。今のペースなら継続しやすい目安です" : score >= 60 ? "中程度。繁忙期は作業量を落とす前提で続けましょう" : score >= 40 ? "高め。睡眠と副業時間の見直しを優先してください" : "かなり高め。目標を下げ、休息と作業設計を立て直す段階です";
+  const improvement = sleepHours < 6.5 ? "まず睡眠を30分増やし、副業を毎日固定にしすぎないことが優先です" : fatigueLevel >= 8 ? "疲労度が高いため、案件数や納期、連絡頻度を減らしましょう" : effectiveSideHours > 14 ? "副業時間が多めです。AI活用や単価改善で作業時間を圧縮しましょう" : incomeRate < 0.5 ? "目標月収との差が大きめです。短期目標を小さく分けて挫折を防ぎましょう" : "現状は継続しやすい範囲です。収益より生活リズムを崩さない運用を続けましょう";
+  const aiEffect = aiUse ? "AI活用で週" + aiSavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 }) + "時間ほど負荷を下げる想定です" : "AI未活用です。調査、下書き、要約から使うと継続負荷を下げやすくなります";
+  const incomeGapText = incomeGap === 0 ? "目標月収に到達しています。現在の副業月収は" + yen.format(monthlyIncome) + "です" : "目標まであと" + yen.format(incomeGap) + "です。焦らず小さな目標に分けましょう";
+  const relatedTools = fatigueLevel >= 7 ? "副業疲労度シミュレーターでburnoutリスクを確認しましょう" : effectiveSideHours >= 12 ? "副業時間管理シミュレーターで作業配分を見直しましょう" : "AI副業効率化と副業時給改善で、短時間でも伸びる形を確認しましょう";
+  setText("continuityScore", score + "%");
+  setText("continuityDropoutRisk", dropoutRisk);
+  setText("continuityImprovement", improvement);
+  setText("continuityAiEffect", aiEffect);
+  setText("continuityIncomeGap", incomeGapText);
+  setText("continuityRelatedTools", relatedTools);
 }
 
 function renderSideRisk() {
@@ -9990,7 +10116,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -10080,6 +10206,10 @@ document.querySelector("#sideTimeManagementForm").addEventListener("reset", () =
 document.querySelector("#sideFatigueForm").addEventListener("input", renderSideFatigue);
 document.querySelector("#sideFatigueForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideFatigue);
+});
+document.querySelector("#sideContinuityForm").addEventListener("input", renderSideContinuity);
+document.querySelector("#sideContinuityForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideContinuity);
 });
 document.querySelector("#sideRiskForm").addEventListener("input", renderSideRisk);
 document.querySelector("#sideRiskForm").addEventListener("reset", () => {
@@ -10226,6 +10356,7 @@ safeRender("AI外注費削減シミュレーター", renderAiOutsourcing);
 safeRender("AI副業利益最大化シミュレーター", renderAiProfitMax);
 safeRender("副業時給改善シミュレーター", renderHourlyImprovement);
 safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
+safeRender("副業継続率診断", renderSideContinuity);
 safeRender("副業リスク診断", renderSideRisk);
 safeRender("副業利益率シミュレーター", renderSideProfitMargin);
 safeRender("副業法人化判断シミュレーター", renderIncorporation);
