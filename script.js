@@ -179,6 +179,10 @@ const routeSeo = {
     title: "高配当株比較シミュレーター｜配当収入とETF比較を確認【2026年版】",
     description: "複数の高配当株を比較し、配当収入、資産成長、新NISA利用、FIRE達成への影響を整理できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
   },
+  "dividend-mental": {
+    title: "配当メンタル安定度診断｜高配当投資を続ける精神安定度を確認【2026年版】",
+    description: "現在資産、高配当株比率、生活費、配当収入、投資経験、暴落耐性、現金比率から配当投資を続ける精神安定度を診断します。FIRE前後の配当依存リスクも確認できます。",
+  },
   "dividend-reinvestment": {
     title: "配当再投資シミュレーター｜会社員の複利とFIRE効果を確認【2026年版】",
     description: "配当を再投資した場合の最終資産、累計配当、複利効果を試算し、FIRE実践に向けた投資設計を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
@@ -430,7 +434,7 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
-        <p class="article-meta">最終更新日：2026年6月15日</p>
+        <p class="article-meta">最終更新日：2026年6月16日</p>
         <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
         <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
           <a href="#top" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -462,6 +466,7 @@ document.body.innerHTML = `
           <a href="#dividend" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-etf" data-route="dividend-etf">配当ETF比較</a>
           <a href="#dividend-stock" data-route="dividend-stock">高配当株比較</a>
+          <a href="#dividend-mental" data-route="dividend-mental">配当メンタル</a>
           <a href="#dividend-reinvestment" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#dividend-life" data-route="dividend-life">配当生活達成</a>
           <a href="#dividend-life-years" data-route="dividend-life-years">配当生活年数</a>
@@ -1221,6 +1226,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#dividend-mental">
+            <p class="eyebrow">Dividend Mental</p>
+            <h2>配当メンタル安定度診断</h2>
+            <p>現在資産、高配当株比率、生活費、配当収入、暴落耐性、現金比率から配当投資を続ける精神安定度を診断します。</p>
+            <div class="tool-meta">
+              <span>安定度</span>
+              <span>暴落耐性</span>
+              <span>依存リスク</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#dividend-reinvestment">
             <p class="eyebrow">Reinvest</p>
             <h2>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1384,6 +1401,7 @@ document.body.innerHTML = `
             <li><a href="#dividend"><strong>&#x914d;&#x5f53;&#x91d1;</strong><span>&#x5e74;&#x9593;&#x914d;&#x5f53;&#x91d1;&#x3068;&#x6708;&#x5e73;&#x5747;&#x914d;&#x5f53;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-etf"><strong>配当ETF比較</strong><span>複数ETFの配当収入と資産成長を比較</span></a></li>
             <li><a href="#dividend-stock"><strong>高配当株比較</strong><span>複数銘柄の配当収入、資産成長、ETFとの違いを比較</span></a></li>
+            <li><a href="#dividend-mental"><strong>配当メンタル安定度診断</strong><span>配当投資を続ける精神安定度と依存リスクを確認</span></a></li>
             <li><a href="#dividend-reinvestment"><strong>&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</strong><span>&#x914d;&#x5f53;&#x3092;&#x518d;&#x6295;&#x8cc7;&#x3057;&#x305f;&#x5834;&#x5408;&#x306e;&#x8cc7;&#x7523;&#x6210;&#x9577;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#dividend-life"><strong>配当生活達成</strong><span>生活費を配当収入だけでまかなう必要資産を確認</span></a></li>
             <li><a href="#dividend-life-years"><strong>配当生活年数</strong><span>現在資産と生活費から配当生活の継続年数を確認</span></a></li>
@@ -4426,6 +4444,7 @@ document.body.innerHTML = `
           <div class="related-links">
             <a href="#fire-rate">FIRE達成率シミュレーター</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
+            <a href="#dividend-mental">配当メンタル安定度診断</a>
             <a href="#dividend-life-years">配当生活年数シミュレーター</a>
           </div>
         </section>
@@ -5613,6 +5632,7 @@ document.body.innerHTML = `
           <div class="related-links">
             <a href="#dividend">配当金シミュレーター</a>
             <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
+            <a href="#dividend-mental">配当メンタル安定度診断</a>
             <a href="#nisa">新NISAシミュレーター</a>
           </div>
         </section>
@@ -5751,10 +5771,53 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#dividend-etf">配当ETF比較シミュレーター</a>
+            <a href="#dividend-mental">配当メンタル安定度診断</a>
             <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
             <a href="#nisa">新NISAシミュレーター</a>
           </div>
         </section>
+      </section>
+
+      <section class="view" data-view="dividend-mental" aria-label="配当メンタル安定度診断">
+        <section class="tool-heading">
+          <h2>配当メンタル安定度診断</h2>
+          <p>現在資産、高配当株比率、毎月生活費、配当収入、投資経験、暴落耐性、現金比率から、配当投資を続けられる精神安定度を診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="配当メンタル安定度の診断">
+          <form class="input-panel" id="dividendMentalForm">
+            <div class="field"><label for="dividendMentalAssets">現在資産 <span class="unit">円</span></label><input id="dividendMentalAssets" name="dividendMentalAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="8000000" required aria-describedby="dividendMentalAssetsError"><p class="error" id="dividendMentalAssetsError"></p></div>
+            <div class="field"><label for="dividendMentalHighDividendRatio">高配当株比率 <span class="unit">%</span></label><input id="dividendMentalHighDividendRatio" name="dividendMentalHighDividendRatio" type="number" inputmode="decimal" min="0" max="100" step="1" value="45" required aria-describedby="dividendMentalHighDividendRatioError"><p class="error" id="dividendMentalHighDividendRatioError"></p></div>
+            <div class="field"><label for="dividendMentalMonthlyCost">毎月生活費 <span class="unit">円 / 月</span></label><input id="dividendMentalMonthlyCost" name="dividendMentalMonthlyCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="250000" required aria-describedby="dividendMentalMonthlyCostError"><p class="error" id="dividendMentalMonthlyCostError"></p></div>
+            <div class="field"><label for="dividendMentalIncome">配当収入 <span class="unit">円 / 月</span></label><input id="dividendMentalIncome" name="dividendMentalIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="40000" required aria-describedby="dividendMentalIncomeError"><p class="error" id="dividendMentalIncomeError"></p></div>
+            <div class="field"><label for="dividendMentalExperience">投資経験年数 <span class="unit">年</span></label><input id="dividendMentalExperience" name="dividendMentalExperience" type="number" inputmode="decimal" min="0" max="80" step="0.5" value="4" required aria-describedby="dividendMentalExperienceError"><p class="error" id="dividendMentalExperienceError"></p></div>
+            <div class="field"><label for="dividendMentalCrashTolerance">暴落耐性 <span class="unit">1〜10</span></label><input id="dividendMentalCrashTolerance" name="dividendMentalCrashTolerance" type="number" inputmode="numeric" min="1" max="10" step="1" value="6" required aria-describedby="dividendMentalCrashToleranceError"><p class="error" id="dividendMentalCrashToleranceError"></p></div>
+            <label class="check-field" for="dividendMentalSideIncome"><input id="dividendMentalSideIncome" name="dividendMentalSideIncome" type="checkbox" checked><span>副業収入がある</span></label>
+            <div class="field"><label for="dividendMentalCashRatio">現金比率 <span class="unit">%</span></label><input id="dividendMentalCashRatio" name="dividendMentalCashRatio" type="number" inputmode="decimal" min="0" max="100" step="1" value="25" required aria-describedby="dividendMentalCashRatioError"><p class="error" id="dividendMentalCashRatioError"></p></div>
+            <label class="check-field" for="dividendMentalFire"><input id="dividendMentalFire" name="dividendMentalFire" type="checkbox" checked><span>FIREを希望している</span></label>
+            <div class="actions"><button type="reset">リセット</button></div>
+          </form>
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result"><p class="eyebrow">メンタル安定度スコア</p><p class="amount" id="dividendMentalScore">0 / 100</p></div>
+            <p class="notice" id="dividendMentalNotice">入力を確認してください。この診断は投資助言ではなく、配当投資を続けるためのリスク整理の目安です。</p>
+            <div class="result-grid">
+              <div class="metric"><strong>暴落耐性</strong><span class="accent-blue text-metric" id="dividendMentalCrashResult">未計算</span><small>下落時に売らずに続けやすいか</small></div>
+              <div class="metric"><strong>配当依存リスク</strong><span class="accent-amber text-metric" id="dividendMentalDependenceRisk">未計算</span><small>生活費に対する配当収入の依存度</small></div>
+              <div class="metric"><strong>FIRE継続安定性</strong><span class="accent-green text-metric" id="dividendMentalFireStability">未計算</span><small>FIRE後も配当投資を続けやすいか</small></div>
+              <div class="metric"><strong>おすすめ改善ポイント</strong><span class="accent-green text-metric" id="dividendMentalImprovement">未計算</span><small>最初に整えたい行動</small></div>
+              <div class="metric"><strong>おすすめ資産配分</strong><span class="accent-blue text-metric" id="dividendMentalAllocation">未計算</span><small>現金、高配当株、ETFのバランス目安</small></div>
+              <div class="metric"><strong>関連ツール導線</strong><span class="accent-amber text-metric" id="dividendMentalRelatedTools">未計算</span><small>次に確認したいシミュレーター</small></div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="配当メンタル安定度診断FAQ"><h3>FAQ</h3><div class="faq-list">
+          <details><summary>メンタル安定度スコアは何を表していますか？</summary><p>高配当株比率、現金比率、生活費に対する配当依存度、投資経験、暴落耐性、副業収入の有無を合わせて、配当投資を続けやすい状態かを簡易的に見ています。</p></details>
+          <details><summary>高配当株比率は高いほど良いですか？</summary><p>配当収入は増えやすくなりますが、個別株や高配当銘柄に偏りすぎると減配や株価下落への不安が大きくなります。ETFや現金も含めた分散が大切です。</p></details>
+          <details><summary>現金比率はどれくらい必要ですか？</summary><p>生活費の6か月から1年分を目安に確保すると、暴落時に焦って売るリスクを下げやすくなります。FIREを目指す場合は、生活防衛資金を厚めに見ておくと安心です。</p></details>
+          <details><summary>配当収入だけで生活できれば安心ですか？</summary><p>配当は減配や無配になる可能性があります。配当だけに依存せず、副業収入、現金、インデックス投資、生活費削減を組み合わせると精神的に続けやすくなります。</p></details>
+        </div></section>
+        <section class="article-panel" aria-label="配当メンタル関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>配当投資の安心感は、銘柄比較、ETF比較、FIRE後のストレス確認を合わせて見ると判断しやすくなります。</p></section><div class="related-links"><a href="#dividend-stock">高配当株比較シミュレーター</a><a href="#dividend-etf">配当ETF比較シミュレーター</a><a href="#fire-stress">FIREストレス診断</a><a href="#dividend-life-years">配当生活年数シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="dividend-life" aria-label="配当生活達成シミュレーター">
@@ -6604,6 +6667,7 @@ document.body.innerHTML = `
           <a href="#ideco">iDeCo&#x7bc0;&#x7a0e;</a>
           <a href="#dividend">&#x914d;&#x5f53;&#x91d1;</a>
           <a href="#dividend-stock">高配当株比較</a>
+          <a href="#dividend-mental">配当メンタル</a>
           <a href="#dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
           <a href="#dividend-life">配当生活達成</a>
           <a href="#dividend-life-years">配当生活年数</a>
@@ -6629,13 +6693,21 @@ document.body.innerHTML = `
   </main>`;
 
 function insertLastUpdatedDates() {
+  const routeDates = {
+    "dividend-mental": "2026年6月16日",
+    "dividend-stock": "2026年6月16日",
+    "dividend-etf": "2026年6月16日",
+    "fire-stress": "2026年6月16日",
+  };
   document.querySelectorAll(".view > .tool-heading").forEach((heading) => {
     if (heading.querySelector(".article-meta")) {
       return;
     }
     const title = heading.querySelector(":scope > h2");
+    const view = heading.closest("[data-view]");
+    const date = routeDates[view?.dataset.view] || "2026年6月14日";
     if (title) {
-      title.insertAdjacentHTML("afterend", '<p class="article-meta">最終更新日：2026年6月14日</p>');
+      title.insertAdjacentHTML("afterend", `<p class="article-meta">最終更新日：${date}</p>`);
     }
   });
 }
@@ -6823,6 +6895,7 @@ const routeExperienceProfiles = {
   dividend: { title: "配当金シミュレーター", kind: "investment", reason: "配当金は、資産形成の途中でもキャッシュフローを感じやすい投資です。ただし利回りだけを見ると、減配や価格下落のリスクを見落としがちです。", use: "年間配当金と月平均配当金を見て、生活費の何割を補えるか確認してください。再投資するか受け取るかで、資産成長と現金収入のバランスが変わります。", articles: [["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"]] },
   "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "dividend-stock": { title: "高配当株比較シミュレーター", kind: "investment", reason: "高配当株は配当利回りだけで選ぶと、減配や株価下落、銘柄集中のリスクを見落としやすいです。ETFと個別株の違いを数字で比べ、FIREに向けて配当収入と資産成長のバランスを確認するために作りました。", use: "年間配当金だけでなく、最終資産額、銘柄別比較、ETFとの比較を合わせて見てください。個別株に偏りすぎる場合は、配当ETFや新NISAの積立と組み合わせて分散するのが現実的です。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "dividend-mental": { title: "配当メンタル安定度診断", kind: "investment", reason: "配当投資は利回りだけでなく、暴落時に売らずに続けられるかが大切です。高配当株比率、現金比率、生活費、配当依存度をまとめて見て、精神的に続けやすい状態か確認するために作りました。", use: "スコアが低い場合は、高配当株を増やす前に現金比率と分散を整えてください。FIREを目指す場合ほど、配当だけに頼らず、副業収入や生活費削減も残すと安心感が上がります。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "dividend-reinvestment": { title: "配当再投資シミュレーター", kind: "investment", reason: "配当は受け取るだけでなく、再投資することで資産成長に回せます。短期の満足感と長期の複利効果を比べるために作りました。", use: "再投資による増加額を見て、今は配当を使う時期なのか、資産を増やす時期なのか判断してください。FIRE前は再投資、FIRE後は受け取りという使い分けも考えられます。", articles: [["配当生活達成シミュレーター", "index.html#dividend-life"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIREとは何か", "article-fire-basic.html"]] },
   "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
@@ -6876,6 +6949,7 @@ const relatedToolGroups = {
     ["iDeCo節税シミュレーター", "index.html#ideco"],
     ["配当金シミュレーター", "index.html#dividend"],
     ["高配当株比較シミュレーター", "index.html#dividend-stock"],
+    ["配当メンタル安定度診断", "index.html#dividend-mental"],
     ["配当生活年数シミュレーター", "index.html#dividend-life-years"],
     ["クレカ積立比較シミュレーター", "index.html#credit-card-investment"],
   ],
@@ -7480,6 +7554,13 @@ const fieldRules = {
   dividendStockYield: { label: "想定配当利回り", min: 0, max: 30, unit: "%", integer: false },
   dividendStockGrowth: { label: "想定株価成長率", min: -30, max: 30, unit: "%", integer: false },
   dividendStockYears: { label: "運用年数", min: 1, max: 100, unit: "\u5e74", integer: true },
+  dividendMentalAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  dividendMentalHighDividendRatio: { label: "高配当株比率", min: 0, max: 100, unit: "%", integer: false },
+  dividendMentalMonthlyCost: { label: "毎月生活費", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendMentalIncome: { label: "配当収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  dividendMentalExperience: { label: "投資経験年数", min: 0, max: 80, unit: "\u5e74", integer: false },
+  dividendMentalCrashTolerance: { label: "暴落耐性", min: 1, max: 10, unit: "", integer: true },
+  dividendMentalCashRatio: { label: "現金比率", min: 0, max: 100, unit: "%", integer: false },
   dividendLifeMonthlyCost: { label: "毎月生活費", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendLifeAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendLifeMonthly: { label: "毎月積立額", min: 0, max: 100000000, unit: "\u5186", integer: false },
@@ -9951,6 +10032,102 @@ function renderDividendStock() {
   setText("dividendStockEtfComparison", etfComparison);
 }
 
+function renderDividendMental() {
+  const values = {
+    dividendMentalAssets: getFieldValue("dividendMentalAssets"),
+    dividendMentalHighDividendRatio: getFieldValue("dividendMentalHighDividendRatio"),
+    dividendMentalMonthlyCost: getFieldValue("dividendMentalMonthlyCost"),
+    dividendMentalIncome: getFieldValue("dividendMentalIncome"),
+    dividendMentalExperience: getFieldValue("dividendMentalExperience"),
+    dividendMentalCrashTolerance: getFieldValue("dividendMentalCrashTolerance"),
+    dividendMentalCashRatio: getFieldValue("dividendMentalCashRatio"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#dividendMentalNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("dividendMentalScore", "入力エラー");
+    setText("dividendMentalCrashResult", "入力エラー");
+    setText("dividendMentalDependenceRisk", "入力エラー");
+    setText("dividendMentalFireStability", "入力エラー");
+    setText("dividendMentalImprovement", "入力エラー");
+    setText("dividendMentalAllocation", "入力エラー");
+    setText("dividendMentalRelatedTools", "入力エラー");
+    return;
+  }
+
+  const assets = values.dividendMentalAssets.value;
+  const highDividendRatio = values.dividendMentalHighDividendRatio.value;
+  const monthlyCost = values.dividendMentalMonthlyCost.value;
+  const dividendIncome = values.dividendMentalIncome.value;
+  const experience = values.dividendMentalExperience.value;
+  const crashTolerance = values.dividendMentalCrashTolerance.value;
+  const cashRatio = values.dividendMentalCashRatio.value;
+  const hasSideIncome = document.querySelector("#dividendMentalSideIncome").checked;
+  const wantsFire = document.querySelector("#dividendMentalFire").checked;
+  const annualCost = monthlyCost * 12;
+  const annualDividend = dividendIncome * 12;
+  const dividendCoverage = annualCost > 0 ? annualDividend / annualCost : 0;
+  const cashAmount = assets * (cashRatio / 100);
+  const cashMonths = monthlyCost > 0 ? cashAmount / monthlyCost : 999;
+  const concentrationPenalty = highDividendRatio > 70 ? 18 : highDividendRatio > 55 ? 10 : highDividendRatio < 15 ? 4 : 0;
+  const cashScore = cashMonths >= 12 ? 18 : cashMonths >= 6 ? 12 : cashMonths >= 3 ? 6 : -8;
+  const experienceScore = Math.min(experience, 10) * 1.6;
+  const crashScore = crashTolerance * 4.2;
+  const dependencePenalty = dividendCoverage > 0.8 ? 16 : dividendCoverage > 0.5 ? 9 : dividendCoverage < 0.1 ? 4 : 0;
+  const sideIncomeBonus = hasSideIncome ? 8 : 0;
+  const firePenalty = wantsFire && dividendCoverage > 0.6 && cashMonths < 12 ? 7 : 0;
+  let score = 42 + cashScore + experienceScore + crashScore + sideIncomeBonus - concentrationPenalty - dependencePenalty - firePenalty;
+  score = Math.max(0, Math.min(100, Math.round(score)));
+
+  const crashResult = crashTolerance >= 8 && cashMonths >= 6
+    ? "高め。現金余力があり、暴落時も売却を急ぎにくい状態です"
+    : crashTolerance >= 5
+      ? "中程度。暴落時に不安が強くなる前提で、現金とETF分散を厚めにしましょう"
+      : "低め。高配当株の比率を下げ、まず現金と分散ETFで値動きに慣れる段階です";
+  const dependenceRisk = dividendCoverage >= 0.8
+    ? "高め。生活費の多くを配当に頼るため、減配時の不安が大きくなりやすいです"
+    : dividendCoverage >= 0.4
+      ? "中程度。生活費の一部を配当で補えますが、副業や現金も残すと安定します"
+      : "低め。現時点では配当依存は小さく、資産形成期として続けやすい状態です";
+  const fireStability = !wantsFire
+    ? "FIRE希望なし。配当は生活補助として無理なく使いやすい状態です"
+    : score >= 75
+      ? "FIRE後も比較的安定しやすい目安です。現金と分散を維持しましょう"
+      : score >= 55
+        ? "サイドFIRE寄りが現実的です。配当だけでなく副業収入も残すと安定します"
+        : "完全FIRE前提では不安が残ります。生活費削減、現金比率、分散を先に整えましょう";
+  const improvement = cashMonths < 6
+    ? "まず生活費6か月分以上の現金を確保すると、暴落時に売らずに待ちやすくなります"
+    : highDividendRatio > 60
+      ? "高配当株比率が高めです。配当ETFやインデックス投資も組み合わせて集中を下げましょう"
+      : dividendCoverage > 0.7
+        ? "配当依存が高めです。副業収入や生活費削減も残して、減配時の逃げ道を作りましょう"
+        : crashTolerance <= 4
+          ? "暴落耐性が低めです。少額で値動きに慣れ、売買ルールを事前に決めましょう"
+          : "現状は続けやすい範囲です。銘柄分散と現金比率を崩さずに継続しましょう";
+  const allocation = score >= 75
+    ? "現金15〜25%、高配当株30〜45%、配当ETF・投信30〜50%を目安に分散を維持"
+    : cashMonths < 6
+      ? "現金比率を先に上げ、生活費6〜12か月分を確保してから高配当株を増やす目安"
+      : highDividendRatio > 60
+        ? "高配当株を40〜50%以下に抑え、配当ETFやインデックスで分散する目安"
+        : "現金20〜30%、高配当株25〜40%、ETF・投信30〜50%で無理なく続ける目安";
+  const relatedTools = highDividendRatio > 55
+    ? "高配当株比較と配当ETF比較で、個別株とETFの分散差を確認しましょう"
+    : wantsFire
+      ? "FIREストレス診断と配当生活年数シミュレーターで、FIRE後の不安も確認しましょう"
+      : "配当ETF比較と配当再投資シミュレーターで、収入と資産成長のバランスを確認しましょう";
+
+  setText("dividendMentalScore", `${score} / 100`);
+  setText("dividendMentalCrashResult", crashResult);
+  setText("dividendMentalDependenceRisk", dependenceRisk);
+  setText("dividendMentalFireStability", fireStability);
+  setText("dividendMentalImprovement", improvement);
+  setText("dividendMentalAllocation", allocation);
+  setText("dividendMentalRelatedTools", relatedTools);
+}
+
 function projectDividendLifeAssets(currentAssets, monthlyInvestment, annualReturn, dividendYield, months, reinvest) {
   const monthlyReturn = annualReturn / 100 / 12;
   const monthlyDividendYield = dividendYield / 100 / 12;
@@ -10791,7 +10968,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -10982,6 +11159,10 @@ document.querySelector("#dividendStockForm").addEventListener("input", renderDiv
 document.querySelector("#dividendStockForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendStock);
 });
+document.querySelector("#dividendMentalForm").addEventListener("input", renderDividendMental);
+document.querySelector("#dividendMentalForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderDividendMental);
+});
 document.querySelector("#dividendReinvestmentForm").addEventListener("input", renderDividendReinvestment);
 document.querySelector("#dividendReinvestmentForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderDividendReinvestment);
@@ -11068,6 +11249,7 @@ safeRender("学資保険比較シミュレーター", renderEducationInsurance);
 safeRender("配当金シミュレーター", renderDividend);
 safeRender("配当ETF比較シミュレーター", renderDividendEtf);
 safeRender("高配当株比較シミュレーター", renderDividendStock);
+safeRender("配当メンタル安定度診断", renderDividendMental);
 safeRender("配当再投資シミュレーター", renderDividendReinvestment);
 safeRender("配当生活達成シミュレーター", renderDividendLife);
 safeRender("配当生活年数シミュレーター", renderDividendLifeYears);
