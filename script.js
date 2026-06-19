@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 47種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 48種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -130,6 +130,10 @@ const routeSeo = {
   "income-tax": {
     title: "副業所得税シミュレーター｜会社員の確定申告前チェック【2026年版】",
     description: "副業売上、経費、控除、復興特別所得税から所得税を概算し、住民税や手取りへの影響も自然に確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+  },
+  "investment-risk": {
+    title: "投資リスク許容度診断｜会社員の資産配分と投資スタイルを確認【2026年版】",
+    description: "年齢、年収、総資産、投資経験、投資額、投資目的、暴落時の行動、副業収入、FIRE希望から、会社員に合う投資リスク許容度と資産配分を診断します。",
   },
   nisa: {
     title: "新NISA・積立投資シミュレーター｜会社員の長期資産形成【2026年版】",
@@ -468,6 +472,7 @@ document.body.innerHTML = `
           <a href="#employee-tax-saving" data-route="employee-tax-saving">会社員節税</a>
           <a href="#income-tax" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
+          <a href="#investment-risk" data-route="investment-risk">投資リスク診断</a>
           <a href="#nisa" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
           <a href="#nisa-fast" data-route="nisa-fast">新NISA最速積立</a>
           <a href="#nisa-withdrawal" data-route="nisa-withdrawal">NISA取り崩し</a>
@@ -1092,6 +1097,18 @@ document.body.innerHTML = `
             <h2>FIRE&#x7cfb;&#x30c4;&#x30fc;&#x30eb;</h2>
           </div>
           <div class="tool-grid">
+          <a class="tool-card" href="#investment-risk">
+            <p class="eyebrow">Risk Check</p>
+            <h2>投資リスク許容度診断</h2>
+            <p>年齢、資産状況、投資経験、投資目的、暴落時の行動から、会社員に合う投資スタイルと資産配分を診断します。</p>
+            <div class="tool-meta">
+              <span>リスク許容度</span>
+              <span>資産配分</span>
+              <span>FIRE適性</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#nisa">
             <p class="eyebrow">NISA</p>
             <h2>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1429,6 +1446,7 @@ document.body.innerHTML = `
             <li><a href="#income-tax"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#employee-tax-saving"><strong>会社員節税</strong><span>控除、iDeCo、ふるさと納税で節税可能額を確認</span></a></li>
             <li><a href="#resident-tax"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="#investment-risk"><strong>投資リスク許容度診断</strong><span>年齢、資産、経験、暴落耐性から投資スタイルを確認</span></a></li>
             <li><a href="#nisa"><strong>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</strong><span>&#x7a4d;&#x7acb;&#x306e;&#x5c06;&#x6765;&#x984d;&#x3068;&#x904b;&#x7528;&#x76ca;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#nisa-fast"><strong>新NISA最速積立</strong><span>毎月積立とボーナス積立で資産形成速度を確認</span></a></li>
             <li><a href="#nisa-withdrawal"><strong>NISA取り崩し</strong><span>老後に何年取り崩せるかと毎月使える額を確認</span></a></li>
@@ -4074,6 +4092,153 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="view" data-view="investment-risk" aria-label="投資リスク許容度診断">
+        <section class="tool-heading">
+          <h2>投資リスク許容度診断</h2>
+          <p>年齢、年収、総資産、投資経験年数、投資額、投資目的、暴落時の行動、FIRE希望、副業収入から、会社員に合う投資スタイルと資産配分を診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="投資リスク許容度の診断">
+          <form class="input-panel" id="investmentRiskForm">
+            <div class="field">
+              <label for="investmentRiskAge">年齢 <span class="unit">歳</span></label>
+              <input id="investmentRiskAge" name="investmentRiskAge" type="number" inputmode="numeric" min="18" max="100" step="1" value="31" required aria-describedby="investmentRiskAgeError">
+              <p class="error" id="investmentRiskAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="investmentRiskIncome">年収 <span class="unit">円</span></label>
+              <input id="investmentRiskIncome" name="investmentRiskIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="5000000" required aria-describedby="investmentRiskIncomeError">
+              <p class="error" id="investmentRiskIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="investmentRiskAssets">総資産 <span class="unit">円</span></label>
+              <input id="investmentRiskAssets" name="investmentRiskAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="3000000" required aria-describedby="investmentRiskAssetsError">
+              <p class="error" id="investmentRiskAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="investmentRiskExperience">投資経験年数 <span class="unit">年</span></label>
+              <input id="investmentRiskExperience" name="investmentRiskExperience" type="number" inputmode="decimal" min="0" max="80" step="0.5" value="3" required aria-describedby="investmentRiskExperienceError">
+              <p class="error" id="investmentRiskExperienceError"></p>
+            </div>
+            <div class="field">
+              <label for="investmentRiskAmount">投資額 <span class="unit">円</span></label>
+              <input id="investmentRiskAmount" name="investmentRiskAmount" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="1500000" required aria-describedby="investmentRiskAmountError">
+              <p class="error" id="investmentRiskAmountError"></p>
+            </div>
+            <div class="field">
+              <label for="investmentRiskPurpose">投資目的</label>
+              <select id="investmentRiskPurpose" name="investmentRiskPurpose">
+                <option value="growth">長期資産形成</option>
+                <option value="fire" selected>FIRE・経済的自由</option>
+                <option value="dividend">配当収入づくり</option>
+                <option value="retirement">老後資金</option>
+                <option value="short">短期利益</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="investmentRiskCrashAction">暴落時の行動</label>
+              <select id="investmentRiskCrashAction" name="investmentRiskCrashAction">
+                <option value="buy">追加投資する</option>
+                <option value="hold" selected>売らずに保有する</option>
+                <option value="partial">一部売却する</option>
+                <option value="sell">かなり不安で売却しそう</option>
+              </select>
+            </div>
+            <label class="check-field" for="investmentRiskFire">
+              <input id="investmentRiskFire" name="investmentRiskFire" type="checkbox" checked>
+              <span>FIREを目指している</span>
+            </label>
+            <label class="check-field" for="investmentRiskSideIncome">
+              <input id="investmentRiskSideIncome" name="investmentRiskSideIncome" type="checkbox" checked>
+              <span>副業収入がある</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">リスク許容度スコア</p>
+              <p class="amount" id="investmentRiskScore">0 / 100</p>
+            </div>
+            <p class="notice" id="investmentRiskNotice">入力を確認してください。この診断は投資助言ではなく、年齢・資産・経験・暴落耐性から投資スタイルを整理する簡易目安です。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>おすすめ資産配分</strong>
+                <span class="accent-green text-metric" id="investmentRiskAllocation">未計算</span>
+                <small>現金、インデックス、高配当、その他の目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ投資スタイル</strong>
+                <span class="accent-blue text-metric" id="investmentRiskStyle">未計算</span>
+                <small>積立、配当、分散、守りの比率</small>
+              </div>
+              <div class="metric">
+                <strong>高配当株向きか</strong>
+                <span class="accent-amber text-metric" id="investmentRiskDividendFit">未計算</span>
+                <small>配当収入と暴落耐性の相性</small>
+              </div>
+              <div class="metric">
+                <strong>インデックス投資向きか</strong>
+                <span class="accent-green text-metric" id="investmentRiskIndexFit">未計算</span>
+                <small>長期積立と分散投資の相性</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE適性</strong>
+                <span class="accent-blue text-metric" id="investmentRiskFireFit">未計算</span>
+                <small>FIRE目標と投資リスクのバランス</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-amber text-metric" id="investmentRiskImprovement">未計算</span>
+                <small>最初に整えたい行動</small>
+              </div>
+              <div class="metric">
+                <strong>関連ツール導線</strong>
+                <span class="accent-green text-metric" id="investmentRiskRelatedTools">高配当株、配当ETF、FIRE達成率</span>
+                <small>次に確認したいシミュレーター</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="投資リスク許容度診断FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>リスク許容度スコアが高いほど良いですか？</summary>
+              <p>高ければ良いというより、値動きに耐えられる範囲を知るための目安です。スコアが高くても生活防衛資金が少ない場合は、投資額を増やす前に現金を厚くしてください。</p>
+            </details>
+            <details>
+              <summary>高配当株とインデックス投資はどちらを選ぶべきですか？</summary>
+              <p>長期の資産形成を重視するならインデックス投資、配当収入による心理的な安心感を重視するなら高配当株や配当ETFも候補になります。どちらか一方ではなく、目的別に組み合わせるのが現実的です。</p>
+            </details>
+            <details>
+              <summary>暴落時の行動はどう入力すればいいですか？</summary>
+              <p>過去に大きな下落を経験していない場合は、少し保守的に入力してください。本業が忙しい時期や生活費不安があると、想像以上に売りたくなることがあります。</p>
+            </details>
+            <details>
+              <summary>FIREを目指すならリスクを高めるべきですか？</summary>
+              <p>FIREを急ぐほどリスクを上げたくなりますが、途中で売却してしまうと逆効果です。副業収入、固定費削減、積立継続を組み合わせ、続けられる範囲のリスクに抑えることが大切です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="投資リスク許容度関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>リスク許容度を確認したら、高配当株、配当ETF、FIRE達成率を合わせて見ると、投資スタイルを具体的な行動に落とし込みやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#dividend-stock">高配当株比較シミュレーター</a>
+            <a href="#dividend-etf">配当ETF比較シミュレーター</a>
+            <a href="#fire-rate">FIRE達成率シミュレーター</a>
+            <a href="#dividend-mental">配当メンタル安定度診断</a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="nisa" aria-label="&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
           <h2>&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -4633,6 +4798,7 @@ document.body.innerHTML = `
             <p>スコアだけで判断せず、FIRE達成年数、FIRE後のストレス、サイドFIRE、配当生活の必要資産も合わせて確認できます。</p>
           </section>
           <div class="related-links">
+            <a href="#investment-risk">投資リスク許容度診断</a>
             <a href="#fire">FIRE達成シミュレーター</a>
             <a href="#fire-stress">FIREストレス診断</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
@@ -5955,6 +6121,7 @@ document.body.innerHTML = `
             <p>配当ETFは、配当金、再投資、新NISAの非課税枠を合わせて見ると、収入重視か資産成長重視かを判断しやすくなります。</p>
           </section>
           <div class="related-links">
+            <a href="#investment-risk">投資リスク許容度診断</a>
             <a href="#dividend">配当金シミュレーター</a>
             <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
             <a href="#dividend-mental">配当メンタル安定度診断</a>
@@ -6095,6 +6262,7 @@ document.body.innerHTML = `
             <p>高配当株は、ETFとの違い、配当再投資、新NISAの非課税枠を合わせて見ると判断しやすくなります。</p>
           </section>
           <div class="related-links">
+            <a href="#investment-risk">投資リスク許容度診断</a>
             <a href="#dividend-etf">配当ETF比較シミュレーター</a>
             <a href="#dividend-mental">配当メンタル安定度診断</a>
             <a href="#dividend-reinvestment">配当再投資シミュレーター</a>
@@ -6987,6 +7155,7 @@ document.body.innerHTML = `
           <a href="#employee-tax-saving">会社員節税</a>
           <a href="#income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
+          <a href="#investment-risk">投資リスク診断</a>
           <a href="#nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
           <a href="#nisa-fast">新NISA最速積立</a>
           <a href="#nisa-withdrawal">NISA取り崩し</a>
@@ -7021,6 +7190,10 @@ document.body.innerHTML = `
 
 function insertLastUpdatedDates() {
   const routeDates = {
+    "investment-risk": "2026年6月19日",
+    "dividend-stock": "2026年6月19日",
+    "dividend-etf": "2026年6月19日",
+    "fire-rate": "2026年6月19日",
     "ai-time-reduction": "2026年6月16日",
     "side-safety": "2026年6月19日",
     "side-risk": "2026年6月19日",
@@ -7030,8 +7203,6 @@ function insertLastUpdatedDates() {
     "ai-efficiency": "2026年6月16日",
     "ai-roi": "2026年6月16日",
     "dividend-mental": "2026年6月16日",
-    "dividend-stock": "2026年6月16日",
-    "dividend-etf": "2026年6月16日",
     "fire-stress": "2026年6月16日",
   };
   document.querySelectorAll(".view > .tool-heading").forEach((heading) => {
@@ -7222,6 +7393,7 @@ const routeExperienceProfiles = {
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。会社員の場合は、所得税だけでなく住民税や会社規定との関係も見落とせません。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。会社員副業安全度診断で、普通徴収や確定申告準備も合わせて確認できます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
+  "investment-risk": { title: "投資リスク許容度診断", kind: "investment", reason: "投資は利回りだけで決めると、暴落時に続けられなくなることがあります。本業で急な対応や長時間労働があると、相場を見る余裕がない日もあるため、年齢、資産、経験、暴落時の行動を先に整理するために作りました。", use: "スコアが低い場合は投資額を増やすより、現金比率と少額積立を優先してください。スコアが高い場合も、高配当株、配当ETF、インデックス投資を分けて、FIRE目標に合う配分を確認しましょう。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   nisa: { title: "新NISAシミュレーター", kind: "investment", reason: "FIREを目指すうえで、新NISAは長期投資の中心にしやすい制度です。ただし、毎月いくら積み立てるかは収入や固定費によって変わります。", use: "将来資産額だけでなく、毎月積立額が家計に無理なく続くかを見てください。副業収入や固定費削減で増えた余力をNISAへ回すと、行動と資産形成がつながります。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIREとは何か", "article-fire-basic.html"]] },
@@ -7283,6 +7455,7 @@ const relatedToolGroups = {
     ["副業手取り計算シミュレーター", "index.html#take-home"],
   ],
   investment: [
+    ["投資リスク許容度診断", "index.html#investment-risk"],
     ["新NISAシミュレーター", "index.html#nisa"],
     ["新NISA最速積立シミュレーター", "index.html#nisa-fast"],
     ["iDeCo節税シミュレーター", "index.html#ideco"],
@@ -7889,6 +8062,11 @@ const fieldRules = {
   dividendMonthly: { label: "\u6bce\u6708\u8ffd\u52a0\u6295\u8cc7\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendYield: { label: "\u60f3\u5b9a\u914d\u5f53\u5229\u56de\u308a", min: 0, max: 30, unit: "%", integer: false },
   dividendYears: { label: "\u904b\u7528\u5e74\u6570", min: 1, max: 100, unit: "\u5e74", integer: true },
+  investmentRiskAge: { label: "年齢", min: 18, max: 100, unit: "歳", integer: true },
+  investmentRiskIncome: { label: "年収", min: 0, max: 1000000000, unit: "円", integer: false },
+  investmentRiskAssets: { label: "総資産", min: 0, max: 10000000000, unit: "円", integer: false },
+  investmentRiskExperience: { label: "投資経験年数", min: 0, max: 80, unit: "年", integer: false },
+  investmentRiskAmount: { label: "投資額", min: 0, max: 10000000000, unit: "円", integer: false },
   dividendEtfInitial: { label: "初期投資額", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   dividendEtfMonthly: { label: "毎月積立額", min: 0, max: 100000000, unit: "\u5186", integer: false },
   dividendEtfYield: { label: "想定配当利回り", min: 0, max: 30, unit: "%", integer: false },
@@ -10367,6 +10545,104 @@ function renderDividend() {
   setText("dividendNisaComparison", nisaGuide);
 }
 
+function renderInvestmentRisk() {
+  const values = {
+    investmentRiskAge: getFieldValue("investmentRiskAge"),
+    investmentRiskIncome: getFieldValue("investmentRiskIncome"),
+    investmentRiskAssets: getFieldValue("investmentRiskAssets"),
+    investmentRiskExperience: getFieldValue("investmentRiskExperience"),
+    investmentRiskAmount: getFieldValue("investmentRiskAmount"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#investmentRiskNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("investmentRiskScore", "入力エラー");
+    setText("investmentRiskAllocation", "入力エラー");
+    setText("investmentRiskStyle", "入力エラー");
+    setText("investmentRiskDividendFit", "入力エラー");
+    setText("investmentRiskIndexFit", "入力エラー");
+    setText("investmentRiskFireFit", "入力エラー");
+    setText("investmentRiskImprovement", "入力エラー");
+    setText("investmentRiskRelatedTools", "入力エラー");
+    return;
+  }
+
+  const age = values.investmentRiskAge.value;
+  const income = values.investmentRiskIncome.value;
+  const assets = values.investmentRiskAssets.value;
+  const experience = values.investmentRiskExperience.value;
+  const investmentAmount = values.investmentRiskAmount.value;
+  const purpose = document.querySelector("#investmentRiskPurpose").value;
+  const crashAction = document.querySelector("#investmentRiskCrashAction").value;
+  const wantsFire = document.querySelector("#investmentRiskFire").checked;
+  const hasSideIncome = document.querySelector("#investmentRiskSideIncome").checked;
+  const investmentRatio = assets > 0 ? investmentAmount / assets : 0;
+  const incomeBufferYears = income > 0 ? assets / income : 0;
+  const ageScore = age <= 35 ? 18 : age <= 45 ? 14 : age <= 55 ? 9 : 4;
+  const experienceScore = Math.min(experience, 10) * 2;
+  const crashScore = { buy: 24, hold: 18, partial: 8, sell: -8 }[crashAction] || 8;
+  const purposeScore = { growth: 14, fire: 16, dividend: 10, retirement: 8, short: -4 }[purpose] || 8;
+  const assetBufferScore = incomeBufferYears >= 2 ? 12 : incomeBufferYears >= 1 ? 8 : incomeBufferYears >= 0.5 ? 4 : -4;
+  const ratioPenalty = investmentRatio > 0.85 ? 12 : investmentRatio > 0.65 ? 6 : investmentRatio < 0.1 ? 3 : 0;
+  const sideIncomeBonus = hasSideIncome ? 6 : 0;
+  const fireBonus = wantsFire ? 4 : 0;
+  let score = 38 + ageScore + experienceScore + crashScore + purposeScore + assetBufferScore + sideIncomeBonus + fireBonus - ratioPenalty;
+  score = Math.max(0, Math.min(100, Math.round(score)));
+
+  const allocation = score >= 75
+    ? "現金15〜25%、インデックス45〜60%、高配当株・ETF20〜35%、その他0〜10%"
+    : score >= 55
+      ? "現金25〜35%、インデックス40〜55%、高配当株・ETF10〜25%、その他0〜5%"
+      : "現金40〜60%、インデックス25〜45%、高配当株・ETF0〜15%、その他は控えめ";
+  const style = score >= 75
+    ? "長期インデックスを主軸に、高配当株や配当ETFも一部組み合わせる攻守バランス型"
+    : score >= 55
+      ? "毎月積立のインデックス中心。配当投資は少額から試し、暴落時の感情を確認"
+      : "まず生活防衛資金と少額積立。値動きに慣れるまでは分散投信中心が無難";
+  const dividendFit = purpose === "dividend" || (score >= 60 && crashAction !== "sell")
+    ? "向いています。ただし個別株に偏らず、配当ETFや現金比率も合わせて確認してください"
+    : score >= 50
+      ? "一部なら候補です。高配当株より先に配当ETFで分散を確認すると続けやすいです"
+      : "現時点では慎重に。高配当株よりインデックスや現金比率の安定を優先しましょう";
+  const indexFit = score >= 45
+    ? "かなり向いています。毎月積立を自動化し、暴落時も売らない設計を作りやすいです"
+    : "少額からなら向いています。まずは値動きに慣れる金額で長期積立を始めるのが安全です";
+  const fireFit = !wantsFire
+    ? "FIRE希望なし。老後資金や生活防衛資金を優先しながら、無理のない積立が合います"
+    : score >= 75
+      ? "FIRE適性は高めです。副業収入と固定費削減を投資へ回せると達成率を上げやすいです"
+      : score >= 55
+        ? "FIRE適性は中程度です。投資リスクを上げすぎず、副業と固定費改善も併用しましょう"
+        : "FIREを急ぐ前に、現金比率、収支、暴落耐性を整える段階です";
+  let improvement = "毎月積立を続けつつ、年1回は資産配分と生活防衛資金を見直しましょう";
+  if (incomeBufferYears < 0.5) {
+    improvement = "まず生活防衛資金を厚くしてください。投資額を増やすより、現金余力を作る方が先です";
+  } else if (crashAction === "sell") {
+    improvement = "暴落時に売却しそうな場合は、投資額を下げ、インデックス中心の少額積立から慣れましょう";
+  } else if (investmentRatio > 0.75) {
+    improvement = "総資産に対する投資比率が高めです。現金比率を確認し、急な支出に備えてください";
+  } else if (purpose === "short") {
+    improvement = "短期利益目的はリスクが高くなりやすいです。長期目的と分けて資金管理しましょう";
+  } else if (wantsFire && !hasSideIncome) {
+    improvement = "FIREを目指すなら、投資だけでなく副業収入や固定費改善も組み合わせると安定します";
+  }
+  const relatedTools = purpose === "dividend"
+    ? "高配当株比較と配当ETF比較で、個別株とETFの違いを確認しましょう"
+    : wantsFire
+      ? "FIRE達成率シミュレーターで、投資方針がFIREにどう効くか確認しましょう"
+      : "新NISAシミュレーターと配当ETF比較で、長期積立と配当のバランスを確認しましょう";
+
+  setText("investmentRiskScore", `${score} / 100`);
+  setText("investmentRiskAllocation", allocation);
+  setText("investmentRiskStyle", style);
+  setText("investmentRiskDividendFit", dividendFit);
+  setText("investmentRiskIndexFit", indexFit);
+  setText("investmentRiskFireFit", fireFit);
+  setText("investmentRiskImprovement", improvement);
+  setText("investmentRiskRelatedTools", relatedTools);
+}
+
 const dividendEtfPresets = {
   VYM: { yield: 3.2, growth: 3.0, feature: "分散性が高く、配当と値上がりのバランスを取りやすい高配当ETF候補です。" },
   HDV: { yield: 3.8, growth: 2.2, feature: "財務健全性やディフェンシブ性を意識しやすく、比較的安定配当を重視したい人向けです。" },
@@ -11485,7 +11761,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -11628,6 +11904,10 @@ document.querySelector("#takeHomeForm").addEventListener("input", renderTakeHome
 document.querySelector("#takeHomeForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderTakeHome);
 });
+document.querySelector("#investmentRiskForm").addEventListener("input", renderInvestmentRisk);
+document.querySelector("#investmentRiskForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderInvestmentRisk);
+});
 document.querySelector("#nisaForm").addEventListener("input", renderNisa);
 document.querySelector("#nisaForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderNisa);
@@ -11762,6 +12042,7 @@ safeRender("会社員節税シミュレーター", renderEmployeeTaxSaving);
 safeRender("副業住民税シミュレーター", renderResidentTax);
 safeRender("副業所得税シミュレーター", renderIncomeTax);
 safeRender("副業手取り計算シミュレーター", renderTakeHome);
+safeRender("投資リスク許容度診断", renderInvestmentRisk);
 safeRender("新NISAシミュレーター", renderNisa);
 safeRender("新NISA最速積立シミュレーター", renderNisaFast);
 safeRender("NISA取り崩しシミュレーター", renderNisaWithdrawal);
