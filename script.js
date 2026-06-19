@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 46種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 47種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -98,6 +98,10 @@ const routeSeo = {
   "side-risk": {
     title: "副業リスク診断｜会社員の税務・疲労・収益依存を確認【2026年版】",
     description: "副業収入が伸びる前に、税務、burnout、収益依存のリスクを確認し、本業と両立しやすい改善ポイントを整理します。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+  },
+  "side-safety": {
+    title: "会社員副業安全度診断｜会社バレ・税務・疲労リスクを確認【2026年版】",
+    description: "副業ジャンル、月収、本業勤務時間、普通徴収、確定申告、会社規定、AI活用、匿名性から、会社員が安全に副業を続けられるか診断します。副業を伸ばす前にリスクを整理できます。",
   },
   "side-profit-margin": {
     title: "副業利益率シミュレーター｜売上より手残りを重視する会社員向け【2026年版】",
@@ -456,6 +460,7 @@ document.body.innerHTML = `
           <a href="#side-continuity" data-route="side-continuity">副業継続率診断</a>
           <a href="#side-motivation" data-route="side-motivation">副業モチベーション</a>
           <a href="#side-risk" data-route="side-risk">副業リスク診断</a>
+          <a href="#side-safety" data-route="side-safety">副業安全度</a>
           <a href="#side-profit-margin" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#incorporation" data-route="incorporation">副業法人化判断</a>
           <a href="#take-home" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
@@ -973,6 +978,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#side-safety">
+            <p class="eyebrow">Safety Check</p>
+            <h2>会社員副業安全度診断</h2>
+            <p>副業内容、働き方、税務状況、会社規定、匿名性から、会社員として安全に副業を続けられるか診断します。</p>
+            <div class="tool-meta">
+              <span>安全度</span>
+              <span>会社バレ</span>
+              <span>税務・疲労</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#side-profit-margin">
             <p class="eyebrow">Profit</p>
             <h2>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
@@ -1405,6 +1422,7 @@ document.body.innerHTML = `
             <li><a href="#side-continuity"><strong>副業継続率診断</strong><span>副業時間、疲労度、収益、AI活用から続けやすさを確認</span></a></li>
             <li><a href="#side-motivation"><strong>副業モチベーション診断</strong><span>目標月収、疲労度、趣味時間から続ける意欲を確認</span></a></li>
             <li><a href="#side-risk"><strong>副業リスク診断</strong><span>税務、burnout、収益依存のリスクをまとめて確認</span></a></li>
+            <li><a href="#side-safety"><strong>会社員副業安全度診断</strong><span>会社バレ、税務、疲労、会社規定のリスクを確認</span></a></li>
             <li><a href="#side-profit-margin"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="#incorporation"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
             <li><a href="#take-home"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
@@ -2749,6 +2767,7 @@ document.body.innerHTML = `
             <p>疲労度を確認したら、時間配分とAI時短の効果も合わせて見てください。</p>
           </section>
           <div class="related-links">
+            <a href="#side-safety">会社員副業安全度診断</a>
             <a href="#side-time-management">副業時間管理シミュレーター</a>
             <a href="#side-motivation">副業モチベーション診断</a>
             <a href="#ai-efficiency">AI副業効率化シミュレーター</a>
@@ -2968,9 +2987,151 @@ document.body.innerHTML = `
             <p>リスクが高い項目は、時間管理、疲労度、利益率のツールで分解すると改善しやすくなります。</p>
           </section>
           <div class="related-links">
+            <a href="#side-safety">会社員副業安全度診断</a>
             <a href="#side-fatigue">副業疲労度シミュレーター</a>
             <a href="#side-time-management">副業時間管理シミュレーター</a>
             <a href="#side-profit-margin">副業利益率シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="side-safety" aria-label="会社員副業安全度診断">
+        <section class="tool-heading">
+          <h2>会社員副業安全度診断</h2>
+          <p>副業ジャンル、副業月収、本業勤務時間、普通徴収、確定申告、会社の副業規定、副業作業時間、AI活用、匿名性から、会社員として安全に副業を継続できるか診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="会社員副業安全度の診断">
+          <form class="input-panel" id="sideSafetyForm">
+            <div class="field">
+              <label for="sideSafetyGenre">副業ジャンル</label>
+              <select id="sideSafetyGenre" name="sideSafetyGenre">
+                <option value="content">ブログ・SNS・コンテンツ制作</option>
+                <option value="creative">動画編集・デザイン・制作</option>
+                <option value="consulting">コンサル・講師・専門サービス</option>
+                <option value="commerce">物販・せどり</option>
+                <option value="investment">投資・配当・金融系</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sideSafetyIncome">副業月収 <span class="unit">円 / 月</span></label>
+              <input id="sideSafetyIncome" name="sideSafetyIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="80000" required aria-describedby="sideSafetyIncomeError">
+              <p class="error" id="sideSafetyIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="sideSafetyMainJobHours">本業勤務時間 <span class="unit">時間 / 平日</span></label>
+              <input id="sideSafetyMainJobHours" name="sideSafetyMainJobHours" type="number" inputmode="decimal" min="0" max="24" step="0.5" value="9" required aria-describedby="sideSafetyMainJobHoursError">
+              <p class="error" id="sideSafetyMainJobHoursError"></p>
+            </div>
+            <label class="check-field" for="sideSafetyResidentTax">
+              <input id="sideSafetyResidentTax" name="sideSafetyResidentTax" type="checkbox" checked>
+              <span>住民税の普通徴収を確認している</span>
+            </label>
+            <label class="check-field" for="sideSafetyTaxReturn">
+              <input id="sideSafetyTaxReturn" name="sideSafetyTaxReturn" type="checkbox">
+              <span>確定申告の準備ができている</span>
+            </label>
+            <div class="field">
+              <label for="sideSafetyHours">副業作業時間 <span class="unit">時間 / 週</span></label>
+              <input id="sideSafetyHours" name="sideSafetyHours" type="number" inputmode="decimal" min="0" max="168" step="0.5" value="12" required aria-describedby="sideSafetyHoursError">
+              <p class="error" id="sideSafetyHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="sideSafetyRule">会社副業規定</label>
+              <select id="sideSafetyRule" name="sideSafetyRule">
+                <option value="allowed">許可・届出済み</option>
+                <option value="conditional" selected>条件付き・要確認</option>
+                <option value="unknown">未確認</option>
+                <option value="prohibited">禁止・かなり厳しい</option>
+              </select>
+            </div>
+            <label class="check-field" for="sideSafetyAiUse">
+              <input id="sideSafetyAiUse" name="sideSafetyAiUse" type="checkbox" checked>
+              <span>AIを活用して作業時間を短縮している</span>
+            </label>
+            <label class="check-field" for="sideSafetyAnonymous">
+              <input id="sideSafetyAnonymous" name="sideSafetyAnonymous" type="checkbox" checked>
+              <span>匿名性を保っている</span>
+            </label>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">副業安全度スコア</p>
+              <p class="amount" id="sideSafetyScore">0 / 100</p>
+            </div>
+            <p class="notice" id="sideSafetyNotice">入力を確認してください。この診断は会社規定や税務判断を代替するものではなく、副業を安全に続けるための簡易チェックです。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>会社バレリスク</strong>
+                <span class="accent-amber text-metric" id="sideSafetyCompanyRisk">未計算</span>
+                <small>会社規定、匿名性、普通徴収の確認状況</small>
+              </div>
+              <div class="metric">
+                <strong>税務リスク</strong>
+                <span class="accent-amber text-metric" id="sideSafetyTaxRisk">未計算</span>
+                <small>副業月収、確定申告、住民税の確認状況</small>
+              </div>
+              <div class="metric">
+                <strong>burnoutリスク</strong>
+                <span class="accent-blue text-metric" id="sideSafetyBurnoutRisk">未計算</span>
+                <small>本業勤務時間と副業作業時間の負荷</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-green text-metric" id="sideSafetyImprovement">未計算</span>
+                <small>最初に整えたい安全対策</small>
+              </div>
+              <div class="metric">
+                <strong>安全に継続する方法</strong>
+                <span class="accent-blue text-metric" id="sideSafetyMethod">未計算</span>
+                <small>会社員として副業を続けるための行動</small>
+              </div>
+              <div class="metric">
+                <strong>関連ツール導線</strong>
+                <span class="accent-green text-metric" id="sideSafetyRelatedTools">副業リスク、所得税、疲労度</span>
+                <small>次に確認したいシミュレーター</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="会社員副業安全度診断FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>普通徴収にすれば会社に絶対バレませんか？</summary>
+              <p>絶対ではありません。自治体の処理、給与所得との扱い、会社規定、SNSや実名活動など、複数の要因があります。普通徴収の確認は大切ですが、匿名性や規定確認も合わせて見てください。</p>
+            </details>
+            <details>
+              <summary>副業月収が少なくても確定申告は必要ですか？</summary>
+              <p>副業所得や給与以外の所得状況によって変わります。売上ではなく所得、経費、控除で判断するため、収入が継続する場合は早めに帳簿を残し、申告要否を確認してください。</p>
+            </details>
+            <details>
+              <summary>会社の副業規定はどこを見ればいいですか？</summary>
+              <p>就業規則、兼業規定、秘密保持、競業避止、SNS発信、会社資産の利用禁止などを確認してください。判断に迷う場合は、無理に実名活動や同業領域へ踏み込まない方が安全です。</p>
+            </details>
+            <details>
+              <summary>安全度が低い場合、まず何を直すべきですか？</summary>
+              <p>会社規定の確認、税務準備、作業時間の圧縮の順で見直すのがおすすめです。特に本業が忙しい場合は、AI活用や作業時間の上限設定でburnoutリスクを下げてください。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="会社員副業安全度関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>安全度を確認したら、リスク、税金、疲労度を分けて見ると、どこから改善すべきか判断しやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#side-risk">副業リスク診断</a>
+            <a href="#income-tax">副業所得税シミュレーター</a>
+            <a href="#side-fatigue">副業疲労度シミュレーター</a>
+            <a href="article-company-side-tax-saving.html">会社員の副業税金対策</a>
           </div>
         </section>
       </section>
@@ -3676,6 +3837,7 @@ document.body.innerHTML = `
             <p>&#x6240;&#x5f97;&#x7a0e;&#x306e;&#x5f8c;&#x306b;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3001;&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x5168;&#x4f53;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
+            <a href="#side-safety">会社員副業安全度診断</a>
             <a href="#resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="#tax">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
@@ -6817,6 +6979,7 @@ document.body.innerHTML = `
           <a href="#side-fatigue">副業疲労度</a>
           <a href="#side-motivation">副業モチベーション</a>
           <a href="#side-risk">副業リスク診断</a>
+          <a href="#side-safety">副業安全度</a>
           <a href="#side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="#incorporation">副業法人化判断</a>
           <a href="#take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
@@ -6859,6 +7022,10 @@ document.body.innerHTML = `
 function insertLastUpdatedDates() {
   const routeDates = {
     "ai-time-reduction": "2026年6月16日",
+    "side-safety": "2026年6月19日",
+    "side-risk": "2026年6月19日",
+    "side-fatigue": "2026年6月19日",
+    "income-tax": "2026年6月19日",
     "ai-automation": "2026年6月16日",
     "ai-efficiency": "2026年6月16日",
     "ai-roi": "2026年6月16日",
@@ -7044,16 +7211,17 @@ const routeExperienceProfiles = {
   "ai-outsourcing": { title: "AI外注費削減シミュレーター", kind: "ai", reason: "副業が少し伸びてくると、記事作成、画像、動画、リサーチなどを外注したくなります。ただ、外注費が増えすぎると利益率が下がるため、AIで下準備や定型作業をどこまで内製化できるか確認するために作りました。", use: "削減できる外注費だけでなく、AI導入費用を差し引いた純削減額と回収期間を見てください。品質が必要な作業は外注を残し、AIで指示書、構成、初稿、チェック作業を短縮するのが現実的です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["AI導入ROIシミュレーター", "index.html#ai-roi"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "ai-profit-max": { title: "AI副業利益最大化シミュレーター", kind: "ai", reason: "AIを副業に入れるなら、時短だけで終わらせず、利益率、時給、目標月収までの距離まで見たいと感じて作りました。本業後の限られた時間では、浮いた時間をどの作業に回すかで収益の伸び方が変わります。", use: "AI導入後の利益額とROIを見て、ツール費用を増やす価値があるか判断してください。利益改善が小さい場合は、調査、下書き、テンプレ化など低リスクな作業から試し、浮いた時間を営業や高単価作業へ回す設計にしましょう。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "index.html#side-profit-margin"]] },
   "side-time-management": { title: "副業時間管理シミュレーター", kind: "ai", reason: "副業は収入目標より先に、続けられる時間を確認する必要があります。本業、通勤、睡眠、家事を引いた残り時間を見ないまま予定を詰めると、数週間で苦しくなります。", use: "副業可能時間が少ない場合は、毎日やる前提ではなく、週末にまとめる、AIで下準備を短縮する、単価の高い作業へ絞るなどの改善に使ってください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
-  "side-fatigue": { title: "副業疲労度シミュレーター", kind: "ai", reason: "副業は収入を増やす手段ですが、睡眠や休日を削り続けると長く続きません。管理職として急な欠勤対応や夜間対応を経験していると、本業後の疲労を無視した副業計画は崩れやすいと感じます。", use: "疲労度が高い場合は、副業時間を増やすより、AI活用、作業日の固定、睡眠時間の確保を優先してください。FIREを目指す場合も、短期の作業量より長期で続けられる設計が大切です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "side-fatigue": { title: "副業疲労度シミュレーター", kind: "ai", reason: "副業は収入を増やす手段ですが、睡眠や休日を削り続けると長く続きません。管理職として急な欠勤対応や夜間対応を経験していると、本業後の疲労を無視した副業計画は崩れやすいと感じます。会社員として安全に副業を続けるには、疲労だけでなく会社規定や税務準備も合わせて見る必要があります。", use: "疲労度が高い場合は、副業時間を増やすより、AI活用、作業日の固定、睡眠時間の確保を優先してください。あわせて会社員副業安全度診断で、会社バレリスクや税務リスクも確認すると、無理なく続ける順番が見えます。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   "side-continuity": { title: "副業継続率診断", kind: "ai", reason: "副業は始めるより続ける方が難しいです。本業後の疲労、睡眠、収益と目標の差をまとめて見て、無理な計画になっていないか確認するために作りました。", use: "スコアが低い場合は、作業時間を増やすより、睡眠、AI活用、目標月収の分割を優先してください。継続できる形に戻すことが、結果的に収益とFIREへの近道になります。", articles: [["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"]] },
   "side-motivation": { title: "副業モチベーション診断", kind: "ai", reason: "副業はやる気だけで続けようとすると、本業が忙しい週や急な対応が入った時に崩れやすいです。目標月収、現在収益、疲労、睡眠、趣味時間をまとめて見て、気持ちが切れにくい設計か確認するために作りました。", use: "スコアが低い場合は、根性で作業時間を増やすより、目標を小さく分け、AIで作業を減らし、回復時間を先に確保してください。モチベーションは気合いではなく、続く仕組みで守るのが現実的です。", articles: [["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"]] },
-  "side-risk": { title: "副業リスク診断", kind: "side", reason: "副業は収入が増えるほど、税務、疲労、収益依存のリスクも見えにくくなります。本業後に限られた時間で進める会社員ほど、稼ぐ前に崩れやすいポイントを早めに確認しておきたいと考えて作りました。", use: "スコアが高い項目から順番に見直してください。税務リスクが高ければ帳簿と申告準備、burnoutリスクが高ければ睡眠と作業時間、収益依存が高ければ生活防衛資金と利益率改善を優先すると現実的です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
+  "side-risk": { title: "副業リスク診断", kind: "side", reason: "副業は収入が増えるほど、税務、疲労、収益依存のリスクも見えにくくなります。本業後に限られた時間で進める会社員ほど、稼ぐ前に崩れやすいポイントを早めに確認しておきたいと考えて作りました。会社規定、普通徴収、匿名性まで含めて見る場合は会社員副業安全度診断も合わせて使えます。", use: "スコアが高い項目から順番に見直してください。税務リスクが高ければ帳簿と申告準備、burnoutリスクが高ければ睡眠と作業時間、収益依存が高ければ生活防衛資金と利益率改善を優先すると現実的です。会社バレや会社規定の不安がある場合は、安全度診断で先に確認してください。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
+  "side-safety": { title: "会社員副業安全度診断", kind: "side", reason: "副業を続けるうえで怖いのは、売上が少ないことだけではありません。会社規定を確認していない、住民税や確定申告の準備が曖昧、匿名性が弱い、本業後の作業時間が多すぎると、会社員として続けにくくなります。運送業の管理職として急な欠勤対応や夜間対応がある中で、副業を伸ばす前に安全度を確認するために作りました。", use: "スコアが低い場合は、会社規定の確認、普通徴収と確定申告の準備、匿名性の見直し、副業時間の上限設定を優先してください。副業リスク診断、所得税シミュレーター、疲労度シミュレーターを合わせると、収入を伸ばす前に整えるべき順番が見えます。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"]] },
   "hourly-improvement": { title: "副業時給改善シミュレーター", kind: "ai", reason: "副業は売上だけを見ると順調に見えても、作業時間と経費を入れると時給が低いことがあります。限られた時間で副業を続ける会社員ほど、時給換算での改善が大切です。", use: "目標時給に届かない場合は、AIで時間を減らす、外注を使う、広告費を整理する、低単価案件を減らすなど、改善ポイントを一つずつ試してください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"]] },
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
+  "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。会社員の場合は、所得税だけでなく住民税や会社規定との関係も見落とせません。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。会社員副業安全度診断で、普通徴収や確定申告準備も合わせて確認できます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   nisa: { title: "新NISAシミュレーター", kind: "investment", reason: "FIREを目指すうえで、新NISAは長期投資の中心にしやすい制度です。ただし、毎月いくら積み立てるかは収入や固定費によって変わります。", use: "将来資産額だけでなく、毎月積立額が家計に無理なく続くかを見てください。副業収入や固定費削減で増えた余力をNISAへ回すと、行動と資産形成がつながります。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIREとは何か", "article-fire-basic.html"]] },
@@ -7092,6 +7260,7 @@ const relatedToolGroups = {
     ["副業継続率診断", "index.html#side-continuity"],
     ["副業モチベーション診断", "index.html#side-motivation"],
     ["副業リスク診断", "index.html#side-risk"],
+    ["会社員副業安全度診断", "index.html#side-safety"],
   ],
   ai: [
     ["AI副業効率化シミュレーター", "index.html#ai-efficiency"],
@@ -7613,6 +7782,9 @@ const fieldRules = {
   sideRiskIncome: { label: "副業収入", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   sideRiskDependence: { label: "収益依存度", min: 0, max: 100, unit: "%", integer: false },
   sideRiskSleepHours: { label: "睡眠時間", min: 0, max: 24, unit: "\u6642\u9593", integer: false },
+  sideSafetyIncome: { label: "副業月収", min: 0, max: 1000000000, unit: "円", integer: false },
+  sideSafetyMainJobHours: { label: "本業勤務時間", min: 0, max: 24, unit: "時間", integer: false },
+  sideSafetyHours: { label: "副業作業時間", min: 0, max: 168, unit: "時間", integer: false },
   profitSales: { label: "\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   profitExpenses: { label: "\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   profitHours: { label: "\u4f5c\u696d\u6642\u9593", min: 0.1, max: 10000, unit: "\u6642\u9593", integer: false },
@@ -8257,6 +8429,108 @@ function renderSideRisk() {
   setText("sideRiskImprovement", improvement);
   setText("sideRiskTimeGuide", timeGuide);
   setText("sideRiskProfitGuide", profitGuide);
+}
+
+function renderSideSafety() {
+  const values = {
+    sideSafetyIncome: getFieldValue("sideSafetyIncome"),
+    sideSafetyMainJobHours: getFieldValue("sideSafetyMainJobHours"),
+    sideSafetyHours: getFieldValue("sideSafetyHours"),
+  };
+  const hasError = Object.values(values).some((item) => !item.valid);
+
+  document.querySelector("#sideSafetyNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("sideSafetyScore", "入力エラー");
+    setText("sideSafetyCompanyRisk", "入力エラー");
+    setText("sideSafetyTaxRisk", "入力エラー");
+    setText("sideSafetyBurnoutRisk", "入力エラー");
+    setText("sideSafetyImprovement", "入力エラー");
+    setText("sideSafetyMethod", "入力エラー");
+    setText("sideSafetyRelatedTools", "入力エラー");
+    return;
+  }
+
+  const genre = document.querySelector("#sideSafetyGenre").value;
+  const monthlyIncome = values.sideSafetyIncome.value;
+  const mainJobHours = values.sideSafetyMainJobHours.value;
+  const sideHours = values.sideSafetyHours.value;
+  const residentTaxReady = document.querySelector("#sideSafetyResidentTax").checked;
+  const taxReturnReady = document.querySelector("#sideSafetyTaxReturn").checked;
+  const rule = document.querySelector("#sideSafetyRule").value;
+  const aiUse = document.querySelector("#sideSafetyAiUse").checked;
+  const anonymous = document.querySelector("#sideSafetyAnonymous").checked;
+  const annualIncome = monthlyIncome * 12;
+  const ruleRisk = { allowed: 6, conditional: 22, unknown: 38, prohibited: 58 }[rule] || 25;
+  const genreRisk = {
+    content: 10,
+    creative: 12,
+    consulting: 18,
+    commerce: 16,
+    investment: 14,
+    other: 12,
+  }[genre] || 12;
+  const companyRiskScore = Math.max(0, Math.min(
+    100,
+    Math.round(ruleRisk + genreRisk + (anonymous ? -14 : 20) + (residentTaxReady ? -8 : 14) + Math.max(monthlyIncome - 150000, 0) / 10000),
+  ));
+  const taxRiskScore = Math.max(0, Math.min(
+    100,
+    Math.round((annualIncome >= 200000 ? 34 : 14) + (taxReturnReady ? -20 : 24) + (residentTaxReady ? -8 : 15) + Math.max(monthlyIncome - 100000, 0) / 12000),
+  ));
+  const burnoutRiskScore = Math.max(0, Math.min(
+    100,
+    Math.round(18 + Math.max(mainJobHours - 8, 0) * 8 + Math.max(sideHours - 8, 0) * 2.5 - (aiUse ? 8 : 0)),
+  ));
+  const safetyScore = Math.max(0, Math.min(100, Math.round(100 - (companyRiskScore * 0.38 + taxRiskScore * 0.34 + burnoutRiskScore * 0.28))));
+  const level = (score) => score >= 70 ? "高" : score >= 45 ? "中" : "低";
+  const companyRisk = companyRiskScore >= 70
+    ? "高リスク。会社規定、匿名性、普通徴収の確認を最優先にしてください"
+    : companyRiskScore >= 45
+      ? "中リスク。規定や発信内容を確認し、実名活動は慎重に進めましょう"
+      : "低〜中リスク。規定確認と匿名性を維持しながら継続しましょう";
+  const taxRisk = taxRiskScore >= 70
+    ? "高リスク。帳簿、確定申告、住民税の扱いを早めに整理してください"
+    : taxRiskScore >= 45
+      ? "中リスク。副業収入が続くなら申告準備と納税資金を分けましょう"
+      : "低〜中リスク。収入が増えた月も帳簿と納税資金を継続管理しましょう";
+  const burnoutRisk = burnoutRiskScore >= 70
+    ? "高リスク。本業後の副業時間を減らし、睡眠と休息を先に確保してください"
+    : burnoutRiskScore >= 45
+      ? "中リスク。繁忙期は作業量を落とし、AIで下書きや調査を短縮しましょう"
+      : "低〜中リスク。今の作業量を増やしすぎず、上限時間を決めて続けましょう";
+  let improvement = "月1回、会社規定、税務準備、作業時間の3点を見直すと安全に続けやすくなります";
+  if (rule === "unknown" || rule === "prohibited") {
+    improvement = "最優先は会社規定の確認です。禁止領域や同業競合、実名発信を避けて安全側で進めましょう";
+  } else if (!residentTaxReady || (!taxReturnReady && annualIncome >= 200000)) {
+    improvement = "最優先は税務準備です。普通徴収、帳簿、確定申告の要否を早めに確認してください";
+  } else if (!anonymous) {
+    improvement = "匿名性が弱めです。プロフィール、SNS、実績公開、連絡先の出し方を見直しましょう";
+  } else if (burnoutRiskScore >= 55) {
+    improvement = "作業時間の上限を決め、AIで調査や下書きを短縮して疲労の蓄積を避けましょう";
+  } else if (!aiUse) {
+    improvement = "AI未活用です。調査、構成、定型返信から時短すると安全度を上げやすいです";
+  }
+  const method = [
+    "就業規則を確認する",
+    "売上と経費を毎月記録する",
+    "税金用資金を別に置く",
+    "匿名性を守る",
+    "週の副業時間に上限を作る",
+  ].join(" / ");
+  const relatedTools = companyRiskScore >= taxRiskScore && companyRiskScore >= burnoutRiskScore
+    ? "副業リスク診断で会社バレ以外のリスクも確認"
+    : taxRiskScore >= burnoutRiskScore
+      ? "副業所得税シミュレーターで納税額を確認"
+      : "副業疲労度シミュレーターで作業負荷を確認";
+
+  setText("sideSafetyScore", `${safetyScore} / 100`);
+  setText("sideSafetyCompanyRisk", `${level(companyRiskScore)}：${companyRisk}`);
+  setText("sideSafetyTaxRisk", `${level(taxRiskScore)}：${taxRisk}`);
+  setText("sideSafetyBurnoutRisk", `${level(burnoutRiskScore)}：${burnoutRisk}`);
+  setText("sideSafetyImprovement", improvement);
+  setText("sideSafetyMethod", method);
+  setText("sideSafetyRelatedTools", relatedTools);
 }
 
 function renderHourlyImprovement() {
@@ -11211,7 +11485,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -11321,6 +11595,10 @@ document.querySelector("#sideMotivationForm").addEventListener("reset", () => {
 document.querySelector("#sideRiskForm").addEventListener("input", renderSideRisk);
 document.querySelector("#sideRiskForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderSideRisk);
+});
+document.querySelector("#sideSafetyForm").addEventListener("input", renderSideSafety);
+document.querySelector("#sideSafetyForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideSafety);
 });
 document.querySelector("#sideProfitMarginForm").addEventListener("input", renderSideProfitMargin);
 document.querySelector("#sideProfitMarginForm").addEventListener("reset", () => {
@@ -11476,6 +11754,7 @@ safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
 safeRender("副業継続率診断", renderSideContinuity);
 safeRender("副業モチベーション診断", renderSideMotivation);
 safeRender("副業リスク診断", renderSideRisk);
+safeRender("会社員副業安全度診断", renderSideSafety);
 safeRender("副業利益率シミュレーター", renderSideProfitMargin);
 safeRender("副業法人化判断シミュレーター", renderIncorporation);
 safeRender("副業税金シミュレーター", renderTax);
