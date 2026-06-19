@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 48種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 49種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -162,6 +162,10 @@ const routeSeo = {
   "fire-rate": {
     title: "FIRE達成率シミュレーター｜会社員の資産形成スコア診断【2026年版】",
     description: "現在資産、副業収入、生活費、配当収入からFIRE達成可能性をスコア化し、改善すべき行動を見つけられます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+  },
+  "fire-cost-optimization": {
+    title: "FIRE生活費最適化シミュレーター｜固定費改善で達成時期を短縮【2026年版】",
+    description: "現在年齢、目標FIRE年齢、現在資産、生活費、削減可能額、投資額、副業収入、配当収入から、生活費改善でFIRE達成がどれだけ早まるか確認できます。",
   },
   "fire-stress": {
     title: "FIREストレス診断｜会社員のFIRE後不安と働き方リスクを確認【2026年版】",
@@ -487,6 +491,7 @@ document.body.innerHTML = `
           <a href="#dividend-life-years" data-route="dividend-life-years">配当生活年数</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate" data-route="fire-rate">FIRE達成率</a>
+          <a href="#fire-cost-optimization" data-route="fire-cost-optimization">FIRE生活費最適化</a>
           <a href="#fire-stress" data-route="fire-stress">FIREストレス診断</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#cash-flow" data-route="cash-flow">会社員キャッシュフロー</a>
@@ -1193,6 +1198,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#fire-cost-optimization">
+            <p class="eyebrow">FIRE Cost</p>
+            <h2>FIRE生活費最適化シミュレーター</h2>
+            <p>生活費削減、追加投資、副業収入、配当収入から、FIRE達成時期がどれだけ短縮されるかを分析します。</p>
+            <div class="tool-meta">
+              <span>必要資産</span>
+              <span>短縮年数</span>
+              <span>改善提案</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#fire-stress">
             <p class="eyebrow">FIRE Stress</p>
             <h2>FIREストレス診断</h2>
@@ -1461,6 +1478,7 @@ document.body.innerHTML = `
             <li><a href="#dividend-life-years"><strong>配当生活年数</strong><span>現在資産と生活費から配当生活の継続年数を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire-rate"><strong>FIRE達成率</strong><span>現在資産、収支、投資状況からFIRE可能性をスコア化</span></a></li>
+            <li><a href="#fire-cost-optimization"><strong>FIRE生活費最適化</strong><span>生活費削減で必要資産と達成時期がどう変わるか確認</span></a></li>
             <li><a href="#fire-stress"><strong>FIREストレス診断</strong><span>FIRE後の収入不安、孤独、満足度を事前に確認</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#cash-flow"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
@@ -4800,9 +4818,145 @@ document.body.innerHTML = `
           <div class="related-links">
             <a href="#investment-risk">投資リスク許容度診断</a>
             <a href="#fire">FIRE達成シミュレーター</a>
+            <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
             <a href="#fire-stress">FIREストレス診断</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
             <a href="#dividend-life">配当生活達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="fire-cost-optimization" aria-label="FIRE生活費最適化シミュレーター">
+        <section class="tool-heading">
+          <h2>FIRE生活費最適化シミュレーター</h2>
+          <p>現在年齢、目標FIRE年齢、現在資産、毎月生活費、削減可能生活費、毎月投資額、副業収入、想定年利、配当収入から、生活費の最適化でFIRE達成時期がどれだけ短縮されるかを分析します。</p>
+        </section>
+
+        <section class="workspace" aria-label="FIRE生活費最適化の計算">
+          <form class="input-panel" id="fireCostForm">
+            <div class="field">
+              <label for="fireCostAge">現在年齢 <span class="unit">歳</span></label>
+              <input id="fireCostAge" name="fireCostAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="31" required aria-describedby="fireCostAgeError">
+              <p class="error" id="fireCostAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostTargetAge">目標FIRE年齢 <span class="unit">歳</span></label>
+              <input id="fireCostTargetAge" name="fireCostTargetAge" type="number" inputmode="numeric" min="1" max="100" step="1" value="40" required aria-describedby="fireCostTargetAgeError">
+              <p class="error" id="fireCostTargetAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostAssets">現在資産 <span class="unit">円</span></label>
+              <input id="fireCostAssets" name="fireCostAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="5000000" required aria-describedby="fireCostAssetsError">
+              <p class="error" id="fireCostAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostMonthlyCost">毎月生活費 <span class="unit">円 / 月</span></label>
+              <input id="fireCostMonthlyCost" name="fireCostMonthlyCost" type="number" inputmode="numeric" min="1" max="100000000" step="10000" value="250000" required aria-describedby="fireCostMonthlyCostError">
+              <p class="error" id="fireCostMonthlyCostError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostReducibleCost">削減可能生活費 <span class="unit">円 / 月</span></label>
+              <input id="fireCostReducibleCost" name="fireCostReducibleCost" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="30000" required aria-describedby="fireCostReducibleCostError">
+              <p class="error" id="fireCostReducibleCostError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostMonthlyInvestment">毎月投資額 <span class="unit">円 / 月</span></label>
+              <input id="fireCostMonthlyInvestment" name="fireCostMonthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="fireCostMonthlyInvestmentError">
+              <p class="error" id="fireCostMonthlyInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostSideIncome">副業収入 <span class="unit">円 / 月</span></label>
+              <input id="fireCostSideIncome" name="fireCostSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="fireCostSideIncomeError">
+              <p class="error" id="fireCostSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostReturn">想定年利 <span class="unit">%</span></label>
+              <input id="fireCostReturn" name="fireCostReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="5" required aria-describedby="fireCostReturnError">
+              <p class="error" id="fireCostReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="fireCostDividendIncome">配当収入 <span class="unit">円 / 月</span></label>
+              <input id="fireCostDividendIncome" name="fireCostDividendIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="30000" required aria-describedby="fireCostDividendIncomeError">
+              <p class="error" id="fireCostDividendIncomeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">FIRE必要資産</p>
+              <p class="amount" id="fireCostRequiredAssets">0円</p>
+            </div>
+            <p class="notice" id="fireCostNotice">入力を確認してください。生活費を削りすぎると継続しにくいため、無理のない削減額で試算してください。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>生活費削減効果</strong>
+                <span class="accent-green" id="fireCostReductionEffect">0円</span>
+                <small>削減後の生活費で下がる必要資産の目安</small>
+              </div>
+              <div class="metric">
+                <strong>FIRE達成短縮年数</strong>
+                <span class="accent-blue" id="fireCostShorteningYears">0年</span>
+                <small>生活費削減と追加投資を合わせた短縮目安</small>
+              </div>
+              <div class="metric">
+                <strong>追加投資効果</strong>
+                <span class="accent-amber" id="fireCostAdditionalInvestmentEffect">0円</span>
+                <small>削減額を目標年齢まで投資した場合の上乗せ</small>
+              </div>
+              <div class="metric">
+                <strong>副業収入効果</strong>
+                <span class="accent-green text-metric" id="fireCostSideIncomeEffect">0年</span>
+                <small>副業収入を投資へ回した場合の短縮目安</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ改善ポイント</strong>
+                <span class="accent-blue text-metric" id="fireCostImprovement">入力を確認してください</span>
+                <small>生活費、投資、副業、配当の優先順位</small>
+              </div>
+              <div class="metric">
+                <strong>関連ツール導線</strong>
+                <span class="accent-amber text-metric" id="fireCostRelatedTools">FIRE達成率、固定費削減、生活コスト最適化</span>
+                <small>次に確認したいシミュレーター</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="FIRE生活費最適化FAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>生活費を下げるとFIRE必要資産も下がりますか？</summary>
+              <p>下がります。FIREでは年間生活費の25年分を目安にすることが多いため、毎月3万円の削減でも年間36万円、必要資産では約900万円の差になることがあります。</p>
+            </details>
+            <details>
+              <summary>削減した生活費はすべて投資に回す前提ですか？</summary>
+              <p>このシミュレーターでは、削減額を追加投資に回した場合の効果も表示します。ただし生活防衛資金が不足している場合は、先に現金の安全資金を整えるのがおすすめです。</p>
+            </details>
+            <details>
+              <summary>副業収入と固定費削減はどちらを優先すべきですか？</summary>
+              <p>本業が忙しい会社員は、まず固定費削減で毎月の支出を下げると効果が続きます。そのうえで副業収入を積み上げると、FIRE達成時期を短縮しやすくなります。</p>
+            </details>
+            <details>
+              <summary>生活費を削りすぎるリスクはありますか？</summary>
+              <p>あります。無理な節約は継続できず、反動で支出が増えることもあります。通信費、保険、サブスクなど一度見直すと負担が少ない項目から始めるのが現実的です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="FIRE生活費最適化関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>生活費を整えたら、FIRE達成率、固定費削減、生活コスト、キャッシュフローを合わせて確認すると、改善順が決めやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire-rate">FIRE達成率シミュレーター</a>
+            <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
+            <a href="#life-cost">生活コスト最適化シミュレーター</a>
+            <a href="#cash-flow">会社員キャッシュフローシミュレーター</a>
           </div>
         </section>
       </section>
@@ -5180,6 +5334,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
+            <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
             <a href="#fire">FIREシミュレーター</a>
             <a href="#emergency-fund">生活防衛資金シミュレーター</a>
           </div>
@@ -5319,6 +5474,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
+            <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
             <a href="#cash-flow">会社員キャッシュフローシミュレーター</a>
             <a href="#fire">FIREシミュレーター</a>
           </div>
@@ -5547,6 +5703,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#fire">FIREシミュレーター</a>
+            <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
             <a href="#emergency-fund">生活防衛資金シミュレーター</a>
             <a href="article-credit-card-comparison.html">クレカ比較記事</a>
           </div>
@@ -7169,6 +7326,7 @@ document.body.innerHTML = `
           <a href="#dividend-life-years">配当生活年数</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate">FIRE達成率</a>
+          <a href="#fire-cost-optimization">FIRE生活費最適化</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#life-cost">生活コスト最適化</a>
             <a href="#side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
@@ -7194,6 +7352,10 @@ function insertLastUpdatedDates() {
     "dividend-stock": "2026年6月19日",
     "dividend-etf": "2026年6月19日",
     "fire-rate": "2026年6月19日",
+    "fire-cost-optimization": "2026年6月19日",
+    "fixed-cost-reduction": "2026年6月19日",
+    "life-cost": "2026年6月19日",
+    "cash-flow": "2026年6月19日",
     "ai-time-reduction": "2026年6月16日",
     "side-safety": "2026年6月19日",
     "side-risk": "2026年6月19日",
@@ -7410,6 +7572,7 @@ const routeExperienceProfiles = {
   "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "index.html#dividend-life"]] },
@@ -7468,6 +7631,7 @@ const relatedToolGroups = {
   fire: [
     ["FIRE達成シミュレーター", "index.html#fire"],
     ["FIRE達成率シミュレーター", "index.html#fire-rate"],
+    ["FIRE生活費最適化シミュレーター", "index.html#fire-cost-optimization"],
     ["FIREストレス診断", "index.html#fire-stress"],
     ["会社員FIRE年数計算シミュレーター", "index.html#employee-fire"],
     ["サイドFIREシミュレーター", "index.html#side-fire"],
@@ -7475,6 +7639,7 @@ const relatedToolGroups = {
     ["配当生活年数シミュレーター", "index.html#dividend-life-years"],
   ],
   household: [
+    ["FIRE生活費最適化シミュレーター", "index.html#fire-cost-optimization"],
     ["会社員キャッシュフローシミュレーター", "index.html#cash-flow"],
     ["生活コスト最適化シミュレーター", "index.html#life-cost"],
     ["固定費削減シミュレーター", "index.html#fixed-cost-reduction"],
@@ -8032,6 +8197,15 @@ const fieldRules = {
   fireRateAnnualLivingCost: { label: "年間生活費", min: 1, max: 1000000000, unit: "\u5186", integer: false },
   fireRateReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
   fireRateDividendIncome: { label: "配当収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  fireCostAge: { label: "現在年齢", min: 0, max: 100, unit: "歳", integer: true },
+  fireCostTargetAge: { label: "目標FIRE年齢", min: 1, max: 100, unit: "歳", integer: true },
+  fireCostAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "円", integer: false },
+  fireCostMonthlyCost: { label: "毎月生活費", min: 1, max: 100000000, unit: "円", integer: false },
+  fireCostReducibleCost: { label: "削減可能生活費", min: 0, max: 100000000, unit: "円", integer: false },
+  fireCostMonthlyInvestment: { label: "毎月投資額", min: 0, max: 100000000, unit: "円", integer: false },
+  fireCostSideIncome: { label: "副業収入", min: 0, max: 100000000, unit: "円", integer: false },
+  fireCostReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
+  fireCostDividendIncome: { label: "配当収入", min: 0, max: 100000000, unit: "円", integer: false },
   fireStressAge: { label: "現在年齢", min: 0, max: 100, unit: "歳", integer: true },
   fireStressAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "円", integer: false },
   fireStressMonthlyCost: { label: "毎月生活費", min: 1, max: 100000000, unit: "円", integer: false },
@@ -10207,6 +10381,103 @@ function renderFireRate() {
   setText("fireRateRelatedTools", relatedGuide);
 }
 
+function renderFireCostOptimization() {
+  const values = {
+    fireCostAge: getFieldValue("fireCostAge"),
+    fireCostTargetAge: getFieldValue("fireCostTargetAge"),
+    fireCostAssets: getFieldValue("fireCostAssets"),
+    fireCostMonthlyCost: getFieldValue("fireCostMonthlyCost"),
+    fireCostReducibleCost: getFieldValue("fireCostReducibleCost"),
+    fireCostMonthlyInvestment: getFieldValue("fireCostMonthlyInvestment"),
+    fireCostSideIncome: getFieldValue("fireCostSideIncome"),
+    fireCostReturn: getFieldValue("fireCostReturn"),
+    fireCostDividendIncome: getFieldValue("fireCostDividendIncome"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.fireCostAge.valid && values.fireCostTargetAge.valid && values.fireCostTargetAge.value <= values.fireCostAge.value) {
+    const input = document.querySelector("#fireCostTargetAge");
+    const error = document.querySelector("#fireCostTargetAgeError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "目標FIRE年齢は現在年齢より大きくしてください。";
+    hasError = true;
+  }
+
+  if (values.fireCostMonthlyCost.valid && values.fireCostReducibleCost.valid && values.fireCostReducibleCost.value >= values.fireCostMonthlyCost.value) {
+    const input = document.querySelector("#fireCostReducibleCost");
+    const error = document.querySelector("#fireCostReducibleCostError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "削減可能生活費は毎月生活費より小さくしてください。";
+    hasError = true;
+  }
+
+  document.querySelector("#fireCostNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("fireCostRequiredAssets", "入力エラー");
+    setText("fireCostReductionEffect", yen.format(0));
+    setText("fireCostShorteningYears", "入力エラー");
+    setText("fireCostAdditionalInvestmentEffect", yen.format(0));
+    setText("fireCostSideIncomeEffect", "入力エラー");
+    setText("fireCostImprovement", "入力内容を確認してください");
+    setText("fireCostRelatedTools", "FIRE達成率、固定費削減、生活コスト最適化");
+    return;
+  }
+
+  const age = values.fireCostAge.value;
+  const targetAge = values.fireCostTargetAge.value;
+  const currentAssets = values.fireCostAssets.value;
+  const monthlyCost = values.fireCostMonthlyCost.value;
+  const reducibleCost = values.fireCostReducibleCost.value;
+  const monthlyInvestment = values.fireCostMonthlyInvestment.value;
+  const sideIncome = values.fireCostSideIncome.value;
+  const annualReturn = values.fireCostReturn.value;
+  const dividendIncome = values.fireCostDividendIncome.value;
+  const optimizedMonthlyCost = Math.max(monthlyCost - reducibleCost, 0);
+  const annualCost = monthlyCost * 12;
+  const optimizedAnnualCost = optimizedMonthlyCost * 12;
+  const annualDividend = dividendIncome * 12;
+  const requiredAssets = Math.max(annualCost - annualDividend, annualCost * 0.1) * 25;
+  const optimizedRequiredAssets = Math.max(optimizedAnnualCost - annualDividend, optimizedAnnualCost * 0.1) * 25;
+  const reductionEffect = Math.max(requiredAssets - optimizedRequiredAssets, 0);
+  const monthsToTargetAge = Math.max((targetAge - age) * 12, 1);
+  const baseMonthlyInvestment = monthlyInvestment + sideIncome;
+  const optimizedMonthlyInvestment = baseMonthlyInvestment + reducibleCost;
+  const baseMonths = findAchievementMonths(currentAssets, baseMonthlyInvestment, annualReturn, requiredAssets);
+  const optimizedMonths = findAchievementMonths(currentAssets, optimizedMonthlyInvestment, annualReturn, optimizedRequiredAssets);
+  const noSideMonths = findAchievementMonths(currentAssets, monthlyInvestment + reducibleCost, annualReturn, optimizedRequiredAssets);
+  const baseFuture = calculateFutureAssets(currentAssets, baseMonthlyInvestment, annualReturn, monthsToTargetAge);
+  const optimizedFuture = calculateFutureAssets(currentAssets, optimizedMonthlyInvestment, annualReturn, monthsToTargetAge);
+  const additionalInvestmentEffect = Math.max(optimizedFuture - baseFuture, 0);
+  const shorteningYears = baseMonths !== null && optimizedMonths !== null
+    ? Math.max((baseMonths - optimizedMonths) / 12, 0)
+    : 0;
+  const sideIncomeShortening = noSideMonths !== null && optimizedMonths !== null
+    ? Math.max((noSideMonths - optimizedMonths) / 12, 0)
+    : 0;
+  const reductionRate = reducibleCost / monthlyCost;
+  const investmentRate = optimizedMonthlyInvestment / Math.max(monthlyCost + optimizedMonthlyInvestment, 1);
+  const improvement = reductionRate >= 0.2
+    ? "削減効果は大きめです。無理な節約にならないよう、通信費、保険、サブスクなど負担の少ない項目から固定化しましょう。"
+    : investmentRate >= 0.35
+      ? "投資余力は強めです。生活防衛資金を残しながら、新NISAや配当投資へ継続的に回す設計が現実的です。"
+      : sideIncome === 0
+        ? "固定費削減に加えて、月1万円でも副業収入を作るとFIREまでの距離を縮めやすくなります。"
+        : "生活費削減、副業収入、配当収入を組み合わせると、収入だけに頼らないFIRE計画に近づきます。";
+  const relatedGuide = reductionRate >= 0.15
+    ? "固定費削減と生活コスト最適化で、削減項目を具体化しましょう"
+    : investmentRate < 0.25
+      ? "会社員キャッシュフローで投資余力を確認しましょう"
+      : "FIRE達成率と配当生活達成で到達後の安定性を確認しましょう";
+
+  setText("fireCostRequiredAssets", yen.format(optimizedRequiredAssets));
+  setText("fireCostReductionEffect", yen.format(reductionEffect));
+  setText("fireCostShorteningYears", optimizedMonths === null ? "未達成" : `${shorteningYears.toFixed(1)}年短縮`);
+  setText("fireCostAdditionalInvestmentEffect", yen.format(additionalInvestmentEffect));
+  setText("fireCostSideIncomeEffect", sideIncome > 0 ? `${sideIncomeShortening.toFixed(1)}年短縮` : "副業収入なし");
+  setText("fireCostImprovement", improvement);
+  setText("fireCostRelatedTools", relatedGuide);
+}
+
 function renderFireStress() {
   const values = {
     fireStressAge: getFieldValue("fireStressAge"),
@@ -11761,7 +12032,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-cost-optimization" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -11936,6 +12207,10 @@ document.querySelector("#fireRateForm").addEventListener("input", renderFireRate
 document.querySelector("#fireRateForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFireRate);
 });
+document.querySelector("#fireCostForm").addEventListener("input", renderFireCostOptimization);
+document.querySelector("#fireCostForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderFireCostOptimization);
+});
 document.querySelector("#fireStressForm").addEventListener("input", renderFireStress);
 document.querySelector("#fireStressForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFireStress);
@@ -12050,6 +12325,7 @@ safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestm
 safeRender("iDeCo節税シミュレーター", renderIdeco);
 safeRender("FIRE達成シミュレーター", renderFire);
 safeRender("FIRE達成率シミュレーター", renderFireRate);
+safeRender("FIRE生活費最適化シミュレーター", renderFireCostOptimization);
 safeRender("FIREストレス診断", renderFireStress);
 safeRender("老後資金シミュレーター", renderRetirement);
 safeRender("教育費シミュレーター", renderEducation);
