@@ -32,7 +32,7 @@ var GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "G-XXXXXXXXXX";
   sendGaPageView();
 })();
 
-const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 49種類のシミュレーターで収入、支出、投資、税金を確認できます。";
+const seoDescription = "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。 50種類のシミュレーターで収入、支出、投資、税金を確認できます。";
 const descriptionMeta = document.querySelector('meta[name="description"]') || document.createElement("meta");
 descriptionMeta.setAttribute("name", "description");
 descriptionMeta.setAttribute("content", seoDescription);
@@ -162,6 +162,10 @@ const routeSeo = {
   "fire-rate": {
     title: "FIRE達成率シミュレーター｜会社員の資産形成スコア診断【2026年版】",
     description: "現在資産、副業収入、生活費、配当収入からFIRE達成可能性をスコア化し、改善すべき行動を見つけられます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+  },
+  "side-fire-roadmap": {
+    title: "副業FIRE達成ロードマップ診断｜会社員のFIRE戦略を現実診断【2026年版】",
+    description: "年齢、年収、副業収入、現在資産、毎月投資額、生活費、想定年利、FIRE目標年齢から、FIRE達成確率と現実的な改善ロードマップを診断します。",
   },
   "fire-cost-optimization": {
     title: "FIRE生活費最適化シミュレーター｜固定費改善で達成時期を短縮【2026年版】",
@@ -491,6 +495,7 @@ document.body.innerHTML = `
           <a href="#dividend-life-years" data-route="dividend-life-years">配当生活年数</a>
           <a href="#fire" data-route="fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate" data-route="fire-rate">FIRE達成率</a>
+          <a href="#side-fire-roadmap" data-route="side-fire-roadmap">副業FIREロードマップ</a>
           <a href="#fire-cost-optimization" data-route="fire-cost-optimization">FIRE生活費最適化</a>
           <a href="#fire-stress" data-route="fire-stress">FIREストレス診断</a>
           <a href="#employee-fire" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
@@ -1198,6 +1203,18 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
+          <a class="tool-card" href="#side-fire-roadmap">
+            <p class="eyebrow">FIRE Roadmap</p>
+            <h2>副業FIRE達成ロードマップ診断</h2>
+            <p>年齢、資産、副業収入、投資額、生活費から、FIRE達成までの現実的な改善順を診断します。</p>
+            <div class="tool-meta">
+              <span>達成確率</span>
+              <span>不足額</span>
+              <span>改善順位</span>
+            </div>
+            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
+          </a>
+
           <a class="tool-card" href="#fire-cost-optimization">
             <p class="eyebrow">FIRE Cost</p>
             <h2>FIRE生活費最適化シミュレーター</h2>
@@ -1478,6 +1495,7 @@ document.body.innerHTML = `
             <li><a href="#dividend-life-years"><strong>配当生活年数</strong><span>現在資産と生活費から配当生活の継続年数を確認</span></a></li>
             <li><a href="#fire"><strong>FIRE&#x9054;&#x6210;</strong><span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="#fire-rate"><strong>FIRE達成率</strong><span>現在資産、収支、投資状況からFIRE可能性をスコア化</span></a></li>
+            <li><a href="#side-fire-roadmap"><strong>副業FIRE達成ロードマップ</strong><span>副業収入と投資額からFIREまでの改善順を診断</span></a></li>
             <li><a href="#fire-cost-optimization"><strong>FIRE生活費最適化</strong><span>生活費削減で必要資産と達成時期がどう変わるか確認</span></a></li>
             <li><a href="#fire-stress"><strong>FIREストレス診断</strong><span>FIRE後の収入不安、孤独、満足度を事前に確認</span></a></li>
             <li><a href="#employee-fire"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
@@ -4817,11 +4835,138 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#investment-risk">投資リスク許容度診断</a>
+            <a href="#side-fire-roadmap">副業FIRE達成ロードマップ診断</a>
             <a href="#fire">FIRE達成シミュレーター</a>
             <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
             <a href="#fire-stress">FIREストレス診断</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
             <a href="#dividend-life">配当生活達成シミュレーター</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" data-view="side-fire-roadmap" aria-label="副業FIRE達成ロードマップ診断">
+        <section class="tool-heading">
+          <h2>副業FIRE達成ロードマップ診断</h2>
+          <p>年齢、年収、副業収入、現在資産、毎月投資額、生活費、想定年利、FIRE目標年齢から、FIRE達成までの現実的なロードマップを診断します。</p>
+        </section>
+
+        <section class="workspace" aria-label="副業FIREロードマップの診断">
+          <form class="input-panel" id="sideFireRoadmapForm">
+            <div class="field">
+              <label for="roadmapAge">年齢 <span class="unit">歳</span></label>
+              <input id="roadmapAge" name="roadmapAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="31" required aria-describedby="roadmapAgeError">
+              <p class="error" id="roadmapAgeError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapIncome">年収 <span class="unit">円 / 年</span></label>
+              <input id="roadmapIncome" name="roadmapIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="100000" value="5000000" required aria-describedby="roadmapIncomeError">
+              <p class="error" id="roadmapIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapSideIncome">副業収入 <span class="unit">円 / 月</span></label>
+              <input id="roadmapSideIncome" name="roadmapSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="50000" required aria-describedby="roadmapSideIncomeError">
+              <p class="error" id="roadmapSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapAssets">現在資産 <span class="unit">円</span></label>
+              <input id="roadmapAssets" name="roadmapAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="100000" value="5000000" required aria-describedby="roadmapAssetsError">
+              <p class="error" id="roadmapAssetsError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapMonthlyInvestment">毎月投資額 <span class="unit">円 / 月</span></label>
+              <input id="roadmapMonthlyInvestment" name="roadmapMonthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="roadmapMonthlyInvestmentError">
+              <p class="error" id="roadmapMonthlyInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapLivingCost">生活費 <span class="unit">円 / 月</span></label>
+              <input id="roadmapLivingCost" name="roadmapLivingCost" type="number" inputmode="numeric" min="1" max="100000000" step="10000" value="250000" required aria-describedby="roadmapLivingCostError">
+              <p class="error" id="roadmapLivingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapReturn">想定年利 <span class="unit">%</span></label>
+              <input id="roadmapReturn" name="roadmapReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="5" required aria-describedby="roadmapReturnError">
+              <p class="error" id="roadmapReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="roadmapTargetAge">FIRE目標年齢 <span class="unit">歳</span></label>
+              <input id="roadmapTargetAge" name="roadmapTargetAge" type="number" inputmode="numeric" min="1" max="100" step="1" value="40" required aria-describedby="roadmapTargetAgeError">
+              <p class="error" id="roadmapTargetAgeError"></p>
+            </div>
+            <div class="actions">
+              <button type="reset">リセット</button>
+            </div>
+          </form>
+
+          <section class="result-panel" aria-live="polite">
+            <div class="hero-result">
+              <p class="eyebrow">FIRE達成確率</p>
+              <p class="amount" id="roadmapProbability">0%</p>
+            </div>
+            <p class="notice" id="roadmapNotice">入力を確認してください。目標年齢は現在年齢より大きくしてください。</p>
+            <div class="result-grid">
+              <div class="metric">
+                <strong>達成予想年齢</strong>
+                <span class="accent-green" id="roadmapAchieveAge">0歳</span>
+                <small>現在資産、副業収入、投資額で目標資産へ届く年齢</small>
+              </div>
+              <div class="metric">
+                <strong>不足額</strong>
+                <span class="accent-amber" id="roadmapShortage">0円</span>
+                <small>FIRE目標年齢時点で不足する資産額</small>
+              </div>
+              <div class="metric">
+                <strong>必要副業収入</strong>
+                <span class="accent-blue" id="roadmapRequiredSideIncome">0円</span>
+                <small>目標年齢までに不足を埋める月額副業収入の目安</small>
+              </div>
+              <div class="metric">
+                <strong>改善優先順位</strong>
+                <span class="accent-green text-metric" id="roadmapPriority">入力を確認してください</span>
+                <small>副業、投資、生活費、年利のどこから整えるか</small>
+              </div>
+              <div class="metric">
+                <strong>おすすめ関連ツール</strong>
+                <span class="accent-amber text-metric" id="roadmapRelatedTools">FIRE達成率、生活費最適化、会社員FIRE年数</span>
+                <small>次に確認したいシミュレーター</small>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq-panel" aria-label="副業FIRE達成ロードマップFAQ">
+          <h3>FAQ</h3>
+          <div class="faq-list">
+            <details>
+              <summary>FIRE達成確率は何を表していますか？</summary>
+              <p>目標FIRE年齢時点の予想資産が、生活費25年分のFIRE必要資産にどれくらい近いかを示す簡易スコアです。投資成果を保証するものではなく、改善順を決めるための目安です。</p>
+            </details>
+            <details>
+              <summary>副業収入はすべて投資に回す前提ですか？</summary>
+              <p>この診断では、副業収入をFIREに向けた追加投資余力として扱います。実際には税金や経費もあるため、副業手取りや副業税金シミュレーターと合わせて見ると現実に近づきます。</p>
+            </details>
+            <details>
+              <summary>目標年齢に届かない場合は何から改善すべきですか？</summary>
+              <p>まず生活費を下げると必要資産そのものが下がります。次に副業収入、毎月投資額、投資の継続性を整えると、無理なく達成確率を上げやすくなります。</p>
+            </details>
+            <details>
+              <summary>会社員でも副業FIREは現実的ですか？</summary>
+              <p>本業後の時間が限られるため簡単ではありませんが、副業収入、固定費改善、新NISA、長期投資を組み合わせると現実的なロードマップを作りやすくなります。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業FIREロードマップ関連ツール">
+          <section class="tool-heading">
+            <h2>関連ツール</h2>
+            <p>ロードマップを作ったら、達成率、生活費、会社員FIRE年数、サイドFIREを合わせて確認すると、次の行動が決めやすくなります。</p>
+          </section>
+          <div class="related-links">
+            <a href="#fire-rate">FIRE達成率シミュレーター</a>
+            <a href="#fire-cost-optimization">FIRE生活費最適化シミュレーター</a>
+            <a href="#employee-fire">会社員FIRE年数計算シミュレーター</a>
+            <a href="#side-fire">サイドFIREシミュレーター</a>
+            <a href="#take-home">副業手取り計算シミュレーター</a>
           </div>
         </section>
       </section>
@@ -4954,6 +5099,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#fire-rate">FIRE達成率シミュレーター</a>
+            <a href="#side-fire-roadmap">副業FIRE達成ロードマップ診断</a>
             <a href="#fixed-cost-reduction">固定費削減シミュレーター</a>
             <a href="#life-cost">生活コスト最適化シミュレーター</a>
             <a href="#cash-flow">会社員キャッシュフローシミュレーター</a>
@@ -5087,6 +5233,7 @@ document.body.innerHTML = `
             <p>FIRE後の不安を見たら、達成率、サイドFIRE、配当生活の継続年数も合わせて確認すると現実的な計画に近づきます。</p>
           </section>
           <div class="related-links">
+            <a href="#side-fire-roadmap">副業FIRE達成ロードマップ診断</a>
             <a href="#fire-rate">FIRE達成率シミュレーター</a>
             <a href="#side-fire">サイドFIREシミュレーター</a>
             <a href="#dividend-mental">配当メンタル安定度診断</a>
@@ -5588,6 +5735,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="#fire">FIREシミュレーター</a>
+            <a href="#side-fire-roadmap">副業FIRE達成ロードマップ診断</a>
             <a href="#retirement">老後資金シミュレーター</a>
             <a href="#employee-fire">会社員FIRE年数計算シミュレーター</a>
           </div>
@@ -7326,6 +7474,7 @@ document.body.innerHTML = `
           <a href="#dividend-life-years">配当生活年数</a>
           <a href="#fire">FIRE&#x9054;&#x6210;</a>
           <a href="#fire-rate">FIRE達成率</a>
+          <a href="#side-fire-roadmap">副業FIREロードマップ</a>
           <a href="#fire-cost-optimization">FIRE生活費最適化</a>
           <a href="#employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="#life-cost">生活コスト最適化</a>
@@ -7348,11 +7497,15 @@ document.body.innerHTML = `
 
 function insertLastUpdatedDates() {
   const routeDates = {
+    top: "2026年6月20日",
+    "side-fire-roadmap": "2026年6月20日",
+    "fire-rate": "2026年6月20日",
+    "fire-cost-optimization": "2026年6月20日",
+    "employee-fire": "2026年6月20日",
+    "side-fire": "2026年6月20日",
     "investment-risk": "2026年6月19日",
     "dividend-stock": "2026年6月19日",
     "dividend-etf": "2026年6月19日",
-    "fire-rate": "2026年6月19日",
-    "fire-cost-optimization": "2026年6月19日",
     "fixed-cost-reduction": "2026年6月19日",
     "life-cost": "2026年6月19日",
     "cash-flow": "2026年6月19日",
@@ -7572,6 +7725,7 @@ const routeExperienceProfiles = {
   "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "side-fire-roadmap": { title: "副業FIRE達成ロードマップ診断", kind: "fire", reason: "FIREは資産額だけでなく、本業収入、副業収入、生活費、毎月投資額の組み合わせで現実度が変わります。運営者自身も本業後の限られた時間で副業と投資を検証しているため、次に何を改善すべきかを順番で見られるように作りました。", use: "達成確率が低い場合は、生活費を下げる、月5万円の副業収入を作る、投資を自動化する、リスクを取りすぎない順で整えてください。達成圏内でも税金、生活防衛資金、FIRE後のストレスを確認すると現実的です。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
@@ -7631,6 +7785,7 @@ const relatedToolGroups = {
   fire: [
     ["FIRE達成シミュレーター", "index.html#fire"],
     ["FIRE達成率シミュレーター", "index.html#fire-rate"],
+    ["副業FIRE達成ロードマップ診断", "index.html#side-fire-roadmap"],
     ["FIRE生活費最適化シミュレーター", "index.html#fire-cost-optimization"],
     ["FIREストレス診断", "index.html#fire-stress"],
     ["会社員FIRE年数計算シミュレーター", "index.html#employee-fire"],
@@ -8197,6 +8352,14 @@ const fieldRules = {
   fireRateAnnualLivingCost: { label: "年間生活費", min: 1, max: 1000000000, unit: "\u5186", integer: false },
   fireRateReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
   fireRateDividendIncome: { label: "配当収入", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  roadmapAge: { label: "年齢", min: 0, max: 100, unit: "歳", integer: true },
+  roadmapIncome: { label: "年収", min: 0, max: 1000000000, unit: "円", integer: false },
+  roadmapSideIncome: { label: "副業収入", min: 0, max: 100000000, unit: "円", integer: false },
+  roadmapAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "円", integer: false },
+  roadmapMonthlyInvestment: { label: "毎月投資額", min: 0, max: 100000000, unit: "円", integer: false },
+  roadmapLivingCost: { label: "生活費", min: 1, max: 100000000, unit: "円", integer: false },
+  roadmapReturn: { label: "想定年利", min: 0, max: 30, unit: "%", integer: false },
+  roadmapTargetAge: { label: "FIRE目標年齢", min: 1, max: 100, unit: "歳", integer: true },
   fireCostAge: { label: "現在年齢", min: 0, max: 100, unit: "歳", integer: true },
   fireCostTargetAge: { label: "目標FIRE年齢", min: 1, max: 100, unit: "歳", integer: true },
   fireCostAssets: { label: "現在資産", min: 0, max: 10000000000, unit: "円", integer: false },
@@ -10381,6 +10544,84 @@ function renderFireRate() {
   setText("fireRateRelatedTools", relatedGuide);
 }
 
+function renderSideFireRoadmap() {
+  const values = {
+    roadmapAge: getFieldValue("roadmapAge"),
+    roadmapIncome: getFieldValue("roadmapIncome"),
+    roadmapSideIncome: getFieldValue("roadmapSideIncome"),
+    roadmapAssets: getFieldValue("roadmapAssets"),
+    roadmapMonthlyInvestment: getFieldValue("roadmapMonthlyInvestment"),
+    roadmapLivingCost: getFieldValue("roadmapLivingCost"),
+    roadmapReturn: getFieldValue("roadmapReturn"),
+    roadmapTargetAge: getFieldValue("roadmapTargetAge"),
+  };
+  let hasError = Object.values(values).some((item) => !item.valid);
+
+  if (values.roadmapAge.valid && values.roadmapTargetAge.valid && values.roadmapTargetAge.value <= values.roadmapAge.value) {
+    const input = document.querySelector("#roadmapTargetAge");
+    const error = document.querySelector("#roadmapTargetAgeError");
+    input.setAttribute("aria-invalid", "true");
+    error.textContent = "FIRE目標年齢は現在の年齢より大きくしてください。";
+    hasError = true;
+  }
+
+  document.querySelector("#roadmapNotice").classList.toggle("is-visible", hasError);
+  if (hasError) {
+    setText("roadmapProbability", "入力エラー");
+    setText("roadmapAchieveAge", "入力エラー");
+    setText("roadmapShortage", yen.format(0));
+    setText("roadmapRequiredSideIncome", yen.format(0));
+    setText("roadmapPriority", "入力内容を確認してください");
+    setText("roadmapRelatedTools", "FIRE達成率、生活費最適化、会社員FIRE年数");
+    return;
+  }
+
+  const age = values.roadmapAge.value;
+  const income = values.roadmapIncome.value;
+  const sideIncome = values.roadmapSideIncome.value;
+  const currentAssets = values.roadmapAssets.value;
+  const monthlyInvestment = values.roadmapMonthlyInvestment.value;
+  const monthlyCost = values.roadmapLivingCost.value;
+  const annualReturn = values.roadmapReturn.value;
+  const targetAge = values.roadmapTargetAge.value;
+  const annualCost = monthlyCost * 12;
+  const fireTarget = annualCost * 25;
+  const monthsToTarget = Math.max((targetAge - age) * 12, 1);
+  const monthlyTotal = monthlyInvestment + sideIncome;
+  const projectedAtTarget = calculateFutureAssets(currentAssets, monthlyTotal, annualReturn, monthsToTarget);
+  const shortage = Math.max(fireTarget - projectedAtTarget, 0);
+  const probability = Math.max(0, Math.min(100, Math.round((projectedAtTarget / fireTarget) * 100)));
+  const achievementMonths = findAchievementMonths(currentAssets, monthlyTotal, annualReturn, fireTarget);
+  const achieveAge = achievementMonths === null ? "未達成" : `${age + Math.ceil(achievementMonths / 12)}歳`;
+  const requiredAdditionalMonthly = calculateRequiredMonthly(currentAssets, monthlyTotal, annualReturn, monthsToTarget, fireTarget);
+  const requiredSideIncome = Math.max(requiredAdditionalMonthly, 0);
+  const investmentRate = monthlyTotal / Math.max(income / 12 + sideIncome, 1);
+  const costRatio = annualCost / Math.max(income + sideIncome * 12, 1);
+  const priority = shortage === 0
+    ? "目標年齢時点では達成圏内です。生活防衛資金と税金分を残し、投資を止めない仕組みを優先しましょう。"
+    : costRatio >= 0.6
+      ? "優先順位は 1.生活費最適化 2.副業収入 3.毎月投資額 です。まず固定費を下げると必要資産も下がります。"
+      : sideIncome < 50000
+        ? "優先順位は 1.副業月5万円 2.投資自動化 3.新NISA活用 です。本業後1時間で積み上がる作業設計を作りましょう。"
+        : investmentRate < 0.25
+          ? "優先順位は 1.毎月投資額 2.固定費削減 3.配当再投資 です。収入を投資へ回す比率を上げると改善しやすいです。"
+          : "優先順位は 1.継続性 2.リスク許容度 3.生活防衛資金 です。無理に増やすより止めない設計を優先しましょう。";
+  const relatedTools = probability >= 80
+    ? "FIREストレス診断、NISA取り崩し、配当生活年数で達成後を確認"
+    : costRatio >= 0.6
+      ? "FIRE生活費最適化、固定費削減、会社員キャッシュフローを確認"
+      : sideIncome < 50000
+        ? "副業月収、AI副業効率化、副業手取り計算を確認"
+        : "FIRE達成率、会社員FIRE年数、サイドFIREを確認";
+
+  setText("roadmapProbability", `${probability}%`);
+  setText("roadmapAchieveAge", achieveAge);
+  setText("roadmapShortage", yen.format(shortage));
+  setText("roadmapRequiredSideIncome", yen.format(requiredSideIncome));
+  setText("roadmapPriority", priority);
+  setText("roadmapRelatedTools", relatedTools);
+}
+
 function renderFireCostOptimization() {
   const values = {
     fireCostAge: getFieldValue("fireCostAge"),
@@ -12032,7 +12273,7 @@ function renderMortgage() {
 
 function currentRoute() {
   const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "fire-cost-optimization" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
+  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "side-fire-roadmap" || route === "fire-cost-optimization" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
     return route;
   }
   return "top";
@@ -12207,6 +12448,10 @@ document.querySelector("#fireRateForm").addEventListener("input", renderFireRate
 document.querySelector("#fireRateForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFireRate);
 });
+document.querySelector("#sideFireRoadmapForm").addEventListener("input", renderSideFireRoadmap);
+document.querySelector("#sideFireRoadmapForm").addEventListener("reset", () => {
+  window.requestAnimationFrame(renderSideFireRoadmap);
+});
 document.querySelector("#fireCostForm").addEventListener("input", renderFireCostOptimization);
 document.querySelector("#fireCostForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderFireCostOptimization);
@@ -12325,6 +12570,7 @@ safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestm
 safeRender("iDeCo節税シミュレーター", renderIdeco);
 safeRender("FIRE達成シミュレーター", renderFire);
 safeRender("FIRE達成率シミュレーター", renderFireRate);
+safeRender("副業FIRE達成ロードマップ診断", renderSideFireRoadmap);
 safeRender("FIRE生活費最適化シミュレーター", renderFireCostOptimization);
 safeRender("FIREストレス診断", renderFireStress);
 safeRender("老後資金シミュレーター", renderRetirement);
