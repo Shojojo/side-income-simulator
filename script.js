@@ -12271,11 +12271,31 @@ function renderMortgage() {
   setText("bonusPaymentGuide", yen.format(bonusPayment));
 }
 
+const validRoutes = new Set([
+  "side-income", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "employee-fire", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
+]);
+
+const routeAliases = {
+  "ai-sidejob": "ai-efficiency",
+};
+
 function currentRoute() {
-  const route = window.location.hash.replace("#", "");
-  if (route === "side-income" || route === "ai-hourly" || route === "ai-efficiency" || route === "ai-roi" || route === "ai-automation" || route === "ai-time-reduction" || route === "ai-outsourcing" || route === "ai-profit-max" || route === "hourly-improvement" || route === "side-time-management" || route === "side-fatigue" || route === "side-continuity" || route === "side-motivation" || route === "side-risk" || route === "side-safety" || route === "side-profit-margin" || route === "incorporation" || route === "take-home" || route === "tax" || route === "employee-tax-saving" || route === "income-tax" || route === "resident-tax" || route === "investment-risk" || route === "nisa" || route === "nisa-fast" || route === "nisa-withdrawal" || route === "credit-card-investment" || route === "ideco" || route === "dividend" || route === "dividend-etf" || route === "dividend-stock" || route === "dividend-mental" || route === "dividend-reinvestment" || route === "dividend-life" || route === "dividend-life-years" || route === "fire" || route === "fire-rate" || route === "side-fire-roadmap" || route === "fire-cost-optimization" || route === "fire-stress" || route === "employee-fire" || route === "cash-flow" || route === "life-cost" || route === "side-fire" || route === "emergency-fund" || route === "fixed-cost-reduction" || route === "retirement" || route === "education" || route === "education-insurance" || route === "mortgage") {
-    return route;
+  const pathRoute = window.location.pathname.split("/").pop().replace(/\.html$/, "");
+  if (routeAliases[pathRoute]) {
+    return routeAliases[pathRoute];
   }
+  if (validRoutes.has(pathRoute)) {
+    return pathRoute;
+  }
+
+  const hashRoute = window.location.hash.replace("#", "");
+  if (routeAliases[hashRoute]) {
+    return routeAliases[hashRoute];
+  }
+  if (validRoutes.has(hashRoute)) {
+    return hashRoute;
+  }
+
   return "top";
 }
 
@@ -12295,19 +12315,6 @@ function renderRoute() {
     link.setAttribute("aria-current", link.dataset.route === route ? "page" : "false");
   });
 }
-
-document.querySelectorAll("[data-route]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const route = link.dataset.route;
-    if (!route || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
-      return;
-    }
-
-    event.preventDefault();
-    window.location.hash = route === "top" ? "" : route;
-    renderRoute();
-  });
-});
 
 function renderTopToolSearch() {
   const searchInput = document.querySelector("#topToolSearch");
