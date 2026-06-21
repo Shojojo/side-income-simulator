@@ -8104,7 +8104,7 @@ function buildNextReadSection(kind = "default", currentHref = "") {
 }
 
 function buildRelatedToolLinks(kind, currentRoute) {
-  const currentHref = `index.html#${currentRoute}`;
+  const currentHref = currentRoute === "top" ? "index.html" : `${currentRoute}.html`;
   const fallback = [
     ["新NISAシミュレーター", "nisa.html"],
     ["FIRE達成シミュレーター", "fire.html"],
