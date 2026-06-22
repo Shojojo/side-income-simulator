@@ -525,9 +525,20 @@ document.body.innerHTML = `
           </div>
         </section>
 
-        <section class="article-panel" aria-label="実録記事">
+        <section class="article-panel" aria-label="運営者メッセージ">
           <section class="tool-heading">
-            <h2>まず読んでほしい実録記事</h2>
+            <h2>運営者メッセージ</h2>
+            <p>このサイトは、楽に稼げる方法を並べるためではなく、忙しい会社員が現実的に副業と資産形成を続けるために作っています。</p>
+          </section>
+          <div class="experience-block">
+            <p>私自身、管理職として急な欠勤対応や夜間対応が入る日があり、「今日は副業を3時間やる」と決めても崩れることが何度もありました。だから今は、気合いで時間を増やすより、AIで作業を短縮し、固定費を下げ、NISAや長期投資へ自動で積み上げる流れを重視しています。</p>
+            <p>各シミュレーターは、正確な将来を保証するものではありません。ただ、収入、税金、支出、投資、FIREまでの距離をざっくり数字で見ることで、次に何を直すべきかはかなり見えやすくなります。初心者の方でも、まずはこのトップページの順番に沿って確認できるように整理しています。</p>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="おすすめ実録記事">
+          <section class="tool-heading">
+            <h2>おすすめ実録記事</h2>
             <p>このサイトを「ツール一覧」ではなく、働きながら資産形成を進める記録として読むなら、まずこの実録記事から確認してください。</p>
           </section>
           <div class="next-read-grid">
@@ -590,10 +601,10 @@ document.body.innerHTML = `
           </div>
         </section>
 
-        <section class="article-panel" aria-label="このサイトでわかること">
+        <section class="article-panel" aria-label="このサイトでできること">
           <section class="tool-heading">
-            <h2>このサイトでわかること</h2>
-            <p>副業や投資を始める前に、収入、支出、税金、将来資産をまとめて見える化できます。</p>
+            <h2>このサイトでできること</h2>
+            <p>副業や投資を始める前に、収入、支出、税金、将来資産をまとめて見える化し、次に使うべきツールや記事へ移動できます。</p>
           </section>
           <div class="article-list">
             <a class="article-link" href="side-income.html"><strong>副業収入</strong><span>時給、作業時間、案件数から月収と年収の目安を確認</span></a>
@@ -602,6 +613,8 @@ document.body.innerHTML = `
             <a class="article-link" href="life-cost.html"><strong>固定費改善</strong><span>家賃、通信費、保険料、食費などの改善余地を確認</span></a>
             <a class="article-link" href="ai-efficiency.html"><strong>AI副業</strong><span>AI活用による時間削減、時給改善、利益率改善を確認</span></a>
             <a class="article-link" href="retirement.html"><strong>老後資金</strong><span>退職時資産、年金見込み、老後生活費から不足額を確認</span></a>
+            <a class="article-link" href="tax.html"><strong>税金・手取り</strong><span>副業収入から所得税、住民税、手取りへの影響を確認</span></a>
+            <a class="article-link" href="side-time-management.html"><strong>時間管理</strong><span>本業後に副業を続けられる時間と疲労リスクを確認</span></a>
           </div>
         </section>
 
@@ -634,10 +647,10 @@ document.body.innerHTML = `
           </div>
         </section>
 
-        <section class="article-panel" aria-label="まず最初に使うべきシミュレーター">
+        <section class="article-panel" aria-label="初心者向けおすすめツールTOP10">
           <section class="tool-heading">
-            <h2>まず最初に使うべきシミュレーター</h2>
-            <p>初めて来た人は、細かいツールを全部見るより、この順番で確認すると家計と資産形成の全体像をつかみやすいです。</p>
+            <h2>初心者向けおすすめツールTOP10</h2>
+            <p>初めて来た人は、細かいツールを全部見るより、この10個を上から確認すると副業、手取り、生活費、投資、FIREまでの全体像をつかみやすいです。</p>
           </section>
           <div class="article-list">
             <a class="article-link" href="side-income.html"><strong>1. 副業月収シミュレーター</strong><span>本業以外でどれくらい収入を作れるか、最初に確認します</span></a>
@@ -645,6 +658,26 @@ document.body.innerHTML = `
             <a class="article-link" href="life-cost.html"><strong>3. 生活コスト最適化シミュレーター</strong><span>副業で増やす前に、毎月の支出改善余地を確認します</span></a>
             <a class="article-link" href="nisa.html"><strong>4. 新NISAシミュレーター</strong><span>余力を投資へ回した場合の将来資産を見ます</span></a>
             <a class="article-link" href="fire.html"><strong>5. FIRE達成シミュレーター</strong><span>副業、固定費改善、投資をFIREまでの距離に変換します</span></a>
+            <a class="article-link" href="side-time-management.html"><strong>6. 副業時間管理シミュレーター</strong><span>本業後に無理なく使える副業時間を確認します</span></a>
+            <a class="article-link" href="ai-efficiency.html"><strong>7. AI副業効率化シミュレーター</strong><span>AIで削減できる時間と利益改善の目安を見ます</span></a>
+            <a class="article-link" href="tax.html"><strong>8. 副業税金シミュレーター</strong><span>副業収入にかかる税金と青色申告の影響を確認します</span></a>
+            <a class="article-link" href="emergency-fund.html"><strong>9. 生活防衛資金シミュレーター</strong><span>副業や投資の前に必要な安全資金を確認します</span></a>
+            <a class="article-link" href="side-fire-roadmap.html"><strong>10. 副業FIRE達成ロードマップ診断</strong><span>収入、投資、生活費からFIREまでの改善順を確認します</span></a>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業ロードマップ">
+          <section class="tool-heading">
+            <h2>副業ロードマップ</h2>
+            <p>副業は、収入だけを追うより、時間、手取り、税金、投資まで順番に整える方が長く続きます。</p>
+          </section>
+          <div class="next-read-grid">
+            <a class="next-read-card" href="side-time-management.html"><strong>STEP1 時間を確保する</strong><span>本業、通勤、睡眠、家事を入れて、副業に使える現実的な時間を確認します。</span><span class="next-read-reason">関連理由：無理な作業計画を避けるための入口です。</span></a>
+            <a class="next-read-card" href="side-income.html"><strong>STEP2 月収目標を決める</strong><span>時給、作業時間、案件数から副業月収の目安を見ます。</span><span class="next-read-reason">関連理由：目標収入を数字にすると作業量を決めやすくなります。</span></a>
+            <a class="next-read-card" href="take-home.html"><strong>STEP3 手取りを確認する</strong><span>売上ではなく、税金や経費を引いた後に残る金額を見ます。</span><span class="next-read-reason">関連理由：副業は売上より残るお金が大切です。</span></a>
+            <a class="next-read-card" href="tax.html"><strong>STEP4 税金を準備する</strong><span>所得税、住民税、青色申告の影響を早めに確認します。</span><span class="next-read-reason">関連理由：後から慌てないための準備になります。</span></a>
+            <a class="next-read-card" href="nisa.html"><strong>STEP5 投資へ回す</strong><span>副業や固定費改善で作った余力を長期投資に回した場合を試算します。</span><span class="next-read-reason">関連理由：収入アップを資産形成へつなげられます。</span></a>
+            <a class="next-read-card" href="fire.html"><strong>STEP6 FIREまでの距離を見る</strong><span>副業、投資、生活費改善がFIRE達成時期にどう効くか確認します。</span><span class="next-read-reason">関連理由：毎月の改善が将来の自由時間に変わるかを見られます。</span></a>
           </div>
         </section>
 
@@ -793,10 +826,10 @@ document.body.innerHTML = `
           </div>
         </section>
 
-        <section class="article-panel" aria-label="カテゴリ別ページ">
+        <section class="article-panel" aria-label="人気カテゴリ導線">
           <section class="tool-heading">
-            <h2>カテゴリ別ページ</h2>
-            <p>目的に近いカテゴリから、関連ツールと関連記事をまとめて確認できます。</p>
+            <h2>人気カテゴリ導線</h2>
+            <p>目的に近いカテゴリから、関連ツールと関連記事をまとめて確認できます。迷ったら副業、税金、固定費、投資、FIREの順に進むのがおすすめです。</p>
           </section>
           <div class="article-list">
             <a class="article-link" href="category-side-business.html">
