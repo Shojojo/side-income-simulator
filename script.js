@@ -454,7 +454,7 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
-        <p class="article-meta">最終更新日：2026年6月21日</p>
+        <p class="article-meta">最終更新日：2026年6月22日</p>
         <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
         <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
           <a href="index.html" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -528,9 +528,24 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="実録記事">
           <section class="tool-heading">
             <h2>まず読んでほしい実録記事</h2>
-            <p>このサイトを「ツール一覧」ではなく、働きながら資産形成を進める記録として読むなら、まずこの3本から確認してください。</p>
+            <p>このサイトを「ツール一覧」ではなく、働きながら資産形成を進める記録として読むなら、まずこの実録記事から確認してください。</p>
           </section>
           <div class="next-read-grid">
+            <a class="next-read-card" href="article-building-50-tools.html">
+              <strong>31歳会社員が副業サイトを50ツール作るまで</strong>
+              <span>本業後の短い時間で、失敗や修正を重ねながら50個のツールを作った流れをまとめました。</span>
+              <span class="next-read-reason">関連理由：このサイトを作った背景と、量産ではなく改善してきた過程がわかります。</span>
+            </a>
+            <a class="next-read-card" href="article-chatgpt-sidejob-site-lessons.html">
+              <strong>ChatGPTで副業サイトを作って分かったこと</strong>
+              <span>AIを使って便利になった点だけでなく、確認漏れ、リンク修正、手直しが必要だった現実を書いています。</span>
+              <span class="next-read-reason">関連理由：AI副業を始める前に、過信しすぎない使い方を確認できます。</span>
+            </a>
+            <a class="next-read-card" href="article-sidejob-time-management.html">
+              <strong>副業と本業を両立する時間管理術</strong>
+              <span>急な欠勤対応や長時間労働がある中で、副業を続けるために時間をどう守っているかを整理しました。</span>
+              <span class="next-read-reason">関連理由：副業の前に、平日1時間でも続く設計を作れます。</span>
+            </a>
             <a class="next-read-card" href="article-after-work-sidejob-1hour.html">
               <strong>本業後1時間副業を続けるためにやめたこと</strong>
               <span>運送業管理職として働きながら、毎日3時間ではなく短時間で積み上げる設計に変えた話です。</span>
@@ -636,12 +651,12 @@ document.body.innerHTML = `
         <section class="top-search-panel" aria-label="ツール検索">
           <section class="tool-heading">
             <h2>目的からシミュレーターを探す</h2>
-            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で43個のシミュレーターを絞り込めます。</p>
+            <p>副業、税金、FIRE、NISA、老後資金など、気になる言葉で50個のシミュレーターを絞り込めます。</p>
           </section>
           <div class="search-control">
             <label class="visually-hidden" for="topToolSearch">ツール検索</label>
             <input id="topToolSearch" type="search" placeholder="例: 副業 税金 FIRE NISA 老後 AI 固定費" autocomplete="off">
-            <p class="search-status" id="topToolSearchStatus">43個のツールから検索できます。</p>
+            <p class="search-status" id="topToolSearchStatus">50個のツールから検索できます。</p>
           </div>
           <div class="search-actions" aria-label="よく使う検索">
             <a href="side-income.html">副業収入を計算</a>
@@ -712,11 +727,11 @@ document.body.innerHTML = `
             <p>副業を始める人、税金が気になる人、FIREやNISAを考える人が最初に読みやすい記事です。</p>
           </section>
           <ol class="ranking-list">
+            <li><a href="article-building-50-tools.html"><strong>31歳会社員が副業サイトを50ツール作るまで</strong><span>本業後の短時間で、失敗と修正を重ねながらサイトを育てた記録</span></a></li>
+            <li><a href="article-chatgpt-sidejob-site-lessons.html"><strong>ChatGPTで副業サイトを作って分かったこと</strong><span>AI活用で楽になった作業と、手直しが必要だった現実</span></a></li>
+            <li><a href="article-sidejob-time-management.html"><strong>副業と本業を両立する時間管理術</strong><span>長時間労働や急な対応がある会社員向けの時間設計</span></a></li>
             <li><a href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>運送業管理職として働きながら副業時間を作る実体験</span></a></li>
             <li><a href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しないための資産形成</span></a></li>
-            <li><a href="article-ai-sidejob-manager-reality.html"><strong>管理職をしながらAI副業を続ける現実</strong><span>本業後の疲労とAI活用のリアル</span></a></li>
-            <li><a href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>本業後の限られた時間で収入を作る考え方</span></a></li>
-            <li><a href="article-ai-tools-comparison.html"><strong>副業向けおすすめAIツール比較</strong><span>ChatGPT、Claude、Geminiなどを副業用途で比較</span></a></li>
           </ol>
         </section>
 
@@ -1516,6 +1531,18 @@ document.body.innerHTML = `
             <p>副業、税金、FIRE、NISA、iDeCo、老後資金の基礎を、ツールの結果と合わせて確認できます。</p>
           </section>
           <div class="article-list">
+            <a class="article-link" href="article-building-50-tools.html">
+              <strong>31歳会社員が副業サイトを50ツール作るまで</strong>
+              <span>本業後の短時間で、失敗と修正を重ねながら副業サイトを作った実録</span>
+            </a>
+            <a class="article-link" href="article-chatgpt-sidejob-site-lessons.html">
+              <strong>ChatGPTで副業サイトを作って分かったこと</strong>
+              <span>AI活用で時短できた点、確認漏れで苦戦した点、改善した点</span>
+            </a>
+            <a class="article-link" href="article-sidejob-time-management.html">
+              <strong>副業と本業を両立する時間管理術</strong>
+              <span>長時間労働や急な欠勤対応がある中で副業時間を守る考え方</span>
+            </a>
             <a class="article-link" href="article-after-work-sidejob-1hour.html">
               <strong>本業後1時間副業を続けるためにやめたこと</strong>
               <span>運送業管理職として働きながら副業時間を作る実体験</span>
