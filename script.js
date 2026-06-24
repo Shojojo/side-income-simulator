@@ -454,7 +454,7 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
-        <p class="article-meta">最終更新日：2026年6月22日</p>
+        <p class="article-meta">最終更新日：2026年6月24日</p>
         <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
         <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
           <a href="index.html" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
@@ -1564,6 +1564,10 @@ document.body.innerHTML = `
             <p>副業、税金、FIRE、NISA、iDeCo、老後資金の基礎を、ツールの結果と合わせて確認できます。</p>
           </section>
           <div class="article-list">
+            <a class="article-link" href="article-rakuten-sbi-thorough-comparison-2026.html">
+              <strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong>
+              <span>手数料、新NISA、ポイント、初心者向けの選び方を整理</span>
+            </a>
             <a class="article-link" href="article-building-50-tools.html">
               <strong>31歳会社員が副業サイトを50ツール作るまで</strong>
               <span>本業後の短時間で、失敗と修正を重ねながら副業サイトを作った実録</span>
@@ -1653,6 +1657,10 @@ document.body.innerHTML = `
             <p>副業や投資を始める前に、口座、会計ソフト、カード、AIツールを比較して準備できます。</p>
           </section>
           <div class="article-list">
+            <a class="article-link" href="article-rakuten-sbi-thorough-comparison-2026.html">
+              <strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong>
+              <span>手数料、NISA、ポイント、初心者向けのおすすめを整理</span>
+            </a>
             <a class="article-link" href="article-rakuten-sbi-securities-comparison.html">
               <strong>&#x697d;&#x5929;&#x8a3c;&#x5238; vs SBI&#x8a3c;&#x5238; &#x5b8c;&#x5168;&#x6bd4;&#x8f03;</strong>
               <span>&#x65b0;NISA&#x3001;&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;&#x3001;&#x9ad8;&#x914d;&#x5f53;&#x6295;&#x8cc7;&#x3092;&#x521d;&#x5fc3;&#x8005;&#x5411;&#x3051;&#x306b;&#x6574;&#x7406;</span>
