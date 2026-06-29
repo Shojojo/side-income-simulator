@@ -8219,27 +8219,27 @@ document.body.innerHTML = `
 function insertLastUpdatedDates() {
   const routeDates = {
     top: "2026年6月21日",
-    "side-fire-roadmap": "2026年6月21日",
-    "fire-rate": "2026年6月21日",
-    "fire-cost-optimization": "2026年6月21日",
-    "employee-fire": "2026年6月21日",
-    "side-fire": "2026年6月21日",
-    "investment-risk": "2026年6月21日",
-    "dividend-stock": "2026年6月21日",
-    "dividend-etf": "2026年6月21日",
-    "fixed-cost-reduction": "2026年6月21日",
-    "life-cost": "2026年6月21日",
-    "cash-flow": "2026年6月21日",
-    "ai-time-reduction": "2026年6月21日",
-    "side-safety": "2026年6月21日",
-    "side-risk": "2026年6月21日",
-    "side-fatigue": "2026年6月21日",
-    "income-tax": "2026年6月21日",
-    "ai-automation": "2026年6月21日",
-    "ai-efficiency": "2026年6月21日",
-    "ai-roi": "2026年6月21日",
-    "dividend-mental": "2026年6月21日",
-    "fire-stress": "2026年6月21日",
+    "side-fire-roadmap": "2026年6月29日",
+    "fire-rate": "2026年6月29日",
+    "fire-cost-optimization": "2026年6月29日",
+    "employee-fire": "2026年6月29日",
+    "side-fire": "2026年6月29日",
+    "investment-risk": "2026年6月29日",
+    "dividend-stock": "2026年6月29日",
+    "dividend-etf": "2026年6月29日",
+    "fixed-cost-reduction": "2026年6月29日",
+    "life-cost": "2026年6月29日",
+    "cash-flow": "2026年6月29日",
+    "ai-time-reduction": "2026年6月29日",
+    "side-safety": "2026年6月29日",
+    "side-risk": "2026年6月29日",
+    "side-fatigue": "2026年6月29日",
+    "income-tax": "2026年6月29日",
+    "ai-automation": "2026年6月29日",
+    "ai-efficiency": "2026年6月29日",
+    "ai-roi": "2026年6月29日",
+    "dividend-mental": "2026年6月29日",
+    "fire-stress": "2026年6月29日",
   };
   document.querySelectorAll(".view > .tool-heading").forEach((heading) => {
     if (heading.querySelector(".article-meta")) {
@@ -8247,7 +8247,7 @@ function insertLastUpdatedDates() {
     }
     const title = heading.querySelector(":scope > h2");
     const view = heading.closest("[data-view]");
-    const date = routeDates[view?.dataset.view] || "2026年6月21日";
+    const date = routeDates[view?.dataset.view] || "2026年6月29日";
     if (title) {
       title.insertAdjacentHTML("afterend", `<p class="article-meta">最終更新日：${date}</p>`);
     }
