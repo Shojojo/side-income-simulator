@@ -1768,6 +1768,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業月収の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>副業収入は売上、手取り、作業時間を分けて見ると現実に近づきます。案件単価が上がるパターンだけでなく、修正時間が増えるパターン、税金が重くなるパターンも置いてください。制度は変更される可能性があるので、税務や働き方の最新情報も合わせて確認しましょう。特に副業月収では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x526f;&#x696d;&#x6708;&#x53ce;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -1864,6 +1870,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI副業時給の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>AI副業時給の結果は、AIで短縮できる時間だけで判断しないでください。税金、生活費、投資へ回せる余力、確認や修正に使う時間を総合的に見る必要があります。AIがうまく使えるパターン、手直しが多いパターン、税金後の利益が少ないパターンを比べると、現実的な時給が見えます。AIサービスの料金や制度は変更される可能性があります。さらに、案件単価が同じでも作業に慣れるまでの時間や、AI出力を直す時間で実質時給は変わります。短期で良く見える数字だけでなく、1か月続けた場合と3か月続けた場合も分けて確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI&#x526f;&#x696d;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -1985,6 +1997,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI副業効率化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>AI効率化は時間、利益、生活費、税金を総合的に見ると判断しやすくなります。平日1時間だけ使えるパターン、休日にまとめるパターン、AI費用が増えるパターンも確認してください。ツールの仕様や制度は変更される可能性があるため、数字は固定しないでください。AI副業効率化では、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI副業効率化関連ツール">
           <section class="tool-heading">
@@ -2118,6 +2136,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI導入ROIの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>ROIは高く見えやすいので、売上増加なしのパターン、時短効果が半分のパターン、税金を引いたパターンも試してください。生活費を圧迫するAI費用になっていないかも総合的に見ます。AI料金や利用制度は変更される可能性があるため、契約前に必ず再確認しましょう。AI導入ROIでは、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI導入ROI関連ツール">
           <section class="tool-heading">
@@ -2260,6 +2284,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI副業自動化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>自動化は便利ですが、納品品質、確認時間、税金後の利益、生活時間を総合的に考える必要があります。自動化できる作業が少ないパターン、外注と併用するパターン、AI費用が増えるパターンも試してください。AIの制度や仕様は変更される可能性があります。AI副業自動化では、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI副業自動化関連ツール">
           <section class="tool-heading">
@@ -2409,6 +2439,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI作業時間削減の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>削減時間は作業ジャンルで変わるため、税金、生活費、投資に回せる時間まで総合的に見てください。AI利用頻度を下げるパターン、外注なしのパターン、目標月収を変えるパターンも試すと現実的です。AIサービスの制度や機能は変更される可能性があります。AI作業時間削減では、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI作業時間削減関連ツール">
           <section class="tool-heading">
@@ -2552,6 +2588,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI外注費削減の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>外注費を下げると利益は増えますが、品質低下や確認時間も総合的に考える必要があります。AI削減率が低いパターン、外注を一部残すパターン、税金後の手取りで見るパターンも試してください。AIや外注サービスの制度、料金は変更される可能性があります。AI外注費削減では、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI外注費削減関連ツール">
           <section class="tool-heading">
@@ -2688,6 +2730,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="AI副業利益最大化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>利益最大化は収入だけでなく、税金、生活費、投資時間、疲労度を総合的に見ることが大切です。売上が伸びないパターン、AI費用が上がるパターン、作業時間を減らすパターンを比べてください。AIツールの制度や価格は変更される可能性があります。AI副業利益最大化では、AIで短縮できた時間をそのまま利益に置き換えないことが大切です。税金、生活費、投資へ回す余力、確認にかかる時間を総合的に見てください。削減率が高いパターン、低いパターン、AI費用が増えるパターンを比べると、実際の使いどころが見えます。AIサービスの制度や料金は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="AI副業利益最大化関連ツール">
           <section class="tool-heading">
@@ -2820,6 +2868,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業時間管理の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>時間に余裕が出ても、すべてを副業に回すと疲労が残ります。税金、生活費、投資に使う時間、睡眠を総合的に考えてください。繁忙期のパターン、通常週のパターン、AIで短縮するパターンを分けると無理が見えます。働き方や制度は変更される可能性があります。特に副業時間管理では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業時間管理関連ツール">
           <section class="tool-heading">
@@ -2952,6 +3006,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業疲労度の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>疲労は数字だけで決められないため、収入、税金、生活費、投資時間、睡眠を総合的に見てください。副業時間を減らすパターン、AIを使うパターン、休日を増やすパターンを試すと改善策が見えます。本業の状況や制度は変更される可能性があります。特に副業疲労度では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業疲労度関連ツール">
           <section class="tool-heading">
@@ -3011,6 +3071,13 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業継続率の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>継続率は副業収入だけでなく、税金、生活費、睡眠、投資へ回す余力を総合的に考える必要があります。目標月収を下げるパターン、作業時間を減らすパターン、AIを使うパターンも比較してください。勤務環境や制度は変更される可能性があります。特に副業継続率では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
+
         <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>継続率を確認したら、モチベーション、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-motivation.html">副業モチベーション診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
       </section>
 
@@ -3057,6 +3124,13 @@ document.body.innerHTML = `
           <section class="tool-heading">
             <h2>運営者コメント</h2>
             <p>このページは、目標月収と疲労度から意欲を保てるか確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に気持ちが切れやすい時期ほど、目標と現実の差を見て作業量を調整しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、高すぎる目標は挫折につながるので、段階目標も試してください。次は <a href="side-continuity.html">副業継続率診断</a> で、結果を次の行動に落とし込んでください。</p>
+          </section>
+        </section>
+
+        <section class="article-panel usage-note" aria-label="副業モチベーションの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>意欲は収益だけで保てないため、税金後の手取り、生活費、休息時間、投資目標を総合的に見てください。目標月収を高めるパターン、低めるパターン、趣味時間を残すパターンも試しましょう。本業状況や制度は変更される可能性があります。特に副業モチベーションでは、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
           </section>
         </section>
 
@@ -3193,6 +3267,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業リスクの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>リスクは税務だけではなく、生活費、睡眠、収益依存、投資目標を総合的に見る必要があります。収入が増えたパターン、会社規定が厳しいパターン、確定申告ありなしのパターンも試してください。税制や勤務先制度は変更される可能性があります。特に副業リスクでは、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業リスク診断関連ツール">
           <section class="tool-heading">
@@ -3341,6 +3421,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="会社員副業安全度の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>安全度は会社バレだけでなく、税金、生活費、疲労、時間、収益依存を総合的に考えてください。普通徴収できないパターン、匿名性が低いパターン、副業時間が増えるパターンも試すと危険箇所が見えます。自治体や会社制度は変更される可能性があります。特に会社員副業安全度では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="会社員副業安全度関連ツール">
           <section class="tool-heading">
@@ -3463,6 +3549,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業時給改善の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>時給改善は売上だけでなく、税金、生活費、AI費用、投資に回せる時間を総合的に見てください。時短率が低いパターン、経費が増えるパターン、目標時給を下げるパターンも試すと無理が見えます。副業相場や制度は変更される可能性があります。特に副業時給改善では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業時給改善関連ツール">
           <section class="tool-heading">
@@ -3579,6 +3671,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業利益率の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>利益率は売上より現実的ですが、税金、生活費、投資余力、作業時間まで総合的に見る必要があります。広告費を増やすパターン、外注費を削るパターン、AIを使わないパターンも試してください。経費や税制の制度は変更される可能性があります。特に副業利益率では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業利益率関連ツール">
           <section class="tool-heading">
@@ -3715,6 +3813,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業法人化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>法人化は税金だけでなく、生活費、社会保険、事務時間、投資余力を総合的に考える必要があります。利益が伸びるパターン、維持費が増えるパターン、役員報酬を変えるパターンを試してください。税制や社会保険制度は変更される可能性があります。特に副業法人化では、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業法人化判断関連リンク">
           <section class="tool-heading">
@@ -3822,6 +3926,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業税金の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>税金は控除や経費で変わるため、生活費、手取り、投資額、納税時期を総合的に見てください。経費が少ないパターン、青色控除なしのパターン、税率を高めにするパターンも試すと準備額が見えます。税制や申告制度は変更される可能性があります。副業税金では、税額だけでなく、生活費を残した後に投資へ回せる金額や、副業に使う時間まで総合的に確認してください。控除が使えるパターン、使えないパターン、税率を高めにするパターンを試すと納税準備がしやすくなります。税制や申告制度は変更される可能性があるため、公式情報も確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -3960,6 +4070,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="会社員節税の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>節税は得に見えても、生活費や手元資金を圧迫することがあります。税金、投資、iDeCoの資金拘束、副業所得を総合的に見てください。掛金を下げるパターン、副業所得が増えるパターン、控除なしのパターンも試しましょう。控除制度は変更される可能性があります。会社員節税では、税額だけでなく、生活費を残した後に投資へ回せる金額や、副業に使う時間まで総合的に確認してください。控除が使えるパターン、使えないパターン、税率を高めにするパターンを試すと納税準備がしやすくなります。税制や申告制度は変更される可能性があるため、公式情報も確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="会社員節税関連リンク">
           <section class="tool-heading">
@@ -4092,6 +4208,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業所得税の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>副業所得税の結果は、税金の概算であり申告額を確定するものではありません。生活費、住民税、投資余力、手取りを総合的に考えてください。所得税率を高くするパターン、控除を減らすパターン、経費を少なくするパターンも試すと安全です。税金や申告制度は変更される可能性があります。また、所得税だけを見ていると住民税や翌年の納付感を見落としやすくなります。副業収入が増えるパターンだけでなく、経費が思ったより少ない場合や控除が使えない場合も確認してください。最後に、税金用の現金を別に残すパターンも必ず確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -4215,6 +4337,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業住民税の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>住民税は自治体や申告内容で変わるため、税金、生活費、会社規定、手取りを総合的に見てください。普通徴収できないパターン、経費が少ないパターン、均等割を変えるパターンも試すと備えやすくなります。自治体制度は変更される可能性があります。副業住民税では、税額だけでなく、生活費を残した後に投資へ回せる金額や、副業に使う時間まで総合的に確認してください。控除が使えるパターン、使えないパターン、税率を高めにするパターンを試すと納税準備がしやすくなります。税制や申告制度は変更される可能性があるため、公式情報も確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -4336,6 +4464,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業手取りの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>手取りが出ても、翌年の住民税や納税資金を忘れないでください。税金、生活費、投資額、作業時間を総合的に見ます。税率を高めにするパターン、経費が少ないパターン、副業収入が不安定なパターンも試してください。税制や社会保険制度は変更される可能性があります。特に副業手取りでは、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -4489,6 +4623,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="投資リスク許容度の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>投資スタイルはスコアだけで決めず、生活費、税金、投資期間、暴落時の行動を総合的に考えてください。現金比率を高めるパターン、投資額を減らすパターン、FIRE希望なしのパターンも試すと向き不向きが見えます。市場や制度は変更される可能性があります。投資リスク許容度では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="投資リスク許容度関連ツール">
           <section class="tool-heading">
@@ -4597,6 +4737,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="新NISAの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>新NISAは非課税でも元本保証ではありません。税金、生活費、投資期間、老後資金を総合的に考えてください。年利を低くするパターン、積立額を下げるパターン、途中で積立を止めるパターンも試すと現実的です。NISA制度や商品条件は変更される可能性があります。新NISAでは、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="FIRE&#x9054;&#x6210;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x3078;&#x306e;&#x5185;&#x90e8;&#x30ea;&#x30f3;&#x30af;">
           <section class="tool-heading">
@@ -4722,6 +4868,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="新NISA最速積立の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>最速積立は魅力的ですが、生活費や防衛資金を削ると続きません。税金、投資額、老後資金、急な支出を総合的に見てください。ボーナスなしのパターン、年利を低くするパターン、積立額を半分にするパターンも試しましょう。NISA制度は変更される可能性があります。新NISA最速積立では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="新NISA最速積立関連ツール">
           <section class="tool-heading">
@@ -4849,6 +5001,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="iDeCoの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>iDeCoは節税と老後資金に役立ちますが、資金拘束があります。税金、生活費、NISA、投資余力を総合的に考えてください。掛金を増やすパターン、減らすパターン、副業所得が変わるパターンも試すと家計への影響が見えます。iDeCo制度は変更される可能性があります。iDeCoでは、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="iDeCo&#x7bc0;&#x7a0e;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -4951,6 +5109,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="FIRE達成の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>FIRE年数は前提で大きく変わるため、税金、生活費、投資、時間、副業収入を総合的に考えてください。年利を低くするパターン、生活費が増えるパターン、副業収入がなくなるパターンも試すと安全です。税制、物価、投資制度は変更される可能性があります。FIRE達成では、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="FIRE&#x9054;&#x6210;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -5091,6 +5255,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="FIRE達成率の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>達成率は方向性を見るための数字で、将来を保証しません。税金、生活費、投資、時間、副業収入、負債を総合的に見てください。目標年齢を遅らせるパターン、配当なしのパターン、年利を下げるパターンも試すと改善点が見えます。制度や市場は変更される可能性があります。FIRE達成率では、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="FIRE達成率関連ツール">
           <section class="tool-heading">
@@ -5226,6 +5396,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="副業FIREロードマップの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>ロードマップは行動順の目安であり、確定計画ではありません。税金、生活費、投資、時間、副業収入の継続性を総合的に見てください。副業収入が伸びるパターン、横ばいのパターン、減るパターンを比べると現実的です。制度や市場環境は変更される可能性があります。副業FIREロードマップでは、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="副業FIREロードマップ関連ツール">
           <section class="tool-heading">
@@ -5369,6 +5545,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="FIRE生活費最適化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>生活費削減は効果がありますが、削りすぎると続きません。税金、生活費、投資、時間、家族状況を総合的に見てください。削減額を低めにするパターン、投資額を減らすパターン、副業収入なしのパターンも試すと安全です。物価や制度は変更される可能性があります。FIRE生活費最適化では、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="FIRE生活費最適化関連ツール">
           <section class="tool-heading">
@@ -5511,6 +5693,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="FIREストレスの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>FIRE後のストレスはお金だけでは測れません。税金、生活費、投資、時間、人とのつながり、趣味を総合的に見てください。完全FIREのパターン、サイドFIREのパターン、働き方を緩めるパターンも比べましょう。制度や生活環境は変更される可能性があります。FIREストレスでは、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="FIREストレス関連ツール">
           <section class="tool-heading">
@@ -5640,6 +5828,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="会社員FIRE年数の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>FIRE年数は副業収入や利回り次第で変わります。税金、生活費、投資、時間、配当収入を総合的に考えてください。副業収入なしのパターン、配当なしのパターン、年利を下げるパターンも試すと安全です。市場や制度は変更される可能性があります。会社員FIRE年数では、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="会社員FIRE関連ツール">
           <section class="tool-heading">
@@ -5772,6 +5966,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="会社員キャッシュフローの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>毎月収支が黒字でも、税金、生活費、投資、時間、臨時支出を総合的に見る必要があります。副業収入なしのパターン、固定費を下げるパターン、投資額を減らすパターンも試してください。収入や支出、制度は変更される可能性があります。家計は月ごとの差も大きいため、複数月の平均でも確認しましょう。さらに、黒字額をすべて投資に回す前に、税金用の取り分、生活費の予備、急な支出への備えを分けてください。副業収入が止まる月やローン返済が増える月のパターンも見ると安心です。最後に、税金用の現金を分けて残すパターンも確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="会社員キャッシュフロー関連ツール">
           <section class="tool-heading">
@@ -5919,6 +6119,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="生活コスト最適化の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>生活コスト改善は固定費だけでなく、税金、生活費、投資、時間の使い方を総合的に見てください。通信費だけ削るパターン、保険も見直すパターン、食費は残すパターンも比べると続けやすいです。物価や料金制度は変更される可能性があります。削りすぎて生活が荒れない範囲も確認しましょう。さらに、固定費を下げた分をすべて投資に回す前に、税金用の余力や生活費の予備も残してください。忙しい月でも続く改善と、手間がかかりすぎる改善を分けて考えると現実的です。最後に、税金用の現金を残したうえで投資するパターンも確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="生活コスト最適化関連ツール">
           <section class="tool-heading">
@@ -6040,6 +6246,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="生活防衛資金の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>生活防衛資金は投資前の土台ですが、必要額は家庭や仕事で変わります。税金、生活費、投資、時間、副業収入を総合的に見てください。失業期間を長くするパターン、副業収入なしのパターン、家族人数が増えるパターンも試しましょう。雇用環境や制度は変更される可能性があります。生活防衛資金では、目先の不足額や削減額だけでなく、税金、生活費、投資へ回せる余力、見直しに使う時間を総合的に確認してください。支出が少ないパターン、多いパターン、収入が減るパターンを並べると、家計の弱点が見えます。公的制度、料金、物価は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="生活防衛資金関連ツール">
           <section class="tool-heading">
@@ -6163,6 +6375,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="固定費削減の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>固定費削減は効果が続きますが、必要な支出まで削らないことが大切です。税金、生活費、投資、時間、保険の必要性を総合的に見てください。通信費だけ、保険も含める、サブスク中心のパターンを比べましょう。料金や制度は変更される可能性があります。家族や仕事への影響も確認してください。さらに、削減できた金額をすぐ投資に回す前に、税金、生活費の予備、急な支出への備えも残してください。通信費、保険、家賃では見直しの手間が違うため、時間面の負担も見てください。最後に、税金用の現金を残したうえで投資するパターンも確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="固定費削減関連ツール">
           <section class="tool-heading">
@@ -6291,6 +6509,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="老後資金の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>老後資金は年金や物価で大きく変わります。税金、生活費、投資、時間、FIRE後の収入を総合的に見てください。年金を少なめにするパターン、生活費を高めにするパターン、利回りを下げるパターンも試すと備えやすいです。年金制度や税制は変更される可能性があります。老後資金では、目先の不足額や削減額だけでなく、税金、生活費、投資へ回せる余力、見直しに使う時間を総合的に確認してください。支出が少ないパターン、多いパターン、収入が減るパターンを並べると、家計の弱点が見えます。公的制度、料金、物価は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -6410,6 +6634,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="教育費の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>教育費は進路で差が大きいため、税金、生活費、投資、時間、老後資金を総合的に考えてください。公立中心のパターン、私立中心のパターン、大学ありなしのパターンを比べると不足額の幅が見えます。学費や支援制度は変更される可能性があります。家計全体の積立余力も一緒に確認しましょう。さらに、教育費は必要な時期が決まっているため、投資で増やすだけでなく現金で残す割合も考えてください。税金や生活費、老後資金を圧迫しないパターンも並べると安心です。最後に、税金用の現金と教育費用の現金を分けるパターンも確認してください。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x6559;&#x80b2;&#x8cbb;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -6527,6 +6757,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="学資保険比較の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>学資保険と投資の比較は、返戻率だけで決めないでください。税金、生活費、投資リスク、時間、教育費の必要時期を総合的に見ます。利回り低めのパターン、返戻率を下げるパターン、積立年数を短くするパターンも試してください。保険商品や制度は変更される可能性があります。学資保険比較では、目先の不足額や削減額だけでなく、税金、生活費、投資へ回せる余力、見直しに使う時間を総合的に確認してください。支出が少ないパターン、多いパターン、収入が減るパターンを並べると、家計の弱点が見えます。公的制度、料金、物価は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -6638,6 +6874,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="配当金の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>配当金は安定収入に見えますが、減配や価格下落があります。税金、生活費、投資、時間、FIRE目標を総合的に考えてください。利回りを下げるパターン、再投資なしのパターン、NISA利用なしのパターンも試すと安全です。配当方針や税制は変更される可能性があります。配当金では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x914d;&#x5f53;&#x91d1;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -6774,6 +7016,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="配当ETF比較の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>ETF比較は商品選びの入口であり、投資判断の確定ではありません。税金、生活費、投資、時間、為替リスクを総合的に見てください。利回りを低くするパターン、再投資しないパターン、NISAなしのパターンも試しましょう。ETFの分配方針や制度は変更される可能性があります。配当ETF比較では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="配当ETF比較関連ツール">
           <section class="tool-heading">
@@ -6922,6 +7170,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="高配当株比較の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>高配当株は利回りだけで選ぶと危険です。税金、生活費、投資、時間、銘柄分散、ETFとの違いを総合的に見てください。減配するパターン、株価成長率を下げるパターン、NISAなしのパターンも試すとリスクが見えます。企業方針や制度は変更される可能性があります。高配当株比較では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="高配当株比較関連ツール">
           <section class="tool-heading">
@@ -6981,6 +7235,13 @@ document.body.innerHTML = `
           <section class="tool-heading">
             <h2>運営者コメント</h2>
             <p>このページは、配当投資を続ける精神的な安定度を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、暴落時にも積立や保有を続けられるか、自分の耐性を確認するために使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、メンタル面は数字だけでは測れないため、過去の行動も振り返ってください。次は <a href="investment-risk.html">投資リスク許容度診断</a> で、結果を次の行動に落とし込んでください。</p>
+          </section>
+        </section>
+
+        <section class="article-panel usage-note" aria-label="配当メンタルの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>メンタル安定度は数字だけでは測れません。税金、生活費、投資、時間、現金比率、副業収入を総合的に見てください。暴落耐性を低くするパターン、配当依存を下げるパターン、現金比率を上げるパターンも試しましょう。市場環境や制度は変更される可能性があります。配当メンタルでは、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
           </section>
         </section>
 
@@ -7099,6 +7360,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="配当生活達成の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>配当生活に必要な資産は利回りで大きく変わります。税金、生活費、投資、時間、減配リスクを総合的に考えてください。利回りを低くするパターン、生活費を高くするパターン、再投資なしのパターンも試すと現実的です。配当方針や税制は変更される可能性があります。配当生活達成では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="配当生活達成関連ツール">
           <section class="tool-heading">
@@ -7229,6 +7496,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="配当生活年数の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>配当生活可能年数はインフレや利回りで変わります。税金、生活費、投資、時間、資産取り崩しを総合的に見てください。インフレ率を高くするパターン、利回りを下げるパターン、追加投資なしのパターンも試しましょう。市場や制度は変更される可能性があります。配当生活年数では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="配当生活年数関連ツール">
           <section class="tool-heading">
@@ -7351,6 +7624,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="NISA取り崩しの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>取り崩し計画は運用成績と生活費で変わります。税金、生活費、投資、時間、老後資金を総合的に見てください。年利を下げるパターン、毎月取り崩し額を増やすパターン、運用継続なしのパターンも試すと安全です。NISA制度や市場は変更される可能性があります。NISA取り崩しでは、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="NISA取り崩し関連ツール">
           <section class="tool-heading">
@@ -7466,6 +7745,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="クレカ積立比較の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>クレカ積立はポイントだけで判断しないでください。税金、生活費、投資、時間、NISA枠、カード条件を総合的に見ます。還元率を下げるパターン、ポイント再投資なしのパターン、積立額を変えるパターンも試しましょう。カード制度やNISA制度は変更される可能性があります。クレカ積立比較では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="クレカ積立比較関連ツール">
           <section class="tool-heading">
@@ -7582,6 +7867,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="配当再投資の利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>配当再投資は複利効果がありますが、生活費に使う必要が出る場合もあります。税金、生活費、投資、時間、FIRE目標を総合的に見てください。再投資なしのパターン、利回り低めのパターン、株価成長率低めのパターンも試しましょう。市場や制度は変更される可能性があります。配当再投資では、将来資産が増える結果だけを見ず、税金、生活費、投資期間、入金を続ける時間的余裕を総合的に考えてください。利回りが良いパターン、低いパターン、途中で積立を止めるパターンを比べると、下振れへの備えが見えます。投資制度や商品条件は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="配当再投資関連ツール">
           <section class="tool-heading">
@@ -7714,6 +8005,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="サイドFIREの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>サイドFIREは副業収入が続く前提になりやすいです。税金、生活費、投資、時間、配当収入、老後資金を総合的に見てください。副業収入なしのパターン、配当が少ないパターン、生活費が増えるパターンも試すと安全です。制度や働き方は変更される可能性があります。サイドFIREでは、達成時期が早く出ても、税金、生活費、投資リスク、副業に使える時間を総合的に見てください。年利が低いパターン、生活費が増えるパターン、副業収入が減るパターンを試すと、無理のないFIRE計画に近づきます。税制、物価、投資制度は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x30b5;&#x30a4;&#x30c9;FIRE&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
@@ -7841,6 +8138,12 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel usage-note" aria-label="住宅ローンの利用時の注意点">
+          <section class="tool-heading">
+            <h2>利用時の注意点</h2>
+            <p>住宅ローンは毎月返済だけで判断しないでください。税金、生活費、投資、時間、教育費、老後資金を総合的に考える必要があります。金利上昇のパターン、繰上返済なしのパターン、ボーナス返済なしのパターンも試しましょう。金利や住宅制度は変更される可能性があります。住宅ローンでは、目先の不足額や削減額だけでなく、税金、生活費、投資へ回せる余力、見直しに使う時間を総合的に確認してください。支出が少ないパターン、多いパターン、収入が減るパターンを並べると、家計の弱点が見えます。公的制度、料金、物価は変更される可能性があります。</p>
+          </section>
+        </section>
 
         <section class="article-panel" aria-label="&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
           <section class="tool-heading">
