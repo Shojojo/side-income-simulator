@@ -177,6 +177,38 @@ h1 {
   line-height: 1.85;
 }
 
+.update-history {
+  line-height: 1.8;
+}
+
+.update-history-list {
+  display: grid;
+  gap: 12px;
+}
+
+.update-entry {
+  display: grid;
+  gap: 8px;
+}
+
+.update-entry time {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.update-entry ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.update-entry li {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
 .media-intro-panel {
   gap: 18px;
   padding: clamp(18px, 4vw, 28px);

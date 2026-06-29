@@ -8180,6 +8180,23 @@ document.body.innerHTML = `
         </section>
       </section>
 
+      <section class="article-panel update-history" aria-label="更新履歴">
+        <section class="tool-heading">
+          <h2>更新履歴</h2>
+          <p>このサイトは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
+        </section>
+        <div class="update-history-list">
+          <article class="update-entry">
+            <time datetime="2026-06-29">2026年6月29日</time>
+            <ul>
+              <li>更新履歴セクションを追加</li>
+              <li>AdSense再審査に向けて運営方針と検証姿勢を明確化</li>
+              <li>FAQ、注意事項、内部リンクの改善状況を確認しやすい構成へ整理</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <footer class="site-footer">
         <nav class="footer-links" aria-label="&#x30b5;&#x30a4;&#x30c8;&#x60c5;&#x5831;">
           <a href="index.html">&#x30c8;&#x30c3;&#x30d7;</a>
