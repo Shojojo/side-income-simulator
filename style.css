@@ -177,6 +177,15 @@ h1 {
   line-height: 1.85;
 }
 
+.suited-users {
+  border-left: 4px solid var(--accent);
+  background: linear-gradient(135deg, rgba(230, 247, 241, 0.96), rgba(255, 255, 255, 0.96));
+}
+
+.suited-users .tool-heading p {
+  line-height: 1.9;
+}
+
 .update-history {
   line-height: 1.8;
 }
