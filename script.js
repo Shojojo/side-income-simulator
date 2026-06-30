@@ -547,6 +547,24 @@ document.body.innerHTML = `
           </div>
         </section>
 
+        <section class="article-panel verification-log" aria-label="検証ログ">
+          <section class="tool-heading">
+            <h2>検証ログ</h2>
+            <p>このサイトで実際に検証・改善している内容を月ごとに残しています。今後も副業、AI活用、固定費、投資、FIREの進捗に合わせて追記していきます。</p>
+          </section>
+          <div class="update-history-list">
+            <article class="update-entry">
+              <time datetime="2026-06">2026年6月</time>
+              <ul>
+                <li>50ツールを公開し、副業・税金・AI・FIRE・投資・老後資金の導線を整理</li>
+                <li>AI副業時給と作業時間削減の検証を開始</li>
+                <li>固定費改善と生活コスト最適化のシミュレーターを追加</li>
+                <li>NISAシミュレーターとFIRE関連ツールの内部リンクを改善</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
         <section class="article-panel" aria-label="運営者メッセージ">
           <section class="tool-heading">
             <h2>運営者メッセージ</h2>
