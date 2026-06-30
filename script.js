@@ -547,39 +547,10 @@ document.body.innerHTML = `
           </div>
         </section>
 
-        <section class="article-panel verification-log" aria-label="検証ログ">
-          <section class="tool-heading">
-            <h2>検証ログ</h2>
-            <p>このサイトで実際に検証・改善している内容を月ごとに残しています。今後も副業、AI活用、固定費、投資、FIREの進捗に合わせて追記していきます。</p>
-          </section>
-          <div class="update-history-list">
-            <article class="update-entry">
-              <time datetime="2026-06">2026年6月</time>
-              <ul>
-                <li>50ツールを公開し、副業・税金・AI・FIRE・投資・老後資金の導線を整理</li>
-                <li>AI副業時給と作業時間削減の検証を開始</li>
-                <li>固定費改善と生活コスト最適化のシミュレーターを追加</li>
-                <li>NISAシミュレーターとFIRE関連ツールの内部リンクを改善</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="article-panel" aria-label="運営者メッセージ">
-          <section class="tool-heading">
-            <h2>運営者メッセージ</h2>
-            <p>このサイトは、楽に稼げる方法を並べるためではなく、忙しい会社員が現実的に副業と資産形成を続けるために作っています。</p>
-          </section>
-          <div class="experience-block">
-            <p>私自身、管理職として急な欠勤対応や夜間対応が入る日があり、「今日は副業を3時間やる」と決めても崩れることが何度もありました。だから今は、気合いで時間を増やすより、AIで作業を短縮し、固定費を下げ、NISAや長期投資へ自動で積み上げる流れを重視しています。</p>
-            <p>各シミュレーターは、正確な将来を保証するものではありません。ただ、収入、税金、支出、投資、FIREまでの距離をざっくり数字で見ることで、次に何を直すべきかはかなり見えやすくなります。初心者の方でも、まずはこのトップページの順番に沿って確認できるように整理しています。</p>
-          </div>
-        </section>
-
         <section class="article-panel" aria-label="おすすめ実録記事">
           <section class="tool-heading">
             <h2>おすすめ実録記事</h2>
-            <p>このサイトを「ツール一覧」ではなく、働きながら資産形成を進める記録として読むなら、まずこの実録記事から確認してください。</p>
+            <p>このサイトは実録を重視しています。ツール一覧ではなく、働きながら資産形成を進める記録として読むなら、まずこの実録記事から確認してください。</p>
           </section>
           <div class="next-read-grid">
             <a class="next-read-card" href="article-building-50-tools.html">
@@ -617,6 +588,35 @@ document.body.innerHTML = `
               <span>副業収入が出たあとに必要になる所得、経費、住民税、青色申告の入口を確認できます。</span>
               <span class="next-read-reason">関連理由：副業から税金へ進む悩み導線を押さえられます。</span>
             </a>
+          </div>
+        </section>
+
+        <section class="article-panel verification-log" aria-label="検証ログ">
+          <section class="tool-heading">
+            <h2>検証ログ</h2>
+            <p>このサイトで実際に検証・改善している内容を月ごとに残しています。今後も副業、AI活用、固定費、投資、FIREの進捗に合わせて追記していきます。</p>
+          </section>
+          <div class="update-history-list">
+            <article class="update-entry">
+              <time datetime="2026-06">2026年6月</time>
+              <ul>
+                <li>50ツールを公開し、副業・税金・AI・FIRE・投資・老後資金の導線を整理</li>
+                <li>AI副業時給と作業時間削減の検証を開始</li>
+                <li>固定費改善と生活コスト最適化のシミュレーターを追加</li>
+                <li>NISAシミュレーターとFIRE関連ツールの内部リンクを改善</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="運営者メッセージ">
+          <section class="tool-heading">
+            <h2>運営者メッセージ</h2>
+            <p>このサイトは、楽に稼げる方法を並べるためではなく、忙しい会社員が現実的に副業と資産形成を続けるために作っています。</p>
+          </section>
+          <div class="experience-block">
+            <p>私自身、管理職として急な欠勤対応や夜間対応が入る日があり、「今日は副業を3時間やる」と決めても崩れることが何度もありました。だから今は、気合いで時間を増やすより、AIで作業を短縮し、固定費を下げ、NISAや長期投資へ自動で積み上げる流れを重視しています。</p>
+            <p>各シミュレーターは、正確な将来を保証するものではありません。ただ、収入、税金、支出、投資、FIREまでの距離をざっくり数字で見ることで、次に何を直すべきかはかなり見えやすくなります。初心者の方でも、まずはこのトップページの順番に沿って確認できるように整理しています。</p>
           </div>
         </section>
 
