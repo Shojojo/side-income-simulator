@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">会社員の副業・FIRE実体験メディア</title>
+  <desc id="desc">副業、AI活用、固定費改善、NISA、FIREを会社員の実体験目線で検証するサイトの共有画像</desc>
+  <rect width="1200" height="630" fill="#f6f3ee"/>
+  <circle cx="124" cy="96" r="220" fill="#dce8ff"/>
+  <circle cx="1110" cy="560" r="260" fill="#dff1eb"/>
+  <rect x="84" y="82" width="1032" height="466" rx="28" fill="#ffffff" stroke="#d9dee7" stroke-width="3"/>
+  <text x="132" y="178" fill="#12735d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800">31歳会社員の実体験から作る</text>
+  <text x="132" y="272" fill="#18212f" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="66" font-weight="900">副業・FIRE</text>
+  <text x="132" y="352" fill="#18212f" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="66" font-weight="900">資産形成メディア</text>
+  <text x="132" y="426" fill="#637083" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="700">AI活用 / 固定費改善 / NISA / 老後資金</text>
+  <rect x="132" y="472" width="312" height="52" rx="10" fill="#12735d"/>
+  <text x="158" y="507" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="800">実体験型シミュレーター</text>
+</svg>
