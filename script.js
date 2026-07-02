@@ -13195,6 +13195,58 @@ function renderRoute() {
   document.querySelectorAll("[data-route]").forEach((link) => {
     link.setAttribute("aria-current", link.dataset.route === route ? "page" : "false");
   });
+  updateDynamicStructuredData(route, seo);
+}
+
+function updateDynamicStructuredData(route, seo) {
+  document.querySelectorAll('script[data-schema="day3-dynamic"]').forEach((node) => node.remove());
+  const view = document.querySelector(`.view[data-view="${route}"]`);
+  if (!view || route === "top") {
+    return;
+  }
+
+  const faqItems = Array.from(view.querySelectorAll(".faq-panel details"))
+    .map((item) => {
+      const question = item.querySelector("summary")?.textContent.trim();
+      const answer = item.querySelector("p")?.textContent.trim();
+      if (!question || !answer) {
+        return null;
+      }
+      return {
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: answer,
+        },
+      };
+    })
+    .filter(Boolean);
+
+  if (faqItems.length === 0) {
+    return;
+  }
+
+  const canonicalUrl = new URL(window.location.pathname || "/index.html", window.location.origin);
+  if (canonicalUrl.pathname === "/") {
+    canonicalUrl.pathname = "/index.html";
+  }
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "@id": `${canonicalUrl.href}#faq`,
+        name: `${seo.title.split("｜")[0]} FAQ`,
+        mainEntity: faqItems,
+      },
+    ],
+  };
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.dataset.schema = "day3-dynamic";
+  script.textContent = JSON.stringify(graph);
+  document.head.appendChild(script);
 }
 
 function renderTopToolSearch() {
