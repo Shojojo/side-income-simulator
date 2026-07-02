@@ -13,7 +13,56 @@
       window.GA_MEASUREMENT_ID = "G-XM73JD15LP";
     </script>
     <script defer src="analytics.js"></script>
-    <script defer src="script.js?v=20260630-suited-users"></script>
+    <script defer src="script.js?v=20260702-schema-day3-1"></script>
+    <script type="application/ld+json" data-schema="day3-static">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://side-income-simulator.vercel.app/#organization",
+            "name": "会社員の副業・FIRE実体験メディア",
+            "url": "https://side-income-simulator.vercel.app"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://side-income-simulator.vercel.app/fire.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "トップ",
+                "item": "https://side-income-simulator.vercel.app/index.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "FIRE達成シミュレーター",
+                "item": "https://side-income-simulator.vercel.app/fire.html"
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://side-income-simulator.vercel.app/fire.html#webpage",
+            "url": "https://side-income-simulator.vercel.app/fire.html",
+            "name": "FIRE達成シミュレーター｜会社員が40歳FIREを目指す資産計算【2026年版】",
+            "description": "現在資産、積立額、年利、目標資産からFIREまでの距離を出し、副業と固定費改善を組み合わせた実践計画を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+            "isPartOf": {
+              "@id": "https://side-income-simulator.vercel.app/#website"
+            },
+            "about": {
+              "@id": "https://side-income-simulator.vercel.app/#organization"
+            },
+            "breadcrumb": {
+              "@id": "https://side-income-simulator.vercel.app/fire.html#breadcrumb"
+            },
+            "dateModified": "2026-06-30",
+            "inLanguage": "ja"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main>
