@@ -109,6 +109,34 @@ h1 {
   background: var(--green);
 }
 
+.breadcrumb-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+  line-height: 1.7;
+}
+
+.breadcrumb-nav a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-nav [aria-current="page"] {
+  color: var(--ink);
+}
+
+.breadcrumb-separator {
+  color: #9aa5b3;
+}
+
 .view {
   display: none;
 }

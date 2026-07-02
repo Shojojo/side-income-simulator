@@ -510,6 +510,7 @@ document.body.innerHTML = `
           <a href="mortgage.html" data-route="mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
         </nav>
       </header>
+      <nav class="breadcrumb-nav" aria-label="パンくずリスト"></nav>
 
       <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
         <section class="article-panel media-intro-panel" aria-label="会社員向け副業・資産形成メディアのコンセプト">
@@ -13152,6 +13153,99 @@ function renderMortgage() {
   setText("bonusPaymentGuide", yen.format(bonusPayment));
 }
 
+
+const breadcrumbCategories = {
+  side: { name: "副業", href: "category-side-business.html" },
+  tax: { name: "税金", href: "category-tax.html" },
+  investment: { name: "投資", href: "category-investment.html" },
+  fire: { name: "FIRE", href: "category-fire.html" },
+  ai: { name: "AI", href: "category-ai.html" },
+  housing: { name: "住宅", href: "category-housing.html" },
+  education: { name: "教育", href: "category-education.html" },
+  retirement: { name: "老後", href: "category-retirement.html" },
+};
+
+const routeBreadcrumbCategory = {
+  "side-income": "side",
+  "hourly-improvement": "side",
+  "side-time-management": "side",
+  "side-fatigue": "side",
+  "side-continuity": "side",
+  "side-motivation": "side",
+  "side-risk": "side",
+  "side-safety": "side",
+  "side-profit-margin": "side",
+  incorporation: "side",
+  "ai-hourly": "ai",
+  "ai-efficiency": "ai",
+  "ai-roi": "ai",
+  "ai-automation": "ai",
+  "ai-time-reduction": "ai",
+  "ai-outsourcing": "ai",
+  "ai-profit-max": "ai",
+  tax: "tax",
+  "employee-tax-saving": "tax",
+  "income-tax": "tax",
+  "resident-tax": "tax",
+  "take-home": "tax",
+  "investment-risk": "investment",
+  nisa: "investment",
+  "nisa-fast": "investment",
+  "nisa-withdrawal": "investment",
+  "credit-card-investment": "investment",
+  ideco: "investment",
+  dividend: "investment",
+  "dividend-etf": "investment",
+  "dividend-stock": "investment",
+  "dividend-mental": "investment",
+  "dividend-reinvestment": "investment",
+  "dividend-life": "investment",
+  "dividend-life-years": "investment",
+  fire: "fire",
+  "fire-rate": "fire",
+  "side-fire-roadmap": "fire",
+  "fire-cost-optimization": "fire",
+  "fire-stress": "fire",
+  "employee-fire": "fire",
+  "side-fire": "fire",
+  "cash-flow": "fire",
+  "life-cost": "fire",
+  "fixed-cost-reduction": "fire",
+  "emergency-fund": "retirement",
+  retirement: "retirement",
+  education: "education",
+  "education-insurance": "education",
+  mortgage: "housing",
+};
+
+function buildRouteBreadcrumb(route, seo) {
+  const items = [{ name: "ホーム", href: "index.html" }];
+  if (route === "top") {
+    return items;
+  }
+  const category = breadcrumbCategories[routeBreadcrumbCategory[route]];
+  if (category) {
+    items.push(category);
+  }
+  items.push({ name: seo.title.split("｜")[0], href: route + ".html" });
+  return items;
+}
+
+function renderBreadcrumb(route, seo) {
+  const nav = document.querySelector(".breadcrumb-nav");
+  if (!nav) {
+    return;
+  }
+  const items = buildRouteBreadcrumb(route, seo);
+  nav.innerHTML = items.map((item, index) => {
+    const isLast = index === items.length - 1;
+    const label = item.name;
+    return isLast
+      ? '<span aria-current="page">' + label + '</span>'
+      : '<a href="' + item.href + '">' + label + '</a>';
+  }).join('<span class="breadcrumb-separator" aria-hidden="true">&gt;</span>');
+}
+
 const validRoutes = new Set([
   "side-income", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "employee-fire", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
 ]);
@@ -13195,6 +13289,7 @@ function renderRoute() {
   document.querySelectorAll("[data-route]").forEach((link) => {
     link.setAttribute("aria-current", link.dataset.route === route ? "page" : "false");
   });
+  renderBreadcrumb(route, seo);
   updateDynamicStructuredData(route, seo);
 }
 

@@ -13,7 +13,7 @@
       window.GA_MEASUREMENT_ID = "G-XM73JD15LP";
     </script>
     <script defer src="analytics.js"></script>
-    <script defer src="script.js?v=20260702-schema-day3-1"></script>
+    <script defer src="script.js?v=20260702-breadcrumb-day3-2"></script>
     <script type="application/ld+json" data-schema="day3-static">
       {
         "@context": "https://schema.org",
@@ -31,12 +31,18 @@
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "トップ",
+                "name": "ホーム",
                 "item": "https://side-income-simulator.vercel.app/index.html"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "投資",
+                "item": "https://side-income-simulator.vercel.app/category-investment.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "配当再投資シミュレーター",
                 "item": "https://side-income-simulator.vercel.app/dividend-reinvestment.html"
               }
@@ -69,6 +75,11 @@
       <div class="app-shell">
         <h1>配当再投資シミュレーター</h1>
           <p class="article-meta">最終更新日：2026年6月30日</p>
+          <nav class="breadcrumb-nav" aria-label="パンくずリスト">
+            <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
+            <a href="category-investment.html">投資</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
+            <span aria-current="page">配当再投資シミュレーター</span>
+          </nav>
         <p><a href="dividend-reinvestment.html">配当再投資シミュレーターを開く</a></p>
 
           <section class="next-read-section" aria-label="次に読むべき記事">
