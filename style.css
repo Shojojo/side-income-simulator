@@ -32,6 +32,12 @@ body {
     linear-gradient(145deg, #f6f3ee 0%, #eef4f2 54%, #f7f8fb 100%);
 }
 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 main {
   width: min(100%, 960px);
   margin: 0 auto;
@@ -191,6 +197,17 @@ h1 {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow);
+}
+
+.article-panel,
+.article-section,
+.faq-section,
+.content-panel,
+.next-read-section,
+.link-panel,
+.tool-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 260px;
 }
 
 .article-panel .tool-heading,

@@ -13587,55 +13587,66 @@ function safeRender(name, renderFn) {
   }
 }
 
+function scheduleNonCriticalWork(callback) {
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(callback, { timeout: 1600 });
+    return;
+  }
+
+  window.setTimeout(callback, 0);
+}
+
 renderRoute();
-safeRender("副業疲労度シミュレーター", renderSideFatigue);
-safeRender("副業月収シミュレーター", renderSideIncome);
-safeRender("AI副業時給シミュレーター", renderAiHourly);
-safeRender("AI副業効率化シミュレーター", renderAiEfficiency);
-safeRender("AI導入ROIシミュレーター", renderAiRoi);
-safeRender("AI副業自動化シミュレーター", renderAiAutomation);
-safeRender("AI作業時間削減診断", renderAiTimeReduction);
-safeRender("AI外注費削減シミュレーター", renderAiOutsourcing);
-safeRender("AI副業利益最大化シミュレーター", renderAiProfitMax);
-safeRender("副業時給改善シミュレーター", renderHourlyImprovement);
-safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
-safeRender("副業継続率診断", renderSideContinuity);
-safeRender("副業モチベーション診断", renderSideMotivation);
-safeRender("副業リスク診断", renderSideRisk);
-safeRender("会社員副業安全度診断", renderSideSafety);
-safeRender("副業利益率シミュレーター", renderSideProfitMargin);
-safeRender("副業法人化判断シミュレーター", renderIncorporation);
-safeRender("副業税金シミュレーター", renderTax);
-safeRender("会社員節税シミュレーター", renderEmployeeTaxSaving);
-safeRender("副業住民税シミュレーター", renderResidentTax);
-safeRender("副業所得税シミュレーター", renderIncomeTax);
-safeRender("副業手取り計算シミュレーター", renderTakeHome);
-safeRender("投資リスク許容度診断", renderInvestmentRisk);
-safeRender("新NISAシミュレーター", renderNisa);
-safeRender("新NISA最速積立シミュレーター", renderNisaFast);
-safeRender("NISA取り崩しシミュレーター", renderNisaWithdrawal);
-safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestment);
-safeRender("iDeCo節税シミュレーター", renderIdeco);
-safeRender("FIRE達成シミュレーター", renderFire);
-safeRender("FIRE達成率シミュレーター", renderFireRate);
-safeRender("副業FIRE達成ロードマップ診断", renderSideFireRoadmap);
-safeRender("FIRE生活費最適化シミュレーター", renderFireCostOptimization);
-safeRender("FIREストレス診断", renderFireStress);
-safeRender("老後資金シミュレーター", renderRetirement);
-safeRender("教育費シミュレーター", renderEducation);
-safeRender("学資保険比較シミュレーター", renderEducationInsurance);
-safeRender("配当金シミュレーター", renderDividend);
-safeRender("配当ETF比較シミュレーター", renderDividendEtf);
-safeRender("高配当株比較シミュレーター", renderDividendStock);
-safeRender("配当メンタル安定度診断", renderDividendMental);
-safeRender("配当再投資シミュレーター", renderDividendReinvestment);
-safeRender("配当生活達成シミュレーター", renderDividendLife);
-safeRender("配当生活年数シミュレーター", renderDividendLifeYears);
-safeRender("会社員FIRE年数計算シミュレーター", renderEmployeeFire);
-safeRender("会社員キャッシュフローシミュレーター", renderCashFlow);
-safeRender("生活コスト最適化シミュレーター", renderLifeCost);
-safeRender("サイドFIREシミュレーター", renderSideFire);
-safeRender("生活防衛資金シミュレーター", renderEmergencyFund);
-safeRender("固定費削減シミュレーター", renderFixedCostReduction);
-safeRender("住宅ローン返済シミュレーター", renderMortgage);
-safeRender("トップ検索", renderTopToolSearch);
+scheduleNonCriticalWork(() => {
+  safeRender("副業疲労度シミュレーター", renderSideFatigue);
+  safeRender("副業月収シミュレーター", renderSideIncome);
+  safeRender("AI副業時給シミュレーター", renderAiHourly);
+  safeRender("AI副業効率化シミュレーター", renderAiEfficiency);
+  safeRender("AI導入ROIシミュレーター", renderAiRoi);
+  safeRender("AI副業自動化シミュレーター", renderAiAutomation);
+  safeRender("AI作業時間削減診断", renderAiTimeReduction);
+  safeRender("AI外注費削減シミュレーター", renderAiOutsourcing);
+  safeRender("AI副業利益最大化シミュレーター", renderAiProfitMax);
+  safeRender("副業時給改善シミュレーター", renderHourlyImprovement);
+  safeRender("副業時間管理シミュレーター", renderSideTimeManagement);
+  safeRender("副業継続率診断", renderSideContinuity);
+  safeRender("副業モチベーション診断", renderSideMotivation);
+  safeRender("副業リスク診断", renderSideRisk);
+  safeRender("会社員副業安全度診断", renderSideSafety);
+  safeRender("副業利益率シミュレーター", renderSideProfitMargin);
+  safeRender("副業法人化判断シミュレーター", renderIncorporation);
+  safeRender("副業税金シミュレーター", renderTax);
+  safeRender("会社員節税シミュレーター", renderEmployeeTaxSaving);
+  safeRender("副業住民税シミュレーター", renderResidentTax);
+  safeRender("副業所得税シミュレーター", renderIncomeTax);
+  safeRender("副業手取り計算シミュレーター", renderTakeHome);
+  safeRender("投資リスク許容度診断", renderInvestmentRisk);
+  safeRender("新NISAシミュレーター", renderNisa);
+  safeRender("新NISA最速積立シミュレーター", renderNisaFast);
+  safeRender("NISA取り崩しシミュレーター", renderNisaWithdrawal);
+  safeRender("クレカ積立比較シミュレーター", renderCreditCardInvestment);
+  safeRender("iDeCo節税シミュレーター", renderIdeco);
+  safeRender("FIRE達成シミュレーター", renderFire);
+  safeRender("FIRE達成率シミュレーター", renderFireRate);
+  safeRender("副業FIRE達成ロードマップ診断", renderSideFireRoadmap);
+  safeRender("FIRE生活費最適化シミュレーター", renderFireCostOptimization);
+  safeRender("FIREストレス診断", renderFireStress);
+  safeRender("老後資金シミュレーター", renderRetirement);
+  safeRender("教育費シミュレーター", renderEducation);
+  safeRender("学資保険比較シミュレーター", renderEducationInsurance);
+  safeRender("配当金シミュレーター", renderDividend);
+  safeRender("配当ETF比較シミュレーター", renderDividendEtf);
+  safeRender("高配当株比較シミュレーター", renderDividendStock);
+  safeRender("配当メンタル安定度診断", renderDividendMental);
+  safeRender("配当再投資シミュレーター", renderDividendReinvestment);
+  safeRender("配当生活達成シミュレーター", renderDividendLife);
+  safeRender("配当生活年数シミュレーター", renderDividendLifeYears);
+  safeRender("会社員FIRE年数計算シミュレーター", renderEmployeeFire);
+  safeRender("会社員キャッシュフローシミュレーター", renderCashFlow);
+  safeRender("生活コスト最適化シミュレーター", renderLifeCost);
+  safeRender("サイドFIREシミュレーター", renderSideFire);
+  safeRender("生活防衛資金シミュレーター", renderEmergencyFund);
+  safeRender("固定費削減シミュレーター", renderFixedCostReduction);
+  safeRender("住宅ローン返済シミュレーター", renderMortgage);
+  safeRender("トップ検索", renderTopToolSearch);
+});
