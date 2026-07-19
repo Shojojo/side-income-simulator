@@ -453,66 +453,243 @@ document.body.innerHTML = `
   <main>
     <div class="app-shell">
       <header class="header">
-        <h1>&#x8cc7;&#x7523;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h1>
-        <p class="article-meta">最終更新日：2026年7月9日</p>
-        <p class="lead">&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;AI&#x6d3b;&#x7528;&#x3001;&#x7a0e;&#x91d1;&#x3001;FIRE&#x9054;&#x6210;&#x3001;&#x8001;&#x5f8c;&#x8cc7;&#x91d1;&#x307e;&#x3067;&#x306e;&#x9053;&#x306e;&#x308a;&#x3092;&#x3001;&#x540c;&#x3058;&#x5165;&#x529b;&#x611f;&#x3067;&#x7d20;&#x65e9;&#x304f;&#x8a66;&#x305b;&#x308b;&#x8a08;&#x7b97;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;</p>
-        <nav class="tool-nav" aria-label="&#x30c4;&#x30fc;&#x30eb;&#x5207;&#x308a;&#x66ff;&#x3048;">
-          <a href="index.html" data-route="top">&#x30c8;&#x30c3;&#x30d7;</a>
-          <a href="side-income.html" data-route="side-income">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
-          <a href="ai-hourly.html" data-route="ai-hourly">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
-          <a href="ai-efficiency.html" data-route="ai-efficiency">AI副業効率化</a>
-          <a href="ai-roi.html" data-route="ai-roi">AI導入ROI</a>
-          <a href="ai-automation.html" data-route="ai-automation">AI副業自動化</a>
-          <a href="ai-time-reduction.html" data-route="ai-time-reduction">AI作業時間削減</a>
-          <a href="ai-outsourcing.html" data-route="ai-outsourcing">AI外注費削減</a>
-          <a href="ai-profit-max.html" data-route="ai-profit-max">AI利益最大化</a>
-          <a href="hourly-improvement.html" data-route="hourly-improvement">副業時給改善</a>
-          <a href="side-time-management.html" data-route="side-time-management">副業時間管理</a>
-          <a href="side-fatigue.html" data-route="side-fatigue">副業疲労度</a>
-          <a href="side-continuity.html" data-route="side-continuity">副業継続率診断</a>
-          <a href="side-motivation.html" data-route="side-motivation">副業モチベーション</a>
-          <a href="side-risk.html" data-route="side-risk">副業リスク診断</a>
-          <a href="side-safety.html" data-route="side-safety">副業安全度</a>
-          <a href="side-profit-margin.html" data-route="side-profit-margin">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
-          <a href="incorporation.html" data-route="incorporation">副業法人化判断</a>
-          <a href="take-home.html" data-route="take-home">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
-          <a href="tax.html" data-route="tax">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
-          <a href="employee-tax-saving.html" data-route="employee-tax-saving">会社員節税</a>
-          <a href="income-tax.html" data-route="income-tax">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
-          <a href="resident-tax.html" data-route="resident-tax">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
-          <a href="investment-risk.html" data-route="investment-risk">投資リスク診断</a>
-          <a href="nisa.html" data-route="nisa">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
-          <a href="nisa-fast.html" data-route="nisa-fast">新NISA最速積立</a>
-          <a href="nisa-withdrawal.html" data-route="nisa-withdrawal">NISA取り崩し</a>
-          <a href="credit-card-investment.html" data-route="credit-card-investment">&#x30af;&#x30ec;&#x30ab;&#x7a4d;&#x7acb;</a>
-          <a href="ideco.html" data-route="ideco">iDeCo&#x7bc0;&#x7a0e;</a>
-          <a href="dividend.html" data-route="dividend">&#x914d;&#x5f53;&#x91d1;</a>
-          <a href="dividend-etf.html" data-route="dividend-etf">配当ETF比較</a>
-          <a href="dividend-stock.html" data-route="dividend-stock">高配当株比較</a>
-          <a href="dividend-mental.html" data-route="dividend-mental">配当メンタル</a>
-          <a href="dividend-reinvestment.html" data-route="dividend-reinvestment">&#x914d;&#x5f53;&#x518d;&#x6295;&#x8cc7;</a>
-          <a href="dividend-life.html" data-route="dividend-life">配当生活達成</a>
-          <a href="dividend-life-years.html" data-route="dividend-life-years">配当生活年数</a>
-          <a href="fire.html" data-route="fire">FIRE&#x9054;&#x6210;</a>
-          <a href="fire-rate.html" data-route="fire-rate">FIRE達成率</a>
-          <a href="side-fire-roadmap.html" data-route="side-fire-roadmap">副業FIREロードマップ</a>
-          <a href="fire-cost-optimization.html" data-route="fire-cost-optimization">FIRE生活費最適化</a>
-          <a href="fire-stress.html" data-route="fire-stress">FIREストレス診断</a>
-          <a href="employee-fire.html" data-route="employee-fire">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
-          <a href="cash-flow.html" data-route="cash-flow">会社員キャッシュフロー</a>
-          <a href="life-cost.html" data-route="life-cost">生活コスト最適化</a>
-          <a href="side-fire.html" data-route="side-fire">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
-          <a href="emergency-fund.html" data-route="emergency-fund">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
-          <a href="fixed-cost-reduction.html" data-route="fixed-cost-reduction">固定費削減</a>
-          <a href="retirement.html" data-route="retirement">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
-          <a href="education.html" data-route="education">&#x6559;&#x80b2;&#x8cbb;</a>
-          <a href="education-insurance.html" data-route="education-insurance">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
-          <a href="mortgage.html" data-route="mortgage">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
+        <h1>会社員の副業・FIRE実体験メディア</h1>
+        <p class="article-meta">最終更新日：2026年7月19日</p>
+        <p class="lead">副業、税金、AI活用、資産形成、FIREについて、現役会社員の実体験とシミュレーターを通して、次に取るべき行動を分かりやすく整理するメディアです。</p>
+        <nav class="hero-action-nav" aria-label="トップページ主要導線">
+          <a href="#problem-navigation">悩みから探す</a>
+          <a href="#popular-simulators">人気シミュレーター</a>
+          <a href="#project-fire">運営記録</a>
+          <a href="#all-simulators">すべてのツールを見る</a>
         </nav>
       </header>
       <nav class="breadcrumb-nav" aria-label="パンくずリスト"></nav>
 
       <section class="view" data-view="top" aria-label="&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x4e00;&#x89a7;">
+        <section class="article-panel problem-navigation" id="problem-navigation" aria-label="悩みから探す">
+          <section class="tool-heading">
+            <h2>今、何に悩んでいますか？</h2>
+            <p>目的に近い項目を選ぶと、おすすめのシミュレーターや記事へ進めます。</p>
+          </section>
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h3>副業を始めたい</h3>
+              <p>収入目標、使える時間、必要な作業量を整理したい方へ。</p>
+              <ul>
+                <li>副業収入シミュレーター</li>
+                <li>副業時給シミュレーター</li>
+                <li>副業時間管理</li>
+                <li>副業ロードマップ</li>
+              </ul>
+              <div class="card-actions">
+                <a class="primary-link" href="side-income.html">副業収入を計算する</a>
+                <a class="subtle-link" href="category-side-business.html">関連ツールを見る</a>
+              </div>
+            </article>
+            <article class="decision-card">
+              <h3>税金・手取りが不安</h3>
+              <p>副業で増える税金や、実際に残る金額を確認したい方へ。</p>
+              <ul>
+                <li>税金シミュレーター</li>
+                <li>副業手取り</li>
+                <li>副業所得税</li>
+                <li>会社員節税</li>
+              </ul>
+              <div class="card-actions">
+                <a class="primary-link" href="tax.html">税金の目安を見る</a>
+                <a class="subtle-link" href="category-tax.html">関連ツールを見る</a>
+              </div>
+            </article>
+            <article class="decision-card">
+              <h3>資産形成・FIREを目指したい</h3>
+              <p>NISA、配当、老後資金、FIREまでの道筋を考えたい方へ。</p>
+              <ul>
+                <li>FIRE達成</li>
+                <li>新NISA積立投資</li>
+                <li>配当生活達成</li>
+                <li>老後資金</li>
+              </ul>
+              <div class="card-actions">
+                <a class="primary-link" href="fire.html">FIREまでの距離を見る</a>
+                <a class="subtle-link" href="category-fire.html">関連ツールを見る</a>
+              </div>
+            </article>
+            <article class="decision-card">
+              <h3>AIを活用して収益を伸ばしたい</h3>
+              <p>AIを使った副業、作業効率化、時間削減を考えたい方へ。</p>
+              <ul>
+                <li>AI副業時給</li>
+                <li>AI副業効率化</li>
+                <li>AI導入ROI</li>
+                <li>AI利益最大化</li>
+              </ul>
+              <div class="card-actions">
+                <a class="primary-link" href="ai-hourly.html">AI活用後の時給を見る</a>
+                <a class="subtle-link" href="category-ai.html">関連ツールを見る</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="article-panel project-fire-panel" id="project-fire" aria-label="Project FIRE">
+          <p class="eyebrow">Project FIRE</p>
+          <section class="tool-heading">
+            <h2>Project FIRE</h2>
+            <p>現役会社員が、会社に依存しない収入を作るまでの挑戦記録</p>
+          </section>
+          <p>成功だけではなく、AdSense審査の不合格、時間不足、迷い、改善内容も公開しています。同じように本業と副業を両立する会社員の参考になる記録を目指しています。</p>
+          <article class="featured-record-card">
+            <h3>運営記録 #001｜AdSenseに何度も落ちても、このサイトを作り続ける理由</h3>
+            <p>運送会社で管理職として働きながら、副業サイトを改善し続けている記録です。AdSense不承認の悔しさ、改善した内容、諦めず続ける理由を残しています。</p>
+            <div class="card-actions">
+              <a class="primary-link" href="article-project-fire-001-adsense.html">最新の運営記録を読む</a>
+              <a class="subtle-link" href="project-fire.html">運営記録一覧を見る</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="article-panel popular-simulators" id="popular-simulators" aria-label="人気シミュレーター">
+          <section class="tool-heading">
+            <h2>まず使ってほしい人気シミュレーター</h2>
+            <p>初めて訪れた人が、収入、税金、手取り、投資、FIREの順に確認しやすい5件です。</p>
+          </section>
+          <div class="popular-tool-grid">
+            <article class="popular-tool-card">
+              <h3>副業収入シミュレーター</h3>
+              <p>時給、作業時間、案件数から月収と年収の目安が分かります。</p>
+              <span>対象：副業を始めたい会社員</span>
+              <a href="side-income.html">計算してみる</a>
+            </article>
+            <article class="popular-tool-card">
+              <h3>税金シミュレーター</h3>
+              <p>副業で増える所得税や住民税、青色申告の影響を確認できます。</p>
+              <span>対象：税金が不安な副業初心者</span>
+              <a href="tax.html">計算してみる</a>
+            </article>
+            <article class="popular-tool-card">
+              <h3>副業手取りシミュレーター</h3>
+              <p>売上から経費や税金を引いた、実際に残る金額を確認できます。</p>
+              <span>対象：手取りを知りたい会社員</span>
+              <a href="take-home.html">計算してみる</a>
+            </article>
+            <article class="popular-tool-card">
+              <h3>FIRE達成シミュレーター</h3>
+              <p>現在資産と積立額から、FIREまでの距離を試算できます。</p>
+              <span>対象：FIREを目指す人</span>
+              <a href="fire.html">計算してみる</a>
+            </article>
+            <article class="popular-tool-card">
+              <h3>新NISA積立シミュレーター</h3>
+              <p>毎月積立、年利、運用年数から将来資産の目安を確認できます。</p>
+              <span>対象：投資初心者・NISAを始めたい人</span>
+              <a href="nisa.html">計算してみる</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="article-panel beginner-roadmap" id="beginner-roadmap" aria-label="初心者向けロードマップ">
+          <section class="tool-heading">
+            <h2>初めての方は、この順番で進めてください</h2>
+            <p>副業を始める前後で迷いやすい数字を、4ステップで確認できます。</p>
+          </section>
+          <div class="roadmap-grid">
+            <a class="roadmap-step" href="side-income.html"><strong>STEP1</strong><span>副業で目指す収入を決める</span></a>
+            <a class="roadmap-step" href="hourly-improvement.html"><strong>STEP2</strong><span>必要な時間と単価を確認する</span></a>
+            <a class="roadmap-step" href="take-home.html"><strong>STEP3</strong><span>税金と手取りを計算する</span></a>
+            <a class="roadmap-step" href="nisa.html"><strong>STEP4</strong><span>残った資金を資産形成へ回す</span></a>
+          </div>
+        </section>
+
+        <section class="article-panel all-simulators-panel" id="all-simulators" aria-label="すべてのシミュレーター">
+          <section class="tool-heading">
+            <h2>すべてのシミュレーター</h2>
+            <p>50個前後のツールはカテゴリ別に整理しました。必要なカテゴリだけ開いて確認できます。</p>
+          </section>
+          <div class="tool-accordion-list">
+            <details>
+              <summary><strong>副業収入・時間管理</strong><span>代表：副業収入 / 時給改善 / 時間管理</span></summary>
+              <div class="related-links">
+                <a href="side-income.html">副業収入シミュレーター</a>
+                <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
+                <a href="side-time-management.html">副業時間管理シミュレーター</a>
+                <a href="side-fatigue.html">副業疲労度シミュレーター</a>
+                <a href="side-continuity.html">副業継続率診断</a>
+                <a href="side-motivation.html">副業モチベーション診断</a>
+                <a href="side-risk.html">副業リスク診断</a>
+                <a href="side-safety.html">会社員副業安全度診断</a>
+                <a href="side-profit-margin.html">副業利益率シミュレーター</a>
+                <a href="incorporation.html">副業法人化判断シミュレーター</a>
+              </div>
+            </details>
+            <details>
+              <summary><strong>AI活用・効率化</strong><span>代表：AI副業時給 / AI効率化 / AI導入ROI</span></summary>
+              <div class="related-links">
+                <a href="ai-hourly.html">AI副業時給シミュレーター</a>
+                <a href="ai-sidejob.html">AI副業シミュレーター</a>
+                <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
+                <a href="ai-roi.html">AI導入ROIシミュレーター</a>
+                <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+                <a href="ai-time-reduction.html">AI作業時間削減診断</a>
+                <a href="ai-outsourcing.html">AI外注費削減シミュレーター</a>
+                <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+              </div>
+            </details>
+            <details>
+              <summary><strong>税金・手取り</strong><span>代表：税金 / 手取り / 所得税</span></summary>
+              <div class="related-links">
+                <a href="tax.html">税金シミュレーター</a>
+                <a href="take-home.html">副業手取りシミュレーター</a>
+                <a href="income-tax.html">副業所得税シミュレーター</a>
+                <a href="resident-tax.html">副業住民税シミュレーター</a>
+                <a href="employee-tax-saving.html">会社員節税シミュレーター</a>
+                <a href="ideco.html">iDeCo節税シミュレーター</a>
+              </div>
+            </details>
+            <details>
+              <summary><strong>NISA・投資・配当</strong><span>代表：新NISA / 配当金 / 配当再投資</span></summary>
+              <div class="related-links">
+                <a href="nisa.html">新NISA積立シミュレーター</a>
+                <a href="nisa-fast.html">新NISA最速積立シミュレーター</a>
+                <a href="nisa-withdrawal.html">NISA取り崩しシミュレーター</a>
+                <a href="credit-card-investment.html">クレカ積立比較シミュレーター</a>
+                <a href="investment-risk.html">投資リスク許容度診断</a>
+                <a href="dividend.html">配当金シミュレーター</a>
+                <a href="dividend-reinvestment.html">配当再投資シミュレーター</a>
+                <a href="dividend-etf.html">配当ETF比較シミュレーター</a>
+                <a href="dividend-stock.html">高配当株比較シミュレーター</a>
+                <a href="dividend-mental.html">配当メンタル安定度診断</a>
+                <a href="dividend-life.html">配当生活達成シミュレーター</a>
+                <a href="dividend-life-years.html">配当生活年数シミュレーター</a>
+              </div>
+            </details>
+            <details>
+              <summary><strong>FIRE・資産形成</strong><span>代表：FIRE達成 / サイドFIRE / キャッシュフロー</span></summary>
+              <div class="related-links">
+                <a href="fire.html">FIRE達成シミュレーター</a>
+                <a href="fire-rate.html">FIRE達成率シミュレーター</a>
+                <a href="side-fire.html">サイドFIREシミュレーター</a>
+                <a href="side-fire-roadmap.html">副業FIRE達成ロードマップ診断</a>
+                <a href="fire-cost-optimization.html">FIRE生活費最適化シミュレーター</a>
+                <a href="fire-stress.html">FIREストレス診断</a>
+                <a href="employee-fire.html">会社員FIRE年数計算シミュレーター</a>
+                <a href="cash-flow.html">会社員キャッシュフローシミュレーター</a>
+              </div>
+            </details>
+            <details>
+              <summary><strong>生活費・老後・住宅・教育</strong><span>代表：固定費削減 / 老後資金 / 教育費</span></summary>
+              <div class="related-links">
+                <a href="fixed-cost-reduction.html">固定費削減シミュレーター</a>
+                <a href="life-cost.html">生活コスト最適化シミュレーター</a>
+                <a href="emergency-fund.html">生活防衛資金シミュレーター</a>
+                <a href="retirement.html">老後資金シミュレーター</a>
+                <a href="education.html">教育費シミュレーター</a>
+                <a href="education-insurance.html">学資保険比較シミュレーター</a>
+                <a href="mortgage.html">住宅ローン返済シミュレーター</a>
+              </div>
+            </details>
+          </div>
+        </section>
+
         <section class="article-panel media-intro-panel" aria-label="会社員向け副業・資産形成メディアのコンセプト">
           <p class="eyebrow">Company Worker Media</p>
           <section class="tool-heading">
