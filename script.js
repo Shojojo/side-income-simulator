@@ -1781,25 +1781,146 @@ document.body.innerHTML = `
                 <span class="accent-amber" id="netYearly">0&#x5186;</span>
                 <small>&#x7a0e;&#x5f15;&#x5f8c;&#x6708;&#x53ce; &#xd7; 12</small>
               </div>
+              <div class="metric">
+                <strong>計算結果の見方</strong>
+                <span class="accent-green text-metric" id="sideIncomeResultGuide">未計算</span>
+                <small>月収レンジに応じた初心者向けの目安</small>
+              </div>
             </div>
           </section>
         </section>
 
+        <section class="article-panel" aria-label="このページを作った理由">
+          <section class="tool-heading">
+            <h2>このページを作った理由</h2>
+            <p>副業の目標収入と、そこに必要な作業量を具体的に見るために作りました。</p>
+          </section>
+          <p>副業を始めようと思ったとき、「実際に月いくら稼げるのか」「自分の使える時間で、どこまで目指せるのか」が分かりませんでした。副業について調べても、月5万円、10万円、30万円という成功例は見つかります。</p>
+          <p>しかし、その金額を達成するために、何時間働く必要があるのか、どのくらいの単価が必要なのか、本業と両立できるのかまでは分かりにくいと感じました。そこで、使える時間、時給、稼働日数から、副業収入の目安を確認できるシミュレーターを作成しました。</p>
+          <p>私自身も運送会社の管理職として働いているため、予定通りに副業時間を取れない日があります。だからこそ、理想の金額だけでなく、現実的に続けられる作業時間から逆算することを大切にしています。</p>
+        </section>
+
+        <section class="article-panel" aria-label="このシミュレーターで分かること">
+          <section class="tool-heading">
+            <h2>このシミュレーターで分かること</h2>
+            <p>月収だけでなく、必要な行動量も確認できます。</p>
+          </section>
+          <ul>
+            <li>月の副業収入の目安</li>
+            <li>年間の副業収入</li>
+            <li>目標金額に必要な作業時間</li>
+            <li>時給を上げた場合の収入差</li>
+            <li>本業と両立できる現実的な稼働量</li>
+          </ul>
+        </section>
+
+        <section class="article-panel" aria-label="計算結果の見方">
+          <section class="tool-heading">
+            <h2>計算結果の見方</h2>
+            <p>計算結果は、金額だけでなく現在の段階を把握する目安として見てください。</p>
+          </section>
+          <div class="article-list">
+            <div class="article-link"><strong>月1万円未満</strong><span>まずは継続できる作業習慣を作る段階の目安です。短い時間でも続けられるテーマか確認しましょう。</span></div>
+            <div class="article-link"><strong>月1万円以上5万円未満</strong><span>副業として成果が見え始める水準の目安です。単価と作業効率を見直すことで伸ばせる可能性があります。</span></div>
+            <div class="article-link"><strong>月5万円以上10万円未満</strong><span>家計への影響を実感しやすい水準の目安です。税金や確定申告についても確認しましょう。</span></div>
+            <div class="article-link"><strong>月10万円以上</strong><span>事業として管理する段階の目安です。収支管理、税金、作業時間の最適化が重要になります。</span></div>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="目標別の考え方">
+          <section class="tool-heading">
+            <h2>目標別の考え方</h2>
+            <p>非現実的な成功を前提にせず、時間、単価、継続の3要素で考えます。</p>
+          </section>
+          <div class="article-list">
+            <div class="article-link"><strong>月1万円</strong><span>時給1,000円なら月10時間、時給2,000円なら月5時間が目安です。まず副業を生活リズムに入れる段階です。</span></div>
+            <div class="article-link"><strong>月3万円</strong><span>時給1,500円なら月20時間、時給3,000円なら月10時間が目安です。本業後に週2〜3回作業できるかがポイントです。</span></div>
+            <div class="article-link"><strong>月5万円</strong><span>時給2,000円なら月25時間、時給3,000円なら約17時間が目安です。作業時間だけでなく単価改善も考えたい水準です。</span></div>
+            <div class="article-link"><strong>月10万円</strong><span>時給2,500円なら月40時間、時給5,000円なら月20時間が目安です。税金、経費、納期管理も含めて考える必要があります。</span></div>
+            <div class="article-link"><strong>月20万円</strong><span>時給5,000円でも月40時間が目安です。本業と両立するなら、作業の仕組み化、外注、AI活用、案件選びが重要になります。</span></div>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="初心者が注意すること">
+          <section class="tool-heading">
+            <h2>初心者が注意すること</h2>
+            <p>副業収入は、売上だけで判断しないことが大切です。</p>
+          </section>
+          <ul>
+            <li>売上と利益は違う</li>
+            <li>経費が発生する場合がある</li>
+            <li>収入によっては確定申告が必要になる</li>
+            <li>勤務先の就業規則を確認する</li>
+            <li>短期間の結果だけで判断しない</li>
+          </ul>
+        </section>
+
         <section class="faq-panel" aria-label="&#x526f;&#x696d;&#x6708;&#x53ce;FAQ">
-          <h3>FAQ</h3>
+          <h3>よくある質問</h3>
           <div class="faq-list">
             <details>
-              <summary>&#x6708;&#x53ce;&#x306f;&#x3069;&#x3046;&#x8a08;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x304b;&#xFF1F;</summary>
-              <p>&#x6642;&#x7d66;&#x306b;&#x6708;&#x306e;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3068;&#x6848;&#x4ef6;&#x6570;&#x3092;&#x639b;&#x3051;&#x3066;&#x6982;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;&#x7a0e;&#x5f15;&#x5f8c;&#x306e;&#x91d1;&#x984d;&#x306f;&#x5165;&#x529b;&#x3057;&#x305f;&#x7a0e;&#x7387;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x3044;&#x305f;&#x76ee;&#x5b89;&#x3067;&#x3059;&#x3002;</p>
+              <summary>副業初心者は月いくらを目標にすればいいですか？</summary>
+              <p>最初は月1万円から月3万円を目安にすると、作業習慣を作りやすいです。いきなり大きな金額を狙うより、使える時間と疲労感を見ながら調整してください。</p>
             </details>
             <details>
-              <summary>&#x7a0e;&#x7387;&#x306f;&#x4f55;%&#x3067;&#x5165;&#x308c;&#x308c;&#x3070;&#x3044;&#x3044;&#x3067;&#x3059;&#x304b;&#xFF1F;</summary>
-              <p>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x4f4f;&#x6c11;&#x7a0e;&#x3092;&#x5408;&#x308f;&#x305b;&#x305f;&#x6982;&#x7b97;&#x3068;&#x3057;&#x3066;&#x3001;&#x307e;&#x305a;&#x306f;20%&#x524d;&#x5f8c;&#x3067;&#x8a66;&#x3057;&#x3001;&#x6240;&#x5f97;&#x3084;&#x63a7;&#x9664;&#x306b;&#x5408;&#x308f;&#x305b;&#x3066;&#x8abf;&#x6574;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+              <summary>月5万円を目指すには何時間必要ですか？</summary>
+              <p>時給2,000円なら月25時間、時給3,000円なら約17時間が目安です。実際には修正や連絡時間もあるため、少し余裕を見て考えると安全です。</p>
             </details>
             <details>
-              <summary>&#x624b;&#x53d6;&#x308a;&#x3092;&#x3088;&#x308a;&#x8a73;&#x3057;&#x304f;&#x898b;&#x308b;&#x306b;&#x306f;&#xFF1F;</summary>
-              <p>&#x7d4c;&#x8cbb;&#x3084;&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x3082;&#x53cd;&#x6620;&#x3057;&#x305f;&#x3044;&#x5834;&#x5408;&#x306f;&#x3001;&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x3084;&#x7a0e;&#x91d1;&#x7cfb;&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x4f75;&#x7528;&#x3059;&#x308b;&#x3068;&#x5168;&#x4f53;&#x50cf;&#x304c;&#x898b;&#x3048;&#x3084;&#x3059;&#x304f;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;</p>
+              <summary>作業時間を増やすべきか、単価を上げるべきか迷います。</summary>
+              <p>本業後の時間に限りがある会社員は、作業時間を増やしすぎると疲れやすくなります。最初は継続できる時間を決め、その後に単価改善やAI活用を考えるのがおすすめです。</p>
             </details>
+            <details>
+              <summary>副業収入は売上で見ればいいですか？</summary>
+              <p>売上だけでなく、経費と税金を引いた手取りも確認してください。収入が増えるほど、<a href="tax.html">税金シミュレーター</a> や <a href="take-home.html">手取りシミュレーター</a> で確認する重要性が上がります。</p>
+            </details>
+            <details>
+              <summary>本業と副業を両立するコツはありますか？</summary>
+              <p>理想の作業時間ではなく、疲れている週でも続けられる時間で計画することです。作業量が多すぎる場合は、<a href="side-time-management.html">時間管理シミュレーター</a> も確認してください。</p>
+            </details>
+            <details>
+              <summary>副業で月10万円を超えたら何を意識すべきですか？</summary>
+              <p>収支管理、税金、確定申告、作業時間の最適化が重要になります。事業として管理する意識を持ち、記録や経費管理を早めに整えると安心です。</p>
+            </details>
+            <details>
+              <summary>AIを使うと副業収入は増えますか？</summary>
+              <p>AIで調査、構成、下書き、確認作業を短縮できれば、同じ時間でこなせる作業量が増える可能性があります。ただし、品質確認や体験談の追加は自分で行う必要があります。</p>
+            </details>
+            <details>
+              <summary>案件数を増やせば収入は伸びますか？</summary>
+              <p>案件数を増やすと収入は伸びる可能性がありますが、納期管理や修正対応も増えます。無理に増やす前に、単価、作業時間、疲労度のバランスを見てください。</p>
+            </details>
+            <details>
+              <summary>副業収入が少ない時期は失敗ですか？</summary>
+              <p>失敗とは限りません。最初は作業に慣れる期間でもあります。短期間の結果だけで判断せず、作業時間、改善点、単価の変化を見ながら続けるか判断してください。</p>
+            </details>
+            <details>
+              <summary>会社員が副業する前に確認すべきことは何ですか？</summary>
+              <p>勤務先の就業規則、税金、住民税、作業時間、健康面を確認してください。収入だけでなく、無理なく続けられるかを先に見ることが大切です。</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-panel" aria-label="副業収入シミュレーターの注意事項">
+          <section class="tool-heading">
+            <h2>注意事項</h2>
+            <p>計算結果は、実際の収入を保証するものではありません。</p>
+          </section>
+          <p>このシミュレーターの結果は、時給、作業時間、案件数をもとにした簡易的な目安です。実際の収入は、案件単価、修正回数、営業時間、経費、税金、継続期間、本業の忙しさによって変わります。</p>
+          <p>特に会社員の場合、本業の残業や急な対応で予定通りに作業できないことがあります。良い結果だけで判断せず、作業時間を少なめにしたパターン、単価が低いパターン、税金を差し引いたパターンも試してください。</p>
+        </section>
+
+        <section class="article-panel" aria-label="副業収入シミュレーターの関連記事">
+          <section class="tool-heading">
+            <h2>関連記事</h2>
+            <p>副業収入を試算したあとに確認したいページです。</p>
+          </section>
+          <div class="article-list">
+            <a class="article-link" href="tax.html"><strong>税金シミュレーター</strong><span>副業収入にかかる税金の目安を確認できます。</span></a>
+            <a class="article-link" href="take-home.html"><strong>手取りシミュレーター</strong><span>売上から経費や税金を引いた手取りを確認できます。</span></a>
+            <a class="article-link" href="hourly-improvement.html"><strong>副業時給改善シミュレーター</strong><span>作業効率やAI活用で時給を上げられるか確認できます。</span></a>
+            <a class="article-link" href="side-time-management.html"><strong>時間管理シミュレーター</strong><span>本業、睡眠、家事と副業時間のバランスを確認できます。</span></a>
+            <a class="article-link" href="article-project-fire-001-adsense.html"><strong>運営記録 #001</strong><span>副業サイトを改善し続ける理由とAdSense挑戦の記録です。</span></a>
           </div>
         </section>
         <section class="article-panel operator-comment" aria-label="副業月収シミュレーターの運営者コメント">
@@ -9427,6 +9548,7 @@ function renderSideIncome() {
     setText("yearly", yen.format(0));
     setText("netMonthly", yen.format(0));
     setText("netYearly", yen.format(0));
+    setText("sideIncomeResultGuide", "入力内容を確認してください。");
     return;
   }
 
@@ -9434,11 +9556,19 @@ function renderSideIncome() {
   const yearly = monthly * 12;
   const netMonthly = monthly * (1 - values.tax.value / 100);
   const netYearly = netMonthly * 12;
+  const resultGuide = monthly < 10000
+    ? "まずは継続できる作業習慣を作る段階の目安です。"
+    : monthly < 50000
+      ? "副業として成果が見え始める水準の目安です。単価と作業効率を見直すことで伸ばせる可能性があります。"
+      : monthly < 100000
+        ? "家計への影響を実感しやすい水準の目安です。税金や確定申告についても確認しましょう。"
+        : "事業として管理する段階の目安です。収支管理、税金、作業時間の最適化が重要になります。";
 
   setText("monthly", yen.format(monthly));
   setText("yearly", yen.format(yearly));
   setText("netMonthly", yen.format(netMonthly));
   setText("netYearly", yen.format(netYearly));
+  setText("sideIncomeResultGuide", resultGuide);
 }
 
 function renderAiHourly() {
