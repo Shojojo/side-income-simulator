@@ -537,11 +537,18 @@ document.body.innerHTML = `
             <h2>Project FIRE</h2>
             <p>現役会社員が、会社に依存しない収入を作るまでの挑戦記録</p>
           </section>
+          <div class="status-pill-list" aria-label="Project FIREの現在の状況">
+            <span class="status-pill">現役会社員</span>
+            <span class="status-pill">2事業を運営中</span>
+            <span class="status-pill">AdSense挑戦中</span>
+            <span class="status-pill">運営記録公開中</span>
+          </div>
           <p>成功だけではなく、AdSense審査の不合格、時間不足、迷い、改善内容も公開しています。同じように本業と副業を両立する会社員の参考になる記録を目指しています。</p>
           <article class="featured-record-card">
             <h3>運営記録 #001｜AdSenseに何度も落ちても、このサイトを作り続ける理由</h3>
             <p>運送会社で管理職として働きながら、副業サイトを改善し続けている記録です。AdSense不承認の悔しさ、改善した内容、諦めず続ける理由を残しています。</p>
             <div class="card-actions">
+              <a class="primary-link" href="project-fire.html">Project FIREの全体像を見る</a>
               <a class="primary-link" href="article-project-fire-001-adsense.html">最新の運営記録を読む</a>
               <a class="subtle-link" href="project-fire.html">運営記録一覧を見る</a>
             </div>
