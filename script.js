@@ -545,11 +545,11 @@ document.body.innerHTML = `
           </div>
           <p>成功だけではなく、AdSense審査の不合格、時間不足、迷い、改善内容も公開しています。同じように本業と副業を両立する会社員の参考になる記録を目指しています。</p>
           <article class="featured-record-card">
-            <h3>運営記録 #001｜AdSenseに何度も落ちても、このサイトを作り続ける理由</h3>
-            <p>運送会社で管理職として働きながら、副業サイトを改善し続けている記録です。AdSense不承認の悔しさ、改善した内容、諦めず続ける理由を残しています。</p>
+            <h3>運営記録 #002｜予定が崩れた日も、自分の機嫌は自分で取る</h3>
+            <p>暑い中での本業と予定外の人員対応を終えたあと、副業を止めずに進めた一日の記録です。副業シミュレーターの改善方針と、Quiet Tokyoが50作品に到達した現在地をまとめています。</p>
             <div class="card-actions">
               <a class="primary-link" href="project-fire.html">Project FIREの全体像を見る</a>
-              <a class="primary-link" href="article-project-fire-001-adsense.html">最新の運営記録を読む</a>
+              <a class="primary-link" href="article-project-fire-002-mood-reset.html">最新の運営記録を読む</a>
               <a class="subtle-link" href="project-fire.html">運営記録一覧を見る</a>
             </div>
           </article>
