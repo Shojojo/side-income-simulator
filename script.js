@@ -2207,7 +2207,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI副業効率化関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>AI効率化は、自動化できる作業、時給改善、利益率改善、使うAIツールの選び方を合わせて見ると実行に移しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -2346,7 +2346,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI導入ROI関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール・関連記事</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>AI導入の費用対効果を見たら、自動化できる作業、実質時給、利益率、AIツール選びも合わせて確認できます。</p>
           </section>
           <div class="related-links">
@@ -2494,7 +2494,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI副業自動化関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>AI自動化の効果を見たら、効率化、ROI、利益最大化も合わせて確認すると導入判断がしやすくなります。</p>
           </section>
           <div class="related-links">
@@ -2649,7 +2649,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI作業時間削減関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>削減できる作業時間を確認したら、自動化、AI効率化、ROIまで見ると、AI導入を続けるべきか判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -2798,7 +2798,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI外注費削減関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール・関連記事</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>外注費削減の結果を、AI導入ROI、AI副業利益最大化、副業利益率と合わせて確認できます。</p>
           </section>
           <div class="related-links">
@@ -2940,7 +2940,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="AI副業利益最大化関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール・関連記事</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>利益最大化の結果を、AI導入ROI、AI副業効率化、副業利益率と合わせて確認できます。</p>
           </section>
           <div class="related-links">
@@ -3078,7 +3078,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業時間管理関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>副業時間を確認したら、限られた時間で時給と利益率をどう上げるかも合わせて確認できます。</p>
           </section>
           <div class="related-links">
@@ -3216,7 +3216,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業疲労度関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>疲労度を確認したら、時間配分とAI時短の効果も合わせて見てください。</p>
           </section>
           <div class="related-links">
@@ -3279,7 +3279,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>継続率を確認したら、モチベーション、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-motivation.html">副業モチベーション診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>継続率を確認したら、モチベーション、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-motivation.html">副業モチベーション診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-motivation" aria-label="副業モチベーション診断">
@@ -3335,7 +3335,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>モチベーションを確認したら、継続率、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-continuity.html">副業継続率診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>モチベーションを確認したら、継続率、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-continuity.html">副業継続率診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-risk" aria-label="副業リスク診断">
@@ -3477,7 +3477,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業リスク診断関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>リスクが高い項目は、時間管理、疲労度、利益率のツールで分解すると改善しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -3631,7 +3631,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="会社員副業安全度関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>安全度を確認したら、リスク、税金、疲労度を分けて見ると、どこから改善すべきか判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -3759,7 +3759,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業時給改善関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>時給改善は、AI活用による作業時間短縮と、利益率の改善を合わせて見ると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -3881,7 +3881,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業利益率関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>利益率を確認したら、月収、手取り、税金の順に見ると、実際に残る金額まで整理できます。</p>
           </section>
           <div class="related-links">
@@ -4023,7 +4023,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業法人化判断関連リンク">
           <section class="tool-heading">
-            <h2>関連ツール・関連記事</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>法人化を考える前に、利益率、所得税、会計管理を合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -4280,7 +4280,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="会社員節税関連リンク">
           <section class="tool-heading">
-            <h2>関連ツール・関連記事</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>会社員の節税は、控除、納税額、固定費の見直しをセットで見ると行動に移しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -4889,7 +4889,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="投資リスク許容度関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>リスク許容度を確認したら、高配当株、配当ETF、FIRE達成率を合わせて見ると、投資スタイルを具体的な行動に落とし込みやすくなります。</p>
           </section>
           <div class="related-links">
@@ -5134,7 +5134,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="新NISA最速積立関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>新NISAの最速積立は、通常の新NISA試算、配当再投資、FIRE必要資産と合わせて見ると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -5521,7 +5521,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="FIRE達成率関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>スコアだけで判断せず、FIRE達成年数、FIRE後のストレス、サイドFIRE、配当生活の必要資産も合わせて確認できます。</p>
           </section>
           <div class="related-links">
@@ -5662,7 +5662,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="副業FIREロードマップ関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>ロードマップを作ったら、達成率、生活費、会社員FIRE年数、サイドFIREを合わせて確認すると、次の行動が決めやすくなります。</p>
           </section>
           <div class="related-links">
@@ -5811,7 +5811,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="FIRE生活費最適化関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>生活費を整えたら、FIRE達成率、固定費削減、生活コスト、キャッシュフローを合わせて確認すると、改善順が決めやすくなります。</p>
           </section>
           <div class="related-links">
@@ -5959,7 +5959,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="FIREストレス関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>FIRE後の不安を見たら、達成率、サイドFIRE、配当生活の継続年数も合わせて確認すると現実的な計画に近づきます。</p>
           </section>
           <div class="related-links">
@@ -6094,7 +6094,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="会社員FIRE関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>会社員FIREは、通常FIRE、サイドFIRE、配当再投資を合わせて見ると、現実的な到達ルートを考えやすくなります。</p>
           </section>
           <div class="related-links">
@@ -6232,7 +6232,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="会社員キャッシュフロー関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>キャッシュフローを整えたら、固定費、FIRE、生活防衛資金を合わせて確認すると、資産形成の優先順位を決めやすくなります。</p>
           </section>
           <div class="related-links">
@@ -6385,7 +6385,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="生活コスト最適化関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>生活コストの全体像を見たら、固定費、毎月収支、FIRE達成までの距離を合わせて確認すると改善順が決めやすくなります。</p>
           </section>
           <div class="related-links">
@@ -6512,7 +6512,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="生活防衛資金関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>生活防衛資金を確保したうえで、FIREや老後資金の計画へ進むと、無理のない資産形成を考えやすくなります。</p>
           </section>
           <div class="related-links">
@@ -6641,7 +6641,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="固定費削減関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>固定費を下げた分は、生活防衛資金やFIRE準備、クレジットカードの見直しと合わせて考えると効果を確認しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -7282,7 +7282,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="配当ETF比較関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>配当ETFは、配当金、再投資、新NISAの非課税枠を合わせて見ると、収入重視か資産成長重視かを判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -7436,7 +7436,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="高配当株比較関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>高配当株は、ETFとの違い、配当再投資、新NISAの非課税枠を合わせて見ると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -7502,7 +7502,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="配当メンタル関連ツール"><section class="tool-heading"><h2>関連ツール</h2><p>配当投資の安心感は、銘柄比較、ETF比較、FIRE後のストレス確認を合わせて見ると判断しやすくなります。</p></section><div class="related-links"><a href="dividend-stock.html">高配当株比較シミュレーター</a><a href="dividend-etf.html">配当ETF比較シミュレーター</a><a href="fire-stress.html">FIREストレス診断</a><a href="dividend-life-years.html">配当生活年数シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="配当メンタル関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>配当投資の安心感は、銘柄比較、ETF比較、FIRE後のストレス確認を合わせて見ると判断しやすくなります。</p></section><div class="related-links"><a href="dividend-stock.html">高配当株比較シミュレーター</a><a href="dividend-etf.html">配当ETF比較シミュレーター</a><a href="fire-stress.html">FIREストレス診断</a><a href="dividend-life-years.html">配当生活年数シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="dividend-life" aria-label="配当生活達成シミュレーター">
@@ -7626,7 +7626,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="配当生活達成関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>配当生活は、年間配当金、再投資効果、FIRE必要資産を合わせて確認すると現実的な目標額を決めやすくなります。</p>
           </section>
           <div class="related-links">
@@ -7762,7 +7762,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="配当生活年数関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>配当生活の継続年数は、必要資産、再投資効果、FIRE後のストレス、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -7890,7 +7890,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="NISA取り崩し関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>NISAの取り崩しは、積立時の資産形成、老後資金の不足額、FIRE必要資産と合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -8011,7 +8011,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="クレカ積立比較関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>クレカ積立は、新NISAや配当再投資と合わせて確認すると、ポイント還元を含めた資産形成の全体像を整理しやすくなります。</p>
           </section>
           <div class="related-links">
@@ -8133,7 +8133,7 @@ document.body.innerHTML = `
 
         <section class="article-panel" aria-label="配当再投資関連ツール">
           <section class="tool-heading">
-            <h2>関連ツール</h2>
+            <h2>次に試すシミュレーター</h2>
             <p>配当再投資は、配当金、FIRE、新NISAの考え方とセットで確認すると、資産形成の全体像をつかみやすくなります。</p>
           </section>
           <div class="related-links">
@@ -9194,7 +9194,7 @@ function buildNextReadSection(kind = "default", currentHref = "") {
   return `
         <section class="next-read-section" aria-label="次に読むべき記事">
           <section class="tool-heading">
-            <h2>次に読むべき記事</h2>
+            <h2>次に読む記事</h2>
             <p>副業から税金、固定費改善、投資、FIREへ進めるように、悩みの流れでつながる記事を選んでいます。</p>
           </section>
           <div class="next-read-grid">${buildNextReadCards(kind, currentHref)}
@@ -9216,6 +9216,286 @@ function buildRelatedToolLinks(kind, currentRoute) {
     .slice(0, 5);
 
   return links.map(([label, href]) => `<a href="${href}">${label}</a>`).join("");
+}
+
+const popularSimulatorLinks = [
+  {
+    title: "副業月収シミュレーター",
+    href: "side-income.html",
+    desc: "使える時間と単価から、月の副業収入を確認できます。",
+  },
+  {
+    title: "副業税金シミュレーター",
+    href: "tax.html",
+    desc: "副業所得にかかる税金の目安を確認できます。",
+  },
+  {
+    title: "副業手取り計算シミュレーター",
+    href: "take-home.html",
+    desc: "税金や経費を見た後に手元へ残る金額を整理できます。",
+  },
+  {
+    title: "FIRE達成シミュレーター",
+    href: "fire.html",
+    desc: "現在資産と積立額からFIREまでの距離を確認できます。",
+  },
+];
+
+const categoryNavigationLinks = [
+  { title: "副業", href: "category-side-business.html", desc: "収入、時間、継続、安全性を確認する" },
+  { title: "税金", href: "category-tax.html", desc: "所得税、住民税、手取りを整理する" },
+  { title: "投資", href: "category-investment.html", desc: "NISA、配当、証券口座を比較する" },
+  { title: "FIRE", href: "category-fire.html", desc: "達成率、生活費、サイドFIREを考える" },
+  { title: "AI", href: "category-ai.html", desc: "AI活用、時短、利益改善を確認する" },
+  { title: "ライフプラン", href: "category-retirement.html", desc: "老後、教育、住宅、生活費を見直す" },
+];
+
+const routeNextSimulatorMap = {
+  "side-income": ["take-home.html", "tax.html", "side-time-management.html", "hourly-improvement.html"],
+  tax: ["take-home.html", "income-tax.html", "resident-tax.html", "side-profit-margin.html"],
+  fire: ["emergency-fund.html", "fixed-cost-reduction.html", "nisa.html", "dividend.html"],
+  nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
+  "ai-hourly": ["ai-efficiency.html", "ai-roi.html", "ai-time-reduction.html", "side-profit-margin.html"],
+  "ai-efficiency": ["ai-roi.html", "ai-automation.html", "ai-time-reduction.html", "hourly-improvement.html"],
+  "take-home": ["tax.html", "income-tax.html", "resident-tax.html", "side-income.html"],
+  retirement: ["nisa.html", "ideco.html", "fixed-cost-reduction.html", "fire.html"],
+};
+
+const simulatorDescriptions = {
+  "side-income.html": "月収目標と作業時間を見て、副業の現実的な行動量を整理します。",
+  "take-home.html": "売上から税金や経費を引いた後の手取り感を確認します。",
+  "tax.html": "副業所得にかかる税金の目安を先に見て、納税不安を減らします。",
+  "side-time-management.html": "本業、睡眠、家事の中で副業に使える時間を確認します。",
+  "hourly-improvement.html": "副業の実質時給を見て、AI活用や単価改善の余地を探します。",
+  "income-tax.html": "所得税と復興特別所得税の目安を確認します。",
+  "resident-tax.html": "副業の住民税と普通徴収の注意点を整理します。",
+  "side-profit-margin.html": "売上、経費、作業時間から利益率と時給効率を確認します。",
+  "emergency-fund.html": "FIREや投資の前に必要な生活防衛資金を確認します。",
+  "fixed-cost-reduction.html": "通信費、保険、サブスクなど固定費の削減余地を見ます。",
+  "nisa.html": "副業や固定費改善で作った余力を長期投資へ回す計画を確認します。",
+  "dividend.html": "投資額と利回りから年間配当金と月平均配当金を確認します。",
+  "nisa-fast.html": "新NISA枠を使った資産形成のスピードを確認します。",
+  "credit-card-investment.html": "クレカ積立のポイント還元と通常積立との差を比較します。",
+  "dividend-reinvestment.html": "配当を再投資した場合の資産成長を確認します。",
+  "fire.html": "資産、積立、利回りからFIREまでの距離を確認します。",
+  "ai-efficiency.html": "AI活用による時間削減と利益改善の目安を確認します。",
+  "ai-roi.html": "AIツール費用に対して、どれだけ回収できるかを見ます。",
+  "ai-time-reduction.html": "AIで削減できる作業時間と時給改善を確認します。",
+  "ai-automation.html": "AIで自動化できる作業と副業継続性の改善を確認します。",
+  "ideco.html": "iDeCo掛金による節税額と将来資産を確認します。",
+};
+
+function normalizeNavigationHeadingText(view) {
+  if (!view) {
+    return;
+  }
+  view.querySelectorAll("h2, h3").forEach((heading) => {
+    const text = heading.textContent.trim();
+    if (["おすすめ関連記事", "関連記事", "次に読むべき記事"].includes(text)) {
+      heading.textContent = "次に読む記事";
+    }
+    if (["関連ツール", "おすすめツール", "関連ツール・関連記事", "おすすめ関連ツール"].includes(text)) {
+      heading.textContent = "次に試すシミュレーター";
+    }
+  });
+}
+
+function hideLegacyNavigationSections(view) {
+  if (!view) {
+    return;
+  }
+  view.querySelectorAll("section").forEach((section) => {
+    if (section.matches("[data-unified-journey], [data-static-journey]") || section.closest("[data-unified-journey], [data-static-journey]")) {
+      return;
+    }
+    const label = section.getAttribute("aria-label") || "";
+    const heading = section.querySelector(":scope > .tool-heading h2, :scope > .tool-heading h3, :scope > h2, :scope > h3")?.textContent.trim() || "";
+    const isLegacyRead = section.classList.contains("next-read-section") || /おすすめ関連記事|関連記事|次に読むべき記事/.test(label);
+    const isLegacyTool = /関連ツール|おすすめツール|他のシミュレーターも試す|人気ツール/.test(label);
+    const isDuplicateHeading = ["次に読む記事", "次に試すシミュレーター", "人気シミュレーター", "あなたにおすすめ"].includes(heading);
+    if (isLegacyRead || isLegacyTool || isDuplicateHeading) {
+      section.hidden = true;
+      section.dataset.legacyJourney = "hidden";
+    }
+  });
+}
+
+function uniqueJourneyItems(items, currentHref = "", limit = 4) {
+  const seen = new Set();
+  return items
+    .filter((item) => item && item.href && item.href !== currentHref)
+    .filter((item) => {
+      if (seen.has(item.href)) {
+        return false;
+      }
+      seen.add(item.href);
+      return true;
+    })
+    .slice(0, limit);
+}
+
+function mapToolTuplesToJourneyItems(tuples = []) {
+  return tuples.map(([title, href]) => ({
+    title,
+    href,
+    desc: simulatorDescriptions[href] || "近いテーマを続けて確認し、次の行動を具体化できます。",
+    reason: "今見た結果を、手取り・税金・時間・資産形成へつなげるため",
+  }));
+}
+
+function mapArticleTuplesToJourneyItems(tuples = []) {
+  return tuples.map(([title, href]) => ({
+    title,
+    href,
+    desc: "会社員の副業、税金、資産形成を実体験ベースで整理した記事です。",
+    reason: "計算結果を行動へ移す前に、背景と注意点を確認するため",
+  }));
+}
+
+function buildJourneyCard(item) {
+  return `
+            <a class="journey-card" href="${item.href}">
+              <strong>${item.title}</strong>
+              <span>${item.desc}</span>
+              ${item.reason ? `<small>関連理由：${item.reason}</small>` : ""}
+              <b aria-hidden="true">→</b>
+            </a>`;
+}
+
+function buildJourneyGrid(items) {
+  return `<div class="journey-grid">${items.map(buildJourneyCard).join("")}</div>`;
+}
+
+function buildCategoryJourneyGrid() {
+  return `<div class="journey-grid journey-grid--compact">${categoryNavigationLinks.map(buildJourneyCard).join("")}</div>`;
+}
+
+function getJourneyKind(route) {
+  const profile = routeExperienceProfiles[route];
+  if (profile?.kind) {
+    return profile.kind;
+  }
+  if (route === "top") {
+    return "default";
+  }
+  return "side";
+}
+
+function getNextSimulatorItems(route, kind) {
+  const currentHref = route === "top" ? "index.html" : `${route}.html`;
+  const directMap = routeNextSimulatorMap[route] || [];
+  const directItems = directMap.map((href) => {
+    const found = Object.values(relatedToolGroups).flat().find(([, itemHref]) => itemHref === href);
+    return {
+      title: found?.[0] || href.replace(".html", ""),
+      href,
+      desc: simulatorDescriptions[href] || "関連する条件を続けて確認できます。",
+      reason: "今の結果を次の判断へつなげるため",
+    };
+  });
+  const groupedItems = mapToolTuplesToJourneyItems([...(relatedToolGroups[kind] || []), ...(relatedToolGroups.side || [])]);
+  return uniqueJourneyItems([...directItems, ...groupedItems], currentHref, 4);
+}
+
+function getNextArticleItems(route, kind) {
+  const currentHref = route === "top" ? "index.html" : `${route}.html`;
+  const articleItems = [
+    ...(nextReadFlows[kind] || []),
+    ...mapArticleTuplesToJourneyItems(relatedArticleGroups[kind] || []),
+    ...nextReadFlows.default,
+  ].filter((item) => item.href.startsWith("article-"));
+  return uniqueJourneyItems(articleItems, currentHref, 4);
+}
+
+function getRecommendationItems(route, kind, usedToolHrefs = [], usedArticleHrefs = []) {
+  const currentHref = route === "top" ? "index.html" : `${route}.html`;
+  const usedTools = new Set(usedToolHrefs);
+  const usedArticles = new Set(usedArticleHrefs);
+  const toolItems = mapToolTuplesToJourneyItems([
+    ...(relatedToolGroups[kind] || []),
+    ...popularSimulatorLinks.map((item) => [item.title, item.href]),
+    ...(relatedToolGroups.fire || []),
+  ]).filter((item) => !usedTools.has(item.href));
+  const articleItems = [
+    ...mapArticleTuplesToJourneyItems(relatedArticleGroups[kind] || []),
+    ...nextReadFlows.default,
+  ].filter((item) => !usedArticles.has(item.href));
+  return {
+    tools: uniqueJourneyItems(toolItems, currentHref, 3),
+    articles: uniqueJourneyItems(articleItems, currentHref, 3),
+  };
+}
+
+function renderUnifiedJourney(route) {
+  const view = document.querySelector(`.view[data-view="${route}"]`);
+  if (!view || route === "top") {
+    normalizeNavigationHeadingText(view);
+    return;
+  }
+
+  normalizeNavigationHeadingText(view);
+  hideLegacyNavigationSections(view);
+  view.querySelectorAll("[data-unified-journey]").forEach((node) => node.remove());
+
+  const kind = getJourneyKind(route);
+  const nextTools = getNextSimulatorItems(route, kind);
+  const nextArticles = getNextArticleItems(route, kind);
+  const popularTools = popularSimulatorLinks.filter((item) => item.href !== `${route}.html`);
+  const recommendations = getRecommendationItems(
+    route,
+    kind,
+    nextTools.map((item) => item.href),
+    nextArticles.map((item) => item.href)
+  );
+
+  const section = document.createElement("section");
+  section.className = "unified-journey-section";
+  section.dataset.unifiedJourney = "true";
+  section.setAttribute("aria-label", "ページ下部の回遊導線");
+  section.innerHTML = `
+        <section class="tool-heading">
+          <h2>次の行動を選ぶ</h2>
+          <p>計算結果を見たあとに、記事で背景を確認し、近いシミュレーターでもう一度数字を比べられるように整理しました。</p>
+        </section>
+        <div class="journey-block">
+          <h3>次に読む記事</h3>
+          ${buildJourneyGrid(nextArticles)}
+        </div>
+        <div class="journey-block">
+          <h3>次に試すシミュレーター</h3>
+          ${buildJourneyGrid(nextTools)}
+        </div>
+        <div class="journey-block">
+          <h3>人気シミュレーター</h3>
+          ${buildJourneyGrid(popularTools)}
+        </div>
+        <div class="journey-block">
+          <h3>あなたにおすすめ</h3>
+          <div class="journey-recommend-columns">
+            <div>
+              <h4>おすすめツール</h4>
+              ${buildJourneyGrid(recommendations.tools)}
+            </div>
+            <div>
+              <h4>おすすめ記事</h4>
+              ${buildJourneyGrid(recommendations.articles)}
+            </div>
+          </div>
+        </div>
+        <div class="journey-block">
+          <h3>カテゴリから探す</h3>
+          ${buildCategoryJourneyGrid()}
+        </div>
+        <div class="journey-home">
+          <a href="index.html">トップページへ戻る</a>
+        </div>`;
+
+  const footer = view.querySelector(".site-footer");
+  if (footer) {
+    footer.insertAdjacentElement("beforebegin", section);
+  } else {
+    view.appendChild(section);
+  }
 }
 
 function buildExperienceSection(profile) {
@@ -9249,12 +9529,12 @@ function buildExperienceSection(profile) {
           </div>
           ${buildNextReadSection(profile.kind)}
           <div class="experience-block">
-            <h3>おすすめ関連記事</h3>
+            <h3>次に読む記事</h3>
             <p>このページと合わせて読むと、計算結果を行動に移しやすくなります。</p>
             <div class="related-links">${links}</div>
           </div>
           <div class="experience-block">
-            <h3>関連ツール</h3>
+            <h3>次に試すシミュレーター</h3>
             <p>近いテーマのシミュレーターをカテゴリ連動・人気順優先で5件表示しています。</p>
             <div class="related-links">${relatedTools}</div>
           </div>
@@ -13616,6 +13896,7 @@ function renderRoute() {
   });
   renderBreadcrumb(route, seo);
   updateDynamicStructuredData(route, seo);
+  renderUnifiedJourney(route);
 }
 
 function updateDynamicStructuredData(route, seo) {
@@ -13705,8 +13986,8 @@ function renderTopToolSearch() {
 function insertExistingPageSeoImprovements() {
   const sections = {
     top: `<section class="article-panel faq-section" aria-label="トップページFAQ"><section class="tool-heading"><h2>よくある質問</h2><p>初めてこのサイトを使う方向けに、使い方と注意点を整理しました。</p></section><div class="faq-list"><details><summary>まずどのページから見ればいいですか？</summary><p>副業を始めたい人は <a href="side-income.html">副業月収シミュレーター</a>、資産形成を進めたい人は <a href="nisa.html">新NISAシミュレーター</a>、将来の自由度を見たい人は <a href="fire.html">FIREシミュレーター</a> から確認すると流れをつかみやすいです。</p></details><details><summary>このサイトは実体験に基づいていますか？</summary><p>運営者は会社員として働きながら、副業時間の確保、AI活用、固定費改善、長期投資を検証しています。成功例だけでなく、疲れて進まない日や更新で苦戦した点も残しています。</p></details><details><summary>シミュレーター結果だけで判断して大丈夫ですか？</summary><p>結果は目安です。税金、生活費、投資リスク、勤務先ルールは人によって変わるため、複数パターンで試算してください。</p></details></div></section>`,
-    fire: `<section class="article-panel faq-section" aria-label="FIRE達成シミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>FIREを試算するときに、会社員が見落としやすい点を整理しました。</p></section><div class="faq-list"><details><summary>FIREに必要な資産はどう考えればいいですか？</summary><p>年間生活費の25年分は一つの目安ですが、税金、社会保険、住居費、老後資金まで含めると必要額は変わります。</p></details><details><summary>副業収入はFIRE計算に入れてよいですか？</summary><p>入れてもよいですが、同じ金額が続く前提にしすぎず、副業あり、なし、半分になる場合で見てください。</p></details></div></section><section class="next-read-section" aria-label="FIREのおすすめ関連記事5件"><section class="tool-heading"><h2>おすすめ関連記事</h2><p>FIREを数字だけで終わらせず、副業、投資、生活費、老後資金までつなげて考える記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しない働き方を考えた背景です。</span><span class="next-read-reason">関連理由：FIREを目指す目的を具体化するため</span></a><a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>FIRE資金を増やすための副業時間設計です。</span><span class="next-read-reason">関連理由：副業を無理なく続けるため</span></a><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>長期投資をFIRE計画へつなげる入口です。</span><span class="next-read-reason">関連理由：積立投資をFIREの土台にするため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>FIRE後も続く老後資金の不安を整理できます。</span><span class="next-read-reason">関連理由：FIREと老後資金を切り離さず考えるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>FIRE年数を短縮する副業収入づくりです。</span><span class="next-read-reason">関連理由：毎月の入金力を上げるため</span></a></div></section>`,
-    nisa: `<section class="article-panel faq-section" aria-label="新NISAシミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>新NISAを会社員の資産形成に使うときの確認ポイントです。</p></section><div class="faq-list"><details><summary>毎月いくら積み立てればいいですか？</summary><p>最初は無理なく続く金額で始めるのが現実的です。副業収入や固定費削減で余力が増えたら、積立額を上げたパターンも試してください。</p></details><details><summary>年利は高めに入れても大丈夫ですか？</summary><p>楽観的な年利だけで判断せず、3%、4%、5%など複数の年利で試してください。</p></details></div></section><section class="next-read-section" aria-label="新NISAのおすすめ関連記事5件"><section class="tool-heading"><h2>おすすめ関連記事</h2><p>新NISAを始める前後に、口座選び、FIRE、老後資金まで確認できる記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>制度の基本と積立の考え方を整理しています。</span><span class="next-read-reason">関連理由：制度の前提を確認するため</span></a><a class="next-read-card" href="article-rakuten-sbi-thorough-comparison-2026.html"><strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong><span>NISA、ポイント、クレカ積立を比較できます。</span><span class="next-read-reason">関連理由：口座選びへ進むため</span></a><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>新NISAをFIRE目標につなげる考え方です。</span><span class="next-read-reason">関連理由：投資を将来設計へつなげるため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>長期投資と老後資金の関係を確認できます。</span><span class="next-read-reason">関連理由：老後まで視野を広げるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>積立原資を増やす副業収入づくりです。</span><span class="next-read-reason">関連理由：投資額を増やす方法を見るため</span></a></div></section>`
+    fire: `<section class="article-panel faq-section" aria-label="FIRE達成シミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>FIREを試算するときに、会社員が見落としやすい点を整理しました。</p></section><div class="faq-list"><details><summary>FIREに必要な資産はどう考えればいいですか？</summary><p>年間生活費の25年分は一つの目安ですが、税金、社会保険、住居費、老後資金まで含めると必要額は変わります。</p></details><details><summary>副業収入はFIRE計算に入れてよいですか？</summary><p>入れてもよいですが、同じ金額が続く前提にしすぎず、副業あり、なし、半分になる場合で見てください。</p></details></div></section><section class="next-read-section" aria-label="FIREのおすすめ関連記事5件"><section class="tool-heading"><h2>次に読む記事</h2><p>FIREを数字だけで終わらせず、副業、投資、生活費、老後資金までつなげて考える記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しない働き方を考えた背景です。</span><span class="next-read-reason">関連理由：FIREを目指す目的を具体化するため</span></a><a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>FIRE資金を増やすための副業時間設計です。</span><span class="next-read-reason">関連理由：副業を無理なく続けるため</span></a><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>長期投資をFIRE計画へつなげる入口です。</span><span class="next-read-reason">関連理由：積立投資をFIREの土台にするため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>FIRE後も続く老後資金の不安を整理できます。</span><span class="next-read-reason">関連理由：FIREと老後資金を切り離さず考えるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>FIRE年数を短縮する副業収入づくりです。</span><span class="next-read-reason">関連理由：毎月の入金力を上げるため</span></a></div></section>`,
+    nisa: `<section class="article-panel faq-section" aria-label="新NISAシミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>新NISAを会社員の資産形成に使うときの確認ポイントです。</p></section><div class="faq-list"><details><summary>毎月いくら積み立てればいいですか？</summary><p>最初は無理なく続く金額で始めるのが現実的です。副業収入や固定費削減で余力が増えたら、積立額を上げたパターンも試してください。</p></details><details><summary>年利は高めに入れても大丈夫ですか？</summary><p>楽観的な年利だけで判断せず、3%、4%、5%など複数の年利で試してください。</p></details></div></section><section class="next-read-section" aria-label="新NISAのおすすめ関連記事5件"><section class="tool-heading"><h2>次に読む記事</h2><p>新NISAを始める前後に、口座選び、FIRE、老後資金まで確認できる記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>制度の基本と積立の考え方を整理しています。</span><span class="next-read-reason">関連理由：制度の前提を確認するため</span></a><a class="next-read-card" href="article-rakuten-sbi-thorough-comparison-2026.html"><strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong><span>NISA、ポイント、クレカ積立を比較できます。</span><span class="next-read-reason">関連理由：口座選びへ進むため</span></a><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>新NISAをFIRE目標につなげる考え方です。</span><span class="next-read-reason">関連理由：投資を将来設計へつなげるため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>長期投資と老後資金の関係を確認できます。</span><span class="next-read-reason">関連理由：老後まで視野を広げるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>積立原資を増やす副業収入づくりです。</span><span class="next-read-reason">関連理由：投資額を増やす方法を見るため</span></a></div></section>`
   };
   Object.entries(sections).forEach(([route, html]) => {
     const view = document.querySelector('[data-view="' + route + '"]');
