@@ -1015,6 +1015,13 @@ select:focus-visible {
   gap: 8px;
 }
 
+.field-hint {
+  margin: -2px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
 label {
   display: flex;
   align-items: baseline;
@@ -1154,6 +1161,37 @@ button:active {
 
 .notice.is-visible {
   display: block;
+}
+
+#side-income-calculator {
+  scroll-margin-top: 22px;
+}
+
+.calculator-quick-link {
+  width: fit-content;
+}
+
+.result-advice {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  background: #f7fbf8;
+}
+
+.result-advice h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.result-advice p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.target-comparison-grid .article-link {
+  min-height: 88px;
 }
 
 .link-panel {
