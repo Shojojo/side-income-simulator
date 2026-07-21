@@ -1190,6 +1190,139 @@ button:active {
   line-height: 1.75;
 }
 
+.goal-status-card,
+.income-chart,
+.result-save-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.goal-status-card {
+  border-left: 5px solid var(--amber);
+  background: #fffaf0;
+}
+
+.goal-status-card.is-achieved {
+  border-left-color: var(--green);
+  background: #f0fbf6;
+}
+
+.goal-status-card.is-close {
+  border-left-color: var(--amber);
+  background: #fff8eb;
+}
+
+.goal-status-card.is-review {
+  border-left-color: #c15b4a;
+  background: #fff7f4;
+}
+
+.goal-status-card p,
+.income-chart p,
+.result-save-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.goal-status-label {
+  color: var(--ink) !important;
+  font-size: clamp(1.08rem, 4vw, 1.35rem);
+  font-weight: 850;
+}
+
+.goal-status-facts,
+.result-save-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.goal-status-facts span {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(217, 222, 231, 0.92);
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.82);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.income-chart h2,
+.result-save-panel h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.chart-row {
+  display: grid;
+  gap: 6px;
+}
+
+.chart-row-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.chart-row-header strong {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.chart-track {
+  overflow: hidden;
+  height: 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #eef3f0;
+}
+
+.chart-bar {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--blue);
+  transition: width 160ms ease;
+}
+
+.chart-bar.target {
+  background: var(--green);
+}
+
+.chart-bar.net {
+  background: var(--amber);
+}
+
+.chart-bar.improved {
+  background: #315a47;
+}
+
+.chart-note,
+.save-status {
+  font-size: 0.84rem;
+}
+
+.result-save-actions button {
+  min-width: min(100%, 160px);
+}
+
+.metric span,
+.amount,
+.chart-row-header strong {
+  word-break: keep-all;
+}
+
 .target-comparison-grid .article-link {
   min-height: 88px;
 }
@@ -1385,5 +1518,64 @@ button:active {
 
   .metric:first-child {
     border-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart-bar {
+    transition: none;
+  }
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .app-shell {
+    gap: 12px;
+  }
+
+  .breadcrumb-nav,
+  .header,
+  .calculator-quick-link,
+  .result-save-actions,
+  .next-read-section,
+  .faq-section,
+  .site-footer,
+  .operator-comment,
+  .usage-note,
+  .update-history,
+  .comparison-section {
+    display: none !important;
+  }
+
+  .input-panel,
+  .result-panel,
+  .article-panel,
+  .goal-status-card,
+  .income-chart,
+  .result-save-panel,
+  .metric {
+    break-inside: avoid;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  .hero-result {
+    color: #000;
+    background: #fff;
+    border-bottom: 1px solid #000;
+  }
+
+  input,
+  button {
+    border-color: #999;
   }
 }

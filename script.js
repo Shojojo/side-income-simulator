@@ -1942,6 +1942,34 @@ document.body.innerHTML = `
                       <div class="metric"><strong>目標達成率</strong><span class="accent-green" id="targetRate">0%</span><small>予想月収 ÷ 目標月収</small></div>
                     </div>
                     <section class="result-advice" aria-label="改善提案"><h2>結果に応じた改善提案</h2><p id="sideIncomeResultGuide">未計算</p><div class="related-links" id="sideIncomeActionLinks"><a href="side-time-management.html">時間管理を確認する</a><a href="hourly-improvement.html">時給改善を確認する</a></div></section>
+            <section class="goal-status-card is-review" id="goalStatusCard" aria-label="目標達成状況">
+              <p class="goal-status-label" id="goalStatusLabel">条件の見直しが必要</p>
+              <p id="goalStatusMessage">入力条件をもとに目標月収との距離を確認します。</p>
+              <div class="goal-status-facts">
+                <span id="goalStatusGap">不足額 0円</span>
+                <span id="goalStatusAdditionalHours">追加作業時間 0時間</span>
+                <span id="goalStatusRequiredHourly">必要時給 0円</span>
+              </div>
+            </section>
+            <section class="income-chart" aria-label="現在の予想月収と目標月収の比較グラフ">
+              <h2>現在月収と目標月収の比較</h2>
+              <div class="chart-row" aria-label="現在の予想月収"><div class="chart-row-header"><span>現在の予想月収</span><strong id="chartCurrentValue">0円</strong></div><div class="chart-track"><span class="chart-bar current" id="chartCurrentBar" style="width: 0%"></span></div></div>
+              <div class="chart-row" aria-label="目標月収"><div class="chart-row-header"><span>目標月収</span><strong id="chartTargetValue">0円</strong></div><div class="chart-track"><span class="chart-bar target" id="chartTargetBar" style="width: 100%"></span></div></div>
+              <div class="chart-row" aria-label="税と経費を差し引いた月額目安"><div class="chart-row-header"><span>税・経費後の月額目安</span><strong id="chartNetValue">0円</strong></div><div class="chart-track"><span class="chart-bar net" id="chartNetBar" style="width: 0%"></span></div></div>
+              <div class="chart-row" aria-label="改善後パターンの月収"><div class="chart-row-header"><span>改善後パターン</span><strong id="chartImprovedValue">0円</strong></div><div class="chart-track"><span class="chart-bar improved" id="chartImprovedBar" style="width: 0%"></span></div></div>
+              <p class="chart-note">入力条件に基づく概算比較であり、収入を保証するものではありません。</p>
+            </section>
+            <section class="result-save-panel" aria-label="結果を残す">
+              <h2>結果を残す</h2>
+              <p>入力条件だけをこのブラウザに保存したり、同じ条件を開けるURLをコピーできます。氏名やメールアドレスなどの個人情報は保存しません。</p>
+              <div class="result-save-actions">
+                <button type="button" id="saveSideIncomeInputs">入力条件を保存</button>
+                <button type="button" id="clearSideIncomeInputs">保存した条件を削除</button>
+                <button type="button" id="copySideIncomeUrl">結果URLをコピー</button>
+                <button type="button" id="printSideIncomeResult">結果を印刷・PDF保存</button>
+              </div>
+              <p class="save-status" id="sideIncomeSaveStatus" aria-live="polite">保存や共有の結果がここに表示されます。</p>
+            </section>
                   </section>
                 </section>
         
@@ -1957,7 +1985,7 @@ document.body.innerHTML = `
                 <section class="next-read-section" aria-label="次に試すシミュレーター"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>月収の目安を見たら、手取り、税金、時給、時間管理へ進むと判断しやすくなります。</p></section><div class="next-read-grid"><a class="next-read-card" href="take-home.html"><strong>副業手取りシミュレーター</strong><span>売上から経費や税金を引いた手取りの目安を確認します。</span></a><a class="next-read-card" href="tax.html"><strong>税金シミュレーター</strong><span>副業で増える税金や青色申告の影響を確認します。</span></a><a class="next-read-card" href="hourly-improvement.html"><strong>副業時給改善シミュレーター</strong><span>作業効率やAI活用で実質時給を上げられるか確認します。</span></a><a class="next-read-card" href="side-time-management.html"><strong>副業時間管理シミュレーター</strong><span>本業、睡眠、家事と副業時間のバランスを確認します。</span></a></div></section>
                 <section class="next-read-section" aria-label="次に読む記事"><section class="tool-heading"><h2>次に読む記事</h2><p>副業月収を試算したあと、時間、税金、AI活用を具体的に考えるための記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>忙しい会社員が無理なく作業時間を作る考え方です。</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>月5万円までの作業量と現実的な進め方を整理しています。</span></a><a class="next-read-card" href="article-side-tax.html"><strong>副業税金の基礎知識</strong><span>副業収入が出たあとに必要な申告、住民税、経費の考え方です。</span></a><a class="next-read-card" href="article-ai-tools-comparison.html"><strong>副業向けおすすめAIツール比較</strong><span>限られた時間で作業効率を上げるAI活用を比較しています。</span></a></div></section>
                 <section class="article-panel faq-section" aria-label="副業月収シミュレーターFAQ"><section class="tool-heading"><h2>よくある質問</h2><p>副業月収を試算するときに、会社員が迷いやすい点をまとめました。</p></section><div class="faq-list"><details><summary>副業初心者は月いくらを目標にすればよいですか？</summary><p>最初は月1万円から月3万円を目安にすると、作業習慣を作りやすいです。いきなり大きな金額を狙うより、使える時間と疲労感を見ながら調整してください。</p></details><details><summary>月5万円を目指すには何時間必要ですか？</summary><p>時給2,000円なら月25時間、時給3,000円なら約17時間が目安です。実際には修正や連絡時間もあるため、少し余裕を見て考えると安全です。</p></details><details><summary>売上と手取りのどちらを見るべきですか？</summary><p>最初は売上で目標を置いても大丈夫ですが、続ける判断は手取りで見る方が現実的です。経費、所得税、住民税を引いたあとに残る金額も確認してください。</p></details><details><summary>作業時間と単価のどちらを改善すべきですか？</summary><p>本業後の時間に限りがある会社員は、作業時間を増やしすぎると疲れやすくなります。継続できる時間を決め、その後に単価改善やAI活用を考えるのがおすすめです。</p></details><details><summary>本業後に時間が取れない場合はどう入力しますか？</summary><p>理想の作業時間ではなく、疲れている週でも続けられる時間を入れてください。平日が難しければ休日だけの作業時間で試すと無理の少ない計画になります。</p></details><details><summary>AIを使うと副業月収は増えますか？</summary><p>AIで調査、構成、下書き、確認作業を短縮できれば、同じ時間でこなせる作業量が増える可能性があります。ただし、品質確認や体験談の追加は自分で行う必要があります。</p></details><details><summary>案件数を増やせば収入は伸びますか？</summary><p>案件数を増やすと収入は伸びる可能性がありますが、納期管理や修正対応も増えます。無理に増やす前に、単価、作業時間、疲労度のバランスを見てください。</p></details><details><summary>月10万円を超えたら何を意識すべきですか？</summary><p>収支管理、税金、確定申告、作業時間の最適化が重要になります。事業として管理する意識を持ち、記録や経費管理を早めに整えると安心です。</p></details><details><summary>会社員が副業前に確認することは何ですか？</summary><p>勤務先の就業規則、税金、住民税、作業時間、健康面を確認してください。収入だけでなく、無理なく続けられるかを先に見ることが大切です。</p></details><details><summary>計算結果と実際の収入が違う理由は何ですか？</summary><p>実際の収入は案件単価、修正回数、営業時間、経費、税金、本業の忙しさで変わります。結果は保証ではなく、条件を整理するための目安として使ってください。</p></details></div></section>
-                <section class="article-panel update-history" aria-label="更新履歴"><section class="tool-heading"><h2>更新履歴</h2><p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p></section><div class="update-history-list"><article class="update-entry"><time datetime="2026-07-21">2026年7月21日</time><ul><li>シミュレーターをページ上部へ移動</li><li>目標月収との差額、達成率、必要時間を追加</li><li>計算結果に応じた改善提案と3パターン比較を追加</li><li>重複していたFAQと関連記事を統合</li></ul></article><article class="update-entry"><time datetime="2026-07-19">2026年7月19日</time><ul><li>副業収入の目標と必要な行動量をイメージしやすい解説を追加</li><li>計算結果の見方、目標別の考え方、初心者向けFAQ10件、関連記事を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-09">2026年7月9日</time><ul><li>副業月収ページにFAQと関連記事5件を追加</li><li>関連記事、FAQ、内部リンクをHelpful Content向けに見直し</li></ul></article></div></section>
+                <section class="article-panel update-history" aria-label="更新履歴"><section class="tool-heading"><h2>更新履歴</h2><p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p></section><div class="update-history-list"><article class="update-entry"><time datetime="2026-07-21">2026年7月21日</time><ul><li>シミュレーターをページ上部へ移動</li><li>目標月収との差額、達成率、必要時間を追加</li><li>計算結果に応じた改善提案と3パターン比較を追加</li><li>重複していたFAQと関連記事を統合</li><li>目標達成状況、比較グラフ、保存・共有・印刷機能を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-19">2026年7月19日</time><ul><li>副業収入の目標と必要な行動量をイメージしやすい解説を追加</li><li>計算結果の見方、目標別の考え方、初心者向けFAQ10件、関連記事を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-09">2026年7月9日</time><ul><li>副業月収ページにFAQと関連記事5件を追加</li><li>関連記事、FAQ、内部リンクをHelpful Content向けに見直し</li></ul></article></div></section>
         
       </section>
 
@@ -9603,6 +9631,18 @@ function setText(id, value) {
   document.querySelector(`#${id}`).textContent = value;
 }
 
+function setOptionalText(id, value) {
+  const element = document.querySelector(`#${id}`);
+  if (element) element.textContent = value;
+}
+
+function setBarWidth(id, value) {
+  const element = document.querySelector(`#${id}`);
+  if (!element) return;
+  const width = Math.max(0, Math.min(value, 120));
+  element.style.width = `${width}%`;
+}
+
 function renderSideIncome() {
   const values = {
     hourly: getFieldValue("hourly"),
@@ -9617,11 +9657,20 @@ function renderSideIncome() {
   document.querySelector("#incomeNotice").classList.toggle("is-visible", hasError);
   if (hasError) {
     setText("monthly", "入力エラー");
-    ["yearly", "netMonthly", "targetGap", "targetMonthlyDisplay", "currentMonthlyDisplay", "caseConservativeIncome", "caseStandardIncome", "caseImprovedIncome", "requiredHourlyForTarget"].forEach((id) => setText(id, yen.format(0)));
-    ["monthlyWorkHours", "additionalHoursNeeded", "caseConservativeHours", "caseStandardHours", "caseImprovedHours"].forEach((id) => setText(id, "0時間"));
+    ["yearly", "netMonthly", "targetGap", "targetMonthlyDisplay", "currentMonthlyDisplay", "caseConservativeIncome", "caseStandardIncome", "caseImprovedIncome", "requiredHourlyForTarget", "chartCurrentValue", "chartTargetValue", "chartNetValue", "chartImprovedValue"].forEach((id) => setOptionalText(id, yen.format(0)));
+    ["monthlyWorkHours", "additionalHoursNeeded", "caseConservativeHours", "caseStandardHours", "caseImprovedHours"].forEach((id) => setOptionalText(id, "0時間"));
     setText("effectiveHourly", yen.format(0));
     setText("targetRate", "0%");
     setText("sideIncomeResultGuide", "入力内容を確認してください。空欄、上限超過、マイナス値があると正しく計算できません。");
+    setOptionalText("goalStatusLabel", "入力内容を確認");
+    setOptionalText("goalStatusMessage", "入力を再開すると自動で計算結果に戻ります。");
+    setOptionalText("goalStatusGap", "不足額 0円");
+    setOptionalText("goalStatusAdditionalHours", "追加作業時間 0時間");
+    setOptionalText("goalStatusRequiredHourly", "必要時給 0円");
+    ["chartCurrentBar", "chartNetBar", "chartImprovedBar"].forEach((id) => setBarWidth(id, 0));
+    setBarWidth("chartTargetBar", 100);
+    const statusCard = document.querySelector("#goalStatusCard");
+    if (statusCard) statusCard.className = "goal-status-card is-review";
     return;
   }
 
@@ -9638,12 +9687,26 @@ function renderSideIncome() {
   const netMonthly = Math.max(taxableBase * (1 - taxRate), 0);
   const effectiveHourly = monthlyWorkHours > 0 ? netMonthly / monthlyWorkHours : 0;
   const targetGap = Math.max(target - grossMonthly, 0);
-  const targetRate = target > 0 ? Math.min((grossMonthly / target) * 100, 999) : 0;
+  const overTarget = Math.max(grossMonthly - target, 0);
+  const targetRate = target > 0 ? (grossMonthly / target) * 100 : grossMonthly > 0 ? 999 : 0;
   const additionalHours = hourly > 0 ? targetGap / hourly : 0;
   const requiredHourly = monthlyWorkHours > 0 ? target / monthlyWorkHours : 0;
   const conservativeHours = monthlyWorkHours * 0.8;
   const conservativeIncome = hourly * conservativeHours;
   const improvedIncome = hourly * 1.2 * monthlyWorkHours;
+
+  let statusLabel = "条件の見直しが必要";
+  let statusMessage = "作業時間だけを増やす前に、時給・単価や作業効率の改善も検討してください。";
+  let statusClass = "is-review";
+  if (targetRate >= 100) {
+    statusLabel = "目標達成";
+    statusMessage = `現在の条件で目標月収を達成できる計算です。目標を${yen.format(overTarget)}上回る目安です。`;
+    statusClass = "is-achieved";
+  } else if (targetRate >= 80) {
+    statusLabel = "あと少し";
+    statusMessage = `目標まであと${yen.format(targetGap)}です。現在の時給なら、あと${additionalHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}時間の作業が目安です。`;
+    statusClass = "is-close";
+  }
 
   let resultGuide = "まずは入力条件をもとに、無理なく続けられる作業時間か確認しましょう。";
   let actionLinks = [["side-time-management.html", "時間管理を確認する"], ["hourly-improvement.html", "時給改善を確認する"]];
@@ -9679,6 +9742,23 @@ function renderSideIncome() {
   setText("caseImprovedIncome", yen.format(improvedIncome));
   setText("caseImprovedHours", `${monthlyWorkHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}時間`);
   setText("sideIncomeResultGuide", resultGuide);
+  setOptionalText("goalStatusLabel", statusLabel);
+  setOptionalText("goalStatusMessage", statusMessage);
+  setOptionalText("goalStatusGap", targetGap > 0 ? `不足額 ${yen.format(targetGap)}` : `目標を上回る金額 ${yen.format(overTarget)}`);
+  setOptionalText("goalStatusAdditionalHours", hourly > 0 ? `追加作業時間 ${additionalHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}時間` : "追加作業時間は時給入力後に表示");
+  setOptionalText("goalStatusRequiredHourly", monthlyWorkHours > 0 ? `必要時給 ${yen.format(requiredHourly)}` : "必要時給は作業時間入力後に表示");
+
+  const statusCard = document.querySelector("#goalStatusCard");
+  if (statusCard) statusCard.className = `goal-status-card ${statusClass}`;
+  const chartBase = Math.max(target, 1);
+  setOptionalText("chartCurrentValue", yen.format(grossMonthly));
+  setOptionalText("chartTargetValue", yen.format(target));
+  setOptionalText("chartNetValue", yen.format(netMonthly));
+  setOptionalText("chartImprovedValue", yen.format(improvedIncome));
+  setBarWidth("chartCurrentBar", (grossMonthly / chartBase) * 100);
+  setBarWidth("chartTargetBar", 100);
+  setBarWidth("chartNetBar", (netMonthly / chartBase) * 100);
+  setBarWidth("chartImprovedBar", (improvedIncome / chartBase) * 100);
 
   const actionContainer = document.querySelector("#sideIncomeActionLinks");
   if (actionContainer) {
@@ -13640,9 +13720,102 @@ function insertExistingPageSeoImprovements() {
 
 insertExistingPageSeoImprovements();
 
-document.querySelector("#sideIncomeForm").addEventListener("input", renderSideIncome);
+const sideIncomeStorageKey = "sideIncomeInputsV2";
+const sideIncomeParamMap = { hourly: "rate", hours: "hours", projects: "jobs", sideIncomeExpense: "cost", tax: "tax", targetMonthlyIncome: "target" };
+let sideIncomeRenderTimer = null;
+function getSideIncomeInputIds() { return Object.keys(sideIncomeParamMap); }
+function collectSideIncomeInputs() {
+  return getSideIncomeInputIds().reduce((acc, id) => {
+    const input = document.querySelector(`#${id}`);
+    if (input) acc[id] = input.value;
+    return acc;
+  }, {});
+}
+function applySideIncomeInputs(values) {
+  Object.entries(values || {}).forEach(([id, value]) => {
+    const input = document.querySelector(`#${id}`);
+    if (input && value !== undefined && value !== null && value !== "") input.value = value;
+  });
+}
+function setSideIncomeStatus(message) {
+  const status = document.querySelector("#sideIncomeSaveStatus");
+  if (status) status.textContent = message;
+}
+function scheduleSideIncomeRender() {
+  window.clearTimeout(sideIncomeRenderTimer);
+  sideIncomeRenderTimer = window.setTimeout(renderSideIncome, 120);
+}
+function loadSideIncomeInputs() {
+  const params = new URLSearchParams(window.location.search);
+  const queryValues = {};
+  Object.entries(sideIncomeParamMap).forEach(([id, key]) => { if (params.has(key)) queryValues[id] = params.get(key); });
+  if (Object.keys(queryValues).length > 0) {
+    applySideIncomeInputs(queryValues);
+    setSideIncomeStatus("URLの条件を読み込みました。");
+    return;
+  }
+  try {
+    const saved = JSON.parse(localStorage.getItem(sideIncomeStorageKey) || "null");
+    if (saved && typeof saved === "object") {
+      applySideIncomeInputs(saved);
+      setSideIncomeStatus("保存済みの入力条件を読み込みました。");
+    }
+  } catch (_) {
+    setSideIncomeStatus("保存条件の読み込みに失敗しました。");
+  }
+}
+function buildSideIncomeShareUrl() {
+  const params = new URLSearchParams();
+  Object.entries(collectSideIncomeInputs()).forEach(([id, value]) => {
+    const key = sideIncomeParamMap[id];
+    if (key && value !== "") params.set(key, value);
+  });
+  return `${window.location.origin}${window.location.pathname}?${params.toString()}`;
+}
+function setupSideIncomeUtilities() {
+  loadSideIncomeInputs();
+  document.querySelector("#saveSideIncomeInputs")?.addEventListener("click", () => {
+    try {
+      localStorage.setItem(sideIncomeStorageKey, JSON.stringify(collectSideIncomeInputs()));
+      setSideIncomeStatus("入力条件をこのブラウザに保存しました。");
+    } catch (_) {
+      setSideIncomeStatus("保存できませんでした。ブラウザ設定を確認してください。");
+    }
+  });
+  document.querySelector("#clearSideIncomeInputs")?.addEventListener("click", () => {
+    localStorage.removeItem(sideIncomeStorageKey);
+    setSideIncomeStatus("保存した入力条件を削除しました。");
+  });
+  document.querySelector("#copySideIncomeUrl")?.addEventListener("click", async () => {
+    const url = buildSideIncomeShareUrl();
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const temp = document.createElement("textarea");
+        temp.value = url;
+        temp.setAttribute("readonly", "");
+        temp.style.position = "fixed";
+        temp.style.left = "-9999px";
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        temp.remove();
+      }
+      setSideIncomeStatus("結果URLをコピーしました。");
+    } catch (_) {
+      setSideIncomeStatus(`コピーできませんでした。URL: ${url}`);
+    }
+  });
+  document.querySelector("#printSideIncomeResult")?.addEventListener("click", () => window.print());
+}
+setupSideIncomeUtilities();
+document.querySelector("#sideIncomeForm").addEventListener("input", scheduleSideIncomeRender);
 document.querySelector("#sideIncomeForm").addEventListener("reset", () => {
-  window.requestAnimationFrame(renderSideIncome);
+  window.requestAnimationFrame(() => {
+    renderSideIncome();
+    setSideIncomeStatus("初期値に戻しました。");
+  });
 });
 document.querySelector("#aiHourlyForm").addEventListener("input", renderAiHourly);
 document.querySelector("#aiHourlyForm").addEventListener("reset", () => {
