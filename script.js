@@ -545,11 +545,11 @@ document.body.innerHTML = `
           </div>
           <p>成功だけではなく、AdSense審査の不合格、時間不足、迷い、改善内容も公開しています。同じように本業と副業を両立する会社員の参考になる記録を目指しています。</p>
           <article class="featured-record-card">
-            <h3>運営記録 #002｜予定が崩れた日も、自分の機嫌は自分で取る</h3>
-            <p>暑い中での本業と予定外の人員対応を終えたあと、副業を止めずに進めた一日の記録です。副業シミュレーターの改善方針と、Quiet Tokyoが50作品に到達した現在地をまとめています。</p>
+            <h3>運営記録 #003｜思い通りにいかない日ほど、一人では仕事はできないと気付く</h3>
+            <p>祝日明けの本業で荷物量、遅延、小さなミスが重なった日を、感情の整理と仕事の助け合いの記録として残しています。</p>
             <div class="card-actions">
               <a class="primary-link" href="project-fire.html">Project FIREの全体像を見る</a>
-              <a class="primary-link" href="article-project-fire-002-mood-reset.html">最新の運営記録を読む</a>
+              <a class="primary-link" href="article-project-fire-003-teamwork-anger.html">最新の運営記録を読む</a>
               <a class="subtle-link" href="project-fire.html">運営記録一覧を見る</a>
             </div>
           </article>
@@ -4709,6 +4709,30 @@ document.body.innerHTML = `
           <p>&#x526f;&#x696d;&#x53ce;&#x5165;&#x304b;&#x3089;&#x7d4c;&#x8cbb;&#x30fb;&#x7a0e;&#x91d1;&#x30fb;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x304d;&#x3001;&#x5e74;&#x9593;&#x3068;&#x6708;&#x5e73;&#x5747;&#x306e;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
         </section>
 
+        <section class="article-panel" aria-label="副業手取り計算シミュレーターの概要">
+          <section class="tool-heading">
+            <h2>このページで分かること</h2>
+            <p>副業の売上から経費と税金を差し引き、実際に残る手取り額の目安を確認できます。</p>
+          </section>
+          <p>副業を始めた会社員が見落としやすいのは、売上と手取りの差です。月5万円売り上げても、経費、所得税、住民税、場合によっては社会保険の影響を考えると、自由に使える金額は変わります。</p>
+          <p>このページでは、売上だけで判断せず、生活費や投資へ回せる金額を考える入口として使えます。入力すると結果は自動で更新されます。</p>
+        </section>
+
+        <section class="article-panel" aria-label="副業手取りの入力例">
+          <section class="tool-heading">
+            <h2>入力例と計算例</h2>
+            <p>最初は厳しめの数字でも試すと、納税資金を残しやすくなります。</p>
+          </section>
+          <ul>
+            <li>年間副業売上：1,200,000円</li>
+            <li>年間経費：240,000円</li>
+            <li>所得税率：10%</li>
+            <li>住民税率：10%</li>
+            <li>青色申告控除：650,000円</li>
+          </ul>
+          <p>この例では、売上から経費を引いて副業所得を見ます。その後、控除を差し引いた課税所得に税率をかけ、概算の税額と手取りを確認します。実際の税額は給与や控除で変わるため、あくまで目安として見てください。</p>
+        </section>
+
         <section class="workspace" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x306e;&#x8a08;&#x7b97;">
           <form class="input-panel" id="takeHomeForm">
             <div class="field">
@@ -4786,6 +4810,28 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel" aria-label="副業手取り結果の見方">
+          <section class="tool-heading">
+            <h2>結果の見方</h2>
+            <p>手取り額だけでなく、税額合計と月平均も一緒に確認してください。</p>
+          </section>
+          <p>年間手取り額は、副業収入を1年続けたときに残る金額の目安です。月平均手取り額を見ると、本業後の作業時間に対して続ける価値があるか判断しやすくなります。</p>
+          <p>税額が大きく見える場合は、経費管理、青色申告、納税用の積立を早めに考えてください。手取りが残る場合も、生活費、生活防衛資金、新NISA、FIRE準備へどう配分するかを決めることが大切です。</p>
+        </section>
+
+        <section class="article-panel" aria-label="副業手取り結果を見た後の行動">
+          <section class="tool-heading">
+            <h2>結果を見た後に取るべき行動</h2>
+            <p>手取りを確認したら、税金、時間、資産形成へ順番につなげます。</p>
+          </section>
+          <ul>
+            <li>税金が不安な場合は、<a href="tax.html">副業税金シミュレーター</a> で内訳を確認する</li>
+            <li>作業時間に対して手取りが少ない場合は、<a href="hourly-improvement.html">副業時給改善シミュレーター</a> を確認する</li>
+            <li>手取りが残る場合は、生活防衛資金や <a href="nisa.html">新NISA</a> への配分を考える</li>
+            <li>無理な売上目標になっている場合は、<a href="side-time-management.html">副業時間管理シミュレーター</a> で継続できる時間を見直す</li>
+          </ul>
+        </section>
+
         <section class="faq-panel" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;FAQ">
           <h3>FAQ</h3>
           <div class="faq-list">
@@ -4800,6 +4846,14 @@ document.body.innerHTML = `
             <details>
               <summary>&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x3068;&#x306e;&#x9055;&#x3044;&#x306f;&#x4f55;&#x3067;&#x3059;&#x304b;&#xFF1F;</summary>
               <p>&#x3053;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x306f;&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x898b;&#x308b;&#x305f;&#x3081;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;&#x7a0e;&#x984d;&#x306e;&#x5185;&#x8a33;&#x3092;&#x91cd;&#x8996;&#x3059;&#x308b;&#x5834;&#x5408;&#x306f;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30c4;&#x30fc;&#x30eb;&#x3082;&#x4f75;&#x7528;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+            </details>
+            <details>
+              <summary>この計算結果は正確ですか？</summary>
+              <p>簡易的な目安です。実際の税額や手取りは、給与、控除、扶養、自治体、申告内容によって変わります。最終判断は公的情報や専門家の確認も組み合わせてください。</p>
+            </details>
+            <details>
+              <summary>結果がマイナスになった場合はどう考えますか？</summary>
+              <p>経費や税率が高すぎる、売上がまだ少ない、社会保険の影響を大きく見ている可能性があります。売上を増やすだけでなく、経費、単価、作業時間の見直しも検討してください。</p>
             </details>
           </div>
         </section>
@@ -4826,6 +4880,8 @@ document.body.innerHTML = `
             <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
+            <a href="side-time-management.html">副業時間管理シミュレーター</a>
           </div>
         </section>
       </section>
@@ -8524,6 +8580,7 @@ document.body.innerHTML = `
       <footer class="site-footer">
         <nav class="footer-links" aria-label="&#x30b5;&#x30a4;&#x30c8;&#x60c5;&#x5831;">
           <a href="index.html">&#x30c8;&#x30c3;&#x30d7;</a>
+          <a href="project-fire.html">Project FIRE</a>
           <a href="side-income.html">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
           <a href="ai-hourly.html">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="ai-efficiency.html">AI副業効率化</a>
@@ -8603,7 +8660,7 @@ function insertLastUpdatedDates() {
     "employee-tax-saving": "2026年6月30日",
     "income-tax": "2026年6月30日",
     "resident-tax": "2026年6月30日",
-    "take-home": "2026年6月30日",
+    "take-home": "2026年7月21日",
     "investment-risk": "2026年6月30日",
     "nisa": "2026年6月30日",
     "nisa-fast": "2026年6月30日",
