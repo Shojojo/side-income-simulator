@@ -4558,186 +4558,155 @@ document.body.innerHTML = `
         </section>
       </section>
 
-      <section class="view" data-view="take-home" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
+      <section class="view" data-view="take-home" aria-label="副業手取り計算シミュレーター">
         <section class="tool-heading">
-          <h2>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
-          <p>&#x526f;&#x696d;&#x53ce;&#x5165;&#x304b;&#x3089;&#x7d4c;&#x8cbb;&#x30fb;&#x7a0e;&#x91d1;&#x30fb;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x304d;&#x3001;&#x5e74;&#x9593;&#x3068;&#x6708;&#x5e73;&#x5747;&#x306e;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
+          <h2>副業手取り計算シミュレーター</h2>
+          <p>副業の月間売上、経費、税率を入力し、税金後に残る手取り月額の目安を確認できます。結果は概算であり、実際の税額を保証するものではありません。</p>
         </section>
 
-        <section class="article-panel" aria-label="副業手取り計算シミュレーターの概要">
-          <section class="tool-heading">
-            <h2>このページで分かること</h2>
-            <p>副業の売上から経費と税金を差し引き、実際に残る手取り額の目安を確認できます。</p>
-          </section>
-          <p>副業を始めた会社員が見落としやすいのは、売上と手取りの差です。月5万円売り上げても、経費、所得税、住民税、場合によっては社会保険の影響を考えると、自由に使える金額は変わります。</p>
-          <p>このページでは、売上だけで判断せず、生活費や投資へ回せる金額を考える入口として使えます。入力すると結果は自動で更新されます。</p>
-        </section>
-
-        <section class="article-panel" aria-label="副業手取りの入力例">
-          <section class="tool-heading">
-            <h2>入力例と計算例</h2>
-            <p>最初は厳しめの数字でも試すと、納税資金を残しやすくなります。</p>
-          </section>
-          <ul>
-            <li>年間副業売上：1,200,000円</li>
-            <li>年間経費：240,000円</li>
-            <li>所得税率：10%</li>
-            <li>住民税率：10%</li>
-            <li>青色申告控除：650,000円</li>
-          </ul>
-          <p>この例では、売上から経費を引いて副業所得を見ます。その後、控除を差し引いた課税所得に税率をかけ、概算の税額と手取りを確認します。実際の税額は給与や控除で変わるため、あくまで目安として見てください。</p>
-        </section>
-
-        <section class="workspace" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x306e;&#x8a08;&#x7b97;">
+        <section class="workspace" id="take-home-calculator" aria-label="副業手取りの計算">
           <form class="input-panel" id="takeHomeForm">
             <div class="field">
-              <label for="takeHomeSales">&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a; <span class="unit">&#x5186;</span></label>
-              <input id="takeHomeSales" name="takeHomeSales" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="3000000" required aria-describedby="takeHomeSalesError">
+              <label for="takeHomeSales">副業の月間売上 <span class="unit">円</span></label>
+              <input id="takeHomeSales" name="takeHomeSales" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="50000" placeholder="例：50000" required aria-describedby="takeHomeSalesHint takeHomeSalesError">
+              <p class="field-hint" id="takeHomeSalesHint">1か月の副業売上です。まだ始めていない場合は目標売上を入れてください。</p>
               <p class="error" id="takeHomeSalesError"></p>
             </div>
             <div class="field">
-              <label for="takeHomeExpenses">&#x5e74;&#x9593;&#x7d4c;&#x8cbb; <span class="unit">&#x5186;</span></label>
-              <input id="takeHomeExpenses" name="takeHomeExpenses" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="600000" required aria-describedby="takeHomeExpensesError">
+              <label for="takeHomeExpenses">必要経費（月額） <span class="unit">円</span></label>
+              <input id="takeHomeExpenses" name="takeHomeExpenses" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="5000" placeholder="例：5000" required aria-describedby="takeHomeExpensesHint takeHomeExpensesError">
+              <p class="field-hint" id="takeHomeExpensesHint">AIツール、通信費、素材費、広告費など副業に使う月額費用の目安です。</p>
               <p class="error" id="takeHomeExpensesError"></p>
             </div>
             <div class="field">
-              <label for="takeHomeIncomeTaxRate">&#x6240;&#x5f97;&#x7a0e;&#x7387; <span class="unit">%</span></label>
-              <input id="takeHomeIncomeTaxRate" name="takeHomeIncomeTaxRate" type="number" inputmode="decimal" min="0" max="45" step="0.1" value="10" required aria-describedby="takeHomeIncomeTaxRateError">
+              <label for="takeHomeIncomeTaxRate">所得税率の目安 <span class="unit">%</span></label>
+              <input id="takeHomeIncomeTaxRate" name="takeHomeIncomeTaxRate" type="number" inputmode="decimal" min="0" max="45" step="0.1" value="10" placeholder="例：10" required aria-describedby="takeHomeIncomeTaxRateHint takeHomeIncomeTaxRateError">
+              <p class="field-hint" id="takeHomeIncomeTaxRateHint">所得税は累進課税です。ここでは概算用の税率として入力します。</p>
               <p class="error" id="takeHomeIncomeTaxRateError"></p>
             </div>
             <div class="field">
-              <label for="takeHomeResidentTaxRate">&#x4f4f;&#x6c11;&#x7a0e;&#x7387; <span class="unit">%</span></label>
-              <input id="takeHomeResidentTaxRate" name="takeHomeResidentTaxRate" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="10" required aria-describedby="takeHomeResidentTaxRateError">
+              <label for="takeHomeResidentTaxRate">住民税率 <span class="unit">%</span></label>
+              <input id="takeHomeResidentTaxRate" name="takeHomeResidentTaxRate" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="10" placeholder="例：10" required aria-describedby="takeHomeResidentTaxRateHint takeHomeResidentTaxRateError">
+              <p class="field-hint" id="takeHomeResidentTaxRateHint">多くのケースでは10%前後が目安ですが、自治体や条件で変わります。</p>
               <p class="error" id="takeHomeResidentTaxRateError"></p>
+            </div>
+            <div class="field">
+              <label for="takeHomeTarget">目標手取り（月額） <span class="unit">円</span></label>
+              <input id="takeHomeTarget" name="takeHomeTarget" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="40000" placeholder="例：40000" required aria-describedby="takeHomeTargetHint takeHomeTargetError">
+              <p class="field-hint" id="takeHomeTargetHint">税金や経費を引いたあと、毎月いくら残したいかを入力します。</p>
+              <p class="error" id="takeHomeTargetError"></p>
             </div>
             <label class="check-field" for="hasSocialInsurance">
               <input id="hasSocialInsurance" name="hasSocialInsurance" type="checkbox">
-              <span>&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x3042;&#x308a;&#x3067;&#x8a66;&#x7b97;&#x3059;&#x308b;</span>
+              <span>社会保険料の簡易目安も含める</span>
             </label>
             <div class="field">
-              <label for="takeHomeBlueDeduction">&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x984d; <span class="unit">&#x5186;</span></label>
-              <input id="takeHomeBlueDeduction" name="takeHomeBlueDeduction" type="number" inputmode="numeric" min="0" max="650000" step="10000" value="650000" required aria-describedby="takeHomeBlueDeductionError">
+              <label for="takeHomeBlueDeduction">青色申告控除額（年額） <span class="unit">円</span></label>
+              <input id="takeHomeBlueDeduction" name="takeHomeBlueDeduction" type="number" inputmode="numeric" min="0" max="650000" step="10000" value="0" placeholder="例：0 / 100000 / 650000" required aria-describedby="takeHomeBlueDeductionHint takeHomeBlueDeductionError">
+              <p class="field-hint" id="takeHomeBlueDeductionHint">青色申告の条件を満たす場合のみ入力します。分からない場合は0円で試してください。</p>
               <p class="error" id="takeHomeBlueDeductionError"></p>
             </div>
             <div class="actions">
-              <button type="reset">&#x30ea;&#x30bb;&#x30c3;&#x30c8;</button>
+              <button type="submit">手取りを計算する</button>
+              <button type="reset">リセット</button>
             </div>
           </form>
 
-          <section class="result-panel" aria-live="polite">
+          <section class="result-panel take-home-print-area" aria-live="polite">
             <div class="hero-result">
-              <p class="eyebrow">&#x5e74;&#x9593;&#x624b;&#x53d6;&#x308a;&#x984d;</p>
-              <p class="amount" id="finalTakeHome">0&#x5186;</p>
+              <p class="eyebrow">副業の手取り目安</p>
+              <p class="amount" id="finalTakeHome">0円／月</p>
             </div>
-            <p class="notice" id="takeHomeNotice">&#x5165;&#x529b;&#x3092;&#x78ba;&#x8a8d;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;&#x30a8;&#x30e9;&#x30fc;&#x304c;&#x3042;&#x308b;&#x9805;&#x76ee;&#x306f;&#x8d64;&#x304f;&#x8868;&#x793a;&#x3055;&#x308c;&#x307e;&#x3059;&#x3002;</p>
+            <p class="notice is-visible" id="takeHomeNotice">税金や社会保険料の扱いによって実額は変わります。ここでは入力条件に基づく概算として確認してください。</p>
             <div class="result-grid">
-              <div class="metric">
-                <strong>&#x6240;&#x5f97;&#x91d1;&#x984d;</strong>
-                <span class="accent-blue" id="takeHomeIncomeAmount">0&#x5186;</span>
-                <small>&#x58f2;&#x4e0a; - &#x7d4c;&#x8cbb;</small>
-              </div>
-              <div class="metric">
-                <strong>&#x8ab2;&#x7a0e;&#x6240;&#x5f97;</strong>
-                <span class="accent-blue" id="takeHomeTaxableIncome">0&#x5186;</span>
-                <small>&#x6240;&#x5f97;&#x91d1;&#x984d; - &#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;</small>
-              </div>
-              <div class="metric">
-                <strong>&#x6240;&#x5f97;&#x7a0e;</strong>
-                <span class="accent-amber" id="takeHomeIncomeTax">0&#x5186;</span>
-                <small>&#x8ab2;&#x7a0e;&#x6240;&#x5f97; &#xd7; &#x6240;&#x5f97;&#x7a0e;&#x7387;</small>
-              </div>
-              <div class="metric">
-                <strong>&#x4f4f;&#x6c11;&#x7a0e;</strong>
-                <span class="accent-amber" id="takeHomeResidentTax">0&#x5186;</span>
-                <small>&#x8ab2;&#x7a0e;&#x6240;&#x5f97; &#xd7; &#x4f4f;&#x6c11;&#x7a0e;&#x7387;</small>
-              </div>
-              <div class="metric">
-                <strong>&#x6982;&#x7b97;&#x7a0e;&#x984d;&#x5408;&#x8a08;</strong>
-                <span class="accent-amber" id="takeHomeTotalTax">0&#x5186;</span>
-                <small>&#x6240;&#x5f97;&#x7a0e; + &#x4f4f;&#x6c11;&#x7a0e;</small>
-              </div>
-              <div class="metric">
-                <strong>&#x6708;&#x5e73;&#x5747;&#x624b;&#x53d6;&#x308a;&#x984d;</strong>
-                <span class="accent-green" id="monthlyFinalTakeHome">0&#x5186;</span>
-                <small id="socialInsuranceDetail">&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306f;&#x672a;&#x53cd;&#x6620;</small>
-              </div>
+              <div class="metric"><strong>月間売上</strong><span class="accent-blue" id="takeHomeMonthlySales">0円</span><small>入力した副業売上</small></div>
+              <div class="metric"><strong>必要経費</strong><span class="accent-blue" id="takeHomeMonthlyExpenses">0円</span><small>月額の経費目安</small></div>
+              <div class="metric"><strong>経費差引後の利益</strong><span class="accent-green" id="takeHomeIncomeAmount">0円</span><small>売上 - 経費</small></div>
+              <div class="metric"><strong>税金の概算</strong><span class="accent-amber" id="takeHomeTotalTax">0円</span><small id="takeHomeTaxDetail">所得税 + 住民税</small></div>
+              <div class="metric"><strong>手取り年額</strong><span class="accent-green" id="monthlyFinalTakeHome">0円</span><small>月額手取り × 12か月</small></div>
+              <div class="metric"><strong>手取り率</strong><span class="accent-blue" id="takeHomeRate">0%</span><small>手取り ÷ 売上</small></div>
+              <div class="metric"><strong>目標との差額</strong><span class="accent-amber" id="takeHomeTargetGap">0円</span><small>目標手取り - 現在の手取り</small></div>
+              <div class="metric"><strong>目標達成率</strong><span class="accent-green" id="takeHomeAchievementRate">0%</span><small>現在の手取り ÷ 目標手取り</small></div>
+              <div class="metric"><strong>必要な追加売上</strong><span class="accent-amber" id="takeHomeRequiredSales">0円</span><small>目標までの月額目安</small></div>
+              <div class="metric"><strong>必要な経費削減額</strong><span class="accent-blue" id="takeHomeExpenseCut">0円</span><small>経費だけで埋める場合の上限目安</small></div>
             </div>
+            <p class="notice" id="socialInsuranceDetail">社会保険料は未反映です。</p>
+            <section class="result-advice" aria-label="副業手取りの改善提案">
+              <h2>結果に応じた改善提案</h2>
+              <p id="takeHomeResultGuide">入力すると、目標手取りに対する状態と次の行動が表示されます。</p>
+              <div class="related-links" id="takeHomeActionLinks"><a href="side-income.html">副業月収を確認する</a><a href="tax.html">税金を確認する</a></div>
+            </section>
+            <section class="goal-status-card is-review" id="takeHomeGoalStatus" aria-label="目標手取りの達成状況">
+              <p class="goal-status-label" id="takeHomeGoalStatusLabel">条件の見直しが必要</p>
+              <p id="takeHomeGoalStatusText">目標手取りとの差額を確認し、売上、単価、経費のどこを見直すか決めましょう。</p>
+              <div class="goal-status-facts"><span id="takeHomeGoalGapFact">差額 0円</span><span id="takeHomeGoalRateFact">達成率 0%</span><span id="takeHomeGoalRequiredFact">追加売上 0円</span></div>
+            </section>
+            <section class="article-panel" aria-label="副業手取り3パターン比較">
+              <section class="tool-heading"><h2>改善シミュレーション</h2><p>現在の条件、売上20%増、経費20%減を比べます。収入を保証する予測ではなく、条件を変えた場合の概算です。</p></section>
+              <div class="comparison-table" role="region" aria-label="副業手取り3パターン比較" tabindex="0">
+                <table>
+                  <caption>副業手取りの3パターン比較</caption>
+                  <thead><tr><th scope="col">ケース</th><th scope="col">売上</th><th scope="col">経費</th><th scope="col">税金概算</th><th scope="col">手取り</th><th scope="col">手取り率</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">現在</th><td id="takeHomeCaseCurrentSales">0円</td><td id="takeHomeCaseCurrentExpenses">0円</td><td id="takeHomeCaseCurrentTax">0円</td><td id="takeHomeCaseCurrentNet">0円</td><td id="takeHomeCaseCurrentRate">0%</td></tr>
+                    <tr><th scope="row">売上20%増</th><td id="takeHomeCaseSalesUpSales">0円</td><td id="takeHomeCaseSalesUpExpenses">0円</td><td id="takeHomeCaseSalesUpTax">0円</td><td id="takeHomeCaseSalesUpNet">0円</td><td id="takeHomeCaseSalesUpRate">0%</td></tr>
+                    <tr><th scope="row">経費20%減</th><td id="takeHomeCaseExpenseDownSales">0円</td><td id="takeHomeCaseExpenseDownExpenses">0円</td><td id="takeHomeCaseExpenseDownTax">0円</td><td id="takeHomeCaseExpenseDownNet">0円</td><td id="takeHomeCaseExpenseDownRate">0%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section class="income-chart" aria-label="副業手取りの比較グラフ">
+              <h2>目標手取りとの比較グラフ</h2>
+              <p>目標手取りを100%として、売上、手取り、目標の距離を確認できます。</p>
+              <div class="income-chart-bars" id="takeHomeChartBars"></div>
+            </section>
+            <section class="result-save-panel no-print" aria-label="結果を保存・共有する">
+              <h2>結果を残す</h2>
+              <p>入力値だけをこのブラウザに保存できます。個人名や連絡先は保存しません。</p>
+              <div class="result-save-actions">
+                <button type="button" id="saveTakeHomeInputs">入力条件を保存</button>
+                <button type="button" id="clearTakeHomeInputs">保存条件を削除</button>
+                <button type="button" id="copyTakeHomeUrl">結果URLをコピー</button>
+                <button type="button" id="printTakeHomeResult">印刷・PDF保存</button>
+              </div>
+              <p class="save-status" id="takeHomeSaveStatus" aria-live="polite">保存や共有の結果がここに表示されます。</p>
+            </section>
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業手取り結果の見方">
-          <section class="tool-heading">
-            <h2>結果の見方</h2>
-            <p>手取り額だけでなく、税額合計と月平均も一緒に確認してください。</p>
-          </section>
-          <p>年間手取り額は、副業収入を1年続けたときに残る金額の目安です。月平均手取り額を見ると、本業後の作業時間に対して続ける価値があるか判断しやすくなります。</p>
-          <p>税額が大きく見える場合は、経費管理、青色申告、納税用の積立を早めに考えてください。手取りが残る場合も、生活費、生活防衛資金、新NISA、FIRE準備へどう配分するかを決めることが大切です。</p>
+        <section class="article-panel" aria-label="副業手取りの計算方法と税金の解説">
+          <section class="tool-heading"><h2>計算方法と税金の考え方</h2><p>売上ではなく、経費と税金を引いたあとに残る金額を見るための簡易計算です。</p></section>
+          <p>基本の考え方は、利益 = 売上 - 必要経費、税金概算 = 利益 × 想定税率、手取り = 利益 - 税金概算です。このページでは月額入力を年額に換算し、青色申告控除を年額で差し引いたうえで、所得税率と住民税率の目安をかけています。</p>
+          <p>実際の所得税は累進課税で、本業の給与、各種控除、扶養、自治体、申告方法によって変わります。社会保険料も加入状況や働き方で変わるため、チェックを入れた場合も簡易的な目安として見てください。</p>
         </section>
 
-        <section class="article-panel" aria-label="副業手取り結果を見た後の行動">
-          <section class="tool-heading">
-            <h2>結果を見た後に取るべき行動</h2>
-            <p>手取りを確認したら、税金、時間、資産形成へ順番につなげます。</p>
-          </section>
-          <ul>
-            <li>税金が不安な場合は、<a href="tax.html">副業税金シミュレーター</a> で内訳を確認する</li>
-            <li>作業時間に対して手取りが少ない場合は、<a href="hourly-improvement.html">副業時給改善シミュレーター</a> を確認する</li>
-            <li>手取りが残る場合は、生活防衛資金や <a href="nisa.html">新NISA</a> への配分を考える</li>
-            <li>無理な売上目標になっている場合は、<a href="side-time-management.html">副業時間管理シミュレーター</a> で継続できる時間を見直す</li>
-          </ul>
-        </section>
-
-        <section class="faq-panel" aria-label="&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;FAQ">
-          <h3>FAQ</h3>
+        <section class="article-panel faq-section" aria-label="副業手取りシミュレーターFAQ">
+          <section class="tool-heading"><h2>よくある質問</h2><p>会社員が副業手取りを見るときに迷いやすい点をまとめました。</p></section>
           <div class="faq-list">
-            <details>
-              <summary>&#x624b;&#x53d6;&#x308a;&#x984d;&#x306f;&#x3069;&#x3046;&#x8a08;&#x7b97;&#x3057;&#x3066;&#x3044;&#x307e;&#x3059;&#x304b;&#xFF1F;</summary>
-              <p>&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x304b;&#x3089;&#x5e74;&#x9593;&#x7d4c;&#x8cbb;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x3042;&#x308a;&#x306e;&#x5834;&#x5408;&#x306f;&#x305d;&#x306e;&#x6982;&#x7b97;&#x984d;&#x3092;&#x5dee;&#x3057;&#x5f15;&#x3044;&#x3066;&#x3044;&#x307e;&#x3059;&#x3002;</p>
-            </details>
-            <details>
-              <summary>&#x793e;&#x4f1a;&#x4fdd;&#x967a;&#x6599;&#x306f;&#x3044;&#x304f;&#x3089;&#x3067;&#x8a66;&#x7b97;&#x3055;&#x308c;&#x307e;&#x3059;&#x304b;&#xFF1F;</summary>
-              <p>&#x7c21;&#x6613;&#x8a66;&#x7b97;&#x3068;&#x3057;&#x3066;&#x6240;&#x5f97;&#x91d1;&#x984d;&#x306e;15%&#x3092;&#x624b;&#x53d6;&#x308a;&#x304b;&#x3089;&#x63a7;&#x9664;&#x3057;&#x307e;&#x3059;&#x3002;&#x5b9f;&#x969b;&#x306e;&#x91d1;&#x984d;&#x306f;&#x52a0;&#x5165;&#x72b6;&#x6cc1;&#x3084;&#x81ea;&#x6cbb;&#x4f53;&#x306b;&#x3088;&#x3063;&#x3066;&#x5909;&#x308f;&#x308a;&#x307e;&#x3059;&#x3002;</p>
-            </details>
-            <details>
-              <summary>&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x3068;&#x306e;&#x9055;&#x3044;&#x306f;&#x4f55;&#x3067;&#x3059;&#x304b;&#xFF1F;</summary>
-              <p>&#x3053;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x306f;&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x984d;&#x3092;&#x898b;&#x308b;&#x305f;&#x3081;&#x306e;&#x30c4;&#x30fc;&#x30eb;&#x3067;&#x3059;&#x3002;&#x7a0e;&#x984d;&#x306e;&#x5185;&#x8a33;&#x3092;&#x91cd;&#x8996;&#x3059;&#x308b;&#x5834;&#x5408;&#x306f;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30c4;&#x30fc;&#x30eb;&#x3082;&#x4f75;&#x7528;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-            </details>
-            <details>
-              <summary>この計算結果は正確ですか？</summary>
-              <p>簡易的な目安です。実際の税額や手取りは、給与、控除、扶養、自治体、申告内容によって変わります。最終判断は公的情報や専門家の確認も組み合わせてください。</p>
-            </details>
-            <details>
-              <summary>結果がマイナスになった場合はどう考えますか？</summary>
-              <p>経費や税率が高すぎる、売上がまだ少ない、社会保険の影響を大きく見ている可能性があります。売上を増やすだけでなく、経費、単価、作業時間の見直しも検討してください。</p>
-            </details>
+            <details><summary>副業の売上と手取りの違いは何ですか？</summary><p>売上は入ってくる金額、手取りは経費や税金などを差し引いたあとに残る金額です。副業では売上だけを見ると、納税資金や経費を見落としやすくなります。</p></details>
+            <details><summary>必要経費には何を入れられますか？</summary><p>副業に直接関係するツール費、通信費、素材費、広告費などが候補になります。私用と兼用する支出は按分が必要になる場合があるため、利用目的の記録を残しておくと確認しやすくなります。</p></details>
+            <details><summary>副業の税率は何％で計算すればよいですか？</summary><p>所得税は本業の給与や控除によって変わるため一律ではありません。迷う場合は低め、高めの複数パターンで試し、最終的には国税庁や税理士などの情報も確認してください。</p></details>
+            <details><summary>所得税と住民税は両方かかりますか？</summary><p>副業所得がある場合、所得税と住民税の両方を考える必要があります。ただし実際の税額は所得、控除、自治体、申告内容で変わります。</p></details>
+            <details><summary>副業収入が少なくても確定申告は必要ですか？</summary><p>会社員の副業では所得額や勤務先の年末調整状況などで扱いが変わります。少額でも住民税の申告が必要になる場合があるため、自治体や税務署の案内を確認してください。</p></details>
+            <details><summary>社会保険料は副業収入で増えますか？</summary><p>働き方、雇用形態、加入状況によって変わります。このシミュレーターの社会保険料は簡易目安であり、実際の負担を確定するものではありません。</p></details>
+            <details><summary>手取りを増やすには売上と経費のどちらを改善すべきですか？</summary><p>短期では経費の見直しが効きやすく、長期では単価や売上の改善が大切です。経費を削りすぎて品質や継続性が落ちる場合もあるため、3パターン比較で確認してください。</p></details>
+            <details><summary>会社員の副業が勤務先に知られる可能性はありますか？</summary><p>住民税、勤務先の規定、働き方によってリスクは変わります。普通徴収の扱いも自治体で異なる場合があるため、副業住民税シミュレーターや勤務先規定の確認も合わせて行ってください。</p></details>
+            <details><summary>計算結果と実際の手取りが違う理由は何ですか？</summary><p>本業給与、控除、経費の扱い、自治体、申告内容、社会保険の加入状況などが異なるためです。結果は申告額ではなく、事前に資金感をつかむための目安として使ってください。</p></details>
+            <details><summary>この計算結果は税務申告に使えますか？</summary><p>使えません。税務申告では帳簿、領収書、控除条件、制度の確認が必要です。このページは概算確認用で、最終判断は公的情報や専門家の確認をおすすめします。</p></details>
           </div>
         </section>
+
         <section class="article-panel operator-comment" aria-label="副業手取り計算シミュレーターの運営者コメント">
-          <section class="tool-heading">
-            <h2>運営者コメント</h2>
-            <p>このページは、副業売上から税金後の手取りを確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、月収目標を決める前に、経費と税金を引いて実際に残る金額を見ています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、手取りは概算なので、申告や控除の条件で変わる点に注意してください。次は <a href="tax.html">副業税金・青色申告シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
-          </section>
+          <section class="tool-heading"><h2>運営者コメント</h2><p>このページは、副業売上から税金後の手取りを確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、月収目標を決める前に、経費と税金を引いて実際に残る金額を見ています。注意点は、手取りは概算なので、申告や控除の条件で変わる点です。次は <a href="tax.html">副業税金シミュレーター</a> で税金の内訳を確認してください。</p></section>
         </section>
 
         <section class="article-panel usage-note" aria-label="副業手取りの利用時の注意点">
-          <section class="tool-heading">
-            <h2>利用時の注意点</h2>
-            <p>手取りが出ても、翌年の住民税や納税資金を忘れないでください。税金、生活費、投資額、作業時間を総合的に見ます。税率を高めにするパターン、経費が少ないパターン、副業収入が不安定なパターンも試してください。税制や社会保険制度は変更される可能性があります。特に副業手取りでは、短期の売上だけを見ず、翌月以降の税金、生活費、投資へ回す余力、作業時間の疲れを総合的に確認してください。良い結果、普通の結果、かなり厳しい結果のパターンを並べると、無理な副業計画を避けやすくなります。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p>
-          </section>
+          <section class="tool-heading"><h2>利用時の注意点</h2><p>このシミュレーターだけで判断せず、税金、生活費、投資、作業時間を総合的に考えてください。税率を高めにするパターン、経費が少ないパターン、副業収入が不安定なパターンも試すと、納税準備がしやすくなります。税制、社会保険制度、勤務先ルールは変更される可能性があります。</p></section>
         </section>
 
-        <section class="article-panel" aria-label="&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;">
-          <section class="tool-heading">
-            <h2>&#x95a2;&#x9023;&#x30c4;&#x30fc;&#x30eb;</h2>
-            <p>&#x526f;&#x696d;&#x306e;&#x58f2;&#x4e0a;&#x3001;&#x7a0e;&#x91d1;&#x3001;&#x6642;&#x7d66;&#x3092;&#x5225;&#x89d2;&#x5ea6;&#x304b;&#x3089;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
-          </section>
-          <div class="related-links">
-            <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
-            <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
-            <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
-            <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
-            <a href="side-time-management.html">副業時間管理シミュレーター</a>
-          </div>
+        <section class="article-panel update-history" aria-label="副業手取りシミュレーター更新履歴">
+          <section class="tool-heading"><h2>更新履歴</h2><p>実装した改善内容だけを記録しています。</p></section>
+          <div class="update-history-list"><article class="update-entry"><time datetime="2026-07-22">2026年7月22日</time><ul><li>副業手取りの結果表示を月額中心に強化</li><li>目標手取りとの差額と達成率を追加</li><li>売上増加と経費削減の比較機能を追加</li><li>リアルタイム計算、入力条件の保存、URL共有、印刷機能を追加</li><li>FAQ、内部リンク、スマートフォン表示を整理</li></ul></article></div>
         </section>
       </section>
 
@@ -9257,7 +9226,7 @@ const routeNextSimulatorMap = {
   nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
   "ai-hourly": ["ai-efficiency.html", "ai-roi.html", "ai-time-reduction.html", "side-profit-margin.html"],
   "ai-efficiency": ["ai-roi.html", "ai-automation.html", "ai-time-reduction.html", "hourly-improvement.html"],
-  "take-home": ["tax.html", "income-tax.html", "resident-tax.html", "side-income.html"],
+  "take-home": ["side-income.html", "tax.html", "side-profit-margin.html", "hourly-improvement.html"],
   retirement: ["nisa.html", "ideco.html", "fixed-cost-reduction.html", "fire.html"],
 };
 
@@ -9688,10 +9657,11 @@ const fieldRules = {
   incomeTaxOtherDeduction: { label: "\u305d\u306e\u4ed6\u63a7\u9664\u984d", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   incomeTaxRateInput: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
   reconstructionTaxRate: { label: "\u5fa9\u8208\u7279\u5225\u6240\u5f97\u7a0e\u7387", min: 0, max: 10, unit: "%", integer: false },
-  takeHomeSales: { label: "\u5e74\u9593\u526f\u696d\u58f2\u4e0a", min: 0, max: 1000000000, unit: "\u5186", integer: false },
-  takeHomeExpenses: { label: "\u5e74\u9593\u7d4c\u8cbb", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  takeHomeSales: { label: "副業の月間売上", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  takeHomeExpenses: { label: "必要経費（月額）", min: 0, max: 100000000, unit: "\u5186", integer: false },
   takeHomeIncomeTaxRate: { label: "\u6240\u5f97\u7a0e\u7387", min: 0, max: 45, unit: "%", integer: false },
   takeHomeResidentTaxRate: { label: "\u4f4f\u6c11\u7a0e\u7387", min: 0, max: 20, unit: "%", integer: false },
+  takeHomeTarget: { label: "目標手取り（月額）", min: 0, max: 100000000, unit: "\u5186", integer: false },
   takeHomeBlueDeduction: { label: "\u9752\u8272\u7533\u544a\u63a7\u9664\u984d", min: 0, max: 650000, unit: "\u5186", integer: false },
   nisaInitial: { label: "\u521d\u671f\u6295\u8cc7\u984d", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   nisaMonthly: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
@@ -11449,51 +11419,135 @@ function renderIncomeTax() {
   setText("incomeTaxTakeHomeGuide", takeHomeGuide);
 }
 
+function calculateTakeHomeScenario({ monthlySales, monthlyExpenses, incomeTaxRate, residentTaxRate, blueDeduction, hasSocialInsurance }) {
+  const sales = Math.max(Number(monthlySales) || 0, 0);
+  const expenses = Math.max(Number(monthlyExpenses) || 0, 0);
+  const monthlyProfit = Math.max(sales - expenses, 0);
+  const annualProfit = monthlyProfit * 12;
+  const annualTaxable = Math.max(annualProfit - Math.max(Number(blueDeduction) || 0, 0), 0);
+  const incomeTax = annualTaxable * ((Number(incomeTaxRate) || 0) / 100);
+  const residentTax = annualTaxable * ((Number(residentTaxRate) || 0) / 100);
+  const annualTax = Math.max(incomeTax + residentTax, 0);
+  const monthlyTax = annualTax / 12;
+  const socialInsurance = hasSocialInsurance ? annualProfit * 0.15 : 0;
+  const monthlySocialInsurance = socialInsurance / 12;
+  const monthlyTakeHome = Math.max(monthlyProfit - monthlyTax - monthlySocialInsurance, 0);
+  const annualTakeHome = monthlyTakeHome * 12;
+  const takeHomeRate = sales > 0 ? (monthlyTakeHome / sales) * 100 : 0;
+  return { sales, expenses, monthlyProfit, annualProfit, annualTaxable, incomeTax, residentTax, annualTax, monthlyTax, socialInsurance, monthlySocialInsurance, monthlyTakeHome, annualTakeHome, takeHomeRate };
+}
+
+function setTakeHomeErrorState() {
+  setText("finalTakeHome", "入力エラー");
+  ["takeHomeMonthlySales", "takeHomeMonthlyExpenses", "takeHomeIncomeAmount", "takeHomeTotalTax", "monthlyFinalTakeHome", "takeHomeTargetGap", "takeHomeRequiredSales", "takeHomeExpenseCut", "takeHomeCaseCurrentSales", "takeHomeCaseCurrentExpenses", "takeHomeCaseCurrentTax", "takeHomeCaseCurrentNet", "takeHomeCaseSalesUpSales", "takeHomeCaseSalesUpExpenses", "takeHomeCaseSalesUpTax", "takeHomeCaseSalesUpNet", "takeHomeCaseExpenseDownSales", "takeHomeCaseExpenseDownExpenses", "takeHomeCaseExpenseDownTax", "takeHomeCaseExpenseDownNet"].forEach((id) => setText(id, yen.format(0)));
+  ["takeHomeRate", "takeHomeAchievementRate", "takeHomeCaseCurrentRate", "takeHomeCaseSalesUpRate", "takeHomeCaseExpenseDownRate"].forEach((id) => setText(id, "0%"));
+  setText("takeHomeResultGuide", "入力内容を確認してください。空欄、上限超過、マイナス値があると正しく計算できません。");
+  setText("takeHomeGoalStatusLabel", "入力内容を確認してください");
+  setText("takeHomeGoalStatusText", "正しい数字を再入力すると、手取り額と目標との差額が再計算されます。");
+  setText("takeHomeGoalGapFact", "差額 0円");
+  setText("takeHomeGoalRateFact", "達成率 0%");
+  setText("takeHomeGoalRequiredFact", "追加売上 0円");
+  const statusCard = document.querySelector("#takeHomeGoalStatus");
+  if (statusCard) statusCard.className = "goal-status-card is-review";
+  const chart = document.querySelector("#takeHomeChartBars");
+  if (chart) chart.innerHTML = "";
+}
+
+function renderTakeHomeChart({ sales, takeHome, target }) {
+  const chart = document.querySelector("#takeHomeChartBars");
+  if (!chart) return;
+  const base = Math.max(target, sales, takeHome, 1);
+  const rows = [
+    { label: "副業売上", value: sales, note: target > 0 ? Math.round((sales / target) * 100) + "%" : "目標未設定" },
+    { label: "手取り額", value: takeHome, note: target > 0 ? Math.round((takeHome / target) * 100) + "%" : "目標未設定" },
+    { label: "目標手取り", value: target, note: "100%" },
+  ];
+  chart.innerHTML = rows.map((row) => {
+    const width = Math.min((row.value / base) * 100, 100);
+    return '<div class="income-chart-row"><div class="income-chart-label"><strong>' + row.label + '</strong><span>' + yen.format(row.value) + ' / ' + row.note + '</span></div><div class="income-chart-track"><span style="width:' + width.toFixed(1) + '%"></span></div></div>';
+  }).join("");
+}
+
+function updateTakeHomeCase(prefix, scenario) {
+  setText("takeHomeCase" + prefix + "Sales", yen.format(scenario.sales));
+  setText("takeHomeCase" + prefix + "Expenses", yen.format(scenario.expenses));
+  setText("takeHomeCase" + prefix + "Tax", yen.format(scenario.monthlyTax + scenario.monthlySocialInsurance));
+  setText("takeHomeCase" + prefix + "Net", yen.format(scenario.monthlyTakeHome));
+  setText("takeHomeCase" + prefix + "Rate", scenario.takeHomeRate.toFixed(1) + "%");
+}
+
 function renderTakeHome() {
   const values = {
     takeHomeSales: getFieldValue("takeHomeSales"),
     takeHomeExpenses: getFieldValue("takeHomeExpenses"),
     takeHomeIncomeTaxRate: getFieldValue("takeHomeIncomeTaxRate"),
     takeHomeResidentTaxRate: getFieldValue("takeHomeResidentTaxRate"),
+    takeHomeTarget: getFieldValue("takeHomeTarget"),
     takeHomeBlueDeduction: getFieldValue("takeHomeBlueDeduction"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
+  document.querySelector("#takeHomeNotice")?.classList.toggle("is-visible", true);
+  if (hasError) { setTakeHomeErrorState(); return; }
 
-  document.querySelector("#takeHomeNotice").classList.toggle("is-visible", hasError);
-  if (hasError) {
-    setText("finalTakeHome", "\u5165\u529b\u30a8\u30e9\u30fc");
-    setText("takeHomeIncomeAmount", yen.format(0));
-    setText("takeHomeTaxableIncome", yen.format(0));
-    setText("takeHomeIncomeTax", yen.format(0));
-    setText("takeHomeResidentTax", yen.format(0));
-    setText("takeHomeTotalTax", yen.format(0));
-    setText("monthlyFinalTakeHome", yen.format(0));
-    document.querySelector("#socialInsuranceDetail").textContent = "\u793e\u4f1a\u4fdd\u967a\u6599\u306f\u672a\u53cd\u6620";
-    return;
+  const hasSocialInsurance = document.querySelector("#hasSocialInsurance")?.checked || false;
+  const scenario = calculateTakeHomeScenario({ monthlySales: values.takeHomeSales.value, monthlyExpenses: values.takeHomeExpenses.value, incomeTaxRate: values.takeHomeIncomeTaxRate.value, residentTaxRate: values.takeHomeResidentTaxRate.value, blueDeduction: values.takeHomeBlueDeduction.value, hasSocialInsurance });
+  const target = values.takeHomeTarget.value;
+  const combinedRate = (values.takeHomeIncomeTaxRate.value + values.takeHomeResidentTaxRate.value) / 100;
+  const gap = Math.max(target - scenario.monthlyTakeHome, 0);
+  const achievement = target > 0 ? (scenario.monthlyTakeHome / target) * 100 : 100;
+  const effectiveKeepRate = scenario.sales > 0 ? scenario.monthlyTakeHome / scenario.sales : Math.max(1 - combinedRate - (hasSocialInsurance ? 0.15 : 0), 0);
+  const requiredSales = gap > 0 && effectiveKeepRate > 0 ? Math.ceil(gap / effectiveKeepRate) : 0;
+  const expenseCut = Math.min(gap, scenario.expenses);
+
+  setText("finalTakeHome", yen.format(scenario.monthlyTakeHome) + "／月");
+  setText("takeHomeMonthlySales", yen.format(scenario.sales));
+  setText("takeHomeMonthlyExpenses", yen.format(scenario.expenses));
+  setText("takeHomeIncomeAmount", yen.format(scenario.monthlyProfit));
+  setText("takeHomeTotalTax", yen.format(scenario.monthlyTax + scenario.monthlySocialInsurance));
+  setText("takeHomeTaxDetail", "所得税 " + yen.format(scenario.incomeTax / 12) + " + 住民税 " + yen.format(scenario.residentTax / 12));
+  setText("monthlyFinalTakeHome", yen.format(scenario.annualTakeHome));
+  setText("takeHomeRate", scenario.takeHomeRate.toFixed(1) + "%");
+  setText("takeHomeTargetGap", gap > 0 ? yen.format(gap) : "目標達成");
+  setText("takeHomeAchievementRate", Math.min(achievement, 999).toFixed(1) + "%");
+  setText("takeHomeRequiredSales", yen.format(requiredSales));
+  setText("takeHomeExpenseCut", yen.format(expenseCut));
+  setText("socialInsuranceDetail", hasSocialInsurance ? "社会保険料の簡易目安 " + yen.format(scenario.monthlySocialInsurance) + "／月を含めています。実際の負担は加入状況で変わります。" : "社会保険料は未反映です。働き方や加入状況によって実額が変わる場合があります。");
+
+  let statusClass = "is-review";
+  let statusLabel = "条件の見直しが必要";
+  let statusText = "作業量を増やすだけでなく、単価向上や経費削減も検討してください。";
+  let guide = "目標との差が大きい状態です。まずは売上目標、経費、税率を複数パターンで試してください。";
+  let actionLinks = [["side-income.html", "副業月収を確認する"], ["hourly-improvement.html", "時給改善を見る"], ["side-profit-margin.html", "利益率を見る"]];
+  if (achievement >= 100) {
+    statusClass = "is-achieved";
+    statusLabel = "目標達成";
+    statusText = "現在の入力条件では、目標手取りを達成する計算です。納税用資金を分けたうえで、生活防衛資金やNISAへの配分も考えましょう。";
+    guide = "目標手取りに届く目安です。次は税金の内訳と投資へ回す金額を確認すると、行動につながります。";
+    actionLinks = [["tax.html", "税金の内訳を見る"], ["nisa.html", "新NISAを確認する"]];
+  } else if (achievement >= 80) {
+    statusClass = "is-close";
+    statusLabel = "あと少し";
+    statusText = "目標まであと" + yen.format(gap) + "です。売上・単価・経費のいずれかを少し見直すと届く可能性があります。";
+    guide = "目標に近い状態です。売上20%増と経費20%減の比較を見て、どちらが現実的か確認してください。";
+    actionLinks = [["side-income.html", "売上目標を見直す"], ["side-profit-margin.html", "利益率を見る"]];
   }
+  setText("takeHomeResultGuide", guide);
+  setText("takeHomeGoalStatusLabel", statusLabel);
+  setText("takeHomeGoalStatusText", statusText);
+  setText("takeHomeGoalGapFact", gap > 0 ? "差額 " + yen.format(gap) : "差額 0円");
+  setText("takeHomeGoalRateFact", "達成率 " + Math.min(achievement, 999).toFixed(1) + "%");
+  setText("takeHomeGoalRequiredFact", "追加売上 " + yen.format(requiredSales));
+  const statusCard = document.querySelector("#takeHomeGoalStatus");
+  if (statusCard) statusCard.className = "goal-status-card " + statusClass;
+  const actionContainer = document.querySelector("#takeHomeActionLinks");
+  if (actionContainer) actionContainer.innerHTML = actionLinks.map(([href, label]) => '<a href="' + href + '">' + label + '</a>').join("");
 
-  const sales = values.takeHomeSales.value;
-  const expenses = values.takeHomeExpenses.value;
-  const incomeAmount = Math.max(sales - expenses, 0);
-  const taxableIncome = Math.max(incomeAmount - values.takeHomeBlueDeduction.value, 0);
-  const incomeTax = taxableIncome * (values.takeHomeIncomeTaxRate.value / 100);
-  const residentTax = taxableIncome * (values.takeHomeResidentTaxRate.value / 100);
-  const totalTax = incomeTax + residentTax;
-  const hasSocialInsurance = document.querySelector("#hasSocialInsurance").checked;
-  const socialInsurance = hasSocialInsurance ? incomeAmount * 0.15 : 0;
-  const finalTakeHome = sales - expenses - totalTax - socialInsurance;
-  const monthlyFinalTakeHome = finalTakeHome / 12;
-
-  setText("finalTakeHome", yen.format(finalTakeHome));
-  setText("takeHomeIncomeAmount", yen.format(incomeAmount));
-  setText("takeHomeTaxableIncome", yen.format(taxableIncome));
-  setText("takeHomeIncomeTax", yen.format(incomeTax));
-  setText("takeHomeResidentTax", yen.format(residentTax));
-  setText("takeHomeTotalTax", yen.format(totalTax));
-  setText("monthlyFinalTakeHome", yen.format(monthlyFinalTakeHome));
-  document.querySelector("#socialInsuranceDetail").textContent = hasSocialInsurance
-    ? `\u793e\u4f1a\u4fdd\u967a\u6599\u306e\u6982\u7b97 ${yen.format(socialInsurance)} \u3092\u63a7\u9664`
-    : "\u793e\u4f1a\u4fdd\u967a\u6599\u306f\u672a\u53cd\u6620";
+  const salesUp = calculateTakeHomeScenario({ monthlySales: scenario.sales * 1.2, monthlyExpenses: scenario.expenses, incomeTaxRate: values.takeHomeIncomeTaxRate.value, residentTaxRate: values.takeHomeResidentTaxRate.value, blueDeduction: values.takeHomeBlueDeduction.value, hasSocialInsurance });
+  const expenseDown = calculateTakeHomeScenario({ monthlySales: scenario.sales, monthlyExpenses: scenario.expenses * 0.8, incomeTaxRate: values.takeHomeIncomeTaxRate.value, residentTaxRate: values.takeHomeResidentTaxRate.value, blueDeduction: values.takeHomeBlueDeduction.value, hasSocialInsurance });
+  updateTakeHomeCase("Current", scenario);
+  updateTakeHomeCase("SalesUp", salesUp);
+  updateTakeHomeCase("ExpenseDown", expenseDown);
+  renderTakeHomeChart({ sales: scenario.sales, takeHome: scenario.monthlyTakeHome, target });
 }
 
 function renderNisa() {
@@ -13906,7 +13960,7 @@ function updateDynamicStructuredData(route, seo) {
     return;
   }
 
-  const faqItems = Array.from(view.querySelectorAll(".faq-panel details"))
+  const faqItems = Array.from(view.querySelectorAll(".faq-panel details, .faq-section details"))
     .map((item) => {
       const question = item.querySelector("summary")?.textContent.trim();
       const answer = item.querySelector("p")?.textContent.trim();
@@ -14098,6 +14152,105 @@ document.querySelector("#sideIncomeForm").addEventListener("reset", () => {
     setSideIncomeStatus("初期値に戻しました。");
   });
 });
+
+const takeHomeStorageKey = "takeHomeInputsV2";
+const takeHomeParamMap = { takeHomeSales: "sales", takeHomeExpenses: "cost", takeHomeIncomeTaxRate: "incomeTax", takeHomeResidentTaxRate: "residentTax", takeHomeTarget: "target", takeHomeBlueDeduction: "blue", hasSocialInsurance: "social" };
+let takeHomeRenderTimer = null;
+function getTakeHomeInputIds() { return Object.keys(takeHomeParamMap); }
+function collectTakeHomeInputs() {
+  return getTakeHomeInputIds().reduce((acc, id) => {
+    const input = document.querySelector("#" + id);
+    if (!input) return acc;
+    acc[id] = input.type === "checkbox" ? input.checked : input.value;
+    return acc;
+  }, {});
+}
+function applyTakeHomeInputs(values) {
+  Object.entries(values || {}).forEach(([id, value]) => {
+    const input = document.querySelector("#" + id);
+    if (!input || value === undefined || value === null || value === "") return;
+    if (input.type === "checkbox") {
+      input.checked = value === true || value === "true" || value === "1";
+    } else {
+      input.value = value;
+    }
+  });
+}
+function setTakeHomeStatus(message) {
+  const status = document.querySelector("#takeHomeSaveStatus");
+  if (status) status.textContent = message;
+}
+function scheduleTakeHomeRender() {
+  window.clearTimeout(takeHomeRenderTimer);
+  takeHomeRenderTimer = window.setTimeout(renderTakeHome, 120);
+}
+function loadTakeHomeInputs() {
+  const params = new URLSearchParams(window.location.search);
+  const queryValues = {};
+  Object.entries(takeHomeParamMap).forEach(([id, key]) => {
+    if (params.has(key)) queryValues[id] = params.get(key);
+  });
+  if (Object.keys(queryValues).length > 0) {
+    applyTakeHomeInputs(queryValues);
+    setTakeHomeStatus("URLの条件を読み込みました。");
+    return;
+  }
+  try {
+    const saved = JSON.parse(localStorage.getItem(takeHomeStorageKey) || "null");
+    if (saved && typeof saved === "object") {
+      applyTakeHomeInputs(saved);
+      setTakeHomeStatus("保存済みの入力条件を読み込みました。");
+    }
+  } catch (_) {
+    setTakeHomeStatus("保存条件の読み込みに失敗しました。");
+  }
+}
+function buildTakeHomeShareUrl() {
+  const params = new URLSearchParams();
+  Object.entries(collectTakeHomeInputs()).forEach(([id, value]) => {
+    const key = takeHomeParamMap[id];
+    if (key && value !== "") params.set(key, String(value));
+  });
+  return window.location.origin + window.location.pathname + "?" + params.toString();
+}
+function setupTakeHomeUtilities() {
+  loadTakeHomeInputs();
+  document.querySelector("#saveTakeHomeInputs")?.addEventListener("click", () => {
+    try {
+      localStorage.setItem(takeHomeStorageKey, JSON.stringify(collectTakeHomeInputs()));
+      setTakeHomeStatus("入力条件をこのブラウザに保存しました。");
+    } catch (_) {
+      setTakeHomeStatus("保存できませんでした。ブラウザ設定を確認してください。");
+    }
+  });
+  document.querySelector("#clearTakeHomeInputs")?.addEventListener("click", () => {
+    localStorage.removeItem(takeHomeStorageKey);
+    setTakeHomeStatus("保存した入力条件を削除しました。");
+  });
+  document.querySelector("#copyTakeHomeUrl")?.addEventListener("click", async () => {
+    const url = buildTakeHomeShareUrl();
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const temp = document.createElement("textarea");
+        temp.value = url;
+        temp.setAttribute("readonly", "");
+        temp.style.position = "fixed";
+        temp.style.left = "-9999px";
+        document.body.appendChild(temp);
+        temp.select();
+        document.execCommand("copy");
+        temp.remove();
+      }
+      setTakeHomeStatus("結果URLをコピーしました。");
+    } catch (_) {
+      setTakeHomeStatus("コピーできませんでした。URL: " + url);
+    }
+  });
+  document.querySelector("#printTakeHomeResult")?.addEventListener("click", () => window.print());
+}
+setupTakeHomeUtilities();
 document.querySelector("#aiHourlyForm").addEventListener("input", renderAiHourly);
 document.querySelector("#aiHourlyForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderAiHourly);
@@ -14178,9 +14331,16 @@ document.querySelector("#incomeTaxForm").addEventListener("input", renderIncomeT
 document.querySelector("#incomeTaxForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderIncomeTax);
 });
-document.querySelector("#takeHomeForm").addEventListener("input", renderTakeHome);
+document.querySelector("#takeHomeForm").addEventListener("input", scheduleTakeHomeRender);
+document.querySelector("#takeHomeForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  renderTakeHome();
+});
 document.querySelector("#takeHomeForm").addEventListener("reset", () => {
-  window.requestAnimationFrame(renderTakeHome);
+  window.requestAnimationFrame(() => {
+    renderTakeHome();
+    setTakeHomeStatus("初期値に戻しました。");
+  });
 });
 document.querySelector("#investmentRiskForm").addEventListener("input", renderInvestmentRisk);
 document.querySelector("#investmentRiskForm").addEventListener("reset", () => {

@@ -1408,6 +1408,16 @@ button:active {
   gap: 6px;
 }
 
+.income-chart-bars {
+  display: grid;
+  gap: 10px;
+}
+
+.income-chart-row {
+  display: grid;
+  gap: 6px;
+}
+
 .chart-row-header {
   display: flex;
   justify-content: space-between;
@@ -1420,6 +1430,32 @@ button:active {
 .chart-row-header strong {
   color: var(--ink);
   white-space: nowrap;
+}
+
+.income-chart-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.income-chart-label strong,
+.income-chart-label span {
+  min-width: 0;
+  word-break: keep-all;
+}
+
+.income-chart-label strong {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.income-chart-label span {
+  text-align: right;
 }
 
 .chart-track {
@@ -1436,6 +1472,23 @@ button:active {
   height: 100%;
   border-radius: inherit;
   background: var(--blue);
+  transition: width 160ms ease;
+}
+
+.income-chart-track {
+  overflow: hidden;
+  height: 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #eef3f0;
+}
+
+.income-chart-track span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
   transition: width 160ms ease;
 }
 
@@ -1611,6 +1664,25 @@ button:active {
 }
 
 @media (max-width: 520px) {
+  .result-save-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .result-save-actions button {
+    width: 100%;
+  }
+
+  .income-chart-label {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .income-chart-label span {
+    text-align: left;
+  }
+
   .site-footer {
     padding: 14px;
   }
@@ -1688,10 +1760,12 @@ button:active {
   .breadcrumb-nav,
   .header,
   .calculator-quick-link,
+  .no-print,
   .result-save-actions,
   .next-read-section,
   .faq-section,
   .site-footer,
+  .unified-journey-section,
   .operator-comment,
   .usage-note,
   .update-history,
