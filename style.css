@@ -1796,3 +1796,111 @@ button:active {
     border-color: #999;
   }
 }
+
+/* Tax simulator result expansion */
+.tax-result-panel {
+  min-width: 0;
+}
+
+.app-shell,
+.view[data-view="tax"],
+.view[data-view="tax"] .workspace,
+.view[data-view="tax"] .input-panel,
+.view[data-view="tax"] .result-panel,
+.view[data-view="tax"] .tax-comparison,
+.view[data-view="tax"] .comparison-table {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.tax-result-panel > .hero-result,
+.tax-total-hero {
+  break-inside: avoid;
+}
+
+.tax-total-hero {
+  border-color: rgba(190, 111, 35, 0.35);
+  background: #fff8ee;
+}
+
+.tax-status,
+.tax-chart,
+.tax-conditional-note,
+.tax-comparison,
+.result-disclaimer {
+  margin-top: 18px;
+}
+
+.tax-status,
+.tax-chart,
+.tax-conditional-note,
+.tax-comparison {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  break-inside: avoid;
+}
+
+.tax-status h3,
+.tax-chart h3,
+.tax-conditional-note h3,
+.tax-comparison h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.tax-status p,
+.tax-conditional-note p,
+.result-disclaimer {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.tax-chart .chart-bar.profit { background: var(--blue); }
+.tax-chart .chart-bar.tax { background: var(--amber); }
+.tax-chart .chart-bar.net { background: var(--green); }
+
+.tax-result-panel .amount,
+.tax-result-panel .metric span,
+.tax-comparison td {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .tax-result-panel .amount {
+    font-size: clamp(1.55rem, 8vw, 2.15rem);
+  }
+
+  .tax-result-panel .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tax-result-panel .result-save-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tax-status,
+  .tax-chart,
+  .tax-conditional-note,
+  .tax-comparison {
+    padding: 13px;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  .tax-result-panel,
+  .tax-result-panel .metric,
+  .tax-status,
+  .tax-chart,
+  .tax-conditional-note,
+  .tax-comparison {
+    break-inside: avoid;
+  }
+}

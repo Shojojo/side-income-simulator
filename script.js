@@ -11286,6 +11286,18 @@ function renderEmployeeTaxSaving() {
   setText("employeeTaxFireImpact", fireImpact);
 }
 
+function calculateTaxScenario(sales, expenses, incomeRate, residentRate, deduction) {
+  const safeSales = Math.max(Number(sales) || 0, 0);
+  const safeExpenses = Math.max(Number(expenses) || 0, 0);
+  const profit = safeSales - safeExpenses;
+  const taxableIncome = Math.max(profit - Math.max(Number(deduction) || 0, 0), 0);
+  const incomeTax = Math.max(taxableIncome * Math.min(Math.max(Number(incomeRate) || 0, 0), 45) / 100, 0);
+  const residentTax = Math.max(taxableIncome * Math.min(Math.max(Number(residentRate) || 0, 0), 20) / 100, 0);
+  const taxTotal = incomeTax + residentTax;
+  const takeHome = profit - taxTotal;
+  return { sales: safeSales, expenses: safeExpenses, profit, taxableIncome, incomeTax, residentTax, taxTotal, takeHome, effectiveRate: profit > 0 ? taxTotal / profit * 100 : 0 };
+}
+
 function renderTax() {
   const values = {
     annualSideIncome: getFieldValue("annualSideIncome"),
@@ -11295,29 +11307,42 @@ function renderTax() {
     blueDeduction: getFieldValue("blueDeduction"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
-
   document.querySelector("#taxNotice").classList.toggle("is-visible", hasError);
   if (hasError) {
-    setText("takeHome", "\u5165\u529b\u30a8\u30e9\u30fc");
-    setText("taxableIncome", yen.format(0));
-    setText("incomeTaxAmount", yen.format(0));
-    setText("residentTaxAmount", yen.format(0));
-    setText("takeHomeDetail", yen.format(0));
+    ["taxTotal", "taxSalesResult", "taxExpensesResult", "taxProfit", "taxableIncome", "incomeTaxAmount", "residentTaxAmount", "takeHomeDetail", "taxMonthlyTakeHome", "taxTargetDifference"].forEach((id) => setText(id, yen.format(0)));
+    ["taxEffectiveRate", "taxSalesRetentionRate", "taxProfitRetentionRate"].forEach((id) => setText(id, "0%"));
+    setText("takeHome", "入力エラー");
     return;
   }
-
-  const annualSideIncome = values.annualSideIncome.value;
-  const expenses = values.expenses.value;
-  const taxableIncome = Math.max(annualSideIncome - expenses - values.blueDeduction.value, 0);
-  const incomeTax = taxableIncome * (values.incomeTaxRate.value / 100);
-  const residentTax = taxableIncome * (values.residentTaxRate.value / 100);
-  const takeHome = annualSideIncome - expenses - incomeTax - residentTax;
-
-  setText("takeHome", yen.format(takeHome));
-  setText("taxableIncome", yen.format(taxableIncome));
-  setText("incomeTaxAmount", yen.format(incomeTax));
-  setText("residentTaxAmount", yen.format(residentTax));
-  setText("takeHomeDetail", yen.format(takeHome));
+  const scenario = calculateTaxScenario(values.annualSideIncome.value, values.expenses.value, values.incomeTaxRate.value, values.residentTaxRate.value, values.blueDeduction.value);
+  const expenseUp = calculateTaxScenario(scenario.sales, scenario.expenses * 1.2, values.incomeTaxRate.value, values.residentTaxRate.value, values.blueDeduction.value);
+  const salesUp = calculateTaxScenario(scenario.sales * 1.2, scenario.expenses, values.incomeTaxRate.value, values.residentTaxRate.value, values.blueDeduction.value);
+  const percent = (value) => `${Number.isFinite(value) ? value.toFixed(1) : "0.0"}%`;
+  setText("takeHome", yen.format(scenario.takeHome) + "／年");
+  setText("taxTotal", yen.format(scenario.taxTotal) + "／年");
+  setText("taxSalesResult", yen.format(scenario.sales));
+  setText("taxExpensesResult", yen.format(scenario.expenses));
+  setText("taxProfit", yen.format(scenario.profit));
+  setText("taxableIncome", yen.format(scenario.taxableIncome));
+  setText("incomeTaxAmount", yen.format(scenario.incomeTax));
+  setText("residentTaxAmount", yen.format(scenario.residentTax));
+  setText("takeHomeDetail", yen.format(scenario.takeHome));
+  setText("taxMonthlyTakeHome", yen.format(scenario.takeHome / 12));
+  setText("taxEffectiveRate", percent(scenario.effectiveRate));
+  setText("taxSalesRetentionRate", percent(scenario.sales > 0 ? scenario.takeHome / scenario.sales * 100 : 0));
+  setText("taxProfitRetentionRate", percent(scenario.profit > 0 ? scenario.takeHome / scenario.profit * 100 : 0));
+  setText("taxTargetDifference", yen.format(salesUp.takeHome - scenario.takeHome));
+  setText("taxStatusTitle", scenario.effectiveRate < 15 ? "税負担は比較的抑えられています" : scenario.effectiveRate < 30 ? "税金を考慮した計画が必要です" : "手取りへの影響が大きくなっています");
+  setText("taxStatusText", scenario.effectiveRate < 15 ? "現在の入力条件では、税引後にも副業所得の多くが残る計算です。" : scenario.effectiveRate < 30 ? "売上だけでなく、税引後に残る金額を基準に目標を立てましょう。" : "所得や控除の条件で税負担が変わるため、必要に応じて専門家へ確認してください。");
+  const expenseRate = scenario.sales > 0 ? scenario.expenses / scenario.sales : 0;
+  setText("taxConditionNote", scenario.profit < 0 ? "税金は0円として表示していますが、損益通算の可否は所得区分などによって異なります。" : scenario.profit >= 180000 && scenario.profit <= 220000 ? "副業所得が20万円付近です。所得税の確定申告が不要となる場合でも、住民税の申告が必要になることがあります。" : expenseRate >= 0.7 ? "経費率が高い条件です。必要経費は、副業のために実際に必要だった支出に限られます。" : scenario.profit >= 5000000 ? "所得が増えると、税率や社会保険料への影響が大きくなる可能性があります。" : "所得税は本来累進課税です。給与、控除、扶養、社会保険や自治体の条件も含めて実額が変わります。");
+  const chart = document.querySelector("#taxChartRows");
+  if (chart) chart.innerHTML = [["副業所得", Math.max(scenario.profit, 0), "profit"], ["税金合計", scenario.taxTotal, "tax"], ["税引後手取り", scenario.takeHome, "net"]].map(([label, amount, kind]) => {
+    const ratio = scenario.profit > 0 ? Math.max(amount, 0) / scenario.profit * 100 : 0;
+    return `<div class="chart-row"><div class="chart-row-header"><span>${label}</span><strong>${yen.format(amount)}（${percent(ratio)}）</strong></div><div class="chart-track"><span class="chart-bar ${kind}" style="width:${Math.min(ratio, 100)}%"></span></div></div>`;
+  }).join("");
+  const comparison = document.querySelector("#taxComparisonBody");
+  if (comparison) comparison.innerHTML = [["現在の条件", scenario], ["必要経費が20%増", expenseUp], ["売上が20%増", salesUp]].map(([label, item]) => `<tr><th>${label}</th><td>${yen.format(item.sales)}</td><td>${yen.format(item.expenses)}</td><td>${yen.format(item.profit)}</td><td>${yen.format(item.incomeTax)}</td><td>${yen.format(item.residentTax)}</td><td>${yen.format(item.taxTotal)}</td><td>${yen.format(item.takeHome)}</td><td>${percent(item.effectiveRate)}</td></tr>`).join("");
 }
 
 function renderResidentTax() {
@@ -14055,6 +14080,109 @@ function insertExistingPageSeoImprovements() {
 
 insertExistingPageSeoImprovements();
 
+function setupTaxExperience() {
+  const form = document.querySelector("#taxForm");
+  const result = form?.nextElementSibling;
+  if (!form || !result) return;
+  const taxView = form.closest('[data-view="tax"]');
+  const workspace = form.closest(".workspace");
+  const topHeading = taxView?.querySelector(":scope > .tool-heading");
+  if (workspace && topHeading) topHeading.after(workspace);
+  const breadcrumb = document.querySelector(".breadcrumb-nav");
+  const header = document.querySelector(".header");
+  if (breadcrumb && header) header.before(breadcrumb);
+  const fieldConfig = {
+    annualSideIncome: ["副業の年間売上", "経費を引く前の1年間の売上です。", "600000"],
+    expenses: ["年間必要経費", "副業のために実際に必要だった支出です。", "100000"],
+    incomeTaxRate: ["想定所得税率", "このツールでは入力した税率を一律で適用します。", "10"],
+    residentTaxRate: ["想定住民税率", "自治体や所得条件で実額は異なります。", "10"],
+    blueDeduction: ["適用する控除額の目安", "要件を満たして適用できる控除だけを入力します。", "0"],
+  };
+  Object.entries(fieldConfig).forEach(([id, [label, hint, initial]]) => {
+    const input = document.querySelector("#" + id);
+    const field = input?.closest(".field");
+    if (!input || !field) return;
+    const unit = input.closest(".field")?.querySelector(".unit")?.textContent || "";
+    field.querySelector("label").innerHTML = `${label} <span class="unit">${unit}</span>`;
+    input.value = initial;
+    input.placeholder = `例：${initial}`;
+    const hintNode = document.createElement("p");
+    hintNode.className = "field-hint";
+    hintNode.textContent = hint;
+    field.insertBefore(hintNode, field.querySelector(".error"));
+  });
+  const actions = form.querySelector(".actions");
+  actions.insertAdjacentHTML("afterbegin", '<button type="submit" class="primary-button">この条件で計算</button>');
+  result.classList.add("tax-result-panel");
+  result.setAttribute("aria-label", "副業税金の計算結果");
+  const hero = result.querySelector(".hero-result");
+  hero.querySelector(".eyebrow").textContent = "税引後の副業手取り";
+  hero.insertAdjacentHTML("beforebegin", '<div class="hero-result tax-total-hero"><p class="eyebrow">税金の概算</p><p class="amount" id="taxTotal">0円／年</p></div>');
+  result.querySelector(".result-grid").innerHTML = `
+    <div class="metric"><strong>年間売上</strong><span id="taxSalesResult">0円</span><small>入力した副業売上</small></div>
+    <div class="metric"><strong>年間必要経費</strong><span id="taxExpensesResult">0円</span><small>売上から差し引く支出</small></div>
+    <div class="metric"><strong>副業所得（利益）</strong><span class="accent-blue" id="taxProfit">0円</span><small>売上 − 必要経費</small></div>
+    <div class="metric"><strong>課税対象額の概算</strong><span class="accent-blue" id="taxableIncome">0円</span><small>利益 − 適用する控除</small></div>
+    <div class="metric"><strong>所得税の概算</strong><span class="accent-amber" id="incomeTaxAmount">0円</span><small>課税対象額 × 想定税率</small></div>
+    <div class="metric"><strong>住民税の概算</strong><span class="accent-amber" id="residentTaxAmount">0円</span><small>課税対象額 × 想定税率</small></div>
+    <div class="metric"><strong>税引後手取り</strong><span class="accent-green" id="takeHomeDetail">0円</span><small>利益 − 所得税 − 住民税</small></div>
+    <div class="metric"><strong>月平均手取り</strong><span class="accent-green" id="taxMonthlyTakeHome">0円</span><small>年間手取り ÷ 12</small></div>
+    <div class="metric"><strong>実効税率</strong><span id="taxEffectiveRate">0%</span><small>税金合計 ÷ 副業所得</small></div>
+    <div class="metric"><strong>売上に対する手取り率</strong><span id="taxSalesRetentionRate">0%</span><small>手取り ÷ 売上</small></div>
+    <div class="metric"><strong>税引後に残る割合</strong><span id="taxProfitRetentionRate">0%</span><small>手取り ÷ 副業所得</small></div>
+    <div class="metric"><strong>売上20%増との差額</strong><span id="taxTargetDifference">0円</span><small>比較条件の手取りとの差</small></div>`;
+  result.insertAdjacentHTML("beforeend", `
+    <p class="result-disclaimer">すべて概算です。実際の税額は、給与、所得区分、各種控除、扶養、自治体、社会保険の加入状況などで変わります。</p>
+    <section class="tax-status"><h3 id="taxStatusTitle"></h3><p id="taxStatusText"></p></section>
+    <section class="tax-chart"><h3>利益・税金・手取りの比較</h3><div id="taxChartRows"></div></section>
+    <section class="tax-conditional-note"><h3>現在の条件での注意点</h3><p id="taxConditionNote"></p></section>
+    <section class="tax-comparison"><h3>条件別比較</h3><div class="comparison-table"><table><thead><tr><th>条件</th><th>売上</th><th>経費</th><th>副業所得</th><th>所得税</th><th>住民税</th><th>税金合計</th><th>税引後手取り</th><th>実効税率</th></tr></thead><tbody id="taxComparisonBody"></tbody></table></div><p class="field-hint">必要経費は事業上必要な支出に限られます。税金を減らすためだけに支出を増やすことを勧める比較ではありません。</p></section>
+    <section class="result-save-panel no-print"><h3>結果を残す</h3><p>入力値だけをこの端末に保存できます。個人情報は保存しません。</p><div class="result-save-actions"><button type="button" id="saveTaxInputs">入力条件を保存</button><button type="button" id="clearTaxInputs">保存条件を削除</button><button type="button" id="copyTaxUrl">結果URLをコピー</button><button type="button" id="printTaxResult">印刷・PDF保存</button></div><p class="save-status" id="taxSaveStatus" aria-live="polite">保存や共有の結果がここに表示されます。</p></section>`);
+  result.closest(".workspace")?.insertAdjacentHTML("afterend", `
+    <section class="article-panel tax-reading"><section class="tool-heading"><h2>結果の読み方</h2><p>売上ではなく、税引後に残る金額まで確認することが大切です。</p></section><ul><li>売上から必要経費を引いた後が副業所得（利益）の目安です。</li><li>税金は原則として売上全体ではなく所得を基に考えます。所得税は本来、他の所得と合算した累進課税です。</li><li>住民税は翌年度に影響する場合があります。社会保険料への影響は働き方や加入状況で異なります。</li><li>確定申告の要否は所得額だけで一律に判断できません。</li></ul></section>
+    <section class="article-panel tax-method"><section class="tool-heading"><h2>このシミュレーターの計算方法</h2><p>既存仕様を維持し、入力した税率を課税対象額に一律で掛けています。</p></section><p>副業所得 ＝ 年間売上 − 年間必要経費、課税対象額 ＝ 副業所得 − 適用する控除、税引後手取り ＝ 副業所得 − 所得税 − 住民税です。復興特別所得税、事業税、社会保険料などは含みません。</p></section>`);
+  const faq = taxView?.querySelector(".faq-panel");
+  if (faq) faq.innerHTML = `<h3>よくある質問</h3><div class="faq-list">
+    <details><summary>副業の売上と所得の違いは何ですか？</summary><p>売上は受け取った総額、所得は売上から必要経費を引いた利益の目安です。</p></details>
+    <details><summary>必要経費には何を入れられますか？</summary><p>副業のために実際に必要だった支出が基本です。私用を含む支出は按分が必要な場合があります。</p></details>
+    <details><summary>副業の税金はいくらから発生しますか？</summary><p>所得区分、給与、控除などで異なり、一律の金額だけでは判断できません。</p></details>
+    <details><summary>所得税と住民税は両方かかりますか？</summary><p>条件によって両方に影響する場合があります。住民税は翌年度の負担にも注意してください。</p></details>
+    <details><summary>副業所得が20万円以下なら申告不要ですか？</summary><p>所得税の確定申告が不要となる場合でも、住民税の申告が必要なことがあります。</p></details>
+    <details><summary>住民税の申告は必要ですか？</summary><p>所得税の申告状況や自治体の扱いで異なるため、お住まいの自治体へ確認してください。</p></details>
+    <details><summary>社会保険料は副業収入で増えますか？</summary><p>雇用形態、加入制度、副業の働き方で異なります。このツールには社会保険料を含めていません。</p></details>
+    <details><summary>青色申告と白色申告で税金は変わりますか？</summary><p>青色申告特別控除などの要件を満たすと課税対象額に影響する場合があります。</p></details>
+    <details><summary>税金を減らすために経費を増やしてよいですか？</summary><p>必要経費は事業上必要な支出に限られます。不要な支出を増やすと手元の利益も減ります。</p></details>
+    <details><summary>この結果を確定申告に使えますか？</summary><p>いいえ、結果は概算です。申告や税務判断は税務署、自治体、税理士などへ確認してください。</p></details>
+  </div>`;
+}
+
+setupTaxExperience();
+
+const taxStorageKey = "taxInputsV2";
+const taxParamMap = { annualSideIncome: "sales", expenses: "cost", incomeTaxRate: "incomeTax", residentTaxRate: "residentTax", blueDeduction: "deduction" };
+let taxRenderTimer = null;
+function collectTaxInputs() { return Object.keys(taxParamMap).reduce((out, id) => { out[id] = document.querySelector("#" + id)?.value || ""; return out; }, {}); }
+function setTaxStatus(message) { setText("taxSaveStatus", message); }
+function applyTaxInputs(values) { Object.entries(values || {}).forEach(([id, value]) => { const input = document.querySelector("#" + id); if (input && value !== "") input.value = value; }); }
+function setupTaxUtilities() {
+  const params = new URLSearchParams(window.location.search);
+  const query = {};
+  Object.entries(taxParamMap).forEach(([id, key]) => { if (params.has(key)) query[id] = params.get(key); });
+  if (Object.keys(query).length) { applyTaxInputs(query); setTaxStatus("URLの条件を読み込みました。"); }
+  else {
+    try { const saved = JSON.parse(localStorage.getItem(taxStorageKey) || "null"); if (saved) { applyTaxInputs(saved); setTaxStatus("保存済みの入力条件を読み込みました。"); } } catch (_) { setTaxStatus("保存条件を読み込めませんでした。"); }
+  }
+  document.querySelector("#saveTaxInputs")?.addEventListener("click", () => { try { localStorage.setItem(taxStorageKey, JSON.stringify(collectTaxInputs())); setTaxStatus("入力条件をこのブラウザに保存しました。"); } catch (_) { setTaxStatus("保存できませんでした。"); } });
+  document.querySelector("#clearTaxInputs")?.addEventListener("click", () => { localStorage.removeItem(taxStorageKey); setTaxStatus("保存した入力条件を削除しました。"); });
+  document.querySelector("#copyTaxUrl")?.addEventListener("click", async () => {
+    const queryString = new URLSearchParams(Object.entries(collectTaxInputs()).map(([id, value]) => [taxParamMap[id], value])).toString();
+    const url = `${window.location.origin}${window.location.pathname}?${queryString}`;
+    try { if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(url); else { const node = document.createElement("textarea"); node.value = url; document.body.appendChild(node); node.select(); document.execCommand("copy"); node.remove(); } setTaxStatus("結果URLをコピーしました。"); } catch (_) { setTaxStatus("コピーできませんでした。URL: " + url); }
+  });
+  document.querySelector("#printTaxResult")?.addEventListener("click", () => window.print());
+}
+setupTaxUtilities();
+
 const sideIncomeStorageKey = "sideIncomeInputsV2";
 const sideIncomeParamMap = { hourly: "rate", hours: "hours", projects: "jobs", sideIncomeExpense: "cost", tax: "tax", targetMonthlyIncome: "target" };
 let sideIncomeRenderTimer = null;
@@ -14315,9 +14443,19 @@ document.querySelector("#incorporationForm").addEventListener("input", renderInc
 document.querySelector("#incorporationForm").addEventListener("reset", () => {
   window.requestAnimationFrame(renderIncorporation);
 });
-document.querySelector("#taxForm").addEventListener("input", renderTax);
+document.querySelector("#taxForm").addEventListener("input", () => {
+  window.clearTimeout(taxRenderTimer);
+  taxRenderTimer = window.setTimeout(renderTax, 120);
+});
+document.querySelector("#taxForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  renderTax();
+});
 document.querySelector("#taxForm").addEventListener("reset", () => {
-  window.requestAnimationFrame(renderTax);
+  window.requestAnimationFrame(() => {
+    renderTax();
+    setTaxStatus("初期値に戻しました。");
+  });
 });
 document.querySelector("#employeeTaxSavingForm").addEventListener("input", renderEmployeeTaxSaving);
 document.querySelector("#employeeTaxSavingForm").addEventListener("reset", () => {
