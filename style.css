@@ -157,6 +157,8 @@ h1 {
 }
 
 .problem-navigation,
+.primary-simulator-hub,
+.featured-article-hub,
 .popular-simulators,
 .beginner-roadmap,
 .all-simulators-panel {
@@ -164,6 +166,7 @@ h1 {
 }
 
 .decision-grid,
+.primary-simulator-grid,
 .popular-tool-grid,
 .roadmap-grid {
   display: grid;
@@ -171,6 +174,7 @@ h1 {
 }
 
 .decision-card,
+.primary-simulator-card,
 .popular-tool-card,
 .featured-record-card,
 .roadmap-step,
@@ -181,11 +185,46 @@ h1 {
 }
 
 .decision-card,
+.primary-simulator-card,
 .popular-tool-card,
 .featured-record-card {
   display: grid;
   gap: 12px;
   padding: 16px;
+}
+
+.primary-simulator-hub {
+  border-color: rgba(36, 87, 197, 0.22);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+}
+
+.primary-simulator-card {
+  align-content: start;
+  min-height: 100%;
+  border-color: rgba(36, 87, 197, 0.16);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.primary-simulator-card.is-priority {
+  border-color: rgba(18, 115, 93, 0.32);
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbf8 100%);
+}
+
+.primary-simulator-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.primary-simulator-card p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.primary-simulator-card .primary-link {
+  margin-top: auto;
 }
 
 .decision-card {
@@ -920,6 +959,7 @@ h1 {
   }
 
   .decision-grid,
+  .primary-simulator-grid,
   .roadmap-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -932,11 +972,13 @@ h1 {
 @media (max-width: 560px) {
   .hero-action-nav a,
   .card-actions a,
+  .primary-simulator-card .primary-link,
   .popular-tool-card a {
     width: 100%;
   }
 
   .decision-card,
+  .primary-simulator-card,
   .popular-tool-card,
   .featured-record-card,
   .challenge-status-card {
