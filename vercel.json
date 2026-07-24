@@ -12,16 +12,22 @@
       "source": "/article-ai-side-business",
       "destination": "/article-ai-side-business.html",
       "permanent": true
+    },
+    {
+      "source": "/retirement",
+      "destination": "/retirement.html",
+      "permanent": true
+    },
+    {
+      "source": "/nisa",
+      "destination": "/nisa.html",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/",
       "destination": "/index.html"
-    },
-    {
-      "source": "/nisa",
-      "destination": "/nisa.html"
     }
   ],
   "headers": [
