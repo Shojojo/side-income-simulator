@@ -2,6 +2,18 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": false,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/article-ai-side-business",
+      "destination": "/article-ai-side-business.html",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
