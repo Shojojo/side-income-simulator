@@ -511,6 +511,7 @@ h1 {
 
 .view {
   display: none;
+  min-width: 0;
 }
 
 .view.is-active {
@@ -1184,6 +1185,7 @@ label {
 input,
 select {
   width: 100%;
+  min-width: 0;
   min-height: 48px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1331,6 +1333,57 @@ button:active {
 .result-advice p {
   color: var(--muted);
   line-height: 1.75;
+}
+
+.fire-comparison-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  background: #f8fbff;
+}
+
+.fire-comparison-panel h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.fire-scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.fire-scenario-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  min-height: 118px;
+  padding: 14px;
+  border: 1px solid rgba(217, 222, 231, 0.92);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(24, 33, 47, 0.06);
+}
+
+.fire-scenario-card strong {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.fire-scenario-card span {
+  color: var(--ink);
+  font-size: clamp(1.25rem, 6vw, 1.85rem);
+  font-weight: 850;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.fire-scenario-card small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .goal-status-card,
