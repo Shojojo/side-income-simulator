@@ -224,8 +224,8 @@ const routeSeo = {
     description: "毎月生活費、家族人数、雇用形態、副業収入から生活防衛資金を試算し、FIRE前の土台づくりを確認できます。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
   },
   "fixed-cost-reduction": {
-    title: "固定費削減シミュレーター｜会社員の年間節約額と投資効果【2026年版】",
-    description: "通信費、保険、サブスクなどを見直し、長時間労働でも続けやすい固定費改善と投資へ回した効果を試算します。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
+    title: "固定費削減シミュレーター｜年間節約額と家計改善を計算【2026年版】",
+    description: "固定費削減シミュレーターで通信費、保険料、サブスク、住居費などの月間削減額・年間節約額を計算。生活防衛資金、新NISA、FIREへつなげる家計改善を初心者向けに整理します。",
   },
   retirement: {
     title: "老後資金シミュレーター｜会社員の不足額と追加積立を確認【2026年版】",
@@ -6520,7 +6520,7 @@ document.body.innerHTML = `
       <section class="view" data-view="fixed-cost-reduction" aria-label="固定費削減シミュレーター">
         <section class="tool-heading">
           <h2>固定費削減シミュレーター</h2>
-          <p>家賃、通信費、保険料、サブスク費用、食費、クレカ年会費、その他固定費から、毎月固定費合計と削減可能額、年間節約額を試算します。</p>
+          <p>固定費は、住居費、通信費、保険料、サブスクリプションなど毎月ほぼ決まって出ていく支出です。変動費を細かく我慢する前に、一度見直すと効果が続きやすい支出から、月間削減額、年間節約額、将来資産への影響を確認します。</p>
         </section>
 
         <section class="workspace" aria-label="固定費削減の計算">
@@ -6528,36 +6528,43 @@ document.body.innerHTML = `
             <div class="field">
               <label for="rentCost">家賃 <span class="unit">円 / 月</span></label>
               <input id="rentCost" name="rentCost" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="90000" required aria-describedby="rentCostError">
+              <small>住宅ローン、管理費、駐車場代など、毎月固定で払う住居費を入れてください。</small>
               <p class="error" id="rentCostError"></p>
             </div>
             <div class="field">
               <label for="communicationCost">通信費 <span class="unit">円 / 月</span></label>
               <input id="communicationCost" name="communicationCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="12000" required aria-describedby="communicationCostError">
+              <small>スマホ、インターネット回線、家族分の通信費を合計します。仕事で必要な品質は残して考えます。</small>
               <p class="error" id="communicationCostError"></p>
             </div>
             <div class="field">
               <label for="insuranceCost">保険料 <span class="unit">円 / 月</span></label>
               <input id="insuranceCost" name="insuranceCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="18000" required aria-describedby="insuranceCostError">
+              <small>生命保険、医療保険、自動車保険などを入れます。保障不足にならない範囲で見直します。</small>
               <p class="error" id="insuranceCostError"></p>
             </div>
             <div class="field">
               <label for="subscriptionCost">サブスク費用 <span class="unit">円 / 月</span></label>
               <input id="subscriptionCost" name="subscriptionCost" type="number" inputmode="numeric" min="0" max="100000000" step="500" value="5000" required aria-describedby="subscriptionCostError">
+              <small>動画、音楽、クラウド、アプリなど、毎月・毎年の定額課金を月額に直して入れます。</small>
               <p class="error" id="subscriptionCostError"></p>
             </div>
             <div class="field">
               <label for="foodCost">食費 <span class="unit">円 / 月</span></label>
               <input id="foodCost" name="foodCost" type="number" inputmode="numeric" min="0" max="100000000" step="5000" value="70000" required aria-describedby="foodCostError">
+              <small>食費は変動費寄りですが、毎月の目安を入れると無理のない改善余地を確認できます。</small>
               <p class="error" id="foodCostError"></p>
             </div>
             <div class="field">
               <label for="creditCardAnnualFee">クレカ年会費 <span class="unit">円 / 年</span></label>
               <input id="creditCardAnnualFee" name="creditCardAnnualFee" type="number" inputmode="numeric" min="0" max="10000000" step="1000" value="11000" required aria-describedby="creditCardAnnualFeeError">
+              <small>年会費は自動で月額換算します。特典や還元額と比べて判断してください。</small>
               <p class="error" id="creditCardAnnualFeeError"></p>
             </div>
             <div class="field">
               <label for="otherFixedCost">その他固定費 <span class="unit">円 / 月</span></label>
               <input id="otherFixedCost" name="otherFixedCost" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="15000" required aria-describedby="otherFixedCostError">
+              <small>自動車関連費、習い事、会費、定期購入など、毎月続く支出を入れてください。</small>
               <p class="error" id="otherFixedCostError"></p>
             </div>
             <div class="actions">
@@ -6575,17 +6582,17 @@ document.body.innerHTML = `
               <div class="metric">
                 <strong>削減可能額</strong>
                 <span class="accent-green" id="fixedCostReducible">0円</span>
-                <small>毎月見直せる可能性がある金額</small>
+                <small>毎月見直せる可能性がある金額。現在の月額と削減後の想定月額の差を考える目安です</small>
               </div>
               <div class="metric">
                 <strong>年間節約額</strong>
                 <span class="accent-amber" id="fixedCostAnnualSaving">0円</span>
-                <small>削減可能額を12か月続けた場合</small>
+                <small>削減可能額を12か月続けた場合。5年累計はこの金額の5倍、10年累計は10倍が目安です</small>
               </div>
               <div class="metric">
                 <strong>投資へ回した場合の将来資産額</strong>
                 <span class="accent-blue" id="fixedCostFutureAssets">0円</span>
-                <small>20年・年4%で積み立てた場合の目安</small>
+                <small>20年・年4%で積み立てた場合の目安。投資成果を保証するものではありません</small>
               </div>
               <div class="metric">
                 <strong>FIRE達成への影響</strong>
@@ -6601,27 +6608,66 @@ document.body.innerHTML = `
           </section>
         </section>
 
+        <section class="article-panel article-cta-panel" aria-label="固定費削減後のおすすめページ">
+          <h2>固定費を見直したあと、次に確認すること</h2>
+          <p>削減できそうな金額が見えたら、目的に合わせて次のシミュレーターへ進んでください。まず安全資金、次に毎月収支、余裕があれば長期投資やFIREの距離を確認する流れが現実的です。</p>
+          <div class="article-list">
+            <a class="article-link" href="emergency-fund.html"><strong>1. 生活防衛資金を確認する</strong><span>削減後の生活費をもとに、急な支出へ備える現金の目安を確認できます。</span></a>
+            <a class="article-link" href="cash-flow.html"><strong>2. 毎月のキャッシュフローを確認する</strong><span>削減分を含めて、毎月いくら黒字を作れるか確認できます。</span></a>
+            <a class="article-link" href="nisa.html"><strong>3. 削減分をNISAへ回した場合を試算する</strong><span>生活防衛資金を確保したあと、余裕分を長期投資へ回す目安を確認できます。</span></a>
+            <a class="article-link" href="fire.html"><strong>4. FIRE達成までの距離を確認する</strong><span>固定費が下がると必要資産も変わるため、FIREまでの距離を見直せます。</span></a>
+          </div>
+        </section>
+
         <section class="faq-panel" aria-label="固定費削減シミュレーターFAQ">
           <h3>FAQ</h3>
           <div class="faq-list">
             <details>
-              <summary>削減可能額はどう計算していますか？</summary>
-              <p>通信費、保険料、サブスク、食費など、見直しやすさが違うため項目ごとに削減率の目安を変えて概算しています。実際の削減額は契約内容や生活スタイルで変わります。</p>
+              <summary>固定費とは何ですか？</summary>
+              <p>固定費とは、毎月ほぼ決まって出ていく支出です。住居費、通信費、保険料、サブスクリプション、自動車関連費などが代表例です。</p>
             </details>
             <details>
-              <summary>クレカ年会費はどのように扱いますか？</summary>
-              <p>入力した年会費を12か月で割り、月額固定費として合計に含めています。ポイント還元や特典より年会費の負担が大きい場合は、カードの見直し候補になります。</p>
+              <summary>変動費との違いは何ですか？</summary>
+              <p>変動費は食費や娯楽費のように月ごとに変わりやすい支出です。固定費は一度見直すと翌月以降も効果が続きやすいため、家計改善の入口として確認しやすい項目です。</p>
             </details>
             <details>
-              <summary>節約額を投資に回すとどれくらい変わりますか？</summary>
-              <p>このツールでは、毎月の削減可能額を20年間、年4%で積み立てた場合の将来資産額を表示します。固定費削減は一度見直すと効果が続きやすく、FIREや老後資金にも影響します。</p>
+              <summary>何から見直すべきですか？</summary>
+              <p>まずは通信費、使っていないサブスク、重複している保険など、生活満足度を下げにくい項目から確認すると続けやすくなります。</p>
+            </details>
+            <details>
+              <summary>家賃は固定費削減の対象になりますか？</summary>
+              <p>家賃も対象ですが、通勤時間、家族、生活環境への影響が大きいため慎重に考える必要があります。更新時の交渉や住み替え比較など、無理のない範囲で確認してください。</p>
+            </details>
+            <details>
+              <summary>保険料はどこまで減らしてよいですか？</summary>
+              <p>保険料は安ければよいわけではありません。公的保障、家族構成、貯蓄、必要保障額を確認し、保障不足にならない範囲で見直すことが大切です。</p>
+            </details>
+            <details>
+              <summary>通信費の見直しで注意することはありますか？</summary>
+              <p>料金だけでなく、通信速度、エリア、家族割、解約金、端末代の残債、仕事で必要な安定性も確認してください。</p>
+            </details>
+            <details>
+              <summary>サブスクリプションはすべて解約すべきですか？</summary>
+              <p>すべて解約する必要はありません。使っていない契約、似た用途で重複している契約、年払いのまま忘れている契約から確認すると、無理なく削減しやすくなります。</p>
+            </details>
+            <details>
+              <summary>削減したお金は貯金と投資のどちらに回すべきですか？</summary>
+              <p>生活防衛資金が不足している場合は、まず安全資金として貯金するのが現実的です。余裕ができた分を新NISAなどの長期投資へ回す順番にすると、家計を崩しにくくなります。</p>
+            </details>
+            <details>
+              <summary>生活防衛資金との関係は？</summary>
+              <p>固定費を下げると毎月必要な生活費も下がるため、生活防衛資金として必要な金額も抑えやすくなります。</p>
+            </details>
+            <details>
+              <summary>FIREを目指す場合、固定費削減はどの程度重要ですか？</summary>
+              <p>FIREでは生活費が低いほど必要資産も下がりやすくなります。ただし必要な支出まで削ると継続できないため、生活の質と安全資金を残した改善が大切です。</p>
             </details>
           </div>
         </section>
         <section class="article-panel operator-comment" aria-label="固定費削減シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、毎月固定費の削減余地と投資効果を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業時間を増やす前に、通信費やサブスクなど一度で効く支出を見直しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、必要な保険や生活の質まで削りすぎないようにしてください。次は <a href="life-cost.html">生活コスト最適化シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、毎月固定費の削減余地と投資効果を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業時間を増やす前に、通信費やサブスクなど一度で効く支出を見直しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、必要な保険や生活の質まで削りすぎないようにしてください。次は <a href="cash-flow.html">会社員キャッシュフローシミュレーター</a> で、削減分を毎月の黒字に反映してください。</p>
           </section>
         </section>
 
@@ -6635,13 +6681,16 @@ document.body.innerHTML = `
         <section class="article-panel" aria-label="固定費削減関連ツール">
           <section class="tool-heading">
             <h2>次に試すシミュレーター</h2>
-            <p>固定費を下げた分は、生活防衛資金やFIRE準備、クレジットカードの見直しと合わせて考えると効果を確認しやすくなります。</p>
+            <p>固定費を下げた分は、まず生活防衛資金と毎月収支を確認し、その後にNISA、FIRE、老後資金、副業収入の改善へつなげると判断しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="fire.html">FIREシミュレーター</a>
-            <a href="fire-cost-optimization.html">FIRE生活費最適化シミュレーター</a>
             <a href="emergency-fund.html">生活防衛資金シミュレーター</a>
-            <a href="article-credit-card-comparison.html">クレカ比較記事</a>
+            <a href="cash-flow.html">会社員キャッシュフローシミュレーター</a>
+            <a href="nisa.html">新NISA・積立投資シミュレーター</a>
+            <a href="fire.html">FIRE達成シミュレーター</a>
+            <a href="retirement.html">老後資金シミュレーター</a>
+            <a href="side-income.html">副業月収シミュレーター</a>
+            <a href="take-home.html">副業手取りシミュレーター</a>
           </div>
         </section>
       </section>
@@ -8522,7 +8571,7 @@ function insertLastUpdatedDates() {
     "cash-flow": "2026年6月30日",
     "life-cost": "2026年6月30日",
     "emergency-fund": "2026年6月30日",
-    "fixed-cost-reduction": "2026年6月30日",
+    "fixed-cost-reduction": "2026年7月31日",
     "retirement": "2026年6月30日",
     "education": "2026年6月30日",
     "education-insurance": "2026年6月30日",
