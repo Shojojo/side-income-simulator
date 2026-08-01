@@ -212,6 +212,7 @@ h1 {
 }
 
 .problem-navigation,
+.site-about-panel,
 .problem-entry-panel,
 .primary-simulator-hub,
 .featured-article-hub,
@@ -219,6 +220,89 @@ h1 {
 .beginner-roadmap,
 .all-simulators-panel {
   scroll-margin-top: 18px;
+}
+
+.site-about-panel {
+  border-color: rgba(18, 115, 93, 0.22);
+  background: #ffffff;
+}
+
+.brand-mission {
+  color: var(--green);
+  font-size: clamp(1.08rem, 4.5vw, 1.42rem);
+  font-weight: 850;
+  line-height: 1.55;
+}
+
+.brand-story {
+  display: grid;
+  gap: 10px;
+  color: var(--ink);
+  line-height: 1.85;
+}
+
+.brand-promise-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.brand-promise-card {
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(217, 222, 231, 0.92);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbfcfe;
+}
+
+.brand-promise-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.brand-promise-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.brand-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.brand-path span {
+  width: 100%;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.brand-path a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(18, 115, 93, 0.28);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--green);
+  background: #f7fbf8;
+  font-size: 0.88rem;
+  font-weight: 850;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.brand-path a:focus-visible {
+  outline: 2px solid rgba(18, 115, 93, 0.32);
+  outline-offset: 3px;
 }
 
 .problem-entry-panel {
@@ -1240,6 +1324,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .brand-promise-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .popular-tool-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1247,6 +1335,7 @@ h1 {
 
 @media (max-width: 560px) {
   .hero-action-nav a,
+  .brand-path a,
   .card-actions a,
   .primary-simulator-card .primary-link,
   .popular-tool-card a {
