@@ -1160,6 +1160,15 @@ h1 {
   background: linear-gradient(180deg, #ffffff 0%, #f3fbf8 100%);
 }
 
+.next-recommend-panel {
+  background: #ffffff;
+}
+
+.next-recommend-card b::after {
+  content: "→";
+  margin-left: 7px;
+}
+
 .unified-journey-section {
   display: grid;
   gap: 18px;
@@ -1310,6 +1319,14 @@ h1 {
 
   .next-step-card.is-primary {
     grid-column: 1 / -1;
+  }
+
+  .next-recommend-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .next-recommend-grid .next-step-card.is-primary {
+    grid-column: auto;
   }
 
   .journey-grid {
