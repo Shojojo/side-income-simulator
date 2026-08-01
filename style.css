@@ -1543,6 +1543,51 @@ button:active {
   overflow: hidden;
 }
 
+.result-reading-panel {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+  border-color: rgba(36, 87, 197, 0.16);
+  background: #ffffff;
+}
+
+.result-reading-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result-reading-list li {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcfe;
+}
+
+.result-reading-list strong {
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.result-reading-list span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.result-reading-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
 .hero-result {
   display: grid;
   gap: 10px;
