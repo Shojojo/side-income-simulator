@@ -427,6 +427,23 @@ h1 {
   background: linear-gradient(180deg, #ffffff 0%, #f4fbf7 100%);
 }
 
+.brand-intro-panel,
+.first-read-panel,
+.next-challenge-panel {
+  border-color: rgba(18, 115, 93, 0.22);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fcfa 100%);
+}
+
+.next-challenge-panel .tool-heading {
+  margin-bottom: 0;
+}
+
+.next-challenge-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 .featured-record-card {
   border-color: rgba(18, 115, 93, 0.22);
   background: #ffffff;
