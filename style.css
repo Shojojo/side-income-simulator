@@ -179,7 +179,7 @@ h1 {
 .primary-link,
 .subtle-link,
 .popular-tool-card a {
-  min-height: 42px;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -199,9 +199,15 @@ h1 {
   background: var(--green);
 }
 
-.static-home .hero-action-nav a:not(:first-child) {
+.static-home .hero-action-nav a:not(.hero-cta-primary) {
   color: var(--green);
-  border-color: rgba(18, 115, 93, 0.28);
+  border-color: rgba(18, 115, 93, 0.24);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.static-home .hero-action-nav a:not(.hero-cta-primary):hover,
+.static-home .hero-action-nav a:not(.hero-cta-primary):focus-visible {
+  border-color: rgba(18, 115, 93, 0.42);
   background: #f7fbf8;
 }
 
