@@ -1982,7 +1982,7 @@ document.body.innerHTML = `
                 <section class="article-panel" aria-label="初心者が注意すること"><section class="tool-heading"><h2>初心者が注意すること</h2><p>副業収入は、売上だけで判断しないことが大切です。</p></section><ul><li>売上と利益は違うため、経費や税金を引いた手取りも確認する</li><li>勤務先の就業規則、住民税、確定申告の要否を早めに確認する</li><li>短期間の結果だけで判断せず、作業時間と疲労も記録する</li><li>AI活用で効率化しても、最終確認や修正時間は残る前提で考える</li></ul></section>
                 <section class="article-panel operator-comment" aria-label="副業月収シミュレーターの運営者コメント"><section class="tool-heading"><h2>運営者コメント</h2></section><p>このページは、本業後にどれくらい副業収入を作れるかを最初に把握するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。帰宅後に使える時間を少なめに入れ、無理なく月5万円へ近づける作業量を見ています。売上だけで安心せず、税金や経費を引いた手取りも必ず確認してください。</p></section>
                 <section class="article-panel usage-note" aria-label="副業月収の利用時の注意点"><section class="tool-heading"><h2>利用時の注意点</h2></section><p>このシミュレーターだけで副業の可否を判断しないでください。税金、生活費、投資へ回せる余力、作業時間の疲れを総合的に見る必要があります。案件単価が上がるパターンだけでなく、修正時間が増えるパターン、税金が重くなるパターンも置いてください。制度や勤務先ルールは変更される可能性があるため、最新情報も見直してください。</p></section>
-                <section class="next-read-section" aria-label="次に試すシミュレーター"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>月収の目安を見たら、手取り、税金、時給、時間管理へ進むと判断しやすくなります。</p></section><div class="next-read-grid"><a class="next-read-card" href="take-home.html"><strong>副業手取りシミュレーター</strong><span>売上から経費や税金を引いた手取りの目安を確認します。</span></a><a class="next-read-card" href="tax.html"><strong>税金シミュレーター</strong><span>副業で増える税金や青色申告の影響を確認します。</span></a><a class="next-read-card" href="hourly-improvement.html"><strong>副業時給改善シミュレーター</strong><span>作業効率やAI活用で実質時給を上げられるか確認します。</span></a><a class="next-read-card" href="side-time-management.html"><strong>副業時間管理シミュレーター</strong><span>本業、睡眠、家事と副業時間のバランスを確認します。</span></a></div></section>
+                <section class="next-read-section" aria-label="関連シミュレーター"><section class="tool-heading"><h2>関連シミュレーター</h2><p>月収の目安を見たあと、時間や時給の改善余地も合わせて確認できます。</p></section><div class="next-read-grid"><a class="next-read-card" href="hourly-improvement.html"><strong>副業時給改善シミュレーター</strong><span>作業効率やAI活用で実質時給を上げられるか確認します。</span></a><a class="next-read-card" href="side-time-management.html"><strong>副業時間管理シミュレーター</strong><span>本業、睡眠、家事と副業時間のバランスを確認します。</span></a></div></section>
                 <section class="next-read-section" aria-label="次に読む記事"><section class="tool-heading"><h2>次に読む記事</h2><p>副業月収を試算したあと、時間、税金、AI活用を具体的に考えるための記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>忙しい会社員が無理なく作業時間を作る考え方です。</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>月5万円までの作業量と現実的な進め方を整理しています。</span></a><a class="next-read-card" href="article-side-tax.html"><strong>副業税金の基礎知識</strong><span>副業収入が出たあとに必要な申告、住民税、経費の考え方です。</span></a><a class="next-read-card" href="article-ai-tools-comparison.html"><strong>副業向けおすすめAIツール比較</strong><span>限られた時間で作業効率を上げるAI活用を比較しています。</span></a></div></section>
                 <section class="article-panel faq-section" aria-label="副業月収シミュレーターFAQ"><section class="tool-heading"><h2>よくある質問</h2><p>副業月収を試算するときに、会社員が迷いやすい点をまとめました。</p></section><div class="faq-list"><details><summary>副業初心者は月いくらを目標にすればよいですか？</summary><p>最初は月1万円から月3万円を目安にすると、作業習慣を作りやすいです。いきなり大きな金額を狙うより、使える時間と疲労感を見ながら調整してください。</p></details><details><summary>月5万円を目指すには何時間必要ですか？</summary><p>時給2,000円なら月25時間、時給3,000円なら約17時間が目安です。実際には修正や連絡時間もあるため、少し余裕を見て考えると安全です。</p></details><details><summary>売上と手取りのどちらを見るべきですか？</summary><p>最初は売上で目標を置いても大丈夫ですが、続ける判断は手取りで見る方が現実的です。経費、所得税、住民税を引いたあとに残る金額も確認してください。</p></details><details><summary>作業時間と単価のどちらを改善すべきですか？</summary><p>本業後の時間に限りがある会社員は、作業時間を増やしすぎると疲れやすくなります。継続できる時間を決め、その後に単価改善やAI活用を考えるのがおすすめです。</p></details><details><summary>本業後に時間が取れない場合はどう入力しますか？</summary><p>理想の作業時間ではなく、疲れている週でも続けられる時間を入れてください。平日が難しければ休日だけの作業時間で試すと無理の少ない計画になります。</p></details><details><summary>AIを使うと副業月収は増えますか？</summary><p>AIで調査、構成、下書き、確認作業を短縮できれば、同じ時間でこなせる作業量が増える可能性があります。ただし、品質確認や体験談の追加は自分で行う必要があります。</p></details><details><summary>案件数を増やせば収入は伸びますか？</summary><p>案件数を増やすと収入は伸びる可能性がありますが、納期管理や修正対応も増えます。無理に増やす前に、単価、作業時間、疲労度のバランスを見てください。</p></details><details><summary>月10万円を超えたら何を意識すべきですか？</summary><p>収支管理、税金、確定申告、作業時間の最適化が重要になります。事業として管理する意識を持ち、記録や経費管理を早めに整えると安心です。</p></details><details><summary>会社員が副業前に確認することは何ですか？</summary><p>勤務先の就業規則、税金、住民税、作業時間、健康面を確認してください。収入だけでなく、無理なく続けられるかを先に見ることが大切です。</p></details><details><summary>計算結果と実際の収入が違う理由は何ですか？</summary><p>実際の収入は案件単価、修正回数、営業時間、経費、税金、本業の忙しさで変わります。結果は保証ではなく、条件を整理するための目安として使ってください。</p></details></div></section>
                 <section class="article-panel update-history" aria-label="更新履歴"><section class="tool-heading"><h2>更新履歴</h2><p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p></section><div class="update-history-list"><article class="update-entry"><time datetime="2026-07-21">2026年7月21日</time><ul><li>シミュレーターをページ上部へ移動</li><li>目標月収との差額、達成率、必要時間を追加</li><li>計算結果に応じた改善提案と3パターン比較を追加</li><li>重複していたFAQと関連記事を統合</li><li>目標達成状況、比較グラフ、保存・共有・印刷機能を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-19">2026年7月19日</time><ul><li>副業収入の目標と必要な行動量をイメージしやすい解説を追加</li><li>計算結果の見方、目標別の考え方、初心者向けFAQ10件、関連記事を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-09">2026年7月9日</time><ul><li>副業月収ページにFAQと関連記事5件を追加</li><li>関連記事、FAQ、内部リンクをHelpful Content向けに見直し</li></ul></article></div></section>
@@ -9512,7 +9512,7 @@ function renderUnifiedJourney(route) {
           ${buildJourneyGrid(nextArticles)}
         </div>
         <div class="journey-block">
-          <h3>次に試すシミュレーター</h3>
+          <h3>関連シミュレーター</h3>
           ${buildJourneyGrid(nextTools)}
         </div>
         <div class="journey-block">
@@ -9584,7 +9584,7 @@ function buildExperienceSection(profile) {
             <div class="related-links">${links}</div>
           </div>
           <div class="experience-block">
-            <h3>次に試すシミュレーター</h3>
+            <h3>関連シミュレーター</h3>
             <p>近いテーマのシミュレーターをカテゴリ連動・人気順優先で5件表示しています。</p>
             <div class="related-links">${relatedTools}</div>
           </div>
@@ -14103,6 +14103,62 @@ function currentRoute() {
   return "top";
 }
 
+const nextStepConfigs = {
+  "side-income": [
+    ["最優先", "実際に残る金額を確認する", "売上額から経費や税金を差し引いた後の手取りを確認します。", "副業手取り計算シミュレーター", "take-home.html", "手取りを計算する", "side-income-to-take-home"],
+    ["補助", "税金の目安を確認する", "副業所得に対する所得税・住民税の概算を確認します。", "副業税金シミュレーター", "tax.html", "税金を確認する", "side-income-to-tax"],
+    ["将来目標", "副業収入を将来目標につなげる", "現在の副業収入を積み立てた場合、FIREまでの距離を確認します。", "FIRE達成シミュレーター", "fire.html", "FIREまでの距離を見る", "side-income-to-fire"],
+  ],
+  "take-home": [
+    ["最優先", "税金の内訳を確認する", "手取りが減る要因となる所得税・住民税の概算を確認します。", "副業税金シミュレーター", "tax.html", "税金を確認する", "take-home-to-tax"],
+    ["補助", "毎月残せる金額を確認する", "本業と副業の収入、生活費を含めた毎月のお金の流れを確認します。", "キャッシュフローシミュレーター", "cash-flow.html", "収支を確認する", "take-home-to-cash-flow"],
+    ["将来目標", "手取りを資産形成へつなげる", "毎月の手取りを積み立てた場合の将来目標を確認します。", "FIRE達成シミュレーター", "fire.html", "FIREまでの距離を見る", "take-home-to-fire"],
+  ],
+  tax: [
+    ["最優先", "税引後に残る金額を確認する", "税金を反映した後、実際に使える手取り額を確認します。", "副業手取り計算シミュレーター", "take-home.html", "手取りを計算する", "tax-to-take-home"],
+    ["補助", "税引後のお金の使い道を整理する", "手取りを生活費、貯蓄、投資へどう配分するか確認します。", "キャッシュフローシミュレーター", "cash-flow.html", "使い道を整理する", "tax-to-cash-flow"],
+    ["将来目標", "税引後収入でFIREを試算する", "実際に残る金額を基準に、目標達成までの期間を確認します。", "FIRE達成シミュレーター", "fire.html", "FIREを試算する", "tax-to-fire"],
+  ],
+  fire: [
+    ["最優先", "毎月の投資可能額を確認する", "現在の収支から、無理なく積み立てられる金額を確認します。", "キャッシュフローシミュレーター", "cash-flow.html", "投資可能額を確認する", "fire-to-cash-flow"],
+    ["補助", "積立運用の将来額を確認する", "毎月の積立額と運用期間から、将来の資産額を確認します。", "新NISAシミュレーター", "nisa.html", "NISAを試算する", "fire-to-nisa"],
+    ["将来目標", "FIREまでの期間を短くする", "固定費を削減した場合、投資へ回せる金額がどれだけ増えるか確認します。", "固定費削減シミュレーター", "fixed-cost-reduction.html", "固定費削減を試算する", "fire-to-fixed-cost"],
+  ],
+};
+
+function renderNextStepSection(route) {
+  const cards = nextStepConfigs[route];
+  const view = document.querySelector(`.view[data-view="${route}"]`);
+  if (!cards || !view || view.querySelector(".next-step-panel")) {
+    return;
+  }
+
+  const workspace = view.querySelector(".workspace");
+  if (!workspace) {
+    return;
+  }
+
+  const cardHtml = cards.map(([label, title, reason, destination, href, buttonText, dataKey], index) => `
+    <a class="next-step-card${index === 0 ? " is-primary" : ""}" href="${href}" data-next-step="${dataKey}">
+      <span class="next-step-label">${label}</span>
+      <strong>${title}</strong>
+      <span>${reason}</span>
+      <span>進むページ：${destination}</span>
+      <b>${buttonText}</b>
+    </a>`).join("");
+
+  workspace.insertAdjacentHTML("afterend", `
+    <section class="article-panel next-step-panel" aria-label="次に確認すること">
+      <section class="tool-heading">
+        <h2>次に確認すること</h2>
+        <p>今回の結果をもとに、次に確認すると判断しやすい項目を案内します。</p>
+      </section>
+      <div class="next-step-grid">
+        ${cardHtml}
+      </div>
+    </section>`);
+}
+
 function renderRoute() {
   const route = currentRoute();
   const seo = routeSeo[route] || routeSeo.top;
@@ -14121,6 +14177,7 @@ function renderRoute() {
   renderBreadcrumb(route, seo);
   updateDynamicStructuredData(route, seo);
   renderUnifiedJourney(route);
+  renderNextStepSection(route);
 }
 
 function updateDynamicStructuredData(route, seo) {
