@@ -85,12 +85,28 @@
                               "breadcrumb": {
                                       "@id": "https://side-income-simulator.vercel.app/side-income.html#breadcrumb"
                               },
-                              "dateModified": "2026-08-04",
+                              "dateModified": "2026-08-24",
                               "inLanguage": "ja"
+                      },
+                      {
+                              "@type": "WebApplication",
+                              "@id": "https://side-income-simulator.vercel.app/side-income.html#webapplication",
+                              "name": "副業月収シミュレーター",
+                              "url": "https://side-income-simulator.vercel.app/side-income.html",
+                              "description": "時給、作業時間、案件数、経費、税率、目標月収から副業月収と目標達成状況を概算する無料シミュレーターです。",
+                              "applicationCategory": "FinanceApplication",
+                              "operatingSystem": "Any",
+                              "browserRequirements": "JavaScript enabled",
+                              "offers": {
+                                      "@type": "Offer",
+                                      "price": "0",
+                                      "priceCurrency": "JPY"
+                              }
                       },
                       {
                               "@type": "FAQPage",
                               "@id": "https://side-income-simulator.vercel.app/side-income.html#faq",
+                              "name": "副業月収シミュレーター FAQ",
                               "mainEntity": [
                                       {
                                               "@type": "Question",
@@ -110,74 +126,18 @@
                                       },
                                       {
                                               "@type": "Question",
-                                              "name": "売上と手取りのどちらを見るべきですか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "最初は売上で目標を置いても大丈夫ですが、続ける判断は手取りで見る方が現実的です。経費、所得税、住民税を引いたあとに残る金額も確認してください。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "作業時間と単価のどちらを改善すべきですか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "本業後の時間に限りがある会社員は、作業時間を増やしすぎると疲れやすくなります。継続できる時間を決め、その後に単価改善やAI活用を考えるのがおすすめです。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "本業後に時間が取れない場合はどう入力しますか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "理想の作業時間ではなく、疲れている週でも続けられる時間を入れてください。平日が難しければ休日だけの作業時間で試すと無理の少ない計画になります。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "AIを使うと副業月収は増えますか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "AIで調査、構成、下書き、確認作業を短縮できれば、同じ時間でこなせる作業量が増える可能性があります。ただし、品質確認や体験談の追加は自分で行う必要があります。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "案件数を増やせば収入は伸びますか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "案件数を増やすと収入は伸びる可能性がありますが、納期管理や修正対応も増えます。無理に増やす前に、単価、作業時間、疲労度のバランスを見てください。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "月10万円を超えたら何を意識すべきですか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "収支管理、税金、確定申告、作業時間の最適化が重要になります。事業として管理する意識を持ち、記録や経費管理を早めに整えると安心です。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "会社員が副業前に確認することは何ですか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "勤務先の就業規則、税金、住民税、作業時間、健康面を確認してください。収入だけでなく、無理なく続けられるかを先に見ることが大切です。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
-                                              "name": "計算結果と実際の収入が違う理由は何ですか？",
-                                              "acceptedAnswer": {
-                                                      "@type": "Answer",
-                                                      "text": "実際の収入は案件単価、修正回数、営業時間、経費、税金、本業の忙しさで変わります。結果は保証ではなく、条件を整理するための目安として使ってください。"
-                                              }
-                                      },
-                                      {
-                                              "@type": "Question",
                                               "name": "副業収入はいくらから確定申告が必要ですか？",
                                               "acceptedAnswer": {
                                                       "@type": "Answer",
                                                       "text": "会社員の場合、副業の所得が一定額を超えると確定申告が必要になることがあります。一般的には給与所得者の副業所得20万円超が一つの目安として知られていますが、医療費控除などで申告する場合や住民税の扱いは別に確認が必要です。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "副業所得が20万円以下なら何もしなくてよいですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "所得税の確定申告では20万円以下が目安になる場合がありますが、住民税の申告は別に必要になることがあります。また、他の控除や申告内容によって扱いが変わるため、公的情報も確認してください。"
                                               }
                                       },
                                       {
@@ -198,6 +158,14 @@
                                       },
                                       {
                                               "@type": "Question",
+                                              "name": "売上と手取りのどちらを見るべきですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "最初は売上で目標を置いても大丈夫ですが、続ける判断は手取りで見る方が現実的です。経費、所得税、住民税を引いたあとに残る金額も確認してください。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
                                               "name": "副業は会社にバレますか？",
                                               "acceptedAnswer": {
                                                       "@type": "Answer",
@@ -214,10 +182,26 @@
                                       },
                                       {
                                               "@type": "Question",
-                                              "name": "副業所得が20万円以下なら何もしなくてよいですか？",
+                                              "name": "作業時間と単価のどちらを改善すべきですか？",
                                               "acceptedAnswer": {
                                                       "@type": "Answer",
-                                                      "text": "所得税の確定申告では20万円以下が目安になる場合がありますが、住民税の申告は別に必要になることがあります。また、他の控除や申告内容によって扱いが変わるため、公的情報も確認してください。"
+                                                      "text": "本業後の時間に限りがある会社員は、作業時間を増やしすぎると疲れやすくなります。継続できる時間を決め、その後に単価改善やAI活用を考えるのがおすすめです。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "AIを使うと副業月収は増えますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "AIで調査、構成、下書き、確認作業を短縮できれば、同じ時間でこなせる作業量が増える可能性があります。ただし、品質確認や体験談の追加は自分で行う必要があります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "案件数を増やせば収入は伸びますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "案件数を増やすと収入は伸びる可能性がありますが、納期管理や修正対応も増えます。無理に増やす前に、単価、作業時間、疲労度のバランスを見てください。"
                                               }
                                       },
                                       {
@@ -227,23 +211,16 @@
                                                       "@type": "Answer",
                                                       "text": "売上だけを増やすのではなく、手取り、税金、経費、作業時間をセットで確認してください。納税用の資金を分け、生活費や投資に回せる金額を把握すると、次の行動を決めやすくなります。"
                                               }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "計算結果と実際の収入が違う理由は何ですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "実際の収入は案件単価、修正回数、営業時間、経費、税金、本業の忙しさで変わります。結果は保証ではなく、条件を整理するための目安として使ってください。"
+                                              }
                                       }
                               ]
-                      },
-                      {
-                              "@type": "WebApplication",
-                              "@id": "https://side-income-simulator.vercel.app/side-income.html#webapplication",
-                              "name": "副業月収シミュレーター",
-                              "url": "https://side-income-simulator.vercel.app/side-income.html",
-                              "description": "時給、作業時間、案件数、経費、税率、目標月収から副業月収と目標達成状況を概算する無料シミュレーターです。",
-                              "applicationCategory": "FinanceApplication",
-                              "operatingSystem": "Any",
-                              "browserRequirements": "JavaScript enabled",
-                              "offers": {
-                                      "@type": "Offer",
-                                      "price": "0",
-                                      "priceCurrency": "JPY"
-                              }
                       }
               ]
       }
@@ -253,7 +230,7 @@
     <main>
       <div class="app-shell">
         <h1>副業月収シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年8月4日</p>
+          <p class="article-meta">最終更新日：2026年8月24日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-side-business.html">副業</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -262,6 +239,15 @@
 
         <p>時給、月間作業時間、案件数から副業月収の目安をすぐ確認できます。本業後に使える時間が限られる会社員向けに、目標との差額や次に改善するポイントまで整理します。</p>
         <p><a class="primary-link calculator-quick-link" href="#side-income-calculator">計算を始める</a></p>
+
+        <section class="article-panel" aria-label="副業月収計算の前提">
+          <section class="tool-heading">
+            <h2>月収計算の前提</h2>
+            <p>副業月収は、単価、作業時間、件数を分けて見ると現実的に判断しやすくなります。</p>
+          </section>
+          <p>このシミュレーターでは、入力した「時給・単価の目安」「1案件または1か月の作業時間」「案件数・作業セット数」から、予想副業月収を計算します。案件数を1にすれば、月の総作業時間として使えます。たとえば時給2,000円で月20時間なら、売上の目安は4万円です。ここに月の経費と税率の目安を入れることで、売上だけでなく税・経費後の月額目安も確認できます。</p>
+          <p>会社員の副業では、月収の大きさだけでなく、本業後にその作業時間を続けられるかが重要です。月収が高く見えても、修正対応や連絡時間が増えれば実質時給は下がります。最初は大きな金額を狙うより、無理なく続く作業時間と、税金や経費を引いたあとに残る金額をセットで見てください。</p>
+        </section>
 
         <section class="workspace" id="side-income-calculator" aria-label="副業収入の計算">
           <form class="input-panel" id="sideIncomeForm">
@@ -373,10 +359,10 @@
           </div>
         </section>
 
-        <section class="article-panel next-step-panel" aria-label="次に読むページ">
+        <section class="article-panel next-step-panel" aria-label="用途別に詳しく確認するページ">
           <section class="tool-heading">
-            <h2>次に読むページ</h2>
-            <p>副業月収の結果を、手取り、税金、AI活用、将来設計へつなげるためのページです。</p>
+            <h2>用途別に詳しく確認するページ</h2>
+            <p>結果を見たあと、気になるテーマを深掘りするための補助導線です。</p>
           </section>
           <div class="next-step-grid">
             <a class="next-step-card is-primary" href="take-home.html" data-next-step="side-income-read-take-home">
@@ -414,7 +400,7 @@
         <section class="article-panel" aria-label="3パターン比較"><section class="tool-heading"><h2>3パターン比較</h2><p>同じ条件から、控えめ・標準・改善後を比べます。収入保証ではなく、条件を変えた場合の目安です。</p></section><div class="comparison-table" role="region" aria-label="副業月収3パターン比較" tabindex="0"><table><caption>副業月収の3パターン比較</caption><thead><tr><th scope="col">ケース</th><th scope="col">月収</th><th scope="col">月間作業時間</th><th scope="col">見方</th></tr></thead><tbody><tr><th scope="row">控えめ</th><td id="caseConservativeIncome">0円</td><td id="caseConservativeHours">0時間</td><td>作業時間が入力値の80%になった場合</td></tr><tr><th scope="row">標準</th><td id="caseStandardIncome">0円</td><td id="caseStandardHours">0時間</td><td>入力値どおりに作業できた場合</td></tr><tr><th scope="row">改善後</th><td id="caseImprovedIncome">0円</td><td id="caseImprovedHours">0時間</td><td>時給または作業効率が20%上がった場合</td></tr></tbody></table></div></section>
         <section class="article-panel" aria-label="このページを作った理由"><section class="tool-heading"><h2>このページを作った理由</h2><p>副業の目標収入と、そこに必要な作業量を具体的に見るために作りました。</p></section><p>副業を始めようと思ったとき、「実際に月いくら稼げるのか」「自分の使える時間で、どこまで目指せるのか」が分かりませんでした。成功例は見つかっても、その金額を達成するために何時間働く必要があるのか、本業と両立できるのかまでは分かりにくいと感じました。</p><p>私自身も運送会社の管理職として働いているため、予定通りに副業時間を取れない日があります。だからこそ、理想の金額だけでなく、疲れている週でも続けられる時間から逆算することを大切にしています。</p></section>
         <section class="article-panel" aria-label="このシミュレーターで分かること"><section class="tool-heading"><h2>このシミュレーターで分かること</h2><p>月収だけでなく、必要な行動量も確認できます。</p></section><ul><li>月の副業収入と年間収入の目安</li><li>月間作業時間と実質時給</li><li>目標金額に足りない差額と追加時間</li><li>作業時間を増やすべきか、単価改善を優先すべきか</li><li>税金・手取り・時間管理へ進むための次の行動</li></ul></section>
-        <section class="article-panel" aria-label="副業月収を行動に変える考え方"><section class="tool-heading"><h2>副業月収を行動に変える考え方</h2><p>AdSense審査や検索評価でも、単なる数字だけでなく利用者の判断に役立つ説明が重要になります。</p></section><p>副業月収を計算するときは、「月5万円を稼げるか」だけを見ると判断が偏りやすくなります。同じ月5万円でも、月10時間で達成する人と、月60時間かけて達成する人では、本業や生活への負担がまったく違います。会社員の場合は、収入額、作業時間、疲労、税金、勤務先ルールをまとめて確認する必要があります。</p><p>たとえば、予想月収が3万円でも、毎月安定して残せるなら生活防衛資金やNISAの原資になります。一方で、予想月収が10万円でも、睡眠時間を削り続ける計画なら長期的には見直しが必要です。このページでは、売上、税・経費後の金額、実質時給、目標との差額を並べて表示することで、次に何を改善するべきかを考えやすくしています。</p><p>副業を始めたばかりの人は、最初から高単価案件や大きな売上を狙うより、作業を記録することを優先してください。作業時間、修正回数、経費、納期遅れの有無を残しておくと、自分に合う副業と合わない副業が見えてきます。数字を毎月見直すことで、単価改善、経費削減、時間管理、税金準備のどこから手を付けるべきか判断しやすくなります。</p><p>また、副業収入が出始めたら、確定申告や住民税の確認も早めに行ってください。所得税の確定申告が不要に見える金額でも、住民税の申告が必要になる場合があります。制度や税率は変わる可能性があるため、このページの結果はあくまで概算として使い、必要に応じて国税庁、自治体、税理士などの情報も確認してください。</p></section>
+        <section class="article-panel" aria-label="副業月収を行動に変える考え方"><section class="tool-heading"><h2>副業月収を行動に変える考え方</h2><p>単なる売上ではなく、続けられる作業量と実際に残る金額から次の行動を考えます。</p></section><p>副業月収を計算するときは、「月5万円を稼げるか」だけを見ると判断が偏りやすくなります。同じ月5万円でも、月10時間で達成する人と、月60時間かけて達成する人では、本業や生活への負担がまったく違います。会社員の場合は、収入額、作業時間、疲労、税金、勤務先ルールをまとめて確認する必要があります。</p><p>たとえば、予想月収が3万円でも、毎月安定して残せるなら生活防衛資金やNISAの原資になります。一方で、予想月収が10万円でも、睡眠時間を削り続ける計画なら長期的には見直しが必要です。このページでは、売上、税・経費後の金額、実質時給、目標との差額を並べて表示することで、次に何を改善するべきかを考えやすくしています。</p><p>副業を始めたばかりの人は、最初から高単価案件や大きな売上を狙うより、作業を記録することを優先してください。作業時間、修正回数、経費、納期遅れの有無を残しておくと、自分に合う副業と合わない副業が見えてきます。数字を毎月見直すことで、単価改善、経費削減、時間管理、税金準備のどこから手を付けるべきか判断しやすくなります。</p><p>また、副業収入が出始めたら、確定申告や住民税の確認も早めに行ってください。所得税の確定申告が不要に見える金額でも、住民税の申告が必要になる場合があります。制度や税率は変わる可能性があるため、このページの結果はあくまで概算として使い、必要に応じて国税庁、自治体、税理士などの情報も確認してください。</p></section>
         <section class="article-panel" aria-label="目標別の考え方"><section class="tool-heading"><h2>目標別の考え方</h2><p>非現実的な成功を前提にせず、時間、単価、継続の3要素で考えます。</p></section><div class="article-list"><div class="article-link"><strong>月1万円</strong><span>副業を生活リズムに入れる段階です。短時間でも継続できる作業日を固定することを優先します。</span></div><div class="article-link"><strong>月3万円</strong><span>週2〜3回の作業や小さな案件の継続が必要になりやすい水準です。疲労を残しすぎない設計が大切です。</span></div><div class="article-link"><strong>月5万円</strong><span>家計への効果を感じやすい一方、税金や経費も見え始めます。売上だけでなく手取りも確認してください。</span></div><div class="article-link"><strong>月10万円</strong><span>収支管理、納期、税金、作業時間の最適化を含めて、事業として管理する意識が必要になりやすい段階です。</span></div><div class="article-link"><strong>月20万円</strong><span>本業と両立するなら、作業の仕組み化、AI活用、案件選び、外注の検討が重要になります。</span></div></div></section>
         <section class="article-panel comparison-section" aria-label="副業比較表"><section class="tool-heading"><h2>副業比較表</h2><p>運営者が会社員の本業後に取り組む前提で整理した目安です。</p></section><div class="comparison-table" role="region" aria-label="副業比較表" tabindex="0"><table><caption>会社員が本業後に取り組む前提の副業比較</caption><thead><tr><th scope="col">副業タイプ</th><th scope="col">必要時間</th><th scope="col">初期費用</th><th scope="col">収益化速度</th><th scope="col">継続難易度</th><th scope="col">AI活用相性</th><th scope="col">会社員向きか</th></tr></thead><tbody><tr><td>Webライティング</td><td>平日1時間から可</td><td>低い</td><td>早め</td><td>中</td><td>構成・下書きで高い</td><td>分割しやすい</td></tr><tr><td>資料作成・事務代行</td><td>まとまった夜時間が必要</td><td>低い</td><td>早め</td><td>中</td><td>要約・整形で高い</td><td>管理職経験を活かしやすい</td></tr><tr><td>動画編集</td><td>長め</td><td>中</td><td>中</td><td>高</td><td>台本・字幕で中</td><td>休日作業向き</td></tr><tr><td>ブログ・メディア運営</td><td>短時間を継続</td><td>低〜中</td><td>遅め</td><td>高</td><td>調査・構成で高い</td><td>長期で積み上げたい人向き</td></tr></tbody></table></div><p class="verification-note"><strong>実際に運営者も検証中。</strong>当日欠勤対応や夜間対応があるため、毎日3時間前提ではなく、平日1時間でも進む副業を中心に比較しています。</p></section>
         <section class="article-panel" aria-label="初心者が注意すること"><section class="tool-heading"><h2>初心者が注意すること</h2><p>副業収入は、売上だけで判断しないことが大切です。</p></section><ul><li>売上と利益は違うため、経費や税金を引いた手取りも確認する</li><li>勤務先の就業規則、住民税、確定申告の要否を早めに確認する</li><li>短期間の結果だけで判断せず、作業時間と疲労も記録する</li><li>AI活用で効率化しても、最終確認や修正時間は残る前提で考える</li></ul></section>
@@ -444,7 +430,7 @@
             <details><summary>計算結果と実際の収入が違う理由は何ですか？</summary><p>実際の収入は案件単価、修正回数、営業時間、経費、税金、本業の忙しさで変わります。結果は保証ではなく、条件を整理するための目安として使ってください。</p></details>
           </div>
         </section>
-        <section class="article-panel update-history" aria-label="更新履歴"><section class="tool-heading"><h2>更新履歴</h2><p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p></section><div class="update-history-list"><article class="update-entry"><time datetime="2026-08-04">2026年8月4日</time><ul><li>AdSense審査対策として、計算結果から次の行動へつなげる解説を追加</li><li>会社員としての実体験コメント、結果の活かし方、次に読むページを追加</li><li>確定申告、住民税、経費、会社ルール、副業時間のFAQを追加</li><li>関連記事を8件以上に増やし、手取り・税金・AI副業・Project FIREへの導線を強化</li></ul></article><article class="update-entry"><time datetime="2026-07-21">2026年7月21日</time><ul><li>シミュレーターをページ上部へ移動</li><li>目標月収との差額、達成率、必要時間を追加</li><li>計算結果に応じた改善提案と3パターン比較を追加</li><li>重複していたFAQと関連記事を統合</li><li>目標達成状況、比較グラフ、保存・共有・印刷機能を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-19">2026年7月19日</time><ul><li>副業収入の目標と必要な行動量をイメージしやすい解説を追加</li><li>計算結果の見方、目標別の考え方、初心者向けFAQ10件、関連記事を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-09">2026年7月9日</time><ul><li>副業月収ページにFAQと関連記事5件を追加</li><li>関連記事、FAQ、内部リンクをHelpful Content向けに見直し</li></ul></article></div></section>
+        <section class="article-panel update-history" aria-label="更新履歴"><section class="tool-heading"><h2>更新履歴</h2><p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p></section><div class="update-history-list"><article class="update-entry"><time datetime="2026-08-24">2026年8月24日</time><ul><li>単価、作業時間、案件数から月収を考える計算前提を静的HTMLに追加</li><li>重複して見えやすかった「次に読むページ」を用途別の補助導線として整理</li><li>副業月収を行動に変える説明を、利用者の判断に役立つ表現へ調整</li></ul></article><article class="update-entry"><time datetime="2026-08-04">2026年8月4日</time><ul><li>計算結果から次の行動へつなげる解説を追加</li><li>会社員としての実体験コメント、結果の活かし方、次に読むページを追加</li><li>確定申告、住民税、経費、会社ルール、副業時間のFAQを追加</li><li>関連記事を8件以上に増やし、手取り・税金・AI副業・Project FIREへの導線を強化</li></ul></article><article class="update-entry"><time datetime="2026-07-21">2026年7月21日</time><ul><li>シミュレーターをページ上部へ移動</li><li>目標月収との差額、達成率、必要時間を追加</li><li>計算結果に応じた改善提案と3パターン比較を追加</li><li>重複していたFAQと関連記事を統合</li><li>目標達成状況、比較グラフ、保存・共有・印刷機能を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-19">2026年7月19日</time><ul><li>副業収入の目標と必要な行動量をイメージしやすい解説を追加</li><li>計算結果の見方、目標別の考え方、初心者向けFAQ10件、関連記事を追加</li></ul></article><article class="update-entry"><time datetime="2026-07-09">2026年7月9日</time><ul><li>副業月収ページにFAQと関連記事5件を追加</li><li>関連記事、FAQ、内部リンクをHelpful Content向けに見直し</li></ul></article></div></section>
           <section class="unified-journey-section" data-static-journey="true" aria-label="ページ下部の回遊導線">
             <section class="tool-heading">
               <h2>次の行動を選ぶ</h2>
