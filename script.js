@@ -40,24 +40,28 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "会社員の副業・FIRE実体験メディア｜本業後に進める資産形成【2026年版】",
-    description: "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。",
+    title: "副業月収・手取り・税金・FIREシミュレーターハブ【2026年版】",
+    description: "このまま働き続けるだけでいいのか不安を感じた会社員へ。副業収入、税金、手取り、家計、NISA、FIREを数字で確認し、人生の選択肢を増やす入口です。",
   },
   "side-income": {
-    title: "副業月収シミュレーター｜会社員の本業後副業を実体験で試算【2026年版】",
-    description: "本業後の限られた時間で副業収入を伸ばしたい会社員向けに、月収、手取り、作業時間を実体験目線で確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業月収シミュレーター｜会社員の実体験で手取り・税金・作業時間まで確認【2026年版】",
+    description: "会社員向けの副業月収シミュレーターです。本業後の作業時間、単価、経費、税金、目標との差を実体験目線で確認し、手取り・税金・AI活用・FIREまで次の行動につなげられます。",
   },
   "ai-hourly": {
     title: "AI副業時給シミュレーター｜会社員のAI活用と時給改善【2026年版】",
     description: "長時間労働後でも副業を続けるために、AI活用で作業時間をどれだけ短縮できるか、時給と月収を現実的に試算します。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
   },
+  "ai-sidejob": {
+    title: "AI副業シミュレーター｜会社員が本業後に使うAI活用設計【2026年版】",
+    description: "AI副業全体の入口として、AI効率化、ROI、時短診断、外注費削減のどれから使うべきかを会社員向けに整理します。AI活用を副業収入・手取り・税金へつなげる判断順を確認できます。",
+  },
   "ai-efficiency": {
     title: "AI副業効率化シミュレーター｜本業後の時短と利益改善【2026年版】",
-    description: "本業後1時間でも副業を進めたい会社員向けに、AI導入による削減時間、利益率改善、年間追加利益を検証できます。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
+    description: "AI導入による作業時間削減、時給改善、案件単価ベースの判断、自動化による継続性を会社員向けに試算します。本業後の限られた時間で副業を続けるための効率改善を確認できます。",
   },
   "ai-roi": {
     title: "AI導入ROIシミュレーター｜副業AI活用の投資対効果を確認【2026年版】",
-    description: "AIツール費用が副業利益に見合うかを、削減時間、外注費削減、売上増加率から会社員目線で分析できます。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
+    description: "有料AIツールの月額費用が副業利益に見合うかを、削減時間、売上増加、外注費削減、導入後利益、利益率改善、目標月収までの距離から確認できます。",
   },
   "ai-automation": {
     title: "AI副業自動化シミュレーター｜会社員の時短・利益改善・継続性を分析【2026年版】",
@@ -101,7 +105,7 @@ const routeSeo = {
   },
   "side-safety": {
     title: "会社員副業安全度診断｜会社バレ・税務・疲労リスクを確認【2026年版】",
-    description: "副業ジャンル、月収、本業勤務時間、普通徴収、確定申告、会社規定、AI活用、匿名性から、会社員が安全に副業を続けられるか診断します。副業を伸ばす前にリスクを整理できます。",
+    description: "副業ジャンル、月収、本業勤務時間、普通徴収、確定申告、会社規定、AI活用、匿名性から、会社員が安全に副業を続けられるか診断します。会社バレ、税務、疲労リスクを副業前に確認できます。",
   },
   "side-profit-margin": {
     title: "副業利益率シミュレーター｜売上より手残りを重視する会社員向け【2026年版】",
@@ -116,8 +120,8 @@ const routeSeo = {
     description: "副業売上から経費、所得税、住民税、社会保険を引いた手取りを試算し、本業後の副業収入を現実的に把握できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
   },
   tax: {
-    title: "副業税金・青色申告シミュレーター｜会社員の税金対策入門【2026年版】",
-    description: "副業収入、経費、青色申告控除から課税所得と手取りを試算し、会社員が確定申告前に税負担を確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業税金シミュレーター｜会社員の確定申告・住民税・手取り対策【2026年版】",
+    description: "会社員向けの副業税金シミュレーターです。副業収入、経費、所得税、住民税、確定申告、手取りへの影響を実体験ベースで解説し、副業月収・手取り・Project FIREへ自然につなげます。",
   },
   "employee-tax-saving": {
     title: "会社員節税シミュレーター｜iDeCo・副業・控除をまとめて確認【2026年版】",
@@ -136,8 +140,8 @@ const routeSeo = {
     description: "年齢、年収、総資産、投資経験、投資額、投資目的、暴落時の行動、副業収入、FIRE希望から、会社員に合う投資リスク許容度と資産配分を診断します。",
   },
   nisa: {
-    title: "新NISA・積立投資シミュレーター｜会社員の長期資産形成【2026年版】",
-    description: "本業後の副業や固定費改善で作った余力を新NISAへ回す前提で、将来資産と複利効果を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    title: "新NISAシミュレーター｜初心者向け制度・積立額・FIRE資産形成【2026年版】",
+    description: "新NISA初心者向けに、つみたて投資枠・成長投資枠・非課税枠の基本、積立額、将来資産、FIREとの関係を実体験ベースで解説します。副業月収、税金、FIRE、Project FIREへ自然につなげます。",
   },
   "nisa-fast": {
     title: "新NISA最速積立シミュレーター｜FIREを目指す会社員の成長速度【2026年版】",
@@ -156,8 +160,8 @@ const routeSeo = {
     description: "会社員のiDeCo掛金による所得税・住民税の節税額と将来資産を確認し、FIRE実践との相性も考えられます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
   },
   fire: {
-    title: "FIRE達成シミュレーター｜会社員が40歳FIREを目指す資産計算【2026年版】",
-    description: "年間生活費から必要資産を逆算し、現在資産、不足額、FIRE達成率、達成年数、毎月必要積立額をすぐ確認できます。積立5万円、10万円、15万円の比較と保存・共有・印刷にも対応しています。",
+    title: "FIRE達成シミュレーター｜会社員のFIRE戦略・必要資産・新NISA計算【2026年版】",
+    description: "会社員向けのFIRE達成シミュレーターです。必要資産、達成年数、毎月積立額に加え、Lean FIRE・Barista FIRE・Coast FIRE・Fat FIREの違い、新NISA、副業月収、税金、Project FIREまで具体的に確認できます。",
   },
   "fire-rate": {
     title: "FIRE達成率シミュレーター｜会社員の資産形成スコア診断【2026年版】",
@@ -181,7 +185,7 @@ const routeSeo = {
   },
   "cash-flow": {
     title: "会社員キャッシュフローシミュレーター｜家計と投資余力を見える化【2026年版】",
-    description: "給与、副業、固定費、投資額をまとめて入力し、本業だけに依存しない資産形成ペースと改善余地を確認できます。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
+    description: "毎月の収入、支出、貯蓄、投資余力を初心者向けに見える化します。生活防衛資金、固定費削減、副業収入、新NISA、FIREへつなげる家計管理シミュレーターです。",
   },
   "life-cost": {
     title: "生活コスト最適化シミュレーター｜固定費改善とFIRE短縮を分析【2026年版】",
@@ -189,7 +193,7 @@ const routeSeo = {
   },
   dividend: {
     title: "配当金シミュレーター｜会社員の高配当投資と月平均配当【2026年版】",
-    description: "投資額と利回りから年間配当金、月平均配当、累計配当を試算し、FIRE実践に使える配当収入を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    description: "投資額と配当利回りから年間配当金、月平均配当を初心者向けに試算できます。新NISA、配当再投資、FIRE、老後資金、副業収入との関係も確認できます。",
   },
   "dividend-etf": {
     title: "配当ETF比較シミュレーター｜新NISAで高配当ETFを比較【2026年版】",
@@ -205,7 +209,7 @@ const routeSeo = {
   },
   "dividend-reinvestment": {
     title: "配当再投資シミュレーター｜会社員の複利とFIRE効果を確認【2026年版】",
-    description: "配当を再投資した場合の最終資産、累計配当、複利効果を試算し、FIRE実践に向けた投資設計を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    description: "配当再投資と複利効果を初心者向けに試算できます。受け取った配当を再投資した場合の将来資産を確認し、NISA、FIRE、老後資金、キャッシュフローへつなげられます。",
   },
   "dividend-life": {
     title: "配当生活達成シミュレーター｜生活費を配当でまかなう必要資産【2026年版】",
@@ -220,8 +224,8 @@ const routeSeo = {
     description: "生活費、副業月収、配当収入を入力し、会社員がサイドFIREを目指す場合の必要資産と短縮効果を確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
   },
   "emergency-fund": {
-    title: "生活防衛資金シミュレーター｜会社員がFIRE前に備える安全資金【2026年版】",
-    description: "毎月生活費、家族人数、雇用形態、副業収入から生活防衛資金を試算し、FIRE前の土台づくりを確認できます。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
+    title: "生活防衛資金シミュレーター｜会社員の必要額と投資前の安全資金【2026年版】",
+    description: "生活防衛資金とは何か、会社員は何か月分を目安にすべきかを初心者向けに整理。毎月生活費、家族人数、雇用形態、副業収入から、投資前に残す安全資金を確認できます。",
   },
   "fixed-cost-reduction": {
     title: "固定費削減シミュレーター｜年間節約額と家計改善を計算【2026年版】",
@@ -229,7 +233,7 @@ const routeSeo = {
   },
   retirement: {
     title: "老後資金シミュレーター｜会社員の不足額と追加積立を確認【2026年版】",
-    description: "現在年齢、貯蓄、年金見込み、退職後生活費から老後資金の不足額を出し、NISAやFIRE実践との関係も確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
+    description: "老後資金の不足額、年金見込み、退職後生活費を初心者向けに試算できます。新NISA、FIRE、配当、固定費削減と組み合わせて資産形成の次の行動を確認できます。",
   },
   education: {
     title: "教育費シミュレーター｜会社員家庭の進学費用と不足額を試算【2026年版】",
@@ -2091,6 +2095,32 @@ document.body.innerHTML = `
         </section>
       </section>
 
+
+      <section class="view" data-view="ai-sidejob" aria-label="AI副業シミュレーター">
+        <section class="tool-heading">
+          <h2>AI副業シミュレーター</h2>
+          <p>AIで楽に稼ぐ前提ではなく、本業後の限られた副業時間をどう短縮し、収入・手取り・継続へつなげるかを整理する入口です。</p>
+        </section>
+        <section class="article-panel comparison-section" aria-label="AI副業比較表">
+          <section class="tool-heading"><h2>副業比較表</h2><p>AIを使う前提で、会社員が本業後に続けやすい副業を比較しています。</p></section>
+          <div class="comparison-table" role="region" aria-label="AI副業比較表" tabindex="0"><table><thead><tr><th>副業タイプ</th><th>必要時間</th><th>初期費用</th><th>収益化速度</th><th>継続難易度</th><th>AI活用相性</th><th>会社員向きか</th></tr></thead><tbody><tr><td>記事作成補助</td><td>平日1時間から可</td><td>低い</td><td>早め</td><td>中</td><td>構成・下書きで高い</td><td>分割しやすい</td></tr><tr><td>SNS投稿作成</td><td>短時間</td><td>低い</td><td>中</td><td>中</td><td>アイデア出しで高い</td><td>スキマ時間向き</td></tr><tr><td>動画ショート編集</td><td>中〜長</td><td>中</td><td>中</td><td>高</td><td>字幕・台本で中</td><td>休日にまとめる人向き</td></tr><tr><td>資料・リサーチ代行</td><td>中</td><td>低い</td><td>早め</td><td>中</td><td>要約・整理で高い</td><td>本業スキルを活かしやすい</td></tr></tbody></table></div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>AIは楽に稼ぐ道具ではなく、調査・構成・下書きの時間を減らして副業を止めないための補助として見ています。</p>
+        </section>
+        <section class="article-panel comparison-section" aria-label="AIツール比較表">
+          <section class="tool-heading"><h2>AIツール比較</h2><p>副業作業を短縮する目的で、主要AIツールの得意分野を比較しています。</p></section>
+          <div class="comparison-table" role="region" aria-label="AIツール比較表" tabindex="0"><table><thead><tr><th>AIツール</th><th>得意分野</th><th>時間短縮</th><th>初心者向き</th><th>副業相性</th></tr></thead><tbody><tr><td>ChatGPT</td><td>構成、下書き、FAQ、説明文</td><td>高い</td><td>高い</td><td>文章・企画系で使いやすい</td></tr><tr><td>Claude</td><td>長文整理、自然な文章調整</td><td>高い</td><td>中〜高</td><td>記事改善や読みやすさ調整向き</td></tr><tr><td>Gemini</td><td>調査補助、Google系連携</td><td>中</td><td>中</td><td>情報整理や比較検討向き</td></tr><tr><td>CapCut</td><td>動画編集、字幕、ショート動画</td><td>中〜高</td><td>高い</td><td>動画副業やSNS運用向き</td></tr></tbody></table></div>
+          <p class="verification-note"><strong>成果保証ではありません。</strong>AIで短縮できる部分と、人が確認すべき部分を分けることを前提にしてください。</p>
+        </section>
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading"><h2>次におすすめ</h2><p>AI副業の全体像を確認したあと、収入・時給・手取りへ順番に進めます。</p></section>
+          <div class="next-step-grid next-recommend-grid">
+            <a class="next-step-card next-recommend-card is-primary" href="side-income.html" data-next-recommend="ai-sidejob-to-side-income"><span class="next-step-label">収入へ接続</span><strong>副業収入の現実感を見る</strong><span>AIで短縮できる時間を、実際の副業月収にどうつなげるか確認します。</span><span>進むページ：副業月収シミュレーター</span><b>月収を確認する</b></a>
+            <a class="next-step-card next-recommend-card" href="hourly-improvement.html" data-next-recommend="ai-sidejob-to-hourly-improvement"><span class="next-step-label">効率確認</span><strong>時給改善を確認する</strong><span>作業時間が減った後、実質時給がどれくらい変わるかを見ます。</span><span>進むページ：副業時給改善シミュレーター</span><b>時給を確認する</b></a>
+            <a class="next-step-card next-recommend-card" href="take-home.html" data-next-recommend="ai-sidejob-to-take-home"><span class="next-step-label">手取り確認</span><strong>残る金額を見る</strong><span>売上が増えても、経費や税金を引いた後の手取りで判断します。</span><span>進むページ：副業手取り計算シミュレーター</span><b>手取りを見る</b></a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="ai-efficiency" aria-label="AI副業効率化シミュレーター">
         <section class="tool-heading">
           <h2>AI副業効率化シミュレーター</h2>
@@ -2133,6 +2163,36 @@ document.body.innerHTML = `
               <input id="aiEfficiencyTargetHourly" name="aiEfficiencyTargetHourly" type="number" inputmode="numeric" min="0" max="1000000" step="500" value="5000" required aria-describedby="aiEfficiencyTargetHourlyError">
               <p class="error" id="aiEfficiencyTargetHourlyError"></p>
             </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectPrice">案件単価 <span class="unit">円 / 1案件</span></label>
+              <input id="aiEfficiencyProjectPrice" name="aiEfficiencyProjectPrice" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="50000" required aria-describedby="aiEfficiencyProjectPriceError">
+              <p class="error" id="aiEfficiencyProjectPriceError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectHours">1案件の作業時間 <span class="unit">時間</span></label>
+              <input id="aiEfficiencyProjectHours" name="aiEfficiencyProjectHours" type="number" inputmode="decimal" min="0.1" max="1000" step="0.5" value="10" required aria-describedby="aiEfficiencyProjectHoursError">
+              <p class="error" id="aiEfficiencyProjectHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectCount">月案件数 <span class="unit">件 / 月</span></label>
+              <input id="aiEfficiencyProjectCount" name="aiEfficiencyProjectCount" type="number" inputmode="numeric" min="0" max="100" step="1" value="4" required aria-describedby="aiEfficiencyProjectCountError">
+              <p class="error" id="aiEfficiencyProjectCountError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyAutomationRate">自動化可能割合 <span class="unit">%</span></label>
+              <input id="aiEfficiencyAutomationRate" name="aiEfficiencyAutomationRate" type="number" inputmode="decimal" min="0" max="95" step="1" value="35" required aria-describedby="aiEfficiencyAutomationRateError">
+              <p class="error" id="aiEfficiencyAutomationRateError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyOutsourcingCost">現在の外注費 <span class="unit">円 / 月</span></label>
+              <input id="aiEfficiencyOutsourcingCost" name="aiEfficiencyOutsourcingCost" type="number" inputmode="numeric" min="0" max="1000000000" step="5000" value="30000" required aria-describedby="aiEfficiencyOutsourcingCostError">
+              <p class="error" id="aiEfficiencyOutsourcingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyTargetIncome">目標月収 <span class="unit">円 / 月</span></label>
+              <input id="aiEfficiencyTargetIncome" name="aiEfficiencyTargetIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="500000" required aria-describedby="aiEfficiencyTargetIncomeError">
+              <p class="error" id="aiEfficiencyTargetIncomeError"></p>
+            </div>
             <div class="actions">
               <button type="reset">リセット</button>
             </div>
@@ -2169,6 +2229,16 @@ document.body.innerHTML = `
                 <strong>副業時給改善シミュレーターへの導線</strong>
                 <span class="accent-blue text-metric" id="aiEfficiencyGuide">時給改善も確認</span>
                 <small>経費や外注費を含めた時給分析へ進む</small>
+              </div>
+              <div class="metric">
+                <strong>案件単価ベースのAI活用後時給</strong>
+                <span class="accent-amber" id="aiEfficiencyProjectHourly">0円</span>
+                <small>案件単価、1案件の作業時間、月案件数から計算</small>
+              </div>
+              <div class="metric">
+                <strong>自動化による継続性</strong>
+                <span class="accent-green text-metric" id="aiEfficiencyContinuity">入力待ち</span>
+                <small>作業負荷、目標月収、AI費用のバランスから判定</small>
               </div>
             </div>
           </section>
@@ -2263,6 +2333,16 @@ document.body.innerHTML = `
               <input id="aiRoiSalesIncrease" name="aiRoiSalesIncrease" type="number" inputmode="decimal" min="0" max="300" step="1" value="10" required aria-describedby="aiRoiSalesIncreaseError">
               <p class="error" id="aiRoiSalesIncreaseError"></p>
             </div>
+            <div class="field">
+              <label for="aiRoiProfitMargin">現在の利益率 <span class="unit">%</span></label>
+              <input id="aiRoiProfitMargin" name="aiRoiProfitMargin" type="number" inputmode="decimal" min="0" max="100" step="1" value="45" required aria-describedby="aiRoiProfitMarginError">
+              <p class="error" id="aiRoiProfitMarginError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiTargetIncome">目標月収 <span class="unit">円 / 月</span></label>
+              <input id="aiRoiTargetIncome" name="aiRoiTargetIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="500000" required aria-describedby="aiRoiTargetIncomeError">
+              <p class="error" id="aiRoiTargetIncomeError"></p>
+            </div>
             <div class="actions">
               <button type="reset">リセット</button>
             </div>
@@ -2304,6 +2384,21 @@ document.body.innerHTML = `
                 <strong>副業時給改善シミュレーターへの導線</strong>
                 <span class="accent-blue text-metric" id="aiRoiHourlyGuide">時給改善も確認</span>
                 <small>実質時給、利益率、改善余地へ進む</small>
+              </div>
+              <div class="metric">
+                <strong>AI導入後の予想利益</strong>
+                <span class="accent-green" id="aiRoiAfterProfit">0円</span>
+                <small>利益率、売上増、時間価値、外注削減、AI費用から計算</small>
+              </div>
+              <div class="metric">
+                <strong>利益率改善</strong>
+                <span class="accent-amber" id="aiRoiMarginImprovement">0pt</span>
+                <small>AI導入前後の利益率差</small>
+              </div>
+              <div class="metric">
+                <strong>目標月収までの距離</strong>
+                <span class="accent-blue text-metric" id="aiRoiTargetGap">未計算</span>
+                <small>導入後利益と目標月収の差を確認</small>
               </div>
             </div>
           </section>
@@ -8538,11 +8633,12 @@ function insertLastUpdatedDates() {
     top: "2026年6月29日",
     "side-income": "2026年7月21日",
     "ai-hourly": "2026年6月30日",
-    "ai-efficiency": "2026年6月30日",
-    "ai-roi": "2026年6月30日",
+    "ai-sidejob": "2026年8月24日",
+    "ai-efficiency": "2026年8月24日",
+    "ai-roi": "2026年8月24日",
     "ai-automation": "2026年6月30日",
-    "ai-time-reduction": "2026年6月30日",
-    "ai-outsourcing": "2026年6月30日",
+    "ai-time-reduction": "2026年8月24日",
+    "ai-outsourcing": "2026年8月24日",
     "ai-profit-max": "2026年6月30日",
     "side-time-management": "2026年6月30日",
     "side-fatigue": "2026年6月30日",
@@ -8605,11 +8701,12 @@ insertLastUpdatedDates();
 const suitedUsers = {
   "side-income": "副業初心者や会社員が、月にどれくらい稼げるかを現実的に見たい時に向いています。売上だけでなく作業時間や手取り感も知りたい人、本業後の限られた時間で無理なく副業を始めたい人に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "ai-hourly": "AIを使って副業の時給を上げたい会社員や、副業初心者に向いています。ChatGPTなどで作業時間を短縮できるか、現在の案件単価が見合っているかを確認したい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-efficiency": "本業後の少ない時間で副業を続けたい人、AIツール代が利益改善につながるか知りたい人に向いています。時間削減、利益率、年間効果をまとめて見たい副業初心者にも使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-roi": "AIツールを有料で導入する前に、費用対効果を確認したい会社員に向いています。削減時間や売上増加、外注費削減を数字で見て、月額費用を払う価値があるか判断したい人向けです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
+  "ai-sidejob": "AIで楽に稼ぐ方法ではなく、本業後の限られた時間を短縮しながら副業を続けたい会社員に向いています。AI効率化、ROI、時短診断、外注費削減のどれから使うべきかを選ぶ入口として使ってください。",
+  "ai-efficiency": "本業後の少ない時間で副業を続けたい人、AIツール代が利益改善につながるか知りたい人に向いています。時間削減、案件単価ベースの時給、自動化による継続性、年間効果をまとめて確認できます。",
+  "ai-roi": "AIツールを有料で導入する前に、費用対効果を確認したい会社員に向いています。削減時間や売上増加、外注費削減だけでなく、導入後利益、利益率改善、目標月収までの距離も確認できます。",
   "ai-automation": "繰り返し作業をAIで自動化し、副業を続けやすくしたい人に向いています。調査、下書き、定型返信などを減らし、本業後の短い時間を利益につながる作業へ回したい会社員に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-time-reduction": "AIでどの作業時間をどれくらい減らせるか知りたい人に向いています。副業ジャンル別に効率化余地を見たい人や、疲れている平日でも進められる作業設計を考えたい会社員に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-outsourcing": "外注費が増えて利益率が下がってきた副業経験者に向いています。AIで下準備や定型作業を内製化し、どれくらい外注費を削減できるか、ROIや回収期間まで見たい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
+  "ai-time-reduction": "AIでどの作業時間をどれくらい減らせるか知りたい人に向いています。副業ジャンル、作業内容、利用頻度ごとの相性を見て、AI効率化ページへ進む前の診断として使いやすいです。",
+  "ai-outsourcing": "外注費が増えて利益率が下がってきた副業経験者に向いています。AIで外注前の下準備や定型作業を内製化した場合の削減額、利益率改善、ROI、回収期間を確認できます。",
   "ai-profit-max": "AIを使って副業利益を伸ばしたい人、目標月収までの距離を短くしたい人に向いています。時短だけでなく利益率、時給、年間追加利益をまとめて確認したい会社員や副業中級者に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "side-time-management": "本業、通勤、睡眠、家事の中で副業時間を確保したい会社員に向いています。毎日長時間の副業が難しい人や、AI活用で平日1時間でも続くスケジュールを組みたい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "side-fatigue": "本業と副業の両立で疲労がたまっている人、無理な作業量になっていないか確認したい会社員に向いています。睡眠、休日、ストレス、AI活用を含めて継続リスクを見たい人に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
@@ -8835,6 +8932,7 @@ const operatorExperience = {
 
 const routeExperienceProfiles = {
   "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "ai-sidejob": { title: "AI副業シミュレーター", kind: "ai", reason: "AI副業は、AIで楽に稼ぐ話ではなく、本業後の限られた時間をどう短縮し、収入につながる作業へ集中するかを見るための入口です。", use: "まずAIで短縮できる作業と、自分で確認すべき作業を分けてください。その後、副業月収、時給改善、手取り計算へ進むと現実的な判断につながります。", articles: [["AI副業の始め方", "article-ai-side-business.html"], ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   "ai-hourly": { title: "AI副業時給シミュレーター", kind: "ai", reason: "AI副業は、作業時間が短くなる一方で、単価設定を間違えると時給が伸びません。このツールは、案件単価と作業時間を並べて、AIを使った後の実質時給を冷静に見るために作りました。", use: "AIで時間が半分になっても、修正や確認に時間がかかるなら時給は思ったほど伸びません。結果を見ながら、単価を上げるのか、作業手順を減らすのか、案件を絞るのかを決める材料にしてください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "ai-efficiency": { title: "AI副業効率化シミュレーター", kind: "ai", reason: "AIツールは便利ですが、月額費用を払っても利益が増えなければ意味がありません。時間削減、外注費削減、ツール費用を一緒に見て、AI導入が本当に副業の利益率を上げるか確認するために作りました。", use: "AI導入後の時給だけでなく、年間追加利益を見てください。月額費用が高くても、削減時間を売上につなげられるなら投資価値があります。逆に時間が浮くだけなら、まず作業手順の見直しが先です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "side-profit-margin.html"]] },
   "ai-roi": { title: "AI導入ROIシミュレーター", kind: "ai", reason: "AIツールは便利でも、月額費用に見合う効果があるかを見ないと固定費だけが増えます。本業後の限られた副業時間を使う立場では、削減時間、売上増、外注費削減、回収期間をまとめて確認することが大切です。", use: "ROIが高い場合は、下書き、調査、要約、資料作成など繰り返し作業へAIを広げてください。ROIが低い場合は、有料プランを増やす前に無料枠や低額プランで用途を絞る方が安全です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業時給改善シミュレーター", "hourly-improvement.html"], ["副業利益率シミュレーター", "side-profit-margin.html"]] },
@@ -9302,6 +9400,7 @@ const routeNextSimulatorMap = {
   tax: ["take-home.html", "income-tax.html", "resident-tax.html", "side-profit-margin.html"],
   fire: ["side-income.html", "take-home.html", "tax.html"],
   nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
+  "ai-sidejob": ["ai-efficiency.html", "ai-hourly.html", "ai-roi.html", "side-income.html"],
   "ai-hourly": ["ai-efficiency.html", "ai-roi.html", "ai-time-reduction.html", "side-profit-margin.html"],
   "ai-efficiency": ["ai-roi.html", "ai-automation.html", "ai-time-reduction.html", "hourly-improvement.html"],
   "take-home": ["side-income.html", "tax.html", "side-profit-margin.html", "hourly-improvement.html"],
@@ -9325,6 +9424,7 @@ const simulatorDescriptions = {
   "credit-card-investment.html": "クレカ積立のポイント還元と通常積立との差を比較します。",
   "dividend-reinvestment.html": "配当を再投資した場合の資産成長を確認します。",
   "fire.html": "資産、積立、利回りからFIREまでの距離を確認します。",
+  "ai-sidejob.html": "AIを副業にどう使うか、全体像と次の確認順を整理します。",
   "ai-efficiency.html": "AI活用による時間削減と利益改善の目安を確認します。",
   "ai-roi.html": "AIツール費用に対して、どれだけ回収できるかを見ます。",
   "ai-time-reduction.html": "AIで削減できる作業時間と時給改善を確認します。",
@@ -9642,6 +9742,12 @@ const fieldRules = {
   aiToolMonthlyCost: { label: "AIツール月額費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
   outsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiEfficiencyTargetHourly: { label: "目標時給", min: 0, max: 1000000, unit: "\u5186", integer: false },
+  aiEfficiencyProjectPrice: { label: "案件単価", min: 0, max: 100000000, unit: "円", integer: false },
+  aiEfficiencyProjectHours: { label: "1案件の作業時間", min: 0.1, max: 1000, unit: "時間", integer: false },
+  aiEfficiencyProjectCount: { label: "月案件数", min: 0, max: 100, unit: "件", integer: true },
+  aiEfficiencyAutomationRate: { label: "自動化可能割合", min: 0, max: 95, unit: "%", integer: false },
+  aiEfficiencyOutsourcingCost: { label: "現在の外注費", min: 0, max: 1000000000, unit: "円", integer: false },
+  aiEfficiencyTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "円", integer: false },
   aiAutomationHours: { label: "現在の副業作業時間", min: 0.1, max: 10000, unit: "時間", integer: false },
   aiAutomationSales: { label: "現在の副業売上", min: 0, max: 1000000000, unit: "円", integer: false },
   aiAutomationRate: { label: "自動化可能割合", min: 0, max: 95, unit: "%", integer: false },
@@ -9660,6 +9766,8 @@ const fieldRules = {
   aiProfitOutsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiProfitSalesIncrease: { label: "AI導入後の売上増加率", min: 0, max: 300, unit: "%", integer: false },
   aiProfitTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiRoiProfitMargin: { label: "現在の利益率", min: 0, max: 100, unit: "%", integer: false },
+  aiRoiTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "円", integer: false },
   aiOutsourcingCost: { label: "現在の外注費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiOutsourcingAiCost: { label: "AI導入費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
   aiOutsourcingReduction: { label: "AIによる削減率", min: 0, max: 95, unit: "%", integer: false },
@@ -10736,6 +10844,12 @@ function renderAiEfficiency() {
     aiToolMonthlyCost: getFieldValue("aiToolMonthlyCost"),
     outsourcingReduction: getFieldValue("outsourcingReduction"),
     aiEfficiencyTargetHourly: getFieldValue("aiEfficiencyTargetHourly"),
+    aiEfficiencyProjectPrice: getFieldValue("aiEfficiencyProjectPrice"),
+    aiEfficiencyProjectHours: getFieldValue("aiEfficiencyProjectHours"),
+    aiEfficiencyProjectCount: getFieldValue("aiEfficiencyProjectCount"),
+    aiEfficiencyAutomationRate: getFieldValue("aiEfficiencyAutomationRate"),
+    aiEfficiencyOutsourcingCost: getFieldValue("aiEfficiencyOutsourcingCost"),
+    aiEfficiencyTargetIncome: getFieldValue("aiEfficiencyTargetIncome"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
 
@@ -10747,6 +10861,8 @@ function renderAiEfficiency() {
     setText("aiEfficiencyAnnualProfit", yen.format(0));
     setText("aiEfficiencyRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiEfficiencyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiEfficiencyProjectHourly", yen.format(0));
+    setText("aiEfficiencyContinuity", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
 
@@ -10757,6 +10873,12 @@ function renderAiEfficiency() {
   const aiCost = aiUse ? values.aiToolMonthlyCost.value : 0;
   const outsourcingReduction = aiUse ? values.outsourcingReduction.value : 0;
   const targetHourly = values.aiEfficiencyTargetHourly.value;
+  const projectPrice = values.aiEfficiencyProjectPrice.value;
+  const projectHours = values.aiEfficiencyProjectHours.value;
+  const projectCount = values.aiEfficiencyProjectCount.value;
+  const automationRate = aiUse ? values.aiEfficiencyAutomationRate.value / 100 : 0;
+  const outsourcingCost = values.aiEfficiencyOutsourcingCost.value;
+  const targetIncome = values.aiEfficiencyTargetIncome.value;
   const savedHours = hours * reductionRate;
   const afterHours = Math.max(hours - savedHours, 0.1);
   const currentProfit = sales;
@@ -10780,6 +10902,23 @@ function renderAiEfficiency() {
   const guide = afterHourly >= targetHourly
     ? "副業時給改善シミュレーターで経費と外注費を含めた維持ラインを確認しましょう"
     : "副業時給改善シミュレーターで目標時給に必要な単価アップや追加短縮時間を確認しましょう";
+  const projectMonthlyIncome = projectPrice * projectCount;
+  const adjustedProjectHours = projectHours * (1 - reductionRate);
+  const projectMonthlyHours = adjustedProjectHours * projectCount;
+  const projectHourly = projectMonthlyHours > 0 ? projectMonthlyIncome / projectMonthlyHours : 0;
+  const automationSavedHours = hours * automationRate;
+  const automationLoadReduction = hours > 0 ? automationSavedHours / hours : 0;
+  const automationTimeValue = automationSavedHours * currentHourly;
+  const automationOutsourcingReduction = outsourcingCost * automationRate;
+  const automationProfit = sales + automationTimeValue + automationOutsourcingReduction - outsourcingCost - aiCost;
+  const automationNetBenefit = automationTimeValue + automationOutsourcingReduction - aiCost;
+  const incomeProgress = targetIncome > 0 ? Math.min(Math.max(automationProfit, 0) / targetIncome, 1) : 1;
+  const continuityScore = Math.max(0, Math.min(100, Math.round(automationLoadReduction * 55 + incomeProgress * 35 + (automationNetBenefit > 0 ? 10 : 0))));
+  const continuity = continuityScore >= 75
+    ? `継続性は高めです（${continuityScore}/100）。自動化した時間を高単価作業や確認作業へ回しやすい状態です`
+    : continuityScore >= 50
+      ? `継続性は中程度です（${continuityScore}/100）。定型作業から自動化範囲を広げる余地があります`
+      : `継続性は改善余地があります（${continuityScore}/100）。AI費用と外注範囲を小さく試す段階です`;
 
   setText("aiEfficiencyHourly", yen.format(afterHourly));
   setText("aiEfficiencySavedHours", `${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593 / \u6708`);
@@ -10787,6 +10926,8 @@ function renderAiEfficiency() {
   setText("aiEfficiencyAnnualProfit", yen.format(annualAdditionalProfit));
   setText("aiEfficiencyRecommendation", recommendation);
   setText("aiEfficiencyGuide", guide);
+  setText("aiEfficiencyProjectHourly", yen.format(projectHourly));
+  setText("aiEfficiencyContinuity", continuity);
   document.querySelector("#aiEfficiencyHourly").setAttribute("data-current-hourly", yen.format(currentHourly));
 }
 
@@ -10799,6 +10940,8 @@ function renderAiRoi() {
     aiRoiHourlyRate: getFieldValue("aiRoiHourlyRate"),
     aiRoiOutsourcingReduction: getFieldValue("aiRoiOutsourcingReduction"),
     aiRoiSalesIncrease: getFieldValue("aiRoiSalesIncrease"),
+    aiRoiProfitMargin: getFieldValue("aiRoiProfitMargin"),
+    aiRoiTargetIncome: getFieldValue("aiRoiTargetIncome"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
 
@@ -10811,6 +10954,9 @@ function renderAiRoi() {
     setText("aiRoiPaybackPeriod", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiRoiRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiRoiHourlyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiAfterProfit", yen.format(0));
+    setText("aiRoiMarginImprovement", "0pt");
+    setText("aiRoiTargetGap", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
 
@@ -10842,6 +10988,19 @@ function renderAiRoi() {
   }
 
   const hourlyGuide = `削減時間${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593/\u6708\u3092\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3067\u5b9f\u8cea\u6642\u7d66\u3078\u53cd\u6620`;
+  const currentProfit = values.aiRoiSales.value * (values.aiRoiProfitMargin.value / 100);
+  const afterSales = values.aiRoiSales.value * (1 + values.aiRoiSalesIncrease.value / 100);
+  const currentProfitHourly = values.aiRoiHours.value > 0 ? currentProfit / values.aiRoiHours.value : 0;
+  const salesIncreaseProfit = (afterSales - values.aiRoiSales.value) * (values.aiRoiProfitMargin.value / 100);
+  const profitTimeValue = monthlySavedHours * currentProfitHourly;
+  const afterProfit = currentProfit + salesIncreaseProfit + profitTimeValue + values.aiRoiOutsourcingReduction.value - values.aiRoiToolCost.value;
+  const currentMargin = values.aiRoiSales.value > 0 ? (currentProfit / values.aiRoiSales.value) * 100 : 0;
+  const afterMargin = afterSales > 0 ? (afterProfit / afterSales) * 100 : 0;
+  const marginImprovement = afterMargin - currentMargin;
+  const targetGap = Math.max(values.aiRoiTargetIncome.value - afterProfit, 0);
+  const targetGapText = targetGap <= 0
+    ? "目標月収に届く目安です"
+    : `${yen.format(targetGap)}不足`;
 
   setText("aiRoiRate", `${roi.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`);
   setText("aiRoiSavedHours", `${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
@@ -10850,6 +11009,9 @@ function renderAiRoi() {
   setText("aiRoiPaybackPeriod", paybackText);
   setText("aiRoiRecommendation", recommendation);
   setText("aiRoiHourlyGuide", hourlyGuide);
+  setText("aiRoiAfterProfit", yen.format(afterProfit));
+  setText("aiRoiMarginImprovement", `${marginImprovement.toFixed(1)}pt`);
+  setText("aiRoiTargetGap", targetGapText);
 }
 
 function renderAiAutomation() {
@@ -14005,6 +14167,7 @@ const routeBreadcrumbCategory = {
   "side-safety": "side",
   "side-profit-margin": "side",
   incorporation: "side",
+  "ai-sidejob": "ai",
   "ai-hourly": "ai",
   "ai-efficiency": "ai",
   "ai-roi": "ai",
@@ -14076,12 +14239,10 @@ function renderBreadcrumb(route, seo) {
 }
 
 const validRoutes = new Set([
-  "side-income", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "employee-fire", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
+  "side-income", "ai-sidejob", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "employee-fire", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
 ]);
 
-const routeAliases = {
-  "ai-sidejob": "ai-efficiency",
-};
+const routeAliases = {};
 
 function currentRoute() {
   const pathRoute = window.location.pathname.split("/").pop().replace(/\.html$/, "");
