@@ -85,7 +85,7 @@
                         "breadcrumb": {
                                 "@id": "https://side-income-simulator.vercel.app/tax.html#breadcrumb"
                         },
-                        "dateModified": "2026-08-05",
+                        "dateModified": "2026-08-24",
                         "inLanguage": "ja"
                 },
                 {
@@ -206,13 +206,80 @@
     <main>
       <div class="app-shell">
         <h1>副業税金・青色申告シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年8月5日</p>
+          <p class="article-meta">最終更新日：2026年8月24日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-tax.html">税金</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">副業税金・青色申告シミュレーター</span>
           </nav>
         <p><a href="tax.html">副業税金・青色申告シミュレーターを開く</a></p>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターで分かること">
+            <section class="tool-heading">
+              <h2>このシミュレーターで分かること</h2>
+              <p>副業の売上が入ったあと、税金を引くといくら残るのかを先に確認するためのページです。</p>
+            </section>
+            <p>このシミュレーターは、会社員が副業を始めたときに迷いやすい「売上」「経費」「所得」「所得税」「住民税」「手取り」を分けて見るために作っています。副業で年間いくら売上があるかだけでは、実際に自由に使える金額は分かりません。AIツール代、通信費、素材費などの経費を引き、さらに所得税と住民税の概算を引いたあとに残る金額を見ることで、納税用のお金を残すべきか、家計や投資へ回せる余力があるかを判断しやすくなります。</p>
+            <p>副業月収を増やす前に税金を見ておくと、目標金額を売上ではなく手取り基準で考えられます。まず <a href="side-income.html">副業月収シミュレーター</a> で売上の目安を出し、このページで税金の概算を確認し、最後に <a href="take-home.html">副業手取りシミュレーター</a> で毎月残る金額へ落とし込む流れを想定しています。</p>
+          </section>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターの入力項目と結果項目">
+            <section class="tool-heading">
+              <h2>入力する項目</h2>
+              <p>現在の計算ロジックで使用している項目だけを整理しています。</p>
+            </section>
+            <div class="article-list">
+              <div class="article-link"><strong>年間副業収入</strong><span>経費を引く前の1年間の副業売上です。月額で考えている場合は、月の売上に12を掛けた金額を入れます。</span></div>
+              <div class="article-link"><strong>必要経費</strong><span>副業のために使った費用の年額です。ツール代、通信費、素材費など、実際に副業と関係する支出を分けて考えます。</span></div>
+              <div class="article-link"><strong>所得税率</strong><span>給与など他の所得と合わせたときの概算税率です。実際の所得税は累進課税のため、このページでは試算用の税率として扱います。</span></div>
+              <div class="article-link"><strong>住民税率</strong><span>住民税の概算に使う税率です。自治体や条件で扱いが変わるため、正確な確認は自治体情報も見てください。</span></div>
+              <div class="article-link"><strong>青色申告控除</strong><span>青色申告の要件を満たす場合に使う控除額です。分からない場合は0円でも試算できます。</span></div>
+            </div>
+          </section>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターの結果の見方">
+            <section class="tool-heading">
+              <h2>計算結果として表示される項目</h2>
+              <p>売上ではなく、税金を引いたあとに残る金額を見るための結果です。</p>
+            </section>
+            <div class="article-list">
+              <div class="article-link"><strong>副業所得</strong><span>年間副業収入から必要経費を引いた金額です。税金を考える前の利益に近い数字として見ます。</span></div>
+              <div class="article-link"><strong>課税所得の概算</strong><span>副業所得から青色申告控除を引いた金額です。マイナスになる場合は0円として扱います。</span></div>
+              <div class="article-link"><strong>所得税・住民税・税金合計</strong><span>入力した税率をもとに概算します。復興特別所得税、事業税、各種控除、社会保険料の影響までは含めていません。</span></div>
+              <div class="article-link"><strong>税引後手取り</strong><span>副業所得から所得税と住民税を引いた目安です。年間額と月割りの感覚を合わせて見ると、納税準備や家計管理に使いやすくなります。</span></div>
+              <div class="article-link"><strong>手取り率・比較表</strong><span>売上に対してどれくらい残るか、経費20%増や売上20%増のケースで手取りがどう変わるかを比較できます。</span></div>
+            </div>
+          </section>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターの計算前提">
+            <section class="tool-heading">
+              <h2>計算の考え方・前提</h2>
+              <p>実際の申告額を決めるものではなく、納税準備のための概算です。</p>
+            </section>
+            <p>現在の計算では、まず「年間副業収入 - 必要経費」で副業所得を出し、そこから青色申告控除を引いた金額を課税対象の概算としています。所得税は課税対象額に入力した所得税率を掛け、住民税も同じく入力した住民税率を掛けて計算します。税引後手取りは、副業所得から所得税と住民税を引いた金額です。</p>
+            <p>この方法は、税金の全体像を早めに把握するための簡易計算です。実際の税額は、給与収入、各種控除、扶養、自治体、申告方法、所得区分、帳簿の状況によって変わります。副業収入が増えてきた場合や判断に迷う場合は、国税庁、自治体、税理士などの情報も確認してください。</p>
+          </section>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターの結果の読み方">
+            <section class="tool-heading">
+              <h2>結果の読み方</h2>
+              <p>最初に見るべき数字は、税額そのものよりも「税引後に残る金額」です。</p>
+            </section>
+            <p>結果を見たら、まず税引後手取りが想定より少なくなっていないか確認してください。売上が増えていても、経費や税金を引いたあとに残る金額が少ない場合は、単価、経費、作業時間、納税準備の見直しが必要です。税金合計が大きく見える場合でも、慌てて経費を増やすのではなく、本当に副業に必要な支出かを分けて考えることが大切です。</p>
+            <p>税金の目安が分かったら、次は <a href="take-home.html">副業手取りシミュレーター</a> で月単位の手取りを確認し、家計に残る金額は <a href="cash-flow.html">キャッシュフローシミュレーター</a> で整理できます。副業を将来設計へつなげたい場合は、税引後に残った金額を <a href="nisa.html">新NISAシミュレーター</a> や <a href="fire.html">FIRE達成シミュレーター</a> で試算してください。</p>
+          </section>
+
+          <section class="article-panel" aria-label="副業税金シミュレーターの関連ツール">
+            <section class="tool-heading">
+              <h2>次に確認するとよい関連ツール</h2>
+              <p>税金の概算だけで終わらせず、手取り、家計、資産形成へ順番に進めます。</p>
+            </section>
+            <div class="article-list">
+              <a class="article-link" href="take-home.html"><strong>副業手取りシミュレーター</strong><span>税金と経費を引いたあと、毎月実際に残る金額を確認します。</span></a>
+              <a class="article-link" href="cash-flow.html"><strong>キャッシュフローシミュレーター</strong><span>税引後のお金を生活費、貯蓄、投資へどう配分するか整理します。</span></a>
+              <a class="article-link" href="project-fire.html"><strong>Project FIRE</strong><span>副業サイト改善、AdSense対応、Search Console対応を続ける運営記録へ進めます。</span></a>
+            </div>
+          </section>
 
           <section class="article-panel" aria-label="会社員が副業を始めた時に最初に知るべき税金">
             <section class="tool-heading">
@@ -403,6 +470,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-24">2026年8月24日</time>
+                <ul>
+                  <li>JavaScriptを実行しない状態でも、入力項目、結果項目、計算前提、結果の読み方が分かる静的説明を追加</li>
+                  <li>副業月収、手取り、キャッシュフロー、新NISA、FIREへ進む判断フローを整理</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-08-05">2026年8月5日</time>
                 <ul>
