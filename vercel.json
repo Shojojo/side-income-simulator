@@ -22,6 +22,21 @@
       "source": "/nisa",
       "destination": "/nisa.html",
       "permanent": true
+    },
+    {
+      "source": "/ai-hourly.html",
+      "destination": "/ai-efficiency.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai-automation.html",
+      "destination": "/ai-efficiency.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai-profit-max.html",
+      "destination": "/ai-roi.html",
+      "permanent": true
     }
   ],
   "rewrites": [

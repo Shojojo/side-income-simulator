@@ -528,7 +528,7 @@ document.body.innerHTML = `
                 <li>AI利益最大化</li>
               </ul>
               <div class="card-actions">
-                <a class="primary-link" href="ai-hourly.html">AI活用後の時給を見る</a>
+                <a class="primary-link" href="ai-efficiency.html">AI活用後の時給を見る</a>
                 <a class="subtle-link" href="category-ai.html">関連ツールを見る</a>
               </div>
             </article>
@@ -635,14 +635,14 @@ document.body.innerHTML = `
             <details>
               <summary><strong>AI活用・効率化</strong><span>代表：AI副業時給 / AI効率化 / AI導入ROI</span></summary>
               <div class="related-links">
-                <a href="ai-hourly.html">AI副業時給シミュレーター</a>
+                <a href="ai-efficiency.html">AI副業時給シミュレーター</a>
                 <a href="ai-sidejob.html">AI副業シミュレーター</a>
                 <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
                 <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-                <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+                <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
                 <a href="ai-time-reduction.html">AI作業時間削減診断</a>
                 <a href="ai-outsourcing.html">AI外注費削減シミュレーター</a>
-                <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+                <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
               </div>
             </details>
             <details>
@@ -1114,7 +1114,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-hourly.html">
+          <a class="tool-card" href="ai-efficiency.html">
             <p class="eyebrow">AI Hourly</p>
             <h2>AI&#x526f;&#x696d;&#x6642;&#x7d66;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
             <p>&#x6848;&#x4ef6;&#x5358;&#x4fa1;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6708;&#x6848;&#x4ef6;&#x6570;&#x3001;AI&#x4f7f;&#x7528;&#x6709;&#x7121;&#x304b;&#x3089;&#x3001;&#x6642;&#x7d66;&#x3068;&#x6708;&#x53ce;&#x3001;AI&#x6d3b;&#x7528;&#x6642;&#x306e;&#x52b9;&#x7387;&#x6539;&#x5584;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
@@ -1150,7 +1150,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-automation.html">
+          <a class="tool-card" href="ai-efficiency.html">
             <p class="eyebrow">AI Automation</p>
             <h2>AI副業自動化シミュレーター</h2>
             <p>AI導入で自動化できる作業時間、利益改善、ROI、副業継続性を分析します。</p>
@@ -1186,7 +1186,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-profit-max.html">
+          <a class="tool-card" href="ai-roi.html">
             <p class="eyebrow">AI Profit</p>
             <h2>AI副業利益最大化シミュレーター</h2>
             <p>AI導入による利益増加、作業効率、時給改善、目標月収までの距離を分析します。</p>
@@ -1740,10 +1740,10 @@ document.body.innerHTML = `
             <li><a href="side-income.html"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="ai-efficiency.html"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
             <li><a href="ai-roi.html"><strong>AI導入ROI</strong><span>AIツール費用に対する投資対効果と回収期間を確認</span></a></li>
-            <li><a href="ai-automation.html"><strong>AI副業自動化</strong><span>AI導入で削減できる時間、利益改善、継続性を確認</span></a></li>
+            <li><a href="ai-efficiency.html"><strong>AI副業自動化</strong><span>AI導入で削減できる時間、利益改善、継続性を確認</span></a></li>
             <li><a href="ai-time-reduction.html"><strong>AI作業時間削減診断</strong><span>副業ジャンルと作業内容から削減時間、効率化度、利益改善を確認</span></a></li>
             <li><a href="ai-outsourcing.html"><strong>AI外注費削減</strong><span>AI導入で外注費削減、利益率改善、ROIを確認</span></a></li>
-            <li><a href="ai-profit-max.html"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
+            <li><a href="ai-roi.html"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
             <li><a href="hourly-improvement.html"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
             <li><a href="side-time-management.html"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
             <li><a href="side-fatigue.html"><strong>副業疲労度</strong><span>本業、副業、睡眠、休日からburnoutリスクを確認</span></a></li>
@@ -2236,6 +2236,11 @@ document.body.innerHTML = `
                 <small>案件単価、1案件の作業時間、月案件数から計算</small>
               </div>
               <div class="metric">
+                <strong>AI利用前後の案件時給差</strong>
+                <span class="accent-blue" id="aiEfficiencyProjectHourlyGap">0円</span>
+                <small>AI利用前の案件時給と、短縮後の案件時給の差</small>
+              </div>
+              <div class="metric">
                 <strong>自動化による継続性</strong>
                 <span class="accent-green text-metric" id="aiEfficiencyContinuity">入力待ち</span>
                 <small>作業負荷、目標月収、AI費用のバランスから判定</small>
@@ -2281,7 +2286,7 @@ document.body.innerHTML = `
             <p>AI効率化は、自動化できる作業、時給改善、利益率改善、使うAIツールの選び方を合わせて見ると実行に移しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
             <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
@@ -2400,6 +2405,11 @@ document.body.innerHTML = `
                 <span class="accent-blue text-metric" id="aiRoiTargetGap">未計算</span>
                 <small>導入後利益と目標月収の差を確認</small>
               </div>
+              <div class="metric">
+                <strong>目標月収までの短縮目安</strong>
+                <span class="accent-green text-metric" id="aiRoiTargetShortening">未計算</span>
+                <small>現在利益と導入後改善額から、到達期間の差を簡易表示</small>
+              </div>
             </div>
           </section>
         </section>
@@ -2446,7 +2456,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
             <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
@@ -2596,7 +2606,7 @@ document.body.innerHTML = `
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
-            <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+            <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
           </div>
         </section>
       </section>
@@ -2731,7 +2741,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="AI作業時間削減診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業ジャンルごとにAIで削減できる時間を見積もるために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に集中力が残らない日ほど、AIで下準備だけ進める効果を確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、削減時間は作業内容で大きく変わるため、実際の記録と照らして調整してください。次は <a href="ai-automation.html">AI副業自動化シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業ジャンルごとにAIで削減できる時間を見積もるために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に集中力が残らない日ほど、AIで下準備だけ進める効果を確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、削減時間は作業内容で大きく変わるため、実際の記録と照らして調整してください。次は <a href="ai-efficiency.html">AI副業自動化シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -2748,7 +2758,7 @@ document.body.innerHTML = `
             <p>削減できる作業時間を確認したら、自動化、AI効率化、ROIまで見ると、AI導入を続けるべきか判断しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
             <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
@@ -2898,7 +2908,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-            <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+            <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
           </div>
         </section>
@@ -3040,7 +3050,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
           </div>
@@ -3859,7 +3869,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
-            <a href="ai-hourly.html">AI副業時給シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業時給シミュレーター</a>
             <a href="take-home.html">副業手取り計算シミュレーター</a>
           </div>
         </section>
@@ -8574,12 +8584,12 @@ document.body.innerHTML = `
           <a href="index.html">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="project-fire.html">Project FIRE</a>
           <a href="side-income.html">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
-          <a href="ai-hourly.html">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="ai-efficiency.html">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="ai-efficiency.html">AI副業効率化</a>
           <a href="ai-roi.html">AI導入ROI</a>
           <a href="ai-time-reduction.html">AI作業時間削減</a>
           <a href="ai-outsourcing.html">AI外注費削減</a>
-          <a href="ai-profit-max.html">AI利益最大化</a>
+          <a href="ai-roi.html">AI利益最大化</a>
           <a href="hourly-improvement.html">副業時給改善</a>
           <a href="side-time-management.html">副業時間管理</a>
           <a href="side-fatigue.html">副業疲労度</a>
@@ -8998,10 +9008,10 @@ const relatedToolGroups = {
   ai: [
     ["AI副業効率化シミュレーター", "ai-efficiency.html"],
     ["AI導入ROIシミュレーター", "ai-roi.html"],
-    ["AI副業自動化シミュレーター", "ai-automation.html"],
+    ["AI副業自動化シミュレーター", "ai-efficiency.html"],
     ["AI作業時間削減診断", "ai-time-reduction.html"],
     ["AI外注費削減シミュレーター", "ai-outsourcing.html"],
-    ["AI副業利益最大化シミュレーター", "ai-profit-max.html"],
+    ["AI副業利益最大化シミュレーター", "ai-roi.html"],
     ["副業時給改善シミュレーター", "hourly-improvement.html"],
     ["副業時間管理シミュレーター", "side-time-management.html"],
     ["副業継続率診断", "side-continuity.html"],
@@ -9400,9 +9410,9 @@ const routeNextSimulatorMap = {
   tax: ["take-home.html", "income-tax.html", "resident-tax.html", "side-profit-margin.html"],
   fire: ["side-income.html", "take-home.html", "tax.html"],
   nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
-  "ai-sidejob": ["ai-efficiency.html", "ai-hourly.html", "ai-roi.html", "side-income.html"],
+  "ai-sidejob": ["ai-efficiency.html", "ai-efficiency.html", "ai-roi.html", "side-income.html"],
   "ai-hourly": ["ai-efficiency.html", "ai-roi.html", "ai-time-reduction.html", "side-profit-margin.html"],
-  "ai-efficiency": ["ai-roi.html", "ai-automation.html", "ai-time-reduction.html", "hourly-improvement.html"],
+  "ai-efficiency": ["ai-roi.html", "ai-efficiency.html", "ai-time-reduction.html", "hourly-improvement.html"],
   "take-home": ["side-income.html", "tax.html", "side-profit-margin.html", "hourly-improvement.html"],
   retirement: ["nisa.html", "ideco.html", "fixed-cost-reduction.html", "fire.html"],
 };
@@ -9428,7 +9438,7 @@ const simulatorDescriptions = {
   "ai-efficiency.html": "AI活用による時間削減と利益改善の目安を確認します。",
   "ai-roi.html": "AIツール費用に対して、どれだけ回収できるかを見ます。",
   "ai-time-reduction.html": "AIで削減できる作業時間と時給改善を確認します。",
-  "ai-automation.html": "AIで自動化できる作業と副業継続性の改善を確認します。",
+  "ai-efficiency.html": "AIで自動化できる作業と副業継続性の改善を確認します。",
   "ideco.html": "iDeCo掛金による節税額と将来資産を確認します。",
 };
 
@@ -10862,6 +10872,7 @@ function renderAiEfficiency() {
     setText("aiEfficiencyRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiEfficiencyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiEfficiencyProjectHourly", yen.format(0));
+    setText("aiEfficiencyProjectHourlyGap", yen.format(0));
     setText("aiEfficiencyContinuity", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
@@ -10903,9 +10914,12 @@ function renderAiEfficiency() {
     ? "副業時給改善シミュレーターで経費と外注費を含めた維持ラインを確認しましょう"
     : "副業時給改善シミュレーターで目標時給に必要な単価アップや追加短縮時間を確認しましょう";
   const projectMonthlyIncome = projectPrice * projectCount;
+  const beforeProjectMonthlyHours = projectHours * projectCount;
+  const beforeProjectHourly = beforeProjectMonthlyHours > 0 ? projectMonthlyIncome / beforeProjectMonthlyHours : 0;
   const adjustedProjectHours = projectHours * (1 - reductionRate);
   const projectMonthlyHours = adjustedProjectHours * projectCount;
   const projectHourly = projectMonthlyHours > 0 ? projectMonthlyIncome / projectMonthlyHours : 0;
+  const projectHourlyGap = projectHourly - beforeProjectHourly;
   const automationSavedHours = hours * automationRate;
   const automationLoadReduction = hours > 0 ? automationSavedHours / hours : 0;
   const automationTimeValue = automationSavedHours * currentHourly;
@@ -10927,6 +10941,7 @@ function renderAiEfficiency() {
   setText("aiEfficiencyRecommendation", recommendation);
   setText("aiEfficiencyGuide", guide);
   setText("aiEfficiencyProjectHourly", yen.format(projectHourly));
+  setText("aiEfficiencyProjectHourlyGap", `${yen.format(beforeProjectHourly)} → ${yen.format(projectHourly)}（+${yen.format(projectHourlyGap)}）`);
   setText("aiEfficiencyContinuity", continuity);
   document.querySelector("#aiEfficiencyHourly").setAttribute("data-current-hourly", yen.format(currentHourly));
 }
@@ -10957,6 +10972,7 @@ function renderAiRoi() {
     setText("aiRoiAfterProfit", yen.format(0));
     setText("aiRoiMarginImprovement", "0pt");
     setText("aiRoiTargetGap", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiTargetShortening", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
 
@@ -11001,6 +11017,19 @@ function renderAiRoi() {
   const targetGapText = targetGap <= 0
     ? "目標月収に届く目安です"
     : `${yen.format(targetGap)}不足`;
+  const monthlyProfitImprovement = afterProfit - currentProfit;
+  const currentGap = Math.max(values.aiRoiTargetIncome.value - currentProfit, 0);
+  const currentMonths = currentProfit > 0 ? currentGap / currentProfit : null;
+  const afterGap = Math.max(values.aiRoiTargetIncome.value - afterProfit, 0);
+  const afterMonths = monthlyProfitImprovement > 0 ? afterGap / monthlyProfitImprovement : null;
+  const shorteningMonths = currentMonths !== null && afterMonths !== null
+    ? Math.max(currentMonths - afterMonths, 0)
+    : afterGap === 0 ? currentGap > 0 ? 1 : 0 : null;
+  const shorteningText = afterGap === 0
+    ? "目標月収到達圏内"
+    : shorteningMonths === null
+      ? "短縮には売上増か単価改善が必要"
+      : `${shorteningMonths.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}か月短縮の目安`;
 
   setText("aiRoiRate", `${roi.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`);
   setText("aiRoiSavedHours", `${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
@@ -11012,6 +11041,7 @@ function renderAiRoi() {
   setText("aiRoiAfterProfit", yen.format(afterProfit));
   setText("aiRoiMarginImprovement", `${marginImprovement.toFixed(1)}pt`);
   setText("aiRoiTargetGap", targetGapText);
+  setText("aiRoiTargetShortening", shorteningText);
 }
 
 function renderAiAutomation() {
