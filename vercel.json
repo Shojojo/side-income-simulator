@@ -37,6 +37,11 @@
       "source": "/ai-profit-max.html",
       "destination": "/ai-roi.html",
       "permanent": true
+    },
+    {
+      "source": "/employee-fire.html",
+      "destination": "/fire.html",
+      "permanent": true
     }
   ],
   "rewrites": [

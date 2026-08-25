@@ -85,7 +85,7 @@
                         "breadcrumb": {
                                 "@id": "https://side-income-simulator.vercel.app/fire.html#breadcrumb"
                         },
-                        "dateModified": "2026-08-24",
+                        "dateModified": "2026-08-25",
                         "inLanguage": "ja"
                 },
                 {
@@ -221,7 +221,7 @@
     <main>
       <div class="app-shell">
         <h1>FIRE達成シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年8月24日</p>
+          <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-fire.html">FIRE</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -249,8 +249,12 @@
             <div class="article-list">
               <div class="article-link"><strong>年間生活費</strong><span>毎月の生活費に12を掛けた金額を目安にします。必要資産はこの年間生活費の25年分で計算します。</span></div>
               <div class="article-link"><strong>現在資産</strong><span>預貯金、投資信託、株式など、FIRE資産として見たい金額を入れます。生活防衛資金を含めるかは、自分の確認目的に合わせてください。</span></div>
+              <div class="article-link"><strong>現在年齢</strong><span>副業収入や配当収入も含めた場合のFIRE達成年齢を確認するために使います。</span></div>
               <div class="article-link"><strong>毎月積立額</strong><span>NISA積立、副業収入からの追加投資、固定費削減で生まれた余力など、毎月投資へ回せる金額です。</span></div>
+              <div class="article-link"><strong>副業月収からの追加積立</strong><span>副業の税金や経費を引いた後、投資へ回せる金額を入力します。会社員FIRE年数計算ページで見ていた短縮効果をこのページで確認できます。</span></div>
+              <div class="article-link"><strong>配当収入からの再投資</strong><span>配当を使わず再投資する場合の月額目安です。配当は保証されないため、少なめの条件でも確認してください。</span></div>
               <div class="article-link"><strong>想定年利</strong><span>将来の運用を仮定するための年利です。高い数字だけで判断せず、3%、4%、5%など複数パターンで見る前提です。</span></div>
+              <div class="article-link"><strong>目標FIRE資産</strong><span>0円の場合は年間生活費の25年分で自動計算します。自分で目標資産を決めたい場合だけ入力します。</span></div>
               <div class="article-link"><strong>確認する年数</strong><span>指定した年数後に、想定運用資産がどれくらいになるかを見るために使います。</span></div>
             </div>
           </section>
@@ -266,6 +270,10 @@
               <div class="article-link"><strong>達成年数</strong><span>現在資産に毎月積立額を加え、想定年利で複利運用した場合に必要資産へ届くまでの目安です。</span></div>
               <div class="article-link"><strong>想定運用資産・積立額</strong><span>確認する年数後の将来資産と、現在資産に毎月積立を足した元本寄りの金額を比較できます。</span></div>
               <div class="article-link"><strong>毎月必要積立額</strong><span>指定した年数で必要資産へ届くために必要な毎月積立額の目安です。現在の積立額との差を見るために使います。</span></div>
+              <div class="article-link"><strong>会社員FIRE達成年齢</strong><span>毎月積立額に副業月収からの追加積立と配当再投資を加えた場合の達成年齢を表示します。</span></div>
+              <div class="article-link"><strong>追加必要積立額</strong><span>指定した年数で目標資産へ届くために、現在の積立・副業・配当再投資に加えて必要な月額を確認します。</span></div>
+              <div class="article-link"><strong>副業収入・配当再投資の短縮効果</strong><span>副業収入や配当再投資を含めた場合、FIREまでの期間がどれくらい短くなるかを目安として表示します。</span></div>
+              <div class="article-link"><strong>サイドFIRE必要資産比較</strong><span>副業収入と配当収入を残す場合、完全FIREより必要資産をどれくらい下げられるかを確認します。</span></div>
               <div class="article-link"><strong>積立5万円・10万円・15万円の比較</strong><span>同じ現在資産と年利のまま、積立額だけを変えた場合の達成年数と想定運用資産を比べます。</span></div>
             </div>
           </section>
@@ -430,6 +438,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>会社員FIRE年数計算シミュレーターの独自機能を統合し、副業月収、配当再投資、目標FIRE資産、達成年齢、追加必要積立額、サイドFIRE必要資産比較を追加</li>
+                  <li>会社員FIREページ統合に伴い、FIRE達成シミュレーターを主力ページとして整理</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-08-24">2026年8月24日</time>
                 <ul>

@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/side-fire-roadmap.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>副業FIRE達成ロードマップ診断</h1>
-        <p class="article-meta">最終更新日：2026年6月30日</p>
+        <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-fire.html">FIRE</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,24 @@
           </nav>
         <p><a href="side-fire-roadmap.html">副業FIRE達成ロードマップ診断を開く</a></p>
 
-        
+        <section class="article-panel" aria-label="副業FIREロードマップで分かること">
+          <section class="tool-heading">
+            <h2>このツールで分かること</h2>
+            <p>副業FIRE達成ロードマップ診断は、目標年齢までにFIREへ届く可能性と、次に改善すべき優先順位を確認するページです。</p>
+          </section>
+          <p>年齢、年収、副業収入、現在資産、毎月投資額、毎月生活費、想定年利、FIRE目標年齢を入力し、生活費25年分を目安にした必要資産へどれくらい届くかを見ます。</p>
+          <div class="comparison-table" role="region" aria-label="副業FIREロードマップで確認する項目" tabindex="0">
+            <table>
+              <thead><tr><th>表示される結果</th><th>何を判断するか</th><th>使い方</th></tr></thead>
+              <tbody>
+                <tr><td>FIRE達成確率、達成予想年齢</td><td>目標年齢時点の到達度</td><td>今の積立と副業収入で方向性が合っているか見ます。</td></tr>
+                <tr><td>不足額、必要副業収入</td><td>目標まで足りない月額の目安</td><td>副業、投資額、生活費のどこを見直すか決めます。</td></tr>
+                <tr><td>改善優先順位、関連ツール</td><td>次に見るべき課題</td><td>固定費、副業月収、NISAなどへ進む入口にします。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>このページは「FIREまで何年か」だけでなく、何から改善するかを決めるための診断です。投資利回りや副業収入は変動するため、楽観的な数字だけで判断しないようにしてください。</p>
+        </section>
 
 
           <section class="article-panel update-history" aria-label="更新履歴">
@@ -113,6 +130,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>達成確率、不足額、必要副業収入、改善優先順位の読み方を静的HTMLへ追加</li>
+                  <li>FIRE系の中でロードマップ診断として使う理由を明確化</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -275,13 +299,43 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="project-fire.html" data-next-recommend="side-fire-roadmap-to-project-fire">
+                <span class="next-step-label">次の一手</span>
+                <strong>Project FIREを読む</strong>
+                <span>FIREを目指す過程や改善履歴を、運営者の実体験として確認できます。</span>
+                <span>進むページ：Project FIRE</span>
+                <b>記録を読む</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="side-fire-roadmap-to-nisa">
+                <span class="next-step-label">投資確認</span>
+                <strong>NISA積立を確認する</strong>
+                <span>FIRE資産を作るための積立額と将来資産を見ます。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fixed-cost-reduction.html" data-next-recommend="side-fire-roadmap-to-fixed-cost-reduction">
+                <span class="next-step-label">家計改善</span>
+                <strong>固定費削減の効果を見る</strong>
+                <span>生活費を下げると、必要資産と達成年数の両方に影響します。</span>
+                <span>進むページ：固定費削減シミュレーター</span>
+                <b>固定費を見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>
             <a href="side-fire-roadmap.html">副業FIREロードマップ</a>
             <a href="fire-rate.html">FIRE達成率</a>
             <a href="fire-cost-optimization.html">FIRE生活費最適化</a>
-            <a href="employee-fire.html">会社員FIRE年数</a>
+            <a href="fire.html">会社員FIRE年数</a>
             <a href="side-fire.html">サイドFIRE</a>
             <a href="privacy.html">プライバシーポリシー</a>
             <a href="disclaimer.html">免責事項</a>
