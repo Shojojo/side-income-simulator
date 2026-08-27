@@ -42,6 +42,11 @@
       "source": "/employee-fire.html",
       "destination": "/fire.html",
       "permanent": true
+    },
+    {
+      "source": "/article-rakuten-sbi-thorough-comparison-2026.html",
+      "destination": "/article-rakuten-sbi-securities-comparison.html",
+      "permanent": true
     }
   ],
   "rewrites": [
