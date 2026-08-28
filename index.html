@@ -82,7 +82,7 @@
                               "breadcrumb": {
                                       "@id": "https://side-income-simulator.vercel.app/#breadcrumb"
                               },
-                              "dateModified": "2026-08-27",
+                              "dateModified": "2026-08-28",
                               "inLanguage": "ja"
                       },
                       {
@@ -147,172 +147,164 @@
     </script>
   </head>
   <body>
-    <main>
+    <main class="home-main">
       <div class="app-shell static-home">
         <header class="hero">
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <span aria-current="page">ホーム</span>
           </nav>
-          <p class="home-hero-kicker">会社員の人生設計を、数字から見直す</p>
-          <h1>このまま働くだけで、時間もお金も残るのか。</h1>
-          <p class="article-meta">最終更新日：2026年8月27日</p>
+          <p class="home-hero-kicker">副業・家計・資産形成の現在地診断</p>
+          <h1>今の収入と目標から、あなたの現在地を確認する</h1>
+          <p class="article-meta">最終更新日：2026年8月28日</p>
           <p class="lead">
-            仕事を頑張っているのに、自由に使える時間や将来への余裕が増えていかない。
-            そう感じた会社員が、副業収入、税金、手取り、家計、NISA、FIREまでを順番に確認できる入口です。
+            現在の副業収入、目標の副業収入、毎月の生活費を入れるだけで、
+            今の生活をどれくらい副業収入で支えられているか、次に何を確認すべきかを整理できます。
           </p>
           <div class="home-hero-checks" aria-label="最初に確認できること">
-            <span>まず現状を知る</span>
-            <span>無理なく次を選ぶ</span>
-            <span>人生の選択肢を増やす</span>
+            <span>現在地を知る</span>
+            <span>目標との差を見る</span>
+            <span>次の一手を選ぶ</span>
           </div>
           <nav class="hero-action-nav" aria-label="トップページ主要導線">
-            <a class="hero-cta-primary" href="side-income.html">まず現状を知る</a>
-            <a href="#problem-entry">悩みから選ぶ</a>
-            <a href="#recommended-order">使う順番を見る</a>
+            <a class="hero-cta-primary" href="#current-location">現在地を確認する</a>
+            <a href="#next-action">次の一手を見る</a>
+            <a href="#primary-simulators">主力ツールを見る</a>
             <a href="#project-fire">運営記録を読む</a>
           </nav>
-          <p class="home-scroll-cue">少し下に進むと、収入・税金・家計・FIREのどこから見ればよいかを選べます。</p>
+          <p class="home-scroll-cue">下に進むと、収入 − 支出 = 残るお金の感覚で、今の副業収入が生活費にどれくらい効いているかを確認できます。</p>
         </header>
 
-        <section class="article-panel site-about-panel" id="site-about" aria-label="このサイトについて">
+        <section class="article-panel home-diagnosis-panel" id="current-location" aria-label="現在地診断">
           <section class="tool-heading">
-            <h2>このサイトについて</h2>
-            <p class="brand-mission">数字を知ることは、人生の選択肢を増やすこと。</p>
+            <h2>現在地診断</h2>
+            <p>細かい家計簿ではなく、現在の副業収入、目標、生活費の3つから大まかな現在地を確認します。</p>
           </section>
-          <div class="brand-story">
-            <p>このサイトは、会社員として働きながら、副業、税金、資産形成、FIREを一つずつ数字で確認するために運営しています。</p>
-            <p>副業でいくら増やせるのか。税金を引くといくら残るのか。家計を整えた先に、NISAやFIREへどれくらい近づけるのか。ばらばらに見える悩みを、人生の選択肢を増やすための流れとして整理しています。</p>
+          <div class="home-diagnosis-layout">
+            <form class="home-diagnosis-form" id="homePositionForm" aria-label="副業収入と生活費の現在地診断">
+              <label>
+                <span>現在の副業月収</span>
+                <input id="homeCurrentIncome" type="number" inputmode="numeric" min="0" step="1000" value="0" aria-describedby="homeCurrentIncomeHelp">
+                <small id="homeCurrentIncomeHelp">今の副業収入が0円でも問題ありません。</small>
+              </label>
+              <div class="home-preset-row" aria-label="現在の副業月収の候補">
+                <button type="button" data-home-preset="current" data-value="0">0円</button>
+                <button type="button" data-home-preset="current" data-value="10000">1万円</button>
+                <button type="button" data-home-preset="current" data-value="30000">3万円</button>
+                <button type="button" data-home-preset="current" data-value="50000">5万円</button>
+                <button type="button" data-home-preset="current" data-value="100000">10万円</button>
+              </div>
+              <label>
+                <span>目標の副業月収</span>
+                <input id="homeTargetIncome" type="number" inputmode="numeric" min="0" step="1000" value="50000" aria-describedby="homeTargetIncomeHelp">
+                <small id="homeTargetIncomeHelp">まずは月1万円、3万円、5万円など現実的な目標から試せます。</small>
+              </label>
+              <div class="home-preset-row" aria-label="目標の副業月収の候補">
+                <button type="button" data-home-preset="target" data-value="10000">1万円</button>
+                <button type="button" data-home-preset="target" data-value="30000">3万円</button>
+                <button type="button" data-home-preset="target" data-value="50000">5万円</button>
+                <button type="button" data-home-preset="target" data-value="100000">10万円</button>
+              </div>
+              <label>
+                <span>毎月のおおまかな生活費</span>
+                <input id="homeMonthlyCost" type="number" inputmode="numeric" min="0" step="1000" value="150000" aria-describedby="homeMonthlyCostHelp">
+                <small id="homeMonthlyCostHelp">家賃、食費、通信費、光熱費などをまとめた大まかな金額で構いません。</small>
+              </label>
+              <button class="home-diagnosis-submit" type="submit">今の自分を計算する</button>
+            </form>
+            <div class="home-result-panel" aria-live="polite">
+              <p class="eyebrow">診断結果</p>
+              <div class="home-result-main">
+                <strong id="homeGapResult">目標まであと 50,000円</strong>
+                <span id="homeResultMessage">現在の副業収入は生活費の0%相当です。</span>
+              </div>
+              <div class="home-result-grid">
+                <div><span>現在の副業月収</span><strong id="homeCurrentResult">0円</strong></div>
+                <div><span>目標の副業月収</span><strong id="homeTargetResult">50,000円</strong></div>
+                <div><span>現在の生活費カバー率</span><strong id="homeCurrentCoverResult">0%</strong></div>
+                <div><span>目標達成時のカバー率</span><strong id="homeTargetCoverResult">33%</strong></div>
+              </div>
+              <p class="home-result-note" id="homeResultNote">副業収入が増えた分は、貯蓄、投資、固定費の見直し、税金準備などへ振り分ける余地になります。</p>
+            </div>
           </div>
-          <div class="brand-promise-grid" aria-label="このサイトの3つの約束">
-            <article class="brand-promise-card">
-              <h3>分かりやすくする</h3>
-              <p>専門用語だけで終わらせず、会社員が次の行動を考えやすい言葉で整理します。</p>
+        </section>
+
+        <section class="article-panel home-life-change-panel" id="life-change" aria-label="生活変化シミュレーション">
+          <section class="tool-heading">
+            <h2>生活がどう変わるか</h2>
+            <p>副業収入は、金額だけでなく生活費に対してどれくらい効くかで見ると判断しやすくなります。</p>
+          </section>
+          <div class="life-change-grid">
+            <article class="life-change-card">
+              <span>今の余力</span>
+              <strong id="homeCurrentLifeText">生活費の0%相当</strong>
+              <p>現在の副業収入が、毎月の支出に対してどれくらい支えになるかを見ます。</p>
             </article>
-            <article class="brand-promise-card">
-              <h3>実際に使い続ける</h3>
-              <p>運営者自身も副業、家計、FIREの数字を確認しながら、必要な改善を続けます。</p>
+            <article class="life-change-card">
+              <span>目標達成後</span>
+              <strong id="homeTargetLifeText">生活費の33%相当</strong>
+              <p>目標月収に届いた場合、固定費、貯蓄、投資へ回せる余地を考えやすくなります。</p>
             </article>
-            <article class="brand-promise-card">
-              <h3>改善を止めない</h3>
-              <p>制度、リンク、説明、計算結果の読み方を見直し、分かりにくい点を少しずつ直します。</p>
+            <article class="life-change-card">
+              <span>増える可能性</span>
+              <strong id="homeIncreaseLifeText">+50,000円／月</strong>
+              <p>断定ではなく、目標との差額をもとに生活の選択肢を増やす材料として確認します。</p>
             </article>
           </div>
-          <div class="brand-path" aria-label="ブランド理解のための導線">
-            <span>このサイトを知る順番</span>
-            <a href="operator.html">運営者情報</a>
-            <a href="project-fire.html">なぜこのサイトを作ったのか</a>
-            <a href="#primary-simulators">人気ツールへ進む</a>
+          <p class="home-static-note">この簡易診断は税金、経費、投資利回りを含まない概算です。正確な手取りや納税準備は、次のシミュレーターで確認してください。</p>
+        </section>
+
+        <section class="article-panel home-next-action-panel" id="next-action" aria-label="あなたの次の一手">
+          <section class="tool-heading">
+            <h2>あなたの次の一手</h2>
+            <p>現在地を見たあと、次に確認すると判断しやすいページを選べます。</p>
+          </section>
+          <div class="next-action-grid">
+            <a class="next-action-card is-primary" href="side-income.html" data-home-next="side-income">
+              <strong>副業収入を増やしたい</strong>
+              <span>目標月収に必要な単価、作業時間、件数を具体的に確認します。</span>
+              <b>副業月収シミュレーター</b>
+            </a>
+            <a class="next-action-card" href="take-home.html" data-home-next="take-home">
+              <strong>手取りを確認したい</strong>
+              <span>売上ではなく、経費や税金を考えたあとに残る金額を確認します。</span>
+              <b>副業手取りシミュレーター</b>
+            </a>
+            <a class="next-action-card" href="tax.html" data-home-next="tax">
+              <strong>税金を確認したい</strong>
+              <span>所得税、住民税、納税準備の目安を早めに見ておきます。</span>
+              <b>副業税金シミュレーター</b>
+            </a>
+            <a class="next-action-card" href="nisa.html" data-home-next="nisa">
+              <strong>増えたお金を資産形成へ回したい</strong>
+              <span>副業で増えた余力を毎月積立へ回した場合の将来資産を見ます。</span>
+              <b>新NISAシミュレーター</b>
+            </a>
+            <a class="next-action-card" href="fire.html" data-home-next="fire">
+              <strong>FIREまでの距離を確認したい</strong>
+              <span>生活費と現在資産から、必要資産と不足額を確認します。</span>
+              <b>FIRE達成シミュレーター</b>
+            </a>
+            <a class="next-action-card" href="project-fire.html" data-home-next="project-fire">
+              <strong>実際の運営者の挑戦を見る</strong>
+              <span>AdSense不承認、改善、停滞も含めたサイト運営の一次情報を読みます。</span>
+              <b>Project FIRE</b>
+            </a>
           </div>
         </section>
 
-        <section class="article-panel objective-nav-panel" id="objective-nav" aria-label="目的別ナビ">
+        <section class="article-panel" id="primary-simulators" aria-label="主力シミュレーター">
           <section class="tool-heading">
-            <h2>あなたはどれに近いですか？</h2>
-            <p>目的に合わせて最初に見るページを案内します。</p>
+            <h2>主力シミュレーター</h2>
+            <p>現在地診断で見えた数字を、既存ツールでさらに具体化できます。</p>
           </section>
-          <div class="objective-nav-grid">
-            <a class="objective-nav-card" href="side-income.html">
-              <strong>副業を始めたい</strong>
-              <span>副業月収シミュレーター</span>
-            </a>
-            <a class="objective-nav-card" href="take-home.html">
-              <strong>手取りを知りたい</strong>
-              <span>副業手取り計算シミュレーター</span>
-            </a>
-            <a class="objective-nav-card" href="tax.html">
-              <strong>税金が気になる</strong>
-              <span>副業税金シミュレーター</span>
-            </a>
-            <a class="objective-nav-card" href="cash-flow.html">
-              <strong>貯金を増やしたい</strong>
-              <span>キャッシュフローシミュレーター</span>
-            </a>
-            <a class="objective-nav-card" href="nisa.html">
-              <strong>投資を始めたい</strong>
-              <span>新NISAシミュレーター</span>
-            </a>
-            <a class="objective-nav-card" href="project-fire.html">
-              <strong>FIREを目指したい</strong>
-              <span>Project FIRE</span>
-            </a>
-          </div>
-        </section>
-
-        <section class="article-panel problem-entry-panel" id="problem-entry" aria-label="悩みから最初のシミュレーターを選ぶ">
-          <section class="tool-heading">
-            <h2>今、一番変えたいことは何ですか？</h2>
-            <p>現在の悩みに近いものを1つ選ぶと、最初に使うべきシミュレーターへ進めます。</p>
-          </section>
-          <div class="problem-choice-grid">
-            <a class="problem-choice-card" href="side-income.html" data-cta="problem-side-income">
-              <span class="problem-choice-label">副業収入</span>
-              <strong>副業を始めたいけれど、月にいくら稼げるか分からない</strong>
-              <span>まずは作業時間と単価から、現実的な月収の目安を確認します。</span>
-              <b>副業月収シミュレーターへ進む</b>
-            </a>
-            <a class="problem-choice-card" href="take-home.html" data-cta="problem-take-home">
-              <span class="problem-choice-label">手取り</span>
-              <strong>売上ではなく、最終的に残る金額を確認したい</strong>
-              <span>経費や税金を引いたあと、実際に使える金額を見ます。</span>
-              <b>副業手取りシミュレーターへ進む</b>
-            </a>
-            <a class="problem-choice-card" href="cash-flow.html" data-cta="problem-cash-flow">
-              <span class="problem-choice-label">家計</span>
-              <strong>収入はあるのに、毎月お金が残らない</strong>
-              <span>毎月の収入と支出を整理し、投資や貯蓄へ回せる余力を確認します。</span>
-              <b>キャッシュフローシミュレーターへ進む</b>
-            </a>
-            <a class="problem-choice-card" href="fire.html" data-cta="problem-fire">
-              <span class="problem-choice-label">FIRE</span>
-              <strong>会社に依存しない生活まで、あと何年か知りたい</strong>
-              <span>生活費と資産から、FIREまでの距離を数字で確認します。</span>
-              <b>FIRE達成シミュレーターへ進む</b>
-            </a>
-          </div>
-          <p class="problem-entry-note">どれを選べばよいか分からない方は、まず<a href="side-income.html">副業月収シミュレーター</a>から始められます。</p>
-        </section>
-
-        <section class="article-panel" id="site-purpose" aria-label="サイトの目的">
-          <section class="tool-heading">
-            <h2>このサイトでできること</h2>
-            <p>副業で増やす、税金と手取りを確認する、家計を整える、資産形成へ進む流れを一つの入口にまとめています。</p>
-          </section>
-          <p>副業や投資は、単体で考えると次に何を見ればよいか迷いやすくなります。このトップページでは、収入、税金、手取り、家計、NISA、FIRE、老後資金をつなげて確認できるように整理しています。</p>
-        </section>
-
-        <section class="article-panel" id="main-tools-guide" aria-label="主力ツールで分かること">
-          <section class="tool-heading">
-            <h2>主力ツールで何が分かるか</h2>
-            <p>最初に見る数字を間違えないように、収入から将来設計までを順番に確認できます。</p>
-          </section>
-          <p>このサイトの主力ツールは、単に金額を出すためではなく、会社員が次に何を確認すべきかを判断するために置いています。まず <a href="side-income.html">副業月収シミュレーター</a> で、単価と作業時間から無理のない収入目安を見ます。次に <a href="take-home.html">副業手取りシミュレーター</a> と <a href="tax.html">副業税金シミュレーター</a> で、売上から実際に残る金額と納税準備を確認します。</p>
-          <p>残せる金額が見えたら、家計の黒字額を整え、<a href="nisa.html">新NISAシミュレーター</a> で長期積立の目安を見ます。最後に <a href="fire.html">FIRE達成シミュレーター</a> で、現在資産と生活費から会社に依存しすぎない状態までの距離を確認します。副業収入を増やすだけで終わらせず、税金、手取り、資産形成まで一つの流れで見ることがこのサイトの役割です。</p>
-        </section>
-
-        <section class="article-panel" aria-label="詳しく探したい方向けの導線">
-          <section class="tool-heading">
-            <h2>詳しく探したい方へ</h2>
-            <p>最初の4択で決めきれない場合は、カテゴリ、代表ツール、利用順序から探せます。</p>
-          </section>
-          <div class="article-list compact-entry-list">
-            <a class="article-link" href="#category-guide"><strong>カテゴリから探す</strong><span>副業、税金、家計、投資、FIRE、老後資金をまとめて確認できます。</span></a>
-            <a class="article-link" href="#primary-simulators"><strong>代表的なシミュレーターを見る</strong><span>目的が決まっている方は、主要ツールへ直接進めます。</span></a>
-            <a class="article-link" href="#recommended-order"><strong>おすすめの利用順序を見る</strong><span>副業収入からFIREまで、数字をつなげて確認する順番です。</span></a>
-          </div>
-        </section>
-
-        <section class="article-panel" id="start-guide" aria-label="初めての人向けスタートガイド">
-          <section class="tool-heading">
-            <h2>初めての人向けスタートガイド</h2>
-            <p>利用目的に合わせて、最初に見るべきカテゴリまたは代表ページへ進めます。</p>
-          </section>
-          <div class="decision-grid">
-            <article class="decision-card"><h3>副業収入を確認したい</h3><p>まず月収の目安を出し、時間と単価が現実的か確認します。</p><div class="card-actions"><a class="primary-link" href="side-income.html">月収を計算する</a><a class="subtle-link" href="category-side-business.html">副業収入カテゴリ</a></div></article>
-            <article class="decision-card"><h3>手取りと税金を確認したい</h3><p>売上から経費と税金を引いた、実際に残る金額を見ます。</p><div class="card-actions"><a class="primary-link" href="take-home.html">手取りを見る</a><a class="subtle-link" href="category-tax.html">税金・手取りカテゴリ</a></div></article>
-            <article class="decision-card"><h3>家計を改善したい</h3><p>毎月の黒字額、固定費、生活防衛資金を順番に整理します。</p><div class="card-actions"><a class="primary-link" href="cash-flow.html">収支を確認する</a><a class="subtle-link" href="category-household.html">家計管理カテゴリ</a></div></article>
-            <article class="decision-card"><h3>NISAを始めたい</h3><p>投資前の余力とリスクを確認し、積立額を考えます。</p><div class="card-actions"><a class="primary-link" href="nisa.html">NISAを試算する</a><a class="subtle-link" href="category-investment.html">NISA・投資カテゴリ</a></div></article>
-            <article class="decision-card"><h3>FIREに必要な金額を知りたい</h3><p>生活費から必要資産と不足額を確認します。</p><div class="card-actions"><a class="primary-link" href="fire.html">FIREを試算する</a><a class="subtle-link" href="category-fire.html">FIREカテゴリ</a></div></article>
-            <article class="decision-card"><h3>老後資金を確認したい</h3><p>退職後の生活費と年金見込みから不足額を確認します。</p><div class="card-actions"><a class="primary-link" href="retirement.html">老後資金を見る</a><a class="subtle-link" href="category-retirement.html">老後資金カテゴリ</a></div></article>
+          <p>副業収入を増やすだけでは、実際に使えるお金は分かりません。このサイトでは、副業月収、手取り、税金、家計、NISA、FIREの順に確認し、収入を将来の選択肢につなげることを重視しています。</p>
+          <div class="primary-simulator-grid">
+            <article class="primary-simulator-card is-priority"><p class="eyebrow">Start</p><h3>副業月収</h3><p>単価、作業時間、件数から目標月収の現実感を確認します。</p><a class="primary-link" href="side-income.html">月収を計算する</a></article>
+            <article class="primary-simulator-card"><p class="eyebrow">Take-home</p><h3>副業手取り</h3><p>売上から経費や税金を考えたあとに残る金額を見ます。</p><a class="primary-link" href="take-home.html">手取りを見る</a></article>
+            <article class="primary-simulator-card"><p class="eyebrow">Tax</p><h3>副業税金</h3><p>所得税と住民税の目安を確認し、納税準備につなげます。</p><a class="primary-link" href="tax.html">税金を見る</a></article>
+            <article class="primary-simulator-card"><p class="eyebrow">Household</p><h3>キャッシュフロー</h3><p>毎月の黒字額と、投資や貯蓄へ回せる余力を確認します。</p><a class="primary-link" href="cash-flow.html">収支を見る</a></article>
+            <article class="primary-simulator-card"><p class="eyebrow">Invest</p><h3>新NISA</h3><p>積立額と運用期間から、将来資産の目安を確認します。</p><a class="primary-link" href="nisa.html">NISAを試算する</a></article>
+            <article class="primary-simulator-card"><p class="eyebrow">FIRE</p><h3>FIRE達成</h3><p>生活費、現在資産、不足額からFIREまでの距離を見ます。</p><a class="primary-link" href="fire.html">距離を見る</a></article>
           </div>
         </section>
 
@@ -332,32 +324,17 @@
           </div>
         </section>
 
-        <section class="article-panel" id="primary-simulators" aria-label="代表的なシミュレーター">
+        <section class="article-panel beginner-roadmap" id="recommended-order" aria-label="個人ロードマップ">
           <section class="tool-heading">
-            <h2>代表的なシミュレーター</h2>
-            <p>最初に使うなら、この6つから確認すると全体像をつかみやすくなります。</p>
-          </section>
-          <div class="primary-simulator-grid">
-            <article class="primary-simulator-card is-priority"><p class="eyebrow">Start</p><h3>副業月収</h3><p>収入目標と作業量の入口です。</p><a class="primary-link" href="side-income.html">計算する</a></article>
-            <article class="primary-simulator-card"><p class="eyebrow">Tax</p><h3>副業手取り</h3><p>売上から実際に残る金額を確認します。</p><a class="primary-link" href="take-home.html">確認する</a></article>
-            <article class="primary-simulator-card"><p class="eyebrow">Tax</p><h3>副業税金</h3><p>所得税と住民税の目安を確認します。</p><a class="primary-link" href="tax.html">税金を見る</a></article>
-            <article class="primary-simulator-card"><p class="eyebrow">Household</p><h3>キャッシュフロー</h3><p>毎月の黒字額を確認します。</p><a class="primary-link" href="cash-flow.html">収支を見る</a></article>
-            <article class="primary-simulator-card"><p class="eyebrow">Invest</p><h3>新NISA</h3><p>積立額と将来資産を確認します。</p><a class="primary-link" href="nisa.html">試算する</a></article>
-            <article class="primary-simulator-card"><p class="eyebrow">FIRE</p><h3>FIRE達成</h3><p>必要資産と不足額を確認します。</p><a class="primary-link" href="fire.html">距離を見る</a></article>
-          </div>
-        </section>
-
-        <section class="article-panel beginner-roadmap" id="recommended-order" aria-label="おすすめの利用順序">
-          <section class="tool-heading">
-            <h2>おすすめの利用順序</h2>
-            <p>副業から資産形成まで、数字をつなげて確認する順番です。</p>
+            <h2>個人ロードマップ</h2>
+            <p>現在地診断で見えた数字を、次の順番で具体的な行動へつなげます。</p>
           </section>
           <div class="roadmap-grid">
-            <a class="roadmap-step" href="side-income.html"><strong>STEP1</strong><span>副業収入を確認</span></a>
-            <a class="roadmap-step" href="take-home.html"><strong>STEP2</strong><span>手取りを確認</span></a>
-            <a class="roadmap-step" href="tax.html"><strong>STEP3</strong><span>税金を確認</span></a>
-            <a class="roadmap-step" href="cash-flow.html"><strong>STEP4</strong><span>家計の黒字額を確認</span></a>
-            <a class="roadmap-step" href="nisa.html"><strong>STEP5</strong><span>NISA積立を確認</span></a>
+            <a class="roadmap-step" href="#current-location"><strong>STEP1</strong><span>現在地を確認</span></a>
+            <a class="roadmap-step" href="side-income.html"><strong>STEP2</strong><span>目標月収に必要な作業量を見る</span></a>
+            <a class="roadmap-step" href="take-home.html"><strong>STEP3</strong><span>手取りを確認</span></a>
+            <a class="roadmap-step" href="tax.html"><strong>STEP4</strong><span>税金を確認</span></a>
+            <a class="roadmap-step" href="nisa.html"><strong>STEP5</strong><span>増えた余力を資産形成へ回す</span></a>
             <a class="roadmap-step" href="fire.html"><strong>STEP6</strong><span>FIREまでの距離を確認</span></a>
           </div>
         </section>
@@ -416,6 +393,13 @@
           </section>
           <div class="update-history-list">
             <article class="update-entry">
+              <time datetime="2026-08-28">2026年8月28日</time>
+              <ul>
+                <li>トップページを現在地診断、生活変化、次の一手、個人ロードマップ型の構成へ刷新</li>
+                <li>副業月収、目標月収、生活費から、生活費カバー率と次に使うべきツールを確認できるように改善</li>
+              </ul>
+            </article>
+            <article class="update-entry">
               <time datetime="2026-08-24">2026年8月24日</time>
               <ul>
                 <li>主力ツールで分かることと、副業月収からFIREまでの判断フローを静的HTMLに追加</li>
@@ -457,6 +441,91 @@
           }
           if (latestRecordList) {
             latestRecordList.innerHTML = projectFireRecords.slice().sort((a, b) => b.number - a.number).map((record) => `<a class="article-link" href="${record.href}"><strong>運営記録 #${String(record.number).padStart(3, "0")}｜${record.title}</strong><span>${record.summary}</span><span>${record.date}公開 / 続きを読む</span></a>`).join("");
+          }
+
+          const homePositionForm = document.querySelector("#homePositionForm");
+          const homeCurrentIncome = document.querySelector("#homeCurrentIncome");
+          const homeTargetIncome = document.querySelector("#homeTargetIncome");
+          const homeMonthlyCost = document.querySelector("#homeMonthlyCost");
+          const yenFormatter = new Intl.NumberFormat("ja-JP");
+
+          function readHomeNumber(input) {
+            if (!input) return 0;
+            const value = Number(input.value);
+            if (!Number.isFinite(value) || value < 0) return 0;
+            return Math.min(value, 999999999);
+          }
+
+          function formatHomeYen(value) {
+            return `${yenFormatter.format(Math.round(Math.max(0, value)))}円`;
+          }
+
+          function formatHomePercent(income, cost) {
+            if (!Number.isFinite(cost) || cost <= 0) return "生活費未入力";
+            const percent = Math.min((income / cost) * 100, 9999);
+            return `${Math.round(percent)}%`;
+          }
+
+          function updateHomePosition() {
+            const current = readHomeNumber(homeCurrentIncome);
+            const target = readHomeNumber(homeTargetIncome);
+            const cost = readHomeNumber(homeMonthlyCost);
+            const gap = target - current;
+            const currentCover = formatHomePercent(current, cost);
+            const targetCover = formatHomePercent(target, cost);
+            const increase = Math.max(target - current, 0);
+            const gapText = gap > 0
+              ? `目標まであと ${formatHomeYen(gap)}`
+              : gap === 0
+                ? "目標に到達しています"
+                : `目標を ${formatHomeYen(Math.abs(gap))} 上回っています`;
+            const message = cost > 0
+              ? `現在の副業収入は生活費の${currentCover}相当です。目標に届くと${targetCover}相当まで広がります。`
+              : "生活費を入力すると、副業収入が支出の何%を支えられるか確認できます。";
+            const note = cost > 0
+              ? `${formatHomeYen(increase)}増えると、毎月の支出、貯蓄、投資、税金準備へ振り分けられる余地を考えやすくなります。`
+              : "生活費0円または空欄の場合、割合は出さず金額差だけを表示します。";
+
+            const updates = {
+              homeGapResult: gapText,
+              homeResultMessage: message,
+              homeCurrentResult: formatHomeYen(current),
+              homeTargetResult: formatHomeYen(target),
+              homeCurrentCoverResult: currentCover,
+              homeTargetCoverResult: targetCover,
+              homeResultNote: note,
+              homeCurrentLifeText: cost > 0 ? `生活費の${currentCover}相当` : "生活費を入力すると表示",
+              homeTargetLifeText: cost > 0 ? `生活費の${targetCover}相当` : "生活費を入力すると表示",
+              homeIncreaseLifeText: increase > 0 ? `+${formatHomeYen(increase)}／月` : "追加差額なし"
+            };
+
+            Object.entries(updates).forEach(([id, text]) => {
+              const element = document.getElementById(id);
+              if (element) element.textContent = text;
+            });
+          }
+
+          if (homePositionForm) {
+            homePositionForm.addEventListener("submit", (event) => {
+              event.preventDefault();
+              updateHomePosition();
+              document.querySelector("#life-change")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
+            [homeCurrentIncome, homeTargetIncome, homeMonthlyCost].forEach((input) => {
+              input?.addEventListener("input", updateHomePosition);
+              input?.addEventListener("blur", () => {
+                input.value = String(readHomeNumber(input));
+                updateHomePosition();
+              });
+            });
+            document.querySelectorAll("[data-home-preset]").forEach((button) => {
+              button.addEventListener("click", () => {
+                const targetInput = button.dataset.homePreset === "current" ? homeCurrentIncome : homeTargetIncome;
+                if (targetInput) targetInput.value = button.dataset.value || "0";
+                updateHomePosition();
+              });
+            });
+            updateHomePosition();
           }
         </script>
         <footer class="site-footer" aria-label="サイト情報">
