@@ -210,15 +210,15 @@
                 <span id="homeResultMessage">毎月50,000円、1年間で600,000円分の選択肢が増える目安になります。</span>
               </div>
               <div class="home-result-grid">
-                <div><span>毎月増える選択肢</span><strong id="homeMonthlyFutureResult">50,000円</strong></div>
-                <div><span>1年間で見ると</span><strong id="homeAnnualFutureResult">600,000円</strong></div>
-                <div><span>生活費に対する目安</span><strong id="homeFutureCoverResult">約33%相当</strong></div>
-                <div><span>現在との差</span><strong id="homeGapResult">あと50,000円</strong></div>
+                <div><span id="homeMonthlyLabel">毎月増える選択肢</span><strong id="homeMonthlyFutureResult">50,000円</strong></div>
+                <div><span id="homeAnnualLabel">1年間で見ると</span><strong id="homeAnnualFutureResult">600,000円</strong></div>
+                <div><span id="homeCoverLabel">生活費に対する目安</span><strong id="homeFutureCoverResult">約33%相当</strong></div>
+                <div><span id="homeGapLabel">現在との差</span><strong id="homeGapResult">あと50,000円</strong></div>
               </div>
               <p class="home-result-note" id="homeResultNote">ここでは税金・必要経費を差し引く前の副業月収として表示しています。実際に使える金額は手取りや税金も確認してください。</p>
               <div class="home-use-panel" id="future-use">
                 <div>
-                  <h3>このお金を、何に使いたいですか？</h3>
+                  <h3 id="homeUsePrompt">このお金を、何に使いたいですか？</h3>
                   <p>使い道を1つ選ぶと、次に確認するとよいシミュレーターが絞られます。</p>
                 </div>
                 <div class="home-use-grid" aria-label="副業収入の使い道">
@@ -524,38 +524,58 @@
             const target = readHomeNumber(homeTargetIncome);
             const cost = readHomeNumber(homeMonthlyCost);
             const gap = target - current;
-            const annualTarget = target * 12;
+            const isShort = current < target;
+            const isReached = current === target;
+            const basisIncome = isShort ? target : current;
+            const monthlyChange = isShort ? gap : current;
+            const annualChange = monthlyChange * 12;
+            const annualBasis = basisIncome * 12;
             const currentCover = formatHomePercent(current, cost);
             const targetCover = formatHomePercent(target, cost);
+            const basisCover = formatHomePercent(basisIncome, cost);
             const useCase = homeUseCases[selectedHomeUse] || homeUseCases.daily;
-            const gapText = gap > 0
-              ? `あと${formatHomeYen(gap)}`
-              : gap === 0
-                ? "目標と同額"
+            const gapText = isShort
+              ? `目標まであと${formatHomeYen(gap)}`
+              : isReached
+                ? "目標を達成しています"
                 : `目標を${formatHomeYen(Math.abs(gap))}上回っています`;
-            const futureTitle = target > 0
+            const futureTitle = isShort
               ? `月${formatHomeYen(target)}の副業収入ができたら`
-              : "目標副業月収を入力すると未来を試せます";
+              : current > 0
+                ? `現在の副業月収は${formatHomeYen(current)}です`
+                : "現在の副業月収を入力すると確認できます";
             const message = cost > 0
-              ? `毎月${formatHomeYen(target)}、1年間で${formatHomeYen(annualTarget)}分の選択肢が増える目安です。生活費の${targetCover}相当として考えられます。`
-              : `毎月${formatHomeYen(target)}、1年間で${formatHomeYen(annualTarget)}分の選択肢が増える目安です。生活費を入力すると割合も表示します。`;
+              ? isShort
+                ? `今より毎月${formatHomeYen(gap)}増えると、年間では${formatHomeYen(annualChange)}分の余地が広がります。目標到達後は生活費の${targetCover}相当です。`
+                : `現在の副業収入は、入力した生活費の${currentCover}相当です。年間では${formatHomeYen(annualBasis)}の副業収入規模です。`
+              : isShort
+                ? `今より毎月${formatHomeYen(gap)}、年間では${formatHomeYen(annualChange)}分の余地が広がる目安です。生活費を入力すると割合も表示します。`
+                : `現在の副業収入は年間${formatHomeYen(annualBasis)}規模です。生活費を入力すると割合も表示します。`;
             const note = cost > 0
               ? "ここでは税金・必要経費を差し引く前の副業月収として表示しています。実際に使える金額は手取りや税金も確認してください。"
               : "生活費0円または空欄の場合、割合は出さず金額だけを表示します。税金・必要経費は含まない概算です。";
+            const useAmountText = isShort
+              ? `目標額は月${formatHomeYen(target)}、目標までの差は月${formatHomeYen(gap)}として確認できます。`
+              : `現在の副業収入は月${formatHomeYen(current)}、年間${formatHomeYen(annualBasis)}として確認できます。`;
 
             const updates = {
+              homeMonthlyLabel: isShort ? "月額増加" : "現在の副業月収",
+              homeAnnualLabel: isShort ? "年間増加" : "現在の年間副業収入",
+              homeCoverLabel: isShort ? "目標達成時のカバー率" : "現在の生活費カバー率",
+              homeGapLabel: isShort ? "目標との差" : "目標との比較",
               homeFutureTitle: futureTitle,
               homeGapResult: gapText,
               homeResultMessage: message,
-              homeMonthlyFutureResult: formatHomeYen(target),
-              homeAnnualFutureResult: formatHomeYen(annualTarget),
-              homeFutureCoverResult: cost > 0 ? `${targetCover}相当` : "生活費を入力すると表示",
+              homeMonthlyFutureResult: isShort ? `+${formatHomeYen(gap)}` : formatHomeYen(current),
+              homeAnnualFutureResult: isShort ? `+${formatHomeYen(annualChange)}` : formatHomeYen(annualBasis),
+              homeFutureCoverResult: cost > 0 ? `${basisCover}相当` : "生活費を入力すると表示",
               homeResultNote: note,
+              homeUsePrompt: isShort ? "このお金を、何に使いたいですか？" : "この副業収入を、どう使いたいですか？",
               homeUseTitle: useCase.title,
-              homeUseText: `${useCase.text} 目標額は月${formatHomeYen(target)}、年間${formatHomeYen(annualTarget)}として確認できます。`,
+              homeUseText: `${useCase.text} ${useAmountText}`,
               homeCurrentLifeText: cost > 0 ? `生活費の${currentCover}相当` : "生活費を入力すると表示",
-              homeTargetLifeText: `月${formatHomeYen(target)} / 年${formatHomeYen(annualTarget)}`,
-              homeIncreaseLifeText: cost > 0 ? `${currentCover} → ${targetCover}` : "生活費を入力すると表示"
+              homeTargetLifeText: isShort ? `月${formatHomeYen(target)} / 年${formatHomeYen(target * 12)}` : `月${formatHomeYen(current)} / 年${formatHomeYen(annualBasis)}`,
+              homeIncreaseLifeText: cost > 0 ? (isShort ? `${currentCover} → ${targetCover}` : currentCover) : "生活費を入力すると表示"
             };
 
             Object.entries(updates).forEach(([id, text]) => {
