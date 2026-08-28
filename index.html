@@ -158,20 +158,12 @@
           <p class="article-meta">最終更新日：2026年8月28日</p>
           <p class="lead">
             現在の副業収入、目標の副業収入、毎月の生活費を入れるだけで、
-            今の生活をどれくらい副業収入で支えられているか、次に何を確認すべきかを整理できます。
+            副業収入が増えたときに、日常、安心、資産形成へどれくらい選択肢が広がるかを数字で確認できます。
           </p>
-          <div class="home-hero-checks" aria-label="最初に確認できること">
-            <span>現在地を知る</span>
-            <span>目標との差を見る</span>
-            <span>次の一手を選ぶ</span>
-          </div>
           <nav class="hero-action-nav" aria-label="トップページ主要導線">
-            <a class="hero-cta-primary" href="#current-location">現在地を確認する</a>
-            <a href="#next-action">次の一手を見る</a>
-            <a href="#primary-simulators">主力ツールを見る</a>
-            <a href="#project-fire">運営記録を読む</a>
+            <a class="hero-cta-primary" href="#current-location">副業収入が増えた未来を試してみる</a>
           </nav>
-          <p class="home-scroll-cue">下に進むと、収入 − 支出 = 残るお金の感覚で、今の副業収入が生活費にどれくらい効いているかを確認できます。</p>
+          <p class="home-scroll-cue">下に進むと、月1万円、3万円、5万円、10万円が自分の生活費に対してどれくらいの意味を持つかを確認できます。</p>
         </header>
 
         <section class="article-panel home-diagnosis-panel" id="current-location" aria-label="現在地診断">
@@ -212,18 +204,36 @@
               <button class="home-diagnosis-submit" type="submit">今の自分を計算する</button>
             </form>
             <div class="home-result-panel" aria-live="polite">
-              <p class="eyebrow">診断結果</p>
+              <p class="eyebrow">未来シミュレーション</p>
               <div class="home-result-main">
-                <strong id="homeGapResult">目標まであと 50,000円</strong>
-                <span id="homeResultMessage">現在の副業収入は生活費の0%相当です。</span>
+                <strong id="homeFutureTitle">月5万円の副業収入ができたら</strong>
+                <span id="homeResultMessage">毎月50,000円、1年間で600,000円分の選択肢が増える目安になります。</span>
               </div>
               <div class="home-result-grid">
-                <div><span>現在の副業月収</span><strong id="homeCurrentResult">0円</strong></div>
-                <div><span>目標の副業月収</span><strong id="homeTargetResult">50,000円</strong></div>
-                <div><span>現在の生活費カバー率</span><strong id="homeCurrentCoverResult">0%</strong></div>
-                <div><span>目標達成時のカバー率</span><strong id="homeTargetCoverResult">33%</strong></div>
+                <div><span>毎月増える選択肢</span><strong id="homeMonthlyFutureResult">50,000円</strong></div>
+                <div><span>1年間で見ると</span><strong id="homeAnnualFutureResult">600,000円</strong></div>
+                <div><span>生活費に対する目安</span><strong id="homeFutureCoverResult">約33%相当</strong></div>
+                <div><span>現在との差</span><strong id="homeGapResult">あと50,000円</strong></div>
               </div>
-              <p class="home-result-note" id="homeResultNote">副業収入が増えた分は、貯蓄、投資、固定費の見直し、税金準備などへ振り分ける余地になります。</p>
+              <p class="home-result-note" id="homeResultNote">ここでは税金・必要経費を差し引く前の副業月収として表示しています。実際に使える金額は手取りや税金も確認してください。</p>
+              <div class="home-use-panel" id="future-use">
+                <div>
+                  <h3>このお金を、何に使いたいですか？</h3>
+                  <p>使い道を1つ選ぶと、次に確認するとよいシミュレーターが絞られます。</p>
+                </div>
+                <div class="home-use-grid" aria-label="副業収入の使い道">
+                  <button type="button" class="home-use-button is-selected" data-home-use="daily" aria-pressed="true"><strong>日常を楽にする</strong><span>食事、外食、日用品など</span></button>
+                  <button type="button" class="home-use-button" data-home-use="living" aria-pressed="false"><strong>暮らしを整える</strong><span>サブスク、通信、家具、衣類、美容など</span></button>
+                  <button type="button" class="home-use-button" data-home-use="experience" aria-pressed="false"><strong>好きなこと・体験</strong><span>趣味、旅行、飲み会、買い物など</span></button>
+                  <button type="button" class="home-use-button" data-home-use="family" aria-pressed="false"><strong>家族のために使う</strong><span>子育て、習い事、学費、住宅、車など</span></button>
+                  <button type="button" class="home-use-button" data-home-use="safety" aria-pressed="false"><strong>安心に変える</strong><span>貯金、保険、ローン返済、生活防衛資金など</span></button>
+                  <button type="button" class="home-use-button" data-home-use="future" aria-pressed="false"><strong>未来へ回す</strong><span>NISA、資産形成、FIREなど</span></button>
+                </div>
+                <div class="home-use-result" aria-live="polite">
+                  <strong id="homeUseTitle">日常を楽にする</strong>
+                  <p id="homeUseText">目標副業月収を、食費や日用品など毎月の支出を軽くする余地として考えられます。</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -241,13 +251,13 @@
             </article>
             <article class="life-change-card">
               <span>目標達成後</span>
-              <strong id="homeTargetLifeText">生活費の33%相当</strong>
-              <p>目標月収に届いた場合、固定費、貯蓄、投資へ回せる余地を考えやすくなります。</p>
+              <strong id="homeTargetLifeText">月50,000円 / 年600,000円</strong>
+              <p>目標月収に届いた場合、毎月だけでなく年間でどれくらい選択肢が増えるかを見ます。</p>
             </article>
             <article class="life-change-card">
-              <span>増える可能性</span>
-              <strong id="homeIncreaseLifeText">+50,000円／月</strong>
-              <p>断定ではなく、目標との差額をもとに生活の選択肢を増やす材料として確認します。</p>
+              <span>生活費カバー率</span>
+              <strong id="homeIncreaseLifeText">0% → 約33%</strong>
+              <p>収入が生活費の何%に相当するかを見ると、家計への影響を直感的に判断できます。</p>
             </article>
           </div>
           <p class="home-static-note">この簡易診断は税金、経費、投資利回りを含まない概算です。正確な手取りや納税準備は、次のシミュレーターで確認してください。</p>
@@ -256,38 +266,18 @@
         <section class="article-panel home-next-action-panel" id="next-action" aria-label="あなたの次の一手">
           <section class="tool-heading">
             <h2>あなたの次の一手</h2>
-            <p>現在地を見たあと、次に確認すると判断しやすいページを選べます。</p>
+            <p>選んだ使い道に合わせて、最初に確認するとよいページを絞ります。</p>
           </section>
-          <div class="next-action-grid">
-            <a class="next-action-card is-primary" href="side-income.html" data-home-next="side-income">
-              <strong>副業収入を増やしたい</strong>
-              <span>目標月収に必要な単価、作業時間、件数を具体的に確認します。</span>
-              <b>副業月収シミュレーター</b>
+          <div class="next-action-grid" id="homeRecommendedTools">
+            <a class="next-action-card is-primary" href="cash-flow.html" data-home-next="cash-flow">
+              <strong>毎月の収支を確認する</strong>
+              <span>副業収入が生活費のどこを支えられるか、家計全体で確認します。</span>
+              <b>キャッシュフローシミュレーター</b>
             </a>
             <a class="next-action-card" href="take-home.html" data-home-next="take-home">
-              <strong>手取りを確認したい</strong>
-              <span>売上ではなく、経費や税金を考えたあとに残る金額を確認します。</span>
+              <strong>実際に残る金額を見る</strong>
+              <span>売上ではなく、経費や税金を考えたあとに使える金額を確認します。</span>
               <b>副業手取りシミュレーター</b>
-            </a>
-            <a class="next-action-card" href="tax.html" data-home-next="tax">
-              <strong>税金を確認したい</strong>
-              <span>所得税、住民税、納税準備の目安を早めに見ておきます。</span>
-              <b>副業税金シミュレーター</b>
-            </a>
-            <a class="next-action-card" href="nisa.html" data-home-next="nisa">
-              <strong>増えたお金を資産形成へ回したい</strong>
-              <span>副業で増えた余力を毎月積立へ回した場合の将来資産を見ます。</span>
-              <b>新NISAシミュレーター</b>
-            </a>
-            <a class="next-action-card" href="fire.html" data-home-next="fire">
-              <strong>FIREまでの距離を確認したい</strong>
-              <span>生活費と現在資産から、必要資産と不足額を確認します。</span>
-              <b>FIRE達成シミュレーター</b>
-            </a>
-            <a class="next-action-card" href="project-fire.html" data-home-next="project-fire">
-              <strong>実際の運営者の挑戦を見る</strong>
-              <span>AdSense不承認、改善、停滞も含めたサイト運営の一次情報を読みます。</span>
-              <b>Project FIRE</b>
             </a>
           </div>
         </section>
@@ -447,7 +437,61 @@
           const homeCurrentIncome = document.querySelector("#homeCurrentIncome");
           const homeTargetIncome = document.querySelector("#homeTargetIncome");
           const homeMonthlyCost = document.querySelector("#homeMonthlyCost");
+          const homeUseButtons = Array.from(document.querySelectorAll("[data-home-use]"));
+          const homeRecommendedTools = document.querySelector("#homeRecommendedTools");
           const yenFormatter = new Intl.NumberFormat("ja-JP");
+          let selectedHomeUse = "daily";
+
+          const homeUseCases = {
+            daily: {
+              title: "日常を楽にする",
+              text: "食費や日用品など、毎月の支出を少し軽くする余地として考えられます。",
+              tools: [
+                ["cash-flow.html", "毎月の収支を確認する", "副業収入が生活費のどこを支えられるか、家計全体で確認します。", "キャッシュフローシミュレーター"],
+                ["take-home.html", "実際に残る金額を見る", "売上ではなく、経費や税金を考えたあとに使える金額を確認します。", "副業手取りシミュレーター"]
+              ]
+            },
+            living: {
+              title: "暮らしを整える",
+              text: "通信費やサブスクなど、毎月続く支出と副業収入のバランスを見直す入口になります。",
+              tools: [
+                ["fixed-cost-reduction.html", "固定費を見直す", "毎月の支出を無理なく減らせる余地があるか確認します。", "固定費削減シミュレーター"],
+                ["cash-flow.html", "収入と支出を並べて見る", "副業収入と生活費を合わせて、毎月残るお金を確認します。", "キャッシュフローシミュレーター"]
+              ]
+            },
+            experience: {
+              title: "好きなこと・体験",
+              text: "趣味や旅行などに使う場合も、まずは無理なく続けられる副業月収かを確認すると判断しやすくなります。",
+              tools: [
+                ["side-income.html", "目標月収の現実感を見る", "単価、作業時間、件数から、目標に必要な条件を確認します。", "副業月収シミュレーター"],
+                ["take-home.html", "使える金額を確認する", "税金や経費を考えたあとに残る金額を見ます。", "副業手取りシミュレーター"]
+              ]
+            },
+            family: {
+              title: "家族のために使う",
+              text: "子育て、学費、住宅、車などに充てる場合は、毎月継続できる金額かを家計と税金の両方から確認します。",
+              tools: [
+                ["cash-flow.html", "家計への影響を見る", "家族の支出も含めて、毎月の黒字額を確認します。", "キャッシュフローシミュレーター"],
+                ["tax.html", "税金の準備を見る", "副業所得が増えたときの所得税・住民税の目安を確認します。", "副業税金シミュレーター"]
+              ]
+            },
+            safety: {
+              title: "安心に変える",
+              text: "貯金、生活防衛資金、返済などへ回す場合は、必要な備えと納税準備を分けて考えると安心です。",
+              tools: [
+                ["emergency-fund.html", "生活防衛資金を確認する", "生活費に対して、どれくらい備えがあると安心かを確認します。", "生活防衛資金シミュレーター"],
+                ["tax.html", "納税準備を確認する", "副業収入が増えたときに必要な税金の目安を見ます。", "副業税金シミュレーター"]
+              ]
+            },
+            future: {
+              title: "未来へ回す",
+              text: "NISAやFIREを考える場合は、副業月収を毎月の積立余力として見て、将来資産や必要資産へつなげます。",
+              tools: [
+                ["nisa.html", "積立した未来を見る", "副業収入を積立に回した場合の将来資産の目安を確認します。", "新NISAシミュレーター"],
+                ["fire.html", "FIREまでの距離を見る", "生活費と資産から、FIREに必要な金額と不足額を確認します。", "FIRE達成シミュレーター"]
+              ]
+            }
+          };
 
           function readHomeNumber(input) {
             if (!input) return 0;
@@ -463,7 +507,16 @@
           function formatHomePercent(income, cost) {
             if (!Number.isFinite(cost) || cost <= 0) return "生活費未入力";
             const percent = Math.min((income / cost) * 100, 9999);
-            return `${Math.round(percent)}%`;
+            return `約${Math.round(percent)}%`;
+          }
+
+          function renderHomeRecommendedTools() {
+            if (!homeRecommendedTools) return;
+            const useCase = homeUseCases[selectedHomeUse] || homeUseCases.daily;
+            homeRecommendedTools.innerHTML = useCase.tools.map((tool, index) => {
+              const [href, title, body, label] = tool;
+              return `<a class="next-action-card${index === 0 ? " is-primary" : ""}" href="${href}" data-home-next="${selectedHomeUse}-${index + 1}"><strong>${title}</strong><span>${body}</span><b>${label}</b></a>`;
+            }).join("");
           }
 
           function updateHomePosition() {
@@ -471,38 +524,45 @@
             const target = readHomeNumber(homeTargetIncome);
             const cost = readHomeNumber(homeMonthlyCost);
             const gap = target - current;
+            const annualTarget = target * 12;
             const currentCover = formatHomePercent(current, cost);
             const targetCover = formatHomePercent(target, cost);
-            const increase = Math.max(target - current, 0);
+            const useCase = homeUseCases[selectedHomeUse] || homeUseCases.daily;
             const gapText = gap > 0
-              ? `目標まであと ${formatHomeYen(gap)}`
+              ? `あと${formatHomeYen(gap)}`
               : gap === 0
-                ? "目標に到達しています"
-                : `目標を ${formatHomeYen(Math.abs(gap))} 上回っています`;
+                ? "目標と同額"
+                : `目標を${formatHomeYen(Math.abs(gap))}上回っています`;
+            const futureTitle = target > 0
+              ? `月${formatHomeYen(target)}の副業収入ができたら`
+              : "目標副業月収を入力すると未来を試せます";
             const message = cost > 0
-              ? `現在の副業収入は生活費の${currentCover}相当です。目標に届くと${targetCover}相当まで広がります。`
-              : "生活費を入力すると、副業収入が支出の何%を支えられるか確認できます。";
+              ? `毎月${formatHomeYen(target)}、1年間で${formatHomeYen(annualTarget)}分の選択肢が増える目安です。生活費の${targetCover}相当として考えられます。`
+              : `毎月${formatHomeYen(target)}、1年間で${formatHomeYen(annualTarget)}分の選択肢が増える目安です。生活費を入力すると割合も表示します。`;
             const note = cost > 0
-              ? `${formatHomeYen(increase)}増えると、毎月の支出、貯蓄、投資、税金準備へ振り分けられる余地を考えやすくなります。`
-              : "生活費0円または空欄の場合、割合は出さず金額差だけを表示します。";
+              ? "ここでは税金・必要経費を差し引く前の副業月収として表示しています。実際に使える金額は手取りや税金も確認してください。"
+              : "生活費0円または空欄の場合、割合は出さず金額だけを表示します。税金・必要経費は含まない概算です。";
 
             const updates = {
+              homeFutureTitle: futureTitle,
               homeGapResult: gapText,
               homeResultMessage: message,
-              homeCurrentResult: formatHomeYen(current),
-              homeTargetResult: formatHomeYen(target),
-              homeCurrentCoverResult: currentCover,
-              homeTargetCoverResult: targetCover,
+              homeMonthlyFutureResult: formatHomeYen(target),
+              homeAnnualFutureResult: formatHomeYen(annualTarget),
+              homeFutureCoverResult: cost > 0 ? `${targetCover}相当` : "生活費を入力すると表示",
               homeResultNote: note,
+              homeUseTitle: useCase.title,
+              homeUseText: `${useCase.text} 目標額は月${formatHomeYen(target)}、年間${formatHomeYen(annualTarget)}として確認できます。`,
               homeCurrentLifeText: cost > 0 ? `生活費の${currentCover}相当` : "生活費を入力すると表示",
-              homeTargetLifeText: cost > 0 ? `生活費の${targetCover}相当` : "生活費を入力すると表示",
-              homeIncreaseLifeText: increase > 0 ? `+${formatHomeYen(increase)}／月` : "追加差額なし"
+              homeTargetLifeText: `月${formatHomeYen(target)} / 年${formatHomeYen(annualTarget)}`,
+              homeIncreaseLifeText: cost > 0 ? `${currentCover} → ${targetCover}` : "生活費を入力すると表示"
             };
 
             Object.entries(updates).forEach(([id, text]) => {
               const element = document.getElementById(id);
               if (element) element.textContent = text;
             });
+            renderHomeRecommendedTools();
           }
 
           if (homePositionForm) {
@@ -523,6 +583,18 @@
                 const targetInput = button.dataset.homePreset === "current" ? homeCurrentIncome : homeTargetIncome;
                 if (targetInput) targetInput.value = button.dataset.value || "0";
                 updateHomePosition();
+              });
+            });
+            homeUseButtons.forEach((button) => {
+              button.addEventListener("click", () => {
+                selectedHomeUse = button.dataset.homeUse || "daily";
+                homeUseButtons.forEach((item) => {
+                  const isSelected = item === button;
+                  item.classList.toggle("is-selected", isSelected);
+                  item.setAttribute("aria-pressed", String(isSelected));
+                });
+                updateHomePosition();
+                document.querySelector("#next-action")?.scrollIntoView({ behavior: "smooth", block: "start" });
               });
             });
             updateHomePosition();
