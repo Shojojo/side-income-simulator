@@ -84,8 +84,8 @@ const routeSeo = {
     description: "副業売上だけでなく作業時間、経費、AI活用を入れて実質時給を確認し、忙しい会社員でも続けやすい改善策を探せます。本業後の限られた時間でも、資産形成の判断を進めやすいように整理しています。",
   },
   "side-time-management": {
-    title: "副業時間管理シミュレーター｜本業後1時間の継続可能性を分析【2026年版】",
-    description: "勤務時間、通勤、睡眠、家事を差し引き、本業後に副業を続けられる時間とAI時短の効果を現実的に確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業時間管理・継続診断シミュレーター｜本業後に無理なく続ける働き方【2026年版】",
+    description: "本業後に副業を無理なく続けるための時間管理・継続診断ページです。勤務時間、睡眠、家事、副業時間、目標収入、疲労感、AI活用から、続けやすい働き方と次の改善点を確認できます。",
   },
   "side-fatigue": {
     title: "副業疲労度シミュレーター｜会社員のburnoutリスク診断【2026年版】",
@@ -100,8 +100,8 @@ const routeSeo = {
     description: "副業目標月収、現在収益、本業勤務時間、副業時間、睡眠、疲労度、AI活用、趣味時間からモチベーション維持可能性を診断します。本業後の疲れがあっても続く副業設計に役立ちます。",
   },
   "side-risk": {
-    title: "副業リスク診断｜会社員の税務・疲労・収益依存を確認【2026年版】",
-    description: "副業収入が伸びる前に、税務、burnout、収益依存のリスクを確認し、本業と両立しやすい改善ポイントを整理します。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業リスク・安全度診断｜会社員の規定・税務・疲労を確認【2026年版】",
+    description: "会社員が副業を始める前に、勤務先規定、住民税、匿名性、疲労、収益依存のリスクをまとめて確認する診断ページです。安全に続けるための見直し点を整理できます。",
   },
   "side-safety": {
     title: "会社員副業安全度診断｜会社バレ・税務・疲労リスクを確認【2026年版】",
@@ -624,10 +624,7 @@ document.body.innerHTML = `
                 <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
                 <a href="side-time-management.html">副業時間管理シミュレーター</a>
                 <a href="side-fatigue.html">副業疲労度シミュレーター</a>
-                <a href="side-continuity.html">副業継続率診断</a>
-                <a href="side-motivation.html">副業モチベーション診断</a>
                 <a href="side-risk.html">副業リスク診断</a>
-                <a href="side-safety.html">会社員副業安全度診断</a>
                 <a href="side-profit-margin.html">副業利益率シミュレーター</a>
                 <a href="incorporation.html">副業法人化判断シミュレーター</a>
               </div>
@@ -650,7 +647,6 @@ document.body.innerHTML = `
               <div class="related-links">
                 <a href="tax.html">税金シミュレーター</a>
                 <a href="take-home.html">副業手取りシミュレーター</a>
-                <a href="income-tax.html">副業所得税シミュレーター</a>
                 <a href="resident-tax.html">副業住民税シミュレーター</a>
                 <a href="employee-tax-saving.html">会社員節税シミュレーター</a>
                 <a href="ideco.html">iDeCo節税シミュレーター</a>
@@ -752,7 +748,7 @@ document.body.innerHTML = `
               <span>AIを使って便利になった点だけでなく、確認漏れ、リンク修正、手直しが必要だった現実を書いています。</span>
               <span class="next-read-reason">関連理由：AI副業を始める前に、過信しすぎない使い方を確認できます。</span>
             </a>
-            <a class="next-read-card" href="article-sidejob-time-management.html">
+            <a class="next-read-card" href="side-time-management.html">
               <strong>副業と本業を両立する時間管理術</strong>
               <span>急な欠勤対応や長時間労働がある中で、副業を続けるために時間をどう守っているかを整理しました。</span>
               <span class="next-read-reason">関連理由：副業の前に、平日1時間でも続く設計を作れます。</span>
@@ -991,7 +987,7 @@ document.body.innerHTML = `
           <ol class="ranking-list">
             <li><a href="article-building-50-tools.html"><strong>31歳会社員が副業サイトを50ツール作るまで</strong><span>本業後の短時間で、失敗と修正を重ねながらサイトを育てた記録</span></a></li>
             <li><a href="article-chatgpt-sidejob-site-lessons.html"><strong>ChatGPTで副業サイトを作って分かったこと</strong><span>AI活用で楽になった作業と、手直しが必要だった現実</span></a></li>
-            <li><a href="article-sidejob-time-management.html"><strong>副業と本業を両立する時間管理術</strong><span>長時間労働や急な対応がある会社員向けの時間設計</span></a></li>
+            <li><a href="side-time-management.html"><strong>副業と本業を両立する時間管理術</strong><span>長時間労働や急な対応がある会社員向けの時間設計</span></a></li>
             <li><a href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>運送業管理職として働きながら副業時間を作る実体験</span></a></li>
             <li><a href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しないための資産形成</span></a></li>
           </ol>
@@ -1234,50 +1230,14 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="side-continuity.html">
-            <p class="eyebrow">Continuity</p>
-            <h2>副業継続率診断</h2>
-            <p>副業時間、疲労度、収益、目標月収、AI活用から、本業後でも副業を続けられる可能性を診断します。</p>
-            <div class="tool-meta">
-              <span>継続率</span>
-              <span>挫折リスク</span>
-              <span>改善提案</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="side-motivation.html">
-            <p class="eyebrow">Motivation</p>
-            <h2>副業モチベーション診断</h2>
-            <p>目標月収、現在収益、本業時間、副業時間、睡眠、疲労度、趣味時間から副業を続ける意欲の維持しやすさを診断します。</p>
-            <div class="tool-meta">
-              <span>維持スコア</span>
-              <span>挫折リスク</span>
-              <span>AI改善</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
           <a class="tool-card" href="side-risk.html">
             <p class="eyebrow">Risk Check</p>
-            <h2>副業リスク診断</h2>
-            <p>副業内容、作業時間、収益依存度、睡眠、確定申告状況から、税務・burnout・収益不安定リスクを診断します。</p>
+            <h2>副業リスク・安全度診断</h2>
+            <p>副業内容、作業時間、収益依存度、睡眠、確定申告、会社規定、匿名性から、税務・疲労・会社員としての安全度を診断します。</p>
             <div class="tool-meta">
               <span>リスクスコア</span>
-              <span>税務</span>
+              <span>会社規定</span>
               <span>改善提案</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="side-safety.html">
-            <p class="eyebrow">Safety Check</p>
-            <h2>会社員副業安全度診断</h2>
-            <p>副業内容、働き方、税務状況、会社規定、匿名性から、会社員として安全に副業を続けられるか診断します。</p>
-            <div class="tool-meta">
-              <span>安全度</span>
-              <span>会社バレ</span>
-              <span>税務・疲労</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -1311,18 +1271,6 @@ document.body.innerHTML = `
               <span>&#x8ab2;&#x7a0e;&#x6240;&#x5f97;</span>
               <span>&#x6240;&#x5f97;&#x7a0e;</span>
               <span>&#x624b;&#x53d6;&#x308a;</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="income-tax.html">
-            <p class="eyebrow">Income Tax</p>
-            <h2>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
-            <p>&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x3001;&#x7d4c;&#x8cbb;&#x3001;&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x3001;&#x57fa;&#x790e;&#x63a7;&#x9664;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x7387;&#x304b;&#x3089;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
-            <div class="tool-meta">
-              <span>&#x6240;&#x5f97;&#x7a0e;</span>
-              <span>&#x5fa9;&#x8208;&#x7a0e;</span>
-              <span>&#x6708;&#x5e73;&#x5747;</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -1745,16 +1693,13 @@ document.body.innerHTML = `
             <li><a href="ai-outsourcing.html"><strong>AI外注費削減</strong><span>AI導入で外注費削減、利益率改善、ROIを確認</span></a></li>
             <li><a href="ai-roi.html"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
             <li><a href="hourly-improvement.html"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
-            <li><a href="side-time-management.html"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
+            <li><a href="side-time-management.html"><strong>副業時間管理・継続診断</strong><span>本業、睡眠、家事、副業時間、目標月収から続けやすさを確認</span></a></li>
             <li><a href="side-fatigue.html"><strong>副業疲労度</strong><span>本業、副業、睡眠、休日からburnoutリスクを確認</span></a></li>
-            <li><a href="side-continuity.html"><strong>副業継続率診断</strong><span>副業時間、疲労度、収益、AI活用から続けやすさを確認</span></a></li>
-            <li><a href="side-motivation.html"><strong>副業モチベーション診断</strong><span>目標月収、疲労度、趣味時間から続ける意欲を確認</span></a></li>
-            <li><a href="side-risk.html"><strong>副業リスク診断</strong><span>税務、burnout、収益依存のリスクをまとめて確認</span></a></li>
-            <li><a href="side-safety.html"><strong>会社員副業安全度診断</strong><span>会社バレ、税務、疲労、会社規定のリスクを確認</span></a></li>
+            <li><a href="side-risk.html"><strong>副業リスク・安全度診断</strong><span>会社規定、住民税、疲労、収益依存のリスクをまとめて確認</span></a></li>
             <li><a href="side-profit-margin.html"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="incorporation.html"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
             <li><a href="take-home.html"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
-            <li><a href="income-tax.html"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="tax.html"><strong>&#x526f;&#x696d;&#x7a0e;&#x91d1;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="employee-tax-saving.html"><strong>会社員節税</strong><span>控除、iDeCo、ふるさと納税で節税可能額を確認</span></a></li>
             <li><a href="resident-tax.html"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="investment-risk.html"><strong>投資リスク許容度診断</strong><span>年齢、資産、経験、暴落耐性から投資スタイルを確認</span></a></li>
@@ -1805,7 +1750,7 @@ document.body.innerHTML = `
               <strong>ChatGPTで副業サイトを作って分かったこと</strong>
               <span>AI活用で時短できた点、確認漏れで苦戦した点、改善した点</span>
             </a>
-            <a class="article-link" href="article-sidejob-time-management.html">
+            <a class="article-link" href="side-time-management.html">
               <strong>副業と本業を両立する時間管理術</strong>
               <span>長時間労働や急な欠勤対応がある中で副業時間を守る考え方</span>
             </a>
@@ -3188,7 +3133,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
-            <a href="side-motivation.html">副業モチベーション診断</a>
+            <a href="side-time-management.html">副業時間管理・継続診断</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="fire.html">FIRE達成シミュレーター</a>
           </div>
@@ -3308,7 +3253,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業疲労度シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業を続けたときの疲労とburnoutリスクを見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、管理職として本業の負荷が高い週に、副業を詰め込みすぎていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、医療的な判断ではないため、体調不良が続く場合は休む判断を優先してください。次は <a href="side-continuity.html">副業継続率診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業を続けたときの疲労とburnoutリスクを見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、管理職として本業の負荷が高い週に、副業を詰め込みすぎていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、医療的な判断ではないため、体調不良が続く場合は休む判断を優先してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3325,9 +3270,9 @@ document.body.innerHTML = `
             <p>疲労度を確認したら、時間配分とAI時短の効果も合わせて見てください。</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">会社員副業安全度診断</a>
             <a href="side-time-management.html">副業時間管理シミュレーター</a>
-            <a href="side-motivation.html">副業モチベーション診断</a>
+            <a href="side-time-management.html">副業時間管理・継続診断</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="fire.html">FIRE達成シミュレーター</a>
           </div>
@@ -3373,7 +3318,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業継続率診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業時間、疲労、収益から続けられる可能性を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、短期で頑張るより、月単位で続く作業量かどうかを確認する用途で使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、スコアが低いときは才能ではなく設計の問題として見直してください。次は <a href="side-motivation.html">副業モチベーション診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業時間、疲労、収益から続けられる可能性を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、短期で頑張るより、月単位で続く作業量かどうかを確認する用途で使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、スコアが低いときは才能ではなく設計の問題として見直してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3384,7 +3329,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>継続率を確認したら、モチベーション、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-motivation.html">副業モチベーション診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業時間管理関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>続けやすさを確認したら、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-time-management.html">副業時間管理・継続診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-motivation" aria-label="副業モチベーション診断">
@@ -3429,7 +3374,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業モチベーション診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、目標月収と疲労度から意欲を保てるか確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に気持ちが切れやすい時期ほど、目標と現実の差を見て作業量を調整しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、高すぎる目標は挫折につながるので、段階目標も試してください。次は <a href="side-continuity.html">副業継続率診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、目標月収と疲労度から意欲を保てるか確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に気持ちが切れやすい時期ほど、目標と現実の差を見て作業量を調整しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、高すぎる目標は挫折につながるので、段階目標も試してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3440,7 +3385,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>モチベーションを確認したら、継続率、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-continuity.html">副業継続率診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>モチベーションを確認したら、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-time-management.html">副業時間管理・継続診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-risk" aria-label="副業リスク診断">
@@ -3569,7 +3514,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業リスク診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、税務、疲労、収益依存のリスクをまとめて確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入を伸ばす前に、確定申告や疲労リスクを見落としていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、診断結果だけで会社規定や税務判断を決めず、必要に応じて公式情報を確認してください。次は <a href="side-safety.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、税務、疲労、収益依存のリスクをまとめて確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入を伸ばす前に、確定申告や疲労リスクを見落としていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、診断結果だけで会社規定や税務判断を決めず、必要に応じて公式情報を確認してください。次は <a href="side-risk.html">副業リスク・安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3586,7 +3531,7 @@ document.body.innerHTML = `
             <p>リスクが高い項目は、時間管理、疲労度、利益率のツールで分解すると改善しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">副業リスク・安全度診断</a>
             <a href="side-fatigue.html">副業疲労度シミュレーター</a>
             <a href="side-time-management.html">副業時間管理シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
@@ -3741,7 +3686,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="side-risk.html">副業リスク診断</a>
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業税金シミュレーター</a>
             <a href="side-fatigue.html">副業疲労度シミュレーター</a>
             <a href="article-company-side-tax-saving.html">会社員の副業税金対策</a>
           </div>
@@ -3973,7 +3918,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業利益率シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業売上から経費を引いた利益率を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、広告費、外注費、AI費用を入れて、手元に残る副業になっているか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、売上が伸びても利益率が下がる場合は、作業や費用を見直してください。次は <a href="income-tax.html">副業所得税シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業売上から経費を引いた利益率を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、広告費、外注費、AI費用を入れて、手元に残る副業になっているか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、売上が伸びても利益率が下がる場合は、作業や費用を見直してください。次は <a href="tax.html">副業税金シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4132,7 +4077,7 @@ document.body.innerHTML = `
             <p>法人化を考える前に、利益率、所得税、会計管理を合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業税金シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
             <a href="article-accounting-software-comparison.html">副業向け会計ソフト比較</a>
           </div>
@@ -4228,7 +4173,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業税金・青色申告シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業収入にかかる税金と青色申告の影響を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入が出た月から、納税資金を残すための目安として使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、概算ツールなので、実際の申告前には国税庁や税理士情報も確認してください。次は <a href="income-tax.html">副業所得税シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業収入にかかる税金と青色申告の影響を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入が出た月から、納税資金を残すための目安として使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、概算ツールなので、実際の申告前には国税庁や税理士情報も確認してください。次は <a href="take-home.html">副業手取り計算シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4245,7 +4190,7 @@ document.body.innerHTML = `
             <p>&#x7a0e;&#x984d;&#x3092;&#x628a;&#x63e1;&#x3057;&#x305f;&#x3042;&#x3068;&#x306b;&#x3001;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x3084;&#x526f;&#x696d;&#x53ce;&#x76ca;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
@@ -4390,7 +4335,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ideco.html">iDeCo節税シミュレーター</a>
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業所得税シミュレーター</a>
             <a href="fixed-cost-reduction.html">固定費削減シミュレーター</a>
           </div>
         </section>
@@ -4527,7 +4472,7 @@ document.body.innerHTML = `
             <p>&#x6240;&#x5f97;&#x7a0e;&#x306e;&#x5f8c;&#x306b;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3001;&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x5168;&#x4f53;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">会社員副業安全度診断</a>
             <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
@@ -4639,7 +4584,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業住民税シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業所得にかかる住民税と普通徴収の注意点を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、会社員副業では住民税の扱いが気になるため、所得割と均等割を分けて確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、普通徴収の可否は自治体や状況で異なるため、必ず自治体の案内も確認してください。次は <a href="side-safety.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業所得にかかる住民税と普通徴収の注意点を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、会社員副業では住民税の扱いが気になるため、所得割と均等割を分けて確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、普通徴収の可否は自治体や状況で異なるため、必ず自治体の案内も確認してください。次は <a href="side-risk.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4656,7 +4601,7 @@ document.body.innerHTML = `
             <p>&#x526f;&#x696d;&#x306e;&#x7a0e;&#x984d;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3001;&#x6708;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x4e00;&#x7dd2;&#x306b;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
@@ -8622,15 +8567,15 @@ document.body.innerHTML = `
           <a href="hourly-improvement.html">副業時給改善</a>
           <a href="side-time-management.html">副業時間管理</a>
           <a href="side-fatigue.html">副業疲労度</a>
-          <a href="side-motivation.html">副業モチベーション</a>
+          <a href="side-time-management.html">副業モチベーション</a>
           <a href="side-risk.html">副業リスク診断</a>
-          <a href="side-safety.html">副業安全度</a>
+          <a href="side-risk.html">副業安全度</a>
           <a href="side-profit-margin.html">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="incorporation.html">副業法人化判断</a>
           <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="tax.html">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="employee-tax-saving.html">会社員節税</a>
-          <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
+          <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="investment-risk.html">投資リスク診断</a>
           <a href="nisa.html">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
@@ -9027,11 +8972,8 @@ const relatedToolGroups = {
     ["副業月収シミュレーター", "side-income.html"],
     ["副業手取り計算シミュレーター", "take-home.html"],
     ["副業利益率シミュレーター", "side-profit-margin.html"],
-    ["副業時間管理シミュレーター", "side-time-management.html"],
-    ["副業継続率診断", "side-continuity.html"],
-    ["副業モチベーション診断", "side-motivation.html"],
-    ["副業リスク診断", "side-risk.html"],
-    ["会社員副業安全度診断", "side-safety.html"],
+    ["副業時間管理・継続診断", "side-time-management.html"],
+    ["副業リスク・安全度診断", "side-risk.html"],
   ],
   ai: [
     ["AI副業効率化シミュレーター", "ai-efficiency.html"],
@@ -9041,15 +8983,12 @@ const relatedToolGroups = {
     ["AI外注費削減シミュレーター", "ai-outsourcing.html"],
     ["AI副業利益最大化シミュレーター", "ai-roi.html"],
     ["副業時給改善シミュレーター", "hourly-improvement.html"],
-    ["副業時間管理シミュレーター", "side-time-management.html"],
-    ["副業継続率診断", "side-continuity.html"],
-    ["副業モチベーション診断", "side-motivation.html"],
+    ["副業時間管理・継続診断", "side-time-management.html"],
     ["副業疲労度シミュレーター", "side-fatigue.html"],
   ],
   tax: [
     ["副業税金シミュレーター", "tax.html"],
     ["会社員節税シミュレーター", "employee-tax-saving.html"],
-    ["副業所得税シミュレーター", "income-tax.html"],
     ["副業住民税シミュレーター", "resident-tax.html"],
     ["副業手取り計算シミュレーター", "take-home.html"],
   ],
@@ -9435,7 +9374,7 @@ const categoryNavigationLinks = [
 
 const routeNextSimulatorMap = {
   "side-income": ["take-home.html", "tax.html", "side-time-management.html", "hourly-improvement.html"],
-  tax: ["take-home.html", "income-tax.html", "resident-tax.html", "side-profit-margin.html"],
+  tax: ["take-home.html", "resident-tax.html", "side-profit-margin.html"],
   fire: ["side-income.html", "take-home.html", "tax.html"],
   nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
   "ai-sidejob": ["ai-efficiency.html", "ai-efficiency.html", "ai-roi.html", "side-income.html"],
@@ -9448,10 +9387,9 @@ const routeNextSimulatorMap = {
 const simulatorDescriptions = {
   "side-income.html": "月収目標と作業時間を見て、副業の現実的な行動量を整理します。",
   "take-home.html": "売上から税金や経費を引いた後の手取り感を確認します。",
-  "tax.html": "副業所得にかかる税金の目安を先に見て、納税不安を減らします。",
+  "tax.html": "副業所得にかかる所得税、住民税、手取りへの影響を先に見て、納税不安を減らします。",
   "side-time-management.html": "本業、睡眠、家事の中で副業に使える時間を確認します。",
   "hourly-improvement.html": "副業の実質時給を見て、AI活用や単価改善の余地を探します。",
-  "income-tax.html": "所得税と復興特別所得税の目安を確認します。",
   "resident-tax.html": "副業の住民税と普通徴収の注意点を整理します。",
   "side-profit-margin.html": "売上、経費、作業時間から利益率と時給効率を確認します。",
   "emergency-fund.html": "FIREや投資の前に必要な生活防衛資金を確認します。",

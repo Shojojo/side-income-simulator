@@ -85,7 +85,7 @@
                         "breadcrumb": {
                                 "@id": "https://side-income-simulator.vercel.app/tax.html#breadcrumb"
                         },
-                        "dateModified": "2026-08-24",
+                        "dateModified": "2026-08-29",
                         "inLanguage": "ja"
                 },
                 {
@@ -206,7 +206,7 @@
     <main>
       <div class="app-shell">
         <h1>副業税金・青色申告シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年8月24日</p>
+          <p class="article-meta">最終更新日：2026年8月29日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-tax.html">税金</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -258,6 +258,15 @@
             </section>
             <p>現在の計算では、まず「年間副業収入 - 必要経費」で副業所得を出し、そこから青色申告控除を引いた金額を課税対象の概算としています。所得税は課税対象額に入力した所得税率を掛け、住民税も同じく入力した住民税率を掛けて計算します。税引後手取りは、副業所得から所得税と住民税を引いた金額です。</p>
             <p>この方法は、税金の全体像を早めに把握するための簡易計算です。実際の税額は、給与収入、各種控除、扶養、自治体、申告方法、所得区分、帳簿の状況によって変わります。副業収入が増えてきた場合や判断に迷う場合は、国税庁、自治体、税理士などの情報も確認してください。</p>
+          </section>
+
+          <section class="article-panel" aria-label="副業所得税の個別確認">
+            <section class="tool-heading">
+              <h2>所得税を個別に確認したい場合</h2>
+              <p>旧「副業所得税シミュレーター」の役割は、この税金ページ内の確認項目として整理しました。</p>
+            </section>
+            <p>所得税だけを細かく見たい場合は、年間副業売上から年間経費、青色申告控除、基礎控除、その他控除を差し引き、課税対象額を作る流れで考えます。そこへ入力した所得税率を掛け、必要に応じて復興特別所得税の影響も確認します。</p>
+            <p>このページの主力計算では、所得税と住民税をまとめて見ます。一方、所得税の個別確認では「課税対象額がどこで決まるか」「所得税部分が月割りでどれくらいの負担感になるか」を見ることが重要です。住民税や普通徴収の注意点は <a href="resident-tax.html">副業住民税シミュレーター</a>、最終的な手取りは <a href="take-home.html">副業手取り計算シミュレーター</a> で確認してください。</p>
           </section>
 
           <section class="article-panel" aria-label="副業税金シミュレーターの結果の読み方">
@@ -471,6 +480,13 @@
             </section>
             <div class="update-history-list">
               <article class="update-entry">
+                <time datetime="2026-08-29">2026年8月29日</time>
+                <ul>
+                  <li>副業所得税シミュレーターの所得税個別確認、控除、復興特別所得税の考え方を税金ページへ統合</li>
+                  <li>所得税、住民税、手取りの確認順序を整理し、旧URL統合後も判断材料が残るよう更新</li>
+                </ul>
+              </article>
+              <article class="update-entry">
                 <time datetime="2026-08-24">2026年8月24日</time>
                 <ul>
                   <li>JavaScriptを実行しない状態でも、入力項目、結果項目、計算前提、結果の読み方が分かる静的説明を追加</li>
@@ -557,9 +573,9 @@
                 <small>関連理由：今見た内容を、次の判断へつなげるため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="income-tax.html">
-                <strong>副業所得税シミュレーター</strong>
-                <span>所得税と復興特別所得税の目安を見ます。</span>
+              <a class="journey-card" href="tax.html">
+                <strong>副業税金シミュレーター</strong>
+                <span>所得税と住民税をまとめて確認します。</span>
                 <small>関連理由：今見た内容を、次の判断へつなげるため</small>
                 <b aria-hidden="true">→</b>
               </a>

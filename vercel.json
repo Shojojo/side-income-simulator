@@ -47,6 +47,31 @@
       "source": "/article-rakuten-sbi-thorough-comparison-2026.html",
       "destination": "/article-rakuten-sbi-securities-comparison.html",
       "permanent": true
+    },
+    {
+      "source": "/side-continuity.html",
+      "destination": "/side-time-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/side-motivation.html",
+      "destination": "/side-time-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-sidejob-time-management.html",
+      "destination": "/side-time-management.html",
+      "permanent": true
+    },
+    {
+      "source": "/side-safety.html",
+      "destination": "/side-risk.html",
+      "permanent": true
+    },
+    {
+      "source": "/income-tax.html",
+      "destination": "/tax.html",
+      "permanent": true
     }
   ],
   "rewrites": [
