@@ -240,7 +240,7 @@ const routeSeo = {
     description: "子どもの人数、進学ルート、大学進学、積立額から教育費を試算し、老後資金への影響もあわせて確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
   },
   "education-insurance": {
-    title: "学資保険比較シミュレーター｜教育費と積立投資を比べる【2026年版】",
+    title: "教育費シミュレーター｜教育費と積立投資を比べる【2026年版】",
     description: "学資保険の返戻率と通常積立投資を比較し、教育費準備と老後資金のバランスを会社員目線で確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
   },
   mortgage: {
@@ -458,7 +458,6 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>会社員の副業・FIRE実体験メディア</h1>
-        <p class="article-meta">最終更新日：2026年7月19日</p>
         <p class="lead">副業、税金、AI活用、資産形成、FIREについて、現役会社員の実体験とシミュレーターを通して、次に取るべき行動を分かりやすく整理するメディアです。</p>
         <nav class="hero-action-nav" aria-label="トップページ主要導線">
           <a href="#problem-navigation">悩みから探す</a>
@@ -690,7 +689,7 @@ document.body.innerHTML = `
                 <a href="emergency-fund.html">生活防衛資金シミュレーター</a>
                 <a href="retirement.html">老後資金シミュレーター</a>
                 <a href="education.html">教育費シミュレーター</a>
-                <a href="education-insurance.html">学資保険比較シミュレーター</a>
+                <a href="education.html">教育費シミュレーター</a>
                 <a href="mortgage.html">住宅ローン返済シミュレーター</a>
               </div>
             </details>
@@ -1653,9 +1652,9 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="education-insurance.html">
+          <a class="tool-card" href="education.html">
             <p class="eyebrow">Education Insurance</p>
-            <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x6bd4;&#x8f03;</h2>
             <p>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x60f3;&#x5b9a;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x6559;&#x80b2;&#x8cbb;&#x4e0d;&#x8db3;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
             <div class="tool-meta">
               <span>&#x8fd4;&#x623b;&#x7387;</span>
@@ -1727,7 +1726,7 @@ document.body.innerHTML = `
             <li><a href="emergency-fund.html"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="fixed-cost-reduction.html"><strong>固定費削減</strong><span>毎月の固定費から年間節約額と投資効果を確認</span></a></li>
             <li><a href="retirement.html"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
-            <li><a href="education-insurance.html"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
+            <li><a href="education.html"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
             <li><a href="mortgage.html"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
           </ol>
         </section>
@@ -1766,11 +1765,11 @@ document.body.innerHTML = `
               <strong>管理職をしながらAI副業を続ける現実</strong>
               <span>本業後の疲労、ChatGPT活用、作業時間短縮のリアル</span>
             </a>
-            <a class="article-link" href="article-side-income.html">
+            <a class="article-link" href="side-income.html">
               <strong>&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x306e;&#x4f7f;&#x3044;&#x65b9;</strong>
               <span>&#x6642;&#x7d66;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6848;&#x4ef6;&#x6570;&#x3092;&#x4f7f;&#x3063;&#x305f;&#x6708;&#x53ce;&#x306e;&#x898b;&#x65b9;</span>
             </a>
-            <a class="article-link" href="article-fire-strategy.html">
+            <a class="article-link" href="fire.html">
               <strong>FIRE&#x9054;&#x6210;&#x306e;&#x57fa;&#x672c;&#x6226;&#x7565;</strong>
               <span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x3001;&#x7a4d;&#x7acb;&#x3001;&#x5229;&#x56de;&#x308a;&#x3092;&#x73fe;&#x5b9f;&#x7684;&#x306b;&#x8003;&#x3048;&#x308b;</span>
             </a>
@@ -1814,7 +1813,7 @@ document.body.innerHTML = `
               <strong>&#x65b0;NISA&#x306e;&#x59cb;&#x3081;&#x65b9;</strong>
               <span>&#x3064;&#x307f;&#x305f;&#x3066;&#x6295;&#x8cc7;&#x67a0;&#x3001;&#x6210;&#x9577;&#x6295;&#x8cc7;&#x67a0;&#x3001;&#x7a4d;&#x7acb;&#x984d;&#x306e;&#x6c7a;&#x3081;&#x65b9;</span>
             </a>
-            <a class="article-link" href="article-ideco-start.html">
+            <a class="article-link" href="ideco.html">
               <strong>iDeCo&#x306e;&#x59cb;&#x3081;&#x65b9;</strong>
               <span>&#x7bc0;&#x7a0e;&#x52b9;&#x679c;&#x3001;&#x639b;&#x91d1;&#x3001;&#x65b0;NISA&#x3068;&#x306e;&#x4f7f;&#x3044;&#x5206;&#x3051;</span>
             </a>
@@ -7008,7 +7007,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="教育費シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、子どもの進学ルートから教育費の不足額を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費と老後資金がぶつからないよう、必要額と積立額を同時に見ています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、進学費用は地域や学校で大きく変わるため、概算として使ってください。次は <a href="education-insurance.html">学資保険比較シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、子どもの進学ルートから教育費の不足額を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費と老後資金がぶつからないよう、必要額と積立額を同時に見ています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、進学費用は地域や学校で大きく変わるため、概算として使ってください。次は <a href="education.html">教育費シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -7034,7 +7033,7 @@ document.body.innerHTML = `
 
       <section class="view" data-view="education-insurance" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
-          <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x6bd4;&#x8f03;</h2>
           <p>&#x7a4d;&#x7acb;&#x578b;&#x306e;&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x5927;&#x5b66;&#x9032;&#x5b66;&#x6642;&#x306b;&#x53d7;&#x3051;&#x53d6;&#x308c;&#x308b;&#x91d1;&#x984d;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
         </section>
 
@@ -7128,7 +7127,7 @@ document.body.innerHTML = `
             </details>
           </div>
         </section>
-        <section class="article-panel operator-comment" aria-label="学資保険比較シミュレーターの運営者コメント">
+        <section class="article-panel operator-comment" aria-label="教育費シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
             <p>このページは、学資保険と通常積立投資を比較するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費準備で安全性と増やす力のどちらを重視するか確認するために使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、投資には元本割れリスクがあるため、必要時期までの年数も見てください。次は <a href="education.html">教育費シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
@@ -8600,7 +8599,7 @@ document.body.innerHTML = `
             <a href="fixed-cost-reduction.html">固定費削減</a>
             <a href="retirement.html">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="education.html">&#x6559;&#x80b2;&#x8cbb;</a>
-          <a href="education-insurance.html">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
+          <a href="education.html">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
           <a href="mortgage.html">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
           <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
           <a href="disclaimer.html">&#x514d;&#x8cac;&#x4e8b;&#x9805;</a>
@@ -8615,7 +8614,7 @@ document.body.innerHTML = `
 function insertLastUpdatedDates() {
   const routeDates = {
     top: "2026年6月29日",
-    "side-income": "2026年7月21日",
+    "side-income": "2026年8月30日",
     "ai-hourly": "2026年6月30日",
     "ai-sidejob": "2026年8月24日",
     "ai-efficiency": "2026年8月24日",
@@ -8641,8 +8640,8 @@ function insertLastUpdatedDates() {
     "investment-risk": "2026年6月30日",
     "nisa": "2026年6月30日",
     "nisa-fast": "2026年6月30日",
-    "ideco": "2026年6月30日",
-    "fire": "2026年7月24日",
+    "ideco": "2026年8月30日",
+    "fire": "2026年8月30日",
     "fire-rate": "2026年6月30日",
     "side-fire-roadmap": "2026年6月30日",
     "fire-cost-optimization": "2026年6月30日",
@@ -8653,8 +8652,8 @@ function insertLastUpdatedDates() {
     "emergency-fund": "2026年6月30日",
     "fixed-cost-reduction": "2026年7月31日",
     "retirement": "2026年6月30日",
-    "education": "2026年6月30日",
-    "education-insurance": "2026年6月30日",
+    "education": "2026年8月30日",
+    "education-insurance": "2026年8月30日",
     "dividend": "2026年6月30日",
     "dividend-etf": "2026年6月30日",
     "dividend-stock": "2026年6月30日",
@@ -8915,7 +8914,7 @@ const operatorExperience = {
 };
 
 const routeExperienceProfiles = {
-  "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成シミュレーター", "fire.html"]] },
   "ai-sidejob": { title: "AI副業シミュレーター", kind: "ai", reason: "AI副業は、AIで楽に稼ぐ話ではなく、本業後の限られた時間をどう短縮し、収入につながる作業へ集中するかを見るための入口です。", use: "まずAIで短縮できる作業と、自分で確認すべき作業を分けてください。その後、副業月収、時給改善、手取り計算へ進むと現実的な判断につながります。", articles: [["AI副業の始め方", "article-ai-side-business.html"], ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   "ai-hourly": { title: "AI副業時給シミュレーター", kind: "ai", reason: "AI副業は、作業時間が短くなる一方で、単価設定を間違えると時給が伸びません。このツールは、案件単価と作業時間を並べて、AIを使った後の実質時給を冷静に見るために作りました。", use: "AIで時間が半分になっても、修正や確認に時間がかかるなら時給は思ったほど伸びません。結果を見ながら、単価を上げるのか、作業手順を減らすのか、案件を絞るのかを決める材料にしてください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "ai-efficiency": { title: "AI副業効率化シミュレーター", kind: "ai", reason: "AIツールは便利ですが、月額費用を払っても利益が増えなければ意味がありません。時間削減、外注費削減、ツール費用を一緒に見て、AI導入が本当に副業の利益率を上げるか確認するために作りました。", use: "AI導入後の時給だけでなく、年間追加利益を見てください。月額費用が高くても、削減時間を売上につなげられるなら投資価値があります。逆に時間が浮くだけなら、まず作業手順の見直しが先です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "side-profit-margin.html"]] },
@@ -8934,37 +8933,37 @@ const routeExperienceProfiles = {
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
-  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。会社員の場合は、所得税だけでなく住民税や会社規定との関係も見落とせません。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。会社員副業安全度診断で、普通徴収や確定申告準備も合わせて確認できます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
-  "investment-risk": { title: "投資リスク許容度診断", kind: "investment", reason: "投資は利回りだけで決めると、暴落時に続けられなくなることがあります。本業で急な対応や長時間労働があると、相場を見る余裕がない日もあるため、年齢、資産、経験、暴落時の行動を先に整理するために作りました。", use: "スコアが低い場合は投資額を増やすより、現金比率と少額積立を優先してください。スコアが高い場合も、高配当株、配当ETF、インデックス投資を分けて、FIRE目標に合う配分を確認しましょう。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "investment-risk": { title: "投資リスク許容度診断", kind: "investment", reason: "投資は利回りだけで決めると、暴落時に続けられなくなることがあります。本業で急な対応や長時間労働があると、相場を見る余裕がない日もあるため、年齢、資産、経験、暴落時の行動を先に整理するために作りました。", use: "スコアが低い場合は投資額を増やすより、現金比率と少額積立を優先してください。スコアが高い場合も、高配当株、配当ETF、インデックス投資を分けて、FIRE目標に合う配分を確認しましょう。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   nisa: { title: "新NISAシミュレーター", kind: "investment", reason: "FIREを目指すうえで、新NISAは長期投資の中心にしやすい制度です。ただし、毎月いくら積み立てるかは収入や固定費によって変わります。", use: "将来資産額だけでなく、毎月積立額が家計に無理なく続くかを見てください。副業収入や固定費削減で増えた余力をNISAへ回すと、行動と資産形成がつながります。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIREとは何か", "article-fire-basic.html"]] },
-  "nisa-fast": { title: "新NISA最速積立シミュレーター", kind: "investment", reason: "新NISAは枠をどう使うかで資産形成の速度が変わります。毎月積立とボーナス積立を分けて、無理なく早く埋めるペースを確認するために作りました。", use: "最終資産額だけでなく、生活防衛資金を残して続けられる金額かを見てください。FIREを急ぐ場合も、成長投資枠、配当再投資、固定費削減を組み合わせる方が現実的です。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "nisa-withdrawal": { title: "NISA取り崩しシミュレーター", kind: "investment", reason: "資産形成は積み立てるだけでなく、将来どう使うかまで考える必要があります。老後やFIRE後に何年取り崩せるかを見える化するために作りました。", use: "取り崩し可能年数が短い場合は、毎月取り崩し額を下げる、運用継続を考える、老後資金や配当収入を組み合わせるなどの調整に使ってください。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "nisa-fast": { title: "新NISA最速積立シミュレーター", kind: "investment", reason: "新NISAは枠をどう使うかで資産形成の速度が変わります。毎月積立とボーナス積立を分けて、無理なく早く埋めるペースを確認するために作りました。", use: "最終資産額だけでなく、生活防衛資金を残して続けられる金額かを見てください。FIREを急ぐ場合も、成長投資枠、配当再投資、固定費削減を組み合わせる方が現実的です。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "nisa-withdrawal": { title: "NISA取り崩しシミュレーター", kind: "investment", reason: "資産形成は積み立てるだけでなく、将来どう使うかまで考える必要があります。老後やFIRE後に何年取り崩せるかを見える化するために作りました。", use: "取り崩し可能年数が短い場合は、毎月取り崩し額を下げる、運用継続を考える、老後資金や配当収入を組み合わせるなどの調整に使ってください。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
   "credit-card-investment": { title: "クレカ積立比較シミュレーター", kind: "investment", reason: "クレカ積立はポイント還元が魅力ですが、還元率だけで判断すると本質を見失います。通常積立との差を数字で確認するために作りました。", use: "差額が小さくても、長期ではポイント再投資が効いてきます。新NISAや配当再投資と合わせて、無理なく続く証券口座とカードを選ぶ材料にしてください。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  ideco: { title: "iDeCo節税シミュレーター", kind: "investment", reason: "iDeCoは節税効果がある一方で、原則60歳まで引き出せない制度です。新NISAとは性格が違うため、節税額と将来資産を分けて見る必要があります。", use: "節税額だけでなく、資金拘束も考えてください。老後資金目的ならiDeCo、柔軟性を重視するなら新NISAというように、目的別に使い分ける判断材料になります。", articles: [["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  ideco: { title: "iDeCo節税シミュレーター", kind: "investment", reason: "iDeCoは節税効果がある一方で、原則60歳まで引き出せない制度です。新NISAとは性格が違うため、節税額と将来資産を分けて見る必要があります。", use: "節税額だけでなく、資金拘束も考えてください。老後資金目的ならiDeCo、柔軟性を重視するなら新NISAというように、目的別に使い分ける判断材料になります。", articles: [["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   dividend: { title: "配当金シミュレーター", kind: "investment", reason: "配当金は、資産形成の途中でもキャッシュフローを感じやすい投資です。ただし利回りだけを見ると、減配や価格下落のリスクを見落としがちです。", use: "年間配当金と月平均配当金を見て、生活費の何割を補えるか確認してください。再投資するか受け取るかで、資産成長と現金収入のバランスが変わります。", articles: [["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"]] },
-  "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "dividend-stock": { title: "高配当株比較シミュレーター", kind: "investment", reason: "高配当株は配当利回りだけで選ぶと、減配や株価下落、銘柄集中のリスクを見落としやすいです。ETFと個別株の違いを数字で比べ、FIREに向けて配当収入と資産成長のバランスを確認するために作りました。", use: "年間配当金だけでなく、最終資産額、銘柄別比較、ETFとの比較を合わせて見てください。個別株に偏りすぎる場合は、配当ETFや新NISAの積立と組み合わせて分散するのが現実的です。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "dividend-mental": { title: "配当メンタル安定度診断", kind: "investment", reason: "配当投資は利回りだけでなく、暴落時に売らずに続けられるかが大切です。高配当株比率、現金比率、生活費、配当依存度をまとめて見て、精神的に続けやすい状態か確認するために作りました。", use: "スコアが低い場合は、高配当株を増やす前に現金比率と分散を整えてください。FIREを目指す場合ほど、配当だけに頼らず、副業収入や生活費削減も残すと安心感が上がります。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "dividend-stock": { title: "高配当株比較シミュレーター", kind: "investment", reason: "高配当株は配当利回りだけで選ぶと、減配や株価下落、銘柄集中のリスクを見落としやすいです。ETFと個別株の違いを数字で比べ、FIREに向けて配当収入と資産成長のバランスを確認するために作りました。", use: "年間配当金だけでなく、最終資産額、銘柄別比較、ETFとの比較を合わせて見てください。個別株に偏りすぎる場合は、配当ETFや新NISAの積立と組み合わせて分散するのが現実的です。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "dividend-mental": { title: "配当メンタル安定度診断", kind: "investment", reason: "配当投資は利回りだけでなく、暴落時に売らずに続けられるかが大切です。高配当株比率、現金比率、生活費、配当依存度をまとめて見て、精神的に続けやすい状態か確認するために作りました。", use: "スコアが低い場合は、高配当株を増やす前に現金比率と分散を整えてください。FIREを目指す場合ほど、配当だけに頼らず、副業収入や生活費削減も残すと安心感が上がります。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "dividend-reinvestment": { title: "配当再投資シミュレーター", kind: "investment", reason: "配当は受け取るだけでなく、再投資することで資産成長に回せます。短期の満足感と長期の複利効果を比べるために作りました。", use: "再投資による増加額を見て、今は配当を使う時期なのか、資産を増やす時期なのか判断してください。FIRE前は再投資、FIRE後は受け取りという使い分けも考えられます。", articles: [["配当生活達成シミュレーター", "dividend-life.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIREとは何か", "article-fire-basic.html"]] },
-  "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成シミュレーター", "fire.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "side-fire-roadmap": { title: "副業FIRE達成ロードマップ診断", kind: "fire", reason: "FIREは資産額だけでなく、本業収入、副業収入、生活費、毎月投資額の組み合わせで現実度が変わります。運営者自身も本業後の限られた時間で副業と投資を検証しているため、次に何を改善すべきかを順番で見られるように作りました。", use: "達成確率が低い場合は、生活費を下げる、月5万円の副業収入を作る、投資を自動化する、リスクを取りすぎない順で整えてください。達成圏内でも税金、生活防衛資金、FIRE後のストレスを確認すると現実的です。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "dividend-life.html"]] },
-  "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "life-cost": { title: "生活コスト最適化シミュレーター", kind: "household", reason: "FIREを目指すと、収入を増やす前に毎月の生活コストをどこまで整えられるかが大きいです。管理職として本業が忙しい中で、副業時間を増やすだけでは限界があるため、固定費と変動費を分けて改善余地を見るために作りました。", use: "削減可能額は、無理な節約ではなく投資へ回しても生活が崩れない範囲を探すために使ってください。固定費削減、キャッシュフロー、FIREシミュレーターと合わせると、毎月の行動が資産形成にどうつながるか見えやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "emergency-fund": { title: "生活防衛資金シミュレーター", kind: "household", reason: "副業や投資を始める前に、生活防衛資金がないとトラブル時に資産を崩すことになります。現場仕事で急な変化を経験しているからこそ、先に安全資金を見える化したいと考えました。", use: "不足額がある場合は、投資を急ぐより先に数か月分の生活費を確保してください。副業収入がある人も、止まる可能性を考えて保守的に見積もるのがおすすめです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "fixed-cost-reduction": { title: "固定費削減シミュレーター", kind: "household", reason: "忙しい会社員にとって、固定費削減は副業より先に効くことがあります。一度見直すと毎月効果が続くため、時間が限られる人ほど優先度が高い改善です。", use: "年間節約額を見たら、その金額を投資へ回した場合の将来資産も確認してください。通信費、保険料、サブスクなど、変えやすい支出から始めると負担が少ないです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  retirement: { title: "老後資金シミュレーター", kind: "life", reason: "FIREを目指していても、老後資金の不足を無視することはできません。退職時点の資産、年金見込み、生活費を分けて見ることで、必要な積立額が現実的になります。", use: "不足額が大きい場合は、NISA、iDeCo、固定費削減、副業収入を組み合わせてください。退職後の生活費を少し下げるだけでも必要資産は大きく変わります。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  education: { title: "教育費シミュレーター", kind: "life", reason: "教育費は進学ルートによって大きく変わります。将来の支出を早めに見ておくことで、老後資金や住宅ローンとのバランスを取りやすくなります。", use: "不足額が出た場合は、毎月積立額を増やすだけでなく、学資保険やNISA、生活費の見直しも合わせて考えてください。老後資金を削りすぎないことも大切です。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["学資保険比較シミュレーター", "education-insurance.html"]] },
-  "education-insurance": { title: "学資保険比較シミュレーター", kind: "life", reason: "教育費準備では、学資保険の安心感と通常積立投資の成長性を比べる必要があります。どちらが正解かではなく、家庭のリスク許容度に合うかを確認するために作りました。", use: "差額だけでなく、途中解約リスク、元本割れ、投資の値動きも考えてください。教育費と老後資金を同時に圧迫しない積立額を探すことが大切です。", articles: [["教育費シミュレーター", "education.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  mortgage: { title: "住宅ローン返済シミュレーター", kind: "life", reason: "住宅ローンは毎月の固定費に直結し、FIREや老後資金にも影響します。借入額、金利、返済年数を分けて、無理のない返済比率を見たい人向けに作りました。", use: "返済比率が高い場合は、借入額、頭金、固定費、教育費を合わせて見直してください。繰上返済だけでなく、投資や生活防衛資金とのバランスも大切です。", articles: [["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成シミュレーター", "fire.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成シミュレーター", "fire.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "dividend-life.html"]] },
+  "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "life-cost": { title: "生活コスト最適化シミュレーター", kind: "household", reason: "FIREを目指すと、収入を増やす前に毎月の生活コストをどこまで整えられるかが大きいです。管理職として本業が忙しい中で、副業時間を増やすだけでは限界があるため、固定費と変動費を分けて改善余地を見るために作りました。", use: "削減可能額は、無理な節約ではなく投資へ回しても生活が崩れない範囲を探すために使ってください。固定費削減、キャッシュフロー、FIREシミュレーターと合わせると、毎月の行動が資産形成にどうつながるか見えやすくなります。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "emergency-fund": { title: "生活防衛資金シミュレーター", kind: "household", reason: "副業や投資を始める前に、生活防衛資金がないとトラブル時に資産を崩すことになります。現場仕事で急な変化を経験しているからこそ、先に安全資金を見える化したいと考えました。", use: "不足額がある場合は、投資を急ぐより先に数か月分の生活費を確保してください。副業収入がある人も、止まる可能性を考えて保守的に見積もるのがおすすめです。", articles: [["FIRE達成シミュレーター", "fire.html"], ["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "fixed-cost-reduction": { title: "固定費削減シミュレーター", kind: "household", reason: "忙しい会社員にとって、固定費削減は副業より先に効くことがあります。一度見直すと毎月効果が続くため、時間が限られる人ほど優先度が高い改善です。", use: "年間節約額を見たら、その金額を投資へ回した場合の将来資産も確認してください。通信費、保険料、サブスクなど、変えやすい支出から始めると負担が少ないです。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  retirement: { title: "老後資金シミュレーター", kind: "life", reason: "FIREを目指していても、老後資金の不足を無視することはできません。退職時点の資産、年金見込み、生活費を分けて見ることで、必要な積立額が現実的になります。", use: "不足額が大きい場合は、NISA、iDeCo、固定費削減、副業収入を組み合わせてください。退職後の生活費を少し下げるだけでも必要資産は大きく変わります。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  education: { title: "教育費シミュレーター", kind: "life", reason: "教育費は進学ルートによって大きく変わります。将来の支出を早めに見ておくことで、老後資金や住宅ローンとのバランスを取りやすくなります。", use: "不足額が出た場合は、毎月積立額を増やすだけでなく、学資保険やNISA、生活費の見直しも合わせて考えてください。老後資金を削りすぎないことも大切です。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["教育費シミュレーター", "education.html"]] },
+  "education-insurance": { title: "教育費シミュレーター", kind: "life", reason: "教育費準備では、学資保険の安心感と通常積立投資の成長性を比べる必要があります。どちらが正解かではなく、家庭のリスク許容度に合うかを確認するために作りました。", use: "差額だけでなく、途中解約リスク、元本割れ、投資の値動きも考えてください。教育費と老後資金を同時に圧迫しない積立額を探すことが大切です。", articles: [["教育費シミュレーター", "education.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  mortgage: { title: "住宅ローン返済シミュレーター", kind: "life", reason: "住宅ローンは毎月の固定費に直結し、FIREや老後資金にも影響します。借入額、金利、返済年数を分けて、無理のない返済比率を見たい人向けに作りました。", use: "返済比率が高い場合は、借入額、頭金、固定費、教育費を合わせて見直してください。繰上返済だけでなく、投資や生活防衛資金とのバランスも大切です。", articles: [["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"], ["FIRE達成シミュレーター", "fire.html"]] },
 };
 
 const relatedToolGroups = {
@@ -9026,7 +9025,7 @@ const relatedToolGroups = {
     ["老後資金シミュレーター", "retirement.html"],
     ["教育費シミュレーター", "education.html"],
     ["住宅ローン返済シミュレーター", "mortgage.html"],
-    ["学資保険比較シミュレーター", "education-insurance.html"],
+    ["教育費シミュレーター", "education.html"],
   ],
 };
 
@@ -9056,18 +9055,18 @@ const relatedArticleGroups = {
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"],
     ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"],
-    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["iDeCo節税シミュレーター", "ideco.html"],
     ["FIREとは何か", "article-fire-basic.html"],
   ],
   fire: [
     ["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"],
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
     ["FIREとは何か", "article-fire-basic.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"],
   ],
   household: [
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
     ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
@@ -9076,9 +9075,9 @@ const relatedArticleGroups = {
   life: [
     ["老後資金2000万円問題とは", "article-retirement-2000.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
-    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["iDeCo節税シミュレーター", "ideco.html"],
     ["FIREとは何か", "article-fire-basic.html"],
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
   ],
 };
 
@@ -15890,7 +15889,8 @@ function renderRoute() {
     pageHeading.textContent = seo.title.split("｜")[0];
   }
   document.querySelectorAll("[data-view]").forEach((view) => {
-    view.classList.toggle("is-active", view.dataset.view === route);
+    const isMergedEducationTool = route === "education" && view.dataset.view === "education-insurance";
+    view.classList.toggle("is-active", view.dataset.view === route || isMergedEducationTool);
   });
   document.querySelectorAll("[data-route]").forEach((link) => {
     link.setAttribute("aria-current", link.dataset.route === route ? "page" : "false");
@@ -16675,7 +16675,7 @@ scheduleNonCriticalWork(() => {
   safeRender("FIREストレス診断", renderFireStress);
   safeRender("老後資金シミュレーター", renderRetirement);
   safeRender("教育費シミュレーター", renderEducation);
-  safeRender("学資保険比較シミュレーター", renderEducationInsurance);
+  safeRender("教育費シミュレーター", renderEducationInsurance);
   safeRender("配当金シミュレーター", renderDividend);
   safeRender("配当ETF比較シミュレーター", renderDividendEtf);
   safeRender("高配当株比較シミュレーター", renderDividendStock);

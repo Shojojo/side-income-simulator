@@ -72,6 +72,26 @@
       "source": "/income-tax.html",
       "destination": "/tax.html",
       "permanent": true
+    },
+    {
+      "source": "/education-insurance.html",
+      "destination": "/education.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-side-income.html",
+      "destination": "/side-income.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-fire-strategy.html",
+      "destination": "/fire.html",
+      "permanent": true
+    },
+    {
+      "source": "/article-ideco-start.html",
+      "destination": "/ideco.html",
+      "permanent": true
     }
   ],
   "rewrites": [
