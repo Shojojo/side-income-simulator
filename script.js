@@ -40,24 +40,28 @@ document.head.appendChild(descriptionMeta);
 
 const routeSeo = {
   top: {
-    title: "会社員の副業・FIRE実体験メディア｜本業後に進める資産形成【2026年版】",
-    description: "31歳の会社員が長時間労働の合間に、副業、AI活用、固定費改善、新NISA、FIREを検証する実体験型の資産形成メディアです。長時間労働や急な対応がある中でも、次の一手を選びやすい導線を用意しています。",
+    title: "副業月収・手取り・税金・FIREシミュレーターハブ【2026年版】",
+    description: "このまま働き続けるだけでいいのか不安を感じた会社員へ。副業収入、税金、手取り、家計、NISA、FIREを数字で確認し、人生の選択肢を増やす入口です。",
   },
   "side-income": {
-    title: "副業月収シミュレーター｜会社員の本業後副業を実体験で試算【2026年版】",
-    description: "本業後の限られた時間で副業収入を伸ばしたい会社員向けに、月収、手取り、作業時間を実体験目線で確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業月収シミュレーター｜会社員の実体験で手取り・税金・作業時間まで確認【2026年版】",
+    description: "会社員向けの副業月収シミュレーターです。本業後の作業時間、単価、経費、税金、目標との差を実体験目線で確認し、手取り・税金・AI活用・FIREまで次の行動につなげられます。",
   },
   "ai-hourly": {
     title: "AI副業時給シミュレーター｜会社員のAI活用と時給改善【2026年版】",
     description: "長時間労働後でも副業を続けるために、AI活用で作業時間をどれだけ短縮できるか、時給と月収を現実的に試算します。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
   },
+  "ai-sidejob": {
+    title: "AI副業シミュレーター｜会社員が本業後に使うAI活用設計【2026年版】",
+    description: "AI副業全体の入口として、AI効率化、ROI、時短診断、外注費削減のどれから使うべきかを会社員向けに整理します。AI活用を副業収入・手取り・税金へつなげる判断順を確認できます。",
+  },
   "ai-efficiency": {
     title: "AI副業効率化シミュレーター｜本業後の時短と利益改善【2026年版】",
-    description: "本業後1時間でも副業を進めたい会社員向けに、AI導入による削減時間、利益率改善、年間追加利益を検証できます。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
+    description: "AI導入による作業時間削減、時給改善、案件単価ベースの判断、自動化による継続性を会社員向けに試算します。本業後の限られた時間で副業を続けるための効率改善を確認できます。",
   },
   "ai-roi": {
     title: "AI導入ROIシミュレーター｜副業AI活用の投資対効果を確認【2026年版】",
-    description: "AIツール費用が副業利益に見合うかを、削減時間、外注費削減、売上増加率から会社員目線で分析できます。本業後1時間でも作業を止めないために、AIで短縮できる部分と自分で判断すべき部分を分けて考えます。",
+    description: "有料AIツールの月額費用が副業利益に見合うかを、削減時間、売上増加、外注費削減、導入後利益、利益率改善、目標月収までの距離から確認できます。",
   },
   "ai-automation": {
     title: "AI副業自動化シミュレーター｜会社員の時短・利益改善・継続性を分析【2026年版】",
@@ -80,8 +84,8 @@ const routeSeo = {
     description: "副業売上だけでなく作業時間、経費、AI活用を入れて実質時給を確認し、忙しい会社員でも続けやすい改善策を探せます。本業後の限られた時間でも、資産形成の判断を進めやすいように整理しています。",
   },
   "side-time-management": {
-    title: "副業時間管理シミュレーター｜本業後1時間の継続可能性を分析【2026年版】",
-    description: "勤務時間、通勤、睡眠、家事を差し引き、本業後に副業を続けられる時間とAI時短の効果を現実的に確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業時間管理・継続診断シミュレーター｜本業後に無理なく続ける働き方【2026年版】",
+    description: "本業後に副業を無理なく続けるための時間管理・継続診断ページです。勤務時間、睡眠、家事、副業時間、目標収入、疲労感、AI活用から、続けやすい働き方と次の改善点を確認できます。",
   },
   "side-fatigue": {
     title: "副業疲労度シミュレーター｜会社員のburnoutリスク診断【2026年版】",
@@ -96,12 +100,12 @@ const routeSeo = {
     description: "副業目標月収、現在収益、本業勤務時間、副業時間、睡眠、疲労度、AI活用、趣味時間からモチベーション維持可能性を診断します。本業後の疲れがあっても続く副業設計に役立ちます。",
   },
   "side-risk": {
-    title: "副業リスク診断｜会社員の税務・疲労・収益依存を確認【2026年版】",
-    description: "副業収入が伸びる前に、税務、burnout、収益依存のリスクを確認し、本業と両立しやすい改善ポイントを整理します。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業リスク・安全度診断｜会社員の規定・税務・疲労を確認【2026年版】",
+    description: "会社員が副業を始める前に、勤務先規定、住民税、匿名性、疲労、収益依存のリスクをまとめて確認する診断ページです。安全に続けるための見直し点を整理できます。",
   },
   "side-safety": {
     title: "会社員副業安全度診断｜会社バレ・税務・疲労リスクを確認【2026年版】",
-    description: "副業ジャンル、月収、本業勤務時間、普通徴収、確定申告、会社規定、AI活用、匿名性から、会社員が安全に副業を続けられるか診断します。副業を伸ばす前にリスクを整理できます。",
+    description: "副業ジャンル、月収、本業勤務時間、普通徴収、確定申告、会社規定、AI活用、匿名性から、会社員が安全に副業を続けられるか診断します。会社バレ、税務、疲労リスクを副業前に確認できます。",
   },
   "side-profit-margin": {
     title: "副業利益率シミュレーター｜売上より手残りを重視する会社員向け【2026年版】",
@@ -116,8 +120,8 @@ const routeSeo = {
     description: "副業売上から経費、所得税、住民税、社会保険を引いた手取りを試算し、本業後の副業収入を現実的に把握できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
   },
   tax: {
-    title: "副業税金・青色申告シミュレーター｜会社員の税金対策入門【2026年版】",
-    description: "副業収入、経費、青色申告控除から課税所得と手取りを試算し、会社員が確定申告前に税負担を確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+    title: "副業税金シミュレーター｜会社員の確定申告・住民税・手取り対策【2026年版】",
+    description: "会社員向けの副業税金シミュレーターです。副業収入、経費、所得税、住民税、確定申告、手取りへの影響を実体験ベースで解説し、副業月収・手取り・Project FIREへ自然につなげます。",
   },
   "employee-tax-saving": {
     title: "会社員節税シミュレーター｜iDeCo・副業・控除をまとめて確認【2026年版】",
@@ -136,8 +140,8 @@ const routeSeo = {
     description: "年齢、年収、総資産、投資経験、投資額、投資目的、暴落時の行動、副業収入、FIRE希望から、会社員に合う投資リスク許容度と資産配分を診断します。",
   },
   nisa: {
-    title: "新NISA・積立投資シミュレーター｜会社員の長期資産形成【2026年版】",
-    description: "本業後の副業や固定費改善で作った余力を新NISAへ回す前提で、将来資産と複利効果を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    title: "新NISAシミュレーター｜初心者向け制度・積立額・FIRE資産形成【2026年版】",
+    description: "新NISA初心者向けに、つみたて投資枠・成長投資枠・非課税枠の基本、積立額、将来資産、FIREとの関係を実体験ベースで解説します。副業月収、税金、FIRE、Project FIREへ自然につなげます。",
   },
   "nisa-fast": {
     title: "新NISA最速積立シミュレーター｜FIREを目指す会社員の成長速度【2026年版】",
@@ -156,8 +160,8 @@ const routeSeo = {
     description: "会社員のiDeCo掛金による所得税・住民税の節税額と将来資産を確認し、FIRE実践との相性も考えられます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
   },
   fire: {
-    title: "FIRE達成シミュレーター｜会社員が40歳FIREを目指す資産計算【2026年版】",
-    description: "年間生活費から必要資産を逆算し、現在資産、不足額、FIRE達成率、達成年数、毎月必要積立額をすぐ確認できます。積立5万円、10万円、15万円の比較と保存・共有・印刷にも対応しています。",
+    title: "FIRE達成シミュレーター｜会社員のFIRE戦略・必要資産・新NISA計算【2026年版】",
+    description: "会社員向けのFIRE達成シミュレーターです。必要資産、達成年数、毎月積立額に加え、Lean FIRE・Barista FIRE・Coast FIRE・Fat FIREの違い、新NISA、副業月収、税金、Project FIREまで具体的に確認できます。",
   },
   "fire-rate": {
     title: "FIRE達成率シミュレーター｜会社員の資産形成スコア診断【2026年版】",
@@ -181,7 +185,7 @@ const routeSeo = {
   },
   "cash-flow": {
     title: "会社員キャッシュフローシミュレーター｜家計と投資余力を見える化【2026年版】",
-    description: "給与、副業、固定費、投資額をまとめて入力し、本業だけに依存しない資産形成ペースと改善余地を確認できます。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
+    description: "毎月の収入、支出、貯蓄、投資余力を初心者向けに見える化します。生活防衛資金、固定費削減、副業収入、新NISA、FIREへつなげる家計管理シミュレーターです。",
   },
   "life-cost": {
     title: "生活コスト最適化シミュレーター｜固定費改善とFIRE短縮を分析【2026年版】",
@@ -189,7 +193,7 @@ const routeSeo = {
   },
   dividend: {
     title: "配当金シミュレーター｜会社員の高配当投資と月平均配当【2026年版】",
-    description: "投資額と利回りから年間配当金、月平均配当、累計配当を試算し、FIRE実践に使える配当収入を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    description: "投資額と配当利回りから年間配当金、月平均配当を初心者向けに試算できます。新NISA、配当再投資、FIRE、老後資金、副業収入との関係も確認できます。",
   },
   "dividend-etf": {
     title: "配当ETF比較シミュレーター｜新NISAで高配当ETFを比較【2026年版】",
@@ -205,7 +209,7 @@ const routeSeo = {
   },
   "dividend-reinvestment": {
     title: "配当再投資シミュレーター｜会社員の複利とFIRE効果を確認【2026年版】",
-    description: "配当を再投資した場合の最終資産、累計配当、複利効果を試算し、FIRE実践に向けた投資設計を確認できます。副業収入、固定費改善、長期投資を組み合わせて、FIRE実践にどうつなげるかを考えられます。",
+    description: "配当再投資と複利効果を初心者向けに試算できます。受け取った配当を再投資した場合の将来資産を確認し、NISA、FIRE、老後資金、キャッシュフローへつなげられます。",
   },
   "dividend-life": {
     title: "配当生活達成シミュレーター｜生活費を配当でまかなう必要資産【2026年版】",
@@ -220,8 +224,8 @@ const routeSeo = {
     description: "生活費、副業月収、配当収入を入力し、会社員がサイドFIREを目指す場合の必要資産と短縮効果を確認できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
   },
   "emergency-fund": {
-    title: "生活防衛資金シミュレーター｜会社員がFIRE前に備える安全資金【2026年版】",
-    description: "毎月生活費、家族人数、雇用形態、副業収入から生活防衛資金を試算し、FIRE前の土台づくりを確認できます。忙しい会社員でも一度見直すと効果が続く項目を中心に、投資余力づくりへつなげます。",
+    title: "生活防衛資金シミュレーター｜会社員の必要額と投資前の安全資金【2026年版】",
+    description: "生活防衛資金とは何か、会社員は何か月分を目安にすべきかを初心者向けに整理。毎月生活費、家族人数、雇用形態、副業収入から、投資前に残す安全資金を確認できます。",
   },
   "fixed-cost-reduction": {
     title: "固定費削減シミュレーター｜年間節約額と家計改善を計算【2026年版】",
@@ -229,14 +233,14 @@ const routeSeo = {
   },
   retirement: {
     title: "老後資金シミュレーター｜会社員の不足額と追加積立を確認【2026年版】",
-    description: "現在年齢、貯蓄、年金見込み、退職後生活費から老後資金の不足額を出し、NISAやFIRE実践との関係も確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
+    description: "老後資金の不足額、年金見込み、退職後生活費を初心者向けに試算できます。新NISA、FIRE、配当、固定費削減と組み合わせて資産形成の次の行動を確認できます。",
   },
   education: {
     title: "教育費シミュレーター｜会社員家庭の進学費用と不足額を試算【2026年版】",
     description: "子どもの人数、進学ルート、大学進学、積立額から教育費を試算し、老後資金への影響もあわせて確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
   },
   "education-insurance": {
-    title: "学資保険比較シミュレーター｜教育費と積立投資を比べる【2026年版】",
+    title: "教育費シミュレーター｜教育費と積立投資を比べる【2026年版】",
     description: "学資保険の返戻率と通常積立投資を比較し、教育費準備と老後資金のバランスを会社員目線で確認できます。教育費、住宅ローン、老後資金を分けずに見て、家計と資産形成のバランスを確認できます。",
   },
   mortgage: {
@@ -454,7 +458,6 @@ document.body.innerHTML = `
     <div class="app-shell">
       <header class="header">
         <h1>会社員の副業・FIRE実体験メディア</h1>
-        <p class="article-meta">最終更新日：2026年7月19日</p>
         <p class="lead">副業、税金、AI活用、資産形成、FIREについて、現役会社員の実体験とシミュレーターを通して、次に取るべき行動を分かりやすく整理するメディアです。</p>
         <nav class="hero-action-nav" aria-label="トップページ主要導線">
           <a href="#problem-navigation">悩みから探す</a>
@@ -524,7 +527,7 @@ document.body.innerHTML = `
                 <li>AI利益最大化</li>
               </ul>
               <div class="card-actions">
-                <a class="primary-link" href="ai-hourly.html">AI活用後の時給を見る</a>
+                <a class="primary-link" href="ai-efficiency.html">AI活用後の時給を見る</a>
                 <a class="subtle-link" href="category-ai.html">関連ツールを見る</a>
               </div>
             </article>
@@ -620,10 +623,7 @@ document.body.innerHTML = `
                 <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
                 <a href="side-time-management.html">副業時間管理シミュレーター</a>
                 <a href="side-fatigue.html">副業疲労度シミュレーター</a>
-                <a href="side-continuity.html">副業継続率診断</a>
-                <a href="side-motivation.html">副業モチベーション診断</a>
                 <a href="side-risk.html">副業リスク診断</a>
-                <a href="side-safety.html">会社員副業安全度診断</a>
                 <a href="side-profit-margin.html">副業利益率シミュレーター</a>
                 <a href="incorporation.html">副業法人化判断シミュレーター</a>
               </div>
@@ -631,14 +631,14 @@ document.body.innerHTML = `
             <details>
               <summary><strong>AI活用・効率化</strong><span>代表：AI副業時給 / AI効率化 / AI導入ROI</span></summary>
               <div class="related-links">
-                <a href="ai-hourly.html">AI副業時給シミュレーター</a>
+                <a href="ai-efficiency.html">AI副業時給シミュレーター</a>
                 <a href="ai-sidejob.html">AI副業シミュレーター</a>
                 <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
                 <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-                <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+                <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
                 <a href="ai-time-reduction.html">AI作業時間削減診断</a>
                 <a href="ai-outsourcing.html">AI外注費削減シミュレーター</a>
-                <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+                <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
               </div>
             </details>
             <details>
@@ -646,7 +646,6 @@ document.body.innerHTML = `
               <div class="related-links">
                 <a href="tax.html">税金シミュレーター</a>
                 <a href="take-home.html">副業手取りシミュレーター</a>
-                <a href="income-tax.html">副業所得税シミュレーター</a>
                 <a href="resident-tax.html">副業住民税シミュレーター</a>
                 <a href="employee-tax-saving.html">会社員節税シミュレーター</a>
                 <a href="ideco.html">iDeCo節税シミュレーター</a>
@@ -678,7 +677,7 @@ document.body.innerHTML = `
                 <a href="side-fire-roadmap.html">副業FIRE達成ロードマップ診断</a>
                 <a href="fire-cost-optimization.html">FIRE生活費最適化シミュレーター</a>
                 <a href="fire-stress.html">FIREストレス診断</a>
-                <a href="employee-fire.html">会社員FIRE年数計算シミュレーター</a>
+                <a href="fire.html">会社員FIRE年数計算シミュレーター</a>
                 <a href="cash-flow.html">会社員キャッシュフローシミュレーター</a>
               </div>
             </details>
@@ -690,7 +689,7 @@ document.body.innerHTML = `
                 <a href="emergency-fund.html">生活防衛資金シミュレーター</a>
                 <a href="retirement.html">老後資金シミュレーター</a>
                 <a href="education.html">教育費シミュレーター</a>
-                <a href="education-insurance.html">学資保険比較シミュレーター</a>
+                <a href="education.html">教育費シミュレーター</a>
                 <a href="mortgage.html">住宅ローン返済シミュレーター</a>
               </div>
             </details>
@@ -748,7 +747,7 @@ document.body.innerHTML = `
               <span>AIを使って便利になった点だけでなく、確認漏れ、リンク修正、手直しが必要だった現実を書いています。</span>
               <span class="next-read-reason">関連理由：AI副業を始める前に、過信しすぎない使い方を確認できます。</span>
             </a>
-            <a class="next-read-card" href="article-sidejob-time-management.html">
+            <a class="next-read-card" href="side-time-management.html">
               <strong>副業と本業を両立する時間管理術</strong>
               <span>急な欠勤対応や長時間労働がある中で、副業を続けるために時間をどう守っているかを整理しました。</span>
               <span class="next-read-reason">関連理由：副業の前に、平日1時間でも続く設計を作れます。</span>
@@ -987,7 +986,7 @@ document.body.innerHTML = `
           <ol class="ranking-list">
             <li><a href="article-building-50-tools.html"><strong>31歳会社員が副業サイトを50ツール作るまで</strong><span>本業後の短時間で、失敗と修正を重ねながらサイトを育てた記録</span></a></li>
             <li><a href="article-chatgpt-sidejob-site-lessons.html"><strong>ChatGPTで副業サイトを作って分かったこと</strong><span>AI活用で楽になった作業と、手直しが必要だった現実</span></a></li>
-            <li><a href="article-sidejob-time-management.html"><strong>副業と本業を両立する時間管理術</strong><span>長時間労働や急な対応がある会社員向けの時間設計</span></a></li>
+            <li><a href="side-time-management.html"><strong>副業と本業を両立する時間管理術</strong><span>長時間労働や急な対応がある会社員向けの時間設計</span></a></li>
             <li><a href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>運送業管理職として働きながら副業時間を作る実体験</span></a></li>
             <li><a href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しないための資産形成</span></a></li>
           </ol>
@@ -1011,7 +1010,7 @@ document.body.innerHTML = `
               <strong>FIRE達成率シミュレーター</strong>
               <span>現在資産、収支、投資状況から達成可能性をスコア化</span>
             </a>
-            <a class="article-link" href="employee-fire.html">
+            <a class="article-link" href="fire.html">
               <strong>会社員FIRE年数計算シミュレーター</strong>
               <span>給与、副業、配当を含めたFIRE年数を確認</span>
             </a>
@@ -1110,7 +1109,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-hourly.html">
+          <a class="tool-card" href="ai-efficiency.html">
             <p class="eyebrow">AI Hourly</p>
             <h2>AI&#x526f;&#x696d;&#x6642;&#x7d66;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
             <p>&#x6848;&#x4ef6;&#x5358;&#x4fa1;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6708;&#x6848;&#x4ef6;&#x6570;&#x3001;AI&#x4f7f;&#x7528;&#x6709;&#x7121;&#x304b;&#x3089;&#x3001;&#x6642;&#x7d66;&#x3068;&#x6708;&#x53ce;&#x3001;AI&#x6d3b;&#x7528;&#x6642;&#x306e;&#x52b9;&#x7387;&#x6539;&#x5584;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
@@ -1146,7 +1145,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-automation.html">
+          <a class="tool-card" href="ai-efficiency.html">
             <p class="eyebrow">AI Automation</p>
             <h2>AI副業自動化シミュレーター</h2>
             <p>AI導入で自動化できる作業時間、利益改善、ROI、副業継続性を分析します。</p>
@@ -1182,7 +1181,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="ai-profit-max.html">
+          <a class="tool-card" href="ai-roi.html">
             <p class="eyebrow">AI Profit</p>
             <h2>AI副業利益最大化シミュレーター</h2>
             <p>AI導入による利益増加、作業効率、時給改善、目標月収までの距離を分析します。</p>
@@ -1230,50 +1229,14 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="side-continuity.html">
-            <p class="eyebrow">Continuity</p>
-            <h2>副業継続率診断</h2>
-            <p>副業時間、疲労度、収益、目標月収、AI活用から、本業後でも副業を続けられる可能性を診断します。</p>
-            <div class="tool-meta">
-              <span>継続率</span>
-              <span>挫折リスク</span>
-              <span>改善提案</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="side-motivation.html">
-            <p class="eyebrow">Motivation</p>
-            <h2>副業モチベーション診断</h2>
-            <p>目標月収、現在収益、本業時間、副業時間、睡眠、疲労度、趣味時間から副業を続ける意欲の維持しやすさを診断します。</p>
-            <div class="tool-meta">
-              <span>維持スコア</span>
-              <span>挫折リスク</span>
-              <span>AI改善</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
           <a class="tool-card" href="side-risk.html">
             <p class="eyebrow">Risk Check</p>
-            <h2>副業リスク診断</h2>
-            <p>副業内容、作業時間、収益依存度、睡眠、確定申告状況から、税務・burnout・収益不安定リスクを診断します。</p>
+            <h2>副業リスク・安全度診断</h2>
+            <p>副業内容、作業時間、収益依存度、睡眠、確定申告、会社規定、匿名性から、税務・疲労・会社員としての安全度を診断します。</p>
             <div class="tool-meta">
               <span>リスクスコア</span>
-              <span>税務</span>
+              <span>会社規定</span>
               <span>改善提案</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="side-safety.html">
-            <p class="eyebrow">Safety Check</p>
-            <h2>会社員副業安全度診断</h2>
-            <p>副業内容、働き方、税務状況、会社規定、匿名性から、会社員として安全に副業を続けられるか診断します。</p>
-            <div class="tool-meta">
-              <span>安全度</span>
-              <span>会社バレ</span>
-              <span>税務・疲労</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -1307,18 +1270,6 @@ document.body.innerHTML = `
               <span>&#x8ab2;&#x7a0e;&#x6240;&#x5f97;</span>
               <span>&#x6240;&#x5f97;&#x7a0e;</span>
               <span>&#x624b;&#x53d6;&#x308a;</span>
-            </div>
-            <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
-          </a>
-
-          <a class="tool-card" href="income-tax.html">
-            <p class="eyebrow">Income Tax</p>
-            <h2>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
-            <p>&#x5e74;&#x9593;&#x526f;&#x696d;&#x58f2;&#x4e0a;&#x3001;&#x7d4c;&#x8cbb;&#x3001;&#x9752;&#x8272;&#x7533;&#x544a;&#x63a7;&#x9664;&#x3001;&#x57fa;&#x790e;&#x63a7;&#x9664;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x7387;&#x304b;&#x3089;&#x3001;&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
-            <div class="tool-meta">
-              <span>&#x6240;&#x5f97;&#x7a0e;</span>
-              <span>&#x5fa9;&#x8208;&#x7a0e;</span>
-              <span>&#x6708;&#x5e73;&#x5747;</span>
             </div>
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
@@ -1512,7 +1463,7 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="employee-fire.html">
+          <a class="tool-card" href="fire.html">
             <p class="eyebrow">Employee FIRE</p>
             <h2>&#x4f1a;&#x793e;&#x54e1;FIRE&#x5e74;&#x6570;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
             <p>&#x73fe;&#x5728;&#x8cc7;&#x7523;&#x3001;&#x7a4d;&#x7acb;&#x984d;&#x3001;&#x526f;&#x696d;&#x53ce;&#x5165;&#x3001;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x304b;&#x3089;&#x3001;&#x4f1a;&#x793e;&#x54e1;&#x306e;FIRE&#x9054;&#x6210;&#x307e;&#x3067;&#x306e;&#x5e74;&#x6570;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
@@ -1701,9 +1652,9 @@ document.body.innerHTML = `
             <span class="open-label">&#x30c4;&#x30fc;&#x30eb;&#x3092;&#x958b;&#x304f;</span>
           </a>
 
-          <a class="tool-card" href="education-insurance.html">
+          <a class="tool-card" href="education.html">
             <p class="eyebrow">Education Insurance</p>
-            <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+            <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x6bd4;&#x8f03;</h2>
             <p>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x60f3;&#x5b9a;&#x8cc7;&#x7523;&#x984d;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x6559;&#x80b2;&#x8cbb;&#x4e0d;&#x8db3;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
             <div class="tool-meta">
               <span>&#x8fd4;&#x623b;&#x7387;</span>
@@ -1736,21 +1687,18 @@ document.body.innerHTML = `
             <li><a href="side-income.html"><strong>&#x526f;&#x696d;&#x6708;&#x53ce;</strong><span>&#x6708;&#x53ce;&#x30fb;&#x5e74;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x5148;&#x306b;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="ai-efficiency.html"><strong>AI副業効率化</strong><span>AI活用で時給、削減時間、年間追加利益を確認</span></a></li>
             <li><a href="ai-roi.html"><strong>AI導入ROI</strong><span>AIツール費用に対する投資対効果と回収期間を確認</span></a></li>
-            <li><a href="ai-automation.html"><strong>AI副業自動化</strong><span>AI導入で削減できる時間、利益改善、継続性を確認</span></a></li>
+            <li><a href="ai-efficiency.html"><strong>AI副業自動化</strong><span>AI導入で削減できる時間、利益改善、継続性を確認</span></a></li>
             <li><a href="ai-time-reduction.html"><strong>AI作業時間削減診断</strong><span>副業ジャンルと作業内容から削減時間、効率化度、利益改善を確認</span></a></li>
             <li><a href="ai-outsourcing.html"><strong>AI外注費削減</strong><span>AI導入で外注費削減、利益率改善、ROIを確認</span></a></li>
-            <li><a href="ai-profit-max.html"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
+            <li><a href="ai-roi.html"><strong>AI副業利益最大化</strong><span>AI導入後の利益額、時給改善、目標月収までの距離を確認</span></a></li>
             <li><a href="hourly-improvement.html"><strong>副業時給改善</strong><span>売上、作業時間、AI活用から実質時給を改善</span></a></li>
-            <li><a href="side-time-management.html"><strong>副業時間管理</strong><span>本業、睡眠、家事、副業時間から継続可能性を確認</span></a></li>
+            <li><a href="side-time-management.html"><strong>副業時間管理・継続診断</strong><span>本業、睡眠、家事、副業時間、目標月収から続けやすさを確認</span></a></li>
             <li><a href="side-fatigue.html"><strong>副業疲労度</strong><span>本業、副業、睡眠、休日からburnoutリスクを確認</span></a></li>
-            <li><a href="side-continuity.html"><strong>副業継続率診断</strong><span>副業時間、疲労度、収益、AI活用から続けやすさを確認</span></a></li>
-            <li><a href="side-motivation.html"><strong>副業モチベーション診断</strong><span>目標月収、疲労度、趣味時間から続ける意欲を確認</span></a></li>
-            <li><a href="side-risk.html"><strong>副業リスク診断</strong><span>税務、burnout、収益依存のリスクをまとめて確認</span></a></li>
-            <li><a href="side-safety.html"><strong>会社員副業安全度診断</strong><span>会社バレ、税務、疲労、会社規定のリスクを確認</span></a></li>
+            <li><a href="side-risk.html"><strong>副業リスク・安全度診断</strong><span>会社規定、住民税、疲労、収益依存のリスクをまとめて確認</span></a></li>
             <li><a href="side-profit-margin.html"><strong>&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</strong><span>&#x58f2;&#x4e0a;&#x30fb;&#x7d4c;&#x8cbb;&#x30fb;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x304b;&#x3089;&#x5229;&#x76ca;&#x7387;&#x3092;&#x5206;&#x6790;</span></a></li>
             <li><a href="incorporation.html"><strong>副業法人化判断</strong><span>個人事業と法人化の手取り差額、維持費、判断目安を比較</span></a></li>
             <li><a href="take-home.html"><strong>&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</strong><span>&#x7a0e;&#x91d1;&#x5f8c;&#x306e;&#x624b;&#x5143;&#x306b;&#x6b8b;&#x308b;&#x91d1;&#x984d;&#x3092;&#x8a66;&#x7b97;</span></a></li>
-            <li><a href="income-tax.html"><strong>&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3068;&#x5fa9;&#x8208;&#x7279;&#x5225;&#x6240;&#x5f97;&#x7a0e;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="tax.html"><strong>&#x526f;&#x696d;&#x7a0e;&#x91d1;</strong><span>&#x6240;&#x5f97;&#x7a0e;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="employee-tax-saving.html"><strong>会社員節税</strong><span>控除、iDeCo、ふるさと納税で節税可能額を確認</span></a></li>
             <li><a href="resident-tax.html"><strong>&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</strong><span>&#x666e;&#x901a;&#x5fb4;&#x53ce;&#x306e;&#x6ce8;&#x610f;&#x70b9;&#x3068;&#x7a0e;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="investment-risk.html"><strong>投資リスク許容度診断</strong><span>年齢、資産、経験、暴落耐性から投資スタイルを確認</span></a></li>
@@ -1771,14 +1719,14 @@ document.body.innerHTML = `
             <li><a href="side-fire-roadmap.html"><strong>副業FIRE達成ロードマップ</strong><span>副業収入と投資額からFIREまでの改善順を診断</span></a></li>
             <li><a href="fire-cost-optimization.html"><strong>FIRE生活費最適化</strong><span>生活費削減で必要資産と達成時期がどう変わるか確認</span></a></li>
             <li><a href="fire-stress.html"><strong>FIREストレス診断</strong><span>FIRE後の収入不安、孤独、満足度を事前に確認</span></a></li>
-            <li><a href="employee-fire.html"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
+            <li><a href="fire.html"><strong>&#x4f1a;&#x793e;&#x54e1;FIRE</strong><span>&#x7a4d;&#x7acb;&#x3001;&#x526f;&#x696d;&#x3001;&#x914d;&#x5f53;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x5e74;&#x6570;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="cash-flow.html"><strong>会社員キャッシュフロー</strong><span>毎月収支、投資可能額、固定費改善余地を確認</span></a></li>
             <li><a href="life-cost.html"><strong>生活コスト最適化</strong><span>固定費・変動費の改善余地と投資効果を確認</span></a></li>
             <li><a href="side-fire.html"><strong>&#x30b5;&#x30a4;&#x30c9;FIRE</strong><span>&#x526f;&#x696d;&#x53ce;&#x5165;&#x3068;&#x914d;&#x5f53;&#x53ce;&#x5165;&#x3092;&#x542b;&#x3081;&#x3066;&#x9054;&#x6210;&#x53ef;&#x80fd;&#x6027;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="emergency-fund.html"><strong>&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</strong><span>&#x6295;&#x8cc7;&#x3084;FIRE&#x306e;&#x524d;&#x306b;&#x78ba;&#x4fdd;&#x3057;&#x305f;&#x3044;&#x5b89;&#x5168;&#x8cc7;&#x91d1;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
             <li><a href="fixed-cost-reduction.html"><strong>固定費削減</strong><span>毎月の固定費から年間節約額と投資効果を確認</span></a></li>
             <li><a href="retirement.html"><strong>&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</strong><span>&#x9000;&#x8077;&#x6642;&#x8cc7;&#x7523;&#x3068;&#x4e0d;&#x8db3;&#x984d;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
-            <li><a href="education-insurance.html"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
+            <li><a href="education.html"><strong>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;</strong><span>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x53d7;&#x53d6;&#x984d;&#x3092;&#x6bd4;&#x8f03;</span></a></li>
             <li><a href="mortgage.html"><strong>&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</strong><span>&#x6bce;&#x6708;&#x8fd4;&#x6e08;&#x984d;&#x3068;&#x5e74;&#x53ce;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x8fd4;&#x6e08;&#x6bd4;&#x7387;&#x3092;&#x78ba;&#x8a8d;</span></a></li>
           </ol>
         </section>
@@ -1789,7 +1737,7 @@ document.body.innerHTML = `
             <p>副業、税金、FIRE、NISA、iDeCo、老後資金の基礎を、ツールの結果と合わせて確認できます。</p>
           </section>
           <div class="article-list">
-            <a class="article-link" href="article-rakuten-sbi-thorough-comparison-2026.html">
+            <a class="article-link" href="article-rakuten-sbi-securities-comparison.html">
               <strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong>
               <span>手数料、新NISA、ポイント、初心者向けの選び方を整理</span>
             </a>
@@ -1801,7 +1749,7 @@ document.body.innerHTML = `
               <strong>ChatGPTで副業サイトを作って分かったこと</strong>
               <span>AI活用で時短できた点、確認漏れで苦戦した点、改善した点</span>
             </a>
-            <a class="article-link" href="article-sidejob-time-management.html">
+            <a class="article-link" href="side-time-management.html">
               <strong>副業と本業を両立する時間管理術</strong>
               <span>長時間労働や急な欠勤対応がある中で副業時間を守る考え方</span>
             </a>
@@ -1817,11 +1765,11 @@ document.body.innerHTML = `
               <strong>管理職をしながらAI副業を続ける現実</strong>
               <span>本業後の疲労、ChatGPT活用、作業時間短縮のリアル</span>
             </a>
-            <a class="article-link" href="article-side-income.html">
+            <a class="article-link" href="side-income.html">
               <strong>&#x526f;&#x696d;&#x6708;&#x53ce;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;&#x306e;&#x4f7f;&#x3044;&#x65b9;</strong>
               <span>&#x6642;&#x7d66;&#x3001;&#x4f5c;&#x696d;&#x6642;&#x9593;&#x3001;&#x6848;&#x4ef6;&#x6570;&#x3092;&#x4f7f;&#x3063;&#x305f;&#x6708;&#x53ce;&#x306e;&#x898b;&#x65b9;</span>
             </a>
-            <a class="article-link" href="article-fire-strategy.html">
+            <a class="article-link" href="fire.html">
               <strong>FIRE&#x9054;&#x6210;&#x306e;&#x57fa;&#x672c;&#x6226;&#x7565;</strong>
               <span>&#x76ee;&#x6a19;&#x8cc7;&#x7523;&#x3001;&#x7a4d;&#x7acb;&#x3001;&#x5229;&#x56de;&#x308a;&#x3092;&#x73fe;&#x5b9f;&#x7684;&#x306b;&#x8003;&#x3048;&#x308b;</span>
             </a>
@@ -1865,7 +1813,7 @@ document.body.innerHTML = `
               <strong>&#x65b0;NISA&#x306e;&#x59cb;&#x3081;&#x65b9;</strong>
               <span>&#x3064;&#x307f;&#x305f;&#x3066;&#x6295;&#x8cc7;&#x67a0;&#x3001;&#x6210;&#x9577;&#x6295;&#x8cc7;&#x67a0;&#x3001;&#x7a4d;&#x7acb;&#x984d;&#x306e;&#x6c7a;&#x3081;&#x65b9;</span>
             </a>
-            <a class="article-link" href="article-ideco-start.html">
+            <a class="article-link" href="ideco.html">
               <strong>iDeCo&#x306e;&#x59cb;&#x3081;&#x65b9;</strong>
               <span>&#x7bc0;&#x7a0e;&#x52b9;&#x679c;&#x3001;&#x639b;&#x91d1;&#x3001;&#x65b0;NISA&#x3068;&#x306e;&#x4f7f;&#x3044;&#x5206;&#x3051;</span>
             </a>
@@ -1882,7 +1830,7 @@ document.body.innerHTML = `
             <p>副業や投資を始める前に、口座、会計ソフト、カード、AIツールを比較して準備できます。</p>
           </section>
           <div class="article-list">
-            <a class="article-link" href="article-rakuten-sbi-thorough-comparison-2026.html">
+            <a class="article-link" href="article-rakuten-sbi-securities-comparison.html">
               <strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong>
               <span>手数料、NISA、ポイント、初心者向けのおすすめを整理</span>
             </a>
@@ -2091,6 +2039,32 @@ document.body.innerHTML = `
         </section>
       </section>
 
+
+      <section class="view" data-view="ai-sidejob" aria-label="AI副業シミュレーター">
+        <section class="tool-heading">
+          <h2>AI副業シミュレーター</h2>
+          <p>AIで楽に稼ぐ前提ではなく、本業後の限られた副業時間をどう短縮し、収入・手取り・継続へつなげるかを整理する入口です。</p>
+        </section>
+        <section class="article-panel comparison-section" aria-label="AI副業比較表">
+          <section class="tool-heading"><h2>副業比較表</h2><p>AIを使う前提で、会社員が本業後に続けやすい副業を比較しています。</p></section>
+          <div class="comparison-table" role="region" aria-label="AI副業比較表" tabindex="0"><table><thead><tr><th>副業タイプ</th><th>必要時間</th><th>初期費用</th><th>収益化速度</th><th>継続難易度</th><th>AI活用相性</th><th>会社員向きか</th></tr></thead><tbody><tr><td>記事作成補助</td><td>平日1時間から可</td><td>低い</td><td>早め</td><td>中</td><td>構成・下書きで高い</td><td>分割しやすい</td></tr><tr><td>SNS投稿作成</td><td>短時間</td><td>低い</td><td>中</td><td>中</td><td>アイデア出しで高い</td><td>スキマ時間向き</td></tr><tr><td>動画ショート編集</td><td>中〜長</td><td>中</td><td>中</td><td>高</td><td>字幕・台本で中</td><td>休日にまとめる人向き</td></tr><tr><td>資料・リサーチ代行</td><td>中</td><td>低い</td><td>早め</td><td>中</td><td>要約・整理で高い</td><td>本業スキルを活かしやすい</td></tr></tbody></table></div>
+          <p class="verification-note"><strong>実際に運営者も検証中。</strong>AIは楽に稼ぐ道具ではなく、調査・構成・下書きの時間を減らして副業を止めないための補助として見ています。</p>
+        </section>
+        <section class="article-panel comparison-section" aria-label="AIツール比較表">
+          <section class="tool-heading"><h2>AIツール比較</h2><p>副業作業を短縮する目的で、主要AIツールの得意分野を比較しています。</p></section>
+          <div class="comparison-table" role="region" aria-label="AIツール比較表" tabindex="0"><table><thead><tr><th>AIツール</th><th>得意分野</th><th>時間短縮</th><th>初心者向き</th><th>副業相性</th></tr></thead><tbody><tr><td>ChatGPT</td><td>構成、下書き、FAQ、説明文</td><td>高い</td><td>高い</td><td>文章・企画系で使いやすい</td></tr><tr><td>Claude</td><td>長文整理、自然な文章調整</td><td>高い</td><td>中〜高</td><td>記事改善や読みやすさ調整向き</td></tr><tr><td>Gemini</td><td>調査補助、Google系連携</td><td>中</td><td>中</td><td>情報整理や比較検討向き</td></tr><tr><td>CapCut</td><td>動画編集、字幕、ショート動画</td><td>中〜高</td><td>高い</td><td>動画副業やSNS運用向き</td></tr></tbody></table></div>
+          <p class="verification-note"><strong>成果保証ではありません。</strong>AIで短縮できる部分と、人が確認すべき部分を分けることを前提にしてください。</p>
+        </section>
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading"><h2>次におすすめ</h2><p>AI副業の全体像を確認したあと、収入・時給・手取りへ順番に進めます。</p></section>
+          <div class="next-step-grid next-recommend-grid">
+            <a class="next-step-card next-recommend-card is-primary" href="side-income.html" data-next-recommend="ai-sidejob-to-side-income"><span class="next-step-label">収入へ接続</span><strong>副業収入の現実感を見る</strong><span>AIで短縮できる時間を、実際の副業月収にどうつなげるか確認します。</span><span>進むページ：副業月収シミュレーター</span><b>月収を確認する</b></a>
+            <a class="next-step-card next-recommend-card" href="hourly-improvement.html" data-next-recommend="ai-sidejob-to-hourly-improvement"><span class="next-step-label">効率確認</span><strong>時給改善を確認する</strong><span>作業時間が減った後、実質時給がどれくらい変わるかを見ます。</span><span>進むページ：副業時給改善シミュレーター</span><b>時給を確認する</b></a>
+            <a class="next-step-card next-recommend-card" href="take-home.html" data-next-recommend="ai-sidejob-to-take-home"><span class="next-step-label">手取り確認</span><strong>残る金額を見る</strong><span>売上が増えても、経費や税金を引いた後の手取りで判断します。</span><span>進むページ：副業手取り計算シミュレーター</span><b>手取りを見る</b></a>
+          </div>
+        </section>
+      </section>
+
       <section class="view" data-view="ai-efficiency" aria-label="AI副業効率化シミュレーター">
         <section class="tool-heading">
           <h2>AI副業効率化シミュレーター</h2>
@@ -2133,6 +2107,36 @@ document.body.innerHTML = `
               <input id="aiEfficiencyTargetHourly" name="aiEfficiencyTargetHourly" type="number" inputmode="numeric" min="0" max="1000000" step="500" value="5000" required aria-describedby="aiEfficiencyTargetHourlyError">
               <p class="error" id="aiEfficiencyTargetHourlyError"></p>
             </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectPrice">案件単価 <span class="unit">円 / 1案件</span></label>
+              <input id="aiEfficiencyProjectPrice" name="aiEfficiencyProjectPrice" type="number" inputmode="numeric" min="0" max="100000000" step="1000" value="50000" required aria-describedby="aiEfficiencyProjectPriceError">
+              <p class="error" id="aiEfficiencyProjectPriceError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectHours">1案件の作業時間 <span class="unit">時間</span></label>
+              <input id="aiEfficiencyProjectHours" name="aiEfficiencyProjectHours" type="number" inputmode="decimal" min="0.1" max="1000" step="0.5" value="10" required aria-describedby="aiEfficiencyProjectHoursError">
+              <p class="error" id="aiEfficiencyProjectHoursError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyProjectCount">月案件数 <span class="unit">件 / 月</span></label>
+              <input id="aiEfficiencyProjectCount" name="aiEfficiencyProjectCount" type="number" inputmode="numeric" min="0" max="100" step="1" value="4" required aria-describedby="aiEfficiencyProjectCountError">
+              <p class="error" id="aiEfficiencyProjectCountError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyAutomationRate">自動化可能割合 <span class="unit">%</span></label>
+              <input id="aiEfficiencyAutomationRate" name="aiEfficiencyAutomationRate" type="number" inputmode="decimal" min="0" max="95" step="1" value="35" required aria-describedby="aiEfficiencyAutomationRateError">
+              <p class="error" id="aiEfficiencyAutomationRateError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyOutsourcingCost">現在の外注費 <span class="unit">円 / 月</span></label>
+              <input id="aiEfficiencyOutsourcingCost" name="aiEfficiencyOutsourcingCost" type="number" inputmode="numeric" min="0" max="1000000000" step="5000" value="30000" required aria-describedby="aiEfficiencyOutsourcingCostError">
+              <p class="error" id="aiEfficiencyOutsourcingCostError"></p>
+            </div>
+            <div class="field">
+              <label for="aiEfficiencyTargetIncome">目標月収 <span class="unit">円 / 月</span></label>
+              <input id="aiEfficiencyTargetIncome" name="aiEfficiencyTargetIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="500000" required aria-describedby="aiEfficiencyTargetIncomeError">
+              <p class="error" id="aiEfficiencyTargetIncomeError"></p>
+            </div>
             <div class="actions">
               <button type="reset">リセット</button>
             </div>
@@ -2169,6 +2173,21 @@ document.body.innerHTML = `
                 <strong>副業時給改善シミュレーターへの導線</strong>
                 <span class="accent-blue text-metric" id="aiEfficiencyGuide">時給改善も確認</span>
                 <small>経費や外注費を含めた時給分析へ進む</small>
+              </div>
+              <div class="metric">
+                <strong>案件単価ベースのAI活用後時給</strong>
+                <span class="accent-amber" id="aiEfficiencyProjectHourly">0円</span>
+                <small>案件単価、1案件の作業時間、月案件数から計算</small>
+              </div>
+              <div class="metric">
+                <strong>AI利用前後の案件時給差</strong>
+                <span class="accent-blue" id="aiEfficiencyProjectHourlyGap">0円</span>
+                <small>AI利用前の案件時給と、短縮後の案件時給の差</small>
+              </div>
+              <div class="metric">
+                <strong>自動化による継続性</strong>
+                <span class="accent-green text-metric" id="aiEfficiencyContinuity">入力待ち</span>
+                <small>作業負荷、目標月収、AI費用のバランスから判定</small>
               </div>
             </div>
           </section>
@@ -2211,7 +2230,7 @@ document.body.innerHTML = `
             <p>AI効率化は、自動化できる作業、時給改善、利益率改善、使うAIツールの選び方を合わせて見ると実行に移しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
             <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
@@ -2263,6 +2282,16 @@ document.body.innerHTML = `
               <input id="aiRoiSalesIncrease" name="aiRoiSalesIncrease" type="number" inputmode="decimal" min="0" max="300" step="1" value="10" required aria-describedby="aiRoiSalesIncreaseError">
               <p class="error" id="aiRoiSalesIncreaseError"></p>
             </div>
+            <div class="field">
+              <label for="aiRoiProfitMargin">現在の利益率 <span class="unit">%</span></label>
+              <input id="aiRoiProfitMargin" name="aiRoiProfitMargin" type="number" inputmode="decimal" min="0" max="100" step="1" value="45" required aria-describedby="aiRoiProfitMarginError">
+              <p class="error" id="aiRoiProfitMarginError"></p>
+            </div>
+            <div class="field">
+              <label for="aiRoiTargetIncome">目標月収 <span class="unit">円 / 月</span></label>
+              <input id="aiRoiTargetIncome" name="aiRoiTargetIncome" type="number" inputmode="numeric" min="0" max="1000000000" step="10000" value="500000" required aria-describedby="aiRoiTargetIncomeError">
+              <p class="error" id="aiRoiTargetIncomeError"></p>
+            </div>
             <div class="actions">
               <button type="reset">リセット</button>
             </div>
@@ -2304,6 +2333,26 @@ document.body.innerHTML = `
                 <strong>副業時給改善シミュレーターへの導線</strong>
                 <span class="accent-blue text-metric" id="aiRoiHourlyGuide">時給改善も確認</span>
                 <small>実質時給、利益率、改善余地へ進む</small>
+              </div>
+              <div class="metric">
+                <strong>AI導入後の予想利益</strong>
+                <span class="accent-green" id="aiRoiAfterProfit">0円</span>
+                <small>利益率、売上増、時間価値、外注削減、AI費用から計算</small>
+              </div>
+              <div class="metric">
+                <strong>利益率改善</strong>
+                <span class="accent-amber" id="aiRoiMarginImprovement">0pt</span>
+                <small>AI導入前後の利益率差</small>
+              </div>
+              <div class="metric">
+                <strong>目標月収までの距離</strong>
+                <span class="accent-blue text-metric" id="aiRoiTargetGap">未計算</span>
+                <small>導入後利益と目標月収の差を確認</small>
+              </div>
+              <div class="metric">
+                <strong>目標月収までの短縮目安</strong>
+                <span class="accent-green text-metric" id="aiRoiTargetShortening">未計算</span>
+                <small>現在利益と導入後改善額から、到達期間の差を簡易表示</small>
               </div>
             </div>
           </section>
@@ -2351,7 +2400,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
             <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
@@ -2501,7 +2550,7 @@ document.body.innerHTML = `
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
             <a href="ai-time-reduction.html">AI作業時間削減診断</a>
-            <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+            <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
           </div>
         </section>
       </section>
@@ -2636,7 +2685,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="AI作業時間削減診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業ジャンルごとにAIで削減できる時間を見積もるために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に集中力が残らない日ほど、AIで下準備だけ進める効果を確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、削減時間は作業内容で大きく変わるため、実際の記録と照らして調整してください。次は <a href="ai-automation.html">AI副業自動化シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業ジャンルごとにAIで削減できる時間を見積もるために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に集中力が残らない日ほど、AIで下準備だけ進める効果を確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、削減時間は作業内容で大きく変わるため、実際の記録と照らして調整してください。次は <a href="ai-efficiency.html">AI副業自動化シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -2653,7 +2702,7 @@ document.body.innerHTML = `
             <p>削減できる作業時間を確認したら、自動化、AI効率化、ROIまで見ると、AI導入を続けるべきか判断しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
             <a href="article-ai-tools-comparison.html">副業向けAIツール比較記事</a>
@@ -2803,7 +2852,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-            <a href="ai-profit-max.html">AI副業利益最大化シミュレーター</a>
+            <a href="ai-roi.html">AI副業利益最大化シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
           </div>
         </section>
@@ -2945,7 +2994,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ai-roi.html">AI導入ROIシミュレーター</a>
-            <a href="ai-automation.html">AI副業自動化シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業自動化シミュレーター</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
           </div>
@@ -3083,7 +3132,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="hourly-improvement.html">副業時給改善シミュレーター</a>
-            <a href="side-motivation.html">副業モチベーション診断</a>
+            <a href="side-time-management.html">副業時間管理・継続診断</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="fire.html">FIRE達成シミュレーター</a>
           </div>
@@ -3203,7 +3252,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業疲労度シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業を続けたときの疲労とburnoutリスクを見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、管理職として本業の負荷が高い週に、副業を詰め込みすぎていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、医療的な判断ではないため、体調不良が続く場合は休む判断を優先してください。次は <a href="side-continuity.html">副業継続率診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業を続けたときの疲労とburnoutリスクを見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、管理職として本業の負荷が高い週に、副業を詰め込みすぎていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、医療的な判断ではないため、体調不良が続く場合は休む判断を優先してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3220,9 +3269,9 @@ document.body.innerHTML = `
             <p>疲労度を確認したら、時間配分とAI時短の効果も合わせて見てください。</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">会社員副業安全度診断</a>
             <a href="side-time-management.html">副業時間管理シミュレーター</a>
-            <a href="side-motivation.html">副業モチベーション診断</a>
+            <a href="side-time-management.html">副業時間管理・継続診断</a>
             <a href="ai-efficiency.html">AI副業効率化シミュレーター</a>
             <a href="fire.html">FIRE達成シミュレーター</a>
           </div>
@@ -3268,7 +3317,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業継続率診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業時間、疲労、収益から続けられる可能性を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、短期で頑張るより、月単位で続く作業量かどうかを確認する用途で使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、スコアが低いときは才能ではなく設計の問題として見直してください。次は <a href="side-motivation.html">副業モチベーション診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業時間、疲労、収益から続けられる可能性を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、短期で頑張るより、月単位で続く作業量かどうかを確認する用途で使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、スコアが低いときは才能ではなく設計の問題として見直してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3279,7 +3328,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業継続率診断関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>継続率を確認したら、モチベーション、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-motivation.html">副業モチベーション診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業時間管理関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>続けやすさを確認したら、疲労度、時間管理、AI効率化も合わせて見ると改善ポイントが具体的になります。</p></section><div class="related-links"><a href="side-time-management.html">副業時間管理・継続診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a><a href="hourly-improvement.html">副業時給改善シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-motivation" aria-label="副業モチベーション診断">
@@ -3324,7 +3373,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業モチベーション診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、目標月収と疲労度から意欲を保てるか確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に気持ちが切れやすい時期ほど、目標と現実の差を見て作業量を調整しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、高すぎる目標は挫折につながるので、段階目標も試してください。次は <a href="side-continuity.html">副業継続率診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、目標月収と疲労度から意欲を保てるか確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、本業後に気持ちが切れやすい時期ほど、目標と現実の差を見て作業量を調整しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、高すぎる目標は挫折につながるので、段階目標も試してください。次は <a href="side-time-management.html">副業時間管理・継続診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3335,7 +3384,7 @@ document.body.innerHTML = `
           </section>
         </section>
 
-        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>モチベーションを確認したら、継続率、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-continuity.html">副業継続率診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="side-time-management.html">副業時間管理シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
+        <section class="article-panel" aria-label="副業モチベーション関連ツール"><section class="tool-heading"><h2>次に試すシミュレーター</h2><p>モチベーションを確認したら、疲労度、時間管理を合わせて見ると、現実的に続ける順番が見えます。</p></section><div class="related-links"><a href="side-time-management.html">副業時間管理・継続診断</a><a href="side-fatigue.html">副業疲労度シミュレーター</a><a href="ai-efficiency.html">AI副業効率化シミュレーター</a></div></section>
       </section>
 
       <section class="view" data-view="side-risk" aria-label="副業リスク診断">
@@ -3464,7 +3513,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業リスク診断の運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、税務、疲労、収益依存のリスクをまとめて確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入を伸ばす前に、確定申告や疲労リスクを見落としていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、診断結果だけで会社規定や税務判断を決めず、必要に応じて公式情報を確認してください。次は <a href="side-safety.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、税務、疲労、収益依存のリスクをまとめて確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入を伸ばす前に、確定申告や疲労リスクを見落としていないか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、診断結果だけで会社規定や税務判断を決めず、必要に応じて公式情報を確認してください。次は <a href="side-risk.html">副業リスク・安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -3481,7 +3530,7 @@ document.body.innerHTML = `
             <p>リスクが高い項目は、時間管理、疲労度、利益率のツールで分解すると改善しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">副業リスク・安全度診断</a>
             <a href="side-fatigue.html">副業疲労度シミュレーター</a>
             <a href="side-time-management.html">副業時間管理シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
@@ -3636,7 +3685,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="side-risk.html">副業リスク診断</a>
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業税金シミュレーター</a>
             <a href="side-fatigue.html">副業疲労度シミュレーター</a>
             <a href="article-company-side-tax-saving.html">会社員の副業税金対策</a>
           </div>
@@ -3764,7 +3813,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
-            <a href="ai-hourly.html">AI副業時給シミュレーター</a>
+            <a href="ai-efficiency.html">AI副業時給シミュレーター</a>
             <a href="take-home.html">副業手取り計算シミュレーター</a>
           </div>
         </section>
@@ -3868,7 +3917,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業利益率シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業売上から経費を引いた利益率を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、広告費、外注費、AI費用を入れて、手元に残る副業になっているか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、売上が伸びても利益率が下がる場合は、作業や費用を見直してください。次は <a href="income-tax.html">副業所得税シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業売上から経費を引いた利益率を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、広告費、外注費、AI費用を入れて、手元に残る副業になっているか確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、売上が伸びても利益率が下がる場合は、作業や費用を見直してください。次は <a href="tax.html">副業税金シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4027,7 +4076,7 @@ document.body.innerHTML = `
             <p>法人化を考える前に、利益率、所得税、会計管理を合わせて確認すると判断しやすくなります。</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業税金シミュレーター</a>
             <a href="side-profit-margin.html">副業利益率シミュレーター</a>
             <a href="article-accounting-software-comparison.html">副業向け会計ソフト比較</a>
           </div>
@@ -4123,7 +4172,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業税金・青色申告シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業収入にかかる税金と青色申告の影響を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入が出た月から、納税資金を残すための目安として使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、概算ツールなので、実際の申告前には国税庁や税理士情報も確認してください。次は <a href="income-tax.html">副業所得税シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業収入にかかる税金と青色申告の影響を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、副業収入が出た月から、納税資金を残すための目安として使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、概算ツールなので、実際の申告前には国税庁や税理士情報も確認してください。次は <a href="take-home.html">副業手取り計算シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4140,7 +4189,7 @@ document.body.innerHTML = `
             <p>&#x7a0e;&#x984d;&#x3092;&#x628a;&#x63e1;&#x3057;&#x305f;&#x3042;&#x3068;&#x306b;&#x3001;&#x6700;&#x7d42;&#x7684;&#x306a;&#x624b;&#x53d6;&#x308a;&#x3084;&#x526f;&#x696d;&#x53ce;&#x76ca;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
@@ -4285,7 +4334,7 @@ document.body.innerHTML = `
           </section>
           <div class="related-links">
             <a href="ideco.html">iDeCo節税シミュレーター</a>
-            <a href="income-tax.html">副業所得税シミュレーター</a>
+            <a href="tax.html">副業所得税シミュレーター</a>
             <a href="fixed-cost-reduction.html">固定費削減シミュレーター</a>
           </div>
         </section>
@@ -4422,7 +4471,7 @@ document.body.innerHTML = `
             <p>&#x6240;&#x5f97;&#x7a0e;&#x306e;&#x5f8c;&#x306b;&#x3001;&#x4f4f;&#x6c11;&#x7a0e;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3001;&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x5168;&#x4f53;&#x3092;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="side-safety.html">会社員副業安全度診断</a>
+            <a href="side-risk.html">会社員副業安全度診断</a>
             <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
@@ -4534,7 +4583,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="副業住民税シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、副業所得にかかる住民税と普通徴収の注意点を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、会社員副業では住民税の扱いが気になるため、所得割と均等割を分けて確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、普通徴収の可否は自治体や状況で異なるため、必ず自治体の案内も確認してください。次は <a href="side-safety.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、副業所得にかかる住民税と普通徴収の注意点を見るために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、会社員副業では住民税の扱いが気になるため、所得割と均等割を分けて確認しています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、普通徴収の可否は自治体や状況で異なるため、必ず自治体の案内も確認してください。次は <a href="side-risk.html">会社員副業安全度診断</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -4551,7 +4600,7 @@ document.body.innerHTML = `
             <p>&#x526f;&#x696d;&#x306e;&#x7a0e;&#x984d;&#x3001;&#x624b;&#x53d6;&#x308a;&#x3001;&#x6708;&#x53ce;&#x306e;&#x5168;&#x4f53;&#x611f;&#x3092;&#x4e00;&#x7dd2;&#x306b;&#x78ba;&#x8a8d;&#x3067;&#x304d;&#x307e;&#x3059;&#x3002;</p>
           </section>
           <div class="related-links">
-            <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
+            <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="tax.html">&#x526f;&#x696d;&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
             <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;&#x8a08;&#x7b97;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</a>
           </div>
@@ -5268,16 +5317,40 @@ document.body.innerHTML = `
               <p class="error" id="currentAssetsError"></p>
             </div>
             <div class="field">
+              <label for="fireCurrentAge">現在年齢 <span class="unit">歳</span></label>
+              <input id="fireCurrentAge" name="fireCurrentAge" type="number" inputmode="numeric" min="0" max="100" step="1" value="35" required aria-describedby="fireCurrentAgeHint fireCurrentAgeError">
+              <p class="field-hint" id="fireCurrentAgeHint">副業・配当込みでFIRE達成年齢を確認するために使います。</p>
+              <p class="error" id="fireCurrentAgeError"></p>
+            </div>
+            <div class="field">
               <label for="monthlyInvestment">毎月積立額 <span class="unit">円 / 月</span></label>
               <input id="monthlyInvestment" name="monthlyInvestment" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="100000" required aria-describedby="monthlyInvestmentHint monthlyInvestmentError">
-              <p class="field-hint" id="monthlyInvestmentHint">NISA積立、副業収入からの追加投資、固定費削減分などを合算してください。</p>
+              <p class="field-hint" id="monthlyInvestmentHint">給与や家計改善から、毎月投資へ回せる基本積立額です。</p>
               <p class="error" id="monthlyInvestmentError"></p>
+            </div>
+            <div class="field">
+              <label for="fireSideIncome">副業月収からの追加積立 <span class="unit">円 / 月</span></label>
+              <input id="fireSideIncome" name="fireSideIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="0" required aria-describedby="fireSideIncomeHint fireSideIncomeError">
+              <p class="field-hint" id="fireSideIncomeHint">副業の税金・経費を引いた後、投資へ回せる金額を入れてください。</p>
+              <p class="error" id="fireSideIncomeError"></p>
+            </div>
+            <div class="field">
+              <label for="fireDividendIncome">配当収入からの再投資 <span class="unit">円 / 月</span></label>
+              <input id="fireDividendIncome" name="fireDividendIncome" type="number" inputmode="numeric" min="0" max="100000000" step="10000" value="0" required aria-describedby="fireDividendIncomeHint fireDividendIncomeError">
+              <p class="field-hint" id="fireDividendIncomeHint">配当を使わず再投資する場合の月額目安です。将来の配当を保証するものではありません。</p>
+              <p class="error" id="fireDividendIncomeError"></p>
             </div>
             <div class="field">
               <label for="annualReturn">想定年利 <span class="unit">%</span></label>
               <input id="annualReturn" name="annualReturn" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="4" required aria-describedby="annualReturnHint annualReturnError">
               <p class="field-hint" id="annualReturnHint">まずは3〜5%など、保守的な条件でも確認してください。</p>
               <p class="error" id="annualReturnError"></p>
+            </div>
+            <div class="field">
+              <label for="fireTargetAssets">目標FIRE資産 <span class="unit">円</span></label>
+              <input id="fireTargetAssets" name="fireTargetAssets" type="number" inputmode="numeric" min="0" max="10000000000" step="10000" value="0" required aria-describedby="fireTargetAssetsHint fireTargetAssetsError">
+              <p class="field-hint" id="fireTargetAssetsHint">0円の場合は年間生活費の25年分で自動計算します。</p>
+              <p class="error" id="fireTargetAssetsError"></p>
             </div>
             <div class="field">
               <label for="years">確認する年数 <span class="unit">年</span></label>
@@ -5305,6 +5378,11 @@ document.body.innerHTML = `
               <div class="metric"><strong>積立額</strong><span class="accent-amber" id="totalInvestment">0円</span><small>現在資産 + 毎月積立 × 月数</small></div>
               <div class="metric"><strong>想定運用資産</strong><span class="accent-green" id="futureAssets">0円</span><small>確認する年数後の見込み</small></div>
               <div class="metric"><strong>毎月必要積立額</strong><span id="fireRequiredMonthly">0円</span><small>指定年数で必要資産に届く目安</small></div>
+              <div class="metric"><strong>会社員FIRE達成年齢</strong><span class="accent-green" id="fireAchieveAge">0歳</span><small>副業・配当込みの到達年齢</small></div>
+              <div class="metric"><strong>追加必要積立額</strong><span class="accent-amber" id="fireAdditionalMonthly">0円</span><small>指定年数で届くために追加したい月額</small></div>
+              <div class="metric"><strong>副業収入の短縮効果</strong><span class="accent-blue" id="fireSideIncomeEffect">0年</span><small>副業追加積立による短縮目安</small></div>
+              <div class="metric"><strong>配当再投資効果</strong><span class="accent-green text-metric" id="fireDividendEffect">0円</span><small>配当再投資による短縮目安</small></div>
+              <div class="metric"><strong>サイドFIRE必要資産比較</strong><span class="accent-amber text-metric" id="fireSideFireComparison">0円</span><small>副業・配当を残す場合の必要資産差</small></div>
             </div>
             <section class="goal-status-card is-review" id="fireAdviceCard" aria-label="FIRE改善提案">
               <p class="goal-status-label" id="fireAdviceLabel">改善が必要</p>
@@ -5661,7 +5739,7 @@ document.body.innerHTML = `
           <div class="related-links">
             <a href="fire-rate.html">FIRE達成率シミュレーター</a>
             <a href="fire-cost-optimization.html">FIRE生活費最適化シミュレーター</a>
-            <a href="employee-fire.html">会社員FIRE年数計算シミュレーター</a>
+            <a href="fire.html">会社員FIRE年数計算シミュレーター</a>
             <a href="side-fire.html">サイドFIREシミュレーター</a>
             <a href="take-home.html">副業手取り計算シミュレーター</a>
           </div>
@@ -6512,7 +6590,7 @@ document.body.innerHTML = `
             <a href="fire.html">FIREシミュレーター</a>
             <a href="side-fire-roadmap.html">副業FIRE達成ロードマップ診断</a>
             <a href="retirement.html">老後資金シミュレーター</a>
-            <a href="employee-fire.html">会社員FIRE年数計算シミュレーター</a>
+            <a href="fire.html">会社員FIRE年数計算シミュレーター</a>
           </div>
         </section>
       </section>
@@ -6929,7 +7007,7 @@ document.body.innerHTML = `
         <section class="article-panel operator-comment" aria-label="教育費シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
-            <p>このページは、子どもの進学ルートから教育費の不足額を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費と老後資金がぶつからないよう、必要額と積立額を同時に見ています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、進学費用は地域や学校で大きく変わるため、概算として使ってください。次は <a href="education-insurance.html">学資保険比較シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
+            <p>このページは、子どもの進学ルートから教育費の不足額を確認するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費と老後資金がぶつからないよう、必要額と積立額を同時に見ています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、進学費用は地域や学校で大きく変わるため、概算として使ってください。次は <a href="education.html">教育費シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
           </section>
         </section>
 
@@ -6955,7 +7033,7 @@ document.body.innerHTML = `
 
       <section class="view" data-view="education-insurance" aria-label="&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;">
         <section class="tool-heading">
-          <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x6bd4;&#x8f03;&#x30b7;&#x30df;&#x30e5;&#x30ec;&#x30fc;&#x30bf;&#x30fc;</h2>
+          <h2>&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x306e;&#x6bd4;&#x8f03;</h2>
           <p>&#x7a4d;&#x7acb;&#x578b;&#x306e;&#x5b66;&#x8cc7;&#x4fdd;&#x967a;&#x3068;&#x901a;&#x5e38;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;&#x3092;&#x6bd4;&#x8f03;&#x3057;&#x3001;&#x5927;&#x5b66;&#x9032;&#x5b66;&#x6642;&#x306b;&#x53d7;&#x3051;&#x53d6;&#x308c;&#x308b;&#x91d1;&#x984d;&#x306e;&#x76ee;&#x5b89;&#x3092;&#x8a66;&#x7b97;&#x3057;&#x307e;&#x3059;&#x3002;</p>
         </section>
 
@@ -7049,7 +7127,7 @@ document.body.innerHTML = `
             </details>
           </div>
         </section>
-        <section class="article-panel operator-comment" aria-label="学資保険比較シミュレーターの運営者コメント">
+        <section class="article-panel operator-comment" aria-label="教育費シミュレーターの運営者コメント">
           <section class="tool-heading">
             <h2>運営者コメント</h2>
             <p>このページは、学資保険と通常積立投資を比較するために作りました。運営者は31歳の会社員で、運送業の管理職として約30名規模の現場管理、人員調整、当日欠勤対応、夜間対応を経験しています。本業後にまとまった時間を取れない日があるので、教育費準備で安全性と増やす力のどちらを重視するか確認するために使っています。AIには下書きや条件整理を手伝わせていますが、入力項目や注意点は実際に働きながら副業、固定費改善、NISA、FIREを検証している経験をもとに調整しています。注意点は、投資には元本割れリスクがあるため、必要時期までの年数も見てください。次は <a href="education.html">教育費シミュレーター</a> で、結果を次の行動に落とし込んでください。</p>
@@ -8479,24 +8557,24 @@ document.body.innerHTML = `
           <a href="index.html">&#x30c8;&#x30c3;&#x30d7;</a>
           <a href="project-fire.html">Project FIRE</a>
           <a href="side-income.html">&#x526f;&#x696d;&#x6708;&#x53ce;</a>
-          <a href="ai-hourly.html">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
+          <a href="ai-efficiency.html">AI&#x526f;&#x696d;&#x6642;&#x7d66;</a>
           <a href="ai-efficiency.html">AI副業効率化</a>
           <a href="ai-roi.html">AI導入ROI</a>
           <a href="ai-time-reduction.html">AI作業時間削減</a>
           <a href="ai-outsourcing.html">AI外注費削減</a>
-          <a href="ai-profit-max.html">AI利益最大化</a>
+          <a href="ai-roi.html">AI利益最大化</a>
           <a href="hourly-improvement.html">副業時給改善</a>
           <a href="side-time-management.html">副業時間管理</a>
           <a href="side-fatigue.html">副業疲労度</a>
-          <a href="side-motivation.html">副業モチベーション</a>
+          <a href="side-time-management.html">副業モチベーション</a>
           <a href="side-risk.html">副業リスク診断</a>
-          <a href="side-safety.html">副業安全度</a>
+          <a href="side-risk.html">副業安全度</a>
           <a href="side-profit-margin.html">&#x526f;&#x696d;&#x5229;&#x76ca;&#x7387;</a>
           <a href="incorporation.html">副業法人化判断</a>
           <a href="take-home.html">&#x526f;&#x696d;&#x624b;&#x53d6;&#x308a;</a>
           <a href="tax.html">&#x7a0e;&#x91d1;&#x30fb;&#x9752;&#x8272;&#x7533;&#x544a;</a>
           <a href="employee-tax-saving.html">会社員節税</a>
-          <a href="income-tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
+          <a href="tax.html">&#x526f;&#x696d;&#x6240;&#x5f97;&#x7a0e;</a>
           <a href="resident-tax.html">&#x526f;&#x696d;&#x4f4f;&#x6c11;&#x7a0e;</a>
           <a href="investment-risk.html">投資リスク診断</a>
           <a href="nisa.html">&#x65b0;NISA&#x30fb;&#x7a4d;&#x7acb;&#x6295;&#x8cc7;</a>
@@ -8514,14 +8592,14 @@ document.body.innerHTML = `
           <a href="fire-rate.html">FIRE達成率</a>
           <a href="side-fire-roadmap.html">副業FIREロードマップ</a>
           <a href="fire-cost-optimization.html">FIRE生活費最適化</a>
-          <a href="employee-fire.html">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
+          <a href="fire.html">&#x4f1a;&#x793e;&#x54e1;FIRE</a>
           <a href="life-cost.html">生活コスト最適化</a>
             <a href="side-fire.html">&#x30b5;&#x30a4;&#x30c9;FIRE</a>
             <a href="emergency-fund.html">&#x751f;&#x6d3b;&#x9632;&#x885b;&#x8cc7;&#x91d1;</a>
             <a href="fixed-cost-reduction.html">固定費削減</a>
             <a href="retirement.html">&#x8001;&#x5f8c;&#x8cc7;&#x91d1;</a>
           <a href="education.html">&#x6559;&#x80b2;&#x8cbb;</a>
-          <a href="education-insurance.html">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
+          <a href="education.html">&#x5b66;&#x8cc7;&#x4fdd;&#x967a;</a>
           <a href="mortgage.html">&#x4f4f;&#x5b85;&#x30ed;&#x30fc;&#x30f3;</a>
           <a href="privacy.html">&#x30d7;&#x30e9;&#x30a4;&#x30d0;&#x30b7;&#x30fc;&#x30dd;&#x30ea;&#x30b7;&#x30fc;</a>
           <a href="disclaimer.html">&#x514d;&#x8cac;&#x4e8b;&#x9805;</a>
@@ -8536,13 +8614,14 @@ document.body.innerHTML = `
 function insertLastUpdatedDates() {
   const routeDates = {
     top: "2026年6月29日",
-    "side-income": "2026年7月21日",
+    "side-income": "2026年8月30日",
     "ai-hourly": "2026年6月30日",
-    "ai-efficiency": "2026年6月30日",
-    "ai-roi": "2026年6月30日",
+    "ai-sidejob": "2026年8月24日",
+    "ai-efficiency": "2026年8月24日",
+    "ai-roi": "2026年8月24日",
     "ai-automation": "2026年6月30日",
-    "ai-time-reduction": "2026年6月30日",
-    "ai-outsourcing": "2026年6月30日",
+    "ai-time-reduction": "2026年8月24日",
+    "ai-outsourcing": "2026年8月24日",
     "ai-profit-max": "2026年6月30日",
     "side-time-management": "2026年6月30日",
     "side-fatigue": "2026年6月30日",
@@ -8561,8 +8640,8 @@ function insertLastUpdatedDates() {
     "investment-risk": "2026年6月30日",
     "nisa": "2026年6月30日",
     "nisa-fast": "2026年6月30日",
-    "ideco": "2026年6月30日",
-    "fire": "2026年7月24日",
+    "ideco": "2026年8月30日",
+    "fire": "2026年8月30日",
     "fire-rate": "2026年6月30日",
     "side-fire-roadmap": "2026年6月30日",
     "fire-cost-optimization": "2026年6月30日",
@@ -8573,8 +8652,8 @@ function insertLastUpdatedDates() {
     "emergency-fund": "2026年6月30日",
     "fixed-cost-reduction": "2026年7月31日",
     "retirement": "2026年6月30日",
-    "education": "2026年6月30日",
-    "education-insurance": "2026年6月30日",
+    "education": "2026年8月30日",
+    "education-insurance": "2026年8月30日",
     "dividend": "2026年6月30日",
     "dividend-etf": "2026年6月30日",
     "dividend-stock": "2026年6月30日",
@@ -8605,11 +8684,12 @@ insertLastUpdatedDates();
 const suitedUsers = {
   "side-income": "副業初心者や会社員が、月にどれくらい稼げるかを現実的に見たい時に向いています。売上だけでなく作業時間や手取り感も知りたい人、本業後の限られた時間で無理なく副業を始めたい人に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "ai-hourly": "AIを使って副業の時給を上げたい会社員や、副業初心者に向いています。ChatGPTなどで作業時間を短縮できるか、現在の案件単価が見合っているかを確認したい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-efficiency": "本業後の少ない時間で副業を続けたい人、AIツール代が利益改善につながるか知りたい人に向いています。時間削減、利益率、年間効果をまとめて見たい副業初心者にも使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-roi": "AIツールを有料で導入する前に、費用対効果を確認したい会社員に向いています。削減時間や売上増加、外注費削減を数字で見て、月額費用を払う価値があるか判断したい人向けです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
+  "ai-sidejob": "AIで楽に稼ぐ方法ではなく、本業後の限られた時間を短縮しながら副業を続けたい会社員に向いています。AI効率化、ROI、時短診断、外注費削減のどれから使うべきかを選ぶ入口として使ってください。",
+  "ai-efficiency": "本業後の少ない時間で副業を続けたい人、AIツール代が利益改善につながるか知りたい人に向いています。時間削減、案件単価ベースの時給、自動化による継続性、年間効果をまとめて確認できます。",
+  "ai-roi": "AIツールを有料で導入する前に、費用対効果を確認したい会社員に向いています。削減時間や売上増加、外注費削減だけでなく、導入後利益、利益率改善、目標月収までの距離も確認できます。",
   "ai-automation": "繰り返し作業をAIで自動化し、副業を続けやすくしたい人に向いています。調査、下書き、定型返信などを減らし、本業後の短い時間を利益につながる作業へ回したい会社員に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-time-reduction": "AIでどの作業時間をどれくらい減らせるか知りたい人に向いています。副業ジャンル別に効率化余地を見たい人や、疲れている平日でも進められる作業設計を考えたい会社員に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
-  "ai-outsourcing": "外注費が増えて利益率が下がってきた副業経験者に向いています。AIで下準備や定型作業を内製化し、どれくらい外注費を削減できるか、ROIや回収期間まで見たい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
+  "ai-time-reduction": "AIでどの作業時間をどれくらい減らせるか知りたい人に向いています。副業ジャンル、作業内容、利用頻度ごとの相性を見て、AI効率化ページへ進む前の診断として使いやすいです。",
+  "ai-outsourcing": "外注費が増えて利益率が下がってきた副業経験者に向いています。AIで外注前の下準備や定型作業を内製化した場合の削減額、利益率改善、ROI、回収期間を確認できます。",
   "ai-profit-max": "AIを使って副業利益を伸ばしたい人、目標月収までの距離を短くしたい人に向いています。時短だけでなく利益率、時給、年間追加利益をまとめて確認したい会社員や副業中級者に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "side-time-management": "本業、通勤、睡眠、家事の中で副業時間を確保したい会社員に向いています。毎日長時間の副業が難しい人や、AI活用で平日1時間でも続くスケジュールを組みたい人に役立ちます。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
   "side-fatigue": "本業と副業の両立で疲労がたまっている人、無理な作業量になっていないか確認したい会社員に向いています。睡眠、休日、ストレス、AI活用を含めて継続リスクを見たい人に使いやすいです。入力前に、自分の目的と優先順位を確認する入口として使ってください。",
@@ -8834,7 +8914,8 @@ const operatorExperience = {
 };
 
 const routeExperienceProfiles = {
-  "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "side-income": { title: "副業月収シミュレーター", kind: "side", reason: "副業を始める前に、最初に知りたいのは月収の夢ではなく、現実的に何時間働いていくら残るかです。時給、作業時間、案件数を分けて見ることで、無理な目標を立てる前に、自分の生活リズムに合う副業量を確認できます。", use: "結果は、月5万円や月10万円を目指すときの作業量の逆算に使ってください。平日に時間が取れない場合は、案件数を増やすより単価や作業効率を上げる方が現実的なこともあります。", articles: [["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["副業の税金完全ガイド", "article-side-tax.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "ai-sidejob": { title: "AI副業シミュレーター", kind: "ai", reason: "AI副業は、AIで楽に稼ぐ話ではなく、本業後の限られた時間をどう短縮し、収入につながる作業へ集中するかを見るための入口です。", use: "まずAIで短縮できる作業と、自分で確認すべき作業を分けてください。その後、副業月収、時給改善、手取り計算へ進むと現実的な判断につながります。", articles: [["AI副業の始め方", "article-ai-side-business.html"], ["管理職をしながらAI副業を続ける現実", "article-ai-sidejob-manager-reality.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   "ai-hourly": { title: "AI副業時給シミュレーター", kind: "ai", reason: "AI副業は、作業時間が短くなる一方で、単価設定を間違えると時給が伸びません。このツールは、案件単価と作業時間を並べて、AIを使った後の実質時給を冷静に見るために作りました。", use: "AIで時間が半分になっても、修正や確認に時間がかかるなら時給は思ったほど伸びません。結果を見ながら、単価を上げるのか、作業手順を減らすのか、案件を絞るのかを決める材料にしてください。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
   "ai-efficiency": { title: "AI副業効率化シミュレーター", kind: "ai", reason: "AIツールは便利ですが、月額費用を払っても利益が増えなければ意味がありません。時間削減、外注費削減、ツール費用を一緒に見て、AI導入が本当に副業の利益率を上げるか確認するために作りました。", use: "AI導入後の時給だけでなく、年間追加利益を見てください。月額費用が高くても、削減時間を売上につなげられるなら投資価値があります。逆に時間が浮くだけなら、まず作業手順の見直しが先です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業効率化おすすめAIツール比較", "article-ai-side-business.html"], ["副業利益率シミュレーター", "side-profit-margin.html"]] },
   "ai-roi": { title: "AI導入ROIシミュレーター", kind: "ai", reason: "AIツールは便利でも、月額費用に見合う効果があるかを見ないと固定費だけが増えます。本業後の限られた副業時間を使う立場では、削減時間、売上増、外注費削減、回収期間をまとめて確認することが大切です。", use: "ROIが高い場合は、下書き、調査、要約、資料作成など繰り返し作業へAIを広げてください。ROIが低い場合は、有料プランを増やす前に無料枠や低額プランで用途を絞る方が安全です。", articles: [["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"], ["副業時給改善シミュレーター", "hourly-improvement.html"], ["副業利益率シミュレーター", "side-profit-margin.html"]] },
@@ -8852,38 +8933,37 @@ const routeExperienceProfiles = {
   "side-profit-margin": { title: "副業利益率シミュレーター", kind: "side", reason: "売上が増えても、広告費、外注費、ツール費、作業時間が増えすぎると手元に残る利益は少なくなります。副業を長く続けるには、売上より利益率と時給を見ておく必要があります。", use: "利益率が低い場合は、経費削減だけでなく、単価、作業時間、AI活用の見直しをセットで考えてください。税金シミュレーターと合わせると手取り感もつかみやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業向けおすすめAIツール比較", "article-ai-tools-comparison.html"]] },
   incorporation: { title: "副業法人化判断シミュレーター", kind: "tax", reason: "副業利益が増えてくると、個人事業のまま続けるか、法人化するかで迷いやすくなります。ただ、法人化は節税だけでなく、維持費、社会保険、会計処理、役員報酬の設計まで関係するため、手取り差額と維持コストを同時に見られるようにしました。", use: "法人化が有利に見えても、役員報酬額、法人維持費、社会保険増加額を変えて複数パターンで試してください。差額が小さい場合は、利益率改善や会計ソフトでの経費管理を先に整える方が現実的です。", articles: [["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"], ["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"]] },
   tax: { title: "副業税金シミュレーター", kind: "tax", reason: "副業では、売上がそのまま使えるお金になるわけではありません。所得税、住民税、青色申告控除をざっくりでも見ておくと、納税時期に慌てずに済みます。", use: "結果は、毎月いくら納税用に分けておくかの目安にしてください。副業収入を投資へ回す場合も、税金分を先に避けてから積立額を決めると安全です。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
-  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "employee-tax-saving": { title: "会社員節税シミュレーター", kind: "tax", reason: "会社員は源泉徴収で税金が自動的に引かれるため、節税を自分で管理している感覚を持ちにくいと感じます。iDeCo、ふるさと納税、保険控除、住宅ローン控除を一つずつ確認し、FIREに向けて手元に残せるお金を見える化するために作りました。", use: "節税額が出たら、その金額を使い切らず、生活防衛資金や新NISA積立に回す前提で見てください。副業所得がある場合は、節税だけでなく所得税と住民税の納税資金も合わせて確認すると安心です。", articles: [["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "income-tax": { title: "副業所得税シミュレーター", kind: "tax", reason: "副業所得が増えると、所得税と復興特別所得税の負担も増えます。手取りを考えるなら、経費や控除を入れた課税所得で見ることが大切です。会社員の場合は、所得税だけでなく住民税や会社規定との関係も見落とせません。", use: "所得税の概算を見たら、住民税や手取り計算も合わせて確認してください。売上が伸びた月ほど、納税用資金を分ける習慣が役立ちます。会社員副業安全度診断で、普通徴収や確定申告準備も合わせて確認できます。", articles: [["副業の所得税完全ガイド", "article-income-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["青色申告の始め方", "article-blue-return-start.html"]] },
-  "investment-risk": { title: "投資リスク許容度診断", kind: "investment", reason: "投資は利回りだけで決めると、暴落時に続けられなくなることがあります。本業で急な対応や長時間労働があると、相場を見る余裕がない日もあるため、年齢、資産、経験、暴落時の行動を先に整理するために作りました。", use: "スコアが低い場合は投資額を増やすより、現金比率と少額積立を優先してください。スコアが高い場合も、高配当株、配当ETF、インデックス投資を分けて、FIRE目標に合う配分を確認しましょう。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "investment-risk": { title: "投資リスク許容度診断", kind: "investment", reason: "投資は利回りだけで決めると、暴落時に続けられなくなることがあります。本業で急な対応や長時間労働があると、相場を見る余裕がない日もあるため、年齢、資産、経験、暴落時の行動を先に整理するために作りました。", use: "スコアが低い場合は投資額を増やすより、現金比率と少額積立を優先してください。スコアが高い場合も、高配当株、配当ETF、インデックス投資を分けて、FIRE目標に合う配分を確認しましょう。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"]] },
   "resident-tax": { title: "副業住民税シミュレーター", kind: "tax", reason: "副業の住民税は、会社員が特に気にしやすい部分です。普通徴収を選ぶ注意点も含め、税額の目安を早めに見ておくために作りました。", use: "住民税額が見えたら、所得税と合わせて年間の税負担を確認してください。普通徴収を選ぶ場合も自治体の扱いに差があるため、確定申告前に確認するのが安全です。", articles: [["副業の住民税完全ガイド", "article-resident-tax-guide.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業向けおすすめ会計ソフト比較", "article-accounting-software-comparison.html"]] },
   "take-home": { title: "副業手取り計算シミュレーター", kind: "tax", reason: "副業は売上よりも、税金や社会保険料を考えた後の手取りが重要です。手取りが見えると、生活費、投資、納税準備に分けやすくなります。", use: "結果は副業収入の使い道を決める前に見てください。手取りの一部を生活防衛資金やNISAに回すと、収入増がそのまま資産形成につながりやすくなります。", articles: [["副業の税金完全ガイド", "article-side-tax.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   nisa: { title: "新NISAシミュレーター", kind: "investment", reason: "FIREを目指すうえで、新NISAは長期投資の中心にしやすい制度です。ただし、毎月いくら積み立てるかは収入や固定費によって変わります。", use: "将来資産額だけでなく、毎月積立額が家計に無理なく続くかを見てください。副業収入や固定費削減で増えた余力をNISAへ回すと、行動と資産形成がつながります。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIREとは何か", "article-fire-basic.html"]] },
-  "nisa-fast": { title: "新NISA最速積立シミュレーター", kind: "investment", reason: "新NISAは枠をどう使うかで資産形成の速度が変わります。毎月積立とボーナス積立を分けて、無理なく早く埋めるペースを確認するために作りました。", use: "最終資産額だけでなく、生活防衛資金を残して続けられる金額かを見てください。FIREを急ぐ場合も、成長投資枠、配当再投資、固定費削減を組み合わせる方が現実的です。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "nisa-withdrawal": { title: "NISA取り崩しシミュレーター", kind: "investment", reason: "資産形成は積み立てるだけでなく、将来どう使うかまで考える必要があります。老後やFIRE後に何年取り崩せるかを見える化するために作りました。", use: "取り崩し可能年数が短い場合は、毎月取り崩し額を下げる、運用継続を考える、老後資金や配当収入を組み合わせるなどの調整に使ってください。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "nisa-fast": { title: "新NISA最速積立シミュレーター", kind: "investment", reason: "新NISAは枠をどう使うかで資産形成の速度が変わります。毎月積立とボーナス積立を分けて、無理なく早く埋めるペースを確認するために作りました。", use: "最終資産額だけでなく、生活防衛資金を残して続けられる金額かを見てください。FIREを急ぐ場合も、成長投資枠、配当再投資、固定費削減を組み合わせる方が現実的です。", articles: [["新NISAの始め方", "article-new-nisa-start.html"], ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "nisa-withdrawal": { title: "NISA取り崩しシミュレーター", kind: "investment", reason: "資産形成は積み立てるだけでなく、将来どう使うかまで考える必要があります。老後やFIRE後に何年取り崩せるかを見える化するために作りました。", use: "取り崩し可能年数が短い場合は、毎月取り崩し額を下げる、運用継続を考える、老後資金や配当収入を組み合わせるなどの調整に使ってください。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
   "credit-card-investment": { title: "クレカ積立比較シミュレーター", kind: "investment", reason: "クレカ積立はポイント還元が魅力ですが、還元率だけで判断すると本質を見失います。通常積立との差を数字で確認するために作りました。", use: "差額が小さくても、長期ではポイント再投資が効いてきます。新NISAや配当再投資と合わせて、無理なく続く証券口座とカードを選ぶ材料にしてください。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  ideco: { title: "iDeCo節税シミュレーター", kind: "investment", reason: "iDeCoは節税効果がある一方で、原則60歳まで引き出せない制度です。新NISAとは性格が違うため、節税額と将来資産を分けて見る必要があります。", use: "節税額だけでなく、資金拘束も考えてください。老後資金目的ならiDeCo、柔軟性を重視するなら新NISAというように、目的別に使い分ける判断材料になります。", articles: [["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  ideco: { title: "iDeCo節税シミュレーター", kind: "investment", reason: "iDeCoは節税効果がある一方で、原則60歳まで引き出せない制度です。新NISAとは性格が違うため、節税額と将来資産を分けて見る必要があります。", use: "節税額だけでなく、資金拘束も考えてください。老後資金目的ならiDeCo、柔軟性を重視するなら新NISAというように、目的別に使い分ける判断材料になります。", articles: [["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
   dividend: { title: "配当金シミュレーター", kind: "investment", reason: "配当金は、資産形成の途中でもキャッシュフローを感じやすい投資です。ただし利回りだけを見ると、減配や価格下落のリスクを見落としがちです。", use: "年間配当金と月平均配当金を見て、生活費の何割を補えるか確認してください。再投資するか受け取るかで、資産成長と現金収入のバランスが変わります。", articles: [["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"]] },
-  "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "dividend-stock": { title: "高配当株比較シミュレーター", kind: "investment", reason: "高配当株は配当利回りだけで選ぶと、減配や株価下落、銘柄集中のリスクを見落としやすいです。ETFと個別株の違いを数字で比べ、FIREに向けて配当収入と資産成長のバランスを確認するために作りました。", use: "年間配当金だけでなく、最終資産額、銘柄別比較、ETFとの比較を合わせて見てください。個別株に偏りすぎる場合は、配当ETFや新NISAの積立と組み合わせて分散するのが現実的です。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
-  "dividend-mental": { title: "配当メンタル安定度診断", kind: "investment", reason: "配当投資は利回りだけでなく、暴落時に売らずに続けられるかが大切です。高配当株比率、現金比率、生活費、配当依存度をまとめて見て、精神的に続けやすい状態か確認するために作りました。", use: "スコアが低い場合は、高配当株を増やす前に現金比率と分散を整えてください。FIREを目指す場合ほど、配当だけに頼らず、副業収入や生活費削減も残すと安心感が上がります。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "dividend-etf": { title: "配当ETF比較シミュレーター", kind: "investment", reason: "高配当ETFは名前だけで選ぶと、配当重視なのか資産成長重視なのかが分かりにくいです。VYM、HDV、SPYD、VIGなどを同じ条件で比較するために作りました。", use: "ETF別比較では、年間配当が大きい候補と最終資産額が大きい候補を分けて見てください。新NISAで使う場合は、非課税枠と外国税の扱いも確認しましょう。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "dividend-stock": { title: "高配当株比較シミュレーター", kind: "investment", reason: "高配当株は配当利回りだけで選ぶと、減配や株価下落、銘柄集中のリスクを見落としやすいです。ETFと個別株の違いを数字で比べ、FIREに向けて配当収入と資産成長のバランスを確認するために作りました。", use: "年間配当金だけでなく、最終資産額、銘柄別比較、ETFとの比較を合わせて見てください。個別株に偏りすぎる場合は、配当ETFや新NISAの積立と組み合わせて分散するのが現実的です。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIRE達成シミュレーター", "fire.html"]] },
+  "dividend-mental": { title: "配当メンタル安定度診断", kind: "investment", reason: "配当投資は利回りだけでなく、暴落時に売らずに続けられるかが大切です。高配当株比率、現金比率、生活費、配当依存度をまとめて見て、精神的に続けやすい状態か確認するために作りました。", use: "スコアが低い場合は、高配当株を増やす前に現金比率と分散を整えてください。FIREを目指す場合ほど、配当だけに頼らず、副業収入や生活費削減も残すと安心感が上がります。", articles: [["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"], ["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "dividend-reinvestment": { title: "配当再投資シミュレーター", kind: "investment", reason: "配当は受け取るだけでなく、再投資することで資産成長に回せます。短期の満足感と長期の複利効果を比べるために作りました。", use: "再投資による増加額を見て、今は配当を使う時期なのか、資産を増やす時期なのか判断してください。FIRE前は再投資、FIRE後は受け取りという使い分けも考えられます。", articles: [["配当生活達成シミュレーター", "dividend-life.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["FIREとは何か", "article-fire-basic.html"]] },
-  "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "dividend-life": { title: "配当生活達成シミュレーター", kind: "fire", reason: "配当生活は魅力的ですが、必要資産を計算すると現実的な距離感が見えます。生活費を配当だけでまかなうには、利回りと支出の両方を見る必要があります。", use: "必要資産が大きく見える場合は、固定費削減、副業収入、サイドFIREを組み合わせてください。完全な配当生活だけを目指すより、複数の収入源を持つ方が現実的です。", articles: [["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "dividend-life-years": { title: "配当生活年数シミュレーター", kind: "fire", reason: "配当生活は必要資産だけでなく、今ある資産で何年続くかを見ることも大切です。完全FIRE前に、配当、取り崩し、インフレをまとめて確認するために作りました。", use: "継続年数が短い場合は、生活費を下げる、追加投資を続ける、配当を再投資する、新NISAで非課税枠を使うなど、複数の改善策を組み合わせてください。", articles: [["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  fire: { title: "FIRE達成シミュレーター", kind: "fire", reason: "FIREは憧れだけで考えると遠く感じますが、現在資産、毎月積立、利回り、目標資産に分けると行動へ落とし込めます。40歳までにFIREを目指す運営者自身の確認用としても使っています。", use: "達成年数が長い場合は、積立額を増やすだけでなく、副業収入、固定費削減、新NISA、配当再投資を組み合わせてください。1つの数字を大きく変えるより、複数の改善を積む方が続けやすいです。", articles: [["FIREとは何か", "article-fire-basic.html"], ["FIRE達成シミュレーター", "fire.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-rate": { title: "FIRE達成率シミュレーター", kind: "fire", reason: "FIREを目指していると、達成年数だけでは今の計画がどれくらい現実的なのか分かりにくいことがあります。現在資産、収支、投資、副業、配当、負債をまとめて見て、40歳までのFIRE目標に対してどこを改善すべきか確認するために作りました。", use: "スコアが低い場合は、積立額だけを無理に増やすより、固定費削減、副業収入、配当再投資、負債整理を組み合わせてください。スコアが高い場合も、生活防衛資金と税金を残したうえで継続できる計画か確認することが大切です。", articles: [["FIRE達成シミュレーター", "fire.html"], ["FIREとは何か", "article-fire-basic.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
   "side-fire-roadmap": { title: "副業FIRE達成ロードマップ診断", kind: "fire", reason: "FIREは資産額だけでなく、本業収入、副業収入、生活費、毎月投資額の組み合わせで現実度が変わります。運営者自身も本業後の限られた時間で副業と投資を検証しているため、次に何を改善すべきかを順番で見られるように作りました。", use: "達成確率が低い場合は、生活費を下げる、月5万円の副業収入を作る、投資を自動化する、リスクを取りすぎない順で整えてください。達成圏内でも税金、生活防衛資金、FIRE後のストレスを確認すると現実的です。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "employee-fire": { title: "会社員FIRE年数計算シミュレーター", kind: "fire", reason: "会社員がFIREを目指す場合、給与だけでなく副業収入や配当収入を含めた年数を見る必要があります。運営者も本業を続けながらFIREを目指しているため、会社員目線の現実的な年数を確認できるようにしました。", use: "副業による短縮年数と配当再投資効果を見て、どの行動がFIRE年数を縮めるか確認してください。副業時間が限られる人ほど、固定費削減や投資の自動化も合わせて考えると続きます。", articles: [["FIREとは何か", "article-fire-basic.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["副業で月10万円を目指す方法", "article-side-income-100000.html"]] },
-  "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "dividend-life.html"]] },
-  "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "life-cost": { title: "生活コスト最適化シミュレーター", kind: "household", reason: "FIREを目指すと、収入を増やす前に毎月の生活コストをどこまで整えられるかが大きいです。管理職として本業が忙しい中で、副業時間を増やすだけでは限界があるため、固定費と変動費を分けて改善余地を見るために作りました。", use: "削減可能額は、無理な節約ではなく投資へ回しても生活が崩れない範囲を探すために使ってください。固定費削減、キャッシュフロー、FIREシミュレーターと合わせると、毎月の行動が資産形成にどうつながるか見えやすくなります。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  "emergency-fund": { title: "生活防衛資金シミュレーター", kind: "household", reason: "副業や投資を始める前に、生活防衛資金がないとトラブル時に資産を崩すことになります。現場仕事で急な変化を経験しているからこそ、先に安全資金を見える化したいと考えました。", use: "不足額がある場合は、投資を急ぐより先に数か月分の生活費を確保してください。副業収入がある人も、止まる可能性を考えて保守的に見積もるのがおすすめです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  "fixed-cost-reduction": { title: "固定費削減シミュレーター", kind: "household", reason: "忙しい会社員にとって、固定費削減は副業より先に効くことがあります。一度見直すと毎月効果が続くため、時間が限られる人ほど優先度が高い改善です。", use: "年間節約額を見たら、その金額を投資へ回した場合の将来資産も確認してください。通信費、保険料、サブスクなど、変えやすい支出から始めると負担が少ないです。", articles: [["FIRE達成の基本戦略", "article-fire-strategy.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  retirement: { title: "老後資金シミュレーター", kind: "life", reason: "FIREを目指していても、老後資金の不足を無視することはできません。退職時点の資産、年金見込み、生活費を分けて見ることで、必要な積立額が現実的になります。", use: "不足額が大きい場合は、NISA、iDeCo、固定費削減、副業収入を組み合わせてください。退職後の生活費を少し下げるだけでも必要資産は大きく変わります。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["iDeCoの始め方", "article-ideco-start.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
-  education: { title: "教育費シミュレーター", kind: "life", reason: "教育費は進学ルートによって大きく変わります。将来の支出を早めに見ておくことで、老後資金や住宅ローンとのバランスを取りやすくなります。", use: "不足額が出た場合は、毎月積立額を増やすだけでなく、学資保険やNISA、生活費の見直しも合わせて考えてください。老後資金を削りすぎないことも大切です。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["学資保険比較シミュレーター", "education-insurance.html"]] },
-  "education-insurance": { title: "学資保険比較シミュレーター", kind: "life", reason: "教育費準備では、学資保険の安心感と通常積立投資の成長性を比べる必要があります。どちらが正解かではなく、家庭のリスク許容度に合うかを確認するために作りました。", use: "差額だけでなく、途中解約リスク、元本割れ、投資の値動きも考えてください。教育費と老後資金を同時に圧迫しない積立額を探すことが大切です。", articles: [["教育費シミュレーター", "education.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
-  mortgage: { title: "住宅ローン返済シミュレーター", kind: "life", reason: "住宅ローンは毎月の固定費に直結し、FIREや老後資金にも影響します。借入額、金利、返済年数を分けて、無理のない返済比率を見たい人向けに作りました。", use: "返済比率が高い場合は、借入額、頭金、固定費、教育費を合わせて見直してください。繰上返済だけでなく、投資や生活防衛資金とのバランスも大切です。", articles: [["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"], ["FIRE達成の基本戦略", "article-fire-strategy.html"]] },
+  "fire-cost-optimization": { title: "FIRE生活費最適化シミュレーター", kind: "fire", reason: "FIREは収入や利回りだけでなく、毎月生活費をいくらで安定させられるかで必要資産が大きく変わります。本業後に副業時間を増やすだけでは限界があるため、生活費改善でFIRE時期をどれだけ短縮できるか見るために作りました。", use: "削減可能額が大きい場合は、無理な節約ではなく固定費から順番に見直してください。削減額を投資へ回す効果と、生活費が下がって必要資産が減る効果を分けて見ると、FIRE計画の優先順位が決めやすくなります。", articles: [["FIRE達成シミュレーター", "fire.html"], ["会社員の副業税金対策", "article-company-side-tax-saving.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "fire-stress": { title: "FIREストレス診断", kind: "fire", reason: "FIREは資産額だけ達成しても、収入不安や孤独感が残ると続きにくいと感じています。会社員として長時間労働や急な対応を経験する一方で、退職後の過ごし方まで先に考えるために作りました。", use: "スコアが低い場合は、完全FIREを急ぐより、生活費を下げる、副業や配当を残す、趣味や人との接点を作るなど、サイドFIRE寄りの準備を優先してください。", articles: [["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"], ["FIRE達成シミュレーター", "fire.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "side-fire": { title: "サイドFIREシミュレーター", kind: "fire", reason: "完全FIREよりも、副業や配当を残しながら働き方を軽くするサイドFIREの方が現実的な人もいます。会社員として忙しく働きながら資産形成する立場から、段階的な自由度を確認するために作りました。", use: "副業収入や配当収入で生活費をどれだけ補えるかを見てください。必要資産が下がる場合は、完全退職より先に働き方を変える選択肢も見えます。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["配当生活達成シミュレーター", "dividend-life.html"]] },
+  "cash-flow": { title: "会社員キャッシュフローシミュレーター", kind: "household", reason: "FIREや投資を考える前に、毎月いくら残るかを把握する必要があります。給与、副業、家賃、食費、通信費、保険料、投資額を並べると、改善すべき場所が見えます。", use: "毎月収支が赤字なら、投資額を増やす前に固定費を見直してください。黒字なら、その一部を生活防衛資金や新NISAへ回すことで、資産形成のペースを作れます。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "life-cost": { title: "生活コスト最適化シミュレーター", kind: "household", reason: "FIREを目指すと、収入を増やす前に毎月の生活コストをどこまで整えられるかが大きいです。管理職として本業が忙しい中で、副業時間を増やすだけでは限界があるため、固定費と変動費を分けて改善余地を見るために作りました。", use: "削減可能額は、無理な節約ではなく投資へ回しても生活が崩れない範囲を探すために使ってください。固定費削減、キャッシュフロー、FIREシミュレーターと合わせると、毎月の行動が資産形成にどうつながるか見えやすくなります。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  "emergency-fund": { title: "生活防衛資金シミュレーター", kind: "household", reason: "副業や投資を始める前に、生活防衛資金がないとトラブル時に資産を崩すことになります。現場仕事で急な変化を経験しているからこそ、先に安全資金を見える化したいと考えました。", use: "不足額がある場合は、投資を急ぐより先に数か月分の生活費を確保してください。副業収入がある人も、止まる可能性を考えて保守的に見積もるのがおすすめです。", articles: [["FIRE達成シミュレーター", "fire.html"], ["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  "fixed-cost-reduction": { title: "固定費削減シミュレーター", kind: "household", reason: "忙しい会社員にとって、固定費削減は副業より先に効くことがあります。一度見直すと毎月効果が続くため、時間が限られる人ほど優先度が高い改善です。", use: "年間節約額を見たら、その金額を投資へ回した場合の将来資産も確認してください。通信費、保険料、サブスクなど、変えやすい支出から始めると負担が少ないです。", articles: [["FIRE達成シミュレーター", "fire.html"], ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  retirement: { title: "老後資金シミュレーター", kind: "life", reason: "FIREを目指していても、老後資金の不足を無視することはできません。退職時点の資産、年金見込み、生活費を分けて見ることで、必要な積立額が現実的になります。", use: "不足額が大きい場合は、NISA、iDeCo、固定費削減、副業収入を組み合わせてください。退職後の生活費を少し下げるだけでも必要資産は大きく変わります。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["iDeCo節税シミュレーター", "ideco.html"], ["新NISAの始め方", "article-new-nisa-start.html"]] },
+  education: { title: "教育費シミュレーター", kind: "life", reason: "教育費は進学ルートによって大きく変わります。将来の支出を早めに見ておくことで、老後資金や住宅ローンとのバランスを取りやすくなります。", use: "不足額が出た場合は、毎月積立額を増やすだけでなく、学資保険やNISA、生活費の見直しも合わせて考えてください。老後資金を削りすぎないことも大切です。", articles: [["老後資金2000万円問題とは", "article-retirement-2000.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["教育費シミュレーター", "education.html"]] },
+  "education-insurance": { title: "教育費シミュレーター", kind: "life", reason: "教育費準備では、学資保険の安心感と通常積立投資の成長性を比べる必要があります。どちらが正解かではなく、家庭のリスク許容度に合うかを確認するために作りました。", use: "差額だけでなく、途中解約リスク、元本割れ、投資の値動きも考えてください。教育費と老後資金を同時に圧迫しない積立額を探すことが大切です。", articles: [["教育費シミュレーター", "education.html"], ["新NISAの始め方", "article-new-nisa-start.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"]] },
+  mortgage: { title: "住宅ローン返済シミュレーター", kind: "life", reason: "住宅ローンは毎月の固定費に直結し、FIREや老後資金にも影響します。借入額、金利、返済年数を分けて、無理のない返済比率を見たい人向けに作りました。", use: "返済比率が高い場合は、借入額、頭金、固定費、教育費を合わせて見直してください。繰上返済だけでなく、投資や生活防衛資金とのバランスも大切です。", articles: [["固定費削減シミュレーター", "fixed-cost-reduction.html"], ["老後資金2000万円問題とは", "article-retirement-2000.html"], ["FIRE達成シミュレーター", "fire.html"]] },
 };
 
 const relatedToolGroups = {
@@ -8891,29 +8971,23 @@ const relatedToolGroups = {
     ["副業月収シミュレーター", "side-income.html"],
     ["副業手取り計算シミュレーター", "take-home.html"],
     ["副業利益率シミュレーター", "side-profit-margin.html"],
-    ["副業時間管理シミュレーター", "side-time-management.html"],
-    ["副業継続率診断", "side-continuity.html"],
-    ["副業モチベーション診断", "side-motivation.html"],
-    ["副業リスク診断", "side-risk.html"],
-    ["会社員副業安全度診断", "side-safety.html"],
+    ["副業時間管理・継続診断", "side-time-management.html"],
+    ["副業リスク・安全度診断", "side-risk.html"],
   ],
   ai: [
     ["AI副業効率化シミュレーター", "ai-efficiency.html"],
     ["AI導入ROIシミュレーター", "ai-roi.html"],
-    ["AI副業自動化シミュレーター", "ai-automation.html"],
+    ["AI副業自動化シミュレーター", "ai-efficiency.html"],
     ["AI作業時間削減診断", "ai-time-reduction.html"],
     ["AI外注費削減シミュレーター", "ai-outsourcing.html"],
-    ["AI副業利益最大化シミュレーター", "ai-profit-max.html"],
+    ["AI副業利益最大化シミュレーター", "ai-roi.html"],
     ["副業時給改善シミュレーター", "hourly-improvement.html"],
-    ["副業時間管理シミュレーター", "side-time-management.html"],
-    ["副業継続率診断", "side-continuity.html"],
-    ["副業モチベーション診断", "side-motivation.html"],
+    ["副業時間管理・継続診断", "side-time-management.html"],
     ["副業疲労度シミュレーター", "side-fatigue.html"],
   ],
   tax: [
     ["副業税金シミュレーター", "tax.html"],
     ["会社員節税シミュレーター", "employee-tax-saving.html"],
-    ["副業所得税シミュレーター", "income-tax.html"],
     ["副業住民税シミュレーター", "resident-tax.html"],
     ["副業手取り計算シミュレーター", "take-home.html"],
   ],
@@ -8934,7 +9008,7 @@ const relatedToolGroups = {
     ["副業FIRE達成ロードマップ診断", "side-fire-roadmap.html"],
     ["FIRE生活費最適化シミュレーター", "fire-cost-optimization.html"],
     ["FIREストレス診断", "fire-stress.html"],
-    ["会社員FIRE年数計算シミュレーター", "employee-fire.html"],
+    ["会社員FIRE年数計算シミュレーター", "fire.html"],
     ["サイドFIREシミュレーター", "side-fire.html"],
     ["配当生活達成シミュレーター", "dividend-life.html"],
     ["配当生活年数シミュレーター", "dividend-life-years.html"],
@@ -8951,7 +9025,7 @@ const relatedToolGroups = {
     ["老後資金シミュレーター", "retirement.html"],
     ["教育費シミュレーター", "education.html"],
     ["住宅ローン返済シミュレーター", "mortgage.html"],
-    ["学資保険比較シミュレーター", "education-insurance.html"],
+    ["教育費シミュレーター", "education.html"],
   ],
 };
 
@@ -8981,18 +9055,18 @@ const relatedArticleGroups = {
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["楽天証券 vs SBI証券 完全比較", "article-rakuten-sbi-securities-comparison.html"],
     ["初心者向けおすすめ証券口座比較", "article-securities-account-comparison.html"],
-    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["iDeCo節税シミュレーター", "ideco.html"],
     ["FIREとは何か", "article-fire-basic.html"],
   ],
   fire: [
     ["31歳会社員が40歳FIREを目指す理由", "article-fire-31-company-worker.html"],
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
     ["FIREとは何か", "article-fire-basic.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["本業後1時間副業を続けるためにやめたこと", "article-after-work-sidejob-1hour.html"],
   ],
   household: [
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
     ["副業向けおすすめクレジットカード比較", "article-credit-card-comparison.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
     ["副業で月5万円を稼ぐ方法", "article-side-income-50000.html"],
@@ -9001,9 +9075,9 @@ const relatedArticleGroups = {
   life: [
     ["老後資金2000万円問題とは", "article-retirement-2000.html"],
     ["新NISAの始め方", "article-new-nisa-start.html"],
-    ["iDeCoの始め方", "article-ideco-start.html"],
+    ["iDeCo節税シミュレーター", "ideco.html"],
     ["FIREとは何か", "article-fire-basic.html"],
-    ["FIRE達成の基本戦略", "article-fire-strategy.html"],
+    ["FIRE達成シミュレーター", "fire.html"],
   ],
 };
 
@@ -9299,11 +9373,12 @@ const categoryNavigationLinks = [
 
 const routeNextSimulatorMap = {
   "side-income": ["take-home.html", "tax.html", "side-time-management.html", "hourly-improvement.html"],
-  tax: ["take-home.html", "income-tax.html", "resident-tax.html", "side-profit-margin.html"],
+  tax: ["take-home.html", "resident-tax.html", "side-profit-margin.html"],
   fire: ["side-income.html", "take-home.html", "tax.html"],
   nisa: ["nisa-fast.html", "credit-card-investment.html", "dividend-reinvestment.html", "fire.html"],
+  "ai-sidejob": ["ai-efficiency.html", "ai-efficiency.html", "ai-roi.html", "side-income.html"],
   "ai-hourly": ["ai-efficiency.html", "ai-roi.html", "ai-time-reduction.html", "side-profit-margin.html"],
-  "ai-efficiency": ["ai-roi.html", "ai-automation.html", "ai-time-reduction.html", "hourly-improvement.html"],
+  "ai-efficiency": ["ai-roi.html", "ai-efficiency.html", "ai-time-reduction.html", "hourly-improvement.html"],
   "take-home": ["side-income.html", "tax.html", "side-profit-margin.html", "hourly-improvement.html"],
   retirement: ["nisa.html", "ideco.html", "fixed-cost-reduction.html", "fire.html"],
 };
@@ -9311,10 +9386,9 @@ const routeNextSimulatorMap = {
 const simulatorDescriptions = {
   "side-income.html": "月収目標と作業時間を見て、副業の現実的な行動量を整理します。",
   "take-home.html": "売上から税金や経費を引いた後の手取り感を確認します。",
-  "tax.html": "副業所得にかかる税金の目安を先に見て、納税不安を減らします。",
+  "tax.html": "副業所得にかかる所得税、住民税、手取りへの影響を先に見て、納税不安を減らします。",
   "side-time-management.html": "本業、睡眠、家事の中で副業に使える時間を確認します。",
   "hourly-improvement.html": "副業の実質時給を見て、AI活用や単価改善の余地を探します。",
-  "income-tax.html": "所得税と復興特別所得税の目安を確認します。",
   "resident-tax.html": "副業の住民税と普通徴収の注意点を整理します。",
   "side-profit-margin.html": "売上、経費、作業時間から利益率と時給効率を確認します。",
   "emergency-fund.html": "FIREや投資の前に必要な生活防衛資金を確認します。",
@@ -9325,10 +9399,11 @@ const simulatorDescriptions = {
   "credit-card-investment.html": "クレカ積立のポイント還元と通常積立との差を比較します。",
   "dividend-reinvestment.html": "配当を再投資した場合の資産成長を確認します。",
   "fire.html": "資産、積立、利回りからFIREまでの距離を確認します。",
+  "ai-sidejob.html": "AIを副業にどう使うか、全体像と次の確認順を整理します。",
   "ai-efficiency.html": "AI活用による時間削減と利益改善の目安を確認します。",
   "ai-roi.html": "AIツール費用に対して、どれだけ回収できるかを見ます。",
   "ai-time-reduction.html": "AIで削減できる作業時間と時給改善を確認します。",
-  "ai-automation.html": "AIで自動化できる作業と副業継続性の改善を確認します。",
+  "ai-efficiency.html": "AIで自動化できる作業と副業継続性の改善を確認します。",
   "ideco.html": "iDeCo掛金による節税額と将来資産を確認します。",
 };
 
@@ -9642,6 +9717,12 @@ const fieldRules = {
   aiToolMonthlyCost: { label: "AIツール月額費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
   outsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiEfficiencyTargetHourly: { label: "目標時給", min: 0, max: 1000000, unit: "\u5186", integer: false },
+  aiEfficiencyProjectPrice: { label: "案件単価", min: 0, max: 100000000, unit: "円", integer: false },
+  aiEfficiencyProjectHours: { label: "1案件の作業時間", min: 0.1, max: 1000, unit: "時間", integer: false },
+  aiEfficiencyProjectCount: { label: "月案件数", min: 0, max: 100, unit: "件", integer: true },
+  aiEfficiencyAutomationRate: { label: "自動化可能割合", min: 0, max: 95, unit: "%", integer: false },
+  aiEfficiencyOutsourcingCost: { label: "現在の外注費", min: 0, max: 1000000000, unit: "円", integer: false },
+  aiEfficiencyTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "円", integer: false },
   aiAutomationHours: { label: "現在の副業作業時間", min: 0.1, max: 10000, unit: "時間", integer: false },
   aiAutomationSales: { label: "現在の副業売上", min: 0, max: 1000000000, unit: "円", integer: false },
   aiAutomationRate: { label: "自動化可能割合", min: 0, max: 95, unit: "%", integer: false },
@@ -9660,6 +9741,8 @@ const fieldRules = {
   aiProfitOutsourcingReduction: { label: "外注費削減額", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiProfitSalesIncrease: { label: "AI導入後の売上増加率", min: 0, max: 300, unit: "%", integer: false },
   aiProfitTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "\u5186", integer: false },
+  aiRoiProfitMargin: { label: "現在の利益率", min: 0, max: 100, unit: "%", integer: false },
+  aiRoiTargetIncome: { label: "目標月収", min: 0, max: 1000000000, unit: "円", integer: false },
   aiOutsourcingCost: { label: "現在の外注費", min: 0, max: 1000000000, unit: "\u5186", integer: false },
   aiOutsourcingAiCost: { label: "AI導入費用", min: 0, max: 10000000, unit: "\u5186", integer: false },
   aiOutsourcingReduction: { label: "AIによる削減率", min: 0, max: 95, unit: "%", integer: false },
@@ -9772,8 +9855,12 @@ const fieldRules = {
   idecoYears: { label: "\u904b\u7528\u5e74\u6570", min: 0, max: 100, unit: "\u5e74", integer: false },
   idecoAnnualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
   currentAssets: { label: "\u73fe\u5728\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
+  fireCurrentAge: { label: "現在年齢", min: 0, max: 100, unit: "歳", integer: true },
   monthlyInvestment: { label: "\u6bce\u6708\u7a4d\u7acb\u984d", min: 0, max: 100000000, unit: "\u5186", integer: false },
+  fireSideIncome: { label: "副業月収からの追加積立", min: 0, max: 100000000, unit: "円", integer: false },
+  fireDividendIncome: { label: "配当収入からの再投資", min: 0, max: 100000000, unit: "円", integer: false },
   annualReturn: { label: "\u60f3\u5b9a\u5e74\u5229", min: 0, max: 30, unit: "%", integer: false },
+  fireTargetAssets: { label: "目標FIRE資産", min: 0, max: 10000000000, unit: "円", integer: false },
   annualLivingCost: { label: "年間生活費", min: 1, max: 1000000000, unit: "円", integer: false },
   targetAssets: { label: "\u76ee\u6a19\u8cc7\u7523", min: 0, max: 10000000000, unit: "\u5186", integer: false },
   years: { label: "\u5e74\u6570", min: 0, max: 100, unit: "\u5e74", integer: false },
@@ -10736,6 +10823,12 @@ function renderAiEfficiency() {
     aiToolMonthlyCost: getFieldValue("aiToolMonthlyCost"),
     outsourcingReduction: getFieldValue("outsourcingReduction"),
     aiEfficiencyTargetHourly: getFieldValue("aiEfficiencyTargetHourly"),
+    aiEfficiencyProjectPrice: getFieldValue("aiEfficiencyProjectPrice"),
+    aiEfficiencyProjectHours: getFieldValue("aiEfficiencyProjectHours"),
+    aiEfficiencyProjectCount: getFieldValue("aiEfficiencyProjectCount"),
+    aiEfficiencyAutomationRate: getFieldValue("aiEfficiencyAutomationRate"),
+    aiEfficiencyOutsourcingCost: getFieldValue("aiEfficiencyOutsourcingCost"),
+    aiEfficiencyTargetIncome: getFieldValue("aiEfficiencyTargetIncome"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
 
@@ -10747,6 +10840,9 @@ function renderAiEfficiency() {
     setText("aiEfficiencyAnnualProfit", yen.format(0));
     setText("aiEfficiencyRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiEfficiencyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiEfficiencyProjectHourly", yen.format(0));
+    setText("aiEfficiencyProjectHourlyGap", yen.format(0));
+    setText("aiEfficiencyContinuity", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
 
@@ -10757,6 +10853,12 @@ function renderAiEfficiency() {
   const aiCost = aiUse ? values.aiToolMonthlyCost.value : 0;
   const outsourcingReduction = aiUse ? values.outsourcingReduction.value : 0;
   const targetHourly = values.aiEfficiencyTargetHourly.value;
+  const projectPrice = values.aiEfficiencyProjectPrice.value;
+  const projectHours = values.aiEfficiencyProjectHours.value;
+  const projectCount = values.aiEfficiencyProjectCount.value;
+  const automationRate = aiUse ? values.aiEfficiencyAutomationRate.value / 100 : 0;
+  const outsourcingCost = values.aiEfficiencyOutsourcingCost.value;
+  const targetIncome = values.aiEfficiencyTargetIncome.value;
   const savedHours = hours * reductionRate;
   const afterHours = Math.max(hours - savedHours, 0.1);
   const currentProfit = sales;
@@ -10780,6 +10882,26 @@ function renderAiEfficiency() {
   const guide = afterHourly >= targetHourly
     ? "副業時給改善シミュレーターで経費と外注費を含めた維持ラインを確認しましょう"
     : "副業時給改善シミュレーターで目標時給に必要な単価アップや追加短縮時間を確認しましょう";
+  const projectMonthlyIncome = projectPrice * projectCount;
+  const beforeProjectMonthlyHours = projectHours * projectCount;
+  const beforeProjectHourly = beforeProjectMonthlyHours > 0 ? projectMonthlyIncome / beforeProjectMonthlyHours : 0;
+  const adjustedProjectHours = projectHours * (1 - reductionRate);
+  const projectMonthlyHours = adjustedProjectHours * projectCount;
+  const projectHourly = projectMonthlyHours > 0 ? projectMonthlyIncome / projectMonthlyHours : 0;
+  const projectHourlyGap = projectHourly - beforeProjectHourly;
+  const automationSavedHours = hours * automationRate;
+  const automationLoadReduction = hours > 0 ? automationSavedHours / hours : 0;
+  const automationTimeValue = automationSavedHours * currentHourly;
+  const automationOutsourcingReduction = outsourcingCost * automationRate;
+  const automationProfit = sales + automationTimeValue + automationOutsourcingReduction - outsourcingCost - aiCost;
+  const automationNetBenefit = automationTimeValue + automationOutsourcingReduction - aiCost;
+  const incomeProgress = targetIncome > 0 ? Math.min(Math.max(automationProfit, 0) / targetIncome, 1) : 1;
+  const continuityScore = Math.max(0, Math.min(100, Math.round(automationLoadReduction * 55 + incomeProgress * 35 + (automationNetBenefit > 0 ? 10 : 0))));
+  const continuity = continuityScore >= 75
+    ? `継続性は高めです（${continuityScore}/100）。自動化した時間を高単価作業や確認作業へ回しやすい状態です`
+    : continuityScore >= 50
+      ? `継続性は中程度です（${continuityScore}/100）。定型作業から自動化範囲を広げる余地があります`
+      : `継続性は改善余地があります（${continuityScore}/100）。AI費用と外注範囲を小さく試す段階です`;
 
   setText("aiEfficiencyHourly", yen.format(afterHourly));
   setText("aiEfficiencySavedHours", `${savedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593 / \u6708`);
@@ -10787,6 +10909,9 @@ function renderAiEfficiency() {
   setText("aiEfficiencyAnnualProfit", yen.format(annualAdditionalProfit));
   setText("aiEfficiencyRecommendation", recommendation);
   setText("aiEfficiencyGuide", guide);
+  setText("aiEfficiencyProjectHourly", yen.format(projectHourly));
+  setText("aiEfficiencyProjectHourlyGap", `${yen.format(beforeProjectHourly)} → ${yen.format(projectHourly)}（+${yen.format(projectHourlyGap)}）`);
+  setText("aiEfficiencyContinuity", continuity);
   document.querySelector("#aiEfficiencyHourly").setAttribute("data-current-hourly", yen.format(currentHourly));
 }
 
@@ -10799,6 +10924,8 @@ function renderAiRoi() {
     aiRoiHourlyRate: getFieldValue("aiRoiHourlyRate"),
     aiRoiOutsourcingReduction: getFieldValue("aiRoiOutsourcingReduction"),
     aiRoiSalesIncrease: getFieldValue("aiRoiSalesIncrease"),
+    aiRoiProfitMargin: getFieldValue("aiRoiProfitMargin"),
+    aiRoiTargetIncome: getFieldValue("aiRoiTargetIncome"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
 
@@ -10811,6 +10938,10 @@ function renderAiRoi() {
     setText("aiRoiPaybackPeriod", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiRoiRecommendation", "\u5165\u529b\u30a8\u30e9\u30fc");
     setText("aiRoiHourlyGuide", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiAfterProfit", yen.format(0));
+    setText("aiRoiMarginImprovement", "0pt");
+    setText("aiRoiTargetGap", "\u5165\u529b\u30a8\u30e9\u30fc");
+    setText("aiRoiTargetShortening", "\u5165\u529b\u30a8\u30e9\u30fc");
     return;
   }
 
@@ -10842,6 +10973,32 @@ function renderAiRoi() {
   }
 
   const hourlyGuide = `削減時間${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593/\u6708\u3092\u3001\u526f\u696d\u6642\u7d66\u6539\u5584\u3067\u5b9f\u8cea\u6642\u7d66\u3078\u53cd\u6620`;
+  const currentProfit = values.aiRoiSales.value * (values.aiRoiProfitMargin.value / 100);
+  const afterSales = values.aiRoiSales.value * (1 + values.aiRoiSalesIncrease.value / 100);
+  const currentProfitHourly = values.aiRoiHours.value > 0 ? currentProfit / values.aiRoiHours.value : 0;
+  const salesIncreaseProfit = (afterSales - values.aiRoiSales.value) * (values.aiRoiProfitMargin.value / 100);
+  const profitTimeValue = monthlySavedHours * currentProfitHourly;
+  const afterProfit = currentProfit + salesIncreaseProfit + profitTimeValue + values.aiRoiOutsourcingReduction.value - values.aiRoiToolCost.value;
+  const currentMargin = values.aiRoiSales.value > 0 ? (currentProfit / values.aiRoiSales.value) * 100 : 0;
+  const afterMargin = afterSales > 0 ? (afterProfit / afterSales) * 100 : 0;
+  const marginImprovement = afterMargin - currentMargin;
+  const targetGap = Math.max(values.aiRoiTargetIncome.value - afterProfit, 0);
+  const targetGapText = targetGap <= 0
+    ? "目標月収に届く目安です"
+    : `${yen.format(targetGap)}不足`;
+  const monthlyProfitImprovement = afterProfit - currentProfit;
+  const currentGap = Math.max(values.aiRoiTargetIncome.value - currentProfit, 0);
+  const currentMonths = currentProfit > 0 ? currentGap / currentProfit : null;
+  const afterGap = Math.max(values.aiRoiTargetIncome.value - afterProfit, 0);
+  const afterMonths = monthlyProfitImprovement > 0 ? afterGap / monthlyProfitImprovement : null;
+  const shorteningMonths = currentMonths !== null && afterMonths !== null
+    ? Math.max(currentMonths - afterMonths, 0)
+    : afterGap === 0 ? currentGap > 0 ? 1 : 0 : null;
+  const shorteningText = afterGap === 0
+    ? "目標月収到達圏内"
+    : shorteningMonths === null
+      ? "短縮には売上増か単価改善が必要"
+      : `${shorteningMonths.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}か月短縮の目安`;
 
   setText("aiRoiRate", `${roi.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}%`);
   setText("aiRoiSavedHours", `${monthlySavedHours.toLocaleString("ja-JP", { maximumFractionDigits: 1 })}\u6642\u9593`);
@@ -10850,6 +11007,10 @@ function renderAiRoi() {
   setText("aiRoiPaybackPeriod", paybackText);
   setText("aiRoiRecommendation", recommendation);
   setText("aiRoiHourlyGuide", hourlyGuide);
+  setText("aiRoiAfterProfit", yen.format(afterProfit));
+  setText("aiRoiMarginImprovement", `${marginImprovement.toFixed(1)}pt`);
+  setText("aiRoiTargetGap", targetGapText);
+  setText("aiRoiTargetShortening", shorteningText);
 }
 
 function renderAiAutomation() {
@@ -12077,8 +12238,12 @@ function renderFire() {
   const values = {
     annualLivingCost: getFieldValue("annualLivingCost"),
     currentAssets: getFieldValue("currentAssets"),
+    fireCurrentAge: getFieldValue("fireCurrentAge"),
     monthlyInvestment: getFieldValue("monthlyInvestment"),
+    fireSideIncome: getFieldValue("fireSideIncome"),
+    fireDividendIncome: getFieldValue("fireDividendIncome"),
     annualReturn: getFieldValue("annualReturn"),
+    fireTargetAssets: getFieldValue("fireTargetAssets"),
     years: getFieldValue("years"),
   };
   const hasError = Object.values(values).some((item) => !item.valid);
@@ -12099,6 +12264,11 @@ function renderFire() {
     setText("fireAdviceShortage", "不足額 0円");
     setText("fireAdviceRequiredMonthly", "必要積立 0円");
     setText("fireAdviceFutureGap", "指定年数後の差額 0円");
+    setText("fireAchieveAge", "入力エラー");
+    setText("fireAdditionalMonthly", yen.format(0));
+    setText("fireSideIncomeEffect", "0年");
+    setText("fireDividendEffect", "入力エラー");
+    setText("fireSideFireComparison", "入力エラー");
     ["fireScenario50", "fireScenario100", "fireScenario150"].forEach((prefix) => {
       setText(`${prefix}Years`, "入力エラー");
       setText(`${prefix}Assets`, "想定運用資産 0円");
@@ -12108,17 +12278,40 @@ function renderFire() {
 
   const annualLivingCost = values.annualLivingCost.value;
   const currentAssets = values.currentAssets.value;
+  const currentAge = values.fireCurrentAge.value;
   const monthlyInvestment = values.monthlyInvestment.value;
+  const sideIncome = values.fireSideIncome.value;
+  const dividendIncome = values.fireDividendIncome.value;
   const annualReturn = values.annualReturn.value;
-  const targetAssets = annualLivingCost * 25;
+  const targetAssets = values.fireTargetAssets.value > 0 ? values.fireTargetAssets.value : annualLivingCost * 25;
   const months = Math.round(values.years.value * 12);
   const futureAssets = calculateFutureAssets(currentAssets, monthlyInvestment, annualReturn, months);
   const achievementMonths = findAchievementMonths(currentAssets, monthlyInvestment, annualReturn, targetAssets);
+  const employeeMonthlyContribution = monthlyInvestment + sideIncome + dividendIncome;
+  const employeeAchievementMonths = findAchievementMonths(currentAssets, employeeMonthlyContribution, annualReturn, targetAssets);
+  const noSideAchievementMonths = findAchievementMonths(currentAssets, monthlyInvestment + dividendIncome, annualReturn, targetAssets);
+  const noDividendAchievementMonths = findAchievementMonths(currentAssets, monthlyInvestment + sideIncome, annualReturn, targetAssets);
   const totalInvestment = currentAssets + monthlyInvestment * months;
   const shortage = Math.max(targetAssets - currentAssets, 0);
   const futureGap = futureAssets - targetAssets;
   const achievementRate = targetAssets > 0 ? Math.min((currentAssets / targetAssets) * 100, 999) : 100;
   const requiredMonthly = calculateRequiredMonthly(currentAssets, 0, annualReturn, months, targetAssets);
+  const requiredAdditionalMonthly = Math.max(calculateRequiredMonthly(currentAssets, employeeMonthlyContribution, annualReturn, months, targetAssets), 0);
+  const achieveAge = employeeAchievementMonths === null
+    ? "未達成"
+    : `${(currentAge + employeeAchievementMonths / 12).toFixed(1)}歳`;
+  const sideIncomeEffect = employeeAchievementMonths !== null && noSideAchievementMonths !== null
+    ? Math.max((noSideAchievementMonths - employeeAchievementMonths) / 12, 0)
+    : 0;
+  const dividendEffectYears = employeeAchievementMonths !== null && noDividendAchievementMonths !== null
+    ? Math.max((noDividendAchievementMonths - employeeAchievementMonths) / 12, 0)
+    : 0;
+  const sideFireRequiredAssets = Math.max(annualLivingCost - (sideIncome + dividendIncome) * 12, 0) * 25;
+  const sideFireDifference = Math.max(targetAssets - sideFireRequiredAssets, 0);
+  const dividendEffectText = `${yen.format(dividendIncome)} / 月の再投資で約${dividendEffectYears.toFixed(1)}年短縮の目安`;
+  const sideFireComparison = sideFireRequiredAssets <= 0
+    ? "副業・配当で生活費を覆える目安"
+    : `サイドFIRE必要資産は${yen.format(sideFireRequiredAssets)}、完全FIREより${yen.format(sideFireDifference)}低い目安`;
   const adviceCard = document.querySelector("#fireAdviceCard");
   const advice =
     achievementRate >= 80
@@ -12158,6 +12351,11 @@ function renderFire() {
   setText("fireAdviceShortage", `不足額 ${yen.format(shortage)}`);
   setText("fireAdviceRequiredMonthly", `必要積立 ${yen.format(requiredMonthly)} / 月`);
   setText("fireAdviceFutureGap", `指定年数後の差額 ${yen.format(futureGap)}`);
+  setText("fireAchieveAge", achieveAge);
+  setText("fireAdditionalMonthly", yen.format(requiredAdditionalMonthly));
+  setText("fireSideIncomeEffect", `${sideIncomeEffect.toFixed(1)}年`);
+  setText("fireDividendEffect", dividendEffectText);
+  setText("fireSideFireComparison", sideFireComparison);
   updateFireScenario("fireScenario50", 50000, currentAssets, annualReturn, months, targetAssets);
   updateFireScenario("fireScenario100", 100000, currentAssets, annualReturn, months, targetAssets);
   updateFireScenario("fireScenario150", 150000, currentAssets, annualReturn, months, targetAssets);
@@ -14005,6 +14203,7 @@ const routeBreadcrumbCategory = {
   "side-safety": "side",
   "side-profit-margin": "side",
   incorporation: "side",
+  "ai-sidejob": "ai",
   "ai-hourly": "ai",
   "ai-efficiency": "ai",
   "ai-roi": "ai",
@@ -14035,7 +14234,6 @@ const routeBreadcrumbCategory = {
   "side-fire-roadmap": "fire",
   "fire-cost-optimization": "fire",
   "fire-stress": "fire",
-  "employee-fire": "fire",
   "side-fire": "fire",
   "cash-flow": "fire",
   "life-cost": "fire",
@@ -14076,12 +14274,10 @@ function renderBreadcrumb(route, seo) {
 }
 
 const validRoutes = new Set([
-  "side-income", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "employee-fire", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
+  "side-income", "ai-sidejob", "ai-hourly", "ai-efficiency", "ai-roi", "ai-automation", "ai-time-reduction", "ai-outsourcing", "ai-profit-max", "hourly-improvement", "side-time-management", "side-fatigue", "side-continuity", "side-motivation", "side-risk", "side-safety", "side-profit-margin", "incorporation", "take-home", "tax", "employee-tax-saving", "income-tax", "resident-tax", "investment-risk", "nisa", "nisa-fast", "nisa-withdrawal", "credit-card-investment", "ideco", "dividend", "dividend-etf", "dividend-stock", "dividend-mental", "dividend-reinvestment", "dividend-life", "dividend-life-years", "fire", "fire-rate", "side-fire-roadmap", "fire-cost-optimization", "fire-stress", "cash-flow", "life-cost", "side-fire", "emergency-fund", "fixed-cost-reduction", "retirement", "education", "education-insurance", "mortgage"
 ]);
 
-const routeAliases = {
-  "ai-sidejob": "ai-efficiency",
-};
+const routeAliases = {};
 
 function currentRoute() {
   const pathRoute = window.location.pathname.split("/").pop().replace(/\.html$/, "");
@@ -15061,35 +15257,6 @@ const nextStepConfigs = {
       "fire-stress-to-fixed-cost-reduction"
     ]
   ],
-  "employee-fire": [
-    [
-      "次の一手",
-      "Project FIREを読む",
-      "FIREを目指す過程や改善履歴を、運営者の実体験として確認できます。",
-      "Project FIRE",
-      "project-fire.html",
-      "記録を読む",
-      "employee-fire-to-project-fire"
-    ],
-    [
-      "投資確認",
-      "NISA積立を確認する",
-      "FIRE資産を作るための積立額と将来資産を見ます。",
-      "新NISAシミュレーター",
-      "nisa.html",
-      "NISAを見る",
-      "employee-fire-to-nisa"
-    ],
-    [
-      "家計改善",
-      "固定費削減の効果を見る",
-      "生活費を下げると、必要資産と達成年数の両方に影響します。",
-      "固定費削減シミュレーター",
-      "fixed-cost-reduction.html",
-      "固定費を見る",
-      "employee-fire-to-fixed-cost-reduction"
-    ]
-  ],
   "cash-flow": [
     [
       "次の一手",
@@ -15722,7 +15889,8 @@ function renderRoute() {
     pageHeading.textContent = seo.title.split("｜")[0];
   }
   document.querySelectorAll("[data-view]").forEach((view) => {
-    view.classList.toggle("is-active", view.dataset.view === route);
+    const isMergedEducationTool = route === "education" && view.dataset.view === "education-insurance";
+    view.classList.toggle("is-active", view.dataset.view === route || isMergedEducationTool);
   });
   document.querySelectorAll("[data-route]").forEach((link) => {
     link.setAttribute("aria-current", link.dataset.route === route ? "page" : "false");
@@ -15822,7 +15990,7 @@ function insertExistingPageSeoImprovements() {
   const sections = {
     top: `<section class="article-panel faq-section" aria-label="トップページFAQ"><section class="tool-heading"><h2>よくある質問</h2><p>初めてこのサイトを使う方向けに、使い方と注意点を整理しました。</p></section><div class="faq-list"><details><summary>まずどのページから見ればいいですか？</summary><p>副業を始めたい人は <a href="side-income.html">副業月収シミュレーター</a>、資産形成を進めたい人は <a href="nisa.html">新NISAシミュレーター</a>、将来の自由度を見たい人は <a href="fire.html">FIREシミュレーター</a> から確認すると流れをつかみやすいです。</p></details><details><summary>このサイトは実体験に基づいていますか？</summary><p>運営者は会社員として働きながら、副業時間の確保、AI活用、固定費改善、長期投資を検証しています。成功例だけでなく、疲れて進まない日や更新で苦戦した点も残しています。</p></details><details><summary>シミュレーター結果だけで判断して大丈夫ですか？</summary><p>結果は目安です。税金、生活費、投資リスク、勤務先ルールは人によって変わるため、複数パターンで試算してください。</p></details></div></section>`,
     "fire-legacy-disabled": `<section class="article-panel faq-section" aria-label="FIRE達成シミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>FIREを試算するときに、会社員が見落としやすい点を整理しました。</p></section><div class="faq-list"><details><summary>FIREに必要な資産はどう考えればいいですか？</summary><p>年間生活費の25年分は一つの目安ですが、税金、社会保険、住居費、老後資金まで含めると必要額は変わります。</p></details><details><summary>副業収入はFIRE計算に入れてよいですか？</summary><p>入れてもよいですが、同じ金額が続く前提にしすぎず、副業あり、なし、半分になる場合で見てください。</p></details></div></section><section class="next-read-section" aria-label="FIREのおすすめ関連記事5件"><section class="tool-heading"><h2>次に読む記事</h2><p>FIREを数字だけで終わらせず、副業、投資、生活費、老後資金までつなげて考える記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>会社員収入だけに依存しない働き方を考えた背景です。</span><span class="next-read-reason">関連理由：FIREを目指す目的を具体化するため</span></a><a class="next-read-card" href="article-after-work-sidejob-1hour.html"><strong>本業後1時間副業を続けるためにやめたこと</strong><span>FIRE資金を増やすための副業時間設計です。</span><span class="next-read-reason">関連理由：副業を無理なく続けるため</span></a><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>長期投資をFIRE計画へつなげる入口です。</span><span class="next-read-reason">関連理由：積立投資をFIREの土台にするため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>FIRE後も続く老後資金の不安を整理できます。</span><span class="next-read-reason">関連理由：FIREと老後資金を切り離さず考えるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>FIRE年数を短縮する副業収入づくりです。</span><span class="next-read-reason">関連理由：毎月の入金力を上げるため</span></a></div></section>`,
-    nisa: `<section class="article-panel faq-section" aria-label="新NISAシミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>新NISAを会社員の資産形成に使うときの確認ポイントです。</p></section><div class="faq-list"><details><summary>毎月いくら積み立てればいいですか？</summary><p>最初は無理なく続く金額で始めるのが現実的です。副業収入や固定費削減で余力が増えたら、積立額を上げたパターンも試してください。</p></details><details><summary>年利は高めに入れても大丈夫ですか？</summary><p>楽観的な年利だけで判断せず、3%、4%、5%など複数の年利で試してください。</p></details></div></section><section class="next-read-section" aria-label="新NISAのおすすめ関連記事5件"><section class="tool-heading"><h2>次に読む記事</h2><p>新NISAを始める前後に、口座選び、FIRE、老後資金まで確認できる記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>制度の基本と積立の考え方を整理しています。</span><span class="next-read-reason">関連理由：制度の前提を確認するため</span></a><a class="next-read-card" href="article-rakuten-sbi-thorough-comparison-2026.html"><strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong><span>NISA、ポイント、クレカ積立を比較できます。</span><span class="next-read-reason">関連理由：口座選びへ進むため</span></a><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>新NISAをFIRE目標につなげる考え方です。</span><span class="next-read-reason">関連理由：投資を将来設計へつなげるため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>長期投資と老後資金の関係を確認できます。</span><span class="next-read-reason">関連理由：老後まで視野を広げるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>積立原資を増やす副業収入づくりです。</span><span class="next-read-reason">関連理由：投資額を増やす方法を見るため</span></a></div></section>`
+    nisa: `<section class="article-panel faq-section" aria-label="新NISAシミュレーターFAQ補足"><section class="tool-heading"><h2>よくある質問</h2><p>新NISAを会社員の資産形成に使うときの確認ポイントです。</p></section><div class="faq-list"><details><summary>毎月いくら積み立てればいいですか？</summary><p>最初は無理なく続く金額で始めるのが現実的です。副業収入や固定費削減で余力が増えたら、積立額を上げたパターンも試してください。</p></details><details><summary>年利は高めに入れても大丈夫ですか？</summary><p>楽観的な年利だけで判断せず、3%、4%、5%など複数の年利で試してください。</p></details></div></section><section class="next-read-section" aria-label="新NISAのおすすめ関連記事5件"><section class="tool-heading"><h2>次に読む記事</h2><p>新NISAを始める前後に、口座選び、FIRE、老後資金まで確認できる記事です。</p></section><div class="next-read-grid"><a class="next-read-card" href="article-new-nisa-start.html"><strong>新NISAの始め方</strong><span>制度の基本と積立の考え方を整理しています。</span><span class="next-read-reason">関連理由：制度の前提を確認するため</span></a><a class="next-read-card" href="article-rakuten-sbi-securities-comparison.html"><strong>楽天証券 vs SBI証券 徹底比較【2026年版】</strong><span>NISA、ポイント、クレカ積立を比較できます。</span><span class="next-read-reason">関連理由：口座選びへ進むため</span></a><a class="next-read-card" href="article-fire-31-company-worker.html"><strong>31歳会社員が40歳FIREを目指す理由</strong><span>新NISAをFIRE目標につなげる考え方です。</span><span class="next-read-reason">関連理由：投資を将来設計へつなげるため</span></a><a class="next-read-card" href="article-retirement-2000.html"><strong>老後資金2000万円問題とは</strong><span>長期投資と老後資金の関係を確認できます。</span><span class="next-read-reason">関連理由：老後まで視野を広げるため</span></a><a class="next-read-card" href="article-side-income-50000.html"><strong>副業で月5万円を稼ぐ方法</strong><span>積立原資を増やす副業収入づくりです。</span><span class="next-read-reason">関連理由：投資額を増やす方法を見るため</span></a></div></section>`
   };
   Object.entries(sections).forEach(([route, html]) => {
     const view = document.querySelector('[data-view="' + route + '"]');
@@ -16507,7 +16675,7 @@ scheduleNonCriticalWork(() => {
   safeRender("FIREストレス診断", renderFireStress);
   safeRender("老後資金シミュレーター", renderRetirement);
   safeRender("教育費シミュレーター", renderEducation);
-  safeRender("学資保険比較シミュレーター", renderEducationInsurance);
+  safeRender("教育費シミュレーター", renderEducationInsurance);
   safeRender("配当金シミュレーター", renderDividend);
   safeRender("配当ETF比較シミュレーター", renderDividendEtf);
   safeRender("高配当株比較シミュレーター", renderDividendStock);
