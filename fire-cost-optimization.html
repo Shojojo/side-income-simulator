@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/fire-cost-optimization.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>FIRE生活費最適化シミュレーター</h1>
-        <p class="article-meta">最終更新日：2026年6月30日</p>
+        <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-fire.html">FIRE</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,24 @@
           </nav>
         <p><a href="fire-cost-optimization.html">FIRE生活費最適化シミュレーターを開く</a></p>
 
-        
+        <section class="article-panel" aria-label="FIRE生活費最適化で分かること">
+          <section class="tool-heading">
+            <h2>このツールで分かること</h2>
+            <p>FIRE生活費最適化シミュレーターは、生活費を下げることがFIRE必要資産と達成時期にどれくらい影響するかを確認するページです。</p>
+          </section>
+          <p>現在年齢、目標FIRE年齢、現在資産、毎月生活費、削減可能生活費、毎月投資額、副業収入、想定年利、配当収入を入力します。生活費を下げると、必要資産が下がるだけでなく、削減分を投資へ回せるため二重に効く場合があります。</p>
+          <div class="comparison-table" role="region" aria-label="FIRE生活費最適化で確認する項目" tabindex="0">
+            <table>
+              <thead><tr><th>結果項目</th><th>意味</th><th>注意点</th></tr></thead>
+              <tbody>
+                <tr><td>最適化後の必要資産</td><td>削減後生活費と配当収入を踏まえた必要資産</td><td>生活水準を無理に下げすぎないことが大切です。</td></tr>
+                <tr><td>削減効果、短縮年数</td><td>生活費改善で必要資産と到達時期がどう変わるか</td><td>削減額を継続できる前提で見ます。</td></tr>
+                <tr><td>追加投資効果、副業収入効果</td><td>浮いたお金や副業収入を積立に回した場合の目安</td><td>税金や急な支出を除いた余力で判断します。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>このページは固定費削減そのものを目的にするのではなく、生活満足度を保ちながらFIREまでの距離を縮めるための確認に使います。</p>
+        </section>
 
 
           <section class="article-panel update-history" aria-label="更新履歴">
@@ -113,6 +130,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>生活費改善が必要資産、短縮年数、追加投資効果へ与える影響を静的HTMLで説明</li>
+                  <li>固定費削減ページとの違いと注意事項を明確化</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -137,8 +161,8 @@
                 <small>関連理由：FIREを目指す目的を具体化するため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="article-fire-strategy.html">
-                <strong>FIRE達成の基本戦略</strong>
+              <a class="journey-card" href="fire.html">
+                <strong>FIRE達成シミュレーター</strong>
                 <span>生活費、投資、副業を組み合わせて考えます。</span>
                 <small>関連理由：FIRE計画を数字へ落とすため</small>
                 <b aria-hidden="true">→</b>
@@ -275,6 +299,36 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="project-fire.html" data-next-recommend="fire-cost-optimization-to-project-fire">
+                <span class="next-step-label">次の一手</span>
+                <strong>Project FIREを読む</strong>
+                <span>FIREを目指す過程や改善履歴を、運営者の実体験として確認できます。</span>
+                <span>進むページ：Project FIRE</span>
+                <b>記録を読む</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="fire-cost-optimization-to-nisa">
+                <span class="next-step-label">投資確認</span>
+                <strong>NISA積立を確認する</strong>
+                <span>FIRE資産を作るための積立額と将来資産を見ます。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fixed-cost-reduction.html" data-next-recommend="fire-cost-optimization-to-fixed-cost-reduction">
+                <span class="next-step-label">家計改善</span>
+                <strong>固定費削減の効果を見る</strong>
+                <span>生活費を下げると、必要資産と達成年数の両方に影響します。</span>
+                <span>進むページ：固定費削減シミュレーター</span>
+                <b>固定費を見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>

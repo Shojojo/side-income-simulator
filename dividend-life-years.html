@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/dividend-life-years.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>配当生活年数シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年6月30日</p>
+          <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-investment.html">投資</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,35 @@
           </nav>
         <p><a href="dividend-life-years.html">配当生活年数シミュレーターを開く</a></p>
 
-          
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>このシミュレーターで分かること</h2>
+              <p>現在の資産、生活費、配当利回り、取り崩し、インフレを考慮して、配当を受け取りながら何年生活を維持できるかを確認できます。配当生活を始める前に、必要資産だけではなく「どれくらい続くか」を見るためのページです。</p>
+            </section>
+            <p><a href="dividend-life.html">配当生活達成シミュレーター</a>は、生活費を配当で賄うために必要な資産を逆算します。このページは、すでにある資産や追加投資を前提に、資産が尽きるまでの年数や80年以上続く可能性を確認する点が違います。</p>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>入力する項目と結果の見方</h2>
+              <p>現在資産、毎月生活費、想定配当利回り、毎月追加投資額、想定年利、追加投資を続けるか、配当を再投資するか、インフレ率を入力します。</p>
+            </section>
+            <div class="article-link-grid">
+              <div class="article-link"><strong>配当生活可能年数</strong><span>配当、運用、追加投資、生活費の取り崩しを反映し、資産が何年持つかを表示します。</span></div>
+              <div class="article-link"><strong>初年度の年間配当・月平均配当</strong><span>現在資産に想定配当利回りを掛け、生活費の何割を配当で補えるかを判断します。</span></div>
+              <div class="article-link"><strong>残高推移と継続性</strong><span>80年後も残るのか、途中で資産が尽きるのかを文章で確認できます。</span></div>
+              <div class="article-link"><strong>改善ポイント</strong><span>生活費削減、追加投資、配当再投資など、継続年数を伸ばすために見るべき項目を示します。</span></div>
+            </div>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>計算の前提と注意点</h2>
+              <p>計算では、毎年の資産に配当利回りを掛けて配当を出し、追加投資や配当再投資を反映したうえで、生活費の不足分を取り崩します。生活費は入力したインフレ率で毎年増える前提です。</p>
+            </section>
+            <p>配当を再投資する場合、その年の生活費には配当を使わず、資産成長を優先する前提になります。配当を受け取る場合は生活費の一部を補えますが、将来の配当額、利回り、運用成果は保証されません。税金や制度によって実際の受取額も変わります。</p>
+            <p>生活費を配当で賄うための必要資産を先に知りたい場合は <a href="dividend-life.html">配当生活達成シミュレーター</a>、配当額そのものを簡単に見たい場合は <a href="dividend.html">配当金シミュレーター</a>、FIRE計画全体は <a href="fire.html">FIRE達成シミュレーター</a> で確認できます。</p>
+          </section>
 
           <section class="article-panel update-history" aria-label="更新履歴">
             <section class="tool-heading">
@@ -112,6 +140,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>配当生活可能年数、初年度配当、残高推移、インフレ、再投資、取り崩しの説明を静的HTMLへ追加</li>
+                  <li>配当生活達成ページとの役割の違いを整理</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -136,8 +171,8 @@
                 <small>関連理由：FIREを目指す目的を具体化するため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="article-fire-strategy.html">
-                <strong>FIRE達成の基本戦略</strong>
+              <a class="journey-card" href="fire.html">
+                <strong>FIRE達成シミュレーター</strong>
                 <span>生活費、投資、副業を組み合わせて考えます。</span>
                 <small>関連理由：FIRE計画を数字へ落とすため</small>
                 <b aria-hidden="true">→</b>
@@ -274,6 +309,36 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="dividend-reinvestment.html" data-next-recommend="dividend-life-years-to-dividend-reinvestment">
+                <span class="next-step-label">次の一手</span>
+                <strong>配当再投資を確認する</strong>
+                <span>配当を受け取るだけでなく、再投資した場合の複利効果も確認できます。</span>
+                <span>進むページ：配当再投資シミュレーター</span>
+                <b>再投資を見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="dividend-life-years-to-nisa">
+                <span class="next-step-label">制度確認</span>
+                <strong>NISAで積み立てる場合を見る</strong>
+                <span>配当や長期投資を非課税枠と合わせて考えるために確認します。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fire.html" data-next-recommend="dividend-life-years-to-fire">
+                <span class="next-step-label">目標へ接続</span>
+                <strong>FIREまでの距離を見る</strong>
+                <span>配当収入や資産形成が、FIRE計画にどう影響するか確認します。</span>
+                <span>進むページ：FIRE達成シミュレーター</span>
+                <b>FIREを見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>

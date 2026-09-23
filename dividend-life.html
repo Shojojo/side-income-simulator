@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/dividend-life.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>配当生活達成シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年6月30日</p>
+          <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-investment.html">投資</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,35 @@
           </nav>
         <p><a href="dividend-life.html">配当生活達成シミュレーターを開く</a></p>
 
-          
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>このシミュレーターで分かること</h2>
+              <p>毎月の生活費を配当収入でどこまで賄うには、どれくらいの資産が必要かを確認できます。配当生活を目指す人が、必要資産、不足額、達成までの年数、毎月必要な積立額をまとめて見るためのページです。</p>
+            </section>
+            <p><a href="fire.html">FIRE達成シミュレーター</a>は資産形成全体の達成年数を見るページです。一方、このページは「生活費を配当でカバーするにはいくら必要か」に絞っています。完全FIREではなく、配当収入で家計の一部を支えたい会社員にも向いています。</p>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>入力する項目と結果の見方</h2>
+              <p>毎月生活費、現在資産、毎月積立額、想定配当利回り、想定年利、運用年数、配当再投資の有無を入力します。</p>
+            </section>
+            <div class="article-link-grid">
+              <div class="article-link"><strong>必要資産</strong><span>年間生活費を想定配当利回りで割り、生活費を配当でまかなうための資産額を出します。</span></div>
+              <div class="article-link"><strong>年間必要配当</strong><span>毎月生活費を12倍し、配当収入でどれくらいの現金収入が必要かを確認します。</span></div>
+              <div class="article-link"><strong>不足額と達成年数</strong><span>現在資産との差額と、積立・運用・再投資を続けた場合に必要資産へ届く時期の目安です。</span></div>
+              <div class="article-link"><strong>毎月必要積立額</strong><span>指定した運用年数内に必要資産へ近づくため、今の資産に加えて必要な月額を逆算します。</span></div>
+            </div>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>計算の前提と注意点</h2>
+              <p>必要資産は「年間生活費 ÷ 想定配当利回り」で計算します。達成年数は、現在資産に毎月積立額、想定年利、配当再投資を反映し、必要資産へ届くかを運用年数内で確認します。</p>
+            </section>
+            <p>配当利回りは固定ではなく、減配や無配、価格下落、税金、為替、制度変更によって実際の受取額は変わります。利回りを高く置きすぎると必要資産が小さく見えるため、低めの利回りでも試すことが大切です。</p>
+            <p>今ある資産で何年生活できるかを見たい場合は <a href="dividend-life-years.html">配当生活年数シミュレーター</a>、配当を再投資した複利効果は <a href="dividend-reinvestment.html">配当再投資シミュレーター</a>、新NISA枠との関係は <a href="nisa.html">新NISAシミュレーター</a> で確認できます。</p>
+          </section>
 
           <section class="article-panel update-history" aria-label="更新履歴">
             <section class="tool-heading">
@@ -112,6 +140,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>配当生活に必要な資産、年間必要配当、不足額、達成年数、毎月必要積立額の説明を静的HTMLへ追加</li>
+                  <li>FIRE達成ページと配当生活年数ページとの役割の違いを整理</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -136,8 +171,8 @@
                 <small>関連理由：FIREを目指す目的を具体化するため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="article-fire-strategy.html">
-                <strong>FIRE達成の基本戦略</strong>
+              <a class="journey-card" href="fire.html">
+                <strong>FIRE達成シミュレーター</strong>
                 <span>生活費、投資、副業を組み合わせて考えます。</span>
                 <small>関連理由：FIRE計画を数字へ落とすため</small>
                 <b aria-hidden="true">→</b>
@@ -274,11 +309,41 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="dividend-reinvestment.html" data-next-recommend="dividend-life-to-dividend-reinvestment">
+                <span class="next-step-label">次の一手</span>
+                <strong>配当再投資を確認する</strong>
+                <span>配当を受け取るだけでなく、再投資した場合の複利効果も確認できます。</span>
+                <span>進むページ：配当再投資シミュレーター</span>
+                <b>再投資を見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="dividend-life-to-nisa">
+                <span class="next-step-label">制度確認</span>
+                <strong>NISAで積み立てる場合を見る</strong>
+                <span>配当や長期投資を非課税枠と合わせて考えるために確認します。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fire.html" data-next-recommend="dividend-life-to-fire">
+                <span class="next-step-label">目標へ接続</span>
+                <strong>FIREまでの距離を見る</strong>
+                <span>配当収入や資産形成が、FIRE計画にどう影響するか確認します。</span>
+                <span>進むページ：FIRE達成シミュレーター</span>
+                <b>FIREを見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>
             <a href="side-income.html">副業月収</a>
-            <a href="ai-hourly.html">AI副業時給</a>
+            <a href="ai-efficiency.html">AI副業時給</a>
             <a href="take-home.html">副業手取り</a>
             <a href="tax.html">税金・青色申告</a>
             <a href="nisa.html">新NISA・積立投資</a>

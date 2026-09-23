@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/side-fire.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>サイドFIREシミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年6月30日</p>
+          <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-fire.html">FIRE</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,24 @@
           </nav>
         <p><a href="side-fire.html">サイドFIREシミュレーターを開く</a></p>
 
-          
+          <section class="article-panel" aria-label="サイドFIREシミュレーターで分かること">
+            <section class="tool-heading">
+              <h2>このツールで分かること</h2>
+              <p>サイドFIREシミュレーターは、副業収入や配当収入を残した場合に必要資産がどれくらい下がるかを確認するページです。</p>
+            </section>
+            <p>現在年齢、FIRE目標年齢、現在資産、毎月積立額、想定年利、毎月生活費、副業月収、配当収入を入力し、生活費から副業収入と配当収入を差し引いた不足分をもとに必要資産を見ます。</p>
+            <div class="comparison-table" role="region" aria-label="サイドFIREで確認する項目" tabindex="0">
+              <table>
+                <thead><tr><th>結果項目</th><th>意味</th><th>次の判断</th></tr></thead>
+                <tbody>
+                  <tr><td>サイドFIRE必要資産</td><td>副業と配当を続ける前提で必要になる資産目安</td><td>完全FIREより現実的かを比較します。</td></tr>
+                  <tr><td>不足額、必要積立額</td><td>目標年齢までに足りない金額と積立ペース</td><td>積立額だけでなく生活費削減も検討します。</td></tr>
+                  <tr><td>副業収入・配当収入の効果</td><td>必要資産をどれだけ下げるか</td><td>収入が続く前提に偏りすぎていないか確認します。</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>サイドFIREは完全FIREより必要資産を抑えやすい一方、副業や仕事を続ける前提があります。結果が良くても、収入の継続性、税金、体力面は別に確認してください。</p>
+          </section>
 
           <section class="article-panel update-history" aria-label="更新履歴">
             <section class="tool-heading">
@@ -112,6 +129,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>サイドFIRE固有の入力項目、結果項目、計算前提を静的HTMLへ追加</li>
+                  <li>完全FIREとの違いと注意事項を明確化</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -136,8 +160,8 @@
                 <small>関連理由：FIREを目指す目的を具体化するため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="article-fire-strategy.html">
-                <strong>FIRE達成の基本戦略</strong>
+              <a class="journey-card" href="fire.html">
+                <strong>FIRE達成シミュレーター</strong>
                 <span>生活費、投資、副業を組み合わせて考えます。</span>
                 <small>関連理由：FIRE計画を数字へ落とすため</small>
                 <b aria-hidden="true">→</b>
@@ -274,11 +298,41 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="project-fire.html" data-next-recommend="side-fire-to-project-fire">
+                <span class="next-step-label">次の一手</span>
+                <strong>Project FIREを読む</strong>
+                <span>FIREを目指す過程や改善履歴を、運営者の実体験として確認できます。</span>
+                <span>進むページ：Project FIRE</span>
+                <b>記録を読む</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="side-fire-to-nisa">
+                <span class="next-step-label">投資確認</span>
+                <strong>NISA積立を確認する</strong>
+                <span>FIRE資産を作るための積立額と将来資産を見ます。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fixed-cost-reduction.html" data-next-recommend="side-fire-to-fixed-cost-reduction">
+                <span class="next-step-label">家計改善</span>
+                <strong>固定費削減の効果を見る</strong>
+                <span>生活費を下げると、必要資産と達成年数の両方に影響します。</span>
+                <span>進むページ：固定費削減シミュレーター</span>
+                <b>固定費を見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>
             <a href="side-income.html">副業月収</a>
-            <a href="ai-hourly.html">AI副業時給</a>
+            <a href="ai-efficiency.html">AI副業時給</a>
             <a href="take-home.html">副業手取り</a>
             <a href="tax.html">税金・青色申告</a>
             <a href="nisa.html">新NISA・積立投資</a>

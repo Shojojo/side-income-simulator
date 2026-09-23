@@ -36,51 +36,82 @@
     <script defer src="analytics.js"></script>
     <script type="application/ld+json" data-schema="day3-static">
       {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://side-income-simulator.vercel.app/#organization",
-            "name": "会社員の副業・FIRE実体験メディア",
-            "url": "https://side-income-simulator.vercel.app"
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://side-income-simulator.vercel.app/privacy.html#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "ホーム",
-                "item": "https://side-income-simulator.vercel.app/index.html"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "プライバシーポリシー",
-                "item": "https://side-income-simulator.vercel.app/privacy.html"
-              }
-            ]
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://side-income-simulator.vercel.app/privacy.html#webpage",
-            "url": "https://side-income-simulator.vercel.app/privacy.html",
-            "name": "プライバシーポリシー｜会社員向け資産形成メディアの運営方針",
-            "description": "副業、FIRE、資産形成シミュレーターサイトのプライバシーポリシーです。アクセス解析、広告配信、Cookie、お問い合わせ時の個人情報の取り扱いを説明しています。",
-            "isPartOf": {
-              "@id": "https://side-income-simulator.vercel.app/#website"
-            },
-            "about": {
-              "@id": "https://side-income-simulator.vercel.app/#organization"
-            },
-            "breadcrumb": {
-              "@id": "https://side-income-simulator.vercel.app/privacy.html#breadcrumb"
-            },
-            "dateModified": "2026-07-31",
-            "inLanguage": "ja"
-          }
-        ]
+              "@context": "https://schema.org",
+              "@graph": [
+                      {
+                              "@type": "Organization",
+                              "@id": "https://side-income-simulator.vercel.app/#organization",
+                              "name": "会社員の副業・FIRE実体験メディア",
+                              "url": "https://side-income-simulator.vercel.app"
+                      },
+                      {
+                              "@type": "BreadcrumbList",
+                              "@id": "https://side-income-simulator.vercel.app/privacy.html#breadcrumb",
+                              "itemListElement": [
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 1,
+                                              "name": "ホーム",
+                                              "item": "https://side-income-simulator.vercel.app/index.html"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 2,
+                                              "name": "プライバシーポリシー",
+                                              "item": "https://side-income-simulator.vercel.app/privacy.html"
+                                      }
+                              ]
+                      },
+                      {
+                              "@type": "WebPage",
+                              "@id": "https://side-income-simulator.vercel.app/privacy.html#webpage",
+                              "url": "https://side-income-simulator.vercel.app/privacy.html",
+                              "name": "プライバシーポリシー｜会社員向け資産形成メディアの運営方針",
+                              "description": "副業、FIRE、資産形成シミュレーターサイトのプライバシーポリシーです。アクセス解析、広告配信、Cookie、お問い合わせ時の個人情報の取り扱いを説明しています。",
+                              "isPartOf": {
+                                      "@id": "https://side-income-simulator.vercel.app/#website"
+                              },
+                              "about": {
+                                      "@id": "https://side-income-simulator.vercel.app/#organization"
+                              },
+                              "breadcrumb": {
+                                      "@id": "https://side-income-simulator.vercel.app/privacy.html#breadcrumb"
+                              },
+                              "dateModified": "2026-07-31",
+                              "inLanguage": "ja"
+                      },
+                      {
+                              "@type": "FAQPage",
+                              "@id": "https://side-income-simulator.vercel.app/privacy.html#faq",
+                              "name": "プライバシーポリシー FAQ",
+                              "mainEntity": [
+                                      {
+                                              "@type": "Question",
+                                              "name": "シミュレーターに入力した数字は保存されますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "通常の利用では、入力した年収、生活費、投資額などの数字を個人情報として保存する目的では扱いません。個人名や連絡先を入力しなくても利用できます。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "Cookieを無効にしても使えますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Cookieを無効にしても、シミュレーターの基本的な閲覧や入力は可能です。ただし、広告表示やアクセス解析の一部が正常に動かない場合があります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "お問い合わせ時の情報は何に使われますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "お問い合わせ内容への返信、掲載内容の確認、不具合対応のために利用します。目的外で利用しない方針です。"
+                                              }
+                                      }
+                              ]
+                      }
+              ]
       }
     </script>
   </head>

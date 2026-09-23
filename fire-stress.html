@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/fire-stress.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>FIREストレス診断</h1>
-        <p class="article-meta">最終更新日：2026年6月30日</p>
+        <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-fire.html">FIRE</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,24 @@
           </nav>
         <p><a href="fire-stress.html">FIREストレス診断を開く</a></p>
 
-        
+        <section class="article-panel" aria-label="FIREストレス診断で分かること">
+          <section class="tool-heading">
+            <h2>このツールで分かること</h2>
+            <p>FIREストレス診断は、資産額だけでは見えにくい退職後の収入不安、孤独感、働き方リスクを確認するページです。</p>
+          </section>
+          <p>現在年齢、現在資産、毎月生活費、副業収入、配当収入、仕事ストレス度、孤独耐性、FIRE希望年齢、退職後も続けたい趣味の有無を入力します。資産で何年生活できるか、生活費を支える収入源があるか、退職後の時間を使いやすいかを組み合わせて診断します。</p>
+          <div class="comparison-table" role="region" aria-label="FIREストレス診断で確認する項目" tabindex="0">
+            <table>
+              <thead><tr><th>結果項目</th><th>意味</th><th>読み方</th></tr></thead>
+              <tbody>
+                <tr><td>FIREストレス耐性スコア</td><td>資産、収入源、仕事ストレス、孤独耐性を合わせた目安</td><td>高いほど準備が整っている可能性があります。</td></tr>
+                <tr><td>収入不安、孤独リスク</td><td>FIRE後に不安が出やすい点</td><td>完全FIREかサイドFIREかを考える材料にします。</td></tr>
+                <tr><td>満足度、改善提案</td><td>退職後の生活を続けやすいか</td><td>趣味、発信、ゆるい仕事なども含めて見直します。</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>この診断は医療的・心理的な判定ではありません。資産額だけで退職を決めず、収入源、生活リズム、人との接点を事前に確認するための補助として使ってください。</p>
+        </section>
 
 
           <section class="article-panel update-history" aria-label="更新履歴">
@@ -113,6 +130,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>収入不安、孤独リスク、満足度、サイドFIRE比較の読み方を静的HTMLへ追加</li>
+                  <li>FIRE計算ページではなく退職後リスクを確認する診断として役割を明確化</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -137,8 +161,8 @@
                 <small>関連理由：FIREを目指す目的を具体化するため</small>
                 <b aria-hidden="true">→</b>
               </a>
-              <a class="journey-card" href="article-fire-strategy.html">
-                <strong>FIRE達成の基本戦略</strong>
+              <a class="journey-card" href="fire.html">
+                <strong>FIRE達成シミュレーター</strong>
                 <span>生活費、投資、副業を組み合わせて考えます。</span>
                 <small>関連理由：FIRE計画を数字へ落とすため</small>
                 <b aria-hidden="true">→</b>
@@ -275,6 +299,36 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="project-fire.html" data-next-recommend="fire-stress-to-project-fire">
+                <span class="next-step-label">次の一手</span>
+                <strong>Project FIREを読む</strong>
+                <span>FIREを目指す過程や改善履歴を、運営者の実体験として確認できます。</span>
+                <span>進むページ：Project FIRE</span>
+                <b>記録を読む</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="fire-stress-to-nisa">
+                <span class="next-step-label">投資確認</span>
+                <strong>NISA積立を確認する</strong>
+                <span>FIRE資産を作るための積立額と将来資産を見ます。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fixed-cost-reduction.html" data-next-recommend="fire-stress-to-fixed-cost-reduction">
+                <span class="next-step-label">家計改善</span>
+                <strong>固定費削減の効果を見る</strong>
+                <span>生活費を下げると、必要資産と達成年数の両方に影響します。</span>
+                <span>進むページ：固定費削減シミュレーター</span>
+                <b>固定費を見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>

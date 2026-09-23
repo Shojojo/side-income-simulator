@@ -38,57 +38,144 @@
     <script defer src="script.js?v=20260702-performance-day3-5"></script>
     <script type="application/ld+json" data-schema="day3-static">
       {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://side-income-simulator.vercel.app/#organization",
-            "name": "会社員の副業・FIRE実体験メディア",
-            "url": "https://side-income-simulator.vercel.app"
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://side-income-simulator.vercel.app/take-home.html#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "ホーム",
-                "item": "https://side-income-simulator.vercel.app/index.html"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "税金",
-                "item": "https://side-income-simulator.vercel.app/category-tax.html"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "副業手取り計算シミュレーター",
-                "item": "https://side-income-simulator.vercel.app/take-home.html"
-              }
-            ]
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://side-income-simulator.vercel.app/take-home.html#webpage",
-            "url": "https://side-income-simulator.vercel.app/take-home.html",
-            "name": "副業手取り計算シミュレーター｜会社員の税引後収入を確認【2026年版】",
-            "description": "副業売上から経費、所得税、住民税、社会保険を引いた手取りを試算し、本業後の副業収入を現実的に把握できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
-            "isPartOf": {
-              "@id": "https://side-income-simulator.vercel.app/#website"
-            },
-            "about": {
-              "@id": "https://side-income-simulator.vercel.app/#organization"
-            },
-            "breadcrumb": {
-              "@id": "https://side-income-simulator.vercel.app/take-home.html#breadcrumb"
-            },
-            "dateModified": "2026-07-22",
-            "inLanguage": "ja"
-          }
-        ]
+              "@context": "https://schema.org",
+              "@graph": [
+                      {
+                              "@type": "Organization",
+                              "@id": "https://side-income-simulator.vercel.app/#organization",
+                              "name": "会社員の副業・FIRE実体験メディア",
+                              "url": "https://side-income-simulator.vercel.app"
+                      },
+                      {
+                              "@type": "BreadcrumbList",
+                              "@id": "https://side-income-simulator.vercel.app/take-home.html#breadcrumb",
+                              "itemListElement": [
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 1,
+                                              "name": "ホーム",
+                                              "item": "https://side-income-simulator.vercel.app/index.html"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 2,
+                                              "name": "税金",
+                                              "item": "https://side-income-simulator.vercel.app/category-tax.html"
+                                      },
+                                      {
+                                              "@type": "ListItem",
+                                              "position": 3,
+                                              "name": "副業手取り計算シミュレーター",
+                                              "item": "https://side-income-simulator.vercel.app/take-home.html"
+                                      }
+                              ]
+                      },
+                      {
+                              "@type": "WebPage",
+                              "@id": "https://side-income-simulator.vercel.app/take-home.html#webpage",
+                              "url": "https://side-income-simulator.vercel.app/take-home.html",
+                              "name": "副業手取り計算シミュレーター｜会社員の税引後収入を確認【2026年版】",
+                              "description": "副業売上から経費、所得税、住民税、社会保険を引いた手取りを試算し、本業後の副業収入を現実的に把握できます。長時間労働や急な欠勤対応があっても、無理なく続ける副業設計と手取り確認に役立ちます。",
+                              "isPartOf": {
+                                      "@id": "https://side-income-simulator.vercel.app/#website"
+                              },
+                              "about": {
+                                      "@id": "https://side-income-simulator.vercel.app/#organization"
+                              },
+                              "breadcrumb": {
+                                      "@id": "https://side-income-simulator.vercel.app/take-home.html#breadcrumb"
+                              },
+                              "dateModified": "2026-07-22",
+                              "inLanguage": "ja"
+                      },
+                      {
+                              "@type": "FAQPage",
+                              "@id": "https://side-income-simulator.vercel.app/take-home.html#faq",
+                              "name": "副業手取り計算シミュレーター FAQ",
+                              "mainEntity": [
+                                      {
+                                              "@type": "Question",
+                                              "name": "副業の売上と手取りの違いは何ですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "売上は入ってくる金額、手取りは経費や税金などを差し引いたあとに残る金額です。副業では売上だけを見ると、納税資金や経費を見落としやすくなります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "必要経費には何を入れられますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "副業に直接関係するツール費、通信費、素材費、広告費などが候補になります。私用と兼用する支出は按分が必要になる場合があります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "副業の税率は何％で計算すればよいですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "所得税は本業の給与や控除によって変わるため一律ではありません。迷う場合は複数パターンで試し、公的情報や専門家の確認も組み合わせてください。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "所得税と住民税は両方かかりますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "副業所得がある場合、所得税と住民税の両方を考える必要があります。ただし実際の税額は所得、控除、自治体、申告内容で変わります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "副業収入が少なくても確定申告は必要ですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "所得額や勤務先の年末調整状況などで扱いが変わります。少額でも住民税の申告が必要になる場合があるため、自治体や税務署の案内を確認してください。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "社会保険料は副業収入で増えますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "働き方、雇用形態、加入状況によって変わります。このシミュレーターの社会保険料は簡易目安であり、実際の負担を確定するものではありません。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "手取りを増やすには売上と経費のどちらを改善すべきですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "短期では経費の見直しが効きやすく、長期では単価や売上の改善が大切です。経費を削りすぎて品質や継続性が落ちる場合もあります。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "会社員の副業が勤務先に知られる可能性はありますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "住民税、勤務先の規定、働き方によってリスクは変わります。普通徴収の扱いも自治体で異なる場合があるため、住民税や勤務先規定も確認してください。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "計算結果と実際の手取りが違う理由は何ですか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "本業給与、控除、経費の扱い、自治体、申告内容、社会保険の加入状況などが異なるためです。結果は事前に資金感をつかむための目安として使ってください。"
+                                              }
+                                      },
+                                      {
+                                              "@type": "Question",
+                                              "name": "この計算結果は税務申告に使えますか？",
+                                              "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "使えません。税務申告では帳簿、領収書、控除条件、制度の確認が必要です。最終判断は公的情報や専門家の確認をおすすめします。"
+                                              }
+                                      }
+                              ]
+                      }
+              ]
       }
     </script>
   </head>
@@ -290,7 +377,7 @@
                 <div>
                   <h4>おすすめツール</h4>
                   <div class="journey-grid">
-                    <a class="journey-card" href="income-tax.html"><strong>副業所得税シミュレーター</strong><span>所得税と復興特別所得税の目安を見ます。</span><b aria-hidden="true">→</b></a>
+                    <a class="journey-card" href="tax.html"><strong>副業所得税シミュレーター</strong><span>所得税と復興特別所得税の目安を見ます。</span><b aria-hidden="true">→</b></a>
                     <a class="journey-card" href="resident-tax.html"><strong>副業住民税シミュレーター</strong><span>住民税と普通徴収の注意点を整理します。</span><b aria-hidden="true">→</b></a>
                     <a class="journey-card" href="side-time-management.html"><strong>副業時間管理シミュレーター</strong><span>本業後に使える時間を確認できます。</span><b aria-hidden="true">→</b></a>
                   </div>
@@ -350,6 +437,36 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="tax.html" data-next-recommend="take-home-to-tax">
+                <span class="next-step-label">次の一手</span>
+                <strong>税金の内訳を確認する</strong>
+                <span>手取りが減る理由を所得税・住民税に分けて見ると、納税準備がしやすくなります。</span>
+                <span>進むページ：副業税金シミュレーター</span>
+                <b>税金を確認する</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="cash-flow.html" data-next-recommend="take-home-to-cash-flow">
+                <span class="next-step-label">家計へ接続</span>
+                <strong>残ったお金の使い道を整理する</strong>
+                <span>手取りを生活費、貯蓄、投資へどう配分できるかを確認します。</span>
+                <span>進むページ：キャッシュフローシミュレーター</span>
+                <b>収支を確認する</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="take-home-to-nisa">
+                <span class="next-step-label">資産形成</span>
+                <strong>手取りを積立へつなげる</strong>
+                <span>毎月残せる金額が見えたら、NISA積立へ回せる余力も確認できます。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを試算する</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer" aria-label="サイト情報">
           <nav class="footer-links" aria-label="法務リンク">
             <a href="index.html">サイトトップ</a>

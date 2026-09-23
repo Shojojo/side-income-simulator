@@ -85,7 +85,7 @@
             "breadcrumb": {
               "@id": "https://side-income-simulator.vercel.app/dividend-etf.html#breadcrumb"
             },
-            "dateModified": "2026-06-30",
+            "dateModified": "2026-08-25",
             "inLanguage": "ja"
           }
         ]
@@ -96,7 +96,7 @@
     <main>
       <div class="app-shell">
         <h1>配当ETF比較シミュレーター</h1>
-          <p class="article-meta">最終更新日：2026年6月30日</p>
+          <p class="article-meta">最終更新日：2026年8月25日</p>
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <a href="index.html">ホーム</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <a href="category-investment.html">投資</a><span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
@@ -104,7 +104,35 @@
           </nav>
         <p><a href="dividend-etf.html">配当ETF比較シミュレーターを開く</a></p>
 
-          
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>このシミュレーターで分かること</h2>
+              <p>配当ETFを使って長期投資をする場合に、年間配当金、月平均配当、累計配当、将来資産の目安を同じ条件で比較できます。VYM、HDV、SPYD、VIGなどの候補を、配当重視と資産成長重視の両面から見るためのページです。</p>
+            </section>
+            <p>個別株を選ぶ前に、まずETFで分散しながら配当を受け取るとどのくらいの規模感になるかを確認したい人に向いています。特定のETFを推奨するものではなく、利回りや成長率を変えた時に結果がどう動くかを見るための試算です。</p>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>入力する項目と結果の見方</h2>
+              <p>初期投資額、毎月積立額、ETF選択、想定配当利回り、想定株価成長率、運用年数、配当再投資の有無、新NISA利用の有無を入力します。</p>
+            </section>
+            <div class="article-link-grid">
+              <div class="article-link"><strong>年間配当金・月平均配当</strong><span>最終年の資産額に想定配当利回りを掛けた配当収入の目安です。生活費の一部をどの程度補えるか確認します。</span></div>
+              <div class="article-link"><strong>累計配当と最終資産</strong><span>運用期間中に受け取る配当合計と、株価成長や再投資を含めた資産額の目安を表示します。</span></div>
+              <div class="article-link"><strong>ETF比較</strong><span>配当重視の候補と資産成長重視の候補を分けて表示します。利回りだけでなく、成長率とのバランスを見るための項目です。</span></div>
+              <div class="article-link"><strong>FIREへの影響</strong><span>年間生活費360万円を仮置きし、配当でどれくらい補えるかを確認します。</span></div>
+            </div>
+          </section>
+
+          <section class="article-panel">
+            <section class="tool-heading">
+              <h2>計算の前提と注意点</h2>
+              <p>計算では、毎年の積立後に想定株価成長率を反映し、その年の資産額に配当利回りを掛けて年間配当を出します。配当再投資を選ぶと、その年の配当を資産へ加えて翌年以降の試算に反映します。</p>
+            </section>
+            <p>ETFは複数銘柄へ分散しやすい一方、為替、分配方針、構成銘柄、減配、価格下落の影響を受けます。表示される利回りや成長率は将来成果を保証するものではありません。課税口座では配当や売却益への税金も考慮が必要です。</p>
+            <p><a href="dividend-stock.html">高配当株比較シミュレーター</a>は個別株の集中リスクや銘柄選びを見たい場合、<a href="dividend-reinvestment.html">配当再投資シミュレーター</a>は再投資の複利効果を詳しく見たい場合に使います。新NISA枠を使う前提は <a href="nisa.html">新NISAシミュレーター</a>、FIREまでの距離は <a href="fire.html">FIRE達成シミュレーター</a> で確認できます。</p>
+          </section>
 
           <section class="article-panel update-history" aria-label="更新履歴">
             <section class="tool-heading">
@@ -112,6 +140,13 @@
               <p>このページは、実体験・制度確認・サイト改善にあわせて定期的に見直しています。</p>
             </section>
             <div class="update-history-list">
+              <article class="update-entry">
+                <time datetime="2026-08-25">2026年8月25日</time>
+                <ul>
+                  <li>配当ETF比較の入力項目、結果項目、計算前提、個別株ページとの違いを静的HTMLへ追加</li>
+                  <li>新NISA、配当再投資、FIREへの関連導線を本文内で整理</li>
+                </ul>
+              </article>
               <article class="update-entry">
                 <time datetime="2026-06-30">2026年6月30日</time>
                 <ul>
@@ -274,6 +309,36 @@
               <a href="index.html">トップページへ戻る</a>
             </div>
           </section>
+
+        <section class="article-panel next-step-panel next-recommend-panel" aria-label="次におすすめ">
+          <section class="tool-heading">
+            <h2>次におすすめ</h2>
+            <p>今回の結果をもとに、次に知りたい情報へ自然に進めるページを案内します。</p>
+          </section>
+          <div class="next-step-grid next-recommend-grid">
+              <a class="next-step-card next-recommend-card is-primary" href="dividend-reinvestment.html" data-next-recommend="dividend-etf-to-dividend-reinvestment">
+                <span class="next-step-label">次の一手</span>
+                <strong>配当再投資を確認する</strong>
+                <span>配当を受け取るだけでなく、再投資した場合の複利効果も確認できます。</span>
+                <span>進むページ：配当再投資シミュレーター</span>
+                <b>再投資を見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="nisa.html" data-next-recommend="dividend-etf-to-nisa">
+                <span class="next-step-label">制度確認</span>
+                <strong>NISAで積み立てる場合を見る</strong>
+                <span>配当や長期投資を非課税枠と合わせて考えるために確認します。</span>
+                <span>進むページ：新NISAシミュレーター</span>
+                <b>NISAを見る</b>
+              </a>
+              <a class="next-step-card next-recommend-card" href="fire.html" data-next-recommend="dividend-etf-to-fire">
+                <span class="next-step-label">目標へ接続</span>
+                <strong>FIREまでの距離を見る</strong>
+                <span>配当収入や資産形成が、FIRE計画にどう影響するか確認します。</span>
+                <span>進むページ：FIRE達成シミュレーター</span>
+                <b>FIREを見る</b>
+              </a>
+          </div>
+        </section>
         <footer class="site-footer">
           <nav class="footer-links" aria-label="サイト情報">
             <a href="index.html">トップ</a>
