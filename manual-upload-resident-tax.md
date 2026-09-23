@@ -2073,4 +2073,3 @@ Allow: /
 Sitemap: https://side-income-simulator.vercel.app/sitemap.xml
 
 ```
-
