@@ -31,10 +31,12 @@
     <meta name="twitter:image:alt" content="会社員の副業・FIRE実体験メディアの共有画像">
     <title>副業月収・手取り・税金・FIREシミュレーターハブ【2026年版】</title>
     <link rel="stylesheet" href="style.css?v=20260702-performance-day3-5">
+    <link rel="stylesheet" href="money-garden.css?v=20260924-phase2">
     <script>
       window.GA_MEASUREMENT_ID = "G-XM73JD15LP";
     </script>
     <script defer src="analytics.js"></script>
+    <script defer src="money-garden.js?v=20260924-phase2"></script>
     <script type="application/ld+json" data-schema="day3-static">
       {
               "@context": "https://schema.org",
@@ -82,7 +84,7 @@
                               "breadcrumb": {
                                       "@id": "https://side-income-simulator.vercel.app/#breadcrumb"
                               },
-                              "dateModified": "2026-08-28",
+                              "dateModified": "2026-09-24",
                               "inLanguage": "ja"
                       },
                       {
@@ -153,22 +155,167 @@
           <nav class="breadcrumb-nav" aria-label="パンくずリスト">
             <span aria-current="page">ホーム</span>
           </nav>
-          <p class="home-hero-kicker">副業・家計・資産形成の現在地診断</p>
-          <h1>今の収入と目標から、あなたの現在地を確認する</h1>
-          <p class="article-meta">最終更新日：2026年8月28日</p>
+          <p class="home-hero-kicker">Money Platform｜暮らしとお金の計画</p>
+          <h1>希望する暮らしに必要なお金を、少しずつ育てる</h1>
+          <p class="article-meta">最終更新日：2026年9月24日</p>
           <p class="lead">
-            現在の副業収入、目標の副業収入、毎月の生活費を入れるだけで、
-            副業収入が増えたときに、日常、安心、資産形成へどれくらい選択肢が広がるかを数字で確認できます。
+            Money Gardenは、毎月自由に使いたい金額と今の金額を比べ、
+            差額と次の行動を整理する計画サービスです。
           </p>
           <nav class="hero-action-nav" aria-label="トップページ主要導線">
-            <a class="hero-cta-primary" href="#current-location">副業収入が増えた未来を試してみる</a>
+            <a class="hero-cta-primary" href="#current-location">Money Gardenを始める</a>
           </nav>
-          <p class="home-scroll-cue">下に進むと、月1万円、3万円、5万円、10万円が自分の生活費に対してどれくらいの意味を持つかを確認できます。</p>
+          <p class="home-scroll-cue">希望額を考える → 現在額を確認する → 差額を理解する → 次の行動を決める、の順で進みます。</p>
         </header>
 
-        <section class="article-panel home-diagnosis-panel" id="current-location" aria-label="現在地診断">
+        <section class="money-garden" id="current-location" aria-labelledby="moneyGardenTitle" data-garden-stage="00">
+          <header class="money-garden__intro">
+            <div>
+              <p class="money-garden__brand">Money Garden <span>マネーガーデン</span></p>
+              <h2 id="moneyGardenTitle">希望する自由費と、今の金額を比べる</h2>
+              <p>家賃や食費などの必要な生活費とは別に、旅行・趣味・外食などへ毎月使いたい金額を整理します。</p>
+              <p class="money-garden__temporary-name">名称は開発・検証段階の暫定表記です。</p>
+            </div>
+            <button class="money-garden__start" id="moneyGardenStart" type="button">計画を始める</button>
+          </header>
+
+          <div class="money-garden__layout">
+            <aside class="garden-visual" aria-labelledby="gardenProgressTitle">
+              <p class="garden-visual__eyebrow">Your plan</p>
+              <h3 id="gardenProgressTitle">計画の花</h3>
+              <div class="garden-flower" aria-hidden="true">
+                <svg viewBox="0 0 260 300">
+                  <ellipse class="garden-flower__soil" cx="130" cy="258" rx="92" ry="25" />
+                  <path class="garden-flower__soil-line" d="M55 253c35-16 117-17 151 0" />
+                  <ellipse class="garden-flower__seed" cx="130" cy="249" rx="9" ry="5" />
+                  <path class="garden-flower__stem" d="M130 247c-1-47 5-86 1-127" />
+                  <path class="garden-flower__leaf garden-flower__leaf--left" d="M128 211c-34-3-50-22-51-45 29-2 49 13 51 45Z" />
+                  <path class="garden-flower__leaf garden-flower__leaf--right" d="M132 186c30-5 46-23 44-43-27 0-43 15-44 43Z" />
+                  <g class="garden-flower__bud">
+                    <ellipse class="garden-flower__bud-shell" cx="131" cy="111" rx="25" ry="35" />
+                    <path class="garden-flower__bud-color" d="M123 88c5-9 12-11 18-1-2 14-5 22-10 29-5-7-7-16-8-28Z" />
+                  </g>
+                  <g class="garden-flower__petals">
+                    <ellipse cx="131" cy="82" rx="18" ry="42" />
+                    <ellipse cx="131" cy="82" rx="18" ry="42" transform="rotate(45 131 111)" />
+                    <ellipse cx="131" cy="82" rx="18" ry="42" transform="rotate(90 131 111)" />
+                    <ellipse cx="131" cy="82" rx="18" ry="42" transform="rotate(135 131 111)" />
+                    <circle class="garden-flower__center" cx="131" cy="111" r="18" />
+                  </g>
+                </svg>
+              </div>
+              <strong class="garden-visual__status" id="gardenStageLabel">植物のない土</strong>
+              <p class="garden-visual__progress" id="gardenProgressText">計画進捗 0/4</p>
+              <p class="garden-visual__note">満開は計画の完成を表し、現実の目標達成や資産形成の成功を意味しません。</p>
+            </aside>
+
+            <div class="money-garden__steps" id="moneyGardenSteps">
+              <section class="garden-step" data-garden-step="desired" aria-labelledby="gardenDesiredTitle">
+                <div class="garden-step__number">1</div>
+                <div class="garden-step__body">
+                  <h3 id="gardenDesiredTitle">希望する自由費を考える</h3>
+                  <p>必要な生活費とは別に、趣味や外食、旅行などへ毎月使いたい金額です。</p>
+                  <label class="garden-money-field" for="gardenDesiredAmount">
+                    <span>希望する自由費（月額）</span>
+                    <span class="garden-money-field__control"><input id="gardenDesiredAmount" name="gardenDesiredAmount" type="text" inputmode="numeric" autocomplete="off" maxlength="12" aria-describedby="gardenDesiredHelp gardenDesiredError"><b>円</b></span>
+                  </label>
+                  <small id="gardenDesiredHelp">0円も有効です。月額99,999,999円まで入力できます。</small>
+                  <p class="garden-field-error" id="gardenDesiredError" aria-live="polite"></p>
+                  <div class="garden-presets" aria-label="希望する自由費の入力候補">
+                    <button type="button" data-garden-preset="10000">1万円</button>
+                    <button type="button" data-garden-preset="30000">3万円</button>
+                    <button type="button" data-garden-preset="50000">5万円</button>
+                    <button type="button" data-garden-preset="100000">10万円</button>
+                  </div>
+
+                  <details class="garden-breakdown" id="gardenBreakdown">
+                    <summary>希望額の内訳を整理する（任意）</summary>
+                    <p>内訳は希望額の配分です。希望額へ追加して計算しません。</p>
+                    <div class="garden-breakdown__grid">
+                      <label>趣味・学び<span><input type="text" inputmode="numeric" autocomplete="off" maxlength="12" data-garden-breakdown="hobby" aria-describedby="gardenBreakdownHobbyError"><b>円</b></span><small class="garden-field-error" id="gardenBreakdownHobbyError"></small></label>
+                      <label>外食・日常の楽しみ<span><input type="text" inputmode="numeric" autocomplete="off" maxlength="12" data-garden-breakdown="daily" aria-describedby="gardenBreakdownDailyError"><b>円</b></span><small class="garden-field-error" id="gardenBreakdownDailyError"></small></label>
+                      <label>旅行・体験<span><input type="text" inputmode="numeric" autocomplete="off" maxlength="12" data-garden-breakdown="travel" aria-describedby="gardenBreakdownTravelError"><b>円</b></span><small class="garden-field-error" id="gardenBreakdownTravelError"></small></label>
+                      <label>家族・贈り物<span><input type="text" inputmode="numeric" autocomplete="off" maxlength="12" data-garden-breakdown="family" aria-describedby="gardenBreakdownFamilyError"><b>円</b></span><small class="garden-field-error" id="gardenBreakdownFamilyError"></small></label>
+                      <label>その他<span><input type="text" inputmode="numeric" autocomplete="off" maxlength="12" data-garden-breakdown="other" aria-describedby="gardenBreakdownOtherError"><b>円</b></span><small class="garden-field-error" id="gardenBreakdownOtherError"></small></label>
+                    </div>
+                    <div class="garden-breakdown__result" aria-live="polite">
+                      <span>入力した内訳の合計</span><strong id="gardenBreakdownTotal">未入力</strong>
+                      <p id="gardenBreakdownStatus">内訳は入力した項目だけを集計します。</p>
+                    </div>
+                  </details>
+                </div>
+              </section>
+
+              <section class="garden-step" data-garden-step="current" aria-labelledby="gardenCurrentTitle">
+                <div class="garden-step__number">2</div>
+                <div class="garden-step__body">
+                  <h3 id="gardenCurrentTitle">現在の自由費を確認する</h3>
+                  <p>手取り収入から必要な生活費と、先に確保する貯蓄などを差し引いた後、毎月自由に使える金額です。</p>
+                  <label class="garden-money-field" for="gardenCurrentAmount">
+                    <span>現在の自由費（月額）</span>
+                    <span class="garden-money-field__control"><input id="gardenCurrentAmount" name="gardenCurrentAmount" type="text" inputmode="numeric" autocomplete="off" maxlength="12" aria-describedby="gardenCurrentHelp gardenCurrentError"><b>円</b></span>
+                  </label>
+                  <small id="gardenCurrentHelp">収入や生活費の詳細入力は不要です。分からない場合は下のツールで確認できます。</small>
+                  <p class="garden-field-error" id="gardenCurrentError" aria-live="polite"></p>
+                  <div class="garden-helper-links">
+                    <a href="cash-flow.html">家計全体から確認する</a>
+                    <a href="take-home.html">副業の手取りから確認する</a>
+                    <span>結果は自動反映されません。戻った後に手動で入力してください。</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="garden-step" data-garden-step="result" aria-labelledby="gardenResultTitle">
+                <div class="garden-step__number">3</div>
+                <div class="garden-step__body">
+                  <h3 id="gardenResultTitle">差額を理解して、次の行動を決める</h3>
+                  <div class="garden-result" id="gardenResult" aria-live="polite">
+                    <p class="garden-result__lead" id="gardenResultLead">希望額と現在額を入力すると、ここに差額を表示します。</p>
+                    <div class="garden-result__grid">
+                      <div><span>希望する自由費</span><strong id="gardenDesiredMonthlyResult">未設定</strong><small id="gardenDesiredAnnualResult">年額 未設定</small></div>
+                      <div><span>現在の自由費</span><strong id="gardenCurrentMonthlyResult">未設定</strong><small id="gardenCurrentAnnualResult">年額 未設定</small></div>
+                      <div><span id="gardenDifferenceLabel">月額の差</span><strong id="gardenMonthlyDifference">未計算</strong><small id="gardenAnnualDifference">年額 未計算</small></div>
+                    </div>
+                  </div>
+                  <fieldset class="garden-actions" id="gardenActions">
+                    <legend>次に検討する行動を1つ選ぶ</legend>
+                    <label><input type="radio" name="gardenNextAction" value="adjust"><span><strong>今の範囲で配分を調整する</strong><small>内訳や優先順位を見直します。</small></span></label>
+                    <label><input type="radio" name="gardenNextAction" value="staged"><span><strong>目標を段階的にする</strong><small>まず実現しやすい月額から始めます。</small></span></label>
+                    <label><input type="radio" name="gardenNextAction" value="income"><span><strong>手取り収入を増やす方法を確認する</strong><small>副業月収・手取りの既存ツールを使えます。</small></span></label>
+                    <label><input type="radio" name="gardenNextAction" value="fixed-cost"><span><strong>固定費を見直す</strong><small>削減できる可能性を別ツールで確認します。</small></span></label>
+                    <label><input type="radio" name="gardenNextAction" value="household"><span><strong>家計全体を確認する</strong><small>現在の自由費の前提を確かめます。</small></span></label>
+                    <label><input type="radio" name="gardenNextAction" value="keep"><span><strong>現在の計画を維持する</strong><small>不足がない場合も計画として残せます。</small></span></label>
+                  </fieldset>
+                  <div class="garden-action-links" id="gardenActionLinks" aria-live="polite"></div>
+                </div>
+              </section>
+
+              <section class="garden-step garden-summary" data-garden-step="summary" aria-labelledby="gardenSummaryTitle">
+                <div class="garden-step__number">4</div>
+                <div class="garden-step__body">
+                  <h3 id="gardenSummaryTitle">計画を確認して完成する</h3>
+                  <div class="garden-summary__content" id="gardenSummaryContent" aria-live="polite">
+                    <p>希望額、現在額、次の行動がそろうと計画の要約を表示します。</p>
+                  </div>
+                  <button class="garden-complete" id="gardenComplete" type="button" disabled>この内容で計画を完成する</button>
+                  <p class="garden-complete__note">満開は計画入力の完了です。実際に希望額を達成したことを示すものではありません。</p>
+                </div>
+              </section>
+
+              <footer class="garden-storage">
+                <div><strong id="gardenSaveStatus" aria-live="polite">入力内容はこのブラウザに自動保存されます。</strong><span>共用端末では保存内容にご注意ください。外部サーバーへは送信しません。</span></div>
+                <button id="gardenClear" type="button">保存内容を削除</button>
+              </footer>
+            </div>
+          </div>
+        </section>
+
+        <details class="legacy-diagnosis" id="legacyIncomeDiagnosis">
+          <summary><strong>副業月収から現在地を確認する</strong><span>従来の副業月収・生活費カバー率診断を開く</span></summary>
+          <div class="legacy-diagnosis__content">
+        <section class="article-panel home-diagnosis-panel" id="income-position-diagnosis" aria-label="副業月収の現在地診断">
           <section class="tool-heading">
-            <h2>現在地診断</h2>
+            <h2>副業月収の現在地診断</h2>
             <p>細かい家計簿ではなく、現在の副業収入、目標、生活費の3つから大まかな現在地を確認します。</p>
           </section>
           <div class="home-diagnosis-layout">
@@ -281,11 +428,13 @@
             </a>
           </div>
         </section>
+          </div>
+        </details>
 
         <section class="article-panel" id="primary-simulators" aria-label="主力シミュレーター">
           <section class="tool-heading">
             <h2>主力シミュレーター</h2>
-            <p>現在地診断で見えた数字を、既存ツールでさらに具体化できます。</p>
+            <p>Money Gardenや副業月収診断で見えた数字を、既存ツールでさらに具体化できます。</p>
           </section>
           <p>副業収入を増やすだけでは、実際に使えるお金は分かりません。このサイトでは、副業月収、手取り、税金、家計、NISA、FIREの順に確認し、収入を将来の選択肢につなげることを重視しています。</p>
           <div class="primary-simulator-grid">
@@ -317,10 +466,10 @@
         <section class="article-panel beginner-roadmap" id="recommended-order" aria-label="個人ロードマップ">
           <section class="tool-heading">
             <h2>個人ロードマップ</h2>
-            <p>現在地診断で見えた数字を、次の順番で具体的な行動へつなげます。</p>
+            <p>Money Gardenで整理した計画を、次の順番で具体的な行動へつなげます。</p>
           </section>
           <div class="roadmap-grid">
-            <a class="roadmap-step" href="#current-location"><strong>STEP1</strong><span>現在地を確認</span></a>
+            <a class="roadmap-step" href="#current-location"><strong>STEP1</strong><span>自由費の計画を作る</span></a>
             <a class="roadmap-step" href="side-income.html"><strong>STEP2</strong><span>目標月収に必要な作業量を見る</span></a>
             <a class="roadmap-step" href="take-home.html"><strong>STEP3</strong><span>手取りを確認</span></a>
             <a class="roadmap-step" href="tax.html"><strong>STEP4</strong><span>税金を確認</span></a>
