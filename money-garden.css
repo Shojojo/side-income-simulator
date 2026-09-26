@@ -208,12 +208,25 @@
 
 .garden-actions { display: grid; gap: 8px; margin: 16px 0 0; padding: 0; border: 0; }
 .garden-actions legend { margin-bottom: 8px; color: var(--garden-dark); font-weight: 800; }
-.garden-actions label { display: flex; gap: 10px; padding: 11px 12px; background: #fff; border: 1px solid #d3dcd7; border-radius: 12px; cursor: pointer; }
-.garden-actions input { flex: 0 0 auto; width: 19px; height: 19px; margin-top: 2px; accent-color: var(--garden-deep); }
-.garden-actions span,
+.garden-actions label { display: grid; grid-template-columns: 19px 18px 34px 14px minmax(0, 1fr); justify-content: start; align-items: start; gap: 0; width: 100%; padding: 11px 12px; background: #fff; border: 1px solid #d3dcd7; border-radius: 12px; cursor: pointer; }
+.garden-actions input { grid-column: 1; width: 19px; height: 19px; margin: 7px 0 0; accent-color: var(--garden-deep); }
+.garden-actions .garden-action-icon {
+  display: grid;
+  grid-column: 3;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: var(--garden-leaf);
+  background: #e8f1eb;
+  border-radius: 10px;
+}
+.garden-actions .garden-action-icon svg { display: block; width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.garden-actions .garden-action-copy { display: block; grid-column: 5; min-width: 0; margin: 0; padding-top: 1px; text-align: left; }
+.garden-actions .garden-action-copy strong,
 .garden-actions small { display: block; }
 .garden-actions small { margin-top: 2px; color: #65756e; }
 .garden-actions label:has(input:checked) { background: #edf5ef; border-color: var(--garden-leaf); }
+.garden-actions label:has(input:checked) .garden-action-icon { color: var(--garden-ivory); background: var(--garden-leaf); }
 
 .garden-summary__content { padding: 14px; background: #edf4ef; border-radius: 14px; }
 .garden-summary__content p { margin: 4px 0; }
@@ -254,6 +267,10 @@
   .garden-step__number { width: 30px; height: 30px; }
   .garden-breakdown__grid,
   .garden-result__grid { grid-template-columns: 1fr; }
+  .garden-actions label { grid-template-columns: 19px 10px 30px 10px minmax(0, 1fr); padding: 10px; }
+  .garden-actions input { margin-top: 6px; }
+  .garden-actions .garden-action-icon { width: 30px; height: 30px; border-radius: 9px; }
+  .garden-actions .garden-action-icon svg { width: 23px; height: 23px; }
   .garden-storage { align-items: stretch; flex-direction: column; }
   .garden-storage button { width: 100%; }
 }
